@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Ella Fellas — the unofficial daily HQ for Ella Langley superfans. Tour dates, news, and ticket alerts. Launching soon." />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://ellafellas.com" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://ellafellas.com" />
+<meta property="og:title" content="Ella Fellas — the unofficial Ella Langley superfan HQ" />
+<meta property="og:description" content="Daily tour news, ticket alerts, and everything Ella. Launching soon." />
+<meta property="og:image" content="https://ellafellas.com/og-default.png" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Ella Fellas — the unofficial Ella Langley superfan HQ" />
+<meta name="twitter:description" content="Daily tour news, ticket alerts, and everything Ella. Launching soon." />
+
+<title>Ella Fellas — the unofficial Ella Langley superfan HQ</title>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Ella Fellas",
+  "url": "https://ellafellas.com",
+  "description": "Unofficial fan-run news and tour information site for country music artist Ella Langley."
+}
+</script>
+
+<style>
+  :root {
+    --primary: #C89B3C;
+    --primary-dark: #8F6A1F;
+    --ink: #1A1A1A;
+    --paper: #FAF7F0;
+    --denim: #2F4858;
+    --clay: #B5432B;
+    --ink-soft: rgba(26, 26, 26, 0.65);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; }
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .container {
+    flex: 1;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .top-strip {
+    text-align: center;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--ink-soft);
+    margin-bottom: 3rem;
+  }
+  .wordmark {
+    font-family: 'Bebas Neue', Impact, sans-serif;
+    font-size: clamp(4rem, 14vw, 8rem);
+    line-height: 1;
+    letter-spacing: 0.08em;
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  .tagline {
+    font-size: 0.875rem;
+    text-align: center;
+    color: var(--denim);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-bottom: 3rem;
+  }
+  .pitch {
+    font-size: clamp(1.125rem, 2.5vw, 1.375rem);
+    text-align: center;
+    margin: 0 auto 2.5rem;
+    max-width: 540px;
+    color: var(--ink);
+  }
+  .pitch strong {
+    color: var(--denim);
+  }
+  .countdown-box {
+    background: var(--denim);
+    color: var(--paper);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .countdown-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+  }
+  .countdown-info {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.75rem;
+    letter-spacing: 0.05em;
+  }
+  .countdown-sub {
+    font-size: 0.875rem;
+    color: rgba(250, 247, 240, 0.75);
+    margin-top: 0.25rem;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-width: 480px;
+    margin: 0 auto 2rem;
+  }
+  @media (min-width: 600px) {
+    form { flex-direction: row; }
+  }
+  input[type="email"] {
+    flex: 1;
+    padding: 0.9rem 1rem;
+    font-size: 1rem;
+    font-family: inherit;
+    border: 2px solid var(--denim);
+    border-radius: 6px;
+    background: var(--paper);
+    color: var(--ink);
+    outline: none;
+    transition: border-color 0.15s;
+  }
+  input[type="email"]:focus {
+    border-color: var(--primary);
+  }
+  button {
+    padding: 0.9rem 1.5rem;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.125rem;
+    letter-spacing: 0.1em;
+    background: var(--primary);
+    color: var(--ink);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+  button:hover { background: var(--primary-dark); color: var(--paper); }
+  .form-note {
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--ink-soft);
+    max-width: 480px;
+    margin: 0 auto 3rem;
+  }
+  .success-message {
+    display: none;
+    text-align: center;
+    padding: 1.25rem;
+    background: rgba(200, 155, 60, 0.15);
+    border: 1px solid var(--primary);
+    border-radius: 6px;
+    max-width: 480px;
+    margin: 0 auto 2rem;
+    color: var(--denim);
+    font-weight: 500;
+  }
+  .success-message.shown { display: block; }
+  .what-to-expect {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+  .feature {
+    text-align: center;
+    padding: 1rem;
+  }
+  .feature-icon {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    color: var(--primary);
+    letter-spacing: 0.05em;
+    margin-bottom: 0.4rem;
+  }
+  .feature-text {
+    font-size: 0.875rem;
+    color: var(--ink-soft);
+  }
+  footer {
+    background: var(--denim);
+    color: rgba(250, 247, 240, 0.85);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 1.7;
+  }
+  footer a { color: var(--primary); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+  .disclaimer {
+    max-width: 720px;
+    margin: 0 auto;
+    font-size: 0.75rem;
+    color: rgba(250, 247, 240, 0.7);
+  }
+</style>
+</head>
+<body>
+  <main class="container">
+    <div class="top-strip">An unofficial fan site</div>
+
+    <h1 class="wordmark">ELLA FELLAS</h1>
+    <p class="tagline">The unofficial Ella Langley superfan HQ</p>
+
+    <p class="pitch">
+      Daily Ella Langley news, tour stop guides, ticket alerts, and everything in between.
+      Built by fans, for the <strong>Fellas</strong>. <strong>Launching soon.</strong>
+    </p>
+
+    <div class="countdown-box">
+      <div class="countdown-label">Next Show</div>
+      <div class="countdown-info" id="next-show">Estero, FL — May 14</div>
+      <div class="countdown-sub" id="next-show-sub">Hertz Arena · Dandelion Tour</div>
+    </div>
+
+    <form id="signup-form" onsubmit="return handleSubmit(event)">
+      <input type="email" name="email" placeholder="your.email@example.com" required aria-label="Email address" />
+      <button type="submit">Join the Fellas</button>
+    </form>
+
+    <p class="form-note">
+      Get tour alerts, daily updates, and ticket drop notifications. No spam, ever.
+      Unsubscribe anytime with one click.
+    </p>
+
+    <div class="success-message" id="success">
+      You're on the list. Check your inbox to confirm.
+    </div>
+
+    <div class="what-to-expect">
+      <div class="feature">
+        <div class="feature-icon">DAILY</div>
+        <div class="feature-text">News & tour updates in your inbox 5x/week</div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">ALERTS</div>
+        <div class="feature-text">Get notified when Ella adds a date near you</div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">DEALS</div>
+        <div class="feature-text">Ticket price drops, monitored daily</div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="disclaimer">
+      <p><strong>Ella Fellas is an unofficial fan-run site.</strong> We are not affiliated with, endorsed by, or sponsored by Ella Langley, her management, her label (Sony Music Nashville / Columbia / SAWGOD), or her official merchandise (Ella's Fellas). All trademarks belong to their respective owners.</p>
+      <p style="margin-top:0.75rem;">
+        Official site: <a href="https://ellalangley.com" target="_blank" rel="noopener">ellalangley.com</a> · Official merch: <a href="https://ellalangley.us" target="_blank" rel="noopener">ellalangley.us</a>
+      </p>
+      <p style="margin-top:0.75rem; opacity:0.65;">© 2026 Bynum Enterprises · Made with too much coffee</p>
+    </div>
+  </footer>
+
+  <script>
+    // Email signup - replace formAction with your Formspree/Mailerlite/etc endpoint when live
+    // For now this just shows a confirmation. We'll wire to Supabase via the real Next.js app.
+    function handleSubmit(e) {
+      e.preventDefault();
+      const email = e.target.email.value;
+      const form = document.getElementById('signup-form');
+      const success = document.getElementById('success');
+
+      // Placeholder: stash in localStorage so we can migrate later
+      try {
+        const existing = JSON.parse(localStorage.getItem('pending-signups') || '[]');
+        existing.push({ email, ts: Date.now() });
+        localStorage.setItem('pending-signups', JSON.stringify(existing));
+      } catch(_) {}
+
+      form.style.display = 'none';
+      success.classList.add('shown');
+      success.textContent = "You're on the list. You'll be one of the first to know when we launch.";
+
+      // TODO: Replace this with actual signup endpoint once Supabase is wired
+      // fetch('/api/newsletter/subscribe', { method:'POST', body: JSON.stringify({ email }) });
+
+      return false;
+    }
+
+    // Live next-show display — driven by inline data, easy to update
+    const tourDates = [
+      { date: "2026-05-14", city: "Estero, FL", venue: "Hertz Arena", tour: "Dandelion Tour" },
+      { date: "2026-05-15", city: "Savannah, GA", venue: "Enmarket Arena", tour: "Dandelion Tour" },
+      { date: "2026-05-22", city: "East Lansing, MI", venue: "Spartan Stadium", tour: "w/ Morgan Wallen" },
+      { date: "2026-05-29", city: "Chicago, IL", venue: "Soldier Field", tour: "w/ Morgan Wallen" },
+      { date: "2026-06-05", city: "Foxborough, MA", venue: "Gillette Stadium", tour: "w/ Morgan Wallen" },
+      { date: "2026-06-12", city: "Pittsburgh, PA", venue: "Acrisure Stadium", tour: "w/ Morgan Wallen" },
+      { date: "2026-06-18", city: "Oklahoma City, OK", venue: "Zoo Amphitheatre", tour: "Dandelion Tour" },
+      { date: "2026-06-19", city: "Independence, MO", venue: "Cable Dahmer Arena", tour: "Dandelion Tour" },
+      { date: "2026-06-25", city: "Salem, VA", venue: "Salem Civic Center", tour: "Dandelion Tour" },
+      { date: "2026-06-26", city: "Wilmington, NC", venue: "Live Oak Bank Pavilion", tour: "Dandelion Tour" },
+      { date: "2026-06-26", city: "Atlanta, GA", venue: "Mercedes-Benz Stadium", tour: "w/ Morgan Wallen" },
+      { date: "2026-07-10", city: "Nashville, TN", venue: "Nissan Stadium", tour: "w/ Morgan Wallen" },
+      { date: "2026-07-17", city: "Tampa, FL", venue: "Raymond James Stadium", tour: "w/ Morgan Wallen" },
+      { date: "2026-07-23", city: "Pikeville, KY", venue: "Appalachian Wireless Arena", tour: "Dandelion Tour" },
+      { date: "2026-07-24", city: "Cary, NC", venue: "Koka Booth Amphitheatre", tour: "Dandelion Tour" },
+      { date: "2026-07-24", city: "Arlington, TX", venue: "AT&T Stadium", tour: "w/ Morgan Wallen" },
+      { date: "2026-07-25", city: "N. Charleston, SC", venue: "N. Charleston Coliseum", tour: "Dandelion Tour" },
+      { date: "2026-07-30", city: "Gilford, NH", venue: "BankNH Pavilion", tour: "Dandelion Tour" },
+      { date: "2026-07-31", city: "Canandaigua, NY", venue: "CMAC", tour: "Dandelion Tour" },
+      { date: "2026-08-01", city: "Philadelphia, PA", venue: "Lincoln Financial Field", tour: "w/ Morgan Wallen" },
+      { date: "2026-08-13", city: "Austin, TX", venue: "Moody Center", tour: "Dandelion Tour" },
+      { date: "2026-08-14", city: "Corpus Christi, TX", venue: "American Bank Center", tour: "Dandelion Tour" },
+      { date: "2026-08-15", city: "Fort Worth, TX", venue: "Dickies Arena", tour: "Dandelion Tour" }
+    ];
+    const today = new Date();
+    const next = tourDates.find(d => new Date(d.date) >= today);
+    if (next) {
+      const d = new Date(next.date);
+      const monthName = d.toLocaleDateString('en-US', { month: 'short' });
+      document.getElementById('next-show').textContent = `${next.city} — ${monthName} ${d.getDate()}`;
+      document.getElementById('next-show-sub').textContent = `${next.venue} · ${next.tour}`;
+    }
+  </script>
+</body>
+</html>

@@ -42,17 +42,14 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${bebas.variable} ${inter.variable} ${caveat.variable}`}>
+      <head>
+        <meta {...({name:"impact-site-verification", value:"d6149793-9e44-4a14-9fa1-478de342389a"} as React.MetaHTMLAttributes<HTMLMetaElement>)} />
+      </head>
       <body className="min-h-screen flex flex-col bg-paper text-ink">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
         <WebSiteSchema />
-        <script
-          id="impact-verify-script"
-          dangerouslySetInnerHTML={{
-            __html: `(function(){var m=document.createElement('meta');m.setAttribute('name','impact-site-verification');m.setAttribute('value','d6149793-9e44-4a14-9fa1-478de342389a');document.head.appendChild(m);})();`
-          }}
-        />
         <Analytics />
         <SpeedInsights />
       </body>

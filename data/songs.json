@@ -1,0 +1,254 @@
+[
+  {
+    "slug": "you-look-like-you-love-me",
+    "title": "you look like you love me",
+    "feat": "Riley Green",
+    "album": "Hungover",
+    "albumSlug": "hungover",
+    "releaseDate": "2024-06-21",
+    "duration": "2:36",
+    "writers": [
+      "Ella Langley",
+      "Aaron Raitiere",
+      "Riley Green"
+    ],
+    "producer": "Will Bundy",
+    "spotifyId": "2PyJAiQjp1OPkow2FJZKHR",
+    "youtubeId": "Dm2TSMerGPQ",
+    "themes": [
+      "bar romance",
+      "country duet",
+      "first meeting",
+      "cowboy"
+    ],
+    "chartPeak": {
+      "hot100": 13,
+      "countryAirplay": 1,
+      "hotCountrySongs": 1
+    },
+    "weeksAtCountryNumberOne": 7,
+    "awards": [
+      "CMA Musical Event of the Year 2024",
+      "ACM Single of the Year 2025"
+    ],
+    "liveDebut": "2024-08-10 at Ryman Auditorium, Nashville",
+    "tldr": "The career-defining duet. If you only know one Ella Langley song, it's this one \u2014 and you probably picked it up at a wedding or a tailgate."
+  },
+  {
+    "slug": "werent-for-the-wind",
+    "title": "weren't for the wind",
+    "feat": null,
+    "album": "Hungover",
+    "albumSlug": "hungover",
+    "releaseDate": "2024-03-15",
+    "duration": "3:21",
+    "writers": [
+      "Ella Langley",
+      "Hailey Whitters",
+      "Aaron Raitiere"
+    ],
+    "producer": "Will Bundy",
+    "spotifyId": null,
+    "youtubeId": null,
+    "themes": [
+      "heartbreak",
+      "small-town wisdom",
+      "weather as metaphor"
+    ],
+    "chartPeak": {
+      "hot100": null,
+      "countryAirplay": 18,
+      "hotCountrySongs": 9
+    },
+    "liveDebut": "2024-04-02 at The Basement, Nashville",
+    "tldr": "The breakout single that signaled what was coming. Quieter than the Riley Green duet, but the song that made Nashville sit up."
+  },
+  {
+    "slug": "nicotine",
+    "title": "nicotine",
+    "feat": null,
+    "album": "Hungover",
+    "albumSlug": "hungover",
+    "releaseDate": "2024-08-02",
+    "duration": "3:07",
+    "writers": [
+      "Ella Langley",
+      "Aaron Raitiere",
+      "Hunter Phelps"
+    ],
+    "producer": "Will Bundy",
+    "themes": [
+      "addiction as love metaphor",
+      "honky-tonk",
+      "leaving"
+    ],
+    "chartPeak": {
+      "countryAirplay": 28,
+      "hotCountrySongs": 14
+    },
+    "tldr": "Album deep cut that streams way above expectations. Honky-tonk piano, country radio's worst nightmare and best friend."
+  },
+  {
+    "slug": "paint-the-town-blue",
+    "title": "paint the town blue",
+    "feat": null,
+    "album": "Hungover",
+    "albumSlug": "hungover",
+    "releaseDate": "2024-08-02",
+    "duration": "2:58",
+    "writers": [
+      "Ella Langley",
+      "Riley Green",
+      "Aaron Raitiere"
+    ],
+    "producer": "Will Bundy",
+    "themes": [
+      "regret",
+      "morning after",
+      "honky-tonk closer"
+    ],
+    "chartPeak": {
+      "countryAirplay": 35
+    },
+    "tldr": "The morning-after companion piece to 'you look like you love me.' Co-written with Riley Green and it shows."
+  },
+  {
+    "slug": "choosin-texas",
+    "title": "choosin' texas",
+    "feat": null,
+    "album": "Dandelion",
+    "albumSlug": "dandelion",
+    "releaseDate": "2026-01-10",
+    "duration": "3:12",
+    "writers": [
+      "Ella Langley",
+      "Ashley Gorley",
+      "Jessie Jo Dillon"
+    ],
+    "producer": "Will Bundy",
+    "themes": [
+      "leaving Alabama",
+      "new chapter",
+      "state pride"
+    ],
+    "chartPeak": {
+      "hot100": 1,
+      "countryAirplay": 1,
+      "hotCountrySongs": 1
+    },
+    "weeksAtHot100NumberOne": 7,
+    "tldr": "The record-breaker. First female country triple #1 since Taylor Swift, and the song that cemented her as a generational artist."
+  },
+  {
+    "slug": "dont-mind-if-i-do",
+    "title": "don't mind if i do",
+    "feat": "Riley Green",
+    "album": "Dandelion",
+    "albumSlug": "dandelion",
+    "releaseDate": "2026-02-14",
+    "duration": "2:48",
+    "writers": [
+      "Ella Langley",
+      "Riley Green",
+      "Aaron Raitiere"
+    ],
+    "producer": "Will Bundy",
+    "themes": [
+      "sequel duet",
+      "drinks at the bar",
+      "knowing better"
+    ],
+    "chartPeak": {
+      "countryAirplay": 1
+    },
+    "tldr": "The 'you look like you love me' sequel everyone wanted. Same chemistry, more confidence."
+  },
+  {
+    "slug": "never-met-anyone-like-you",
+    "title": "never met anyone like you",
+    "feat": "HARDY",
+    "album": "Dandelion",
+    "albumSlug": "dandelion",
+    "releaseDate": "2026-03-15",
+    "duration": "3:30",
+    "writers": [
+      "Ella Langley",
+      "HARDY",
+      "Hunter Phelps"
+    ],
+    "producer": "Will Bundy",
+    "themes": [
+      "intensity",
+      "swagger",
+      "rock-country crossover"
+    ],
+    "chartPeak": {
+      "countryAirplay": 6,
+      "hot100": 22
+    },
+    "tldr": "Ella + HARDY = rock-country thunder. The hardest song on Dandelion."
+  },
+  {
+    "slug": "be-her",
+    "title": "be her",
+    "feat": null,
+    "album": "Dandelion",
+    "albumSlug": "dandelion",
+    "releaseDate": "2026-04-10",
+    "duration": "3:45",
+    "writers": [
+      "Ella Langley",
+      "Lori McKenna",
+      "Hailey Whitters"
+    ],
+    "producer": "Will Bundy",
+    "themes": [
+      "self-acceptance",
+      "growing up",
+      "becoming"
+    ],
+    "tldr": "The album's emotional peak. Co-written with Lori McKenna and you can hear it."
+  },
+  {
+    "slug": "loving-life-again",
+    "title": "loving life again",
+    "feat": null,
+    "album": "Dandelion",
+    "albumSlug": "dandelion",
+    "releaseDate": "2026-04-10",
+    "duration": "3:08",
+    "writers": [
+      "Ella Langley",
+      "Aaron Raitiere",
+      "Ashley Gorley"
+    ],
+    "producer": "Will Bundy",
+    "themes": [
+      "recovery",
+      "post-breakup glow",
+      "Sunday morning"
+    ],
+    "tldr": "The Sunday-morning sing-along. Closes Dandelion's first side and starts the show on most tour stops."
+  },
+  {
+    "slug": "dandelion",
+    "title": "dandelion",
+    "feat": null,
+    "album": "Dandelion",
+    "albumSlug": "dandelion",
+    "releaseDate": "2026-04-10",
+    "duration": "4:02",
+    "writers": [
+      "Ella Langley",
+      "Lori McKenna",
+      "Jessie Jo Dillon"
+    ],
+    "producer": "Will Bundy",
+    "themes": [
+      "resilience",
+      "small-town girl",
+      "title track"
+    ],
+    "tldr": "The title track that gave the album and tour their name. The 'why' of this record."
+  }
+]

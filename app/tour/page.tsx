@@ -1,0 +1,58 @@
+import type { Metadata } from "next";
+import { getAllTourDates } from "@/lib/data";
+import { TourCard } from "@/components/TourCard";
+
+export const metadata: Metadata = {
+  title: "Tour Dates 2026",
+  description:
+    "Every confirmed Ella Langley tour date in 2026 — the Dandelion headlining tour, Morgan Wallen support dates, and festivals.",
+};
+
+export default function TourIndexPage() {
+  const dates = getAllTourDates();
+  const headlining = dates.filter((d) => d.tourType === "headlining");
+  const support = dates.filter((d) => d.tourType === "support");
+  const festival = dates.filter((d) => d.tourType === "festival");
+
+  return (
+    <article className="mx-auto max-w-5xl px-4 py-10">
+      <header className="mb-8">
+        <h1 className="font-display text-4xl md:text-5xl text-denim">ELLA LANGLEY TOUR 2026</h1>
+        <p className="text-ink/80 mt-3">
+          {headlining.length} headlining + {support.length} Morgan Wallen support + {festival.length} festivals.
+          Tap any date for venue info, openers, hotels nearby, and tickets.
+        </p>
+      </header>
+
+      {headlining.length > 0 && (
+        <section className="mb-10">
+          <h2 className="font-display text-2xl text-denim mb-4">THE DANDELION TOUR (HEADLINING)</h2>
+          <div className="grid md:grid-cols-2 gap-3">
+            {headlining.map((d) => <TourCard key={d.id} d={d} />)}
+          </div>
+        </section>
+      )}
+
+      {support.length > 0 && (
+        <section className="mb-10">
+          <h2 className="font-display text-2xl text-denim mb-4">SUPPORTING MORGAN WALLEN (STADIUMS)</h2>
+          <p className="text-sm text-ink/70 mb-4">
+            Direct support — 45-minute set, then Wallen headlines. All sold at face value via Ticketmaster.
+          </p>
+          <div className="grid md:grid-cols-2 gap-3">
+            {support.map((d) => <TourCard key={d.id} d={d} />)}
+          </div>
+        </section>
+      )}
+
+      {festival.length > 0 && (
+        <section className="mb-10">
+          <h2 className="font-display text-2xl text-denim mb-4">FESTIVAL APPEARANCES</h2>
+          <div className="grid md:grid-cols-2 gap-3">
+            {festival.map((d) => <TourCard key={d.id} d={d} />)}
+          </div>
+        </section>
+      )}
+    </article>
+  );
+}

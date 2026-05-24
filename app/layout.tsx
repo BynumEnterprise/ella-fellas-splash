@@ -37,6 +37,11 @@ export const metadata: Metadata = {
   },
   robots: { index: true, follow: true },
   alternates: { canonical: SITE_URL },
+  verification: {
+    other: {
+      "impact-site-verification": "d6149793-9e44-4a14-9fa1-478de342389a"
+    }
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

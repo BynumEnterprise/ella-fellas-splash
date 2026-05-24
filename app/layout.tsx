@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { Bebas_Neue, Inter, Caveat } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import { WebSiteSchema } from "@/components/schema/WebSiteSchema";
 import "./globals.css";
 
@@ -37,21 +35,20 @@ export const metadata: Metadata = {
   },
   robots: { index: true, follow: true },
   alternates: { canonical: SITE_URL },
-  other: {
-    "impact-site-verification": "c3c5f833-aa51-4405-9e74-dc540e7caa45",
-  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${bebas.variable} ${inter.variable} ${caveat.variable}`}>
       <body className="min-h-screen flex flex-col bg-paper text-ink">
+        {/* Impact.com site ownership verification */}
+        <div style={{ display: "none" }} aria-hidden="true">
+          Impact-Site-Verification: 465e0e70-5146-444d-9120-8c91daea7d51
+        </div>
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
         <WebSiteSchema />
-        <Analytics />
-        <SpeedInsights />
       </body>
     </html>
   );

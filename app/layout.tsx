@@ -37,14 +37,14 @@ export const metadata: Metadata = {
   },
   robots: { index: true, follow: true },
   alternates: { canonical: SITE_URL },
+  other: {
+    "impact-site-verification": "c3c5f833-aa51-4405-9e74-dc540e7caa45",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${bebas.variable} ${inter.variable} ${caveat.variable}`}>
-      <head>
-        <meta {...({name:"impact-site-verification", value:"d6149793-9e44-4a14-9fa1-478de342389a"} as React.MetaHTMLAttributes<HTMLMetaElement>)} />
-      </head>
       <body className="min-h-screen flex flex-col bg-paper text-ink">
         <Header />
         <main className="flex-1">{children}</main>

@@ -37,11 +37,6 @@ export const metadata: Metadata = {
   },
   robots: { index: true, follow: true },
   alternates: { canonical: SITE_URL },
-  verification: {
-    other: {
-      "impact-site-verification": "d6149793-9e44-4a14-9fa1-478de342389a"
-    }
-  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -52,6 +47,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="flex-1">{children}</main>
         <Footer />
         <WebSiteSchema />
+        <script
+          id="impact-verify-script"
+          dangerouslySetInnerHTML={{
+            __html: `(function(){var m=document.createElement('meta');m.setAttribute('name','impact-site-verification');m.setAttribute('value','d6149793-9e44-4a14-9fa1-478de342389a');document.head.appendChild(m);})();`
+          }}
+        />
         <Analytics />
         <SpeedInsights />
       </body>

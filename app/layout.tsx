@@ -1,9 +1,11 @@
+import React from "react";
 import type { Metadata } from "next";
 import { Bebas_Neue, Inter, Caveat } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { WebSiteSchema } from "@/components/schema/WebSiteSchema";
 import "./globals.css";
+const IMPACT_VERIFICATION_ID = "26637153-e84e-4840-ba01-96d4f071e9d6";
 
 const bebas = Bebas_Neue({ weight: "400", subsets: ["latin"], variable: "--font-display" });
 const inter = Inter({ subsets: ["latin"], variable: "--font-body" });
@@ -40,7 +42,13 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${bebas.variable} ${inter.variable} ${caveat.variable}`}>
-      <body className="min-h-screen flex flex-col bg-paper text-ink">
+<head>
+    {React.createElement("meta", {
+        name: "impact-site-verification",
+            value: IMPACT_VERIFICATION_ID,
+              })}
+              </head>
+                    <body className="min-h-screen flex flex-col bg-paper text-ink">
         {/* Impact.com site ownership verification */}
         <div style={{ display: "none" }} aria-hidden="true">
           Impact-Site-Verification: 465e0e70-5146-444d-9120-8c91daea7d51

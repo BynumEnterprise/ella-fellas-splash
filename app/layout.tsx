@@ -5,7 +5,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { WebSiteSchema } from "@/components/schema/WebSiteSchema";
 import "./globals.css";
-const IMPACT_VERIFICATION_ID = "7c4dc56c-003d-42b2-adbe-2e9b4cfbe5e1";
+const IMPACT_VERIFICATION_ID = "dc319fc0-dc16-4b0b-9425-3232925e830e";
 
 const bebas = Bebas_Neue({ weight: "400", subsets: ["latin"], variable: "--font-display" });
 const inter = Inter({ subsets: ["latin"], variable: "--font-body" });

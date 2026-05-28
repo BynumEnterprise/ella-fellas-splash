@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/news",
     "/guides",
     "/vs",
+        "/shop",
     "/about",
     "/contact",
     "/disclaimer",

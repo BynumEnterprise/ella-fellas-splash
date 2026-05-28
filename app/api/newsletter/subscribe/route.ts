@@ -8,7 +8,7 @@ const schema = z.object({
   source: z.string().max(40).optional(),
 });
 
-const FROM_ADDRESS = "Ella Fellas <hello@bynummailer.com>";
+const FROM_ADDRESS = "Ella Fellas <info@ellafellas.com>";
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
 
 /**
@@ -46,7 +46,7 @@ async function sendWelcomeEmail(toEmail: string, unsubscribeToken: string): Prom
       </table>
       <p style="color:rgba(26,26,26,0.45);font-size:12px;line-height:1.6;margin:24px 0 0 0;max-width:560px;">
         You got this email because you signed up at <a href="${SITE_URL}" style="color:rgba(26,26,26,0.55);">ellafellas.com</a>.<br />
-        Not what you wanted? <a href="${unsubscribeUrl}" style="color:rgba(26,26,26,0.55);">Unsubscribe instantly</a>.<br />
+        Not what you wanted? <a href="${unsubscribeUrl}" style="color:rgba(26,26,26,0.55);">Unsubscribe instantly</a>.<br/>
         Bynum Enterprises &middot; San Bernardino, CA
       </p>
     </td></tr>

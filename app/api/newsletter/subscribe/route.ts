@@ -10,7 +10,7 @@ const schema = z.object({
 
 // Sending from bunummailer.com (verified domain) for now.
 // Switch to info@ellafellas.com once Resend fully verifies ellafellas.com (requires adding the MX record at Namecheap).
-const FROM_ADDRESS = "Ella Fellas <hello@bynummailer.com>";
+const FROM_ADDRESS = "Ella Fellas <info@ellafellas.com>";
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
 
 /**

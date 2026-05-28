@@ -1,9 +1,9 @@
 ---
-title: "Dandelion Returns to #1 on the Billboard 200. That's the Real Story This Week."
+title: "Dandelion Is Back at #1 on the Billboard 200 (And This Time It Stuck)"
 slug: "2026-05-28-dandelion-billboard-200-second-week"
 publishedAt: "2026-05-28"
 category: "chart-news"
-excerpt: "While everyone's still talking about the ACM sweep, Dandelion quietly racked up its second week at #1 on the Billboard 200. Here's why that matters more than the trophies."
+excerpt: "The ACMs were two weeks ago and we're still buzzing, but the chart news this week is honestly just as fun. Dandelion is back at #1 on the Billboard 200, and this time it held."
 relatedSongs: ["choosin-texas", "be-her", "dandelion"]
 sources:
   - title: "Ella Langley's 'Dandelion' Spends Second Week Atop Billboard 200"
@@ -14,28 +14,30 @@ sources:
     url: "https://www.billboard.com/music/chart-beat/ella-langley-top-3-spots-hot-country-songs-chart-1236239916/"
 ---
 
-The ACM wins from a week and a half ago are still doing laps on country Twitter, and they should — seven trophies in one night is a number that doesn't repeat itself often. But the news we'd actually flag for the long-term archive is quieter and showed up on the chart sheet this week: [Dandelion](https://www.billboard.com/music/chart-beat/ella-langley-dandelion-second-week-number-one-billboard-200-1236231740/) is #1 on the Billboard 200 for a second consecutive week.
+OK so we know everyone is still riding the ACM high (we definitely are), but if you missed it in the trophy talk: [Dandelion is back at #1 on the Billboard 200](https://www.billboard.com/music/chart-beat/ella-langley-dandelion-second-week-number-one-billboard-200-1236231740/), and this week it actually held the spot. That's two weeks in a row now.
 
-We flagged the album's chart trajectory in our [30-day breakdown](/news/2026-05-17-dandelion-album-30-days) — it had opened at #1, dropped to #2 behind Bad Bunny, and was holding inside the top 5 with the kind of retention numbers that streaming-era country records almost never see. Then it climbed back to #1 the week of the ACMs. Holding that position for a second week is the part that matters.
+You might remember from our [30-day breakdown](/news/2026-05-17-dandelion-album-30-days) that the album debuted at #1, slipped to #2 behind Bad Bunny for a stretch, then bounced around the top 5 with really nice retention. Then ACM week happened and Dandelion climbed back to the top. The fun part is what happened next: instead of fading after the trophy bump, it just... stayed there.
 
-## Why second week, specifically
+## Why the second week is the part to pay attention to
 
-First weeks at #1 happen because of pre-order pushes, fan campaigns, and a release-week halo. Second weeks happen because the album is actually being listened to. The drop-off between week one and week two is usually the single most honest data point about a record's life expectancy.
+First weeks at #1 are kind of expected when you have a fan base like Ella's. Pre-orders, release-week energy, everybody showing up at once. Second weeks are different. Second weeks mean people are still putting the record on a week later, which is honestly the nicest compliment a record can get.
 
-For most major-label country drops in 2025, that week-one to week-two drop was 55-70%. Dandelion's was small enough that the album re-took #1 on its own merits — no surprise deluxe, no chart manipulation, no buzzy feature drop. Just streams and sales that didn't fall off.
+That's the thing about Dandelion. People keep coming back to it. The retention numbers we've been watching since release are really good for a country album in 2026, and you can feel it just by looking at how the playlists keep adding tracks instead of cycling away from them.
 
-## The supporting context
+## Some other very fun chart news while we're here
 
-Two things compound it. First, ["Choosin' Texas" just notched its 10th straight week at #1 on the Hot 100](https://www.billboard.com/lists/ella-langley-choosin-texas-hot-100-number-one-10-weeks/) — and as we noted back in [week seven](/news/2026-05-21-choosin-texas-week-seven), week ten is where the conversation turns from "biggest country song of 2026" to "song of the year, period." Second, she now [holds the top three spots simultaneously on Hot Country Songs](https://www.billboard.com/music/chart-beat/ella-langley-top-3-spots-hot-country-songs-chart-1236239916/), with "I Can't Love You Anymore" (her Morgan Wallen duet) climbing in behind "Choosin' Texas" and "Be Her."
+A few other things worth a quick mention from this week's charts:
 
-That's the kind of chart real estate Garth Brooks held in 1991. Not a comparison we're making lightly.
+["Choosin' Texas" just clocked its 10th straight week at #1 on the Hot 100](https://www.billboard.com/lists/ella-langley-choosin-texas-hot-100-number-one-10-weeks/). We wrote about [week seven](/news/2026-05-21-choosin-texas-week-seven) and said something like "if it makes it to ten, we start talking about song of the year." Well, here we are. Pretty wild.
 
-## What we're watching next
+She also [holds the top three spots simultaneously on Hot Country Songs](https://www.billboard.com/music/chart-beat/ella-langley-top-3-spots-hot-country-songs-chart-1236239916/), with the Morgan Wallen duet "I Can't Love You Anymore" sliding in behind "Choosin' Texas" and "Be Her." Three songs, top three slots, all hers. We had to look up the last time that happened in country, and the answer involves Garth Brooks in 1991, which we mention not to compare careers but just because, c'mon, that's a fun fact.
 
-Three things on the radar this week: whether Dandelion holds for a third week, whether "Choosin' Texas" pushes past week ten on the Hot 100, and whether the Dandelion Tour's summer run keeps adding fuel. The next show on the schedule is the Independence, Missouri stop — and based on the [Toledo opener](/news/2026-05-22-dandelion-tour-toledo-recap), the live performances are functioning as a streaming engine more than a separate revenue line.
+## What we're keeping an eye on this week
 
-The ACMs were the trophy week. This is the receipts week.
+A few things on our radar for the next chart cycle. Whether Dandelion can grab a third week at #1 (the album doing this without a deluxe-edition push would be really impressive). Whether "Choosin' Texas" makes it to week eleven. And the Independence, Missouri show coming up next on the tour, which based on the [Toledo opener](/news/2026-05-22-dandelion-tour-toledo-recap) we'd bet adds another little nudge to the streaming numbers.
+
+Anyway, if you've been streaming Dandelion on repeat for the last six weeks, this is partly your fault and we love you for it. Keep going.
 
 ---
 
-*Sources: Billboard chart data via Billboard.com. Chart figures current as of the week ending May 23, 2026.*
+*Sources: Billboard chart data via Billboard.com, week ending May 23, 2026.*

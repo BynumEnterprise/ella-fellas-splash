@@ -7,48 +7,61 @@ interface Pick {
   query: string;
   blurb: string;
   price: string;
+  image: string;
 }
+
+const img = (id: string) =>
+  `https://images.unsplash.com/${id}?w=400&q=80&auto=format&fit=crop`;
 
 const UNIVERSAL: Pick[] = [
   {
     name: "High-fidelity concert earplugs",
     query: "concert earplugs high fidelity",
-    blurb: "Knock the volume down without muffling Ella's vocals. Saves your ears for the next stop on the tour.",
-    price: "$25â$35",
+    blurb:
+      "Knock the volume down without muffling Ella's vocals. Saves your ears for the next stop on the tour.",
+    price: "$25-$35",
+    image: img("photo-1583394838336-acd977736f90"),
   },
   {
     name: "10,000 mAh portable charger",
     query: "anker portable charger 10000mAh",
-    blurb: "Doors open early, encore runs late. Two phone charges keeps you covered through the rideshare home.",
-    price: "$20â$30",
+    blurb:
+      "Doors open early, encore runs late. Two phone charges keeps you covered through the rideshare home.",
+    price: "$20-$30",
+    image: img("photo-1609692814858-f7cd2f0afa4f"),
   },
 ];
 
 const STADIUM_BAG: Pick = {
-  name: "Clear stadium-approved crossbody",
-  query: "clear stadium crossbody bag NFL approved",
-  blurb: "Most NFL stadiums on the Morgan Wallen tour enforce a clear-bag policy at the gate. Easier to buy ahead than panic-buy on-site.",
-  price: "$15â$25",
+  name: "Clear stadium-approved sling",
+  query: "clear stadium sling bag NFL approved men",
+  blurb:
+    "Most NFL stadiums on the Morgan Wallen tour enforce a clear-bag policy at the gate. Easier to buy ahead than panic-buy on-site.",
+  price: "$15-$25",
+  image: img("photo-1553062407-98eeb64c6a62"),
 };
 
 const RAIN_PONCHO: Pick = {
-  name: "Disposable rain poncho",
+  name: "Disposable rain poncho 4-pack",
   query: "disposable rain poncho 4 pack",
-  blurb: "Outdoor amphitheater shows mean weather is part of the deal. One rain delay justifies the eight bucks.",
-  price: "$8â$15",
+  blurb:
+    "Outdoor amphitheater shows mean weather is part of the deal. One rain delay justifies the eight bucks.",
+  price: "$8-$15",
+  image: img("photo-1519345182560-3f2917c472ef"),
 };
 
 const WATER_BOTTLE: Pick = {
   name: "Refillable insulated water bottle",
   query: "Hydro Flask 24oz water bottle",
-  blurb: "Most venues let you bring an empty bottle through security. Free fill stations beat $7 arena water.",
-  price: "$25â$45",
+  blurb:
+    "Most venues let you bring an empty bottle through security. Free fill stations beat $7 arena water.",
+  price: "$25-$45",
+  image: img("photo-1602143407151-7111542de6e8"),
 };
 
 interface ShowContext {
   venue: string;
   venueCapacity?: number;
-  /** lower-cased venue name often hints outdoor: amphitheater, pavilion, stadium */
   outdoor?: boolean;
 }
 
@@ -86,7 +99,7 @@ export function ConcertGearWidget({ show }: { show: ShowContext }) {
         </Link>
       </div>
       <p className="text-sm text-ink/70 mb-4">
-        Three things worth tossing in your bag before {show.venue}. Amazon links are affiliate links â
+        Three things worth tossing in your bag before {show.venue}. Amazon links are affiliate links &mdash;
         clicking through helps keep Ella Fellas free.
       </p>
       <ul className="space-y-3">
@@ -95,6 +108,15 @@ export function ConcertGearWidget({ show }: { show: ShowContext }) {
             key={p.name}
             className="flex items-start justify-between gap-3 border-t border-ink/10 pt-3 first:border-t-0 first:pt-0"
           >
+            <div className="flex-shrink-0 w-20 h-20 rounded-md overflow-hidden bg-ink/5">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={p.image}
+                alt={p.name}
+                loading="lazy"
+                className="w-full h-full object-cover"
+              />
+            </div>
             <div className="flex-1 min-w-0">
               <p className="font-display text-base text-denim leading-tight">
                 {p.name}{" "}
@@ -107,10 +129,10 @@ export function ConcertGearWidget({ show }: { show: ShowContext }) {
             <AffiliateLink
               href={amazonSearchUrl(p.query)}
               source="amazon-tour-gear"
-              className="inline-flex items-center px-3 py-1.5 bg-denim text-paper font-display tracking-wide text-xs rounded-md hover:bg-denim/90 whitespace-nowrap"
+              className="inline-flex items-center px-3 py-1.5 bg-denim text-paper font-display tracking-wide text-xs rounded-md hover:bg-denim/90 whitespace-nowrap self-center"
               ariaLabel={`Shop ${p.name} on Amazon`}
             >
-              SHOP â
+              SHOP &rarr;
             </AffiliateLink>
           </li>
         ))}

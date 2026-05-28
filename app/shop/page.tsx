@@ -7,7 +7,7 @@ import { amazonSearchUrl, amazonUrl } from "@/lib/affiliates";
 export const metadata: Metadata = {
   title: "Concert Gear & Fan Picks — the Ella Fellas Shop",
   description:
-    "Hand-picked gear for Ella Langley concerts and country shows: boots, earplugs, hats, portable chargers, and Dandelion vinyl. All Amazon links are affiliate links — your clicks help keep the site free.",
+    "Hand-picked men's gear for Ella Langley concerts and country shows: boots, earplugs, hats, portable chargers, and Dandelion vinyl. All Amazon links are affiliate links — your clicks help keep the site free.",
 };
 
 interface Pick {
@@ -55,7 +55,7 @@ const CATEGORIES: Category[] = [
         name: "Clear stadium-approved crossbody",
         blurb:
           "Most stadiums on Morgan Wallen's tour now enforce clear-bag policy. Get a stadium-approved one before you go.",
-        query: "clear stadium crossbody bag NFL approved",
+        query: "clear stadium crossbody bag NFL approved men",
         price: "$15-$25",
         why: "Soldier Field, Gillette, Acrisure, Lincoln Financial — all clear-bag stadiums. Cheaper to buy ahead than panic-buy at the gate.",
         image: img("photo-1553062407-98eeb64c6a62"),
@@ -97,20 +97,20 @@ const CATEGORIES: Category[] = [
     slug: "what-to-wear",
     title: "WHAT TO WEAR",
     intro:
-      "We're not going to tell you what country fans \"should\" look like. But here's what holds up at a 4-hour show.",
+      "Men's gear that holds up at a 4-hour show. Jeans + boots + a button-down is the default — no costume required.",
     picks: [
       {
-        name: "Western boots that don't kill your feet",
+        name: "Men's western boots that don't kill your feet",
         blurb:
           "Real-life boots from brands that ship via Amazon — Ariat, Justin, Dan Post. Break them in first.",
-        query: "Ariat women's western boots",
+        query: "Ariat men's western boots",
         price: "$120-$250",
         why: "Avoid the $40 Halloween cowboy boots. You'll be standing for 4+ hours. Worth the upgrade.",
         image: img("photo-1542840843-3349799cded6"),
         badge: "Built to last",
       },
       {
-        name: "Country show pearl-snap shirt",
+        name: "Men's pearl-snap western shirt",
         blurb:
           "The unofficial Ella crowd uniform. Looks right, costs $25, fits in any venue.",
         query: "men's pearl snap western shirt",
@@ -120,7 +120,7 @@ const CATEGORIES: Category[] = [
         badge: "Crowd uniform",
       },
       {
-        name: "Lightweight straw cowboy hat",
+        name: "Men's lightweight straw cowboy hat",
         blurb:
           "Don't buy this for one show. But if you're doing the festival circuit, a good crushable straw lid is worth it.",
         query: "men's straw cowboy hat crushable",
@@ -158,10 +158,10 @@ const CATEGORIES: Category[] = [
         badge: "LP / 2024",
       },
       {
-        name: "Country Now / Whiskey Riff t-shirts",
+        name: "Country Now / Whiskey Riff men's tees",
         blurb:
           "Country-blog tees are a vibe. Cheaper than band merch and you'll get nods from other fans in line.",
-        query: "Whiskey Riff country music t-shirt",
+        query: "Whiskey Riff country music men's t-shirt",
         price: "$22-$30",
         why: "Pairs well with denim and a Stetson. Less try-hard than an actual artist tee.",
         image: img("photo-1521572163474-6864f9cf17ab"),
@@ -173,25 +173,25 @@ const CATEGORIES: Category[] = [
     slug: "travel-prep",
     title: "TRAVEL PREP",
     intro:
-      "For the fans flying in for a specific show — practical packing for a 36-hour music-trip.",
+      "For the fellas flying in for a specific show — practical packing for a 36-hour music-trip.",
     picks: [
       {
         name: "Underseat duffel (45L)",
         blurb:
           "Fits boots + outfit changes + chargers and still goes under the seat on Southwest and Delta.",
-        query: "underseat carry on duffel bag 45L",
+        query: "men's underseat carry on duffel bag 45L",
         price: "$35-$70",
         why: "Skip the checked bag for a 1-night turnaround. Faster off the plane, no bag-fee.",
         image: img("photo-1581605405669-fcdf81165afa"),
         badge: "Carry-on",
       },
       {
-        name: "Travel jewelry / accessory case",
+        name: "Dopp kit / toiletry organizer",
         blurb:
-          "Keeps small turquoise/silver pieces from getting destroyed in your carry-on.",
-        query: "small travel jewelry organizer pouch",
-        price: "$12-$20",
-        why: "If you're driving to Vegas for Stagecoach or hopping to Stagecoach + a stadium date, this saves headaches.",
+          "Keeps your razor, deodorant, and chargers from rattling around in the duffel.",
+        query: "men's leather dopp kit toiletry bag",
+        price: "$15-$30",
+        why: "If you're driving to Stagecoach or hopping to a stadium date, a solid dopp kit saves the carry-on chaos.",
         image: img("photo-1535632787350-4e68ef0ac584"),
         badge: "Organize",
       },
@@ -211,8 +211,8 @@ export default function ShopPage() {
           THE FELLAS SHOP
         </h1>
         <p className="text-lg text-ink/80 mt-5 leading-relaxed">
-          Stuff we actually recommend for going to Ella Langley shows — concert gear, festival
-          packing, and additions to the fan collection.{" "}
+          Stuff we actually recommend for the fellas heading to an Ella Langley show — concert
+          gear, festival packing, and additions to the fan collection.{" "}
           <strong className="text-denim">Every Amazon link is an affiliate link.</strong>
         </p>
         <p className="text-sm text-ink/55 mt-3">
@@ -286,7 +286,7 @@ export default function ShopPage() {
                     <details className="mt-3 group/details">
                       <summary className="text-xs text-ink/55 cursor-pointer list-none flex items-center gap-1 hover:text-primary">
                         <span className="font-medium">Why we picked it</span>
-                        <span className="text-[10px] group-open/details:rotate-180 transition-transform">▾</span>
+                        <span className="text-[10px] group-open/details:rotate-180 transition-transform">&#9662;</span>
                       </summary>
                       <p className="text-xs text-ink/65 mt-2 leading-relaxed italic border-l-2 border-primary/30 pl-3">
                         {p.why}
@@ -298,7 +298,7 @@ export default function ShopPage() {
                       className="mt-4 inline-flex items-center justify-center gap-1 px-4 py-2.5 bg-denim text-paper font-display tracking-wide text-sm rounded-md hover:bg-denim/90"
                       ariaLabel={`Shop ${p.name} on Amazon`}
                     >
-                      SHOP ON AMAZON →
+                      SHOP ON AMAZON &rarr;
                     </AffiliateLink>
                   </div>
                 </article>
@@ -322,7 +322,7 @@ export default function ShopPage() {
           rel="noopener noreferrer"
           className="inline-block px-6 py-3 bg-denim text-paper font-display tracking-wide rounded-md hover:bg-denim/90"
         >
-          ELLALANGLEY.US →
+          ELLALANGLEY.US &rarr;
         </a>
       </div>
 

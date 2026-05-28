@@ -44,6 +44,8 @@ export interface Song {
   awards?: string[];
   liveDebut?: string;
   tldr: string;
+  /** Multi-paragraph long-form breakdown. Paragraphs separated by \n\n. */
+  about?: string;
 }
 
 export interface Comparison {

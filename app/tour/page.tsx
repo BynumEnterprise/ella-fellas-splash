@@ -9,7 +9,11 @@ export const metadata: Metadata = {
 };
 
 export default function TourIndexPage() {
-  const dates = getAllTourDates();
+  // Hide shows whose date is in the past — fans don't want to see Toledo May 7
+  // on their screen in late May. Per-show /tour/[slug] pages still render so
+  // historical SEO / inbound links keep working.
+  const today = new Date().toISOString().slice(0, 10);
+  const dates = getAllTourDates().filter((d) => d.date >= today);
   const headlining = dates.filter((d) => d.tourType === "headlining");
   const support = dates.filter((d) => d.tourType === "support");
   const festival = dates.filter((d) => d.tourType === "festival");

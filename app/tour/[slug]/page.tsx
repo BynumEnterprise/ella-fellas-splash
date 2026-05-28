@@ -5,9 +5,10 @@ import { Calendar, MapPin, Clock, Ticket, Users } from "lucide-react";
 import { getAllTourDates, getTourDate } from "@/lib/data";
 import { AffiliateLink } from "@/components/AffiliateLink";
 import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
+import { ConcertGearWidget } from "@/components/ConcertGearWidget";
 import { MusicEventSchema } from "@/components/schema/MusicEventSchema";
 import { ticketUrl, hotelUrl } from "@/lib/affiliates";
-import { eventQuery, formatDate } from "@/lib/utils";
+import { eventQuery, venueQuery, formatDate } from "@/lib/utils";
 
 export async function generateStaticParams() {
   return getAllTourDates().map((d) => ({ slug: d.id }));
@@ -18,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const d = getTourDate(slug);
   if (!d) return {};
   return {
-    title: `Ella Langley in ${d.city}, ${d.state} — ${d.venue}`,
+    title: `Ella Langley in ${d.city}, ${d.state} â ${d.venue}`,
     description: `Tickets, parking, hotels, openers, and everything you need for Ella Langley's ${d.tour} stop at ${d.venue} in ${d.city} on ${formatDate(d.date, "long")}.`,
   };
 }
@@ -30,19 +31,24 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
 
   const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
   const pageUrl = `${SITE_URL}/tour/${d.id}`;
-  const tixUrl = ticketUrl(eventQuery(d), "tickpick");
-  const vividUrl = ticketUrl(eventQuery(d), "vivid");
+  const primaryQuery = eventQuery(d);
+  const venueSearch = venueQuery(d);
+  const seatGeekUrl = ticketUrl(primaryQuery, "seatgeek");
+  const tixUrl = ticketUrl(venueSearch, "tickpick");
+  const vividUrl = ticketUrl(venueSearch, "vivid");
+  const isMWStadium = d.tourType === "support" && (d.venueCapacity ?? 0) >= 40000;
+  const tmUrl = isMWStadium
+    ? ticketUrl(`${d.headliner ?? "Morgan Wallen"} ${d.city}`, "ticketmaster")
+    : null;
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-10">
       <MusicEventSchema d={d} url={pageUrl} />
 
-      {/* Breadcrumb */}
       <nav className="text-xs text-ink/60 mb-4">
         <Link href="/tour" className="hover:text-primary">&larr; All tour dates</Link>
       </nav>
 
-      {/* Hero */}
       <header className="mb-6">
         <div className="flex items-center gap-2 text-sm text-clay uppercase tracking-wider font-medium">
           <Calendar className="w-4 h-4" />
@@ -60,10 +66,9 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
         <p className="text-sm text-ink/60 mt-1">{d.tour}</p>
       </header>
 
-      {/* Ticket CTA */}
       <section className="bg-primary/15 border-2 border-primary rounded-lg p-5 mb-6">
         <p className="text-xs uppercase tracking-wider text-denim font-medium mb-1">
-          {d.soldOut ? "RESALE" : "TICKETS"} · {d.ticketPriceRange}
+          {d.soldOut ? "RESALE" : "TICKETS"} Â· {d.ticketPriceRange}
         </p>
         <h2 className="font-display text-2xl text-denim">Grab tickets</h2>
         <p className="text-sm text-ink/80 mt-1 mb-4">
@@ -72,16 +77,26 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
             : "Buy direct or check the secondary market for better seat options."}
         </p>
         <div className="flex flex-wrap gap-2">
-          <AffiliateLink href={tixUrl} source="tickpick" className="inline-flex items-center gap-2 px-4 py-2.5 bg-denim text-paper font-display tracking-wide rounded-md hover:bg-denim/90">
+          <AffiliateLink href={seatGeekUrl} source="seatgeek" className="inline-flex items-center gap-2 px-4 py-2.5 bg-denim text-paper font-display tracking-wide rounded-md hover:bg-denim/90">
+            <Ticket className="w-4 h-4" /> SEATGEEK
+          </AffiliateLink>
+          {tmUrl && (
+            <AffiliateLink href={tmUrl} source="ticketmaster" className="inline-flex items-center gap-2 px-4 py-2.5 bg-denim text-paper font-display tracking-wide rounded-md hover:bg-denim/90">
+              <Ticket className="w-4 h-4" /> TICKETMASTER
+            </AffiliateLink>
+          )}
+          <AffiliateLink href={tixUrl} source="tickpick" className="inline-flex items-center gap-2 px-4 py-2.5 bg-ink/10 text-denim font-display tracking-wide rounded-md hover:bg-ink/20 border border-ink/20">
             <Ticket className="w-4 h-4" /> TICKPICK
           </AffiliateLink>
-          <AffiliateLink href={vividUrl} source="vivid" className="inline-flex items-center gap-2 px-4 py-2.5 bg-denim text-paper font-display tracking-wide rounded-md hover:bg-denim/90">
+          <AffiliateLink href={vividUrl} source="vivid" className="inline-flex items-center gap-2 px-4 py-2.5 bg-ink/10 text-denim font-display tracking-wide rounded-md hover:bg-ink/20 border border-ink/20">
             <Ticket className="w-4 h-4" /> VIVID SEATS
           </AffiliateLink>
         </div>
+        <p className="text-xs text-ink/50 mt-3">
+          Tip: SeatGeek usually has the most listings for {d.tourType === "support" ? `${d.headliner ?? "this tour"}` : "Ella"}&apos;s shows. Resale prices on TickPick &amp; Vivid Seats are often lower for sold-out dates.
+        </p>
       </section>
 
-      {/* Venue Info */}
       <section className="mb-8">
         <h2 className="font-display text-2xl text-denim mb-3">VENUE INFO</h2>
         <ul className="space-y-2 text-sm">
@@ -100,7 +115,7 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
               <Clock className="w-4 h-4 mt-0.5 text-primary flex-shrink-0" />
               <span>
                 {d.doorsTime && <>Doors {d.doorsTime}</>}
-                {d.doorsTime && d.showTime && " · "}
+                {d.doorsTime && d.showTime && " Â· "}
                 {d.showTime && <>Show {d.showTime}</>}
               </span>
             </li>
@@ -108,7 +123,6 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
         </ul>
       </section>
 
-      {/* Openers */}
       {d.openers.length > 0 && d.tourType !== "support" && (
         <section className="mb-8">
           <h2 className="font-display text-2xl text-denim mb-3">OPENING THIS DATE</h2>
@@ -134,11 +148,10 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
         </section>
       )}
 
-      {/* Hotels */}
       <section className="mb-8">
         <h2 className="font-display text-2xl text-denim mb-3">HOTELS NEARBY</h2>
         <p className="text-sm text-ink/80 mb-3">
-          Anywhere within 1.5 miles of the venue is the move — Uber surge kicks in by 9 PM on show nights.
+          Anywhere within 1.5 miles of the venue is the move â Uber surge kicks in by 9 PM on show nights.
         </p>
         <AffiliateLink
           href={hotelUrl(`${d.city}, ${d.state}`)}
@@ -149,7 +162,9 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
         </AffiliateLink>
       </section>
 
-      {/* What to wear */}
+      {/* Concert gear (Amazon affiliate) */}
+      <ConcertGearWidget show={{ venue: d.venue, venueCapacity: d.venueCapacity }} />
+
       <section className="mb-8 bg-paper border border-ink/10 rounded-lg p-5">
         <h2 className="font-display text-xl text-denim mb-2">WHAT TO WEAR</h2>
         <p className="text-sm text-ink/80">

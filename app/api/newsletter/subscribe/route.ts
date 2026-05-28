@@ -21,7 +21,7 @@ async function sendWelcomeEmail(toEmail: string, unsubscribeToken: string): Prom
     console.warn("RESEND_API_KEY not set — skipping welcome email");
     return;
   }
-  const unsubscribeUrl = `${SITE_URL}/goodbye?token=${encodeURIComponent(unsubscribeToken)}`;
+  const unsubscribeUrl = `${SITE_URL}/api/newsletter/unsubscribe?token=${encodeURIComponent(unsubscribeToken)}`;
   const html = `<!DOCTYPE html>
 <html>
 <body style="margin:0;padding:0;background:#FAF7F0;font-family:-apple-system,system-ui,sans-serif;color:#1A1A1A;">
@@ -90,8 +90,6 @@ export async function POST(req: Request) {
 
     const unsubscribeToken = crypto.randomUUID();
 
-    // Try to persist to Supabase if service role key is configured.
-    // Otherwise, return success (signups are tracked in Vercel logs).
     if (process.env.SUPABASE_SERVICE_ROLE_KEY) {
       const { getSupabaseServer } = await import("@/lib/supabase");
       const supabase = getSupabaseServer();
@@ -110,15 +108,11 @@ export async function POST(req: Request) {
       );
       if (error) {
         console.error("Supabase subscriber insert failed:", error);
-        // Still return success to user — we have their email in logs.
       }
     } else {
-      // No service role key yet — log so admin can backfill later
       console.log(`[NEWSLETTER SIGNUP] email=${email} city=${city ?? ""} source=${source ?? ""}`);
     }
 
-    // Send welcome email via Resend. Fire-and-forget — doesn't block response.
-    // We `void` the promise so errors don't propagate; sendWelcomeEmail catches its own.
     void sendWelcomeEmail(email.toLowerCase(), unsubscribeToken);
 
     return NextResponse.json({

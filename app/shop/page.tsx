@@ -20,9 +20,9 @@ import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
 import { amazonSearchUrl, amazonUrl } from "@/lib/affiliates";
 
 export const metadata: Metadata = {
-  title: "Concert Gear & Fan Picks â the Ella Fellas Shop",
+  title: "Concert Gear & Fan Picks — the Ella Fellas Shop",
   description:
-    "Hand-picked gear for Ella Langley concerts and country shows: boots, earplugs, hats, portable chargers, and Dandelion vinyl. All Amazon links are affiliate links â your clicks help keep the site free.",
+    "Hand-picked gear for Ella Langley concerts and country shows: boots, earplugs, hats, portable chargers, and Dandelion vinyl. All Amazon links are affiliate links — your clicks help keep the site free.",
 };
 
 interface Pick {
@@ -68,7 +68,7 @@ const CATEGORIES: Category[] = [
           "Most stadiums on Morgan Wallen's tour now enforce clear-bag policy. Get a stadium-approved one before you go.",
         query: "clear stadium crossbody bag NFL approved",
         price: "$15-$25",
-        why: "Soldier Field, Gillette, Acrisure, Lincoln Financial â all clear-bag stadiums. Cheaper to buy ahead than panic-buy at the gate.",
+        why: "Soldier Field, Gillette, Acrisure, Lincoln Financial — all clear-bag stadiums. Cheaper to buy ahead than panic-buy at the gate.",
         icon: ShoppingBag,
         tileBg: "bg-denim/10",
         tileIcon: "text-denim",
@@ -79,7 +79,7 @@ const CATEGORIES: Category[] = [
           "Doors open at 5:30 and you won't be home until midnight. Phones die fast at outdoor shows.",
         query: "anker portable charger 10000mAh",
         price: "$20-$30",
-        why: "Anker is the trusted brand. 10K mAh is two full phone charges â enough for openers, headliner, and the rideshare home.",
+        why: "Anker is the trusted brand. 10K mAh is two full phone charges — enough for openers, headliner, and the rideshare home.",
         icon: BatteryCharging,
         tileBg: "bg-primary/20",
         tileIcon: "text-primary-dark",
@@ -101,7 +101,7 @@ const CATEGORIES: Category[] = [
           "Half the Dandelion Tour dates are amphitheatres and outdoor. One rain delay justifies the $8.",
         query: "disposable rain poncho 4 pack",
         price: "$8-$15",
-        why: "Estero, OKC, Cary, Salem â all outdoor venues. Better to have one and not need it.",
+        why: "Estero, OKC, Cary, Salem — all outdoor venues. Better to have one and not need it.",
         icon: Umbrella,
         tileBg: "bg-slate-200",
         tileIcon: "text-slate-700",
@@ -117,7 +117,7 @@ const CATEGORIES: Category[] = [
       {
         name: "Western boots that don't kill your feet",
         blurb:
-          "Real-life boots from brands that ship via Amazon â Ariat, Justin, Dan Post. Break them in first.",
+          "Real-life boots from brands that ship via Amazon — Ariat, Justin, Dan Post. Break them in first.",
         query: "Ariat women's western boots",
         price: "$120-$250",
         why: "Avoid the $40 Halloween cowboy boots. You'll be standing for 4+ hours. Worth the upgrade.",
@@ -153,7 +153,7 @@ const CATEGORIES: Category[] = [
     slug: "fan-collection",
     title: "FOR THE FAN COLLECTION",
     intro:
-      "Vinyl, CDs, posters, and stuff worth owning. We link to whatever Amazon has â official Ella merch is at ellalangley.us.",
+      "Vinyl, CDs, posters, and stuff worth owning. We link to whatever Amazon has — official Ella merch is at ellalangley.us.",
     picks: [
       {
         name: "Dandelion (vinyl)",
@@ -194,7 +194,7 @@ const CATEGORIES: Category[] = [
     slug: "travel-prep",
     title: "TRAVEL PREP",
     intro:
-      "For the fans flying in for a specific show â practical packing for a 36-hour music-trip.",
+      "For the fans flying in for a specific show — practical packing for a 36-hour music-trip.",
     picks: [
       {
         name: "Underseat duffel (45L)",
@@ -233,12 +233,12 @@ export default function ShopPage() {
           THE FELLAS SHOP
         </h1>
         <p className="text-lg text-ink/80 mt-4 max-w-2xl mx-auto">
-          Stuff we actually recommend for going to Ella Langley shows â concert gear, festival
+          Stuff we actually recommend for going to Ella Langley shows — concert gear, festival
           packing, and additions to the fan collection.{" "}
           <strong className="text-denim">Every Amazon link is an affiliate link.</strong>
         </p>
         <p className="text-sm text-ink/60 mt-3 max-w-2xl mx-auto">
-          You won&apos;t pay more by clicking through us â Amazon pays a small commission that
+          You won&apos;t pay more by clicking through us — Amazon pays a small commission that
           keeps Ella Fellas free.
         </p>
       </header>
@@ -285,7 +285,7 @@ export default function ShopPage() {
                           className="inline-flex items-center gap-1 px-4 py-2 bg-denim text-paper font-display tracking-wide text-sm rounded-md hover:bg-denim/90 whitespace-nowrap"
                           ariaLabel={`Shop ${p.name} on Amazon`}
                         >
-                          SHOP ON AMAZON â
+                          SHOP ON AMAZON →
                         </AffiliateLink>
                       </div>
                       <p className="text-base text-ink/80 mt-3 leading-relaxed">{p.blurb}</p>
@@ -314,7 +314,7 @@ export default function ShopPage() {
           rel="noopener noreferrer"
           className="inline-block px-5 py-2.5 bg-denim text-paper font-display tracking-wide rounded-md hover:bg-denim/90"
         >
-          ELLALANGLEY.US â
+          ELLALANGLEY.US →
         </a>
       </div>
 

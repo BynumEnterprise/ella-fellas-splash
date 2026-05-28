@@ -5,7 +5,8 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { WebSiteSchema } from "@/components/schema/WebSiteSchema";
 import "./globals.css";
-const IMPACT_VERIFICATION_ID = "90e9a93e-1c37-48da-ae98-f4a8e59223f3";
+const IMPACT_TRACKING_ID = "A5422852-9ce6-4a5c-a6b6-f427d0092d55";
+const IMPACT_TRACKING_SNIPPET = `(function(i,m,p,a,c,t){c.ire_o=p;c[p]=c[p]||function(){(c[p].a=c[p].a||[]).push(arguments)};t=a.createElement(m);var z=a.getElementsByTagName(m)[0];t.async=1;t.src=i;z.parentNode.insertBefore(t,z)})('https://utt.impactcdn.com/${IMPACT_TRACKING_ID}.js','script',window,document,'ire');`;
 
 const bebas = Bebas_Neue({ weight: "400", subsets: ["latin"], variable: "--font-display" });
 const inter = Inter({ subsets: ["latin"], variable: "--font-body" });
@@ -45,10 +46,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 <head>
     {React.createElement("meta", {
         name: "impact-site-verification",
-            value: IMPACT_VERIFICATION_ID,
+            value: IMPACT_TRACKING_ID,
               })}
               </head>
                     <body className="min-h-screen flex flex-col bg-paper text-ink">
+                      <script type="text/javascript" dangerouslySetInnerHTML={{ __html: IMPACT_TRACKING_SNIPPET }} />
         {/* Impact.com site ownership verification */}
         <div style={{ display: "none" }} aria-hidden="true">
           Impact-Site-Verification: 465e0e70-5146-444d-9120-8c91daea7d51

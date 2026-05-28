@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const d = getTourDate(slug);
   if (!d) return {};
   return {
-    title: `Ella Langley in ${d.city}, ${d.state} â ${d.venue}`,
+    title: `Ella Langley in ${d.city}, ${d.state} — ${d.venue}`,
     description: `Tickets, parking, hotels, openers, and everything you need for Ella Langley's ${d.tour} stop at ${d.venue} in ${d.city} on ${formatDate(d.date, "long")}.`,
   };
 }
@@ -68,7 +68,7 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
 
       <section className="bg-primary/15 border-2 border-primary rounded-lg p-5 mb-6">
         <p className="text-xs uppercase tracking-wider text-denim font-medium mb-1">
-          {d.soldOut ? "RESALE" : "TICKETS"} Â· {d.ticketPriceRange}
+          {d.soldOut ? "RESALE" : "TICKETS"} · {d.ticketPriceRange}
         </p>
         <h2 className="font-display text-2xl text-denim">Grab tickets</h2>
         <p className="text-sm text-ink/80 mt-1 mb-4">
@@ -115,7 +115,7 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
               <Clock className="w-4 h-4 mt-0.5 text-primary flex-shrink-0" />
               <span>
                 {d.doorsTime && <>Doors {d.doorsTime}</>}
-                {d.doorsTime && d.showTime && " Â· "}
+                {d.doorsTime && d.showTime && " · "}
                 {d.showTime && <>Show {d.showTime}</>}
               </span>
             </li>
@@ -151,7 +151,7 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
       <section className="mb-8">
         <h2 className="font-display text-2xl text-denim mb-3">HOTELS NEARBY</h2>
         <p className="text-sm text-ink/80 mb-3">
-          Anywhere within 1.5 miles of the venue is the move â Uber surge kicks in by 9 PM on show nights.
+          Anywhere within 1.5 miles of the venue is the move — Uber surge kicks in by 9 PM on show nights.
         </p>
         <AffiliateLink
           href={hotelUrl(`${d.city}, ${d.state}`)}

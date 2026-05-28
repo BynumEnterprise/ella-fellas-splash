@@ -23,6 +23,22 @@ export function formatDate(dateStr: string, format: "short" | "long" = "short"):
   });
 }
 
-export function eventQuery(d: { city: string; state: string; venue: string }): string {
-  return `Ella Langley ${d.city} ${d.state} ${d.venue}`;
+interface EventQueryInput {
+  city: string;
+  state: string;
+  venue: string;
+  tourType?: "headlining" | "support" | "festival";
+  tour?: string;
+  headliner?: string;
+  date?: string;
+}
+
+export function eventQuery(d: EventQueryInput): string {
+  if (d.tourType === "support" && d.headliner) return `${d.headliner} ${d.city}`;
+  if (d.tourType === "festival" && d.tour) return `${d.tour.replace(/\s*\([^)]+\)/g, "").trim()} ${d.city}`;
+  return `Ella Langley ${d.city}`;
+}
+
+export function venueQuery(d: { venue: string; city: string }): string {
+  return `${d.venue} ${d.city}`;
 }

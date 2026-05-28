@@ -24,15 +24,14 @@ export function TourCard({ d }: { d: TourDate }) {
           </p>
           <p className="text-xs text-ink/60 mt-2">{d.tour}</p>
         </div>
-        <div className="text-right">
-          {d.soldOut ? (
-            <span className="inline-block bg-clay text-paper text-xs uppercase font-bold px-2 py-1 rounded-full">
+        <div className="text-right flex flex-col items-end gap-1.5 flex-shrink-0">
+          <span className="inline-flex items-center gap-1 text-primary text-sm font-medium">
+            <Ticket className="w-3.5 h-3.5" />
+            {d.soldOut ? "Resale" : "Tickets"}
+          </span>
+          {d.soldOut && (
+            <span className="inline-block bg-clay text-paper text-[10px] uppercase font-bold px-1.5 py-0.5 rounded-full">
               Sold Out
-            </span>
-          ) : (
-            <span className="inline-flex items-center gap-1 text-primary text-sm font-medium">
-              <Ticket className="w-3.5 h-3.5" />
-              Tickets
             </span>
           )}
         </div>

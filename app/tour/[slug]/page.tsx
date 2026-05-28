@@ -8,7 +8,7 @@ import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
 import { ConcertGearWidget } from "@/components/ConcertGearWidget";
 import { MusicEventSchema } from "@/components/schema/MusicEventSchema";
 import { ticketUrl, hotelUrl } from "@/lib/affiliates";
-import { eventQuery, venueQuery, formatDate } from "@/lib/utils";
+import { eventQuery, formatDate } from "@/lib/utils";
 
 export async function generateStaticParams() {
   return getAllTourDates().map((d) => ({ slug: d.id }));
@@ -31,11 +31,13 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
 
   const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
   const pageUrl = `${SITE_URL}/tour/${d.id}`;
+  // ONE query for ALL providers: artist + city. This is the only pattern that
+  // returns real results across SeatGeek, TickPick, and Vivid consistently.
+  // Venue-only searches return empty pages on TickPick & Vivid.
   const primaryQuery = eventQuery(d);
-  const venueSearch = venueQuery(d);
   const seatGeekUrl = ticketUrl(primaryQuery, "seatgeek");
-  const tixUrl = ticketUrl(venueSearch, "tickpick");
-  const vividUrl = ticketUrl(venueSearch, "vivid");
+  const tixUrl = ticketUrl(primaryQuery, "tickpick");
+  const vividUrl = ticketUrl(primaryQuery, "vivid");
   const isMWStadium = d.tourType === "support" && (d.venueCapacity ?? 0) >= 40000;
   const tmUrl = isMWStadium
     ? ticketUrl(`${d.headliner ?? "Morgan Wallen"} ${d.city}`, "ticketmaster")
@@ -162,7 +164,6 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
         </AffiliateLink>
       </section>
 
-      {/* Concert gear (Amazon affiliate) */}
       <ConcertGearWidget show={{ venue: d.venue, venueCapacity: d.venueCapacity }} />
 
       <section className="mb-8 bg-paper border border-ink/10 rounded-lg p-5">

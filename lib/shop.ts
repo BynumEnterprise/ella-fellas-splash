@@ -19,6 +19,8 @@ export interface ShopProduct {
   image: string;
   /** Short hashtag-style category badge shown over the image. */
   badge?: string;
+  /** Optional extra images shown on the product detail page. */
+  gallery?: string[];
   /** Which category section this belongs to on the /shop index. */
   category: ShopCategorySlug;
 }
@@ -135,6 +137,7 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
     price: "$120-$250",
     why: "Avoid the $40 Halloween cowboy boots. You'll be standing for 4+ hours. Worth the upgrade.",
     image: img("photo-1610685756406-0f2fdc231bf0"),
+    gallery: [img("photo-1553385363-6d4790dbd976"), img("photo-1635779503036-27cbbdcdbbd1"), img("photo-1626876853852-0b4caaf60dfc")],
     badge: "Built to last",
   },
   {
@@ -147,6 +150,7 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
     price: "$25-$45",
     why: "Works for cowboy-aesthetic without trying too hard. Wrangler is the safe pick.",
     image: img("photo-1769374090266-ae4e916abc75"),
+    gallery: [img("photo-1601870862178-601c9fd36757"), img("photo-1601870862208-6b96841fa1a6"), img("photo-1769374086235-2df32fa530d6")],
     badge: "Crowd uniform",
   },
   {
@@ -159,6 +163,7 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
     price: "$40-$80",
     why: "Resistol or Stetson via FlexOffers are the lifetime picks. The $20 versions look $20 and won't survive Stagecoach.",
     image: img("photo-1626792625154-36f7e192df1e"),
+    gallery: [img("photo-1521369909029-2afed882baee"), img("photo-1649639763329-dccbd16fbf4d")],
     badge: "Festival lid",
   },
   {
@@ -171,6 +176,7 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
     price: "$50-$90",
     why: "Spring/fall amphitheatre shows get cold after sunset. A trucker jacket layers without bulking you up and pairs with everything else in this section.",
     image: img("photo-1769374086235-2df32fa530d6"),
+    gallery: [img("photo-1601870862178-601c9fd36757"), img("photo-1601870862208-6b96841fa1a6")],
     badge: "Layer up",
   },
   {
@@ -183,6 +189,7 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
     price: "$35-$75",
     why: "If you're already in boots and a snap, a cheap web belt looks off. A real leather western belt grounds the outfit.",
     image: img("photo-1776951128893-5ca65057d63c"),
+    gallery: [img("photo-1758400309485-85ba077c8812")],
     badge: "Finishing touch",
   },
 
@@ -197,6 +204,7 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
     price: "$28-$35",
     why: "Look for the colored variants. The standard black is fine but the limited indie-store colors will hold value.",
     image: img("photo-1539375665275-f9de415ef9ac"),
+    gallery: [img("photo-1483412033650-1015ddeb83d1"), img("photo-1544954412-78da2cfa1a0c")],
     badge: "LP / 2026",
   },
   {

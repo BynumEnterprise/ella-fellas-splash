@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const d = getTourDate(slug);
   if (!d) return {};
   return {
-    title: `Ella Langley in ${d.city}, ${d.state} - ${d.venue}`,
+    title: `Ella Langley in ${d.city}, ${d.state} — ${d.venue}`,
     description: `Tickets, parking, hotels, openers, and everything you need for Ella Langley's ${d.tour} stop at ${d.venue} in ${d.city} on ${formatDate(d.date, "long")}.`,
   };
 }
@@ -31,23 +31,34 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
 
   const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
   const pageUrl = `${SITE_URL}/tour/${d.id}`;
+  // ONE query for ALL providers: artist + city. This is the only pattern that
+  // returns real results across SeatGeek, TickPick, and Vivid consistently.
+  // Venue-only searches return empty pages on TickPick & Vivid.
+  // eventQuery() returns "{Headliner} {city}" for support shows, festival name
+  // for festivals, and "Ella Langley {city}" for headlining dates.
   const primaryQuery = eventQuery(d);
-  const seatGeekUrl = ticketUrl(primaryQuery, "seatgeek");
-  const tixUrl = ticketUrl(primaryQuery, "tickpick");
-  const vividUrl = ticketUrl(primaryQuery, "vivid");
+  // Pass show id so ticketUrl() can deep-link to a known event page (TickPick)
+  // instead of returning a generic search.
+  const ctx = { query: primaryQuery, id: d.id, date: d.date, venue: d.venue, city: d.city };
+  const seatGeekUrl = ticketUrl(ctx, "seatgeek");
+  const tixUrl = ticketUrl(ctx, "tickpick");
+  const vividUrl = ticketUrl(ctx, "vivid");
+  // For Morgan Wallen stadium shows, Ticketmaster is the primary inventory.
   const isMWStadium = d.tourType === "support" && (d.venueCapacity ?? 0) >= 40000;
   const tmUrl = isMWStadium
-    ? ticketUrl(`${d.headliner ?? "Morgan Wallen"} ${d.city}`, "ticketmaster")
+    ? ticketUrl({ query: `${d.headliner ?? "Morgan Wallen"} ${d.city}`, id: d.id }, "ticketmaster")
     : null;
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-10">
       <MusicEventSchema d={d} url={pageUrl} />
 
+      {/* Breadcrumb */}
       <nav className="text-xs text-ink/60 mb-4">
         <Link href="/tour" className="hover:text-primary">&larr; All tour dates</Link>
       </nav>
 
+      {/* Hero */}
       <header className="mb-6">
         <div className="flex items-center gap-2 text-sm text-clay uppercase tracking-wider font-medium">
           <Calendar className="w-4 h-4" />
@@ -65,10 +76,11 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
         <p className="text-sm text-ink/60 mt-1">{d.tour}</p>
       </header>
 
+      {/* Ticket CTA */}
       <section className="bg-primary/15 border-2 border-primary rounded-lg p-5 mb-6">
         <p className="text-xs uppercase tracking-wider text-denim font-medium mb-1">
-          {/* Strip a leading "Resale " from the price range so we don't get "RESALE - Resale $X-$Y". */}
-          {d.soldOut ? "RESALE" : "TICKETS"} &middot; {d.ticketPriceRange.replace(/^Resale\s+/i, "")}
+          {/* Strip a leading "Resale " from the price range so we do not get RESALE Resale price. */}
+          {d.soldOut ? "RESALE" : "TICKETS"} · {d.ticketPriceRange.replace(/^Resale\s+/i, "")}
         </p>
         <h2 className="font-display text-2xl text-denim">Grab tickets</h2>
         <p className="text-sm text-ink/80 mt-1 mb-4">
@@ -97,6 +109,7 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
         </p>
       </section>
 
+      {/* Venue Info */}
       <section className="mb-8">
         <h2 className="font-display text-2xl text-denim mb-3">VENUE INFO</h2>
         <ul className="space-y-2 text-sm">
@@ -123,6 +136,7 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
         </ul>
       </section>
 
+      {/* Openers */}
       {d.openers.length > 0 && d.tourType !== "support" && (
         <section className="mb-8">
           <h2 className="font-display text-2xl text-denim mb-3">OPENING THIS DATE</h2>
@@ -143,15 +157,16 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
         <section className="mb-8">
           <h2 className="font-display text-2xl text-denim mb-3">HEADLINER</h2>
           <p>
-            Ella Langley is direct support. {d.headliner} headlines after Ella&apos; 45-minute set.
+            Ella Langley is direct support. {d.headliner} headlines after Ella&apos;s 45-minute set.
           </p>
         </section>
       )}
 
+      {/* Hotels */}
       <section className="mb-8">
         <h2 className="font-display text-2xl text-denim mb-3">HOTELS NEARBY</h2>
         <p className="text-sm text-ink/80 mb-3">
-          Anywhere within 1.5 miles of the venue is the move &mdash; Uber surge kicks in by 9 PM on show nights.
+          Anywhere within 1.5 miles of the venue is the move — Uber surge kicks in by 9 PM on show nights.
         </p>
         <AffiliateLink
           href={hotelUrl(`${d.city}, ${d.state}`)}
@@ -162,8 +177,12 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
         </AffiliateLink>
       </section>
 
-      <ConcertGearWidget show={{ venue: d.venue, venueCapacity: d.venueCapacity }} />
+      {/* Concert gear (Amazon affiliate) */}
+      <ConcertGearWidget
+        show={{ venue: d.venue, venueCapacity: d.venueCapacity }}
+      />
 
+      {/* What to wear */}
       <section className="mb-8 bg-paper border border-ink/10 rounded-lg p-5">
         <h2 className="font-display text-xl text-denim mb-2">WHAT TO WEAR</h2>
         <p className="text-sm text-ink/80">

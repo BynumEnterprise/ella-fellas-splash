@@ -266,7 +266,7 @@ export default function HomePage() {
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               {upcomingTours.slice(1, 7).map((show) => (
-                <TourCard key={show.slug} show={show} />
+                <TourCard key={show.id} d={show} />
               ))}
             </div>
           </section>
@@ -286,7 +286,14 @@ export default function HomePage() {
             </div>
             <div className="grid md:grid-cols-2 gap-4">
               {news.map((item) => (
-                <NewsCard key={item.slug} post={item} />
+                <NewsCard
+                  key={item.slug}
+                  slug={item.slug}
+                  title={item.frontmatter.title}
+                  excerpt={item.frontmatter.excerpt}
+                  publishedAt={item.frontmatter.publishedAt}
+                  category={item.frontmatter.category}
+                />
               ))}
             </div>
           </section>
@@ -302,7 +309,7 @@ export default function HomePage() {
             something worth telling you about. No spam. Unsubscribe anytime.
           </p>
           <div className="max-w-md mx-auto">
-            <NewsletterSignup source="homepage" />
+            <NewsletterSignup placement="homepage" />
           </div>
         </section>
       </div>

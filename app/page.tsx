@@ -106,7 +106,7 @@ export default function HomePage() {
                 </div>
               </div>
               <Link
-                href={`/tour/${nextShow.id}`}
+                href={`/tour/${nextShow.slug}`}
                 className="inline-flex items-center gap-2 px-5 py-2.5 bg-denim text-paper font-display tracking-wide text-sm rounded-md hover:bg-denim/90"
               >
                 <Ticket className="w-4 h-4" />
@@ -136,7 +136,7 @@ export default function HomePage() {
               Read the song guide &rarr;
             </Link>
           </div>
-          <SpotifyEmbed />
+          <SpotifyEmbed id="2PyJAiQjp1OPkow2FJZKHR" />
         </section>
 
         {/* DANDELION SHOWCASE — now with backdrop imagery on each card */}

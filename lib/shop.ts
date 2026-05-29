@@ -147,7 +147,7 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
   },
   {
     slug: "pearl-snap-western-shirt",
-    asin: "B00S5H4WOU",
+    asin: "B000RF62QY",
     category: "what-to-wear",
     name: "Men's pearl-snap western shirt",
     blurb:

@@ -134,7 +134,7 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
     query: "Ariat men's western boots",
     price: "$120-$250",
     why: "Avoid the $40 Halloween cowboy boots. You'll be standing for 4+ hours. Worth the upgrade.",
-    image: img("photo-1542840843-3349799cded6"),
+    image: img("photo-1610685756406-0f2fdc231bf0"),
     badge: "Built to last",
   },
   {
@@ -146,7 +146,7 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
     query: "men's pearl snap western shirt",
     price: "$25-$45",
     why: "Works for cowboy-aesthetic without trying too hard. Wrangler is the safe pick.",
-    image: img("photo-1602810316693-3667c854239a"),
+    image: img("photo-1769374090266-ae4e916abc75"),
     badge: "Crowd uniform",
   },
   {
@@ -158,8 +158,32 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
     query: "men's straw cowboy hat crushable",
     price: "$40-$80",
     why: "Resistol or Stetson via FlexOffers are the lifetime picks. The $20 versions look $20 and won't survive Stagecoach.",
-    image: img("photo-1521369909029-2afed882baee"),
+    image: img("photo-1626792625154-36f7e192df1e"),
     badge: "Festival lid",
+  },
+  {
+    slug: "mens-denim-jacket",
+    category: "what-to-wear",
+    name: "Men's classic denim trucker jacket",
+    blurb:
+      "Layers easily over a pearl-snap when the temp drops after sunset. Levi's, Wrangler, Lee — all under $80.",
+    query: "men's denim trucker jacket",
+    price: "$50-$90",
+    why: "Spring/fall amphitheatre shows get cold after sunset. A trucker jacket layers without bulking you up and pairs with everything else in this section.",
+    image: img("photo-1769374086235-2df32fa530d6"),
+    badge: "Layer up",
+  },
+  {
+    slug: "western-leather-belt",
+    category: "what-to-wear",
+    name: "Tooled leather belt with western buckle",
+    blurb:
+      "A real leather belt with a tooled western buckle. Finishes the look without trying too hard.",
+    query: "men's western leather belt tooled buckle",
+    price: "$35-$75",
+    why: "If you're already in boots and a snap, a cheap web belt looks off. A real leather western belt grounds the outfit.",
+    image: img("photo-1776951128893-5ca65057d63c"),
+    badge: "Finishing touch",
   },
 
   // FAN COLLECTION
@@ -247,7 +271,11 @@ export function getFeaturedProducts(): ShopProduct[] {
   return [
     SHOP_PRODUCTS.find((p) => p.slug === "mens-western-boots")!,
     SHOP_PRODUCTS.find((p) => p.slug === "pearl-snap-western-shirt")!,
-    SHOP_PRODUCTS.find((p) => p.slug === "high-fidelity-concert-earplugs")!,
     SHOP_PRODUCTS.find((p) => p.slug === "straw-cowboy-hat")!,
+    SHOP_PRODUCTS.find((p) => p.slug === "mens-denim-jacket")!,
+    SHOP_PRODUCTS.find((p) => p.slug === "high-fidelity-concert-earplugs")!,
+    SHOP_PRODUCTS.find((p) => p.slug === "portable-charger-10k")!,
+    SHOP_PRODUCTS.find((p) => p.slug === "western-leather-belt")!,
+    SHOP_PRODUCTS.find((p) => p.slug === "dandelion-vinyl")!,
   ];
 }

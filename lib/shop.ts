@@ -67,6 +67,7 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
   // CONCERT ESSENTIALS
   {
     slug: "high-fidelity-concert-earplugs",
+    asin: "B0D4DS4FC8",
     category: "concert-essentials",
     name: "High-fidelity concert earplugs",
     blurb:
@@ -79,6 +80,7 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
   },
   {
     slug: "clear-stadium-crossbody",
+    asin: "B0741GD3FS",
     category: "concert-essentials",
     name: "Clear stadium-approved crossbody",
     blurb:
@@ -91,6 +93,7 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
   },
   {
     slug: "portable-charger-10k",
+    asin: "B07H7M1Z1Z",
     category: "concert-essentials",
     name: "10,000 mAh portable charger",
     blurb:
@@ -103,6 +106,7 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
   },
   {
     slug: "insulated-water-bottle",
+    asin: "B01KXHIXSK",
     category: "concert-essentials",
     name: "Refillable insulated water bottle",
     blurb:
@@ -129,6 +133,7 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
   // WHAT TO WEAR
   {
     slug: "mens-western-boots",
+    asin: "B00XB0HR1G",
     category: "what-to-wear",
     name: "Men's western boots that don't kill your feet",
     blurb:
@@ -142,6 +147,7 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
   },
   {
     slug: "pearl-snap-western-shirt",
+    asin: "B00S5H4WOU",
     category: "what-to-wear",
     name: "Men's pearl-snap western shirt",
     blurb:
@@ -155,6 +161,7 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
   },
   {
     slug: "straw-cowboy-hat",
+    asin: "B09824V8BS",
     category: "what-to-wear",
     name: "Men's lightweight straw cowboy hat",
     blurb:
@@ -168,6 +175,7 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
   },
   {
     slug: "mens-denim-jacket",
+    asin: "B07C2QKFSK",
     category: "what-to-wear",
     name: "Men's classic denim trucker jacket",
     blurb:
@@ -196,6 +204,7 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
   // FAN COLLECTION
   {
     slug: "dandelion-vinyl",
+    asin: "B0GK933R83",
     category: "fan-collection",
     name: "Dandelion (vinyl)",
     blurb:
@@ -209,6 +218,7 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
   },
   {
     slug: "hungover-vinyl",
+    asin: "B0GKVFYQGW",
     category: "fan-collection",
     name: "Hungover (debut album, vinyl)",
     blurb:

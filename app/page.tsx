@@ -16,9 +16,9 @@ const HERO_IMAGE =
 // Backdrop imagery for Dandelion song cards — country/concert-themed Unsplash photos.
 // Cycled through so each song card on the homepage gets a distinct visual.
 const DANDELION_CARD_IMAGES = [
-  "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&q=80&auto=format&fit=crop", // concert lights
-  "https://images.unsplash.com/photo-1518609571773-39b7d303a87b?w=600&q=80&auto=format&fit=crop", // microphone / stage
-  "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600&q=80&auto=format&fit=crop", // country road
+  "https://images.unsplash.com/photo-1544954412-78da2cfa1a0c?w=600&q=80&auto=format&fit=crop", // white dandelion
+  "https://images.unsplash.com/photo-1550927049-d07581451e3c?w=600&q=80&auto=format&fit=crop", // dandelion at golden hour
+  "https://images.unsplash.com/photo-1735931802315-c69b1b12f413?w=600&q=80&auto=format&fit=crop", // dandelions blowing in wind
 ];
 
 export default function HomePage() {

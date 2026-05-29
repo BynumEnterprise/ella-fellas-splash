@@ -106,7 +106,7 @@ export default function HomePage() {
                 </div>
               </div>
               <Link
-                href={`/tour/${nextShow.slug}`}
+                href={`/tour/${nextShow.id}`}
                 className="inline-flex items-center gap-2 px-5 py-2.5 bg-denim text-paper font-display tracking-wide text-sm rounded-md hover:bg-denim/90"
               >
                 <Ticket className="w-4 h-4" />

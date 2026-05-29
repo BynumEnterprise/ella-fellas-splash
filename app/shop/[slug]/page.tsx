@@ -68,6 +68,20 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
             </span>
           )}
         </div>
+          {product.gallery && product.gallery.length > 0 && (
+            <div className="grid grid-cols-3 gap-2 mt-3">
+              {product.gallery.map((src, i) => (
+                /* eslint-disable-next-line @next/next/no-img-element */
+                <img
+                  key={i}
+                  src={src}
+                  alt={`${product.name} ${i + 2}`}
+                  loading="lazy"
+                  className="aspect-square w-full object-cover rounded-md border border-ink/10"
+                />
+              ))}
+            </div>
+          )}
 
         {/* Detail */}
         <div className="flex flex-col">

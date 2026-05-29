@@ -2,9 +2,12 @@
  * Single source of truth for the shop catalog.
  * Used by /shop (index), /shop/[slug] (detail), and the homepage gear section.
  *
- * `slug` is the URL fragment for the product detail page (/shop/{slug}).
- * `image` is a curated Unsplash CDN ID. `query` is the Amazon search fallback
- * if no ASIN is set.
+ * Each product carries:
+ *   - asin: the Amazon product ID (drives the affiliate link)
+ *   - image / gallery: real Amazon product CDN images (m.media-amazon.com)
+ *   - amazonTitle: the actual Amazon listing title (for trust + SEO)
+ *   - rating / reviewCount: social-proof signals on the detail page
+ *   - blurb / why: our editorial voice — why a fella should buy this
  */
 
 export interface ShopProduct {
@@ -15,12 +18,18 @@ export interface ShopProduct {
   asin?: string;
   price?: string;
   why: string;
-  /** Real product photo URL — Unsplash CDN, stable IDs. */
+  /** Hero image — real Amazon CDN product photo. */
   image: string;
   /** Short hashtag-style category badge shown over the image. */
   badge?: string;
-  /** Optional extra images shown on the product detail page. */
+  /** Additional Amazon product photos for the gallery thumbnails. */
   gallery?: string[];
+  /** The actual Amazon listing title (for trust signal + SEO). */
+  amazonTitle?: string;
+  /** Star rating from Amazon (0-5). Drives the rating badge on detail page. */
+  rating?: number;
+  /** Total Amazon review count. Drives the social-proof callout. */
+  reviewCount?: number;
   /** Which category section this belongs to on the /shop index. */
   category: ShopCategorySlug;
 }
@@ -60,22 +69,28 @@ export const SHOP_CATEGORIES: ShopCategory[] = [
   },
 ];
 
-const img = (id: string) =>
-  `https://images.unsplash.com/${id}?w=900&q=80&auto=format&fit=crop`;
-
 export const SHOP_PRODUCTS: ShopProduct[] = [
   // CONCERT ESSENTIALS
   {
     slug: "high-fidelity-concert-earplugs",
     asin: "B0D4DS4FC8",
     category: "concert-essentials",
-    name: "High-fidelity concert earplugs",
+    name: "Loop Experience 2 Plus concert earplugs",
+    amazonTitle: "Loop Experience 2 Plus Ear Plugs — Stylish Certified Hearing Protection for Concerts & Festivals",
     blurb:
       "Lowers volume without muffling vocals. You'll hear every word of 'Choosin' Texas' and not leave with your ears ringing.",
-    query: "concert earplugs high fidelity",
-    price: "$25-$35",
-    why: "If you're going to multiple stadium dates this summer, the difference between cheap foam and real filtered earplugs is night and day. Loop Experience is the popular pick but the off-brand versions on Amazon work fine.",
-    image: img("photo-1583394838336-acd977736f90"),
+    query: "Loop Experience 2 Plus earplugs",
+    price: "$44.95",
+    rating: 4.6,
+    reviewCount: 3828,
+    why: "The viral pick for concert ear protection. 17dB reduction, swap-in Mute plugs for openers, and they actually look like jewelry — not foam plugs.",
+    image: "https://m.media-amazon.com/images/I/518YIjNoXML._AC_SL1200_.jpg",
+    gallery: [
+      "https://m.media-amazon.com/images/I/31er3TzLYHL._AC_SL1200_.jpg",
+      "https://m.media-amazon.com/images/I/51-c9l1rdUL._AC_SL1200_.jpg",
+      "https://m.media-amazon.com/images/I/31y7xy9CA2L._AC_SL1200_.jpg",
+      "https://m.media-amazon.com/images/I/41AtwqvC1XL._AC_SL1200_.jpg",
+    ],
     badge: "Ear protection",
   },
   {
@@ -83,50 +98,82 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
     asin: "B0741GD3FS",
     category: "concert-essentials",
     name: "Clear stadium-approved crossbody",
+    amazonTitle: "Clear Stadium Bag with Denim Trim — NFL NCAA PGA NASCAR Approved Crossbody",
     blurb:
       "Most stadiums on Morgan Wallen's tour now enforce clear-bag policy. Get a stadium-approved one before you go.",
-    query: "clear stadium crossbody bag NFL approved men",
-    price: "$15-$25",
+    query: "clear stadium crossbody bag NFL approved",
+    price: "$9.98",
+    rating: 4.4,
+    reviewCount: 216,
     why: "Soldier Field, Gillette, Acrisure, Lincoln Financial — all clear-bag stadiums. Cheaper to buy ahead than panic-buy at the gate.",
-    image: img("photo-1553062407-98eeb64c6a62"),
+    image: "https://m.media-amazon.com/images/I/81BE47zzrFL._AC_SL1500_.jpg",
+    gallery: [
+      "https://m.media-amazon.com/images/I/51LROduCaDL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/51-hBJKyGAL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/61y-ZZW8omL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/5138pMRlqqL._AC_SL1500_.jpg",
+    ],
     badge: "Stadium-ready",
   },
   {
     slug: "portable-charger-10k",
     asin: "B07H7M1Z1Z",
     category: "concert-essentials",
-    name: "10,000 mAh portable charger",
+    name: "Anker PowerCore 10,000 mAh charger",
+    amazonTitle: "Anker PowerCore 10000 Portable Charger — Ultra-Compact Power Bank",
     blurb:
       "Doors open at 5:30 and you won't be home until midnight. Phones die fast at outdoor shows.",
-    query: "anker portable charger 10000mAh",
-    price: "$20-$30",
+    query: "Anker PowerCore 10000",
+    price: "$21.99",
+    rating: 4.6,
+    reviewCount: 2133,
     why: "Anker is the trusted brand. 10K mAh is two full phone charges — enough for openers, headliner, and the rideshare home.",
-    image: img("photo-1609692814858-f7cd2f0afa4f"),
+    image: "https://m.media-amazon.com/images/I/51rmIu8bVtL._AC_SL1500_.jpg",
+    gallery: ["https://m.media-amazon.com/images/I/31oPNx4TpOL._AC_SL1500_.jpg"],
     badge: "Stay charged",
   },
   {
     slug: "insulated-water-bottle",
     asin: "B01KXHIXSK",
     category: "concert-essentials",
-    name: "Refillable insulated water bottle",
+    name: "Hydro Flask 24oz water bottle",
+    amazonTitle: "Hydro Flask Water Bottle — Insulated Stainless Steel — 24oz Black",
     blurb:
       "Most venues let you bring an empty one in. Summer shows = expensive arena water unless you bring your own.",
-    query: "Hydro Flask 24oz water bottle",
-    price: "$25-$45",
+    query: "Hydro Flask 24oz black",
+    price: "$19.98",
+    rating: 4.8,
+    reviewCount: 10285,
     why: "Empty bottles pass security. $5 stadium water adds up fast across a tour.",
-    image: img("photo-1602143407151-7111542de6e8"),
+    image: "https://m.media-amazon.com/images/I/61v5ydIs6LL._AC_SL1500_.jpg",
+    gallery: [
+      "https://m.media-amazon.com/images/I/21lyHq8MYVL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/51hlKt+fbUL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/31EdAyqWxFL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/61V0OAg3s-L._AC_SL1500_.jpg",
+    ],
     badge: "Hydrate",
   },
   {
     slug: "rain-poncho",
+    asin: "B076ZHMR3S",
     category: "concert-essentials",
-    name: "Lightweight rain poncho",
+    name: "Disposable rain ponchos (5-pack)",
+    amazonTitle: "Hagon PRO Disposable Rain Ponchos for Adults (5 Pack)",
     blurb:
-      "Half the Dandelion Tour dates are amphitheatres and outdoor. One rain delay justifies the $8.",
-    query: "disposable rain poncho 4 pack",
-    price: "$8-$15",
-    why: "Estero, OKC, Cary, Salem — all outdoor venues. Better to have one and not need it.",
-    image: img("photo-1519345182560-3f2917c472ef"),
+      "Half the Dandelion Tour dates are amphitheatres and outdoor. One rain delay justifies the $10.",
+    query: "Hagon rain poncho 5 pack",
+    price: "$9.99",
+    rating: 4.5,
+    reviewCount: 17962,
+    why: "Estero, OKC, Cary, Salem — all outdoor venues. 5 in a pack covers the crew. Better to have one and not need it.",
+    image: "https://m.media-amazon.com/images/I/51Y8sl82ozL._AC_SL1500_.jpg",
+    gallery: [
+      "https://m.media-amazon.com/images/I/410-FvgdSeL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/51mHH7HFrpL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/51Gx0dfx2IL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/41lk+eFxgWL._AC_SL1500_.jpg",
+    ],
     badge: "Weather-ready",
   },
 
@@ -135,69 +182,107 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
     slug: "mens-western-boots",
     asin: "B00XB0HR1G",
     category: "what-to-wear",
-    name: "Men's western boots that don't kill your feet",
+    name: "Ariat Heritage Roughstock western boot",
+    amazonTitle: "Ariat Men's Heritage Roughstock Western Cowboy Boot",
     blurb:
-      "Real-life boots from brands that ship via Amazon — Ariat, Justin, Dan Post. Break them in first.",
-    query: "Ariat men's western boots",
-    price: "$120-$250",
-    why: "Avoid the $40 Halloween cowboy boots. You'll be standing for 4+ hours. Worth the upgrade.",
-    image: img("photo-1610685756406-0f2fdc231bf0"),
-    gallery: [img("photo-1553385363-6d4790dbd976"), img("photo-1635779503036-27cbbdcdbbd1"), img("photo-1626876853852-0b4caaf60dfc")],
+      "Real-deal cowboy boots from the brand that ranchers and rodeo riders actually wear. Break them in for a week first.",
+    query: "Ariat Heritage Roughstock",
+    price: "$169.95",
+    why: "Avoid the $40 Halloween cowboy boots. You'll be standing for 4+ hours. Worth the upgrade — Ariat's ATS footbed is the only thing that gets you through three encores without your arches screaming.",
+    image: "https://m.media-amazon.com/images/I/81nW2mG9VyL._AC_SL1500_.jpg",
+    gallery: [
+      "https://m.media-amazon.com/images/I/41k8-X4KlcL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/519fHy2okDL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/41VkbZ477LL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/51IF6DNgaNL._AC_SL1500_.jpg",
+    ],
     badge: "Built to last",
   },
   {
     slug: "pearl-snap-western-shirt",
     asin: "B000RF62QY",
     category: "what-to-wear",
-    name: "Men's pearl-snap western shirt",
+    name: "Wrangler Cowboy Cut pearl-snap shirt",
+    amazonTitle: "Wrangler Men's Cowboy Cut Western Long Sleeve Snap Work Shirt",
     blurb:
-      "The unofficial Ella crowd uniform. Looks right, costs $25, fits in any venue.",
-    query: "men's pearl snap western shirt",
-    price: "$25-$45",
-    why: "Works for cowboy-aesthetic without trying too hard. Wrangler is the safe pick.",
-    image: img("photo-1769374090266-ae4e916abc75"),
-    gallery: [img("photo-1601870862178-601c9fd36757"), img("photo-1601870862208-6b96841fa1a6"), img("photo-1769374086235-2df32fa530d6")],
+      "The unofficial Ella crowd uniform. Looks right, costs less than $40, fits in any venue.",
+    query: "Wrangler Cowboy Cut snap shirt",
+    price: "$29.50",
+    rating: 4.4,
+    reviewCount: 14977,
+    why: "Wrangler's Cowboy Cut has been the rodeo-and-honky-tonk shirt for 50+ years. Pearl snaps so you can rip it open in the heat. Fits tapered if you're built, boxy if you're not.",
+    image: "https://m.media-amazon.com/images/I/81xhXwkgDSL._AC_SL1500_.jpg",
+    gallery: [
+      "https://m.media-amazon.com/images/I/41LoYuGa4RL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/41IQ6vdyGqL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/31a+LGZ-vML._AC_SL1500_.jpg",
+    ],
     badge: "Crowd uniform",
   },
   {
     slug: "straw-cowboy-hat",
     asin: "B09824V8BS",
     category: "what-to-wear",
-    name: "Men's lightweight straw cowboy hat",
+    name: "Resistol Denison 7X straw cowboy hat",
+    amazonTitle: "RESISTOL Denison 7X Bangora Straw Cowboy Hat",
     blurb:
-      "Don't buy this for one show. But if you're doing the festival circuit, a good crushable straw lid is worth it.",
-    query: "men's straw cowboy hat crushable",
-    price: "$40-$80",
-    why: "Resistol or Stetson via FlexOffers are the lifetime picks. The $20 versions look $20 and won't survive Stagecoach.",
-    image: img("photo-1626792625154-36f7e192df1e"),
-    gallery: [img("photo-1521369909029-2afed882baee"), img("photo-1649639763329-dccbd16fbf4d")],
+      "Don't buy this for one show. But if you're doing the festival circuit, a real Resistol is the buy-once-cry-once move.",
+    query: "Resistol Denison straw cowboy hat",
+    price: "$89.95",
+    rating: 4.2,
+    reviewCount: 421,
+    why: "Resistol made hats for John Wayne, George Strait, and half of Nashville. The 7X Bangora straw is what real cowboys wear — vented, packable, holds shape after a sweaty stadium summer.",
+    image: "https://m.media-amazon.com/images/I/517b4M0eV5L._AC_SL1500_.jpg",
+    gallery: [
+      "https://m.media-amazon.com/images/I/21fFIwg-RsL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/41wACHoFthL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/21bGSW-8jVL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/31dlIykgkOL._AC_SL1500_.jpg",
+    ],
     badge: "Festival lid",
   },
   {
     slug: "mens-denim-jacket",
-    asin: "B07C2QKFSK",
+    asin: "B077TDS2G6",
     category: "what-to-wear",
-    name: "Men's classic denim trucker jacket",
+    name: "Levi's Original Trucker denim jacket",
+    amazonTitle: "Levi's Men's Trucker Jacket",
     blurb:
-      "Layers easily over a pearl-snap when the temp drops after sunset. Levi's, Wrangler, Lee — all under $80.",
-    query: "men's denim trucker jacket",
-    price: "$50-$90",
-    why: "Spring/fall amphitheatre shows get cold after sunset. A trucker jacket layers without bulking you up and pairs with everything else in this section.",
-    image: img("photo-1769374086235-2df32fa530d6"),
-    gallery: [img("photo-1601870862178-601c9fd36757"), img("photo-1601870862208-6b96841fa1a6")],
+      "Layers easily over a pearl-snap when the temp drops after sunset. The single most-photographed jacket in country music.",
+    query: "Levi's Trucker Jacket",
+    price: "$78.99",
+    rating: 4.6,
+    reviewCount: 21119,
+    why: "Spring and fall amphitheatre shows get cold after sunset. The Trucker layers without bulking you up, breaks in better the longer you own it, and pairs with everything else in this whole section.",
+    image: "https://m.media-amazon.com/images/I/61H9t3DXhZL._AC_SL1500_.jpg",
+    gallery: [
+      "https://m.media-amazon.com/images/I/41rZ0y9-UlL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/41ovybVNYIL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/41VvZDCOsGL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/41hf0NJK6xL._AC_SL1500_.jpg",
+    ],
     badge: "Layer up",
   },
   {
     slug: "western-leather-belt",
+    asin: "B09NZG637M",
     category: "what-to-wear",
-    name: "Tooled leather belt with western buckle",
+    name: "CHAOREN western leather belt",
+    amazonTitle: "CHAOREN Western Belts for Men — Cowboy Belt 1.5\" Full Grain Leather",
     blurb:
-      "A real leather belt with a tooled western buckle. Finishes the look without trying too hard.",
-    query: "men's western leather belt tooled buckle",
-    price: "$35-$75",
-    why: "If you're already in boots and a snap, a cheap web belt looks off. A real leather western belt grounds the outfit.",
-    image: img("photo-1776951128893-5ca65057d63c"),
-    gallery: [img("photo-1758400309485-85ba077c8812")],
+      "Full-grain leather, classic western width. Finishes the boots-and-snap look without trying too hard.",
+    query: "CHAOREN western leather belt",
+    price: "$28.99",
+    rating: 4.5,
+    reviewCount: 2958,
+    why: "Real full-grain leather (not bonded) at a price that doesn't sting. Comes with two buckle options so it pairs whether you're going dressed-up or pasture-honest.",
+    image: "https://m.media-amazon.com/images/I/817fmpxjsHL._AC_SL1500_.jpg",
+    gallery: [
+      "https://m.media-amazon.com/images/I/41nuDgXLJlL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/51xOS5vWsNL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/41dklzhSQzL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/41nLlDFuEvL._AC_SL1500_.jpg",
+    ],
     badge: "Finishing touch",
   },
 
@@ -206,65 +291,92 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
     slug: "dandelion-vinyl",
     asin: "B0GK933R83",
     category: "fan-collection",
-    name: "Dandelion (vinyl)",
+    name: "Dandelion (Ella Langley, vinyl)",
+    amazonTitle: "Dandelion — Ella Langley",
     blurb:
-      "Ella's second album, the one that broke her to the mainstream. Pressed by Columbia, widely available on Amazon and at indie record stores.",
+      "Ella's second album, the one that broke her to the mainstream. Pressed by Columbia, widely available on Amazon.",
     query: "Ella Langley Dandelion vinyl",
-    price: "$28-$35",
-    why: "Look for the colored variants. The standard black is fine but the limited indie-store colors will hold value.",
-    image: img("photo-1539375665275-f9de415ef9ac"),
-    gallery: [img("photo-1483412033650-1015ddeb83d1"), img("photo-1544954412-78da2cfa1a0c")],
+    price: "$29.74",
+    rating: 4.7,
+    reviewCount: 230,
+    why: "The album that made her a household name. Look for the colored variants — standard black is fine but the limited indie-store pressings will hold value if you keep them sealed.",
+    image: "https://m.media-amazon.com/images/I/81d4noTXq6L._AC_SL1500_.jpg",
+    gallery: ["https://m.media-amazon.com/images/I/41gOSO2-NaL._AC_SL1500_.jpg"],
     badge: "LP / 2026",
   },
   {
     slug: "hungover-vinyl",
     asin: "B0GKVFYQGW",
     category: "fan-collection",
-    name: "Hungover (debut album, vinyl)",
+    name: "Hungover (Ella Langley debut, plum vinyl)",
+    amazonTitle: "hungover — Plum Colored Vinyl — Ella Langley",
     blurb:
-      "Her 2024 debut. Less polished, more honest. 'You Look Like You Love Me' lives here.",
+      "Her 2024 debut, on a limited plum-colored pressing. Less polished, more honest. 'You Look Like You Love Me' lives here.",
     query: "Ella Langley Hungover vinyl",
-    price: "$24-$30",
-    why: "Best entry point if you're starting the collection. Includes the song she sings with Riley Green that made the whole world pay attention.",
-    image: img("photo-1483412033650-1015ddeb83d1"),
+    price: "$69.74",
+    rating: 5.0,
+    reviewCount: 5,
+    why: "Best entry point if you're starting the collection. Includes the duet with Riley Green that made the whole world pay attention. The plum-color pressing is the collector's pick.",
+    image: "https://m.media-amazon.com/images/I/51vBSH5TdDL._AC_SL1500_.jpg",
+    gallery: ["https://m.media-amazon.com/images/I/412II358HJL._AC_SL1500_.jpg"],
     badge: "LP / 2024",
   },
   {
     slug: "country-music-tees",
     category: "fan-collection",
-    name: "Country Now / Whiskey Riff men's tees",
+    name: "Country / Nashville graphic tees",
     blurb:
-      "Country-blog tees are a vibe. Cheaper than band merch and you'll get nods from other fans in line.",
-    query: "Whiskey Riff country music men's t-shirt",
-    price: "$22-$30",
-    why: "Pairs well with denim and a Stetson. Less try-hard than an actual artist tee.",
-    image: img("photo-1521572163474-6864f9cf17ab"),
+      "Vintage-style country graphic tees — Nashville, Tennessee, classic country lettering. Browse the Amazon picks.",
+    query: "vintage country music graphic tee mens",
+    price: "$18-$30",
+    why: "Pairs well with denim and a Stetson. Less try-hard than an artist tee, and you'll get nods from other fans in line. We link to the curated search — pick whichever city or motto fits.",
+    image: "https://m.media-amazon.com/images/I/61H9t3DXhZL._AC_SL1500_.jpg",
     badge: "Apparel",
   },
 
   // TRAVEL PREP
   {
     slug: "underseat-duffel",
+    asin: "B0D7BS89HH",
     category: "travel-prep",
-    name: "Underseat duffel (45L)",
+    name: "STOVER convertible carry-on duffel",
+    amazonTitle: "STOVER Garment Travel Duffle Bag — 2-in-1 Convertible Carry-on",
     blurb:
-      "Fits boots + outfit changes + chargers and still goes under the seat on Southwest and Delta.",
-    query: "men's underseat carry on duffel bag 45L",
-    price: "$35-$70",
-    why: "Skip the checked bag for a 1-night turnaround. Faster off the plane, no bag-fee.",
-    image: img("photo-1581605405669-fcdf81165afa"),
+      "Fits boots + outfit changes + chargers + a hanging suit. Goes under the seat on Southwest and Delta.",
+    query: "STOVER garment travel duffel carry-on",
+    price: "$69.99",
+    rating: 4.0,
+    reviewCount: 235,
+    why: "Skip the checked bag. Hanging suit compartment means your snap shirt arrives wrinkle-free, and the standard duffel layout still fits boots and a charger pouch. Faster off the plane, no bag fee.",
+    image: "https://m.media-amazon.com/images/I/71rpMjCpw9L._AC_SL1500_.jpg",
+    gallery: [
+      "https://m.media-amazon.com/images/I/41WY1uIzYvL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/41FGBozvknL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/41Fkrk3yypL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/41t+yjO86OL._AC_SL1500_.jpg",
+    ],
     badge: "Carry-on",
   },
   {
     slug: "dopp-kit",
+    asin: "B073558TLB",
     category: "travel-prep",
-    name: "Dopp kit / toiletry organizer",
+    name: "Aaron Leather vintage dopp kit",
+    amazonTitle: "Aaron Leather Goods Premium Vintage Leather Dopp Kit",
     blurb:
-      "Keeps your razor, deodorant, and chargers from rattling around in the duffel.",
-    query: "men's leather dopp kit toiletry bag",
-    price: "$15-$30",
-    why: "If you're driving to Stagecoach or hopping to a stadium date, a solid dopp kit saves the carry-on chaos.",
-    image: img("photo-1535632787350-4e68ef0ac584"),
+      "Real leather, waterproof lining, fits a razor, deodorant, cologne, and your chargers without bulging.",
+    query: "Aaron Leather Goods dopp kit",
+    price: "$39.99",
+    rating: 4.7,
+    reviewCount: 5678,
+    why: "If you're driving to Stagecoach or hopping to a stadium date, a solid dopp kit saves the carry-on chaos. The waterproof lining means a leaked-cologne bottle doesn't ruin everything.",
+    image: "https://m.media-amazon.com/images/I/81EfjG8aXzL._AC_SL1500_.jpg",
+    gallery: [
+      "https://m.media-amazon.com/images/I/41QRN-H6qSL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/41OGOUgqClL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/41ETym18y1L._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/41V-T51zqzL._AC_SL1500_.jpg",
+    ],
     badge: "Organize",
   },
 ];
@@ -283,7 +395,7 @@ export function getProductsByCategory(category: ShopCategorySlug): ShopProduct[]
 
 /**
  * Pick a handful of featured products to show on the homepage.
- * Currently: 2 "what-to-wear" + 2 "concert-essentials" so a homepage visitor sees both clothes and gear.
+ * Mix of what-to-wear, concert-essentials, fan-collection so a homepage visitor sees variety.
  */
 export function getFeaturedProducts(): ShopProduct[] {
   return [

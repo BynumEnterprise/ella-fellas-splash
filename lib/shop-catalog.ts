@@ -578,7 +578,7 @@ export const EXTENDED_CATALOG: ShopProduct[] = [
   c({
     slug: "ww-thorogood-mocs",
     asin: "B003O9W8WW",
-    amazonTitle: "Thorogood American Heritage 6" Moc Toe Work Boots",
+    amazonTitle: "Thorogood American Heritage 6\" Moc Toe Work Boots",
     category: "what-to-wear",
     name: "Thorogood American Heritage mocs",
     blurb:
@@ -840,7 +840,7 @@ export const EXTENDED_CATALOG: ShopProduct[] = [
   c({
     slug: "fc-vinyl-record-frame",
     asin: "B000C1YV8Y",
-    amazonTitle: "Art Vinyl Play & Display 12" Record Frame (3-pack)",
+    amazonTitle: "Art Vinyl Play & Display 12\" Record Frame (3-pack)",
     category: "fan-collection",
     name: "12-inch vinyl LP display frame (set of 3)",
     blurb:
@@ -1677,7 +1677,7 @@ export const EXTENDED_CATALOG: ShopProduct[] = [
   c({
     slug: "hr-antler-chandelier",
     asin: "B07RKL8QKH",
-    amazonTitle: "JONATHAN Y 30" 5-Light Resin Faux Antler Chandelier",
+    amazonTitle: "JONATHAN Y 30\" 5-Light Resin Faux Antler Chandelier",
     category: "home-and-ranch",
     name: "Faux antler chandelier (5-bulb)",
     blurb:
@@ -1741,7 +1741,7 @@ export const EXTENDED_CATALOG: ShopProduct[] = [
   c({
     slug: "hr-deer-mount-faux",
     asin: "B09XK4KTZZ",
-    amazonTitle: "Keygift 20" Faux Resin Buck Wall Mount",
+    amazonTitle: "Keygift 20\" Faux Resin Buck Wall Mount",
     category: "home-and-ranch",
     name: "Faux 10-point buck mount (resin)",
     blurb:
@@ -1757,7 +1757,7 @@ export const EXTENDED_CATALOG: ShopProduct[] = [
   c({
     slug: "hr-saddle-bookend",
     asin: "B071VLB9MD",
-    amazonTitle: "Comfy Hour 7" Rust Brown Horse Figurine Bookends",
+    amazonTitle: "Comfy Hour 7\" Rust Brown Horse Figurine Bookends",
     category: "home-and-ranch",
     name: "Cast iron horse-saddle bookends (pair)",
     blurb:
@@ -2129,7 +2129,7 @@ export const EXTENDED_CATALOG: ShopProduct[] = [
   c({
     slug: "to-bbq-grill-portable",
     asin: "B0FQFPY63B",
-    amazonTitle: "Weber Smokey Joe 14" Portable Charcoal Grill",
+    amazonTitle: "Weber Smokey Joe 14\" Portable Charcoal Grill",
     category: "tailgate-and-outdoors",
     name: "Weber Smokey Joe portable charcoal grill",
     blurb:
@@ -2177,7 +2177,7 @@ export const EXTENDED_CATALOG: ShopProduct[] = [
   c({
     slug: "to-solo-stove-bonfire",
     asin: "B0B7B7R8HL",
-    amazonTitle: "Solo Stove Bonfire 19.5" Smokeless Fire Pit",
+    amazonTitle: "Solo Stove Bonfire 19.5\" Smokeless Fire Pit",
     category: "tailgate-and-outdoors",
     name: "Solo Stove Bonfire 2.0 fire pit",
     blurb:

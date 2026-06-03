@@ -12,24 +12,21 @@ import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
 import { TableOfContents, extractTocItems } from "@/components/TableOfContents";
 import { formatDate } from "@/lib/utils";
 
-const MDX_OPTIONS = {
-  mdxOptions: {
-    rehypePlugins: [
-      rehypeSlug,
-      [
-        rehypeAutolinkHeadings,
-        {
-          behavior: "wrap" as const,
-          properties: {
-            className: ["anchor"],
-            ariaHidden: true,
-            tabIndex: -1,
-          },
-        },
-      ],
-    ],
-  },
-};
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const REHYPE_PLUGINS: any[] = [
+  rehypeSlug,
+  [
+    rehypeAutolinkHeadings,
+    {
+      behavior: "wrap",
+      properties: {
+        className: ["anchor"],
+        ariaHidden: true,
+        tabIndex: -1,
+      },
+    },
+  ],
+];
 
 export async function generateStaticParams() {
   return getAllGuideContent().map((g) => ({ slug: g.slug }));
@@ -97,7 +94,10 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
       <TableOfContents items={tocItems} />
 
       <div className="prose-content">
-        <MDXRemote source={item.body} options={MDX_OPTIONS} />
+        <MDXRemote
+          source={item.body}
+          options={{ mdxOptions: { rehypePlugins: REHYPE_PLUGINS } }}
+        />
       </div>
 
       {item.frontmatter.faq && item.frontmatter.faq.length > 0 && (

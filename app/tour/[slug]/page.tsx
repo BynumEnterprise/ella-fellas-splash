@@ -7,6 +7,7 @@ import { AffiliateLink } from "@/components/AffiliateLink";
 import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
 import { ConcertGearWidget } from "@/components/ConcertGearWidget";
 import { MusicEventSchema } from "@/components/schema/MusicEventSchema";
+import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 import { ticketUrl, hotelUrl } from "@/lib/affiliates";
 import { eventQuery, formatDate, formatTime } from "@/lib/utils";
 
@@ -31,6 +32,10 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
 
   const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
   const pageUrl = `${SITE_URL}/tour/${d.id}`;
+  const breadcrumbItems = [
+    { name: "Tour", url: `${SITE_URL}/tour` },
+    { name: `${d.city}, ${d.state}`, url: pageUrl },
+  ];
   // ONE query for ALL providers: artist + city. This is the only pattern that
   // returns real results across SeatGeek, TickPick, and Vivid consistently.
   // Venue-only searches return empty pages on TickPick & Vivid.
@@ -52,6 +57,8 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
   return (
     <article className="mx-auto max-w-3xl px-4 py-10">
       <MusicEventSchema d={d} url={pageUrl} />
+
+      <BreadcrumbSchema items={breadcrumbItems} />
 
       {/* Breadcrumb */}
       <nav className="text-xs text-ink/60 mb-4">

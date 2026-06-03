@@ -3,7 +3,7 @@ title: "What to Wear to an Ella Langley Concert"
 slug: "what-to-wear-to-an-ella-langley-concert"
 category: "concert-prep"
 publishedAt: "2026-05-01"
-updatedAt: "2026-05-28"
+updatedAt: "2026-06-03"
 excerpt: "An honest guide for the guys who got tickets and now have one question: do I need to buy a cowboy hat? (No. Mostly.)"
 ---
 
@@ -57,6 +57,10 @@ The split tells you something important: you can dress all the way up or all the
 **Hat.** Here's where guys mess up. Don't buy a hat *for* the concert. If you don't already own a hat, wear nothing. A new hat at a country concert reads as a costume, and country crowds clock it instantly. The exception: if you've worn hats for years and just don't have one with you, grab a Stetson Open Road or a Resistol in straw or felt depending on weather.
 
 **Jacket.** Most arenas are 60-65&deg;F during openers and 75&deg;F during the headliner once the room is packed. A light denim or canvas jacket lets you take it off without it being weird. Coat check is usually $5-10.
+
+## Where to get the real thing
+
+If you've decided you're going full western &mdash; boots, hat, pearl snap, the works &mdash; we'd point you toward <a href="https://www.kqzyfj.com/click-101760569-15736262" target="_blank" rel="nofollow sponsored">Pinto Ranch</a> for the premium end of that shopping trip. They carry the kind of boots and hats that are actually built to last, not the costume-shop version, and their pearl-snap selection is legitimately good. Budget picks from Amazon still work fine for a first show; Pinto Ranch is where you go when you've been to enough shows that you want the real thing.
 
 ## What not to wear
 

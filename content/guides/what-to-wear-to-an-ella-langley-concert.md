@@ -5,6 +5,15 @@ category: "concert-prep"
 publishedAt: "2026-05-01"
 updatedAt: "2026-05-22"
 excerpt: "An honest guide for the guys who got tickets and now have one question: do I need to buy a cowboy hat? (No. Mostly.)"
+faq:
+  - q: "Do I need to buy a cowboy hat for an Ella Langley concert?"
+    a: "No. If you do not already own a hat, wear nothing on your head. A brand-new hat at a country concert reads as a costume, and country crowds notice instantly. The exception is if you wear hats regularly and simply do not have one with you."
+  - q: "Do I have to wear cowboy boots?"
+    a: "No. Boots are welcome but not required, and the crowd is mixed. If you own a pair, wear them; sneakers are completely fine too. The only firm rule is closed-toe shoes you can stand in for four hours, since open-toe shoes get stepped on."
+  - q: "What is the safe default outfit for guys?"
+    a: "Dark-to-medium wash jeans, a fitted solid tee or a pearl-snap western shirt, and boots or clean sneakers. Add a light denim or canvas jacket since arenas run cool during openers and warm by the headliner. Aim to look like yourself, slightly cleaned up."
+  - q: "What should I avoid wearing?"
+    a: "Skip anything with the word country as a graphic, cargo shorts, open-toe shoes, and a brand-new shiny everything outfit. Avoid aviator sunglasses indoors. The goal is looking like a real fan who showed up to enjoy the show, not someone in a costume."
 ---
 
 Here's the thing: nobody's grading your outfit at the door. You can show up in a hoodie and jeans and have a great time. But you asked, so here's the actual lay of the land at an Ella Langley show in 2026, based on going to a few of them and watching the crowd.

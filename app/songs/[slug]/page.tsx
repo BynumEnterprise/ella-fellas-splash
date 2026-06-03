@@ -17,6 +17,7 @@ import { getAllSongs, getSong } from "@/lib/data";
 import { SpotifyEmbed } from "@/components/SpotifyEmbed";
 import { YouTubeEmbed } from "@/components/YouTubeEmbed";
 import type { Song } from "@/lib/types";
+import { MusicRecordingSchema } from "@/components/schema/MusicRecordingSchema";
 
 export async function generateStaticParams() {
   return getAllSongs().map((s) => ({ slug: s.slug }));
@@ -68,11 +69,15 @@ export default async function SongPage({ params }: { params: Promise<{ slug: str
 
   const all = getAllSongs();
   const related = pickRelated(s, all);
+  const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
+  const songUrl = `${SITE_URL}/songs/${s.slug}`;
   const art = albumArt(s.albumSlug);
   const aboutParagraphs = s.about ? paragraphs(s.about) : [];
 
   return (
     <article className="mx-auto max-w-5xl px-4 py-10">
+      <MusicRecordingSchema s={s} url={songUrl} />
+
       <nav className="text-xs text-ink/60 mb-6">
         <Link href="/songs" className="hover:text-primary">
           &larr; All songs

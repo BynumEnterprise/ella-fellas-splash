@@ -5,6 +5,7 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import { getAllGuideContent, getGuideBySlug } from "@/lib/content";
 import { ArticleSchema } from "@/components/schema/ArticleSchema";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
+import { FaqSchema } from "@/components/schema/FaqSchema";
 import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
 import { formatDate } from "@/lib/utils";
 
@@ -48,6 +49,10 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
 
       <BreadcrumbSchema items={breadcrumbItems} />
 
+      {item.frontmatter.faq && item.frontmatter.faq.length > 0 && (
+        <FaqSchema items={item.frontmatter.faq} />
+      )}
+
       <nav className="text-xs text-ink/60 mb-4">
         <Link href="/guides" className="hover:text-primary">&larr; All guides</Link>
       </nav>
@@ -68,6 +73,22 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
       <div className="prose-content">
         <MDXRemote source={item.body} />
       </div>
+
+      {item.frontmatter.faq && item.frontmatter.faq.length > 0 && (
+        <section className="mt-12 pt-8 border-t border-ink/10">
+          <h2 className="font-display text-2xl md:text-3xl text-denim mb-5">
+            Frequently asked questions
+          </h2>
+          <div className="space-y-4">
+            {item.frontmatter.faq.map((f, i) => (
+              <div key={i} className="bg-paper border border-ink/10 rounded-lg p-5">
+                <h3 className="font-display text-lg text-denim leading-snug">{f.q}</h3>
+                <p className="text-sm text-ink/80 leading-relaxed mt-2">{f.a}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       <AffiliateDisclosure />
     </article>

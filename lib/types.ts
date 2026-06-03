@@ -66,6 +66,11 @@ export interface GuideMeta {
   wordCount: number;
 }
 
+export interface FaqItem {
+  q: string;
+  a: string;
+}
+
 export interface ArticleFrontmatter {
   title: string;
   slug: string;
@@ -77,4 +82,5 @@ export interface ArticleFrontmatter {
   relatedSongs?: string[];
   relatedTours?: string[];
   sources?: string[];
+  faq?: FaqItem[];
 }

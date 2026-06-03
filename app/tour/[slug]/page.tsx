@@ -8,8 +8,10 @@ import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
 import { ConcertGearWidget } from "@/components/ConcertGearWidget";
 import { MusicEventSchema } from "@/components/schema/MusicEventSchema";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
+import { FaqSchema } from "@/components/schema/FaqSchema";
 import { ticketUrl, hotelUrl } from "@/lib/affiliates";
 import { eventQuery, formatDate, formatTime } from "@/lib/utils";
+import type { FaqItem } from "@/lib/types";
 
 export async function generateStaticParams() {
   return getAllTourDates().map((d) => ({ slug: d.id }));
@@ -56,11 +58,56 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
     ? ticketUrl({ query: `${d.headliner ?? "Morgan Wallen"} ${d.city}`, id: d.id }, "ticketmaster")
     : null;
 
+  // Build SEO FAQ entries from the tour-date data. Only include questions we
+  // can answer factually from the data we actually have for this show.
+  const faqItems: FaqItem[] = [];
+
+  if (d.doorsTime || d.showTime) {
+    const times: string[] = [];
+    if (d.doorsTime) times.push(`doors open at ${formatTime(d.doorsTime)}`);
+    if (d.showTime) times.push(`the show starts at ${formatTime(d.showTime)}`);
+    faqItems.push({
+      q: `What time do doors open for Ella Langley at ${d.venue}?`,
+      a: `For the ${formatDate(d.date, "long")} show at ${d.venue} in ${d.city}, ${times.join(" and ")}. Times can shift on the day of the show, so check your ticket and the venue before you head out.`,
+    });
+  }
+
+  faqItems.push({
+    q: `Is the Ella Langley ${d.city} show sold out?`,
+    a: d.soldOut
+      ? `Yes. The ${d.city} show at ${d.venue} is sold out at face value. Tickets are still available on the resale market, generally in the ${d.ticketPriceRange.replace(/^Resale\s+/i, "")} range, with prices climbing as the date approaches.`
+      : `No. As of now the ${d.city} show at ${d.venue} still has tickets available, typically in the ${d.ticketPriceRange.replace(/^Resale\s+/i, "")} range. Buying earlier usually means better seats and lower prices.`,
+  });
+
+  if (d.tourType === "support" && d.headliner) {
+    faqItems.push({
+      q: `Who is Ella Langley opening for in ${d.city}?`,
+      a: `In ${d.city}, Ella Langley is direct support for ${d.headliner} at ${d.venue}. She plays roughly a 45-minute set before ${d.headliner} headlines.`,
+    });
+  } else if (d.openers.length > 0) {
+    faqItems.push({
+      q: `Who is opening for Ella Langley in ${d.city}?`,
+      a: `${d.openers.join(" and ")} ${d.openers.length > 1 ? "open" : "opens"} for Ella Langley at ${d.venue} in ${d.city}. Set times move fast, so plan to be inside by doors if you want to catch the opener.`,
+    });
+  }
+
+  faqItems.push({
+    q: `How much are tickets for the Ella Langley ${d.city} show?`,
+    a: `Tickets for ${d.venue} in ${d.city} generally run ${d.ticketPriceRange.replace(/^Resale\s+/i, "")}. Prices vary by section and move with demand, so compare SeatGeek, TickPick, and Vivid Seats before you buy.`,
+  });
+
+  faqItems.push({
+    q: `What should I wear to the Ella Langley show in ${d.city}?`,
+    a: `Jeans, closed-toe boots or sneakers, and a fitted tee or button-down is the safe default. Skip open-toe shoes and a brand-new cowboy hat. See our full what-to-wear guide for the complete breakdown.`,
+  });
+
   return (
     <article className="mx-auto max-w-3xl px-4 py-10">
       <MusicEventSchema d={d} url={pageUrl} />
 
       <BreadcrumbSchema items={breadcrumbItems} />
+
+      {faqItems.length > 0 && <FaqSchema items={faqItems} />}
 
       {/* Breadcrumb */}
       <nav className="text-xs text-ink/60 mb-4">
@@ -202,6 +249,21 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
           Full guide &rarr;
         </Link>
       </section>
+
+      {/* FAQ */}
+      {faqItems.length > 0 && (
+        <section className="mb-8 mt-2 pt-6 border-t border-ink/10">
+          <h2 className="font-display text-2xl text-denim mb-4">FREQUENTLY ASKED QUESTIONS</h2>
+          <div className="space-y-3">
+            {faqItems.map((f, i) => (
+              <div key={i} className="bg-paper border border-ink/10 rounded-lg p-4">
+                <h3 className="font-display text-lg text-denim leading-snug">{f.q}</h3>
+                <p className="text-sm text-ink/80 leading-relaxed mt-1.5">{f.a}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       <AffiliateDisclosure />
     </article>

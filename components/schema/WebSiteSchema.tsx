@@ -7,7 +7,6 @@ export function WebSiteSchema() {
     url,
     description:
       "Unofficial fan-run news and tour information site for country music artist Ella Langley.",
-    logo: `${url}/logo.png`,
   };
   const website = {
     "@context": "https://schema.org",

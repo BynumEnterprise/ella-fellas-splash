@@ -38,9 +38,9 @@ That's it. Half an hour. By the end, you'll know if you're going to be an Ella F
 
 ## The two albums
 
-**Hungover (2024)** is the debut. Honky-tonk-leaning, country traditionalist, built around her voice. Co-wrote every track. The album that made the case.
+**Hungover (2024)** is the debut. Honky-tonk-leaning, country traditionalist, built around her voice. Co-wrote every track. The album that made the case. [Get it on vinyl.](/shop/fc-hungover-vinyl)
 
-**Dandelion (2026)** is the follow-up. Same producer (Will Bundy), bigger production, more genre range — country at its core but with rock edges ("never met anyone like you" with HARDY) and softer moments ("be her"). The album that closed the case.
+**Dandelion (2026)** is the follow-up. Same producer (Will Bundy), bigger production, more genre range — country at its core but with rock edges ("never met anyone like you" with HARDY) and softer moments ("be her"). The album that closed the case. [Vinyl here.](/shop/fc-dandelion-vinyl)
 
 If you only have time for one, Dandelion is the more polished entry point. If you want to understand the journey, start with Hungover.
 

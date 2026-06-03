@@ -142,6 +142,27 @@ export default async function SongPage({ params }: { params: Promise<{ slug: str
         </section>
       )}
 
+      {/* LISTEN & OWN IT */}
+      <section className="mb-10 bg-paper border border-ink/10 rounded-xl p-5 flex flex-col sm:flex-row sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="text-xs uppercase tracking-[0.18em] text-clay font-medium mb-1">Listen &amp; own it</p>
+          <p className="text-sm text-ink/80 leading-relaxed">
+            Stream{" "}
+            <span className="font-medium text-ink">{s.title}</span>{" "}
+            on Spotify above, or take the whole album home on vinyl &mdash; the way it was meant to sound.
+          </p>
+        </div>
+        <div className="flex-shrink-0">
+          <Link
+            href={s.albumSlug === "dandelion" ? "/shop/fc-dandelion-vinyl" : "/shop/fc-hungover-vinyl"}
+            className="inline-flex items-center gap-2 bg-denim text-paper text-sm font-medium px-4 py-2.5 rounded-lg hover:bg-denim/90 transition-colors"
+          >
+            <Disc3 className="w-4 h-4" strokeWidth={1.5} />
+            {s.albumSlug === "dandelion" ? "Dandelion on vinyl" : "Hungover on vinyl"} &rarr;
+          </Link>
+        </div>
+      </section>
+
       {/* CHART TILES */}
       {s.chartPeak && (
         <section className="mb-10">

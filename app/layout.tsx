@@ -37,6 +37,7 @@ export const metadata: Metadata = {
       "Daily news, tour guides, song breakdowns, and concert-prep guides for Ella Langley fans.",
   },
   robots: { index: true, follow: true },
+  verification: { google: "o1reb3PiyJFu2pkdwTehV5THb9WtXEsIDTSyCid3z5k" },
   alternates: { canonical: SITE_URL },
 };
 

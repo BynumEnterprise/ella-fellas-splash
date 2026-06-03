@@ -4,6 +4,7 @@ import Link from "next/link";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { getAllNews, getNewsBySlug } from "@/lib/content";
 import { ArticleSchema } from "@/components/schema/ArticleSchema";
+import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 import { formatDate } from "@/lib/utils";
 
 export async function generateStaticParams() {
@@ -33,6 +34,10 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ sl
 
   const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
   const url = `${SITE_URL}/news/${item.slug}`;
+  const breadcrumbItems = [
+    { name: "News", url: `${SITE_URL}/news` },
+    { name: item.frontmatter.title, url },
+  ];
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-10">
@@ -44,6 +49,8 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ sl
         updatedAt={item.frontmatter.updatedAt}
         url={url}
       />
+
+      <BreadcrumbSchema items={breadcrumbItems} />
 
       <nav className="text-xs text-ink/60 mb-4">
         <Link href="/news" className="hover:text-primary">&larr; All news</Link>

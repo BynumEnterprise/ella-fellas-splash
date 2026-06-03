@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Ella Langley Compared",
   description:
     "How Ella Langley stacks up against Lainey Wilson, Morgan Wallen, Zach Bryan, Miranda Lambert, and the rest of the country class.",
+  alternates: { canonical: "/vs" },
 };
 
 export default function ComparisonsIndexPage() {

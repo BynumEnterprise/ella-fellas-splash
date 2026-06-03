@@ -16,6 +16,7 @@ export const metadata: Metadata = {
   title: "Ella Langley Guides",
   description:
     "Long-form guides for Ella Langley fans — concert prep, song rankings, opening acts, presale tactics, and more.",
+  alternates: { canonical: "/guides" },
 };
 
 const CATEGORY_STYLE: Record<

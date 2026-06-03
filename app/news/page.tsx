@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Ella Langley News",
   description:
     "Daily Ella Langley news, tour recaps, chart moves, and collaborations.",
+  alternates: { canonical: "/news" },
 };
 
 export default function NewsIndexPage() {

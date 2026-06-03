@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Tour Dates 2026",
   description:
     "Every confirmed Ella Langley tour date in 2026 — the Dandelion headlining tour, Morgan Wallen support dates, and festivals.",
+  alternates: { canonical: "/tour" },
 };
 
 export default function TourIndexPage() {

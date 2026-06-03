@@ -8,6 +8,11 @@ import { NewsCard } from "@/components/NewsCard";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { SpotifyEmbed } from "@/components/SpotifyEmbed";
 import { formatDate, formatTime } from "@/lib/utils";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 // Curated full-bleed concert / countryside photography (Unsplash CDN, stable IDs).
 const HERO_IMAGE =

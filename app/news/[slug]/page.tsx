@@ -24,6 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       description: n.frontmatter.excerpt,
       publishedTime: n.frontmatter.publishedAt,
     },
+    alternates: { canonical: `/news/${slug}` },
   };
 }
 

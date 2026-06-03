@@ -29,6 +29,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${s.title}${s.feat ? ` (feat. ${s.feat})` : ""} — Ella Langley`,
     description: s.tldr,
+    alternates: { canonical: `/songs/${slug}` },
   };
 }
 

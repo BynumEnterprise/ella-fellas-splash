@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "Ella Langley Songs",
   description:
     "Every Ella Langley song — Hungover (2024) and Dandelion (2026). Breakdowns, chart performance, and live debut info.",
+  alternates: { canonical: "/songs" },
 };
 
 interface AlbumMeta {

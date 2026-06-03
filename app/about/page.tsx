@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About Ella Fellas",
   description: "An independent fan-run news site for country music artist Ella Langley.",
+  alternates: { canonical: "/about" },
 };
 
 export default function AboutPage() {

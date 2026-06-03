@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: "The Fellas Shop — boutique gear for country fans",
   description:
     "Hand-picked men's gear for the Ella Langley superfan: concert essentials, western wear, whiskey & bar, ranch decor, vinyl, and 200+ curated picks across 10 categories.",
+  alternates: { canonical: "/shop" },
 };
 
 export default function ShopPage() {

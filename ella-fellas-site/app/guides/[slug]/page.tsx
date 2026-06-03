@@ -5,7 +5,6 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import { getAllGuideContent, getGuideBySlug } from "@/lib/content";
 import { ArticleSchema } from "@/components/schema/ArticleSchema";
 import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
-import { FAQSchema } from "@/components/schema/FAQSchema";
 import { formatDate } from "@/lib/utils";
 
 export async function generateStaticParams() {
@@ -39,9 +38,6 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
         updatedAt={item.frontmatter.updatedAt}
         url={url}
       />
-      {item.frontmatter.faq && item.frontmatter.faq.length > 0 && (
-        <FAQSchema faqs={item.frontmatter.faq} />
-      )}
 
       <nav className="text-xs text-ink/60 mb-4">
         <Link href="/guides" className="hover:text-primary">&larr; All guides</Link>
@@ -68,3 +64,4 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
     </article>
   );
 }
+

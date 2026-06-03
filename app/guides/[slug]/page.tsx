@@ -4,6 +4,7 @@ import Link from "next/link";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { getAllGuideContent, getGuideBySlug } from "@/lib/content";
 import { ArticleSchema } from "@/components/schema/ArticleSchema";
+import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
 import { formatDate } from "@/lib/utils";
 
@@ -28,6 +29,10 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
 
   const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
   const url = `${SITE_URL}/guides/${item.slug}`;
+  const breadcrumbItems = [
+    { name: "Guides", url: `${SITE_URL}/guides` },
+    { name: item.frontmatter.title, url },
+  ];
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-10">
@@ -38,6 +43,8 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
         updatedAt={item.frontmatter.updatedAt}
         url={url}
       />
+
+      <BreadcrumbSchema items={breadcrumbItems} />
 
       <nav className="text-xs text-ink/60 mb-4">
         <Link href="/guides" className="hover:text-primary">&larr; All guides</Link>

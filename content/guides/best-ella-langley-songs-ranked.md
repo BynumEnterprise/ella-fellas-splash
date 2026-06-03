@@ -103,4 +103,6 @@ That's the case for why we're doing this site.
 
 [Hear the top 5 in order →](/songs)
 
+If you want either album on vinyl, [Dandelion](/shop/fc-dandelion-vinyl) and [Hungover](/shop/fc-hungover-vinyl) are both in the shop.
+
 [See where she's playing live →](/tour)

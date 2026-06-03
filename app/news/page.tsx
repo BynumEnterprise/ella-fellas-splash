@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   description:
     "Daily Ella Langley news, tour recaps, chart moves, and collaborations.",
   alternates: { canonical: "/news" },
+  openGraph: { url: "/news" },
 };
 
 export default function NewsIndexPage() {

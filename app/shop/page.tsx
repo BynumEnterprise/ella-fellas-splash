@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Hand-picked men's gear for the Ella Langley superfan: concert essentials, western wear, whiskey & bar, ranch decor, vinyl, and 200+ curated picks across 10 categories.",
   alternates: { canonical: "/shop" },
+  openGraph: { url: "/shop" },
 };
 
 export default function ShopPage() {

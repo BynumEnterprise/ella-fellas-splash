@@ -1,8 +1,22 @@
 import Link from "next/link";
+import { NewsletterSignup } from "@/components/NewsletterSignup";
 
 export function Footer() {
   return (
     <footer className="bg-denim text-paper mt-16">
+      {/* Sitewide newsletter signup */}
+      <div className="border-b border-paper/10">
+        <div className="mx-auto max-w-6xl px-4 py-10">
+          <p className="font-display text-xl tracking-wider text-primary mb-1">
+            GET THE ELLA FELLAS DAILY
+          </p>
+          <p className="text-sm text-paper/80 mb-5">
+            Tour news, ticket alerts, and concert guides in your inbox &mdash; written by fans, for the Fellas.
+          </p>
+          <NewsletterSignup placement="footer" />
+        </div>
+      </div>
+
       <div className="mx-auto max-w-6xl px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <p className="font-display text-2xl tracking-wider text-primary">ELLA FELLAS</p>

@@ -24,7 +24,6 @@ export const metadata: Metadata = {
     "Daily Ella Langley news, tour stop guides, ticket alerts, and everything in between. Built by fans, for the Fellas.",
   openGraph: {
     type: "website",
-    url: SITE_URL,
     title: "Ella Fellas — the unofficial Ella Langley superfan HQ",
     description:
       "Daily news, tour guides, song breakdowns, and concert-prep guides for Ella Langley fans.",

@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   description:
     "How Ella Langley stacks up against Lainey Wilson, Morgan Wallen, Zach Bryan, Miranda Lambert, and the rest of the country class.",
   alternates: { canonical: "/vs" },
+  openGraph: { url: "/vs" },
 };
 
 export default function ComparisonsIndexPage() {

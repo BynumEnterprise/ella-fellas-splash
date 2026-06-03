@@ -23,6 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: `Ella Langley in ${d.city}, ${d.state} — ${d.venue}`,
     description: `Tickets, parking, hotels, openers, and everything you need for Ella Langley's ${d.tour} stop at ${d.venue} in ${d.city} on ${formatDate(d.date, "long")}.`,
     alternates: { canonical: `/tour/${slug}` },
+    openGraph: { url: `/tour/${slug}` },
   };
 }
 

@@ -23,6 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       title: n.frontmatter.title,
       description: n.frontmatter.excerpt,
       publishedTime: n.frontmatter.publishedAt,
+      url: `/news/${slug}`,
     },
     alternates: { canonical: `/news/${slug}` },
   };

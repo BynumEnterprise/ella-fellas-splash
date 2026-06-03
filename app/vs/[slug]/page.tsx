@@ -15,6 +15,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: `Ella Langley vs ${c.compareTo}`,
     description: c.verdict,
     alternates: { canonical: `/vs/${slug}` },
+    openGraph: { url: `/vs/${slug}` },
   };
 }
 

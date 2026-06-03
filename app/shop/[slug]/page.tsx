@@ -12,6 +12,8 @@ import {
   getProductsByCategory,
 } from "@/lib/shop";
 import { ProductGallery } from "./ProductGallery";
+import { ProductSchema } from "@/components/schema/ProductSchema";
+import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 
 export async function generateStaticParams() {
   return SHOP_PRODUCTS.map((p) => ({ slug: p.slug }));
@@ -22,10 +24,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const p = getProduct(slug);
   if (!p) return {};
   return {
-    title: `${p.name} — Ella Fellas Shop`,
+    title: `${p.name} â Ella Fellas Shop`,
     description: p.blurb,
     openGraph: {
-      title: `${p.name} — Ella Fellas`,
+      title: `${p.name} â Ella Fellas`,
       description: p.blurb,
       images: p.image ? [p.image] : [],
     },
@@ -72,13 +74,24 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
     .filter((p) => p.slug !== product.slug)
     .slice(0, 4);
   const galleryImages = [product.image, ...(product.gallery ?? [])];
+  const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
+  const pageUrl = `${SITE_URL}/shop/${product.slug}`;
+  const breadcrumbItems = [
+    { name: "Shop", url: `${SITE_URL}/shop` },
+    ...(category
+      ? [{ name: category.title, url: `${SITE_URL}/shop#${category.slug}` }]
+      : []),
+    { name: product.name, url: pageUrl },
+  ];
   const ctaLabel = isRealProduct ? "VIEW ON AMAZON" : "FIND ON AMAZON";
   const ctaSubLabel = isRealProduct
-    ? "Opens the exact product page · Prime ships fast"
-    : "Opens Amazon search · Tag is applied automatically";
+    ? "Opens the exact product page Â· Prime ships fast"
+    : "Opens Amazon search Â· Tag is applied automatically";
 
   return (
     <article className="mx-auto max-w-6xl px-4 py-8">
+      <ProductSchema product={product} url={pageUrl} />
+      <BreadcrumbSchema items={breadcrumbItems} />
       {/* Breadcrumb */}
       <nav className="text-xs text-ink/60 mb-6 flex items-center gap-1.5">
         <Link href="/shop" className="hover:text-primary">Shop</Link>
@@ -173,7 +186,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
             </div>
           </div>
 
-          {/* Why we picked it — editorial trust block */}
+          {/* Why we picked it â editorial trust block */}
           <div className="mt-6 p-5 bg-denim/5 border-l-4 border-primary rounded-r-lg">
             <p className="text-[11px] uppercase tracking-[0.18em] text-clay font-bold mb-2">
               Why the fellas picked it
@@ -208,7 +221,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
         </div>
       </div>
 
-      {/* Secondary CTA strip — full-width denim band */}
+      {/* Secondary CTA strip â full-width denim band */}
       <section className="bg-denim text-paper rounded-xl px-6 py-7 md:px-10 md:py-9 mb-14 flex flex-col md:flex-row items-start md:items-center gap-5 md:gap-8">
         <div className="flex-1">
           <p className="font-display text-xl md:text-2xl tracking-wide">

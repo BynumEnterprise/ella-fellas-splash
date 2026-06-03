@@ -65,11 +65,11 @@ If you want the post-show country bar scene, every city on the tour has one wort
 
 ## What to bring
 
-- Earplugs if you're floor or lower bowl (Loop Quiet, $25, they don't muffle the music)
-- Backup phone battery
+- Earplugs if you're floor or lower bowl — [Loop Experience 2](/shop/ec-loop-experience-2) are the actual pick (17dB reduction, don't muffle the music, and they look like jewelry)
+- [Portable phone charger](/shop/ec-anker-powercore-10k) — doors open at 5:30 PM and you won't be home until midnight
 - $40 cash for parking + tips
 - A light layer (arenas run cold during openers, hot during headliner)
-- Closed-toe shoes (your feet will get stepped on)
+- Closed-toe shoes, or boots if that's your style — [Pinto Ranch](https://www.kqzyfj.com/click-101760569-15736262) has the western wear that holds up past show night
 
 ## What to leave at home
 
@@ -82,7 +82,7 @@ If you want the post-show country bar scene, every city on the tour has one wort
 
 [Full tour page with venue-specific guides →](/tour)
 
-If your city is still on the schedule and you haven't bought tickets yet, the realistic resale picture: most dates are $85-$250 in the upper bowl on TickPick, $250-$475 on the floor. The Texas dates (Austin, Fort Worth) and the Cary NC date are the highest-priced of the run — buy those now if you're going."
+If your city is still on the schedule and you haven't bought tickets yet, the realistic resale picture: most dates are $85-$250 in the upper bowl on TickPick, $250-$475 on the floor. The Texas dates (Austin, Fort Worth) and the Cary NC date are the highest-priced of the run — buy those now if you're going.
 
 ---
 

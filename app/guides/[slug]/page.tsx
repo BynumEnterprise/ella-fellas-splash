@@ -9,7 +9,8 @@ import { ArticleSchema } from "@/components/schema/ArticleSchema";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 import { FaqSchema } from "@/components/schema/FaqSchema";
 import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
-import { TableOfContents, extractTocItems } from "@/components/TableOfContents";
+import { TableOfContents } from "@/components/TableOfContents";
+import { extractTocItems } from "@/lib/toc";
 import { formatDate } from "@/lib/utils";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any

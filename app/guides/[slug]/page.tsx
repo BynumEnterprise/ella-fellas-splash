@@ -2,12 +2,34 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { MDXRemote } from "next-mdx-remote/rsc";
+import rehypeSlug from "rehype-slug";
+import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import { getAllGuideContent, getGuideBySlug } from "@/lib/content";
 import { ArticleSchema } from "@/components/schema/ArticleSchema";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 import { FaqSchema } from "@/components/schema/FaqSchema";
 import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
+import { TableOfContents, extractTocItems } from "@/components/TableOfContents";
 import { formatDate } from "@/lib/utils";
+
+const MDX_OPTIONS = {
+  mdxOptions: {
+    rehypePlugins: [
+      rehypeSlug,
+      [
+        rehypeAutolinkHeadings,
+        {
+          behavior: "wrap" as const,
+          properties: {
+            className: ["anchor"],
+            ariaHidden: true,
+            tabIndex: -1,
+          },
+        },
+      ],
+    ],
+  },
+};
 
 export async function generateStaticParams() {
   return getAllGuideContent().map((g) => ({ slug: g.slug }));
@@ -36,6 +58,8 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
     { name: "Guides", url: `${SITE_URL}/guides` },
     { name: item.frontmatter.title, url },
   ];
+
+  const tocItems = extractTocItems(item.body);
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-10">
@@ -70,8 +94,10 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
         </p>
       </header>
 
+      <TableOfContents items={tocItems} />
+
       <div className="prose-content">
-        <MDXRemote source={item.body} />
+        <MDXRemote source={item.body} options={MDX_OPTIONS} />
       </div>
 
       {item.frontmatter.faq && item.frontmatter.faq.length > 0 && (

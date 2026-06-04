@@ -113,5 +113,6 @@ export function amazonSearchUrl(query: string): string {
 }
 
 export function hotelUrl(city: string): string {
-  // Booking.com not currently on Awin US — bare link until a hotel affiliate program (e.g. Stay22/Expedia) is set up.
-  return `https://www.boo
+  // Booking.com not currently on Awin US -- bare link until a hotel affiliate program (e.g. Stay22/Expedia) is set up.
+  return `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(city)}`;
+}

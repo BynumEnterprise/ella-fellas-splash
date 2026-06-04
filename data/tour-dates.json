@@ -480,7 +480,7 @@
     "ticketAffiliatePath": "/tickets/tampa-raymond-james-stadium-2026-07-17"
   },
   {
-    "id": "arlington-at&t-stadium-2026-07-24",
+    "id": "arlington-att-stadium-2026-07-24",
     "date": "2026-07-24",
     "city": "Arlington",
     "state": "TX",
@@ -497,7 +497,7 @@
     "showTime": "18:30",
     "soldOut": true,
     "ticketPriceRange": "Resale $185-$1,200",
-    "ticketAffiliatePath": "/tickets/arlington-at&t-stadium-2026-07-24"
+    "ticketAffiliatePath": "/tickets/arlington-att-stadium-2026-07-24"
   },
   {
     "id": "philadelphia-lincoln-financial-field-2026-08-01",

@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getAllTourDates, getAllSongs, getAllComparisons } from "@/lib/data";
 import { getAllNews, getAllGuideContent } from "@/lib/content";
+import { SHOP_CATEGORY_SLUGS } from "@/lib/shop-catalog";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
 
@@ -23,6 +24,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: now,
     changeFrequency: p === "" ? ("daily" as const) : ("weekly" as const),
     priority: p === "" ? 1.0 : 0.7,
+  }));
+
+  const shopCategories = SHOP_CATEGORY_SLUGS.map((slug) => ({
+    url: `${SITE_URL}/shop/category/${slug}`,
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: 0.6,
   }));
 
   const tour = getAllTourDates().map((d) => ({
@@ -60,5 +68,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticUrls, ...tour, ...songs, ...comps, ...news, ...guides];
+  return [...staticUrls, ...shopCategories, ...tour, ...songs, ...comps, ...news, ...guides];
 }

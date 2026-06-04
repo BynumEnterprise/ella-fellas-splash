@@ -15,13 +15,36 @@ export default function TourIndexPage() {
   // on their screen in late May. Per-show /tour/[slug] pages still render so
   // historical SEO / inbound links keep working.
   const today = new Date().toISOString().slice(0, 10);
-  const dates = getAllTourDates().filter((d) => d.date >= today);
+  const allDates = getAllTourDates();
+  const dates = allDates.filter((d) => d.date >= today);
   const headlining = dates.filter((d) => d.tourType === "headlining");
   const support = dates.filter((d) => d.tourType === "support");
   const festival = dates.filter((d) => d.tourType === "festival");
 
+  const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
+
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Ella Langley Tour Dates 2026",
+    description: "All confirmed Ella Langley tour stops for the 2026 Dandelion tour, Morgan Wallen support dates, and festival appearances.",
+    numberOfItems: allDates.length,
+    itemListElement: allDates
+      .sort((a, b) => a.date.localeCompare(b.date))
+      .map((d, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        url: `${SITE_URL}/tour/${d.id}`,
+      })),
+  };
+
   return (
     <article className="mx-auto max-w-5xl px-4 py-10">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+      />
+
       <header className="mb-8">
         <h1 className="font-display text-4xl md:text-5xl text-denim">ELLA LANGLEY TOUR 2026</h1>
         <p className="text-ink/80 mt-3">

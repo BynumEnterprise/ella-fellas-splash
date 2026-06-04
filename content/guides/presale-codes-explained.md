@@ -5,6 +5,15 @@ category: "concert-prep"
 publishedAt: "2026-05-08"
 updatedAt: "2026-05-22"
 excerpt: "Citi card, Verified Fan, fan club, radio station, Live Nation — which presale actually gets you in, and which one is just marketing? Here's the working hierarchy."
+faq:
+  - q: "What is the best presale for Ella Langley tickets?"
+    a: 'The Citi card presale is the most reliable option still accessible to most fans. Go to citientertainment.com and use the code CITI. Verified Fan presales offered better access but registration closed in January 2026 for the Dandelion Tour, so that window has passed for current dates.'
+  - q: "How does Ticketmaster Verified Fan work for country tours?"
+    a: 'You register your interest before the on-sale window. Ticketmaster reviews registrations and sends unique codes to buyers it identifies as real fans rather than scalper bots. They typically invite three to five times more people than they have tickets for, so receiving a code does not guarantee you get tickets, but your odds are meaningfully better than the general on-sale.'
+  - q: "What percentage of tickets are actually held back from the public on-sale?"
+    a: 'Roughly 40 percent of tickets to high-demand country tours are held by the artist, label, sponsors, promoter, and VIP packages. Only about 30 percent go to the general public on-sale. This means checking Ticketmaster for hold releases weekly after the on-sale can turn up face-value single tickets for weeks after the initial date.'
+  - q: "When do resale prices drop for Ella Langley shows?"
+    a: 'Resale prices typically fall 20 to 30 percent in the 48 hours before showtime as professional sellers clear inventory. For Dandelion Tour dates, the pattern has been a 30 to 40 percent rise in the first three weeks after on-sale, a plateau, then a dip in the final 72 hours. If you have flexibility, waiting is usually the cheapest approach.'
 ---
 
 You missed the on-sale, or you got blocked in the queue, and now you're staring at six different presale options trying to figure out which one is real and which is theater. This is the working guide.

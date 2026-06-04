@@ -8,6 +8,7 @@ import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
 import { ConcertGearWidget } from "@/components/ConcertGearWidget";
 import { MusicEventSchema } from "@/components/schema/MusicEventSchema";
 import { ticketUrl, hotelUrl } from "@/lib/affiliates";
+import type { TicketEventContext } from "@/lib/affiliates";
 import { eventQuery, formatDate } from "@/lib/utils";
 
 export async function generateStaticParams() {
@@ -31,19 +32,20 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
 
   const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
   const pageUrl = `${SITE_URL}/tour/${d.id}`;
-
-  // Past shows must NOT render "buy/resale tickets" buttons - the links would
-  // point fans at events that no longer exist. Compare YYYY-MM-DD strings
-  // (both lexicographically sortable) against today in UTC.
-  const today = new Date().toISOString().slice(0, 10);
-  const isPast = d.date < today;
-
-  // Performer/per-event ticket links. We never use raw search URLs (dead pages).
-  // TickPick is primary (per-event deep links + reliable artist page).
-  const primaryQuery = eventQuery(d);
-  const tixUrl = ticketUrl({ query: primaryQuery, id: d.id }, "tickpick");
-  const seatGeekUrl = ticketUrl(primaryQuery, "seatgeek");
-  const vividUrl = ticketUrl(primaryQuery, "vivid");
+  // Pass the FULL event context (crucially `id`) to ticketUrl so each source can
+  // resolve its verified per-event deep link from the KNOWN_* maps. Passing a
+  // bare query string here (the old behavior) left ctx.id undefined and every
+  // show fell back to the performer page.
+  const ctx: TicketEventContext = {
+    query: eventQuery(d),
+    id: d.id,
+    date: d.date,
+    venue: d.venue,
+    city: d.city,
+  };
+  const seatGeekUrl = ticketUrl(ctx, "seatgeek");
+  const tixUrl = ticketUrl(ctx, "tickpick");
+  const vividUrl = ticketUrl(ctx, "vivid");
   const isMWStadium = d.tourType === "support" && (d.venueCapacity ?? 0) >= 40000;
   const tmUrl = isMWStadium
     ? ticketUrl(`${d.headliner ?? "Morgan Wallen"} ${d.city}`, "ticketmaster")
@@ -61,7 +63,7 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
         <div className="flex items-center gap-2 text-sm text-clay uppercase tracking-wider font-medium">
           <Calendar className="w-4 h-4" />
           {formatDate(d.date, "long")}
-          {!isPast && d.soldOut && (
+          {d.soldOut && (
             <span className="ml-2 bg-clay text-paper text-xs font-bold px-2 py-0.5 rounded-full">
               SOLD OUT (FACE)
             </span>
@@ -74,54 +76,36 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
         <p className="text-sm text-ink/60 mt-1">{d.tour}</p>
       </header>
 
-      {isPast ? (
-        <section className="bg-ink/5 border border-ink/15 rounded-lg p-5 mb-6">
-          <p className="text-xs uppercase tracking-wider text-ink/50 font-medium mb-1">
-            PAST SHOW
-          </p>
-          <h2 className="font-display text-2xl text-denim">This show has passed</h2>
-          <p className="text-sm text-ink/80 mt-1">
-            Ella played {d.venue} in {d.city} on {formatDate(d.date, "long")}. Tickets are no longer available for this date.
-          </p>
-          <Link
-            href="/tour"
-            className="inline-flex items-center gap-2 mt-4 px-4 py-2.5 bg-denim text-paper font-display tracking-wide rounded-md hover:bg-denim/90"
-          >
-            <Ticket className="w-4 h-4" /> SEE UPCOMING DATES
-          </Link>
-        </section>
-      ) : (
-        <section className="bg-primary/15 border-2 border-primary rounded-lg p-5 mb-6">
-          <p className="text-xs uppercase tracking-wider text-denim font-medium mb-1">
-            {d.soldOut ? "RESALE" : "TICKETS"} · {d.ticketPriceRange}
-          </p>
-          <h2 className="font-display text-2xl text-denim">Grab tickets</h2>
-          <p className="text-sm text-ink/80 mt-1 mb-4">
-            {d.soldOut
-              ? "Sold out at face value. Resale starts around the price range above and climbs as the show approaches."
-              : "Buy direct or check the secondary market for better seat options."}
-          </p>
-          <div className="flex flex-wrap gap-2">
-            <AffiliateLink href={tixUrl} source="tickpick" className="inline-flex items-center gap-2 px-4 py-2.5 bg-denim text-paper font-display tracking-wide rounded-md hover:bg-denim/90">
-              <Ticket className="w-4 h-4" /> TICKPICK
+      <section className="bg-primary/15 border-2 border-primary rounded-lg p-5 mb-6">
+        <p className="text-xs uppercase tracking-wider text-denim font-medium mb-1">
+          {d.soldOut ? "RESALE" : "TICKETS"} · {d.ticketPriceRange}
+        </p>
+        <h2 className="font-display text-2xl text-denim">Grab tickets</h2>
+        <p className="text-sm text-ink/80 mt-1 mb-4">
+          {d.soldOut
+            ? "Sold out at face value. Resale starts around the price range above and climbs as the show approaches."
+            : "Buy direct or check the secondary market for better seat options."}
+        </p>
+        <div className="flex flex-wrap gap-2">
+          <AffiliateLink href={seatGeekUrl} source="seatgeek" className="inline-flex items-center gap-2 px-4 py-2.5 bg-denim text-paper font-display tracking-wide rounded-md hover:bg-denim/90">
+            <Ticket className="w-4 h-4" /> SEATGEEK
+          </AffiliateLink>
+          {tmUrl && (
+            <AffiliateLink href={tmUrl} source="ticketmaster" className="inline-flex items-center gap-2 px-4 py-2.5 bg-denim text-paper font-display tracking-wide rounded-md hover:bg-denim/90">
+              <Ticket className="w-4 h-4" /> TICKETMASTER
             </AffiliateLink>
-            {tmUrl && (
-              <AffiliateLink href={tmUrl} source="ticketmaster" className="inline-flex items-center gap-2 px-4 py-2.5 bg-denim text-paper font-display tracking-wide rounded-md hover:bg-denim/90">
-                <Ticket className="w-4 h-4" /> TICKETMASTER
-              </AffiliateLink>
-            )}
-            <AffiliateLink href={seatGeekUrl} source="seatgeek" className="inline-flex items-center gap-2 px-4 py-2.5 bg-ink/10 text-denim font-display tracking-wide rounded-md hover:bg-ink/20 border border-ink/20">
-              <Ticket className="w-4 h-4" /> SEATGEEK
-            </AffiliateLink>
-            <AffiliateLink href={vividUrl} source="vivid" className="inline-flex items-center gap-2 px-4 py-2.5 bg-ink/10 text-denim font-display tracking-wide rounded-md hover:bg-ink/20 border border-ink/20">
-              <Ticket className="w-4 h-4" /> VIVID SEATS
-            </AffiliateLink>
-          </div>
-          <p className="text-xs text-ink/50 mt-3">
-            Tip: TickPick has all-in pricing (no surprise fees at checkout) and per-show pages for {d.tourType === "support" ? `${d.headliner ?? "this tour"}` : "Ella"}&apos;s dates. SeatGeek &amp; Vivid Seats are good for comparing resale seats.
-          </p>
-        </section>
-      )}
+          )}
+          <AffiliateLink href={tixUrl} source="tickpick" className="inline-flex items-center gap-2 px-4 py-2.5 bg-ink/10 text-denim font-display tracking-wide rounded-md hover:bg-ink/20 border border-ink/20">
+            <Ticket className="w-4 h-4" /> TICKPICK
+          </AffiliateLink>
+          <AffiliateLink href={vividUrl} source="vivid" className="inline-flex items-center gap-2 px-4 py-2.5 bg-ink/10 text-denim font-display tracking-wide rounded-md hover:bg-ink/20 border border-ink/20">
+            <Ticket className="w-4 h-4" /> VIVID SEATS
+          </AffiliateLink>
+        </div>
+        <p className="text-xs text-ink/50 mt-3">
+          Tip: SeatGeek usually has the most listings for {d.tourType === "support" ? `${d.headliner ?? "this tour"}` : "Ella"}&apos;s shows. Resale prices on TickPick &amp; Vivid Seats are often lower for sold-out dates.
+        </p>
+      </section>
 
       <section className="mb-8">
         <h2 className="font-display text-2xl text-denim mb-3">VENUE INFO</h2>

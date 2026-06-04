@@ -23,7 +23,11 @@ export function ArticleSchema({
     datePublished: publishedAt,
     dateModified: updatedAt ?? publishedAt,
     url,
-    author: { "@type": "Organization", name: "Ella Fellas Editors" },
+    author: {
+      "@type": "Organization",
+      name: "Ella Fellas Team",
+      url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com",
+    },
     publisher: {
       "@type": "Organization",
       name: "Ella Fellas",

@@ -10,7 +10,7 @@ const IDS = {
   booking: process.env.NEXT_PUBLIC_BOOKING_AFFILIATE_ID ?? "",
 };
 
-/** Optional per-show explicit ticket URLs (overrides search). Maps show id → source → URL. */
+/** Optional per-show explicit ticket URLs (overrides search). Maps show id -> source -> URL. */
 interface DirectTicketLinks {
   tickpick?: string;
   vivid?: string;
@@ -21,7 +21,7 @@ interface DirectTicketLinks {
 
 export interface TicketEventContext {
   query: string;            // primary search query (use eventQuery())
-  id?: string;              // show id (matches TourDate.id) — enables KNOWN_* deep-link lookup
+  id?: string;              // show id (matches TourDate.id) - enables KNOWN_* deep-link lookup
   date?: string;            // YYYY-MM-DD for date-narrowed search
   venue?: string;           // venue name for venue search
   city?: string;            // city name
@@ -36,7 +36,7 @@ export interface TicketEventContext {
 const KNOWN_TICKPICK_URLS: Record<string, string> = {
   // Keys MUST match TourDate.id in data/tour-dates.json exactly.
   // Sourced from the TickPick Ella Langley artist page; verify URL still resolves
-  // when adding entries — TickPick drops past events from listings after they pass.
+  // when adding entries - TickPick drops past events from listings after they pass.
   "estero-hertz-arena-2026-05-14":
     "https://www.tickpick.com/buy-ella-langley-tickets-hertz-arena-5-14-26-7pm/7715671/",
   "oklahoma-city-zoo-amphitheatre-2026-06-18":
@@ -56,7 +56,7 @@ const KNOWN_TICKPICK_URLS: Record<string, string> = {
 /**
  * Build an affiliate ticket URL for a specific source.
  * Prefers an explicit per-show URL if provided in `direct`. Otherwise builds
- * a search URL using the smartest pattern each provider supports — most use
+ * a search URL using the smartest pattern each provider supports - most use
  * a simpler "{artist} {city}" query than full venue+state which returns 0 hits.
  *
  * Affiliate tracking: for search-result clicks, providers use cookie-based
@@ -112,7 +112,16 @@ export function amazonSearchUrl(query: string): string {
   return `https://www.amazon.com/s?k=${encodeURIComponent(query)}&tag=${IDS.amazon}`;
 }
 
+// Awin affiliate IDs for Booking.com (hardcoded so they work without env vars)
+const AWIN_AFFID = "2906263";
+const AWIN_BOOKING_MID = "6776";
+
+/**
+ * Build a Booking.com hotel search URL wrapped in an Awin affiliate deep-link.
+ * The Awin link redirects users to Booking.com normally while tracking commissions.
+ * awinaffid=2906263 (publisher), awinmid=6776 (Booking.com merchant).
+ */
 export function hotelUrl(city: string): string {
-  const q = encodeURIComponent(city);
-  return `https://www.booking.com/searchresults.html?ss=${q}${IDS.booking ? `&aid=${IDS.booking}` : ""}`;
+  const bookingDest = `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(city)}`;
+  return `https://www.awin1.com/cread.php?awinmid=${AWIN_BOOKING_MID}&awinaffid=${AWIN_AFFID}&clickref=ellafellas&ued=${encodeURIComponent(bookingDest)}`;
 }

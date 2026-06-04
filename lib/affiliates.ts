@@ -10,6 +10,21 @@ const IDS = {
   booking: process.env.NEXT_PUBLIC_BOOKING_AFFILIATE_ID ?? "",
 };
 
+/** Reliable performer landing pages, verified live to list Ella Langley's real
+ * current tour dates. These are the fallback whenever we don't have a per-show
+ * deep link. NEVER fall back to a provider search URL - those returned 0 or
+ * irrelevant results and produced dead "can't find what you're looking for"
+ * pages for fans. A performer page is always preferable to a broken search. */
+const PERFORMER_PAGES = {
+  // TickPick artist page - lists every current Ella Langley date (most reliable).
+  tickpick: "https://www.tickpick.com/concerts/ella-langley-tickets/",
+  // SeatGeek artist page - verified live.
+  seatgeek: "https://seatgeek.com/ella-langley-tickets",
+  // Vivid Seats artist page - verified live (performer id 131263). The bare
+  // /ella-langley-tickets guess is a 404; this canonical performer URL works.
+  vivid: "https://www.vividseats.com/ella-langley-tickets/performer/131263",
+} as const;
+
 /** Optional per-show explicit ticket URLs (overrides search). Maps show id -> source -> URL. */
 interface DirectTicketLinks {
   tickpick?: string;
@@ -55,21 +70,20 @@ const KNOWN_TICKPICK_URLS: Record<string, string> = {
 
 /**
  * Build an affiliate ticket URL for a specific source.
- * Prefers an explicit per-show URL if provided in `direct`. Otherwise builds
- * a search URL using the smartest pattern each provider supports - most use
- * a simpler "{artist} {city}" query than full venue+state which returns 0 hits.
+ * Prefers an explicit per-show URL if provided in `direct`, then a known
+ * per-event deep link (TickPick), then the provider's verified performer
+ * landing page. We never return a raw search URL - those produced dead pages.
  *
- * Affiliate tracking: for search-result clicks, providers use cookie-based
- * attribution from referral params (aff/aid/irgwc), so the search URL itself
- * carries the tag forward to whichever event the user clicks.
+ * Affiliate tracking: providers use cookie-based attribution from referral
+ * params (aff/aid/irgwc); the param is appended only when an ID is configured.
  */
-export function ticketUrl(input: string | TicketEventContext, source: TicketSource = "seatgeek"): string {
+export function ticketUrl(input: string | TicketEventContext, source: TicketSource = "tickpick"): string {
   const ctx: TicketEventContext = typeof input === "string" ? { query: input } : input;
 
   // Honor explicit per-show override
   if (ctx.direct?.[source]) return ctx.direct[source]!;
 
-  // For TickPick, prefer a known event-page deep link before any search fallback
+  // For TickPick, prefer a known event-page deep link before any fallback
   if (source === "tickpick" && ctx.id && KNOWN_TICKPICK_URLS[ctx.id]) {
     return KNOWN_TICKPICK_URLS[ctx.id];
   }
@@ -78,13 +92,11 @@ export function ticketUrl(input: string | TicketEventContext, source: TicketSour
 
   switch (source) {
     case "tickpick":
-      // Fall back to the Ella Langley artist landing page (lists every tour date)
-      // rather than the generic search results, which returned irrelevant matches.
-      return `https://www.tickpick.com/concerts/ella-langley-tickets/${IDS.tickpick ? `?aff=${IDS.tickpick}` : ""}`;
+      return `${PERFORMER_PAGES.tickpick}${IDS.tickpick ? `?aff=${IDS.tickpick}` : ""}`;
     case "vivid":
-      return `https://www.vividseats.com/search?searchTerm=${q}${IDS.vivid ? `&aff=${IDS.vivid}` : ""}`;
+      return `${PERFORMER_PAGES.vivid}${IDS.vivid ? `?aff=${IDS.vivid}` : ""}`;
     case "seatgeek":
-      return `https://seatgeek.com/search?search=${q}${IDS.seatgeek ? `&aid=${IDS.seatgeek}` : ""}`;
+      return `${PERFORMER_PAGES.seatgeek}${IDS.seatgeek ? `?aid=${IDS.seatgeek}` : ""}`;
     case "stubhub":
       return `https://www.stubhub.com/find/s/?q=${q}${IDS.stubhub ? `&utm_source=${IDS.stubhub}` : ""}`;
     case "ticketmaster":
@@ -95,13 +107,13 @@ export function ticketUrl(input: string | TicketEventContext, source: TicketSour
 /**
  * Pick the best primary ticket source for a given show.
  * - Ticketmaster for stadium shows on Morgan Wallen tour (primary inventory)
- * - SeatGeek for everything else (best search reliability)
+ * - TickPick for everything else (most reliable performer + per-event links)
  */
 export function primaryTicketSource(d: { tourType?: string; venueCapacity?: number }): TicketSource {
   if (d.tourType === "support" && (d.venueCapacity ?? 0) >= 40000) {
     return "ticketmaster";
   }
-  return "seatgeek";
+  return "tickpick";
 }
 
 export function amazonUrl(asin: string): string {
@@ -119,4 +131,3 @@ export function hotelUrl(city: string): string {
   // Booking.com not currently on Awin US -- bare link until a hotel affiliate program (e.g. Stay22/Expedia) is set up.
   return `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(city)}`;
 }
-

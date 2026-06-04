@@ -10,6 +10,8 @@ import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 import { FaqSchema } from "@/components/schema/FaqSchema";
 import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
 import { TableOfContents } from "@/components/TableOfContents";
+import { TrustByline } from "@/components/TrustByline";
+import { TrustSignal } from "@/components/TrustSignal";
 import { extractTocItems } from "@/lib/toc";
 import { formatDate } from "@/lib/utils";
 
@@ -79,7 +81,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
         <Link href="/guides" className="hover:text-primary">&larr; All guides</Link>
       </nav>
 
-      <header className="mb-8">
+      <header className="mb-6">
         <p className="text-xs uppercase tracking-wider text-clay font-medium">
           {item.frontmatter.category}
         </p>
@@ -87,9 +89,10 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
           {item.frontmatter.title}
         </h1>
         <p className="text-lg text-ink/80 italic mt-3">{item.frontmatter.excerpt}</p>
-        <p className="text-xs text-ink/50 mt-3">
-          Updated {formatDate(item.frontmatter.updatedAt ?? item.frontmatter.publishedAt, "long")}
-        </p>
+        <TrustByline
+          publishedAt={item.frontmatter.publishedAt}
+          updatedAt={item.frontmatter.updatedAt}
+        />
       </header>
 
       <TableOfContents items={tocItems} />
@@ -116,6 +119,8 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
           </div>
         </section>
       )}
+
+      <TrustSignal />
 
       <AffiliateDisclosure />
     </article>

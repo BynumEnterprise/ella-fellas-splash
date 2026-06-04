@@ -36,7 +36,7 @@ export const metadata: Metadata = {
       "Daily news, tour guides, song breakdowns, and concert-prep guides for Ella Langley fans.",
   },
   robots: { index: true, follow: true },
-  verification: { google: "o1reb3PiyJFu2pkdwTehV5THb9WtXEsIDTSyCid3z5k" },
+  verification: { google: "o1reb3PiyJFu2pkdwTehV5THb9WtXEsIDTSyCid3z5k", other: { "fo-verify": "515d9dbf-be42-4d02-8d8c-6c3f157930df" } },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

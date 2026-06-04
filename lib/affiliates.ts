@@ -112,16 +112,11 @@ export function amazonSearchUrl(query: string): string {
   return `https://www.amazon.com/s?k=${encodeURIComponent(query)}&tag=${IDS.amazon}`;
 }
 
-// Awin affiliate IDs for Booking.com (hardcoded so they work without env vars)
+// Awin publisher ID (used by other affiliate links if needed)
 const AWIN_AFFID = "2906263";
-const AWIN_BOOKING_MID = "6776";
 
-/**
- * Build a Booking.com hotel search URL wrapped in an Awin affiliate deep-link.
- * The Awin link redirects users to Booking.com normally while tracking commissions.
- * awinaffid=2906263 (publisher), awinmid=6776 (Booking.com merchant).
- */
 export function hotelUrl(city: string): string {
-  const bookingDest = `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(city)}`;
-  return `https://www.awin1.com/cread.php?awinmid=${AWIN_BOOKING_MID}&awinaffid=${AWIN_AFFID}&clickref=ellafellas&ued=${encodeURIComponent(bookingDest)}`;
+  // Booking.com not currently on Awin US -- bare link until a hotel affiliate program (e.g. Stay22/Expedia) is set up.
+  return `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(city)}`;
 }
+

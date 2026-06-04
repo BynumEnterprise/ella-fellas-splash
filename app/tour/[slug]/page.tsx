@@ -101,6 +101,12 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
     a: `Jeans, closed-toe boots or sneakers, and a fitted tee or button-down is the safe default. Skip open-toe shoes and a brand-new cowboy hat. See our full what-to-wear guide for the complete breakdown.`,
   });
 
+  // Other upcoming shows: 3 nearest future dates, excluding this one
+  const today = new Date().toISOString().slice(0, 10);
+  const otherUpcoming = getAllTourDates()
+    .filter((t) => t.id !== d.id && t.date >= today)
+    .slice(0, 3);
+
   return (
     <article className="mx-auto max-w-3xl px-4 py-10">
       <MusicEventSchema d={d} url={pageUrl} />
@@ -265,7 +271,40 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
         </section>
       )}
 
+      {/* Other upcoming shows */}
+      {otherUpcoming.length > 0 && (
+        <section className="mt-10 pt-8 border-t border-ink/10">
+          <h2 className="font-display text-2xl text-denim mb-5">OTHER UPCOMING SHOWS</h2>
+          <div className="grid gap-4 sm:grid-cols-3">
+            {otherUpcoming.map((t) => (
+              <Link
+                key={t.id}
+                href={`/tour/${t.id}`}
+                className="block bg-paper border border-ink/10 rounded-lg p-4 hover:border-primary/40 hover:bg-primary/5 transition-colors"
+              >
+                <p className="text-xs text-clay uppercase tracking-wider font-medium mb-1">
+                  {formatDate(t.date, "short")}
+                </p>
+                <p className="font-display text-base text-denim leading-snug">
+                  {t.city}, {t.state}
+                </p>
+                <p className="text-sm text-ink/70 mt-0.5">{t.venue}</p>
+                {t.soldOut && (
+                  <span className="inline-block mt-1.5 text-xs font-bold text-clay">SOLD OUT (FACE)</span>
+                )}
+              </Link>
+            ))}
+          </div>
+          <p className="mt-4 text-sm">
+            <Link href="/tour" className="text-primary hover:underline">
+              See all tour dates &rarr;
+            </Link>
+          </p>
+        </section>
+      )}
+
       <AffiliateDisclosure />
     </article>
   );
 }
+

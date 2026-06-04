@@ -61,6 +61,16 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
 
   const tocItems = extractTocItems(item.body);
 
+  // Build related guides: same category first, then most recent; exclude current
+  const allGuides = getAllGuideContent();
+  const sameCategory = allGuides.filter(
+    (g) => g.slug !== slug && g.frontmatter.category === item.frontmatter.category
+  );
+  const otherGuides = allGuides.filter(
+    (g) => g.slug !== slug && g.frontmatter.category !== item.frontmatter.category
+  );
+  const relatedGuides = [...sameCategory, ...otherGuides].slice(0, 3);
+
   return (
     <article className="mx-auto max-w-3xl px-4 py-10">
       <ArticleSchema
@@ -123,6 +133,33 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
       <TrustSignal />
 
       <AffiliateDisclosure />
+
+      {/* Related guides */}
+      {relatedGuides.length > 0 && (
+        <section className="mt-12 pt-8 border-t border-ink/10">
+          <h2 className="font-display text-2xl text-denim mb-5">Keep reading</h2>
+          <div className="grid gap-4 sm:grid-cols-3">
+            {relatedGuides.map((g) => (
+              <Link
+                key={g.slug}
+                href={`/guides/${g.slug}`}
+                className="block bg-paper border border-ink/10 rounded-lg p-4 hover:border-primary/40 hover:bg-primary/5 transition-colors"
+              >
+                <p className="text-xs uppercase tracking-wider text-clay font-medium mb-1">
+                  {g.frontmatter.category}
+                </p>
+                <p className="font-display text-base text-denim leading-snug line-clamp-3">
+                  {g.frontmatter.title}
+                </p>
+                <p className="text-xs text-ink/50 mt-2">
+                  {formatDate(g.frontmatter.publishedAt, "short")}
+                </p>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
     </article>
   );
 }
+

@@ -10,6 +10,13 @@ import {
   getLookTotal,
 } from "@/lib/looks";
 
+const WESTERN_LOOKS = new Set([
+  "stagecoach-western",
+  "going-out-western",
+  "arena-night",
+  "honky-tonk-night",
+]);
+
 export function generateStaticParams() {
   return getAllLooks().map((l) => ({ slug: l.slug }));
 }
@@ -42,6 +49,7 @@ export default async function LookDetailPage({
   const products = getLookProducts(look);
   const total = getLookTotal(look);
   const otherLooks = getAllLooks().filter((l) => l.slug !== look.slug).slice(0, 4);
+  const isWesternLook = WESTERN_LOOKS.has(look.slug);
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-10">
@@ -83,6 +91,20 @@ export default async function LookDetailPage({
             <ProductCard key={p.slug} product={p} source={`look-${look.slug}`} />
           ))}
         </div>
+        {isWesternLook && (
+          <p className="mt-6 text-sm text-ink/70">
+            Want the real thing? Shop premium western boots, hats, and pearl-snaps at{" "}
+            <a
+              href="https://www.kqzyfj.com/click-101760569-15736262"
+              target="_blank"
+              rel="nofollow sponsored"
+              className="text-primary underline underline-offset-2 hover:text-primary/80"
+            >
+              Pinto Ranch
+            </a>
+            {" "}— expert fitting, premium leathers, and the brands country people actually wear.
+          </p>
+        )}
       </section>
 
       {otherLooks.length > 0 && (

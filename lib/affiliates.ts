@@ -75,6 +75,8 @@ const KNOWN_TICKPICK_URLS: Record<string, string> = {
     "https://www.tickpick.com/buy-railbird-festival-tyler-childers-zach-top-ella-langley-(time-tbd)-sunday-tickets-the-red-mile-6-7-26-12pm/7509703/",
   "philadelphia-lincoln-financial-field-2026-08-01":
     "https://www.tickpick.com/buy-morgan-wallen-ella-langley-hudson-westbrook-blake-whiten-tickets-lincoln-financial-field-8-1-26-5pm/7529811/",
+  "pittsburgh-acrisure-stadium-2026-06-06":
+    "https://www.tickpick.com/buy-morgan-wallen-ella-langley-gavin-adcock-zach-john-king-tickets-acrisure-stadium-6-6-26-5pm/7529803/",
 };
 
 /**
@@ -109,6 +111,8 @@ const KNOWN_SEATGEEK_URLS: Record<string, string> = {
   // Morgan Wallen stadium show with Ella on the bill, date matches our listing.
   "philadelphia-lincoln-financial-field-2026-08-01":
     "https://seatgeek.com/morgan-wallen-tickets/philadelphia-pennsylvania-lincoln-financial-field-2026-08-01-5-30-pm/concert/17873143",
+  "pittsburgh-acrisure-stadium-2026-06-06":
+    "https://seatgeek.com/morgan-wallen-tickets/pittsburgh-pennsylvania-acrisure-stadium-2026-06-06-5-30-pm/concert/17873127",
 };
 
 /**
@@ -124,6 +128,8 @@ const KNOWN_VIVID_URLS: Record<string, string> = {
     "https://www.vividseats.com/railbird-festival-tickets-lexington-the-red-mile-6-7-2026--concerts-music-festivals/production/6163370",
   "philadelphia-lincoln-financial-field-2026-08-01":
     "https://www.vividseats.com/morgan-wallen-tickets-philadelphia-lincoln-financial-field-8-1-2026--concerts-country-and-folk/production/6207826",
+  "pittsburgh-acrisure-stadium-2026-06-06":
+    "https://www.vividseats.com/morgan-wallen-tickets-pittsburgh-acrisure-stadium-6-6-2026--concerts-country-and-folk/production/6207811",
 };
 
 /**

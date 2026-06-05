@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SearchBox } from "@/components/SearchBox";
 
 const NAV = [
   { href: "/tour", label: "Tour" },
@@ -32,6 +33,7 @@ export function Header() {
               {item.label}
             </Link>
           ))}
+          <SearchBox />
         </nav>
         <details className="md:hidden relative">
           <summary className="list-none cursor-pointer p-2 -m-2 text-ink">
@@ -39,7 +41,8 @@ export function Header() {
             <span className="block w-6 h-0.5 bg-ink mb-1.5"></span>
             <span className="block w-6 h-0.5 bg-ink"></span>
           </summary>
-          <nav className="absolute right-0 top-full mt-2 bg-paper border border-ink/10 rounded-md shadow-md p-3 min-w-[160px]">
+          <nav className="absolute right-0 top-full mt-2 bg-paper border border-ink/10 rounded-md shadow-md p-3 min-w-[200px]">
+            <SearchBox className="mb-2" />
             {NAV.map((item) => (
               <Link
                 key={item.href}

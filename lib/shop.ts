@@ -196,6 +196,12 @@ export const PRICE_BUCKETS = [
   { id: "over-150", label: "Over $150", min: 150, max: Infinity },
 ] as const;
 
+/** Minimum-rating filters used for the filter UI. */
+export const RATING_FILTERS = [
+  { id: "4plus", label: "4 stars & up", min: 4 },
+  { id: "3plus", label: "3 stars & up", min: 3 },
+] as const;
+
 export type SortKey = "popular" | "price-asc" | "price-desc" | "rating";
 
 export function sortProducts(products: ShopProduct[], key: SortKey): ShopProduct[] {

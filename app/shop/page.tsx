@@ -51,11 +51,17 @@ export default function ShopPage() {
           >
             <Sparkles className="w-4 h-4" /> SHOP THE LOOK
           </Link>
-          <a
-            href="#categories"
+          <Link
+            href="/shop/all"
             className="inline-flex items-center gap-2 px-6 py-3.5 border-2 border-denim text-denim font-display tracking-wide rounded-md hover:bg-denim hover:text-paper transition-colors"
           >
-            BROWSE ALL CATEGORIES
+            BROWSE &amp; FILTER ALL PRODUCTS
+          </Link>
+          <a
+            href="#categories"
+            className="inline-flex items-center gap-2 px-6 py-3.5 border-2 border-denim/40 text-denim/80 font-display tracking-wide rounded-md hover:border-denim hover:text-denim transition-colors"
+          >
+            BROWSE BY CATEGORY
           </a>
         </div>
       </header>

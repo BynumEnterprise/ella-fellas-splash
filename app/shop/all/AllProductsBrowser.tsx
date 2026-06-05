@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { SlidersHorizontal, X } from "lucide-react";
-import type { ShopProduct, SortKey } from "@/lib/shop";
+import type { ShopProduct, SortKey, ShopCategory } from "@/lib/shop";
 import {
   PRICE_BUCKETS,
   RATING_FILTERS,
@@ -13,7 +13,7 @@ import { ProductCard } from "@/components/ProductCard";
 
 interface Props {
   products: ShopProduct[];
-  categoryTitle: string;
+  categories: ShopCategory[];
 }
 
 const SORT_LABELS: Record<SortKey, string> = {
@@ -23,28 +23,50 @@ const SORT_LABELS: Record<SortKey, string> = {
   rating: "Highest rated",
 };
 
-export function ShopFilters({ products, categoryTitle }: Props) {
+export function AllProductsBrowser({ products, categories }: Props) {
+  const [activeCategories, setActiveCategories] = useState<string[]>([]);
   const [activePrices, setActivePrices] = useState<string[]>([]);
   const [activeRating, setActiveRating] = useState<string | null>(null);
   const [sort, setSort] = useState<SortKey>("popular");
   const [openMobileFilters, setOpenMobileFilters] = useState(false);
 
-  const togglePrice = (id: string) => {
-    setActivePrices((prev) =>
-      prev.includes(id) ? prev.filter((p) => p !== id) : [...prev, id]
+  // Per-category counts (over the full catalog, not the filtered set).
+  const categoryCounts = useMemo(() => {
+    const counts = new Map<string, number>();
+    for (const p of products) {
+      counts.set(p.category, (counts.get(p.category) ?? 0) + 1);
+    }
+    return counts;
+  }, [products]);
+
+  const toggle = (
+    value: string,
+    setter: React.Dispatch<React.SetStateAction<string[]>>
+  ) => {
+    setter((prev) =>
+      prev.includes(value)
+        ? prev.filter((v) => v !== value)
+        : [...prev, value]
     );
   };
 
   const clearAll = () => {
+    setActiveCategories([]);
     setActivePrices([]);
     setActiveRating(null);
   };
 
-  const hasFilters = activePrices.length > 0 || activeRating !== null;
-  const activeCount = activePrices.length + (activeRating ? 1 : 0);
+  const hasFilters =
+    activeCategories.length > 0 ||
+    activePrices.length > 0 ||
+    activeRating !== null;
 
   const filtered = useMemo(() => {
     let arr = products;
+
+    if (activeCategories.length > 0) {
+      arr = arr.filter((p) => activeCategories.includes(p.category));
+    }
 
     if (activePrices.length > 0) {
       const buckets = PRICE_BUCKETS.filter((b) => activePrices.includes(b.id));
@@ -60,16 +82,25 @@ export function ShopFilters({ products, categoryTitle }: Props) {
     }
 
     return sortProducts(arr, sort);
-  }, [products, activePrices, activeRating, sort]);
+  }, [products, activeCategories, activePrices, activeRating, sort]);
 
+  // ---- Active-filter chips -------------------------------------------------
   const chips: { key: string; label: string; remove: () => void }[] = [];
+  for (const slug of activeCategories) {
+    const cat = categories.find((c) => c.slug === slug);
+    chips.push({
+      key: `cat-${slug}`,
+      label: cat ? cat.title : slug,
+      remove: () => toggle(slug, setActiveCategories),
+    });
+  }
   for (const id of activePrices) {
-    const b = PRICE_BUCKETS.find((bk) => bk.id === id);
+    const b = PRICE_BUCKETS.find((b) => b.id === id);
     if (b)
       chips.push({
         key: `price-${id}`,
         label: b.label,
-        remove: () => togglePrice(id),
+        remove: () => toggle(id, setActivePrices),
       });
   }
   if (activeRating) {
@@ -82,6 +113,10 @@ export function ShopFilters({ products, categoryTitle }: Props) {
       });
   }
 
+  const activeCount =
+    activeCategories.length + activePrices.length + (activeRating ? 1 : 0);
+
+  // ---- Filter panel (shared by sidebar + mobile drawer) --------------------
   const FilterPanel = ({ inline }: { inline?: boolean }) => (
     <div
       className={
@@ -90,6 +125,39 @@ export function ShopFilters({ products, categoryTitle }: Props) {
           : "flex flex-col gap-7"
       }
     >
+      {/* Category */}
+      <div>
+        <p className="text-[11px] uppercase tracking-[0.18em] text-clay font-bold mb-3">
+          Category
+        </p>
+        <div className="flex flex-col gap-2">
+          {categories.map((cat) => {
+            const checked = activeCategories.includes(cat.slug);
+            const count = categoryCounts.get(cat.slug) ?? 0;
+            return (
+              <label
+                key={cat.slug}
+                className={`flex items-center gap-2.5 cursor-pointer text-sm py-1.5 px-2.5 rounded-md border transition-all ${
+                  checked
+                    ? "border-primary bg-primary/10 text-denim font-medium"
+                    : "border-ink/15 hover:border-ink/30 text-ink/80"
+                }`}
+              >
+                <input
+                  type="checkbox"
+                  checked={checked}
+                  onChange={() => toggle(cat.slug, setActiveCategories)}
+                  className="w-4 h-4 accent-primary"
+                />
+                <span className="flex-1">{cat.title}</span>
+                <span className="text-[11px] text-ink/45">{count}</span>
+              </label>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Price */}
       <div>
         <p className="text-[11px] uppercase tracking-[0.18em] text-clay font-bold mb-3">
           Price
@@ -109,7 +177,7 @@ export function ShopFilters({ products, categoryTitle }: Props) {
                 <input
                   type="checkbox"
                   checked={checked}
-                  onChange={() => togglePrice(b.id)}
+                  onChange={() => toggle(b.id, setActivePrices)}
                   className="w-4 h-4 accent-primary"
                 />
                 {b.label}
@@ -119,6 +187,7 @@ export function ShopFilters({ products, categoryTitle }: Props) {
         </div>
       </div>
 
+      {/* Rating */}
       <div>
         <p className="text-[11px] uppercase tracking-[0.18em] text-clay font-bold mb-3">
           Customer rating
@@ -137,7 +206,7 @@ export function ShopFilters({ products, categoryTitle }: Props) {
               >
                 <input
                   type="radio"
-                  name="cat-rating-filter"
+                  name="rating-filter"
                   checked={checked}
                   onChange={() => setActiveRating(checked ? null : r.id)}
                   onClick={() => {
@@ -165,17 +234,18 @@ export function ShopFilters({ products, categoryTitle }: Props) {
   );
 
   return (
-    <div className="grid lg:grid-cols-[220px_1fr] gap-8">
+    <div className="grid lg:grid-cols-[240px_1fr] gap-8">
       <aside>
         <FilterPanel inline />
       </aside>
 
       <div>
+        {/* Toolbar: count + sort + mobile filter trigger */}
         <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
           <p className="text-sm text-ink/70">
             Showing{" "}
             <span className="font-bold text-denim">{filtered.length}</span> of{" "}
-            {products.length} {categoryTitle.toLowerCase()} picks
+            {products.length} products
           </p>
           <div className="flex items-center gap-2">
             <button
@@ -191,13 +261,13 @@ export function ShopFilters({ products, categoryTitle }: Props) {
               )}
             </button>
             <label
-              htmlFor="cat-sort"
+              htmlFor="all-sort"
               className="text-xs uppercase tracking-wider text-ink/60"
             >
               Sort
             </label>
             <select
-              id="cat-sort"
+              id="all-sort"
               value={sort}
               onChange={(e) => setSort(e.target.value as SortKey)}
               className="text-xs uppercase tracking-wider px-3 py-2 bg-paper border border-ink/15 rounded-md focus:outline-none focus:border-primary cursor-pointer"
@@ -211,6 +281,7 @@ export function ShopFilters({ products, categoryTitle }: Props) {
           </div>
         </div>
 
+        {/* Active-filter chips */}
         {chips.length > 0 && (
           <div className="flex flex-wrap items-center gap-2 mb-5">
             {chips.map((chip) => (
@@ -234,13 +305,14 @@ export function ShopFilters({ products, categoryTitle }: Props) {
           </div>
         )}
 
+        {/* Grid / empty state */}
         {filtered.length === 0 ? (
-          <div className="text-center py-16 border border-dashed border-ink/15 rounded-xl">
+          <div className="text-center py-20 border border-dashed border-ink/15 rounded-xl">
             <p className="font-display text-2xl text-denim tracking-wide mb-1">
               NOTHING MATCHES
             </p>
             <p className="text-ink/60">
-              No picks match those filters. Try loosening them up.
+              No products match those filters. Try loosening them up.
             </p>
             <button
               type="button"
@@ -251,12 +323,12 @@ export function ShopFilters({ products, categoryTitle }: Props) {
             </button>
           </div>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {filtered.map((p) => (
               <ProductCard
                 key={p.slug}
                 product={p}
-                source="category"
+                source="shop-all"
                 showBlurb
               />
             ))}
@@ -264,6 +336,7 @@ export function ShopFilters({ products, categoryTitle }: Props) {
         )}
       </div>
 
+      {/* Mobile filter drawer */}
       {openMobileFilters && (
         <div className="lg:hidden fixed inset-0 z-50 flex">
           <div
@@ -271,7 +344,7 @@ export function ShopFilters({ products, categoryTitle }: Props) {
             onClick={() => setOpenMobileFilters(false)}
             aria-hidden
           />
-          <div className="w-72 max-w-[80vw] bg-paper p-5 overflow-y-auto">
+          <div className="w-72 max-w-[82vw] bg-paper p-5 overflow-y-auto">
             <div className="flex items-center justify-between mb-5">
               <p className="font-display text-lg text-denim tracking-wide">
                 FILTERS
@@ -291,7 +364,7 @@ export function ShopFilters({ products, categoryTitle }: Props) {
               onClick={() => setOpenMobileFilters(false)}
               className="mt-6 w-full px-5 py-3 bg-denim text-paper font-display tracking-wide rounded-md"
             >
-              SHOW {filtered.length} PICKS
+              SHOW {filtered.length} PRODUCTS
             </button>
           </div>
         </div>

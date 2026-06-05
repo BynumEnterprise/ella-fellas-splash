@@ -3,7 +3,7 @@ title: "What to Bring to an Ella Langley Concert (and What to Leave Home)"
 slug: "what-to-bring-ella-langley-concert"
 category: "concert-prep"
 publishedAt: "2026-06-02"
-updatedAt: "2026-06-02"
+updatedAt: "2026-06-05"
 excerpt: "The honest packing list for an Ella Langley show: what clears security, what gets confiscated, and the few things that actually make the night better."
 ---
 
@@ -37,7 +37,7 @@ Here's what to bring, in rough order of importance:
 **Comfort and weather**
 - A light layer — arenas run cold during the openers (often 63-66°F) and warm up fast once the room fills. A zip hoodie or denim jacket fits in a clear bag.
 - Rain poncho if you're at an outdoor amphitheater — the [packable kind](https://www.amazon.com/s?k=packable+rain+poncho+clear+bag+size&tag=ellafellas-20) compresses to the size of a baseball and fits flat in your clear bag. Check the forecast two days out, not the morning of.
-- Comfortable boots or closed-toe shoes you've worn before. Not new ones. Your feet will thank you at the 2.5-hour mark.
+- Comfortable boots or closed-toe shoes you've worn before. Not new ones. Your feet will thank you at the 2.5-hour mark. If you're going western, <a href="https://www.kqzyfj.com/click-101760569-15736262" target="_blank" rel="nofollow sponsored">Pinto Ranch</a> carries the boots and pearl-snaps that actually hold up past show night.
 
 **Cash and cards**
 - Most arena bars are card-only now, but parking attendants, merchandise tables, and tip jars at the bar are still cash-friendly. $40-60 in mixed bills covers you.

@@ -19,6 +19,13 @@ export function NewsletterSignup({ placement = "inline" }: { placement?: string 
       });
       const j = await r.json();
       if (r.ok) {
+        try {
+          if (typeof window !== "undefined" && window.gtag) {
+            window.gtag("event", "newsletter_signup", { page_path: window.location.pathname });
+          }
+        } catch {
+          // ignore — analytics must not block UX
+        }
         setState("ok");
         setMessage(j.message ?? "You're on the list. Check your inbox to confirm.");
         setEmail("");

@@ -178,6 +178,39 @@ export const LOOKS: Look[] = [
       "ec-loop-experience-2",
     ],
   },
+
+  {
+    slug: "cowgirl-festival-day",
+    title: "Cowgirl Festival Day",
+    tagline: "All-day Stagecoach uniform",
+    occasion: "Outdoor festival · daytime",
+    vibe:
+      "Railbird, Stagecoach, any all-day bill in the sun. A fitted rodeo dress, real cowgirl boots, a felt brim for shade, and the fringe and turquoise that make the crowd photos. Light enough to dance in from noon to the headliner.",
+    productSlugs: [
+      "wfw-verdusa-rodeo-dress",
+      "wfw-iuv-festival-boots",
+      "wfw-felt-wide-brim-hat",
+      "wfw-milumia-fringe-vest",
+      "wfw-avecon-feather-earrings",
+      "wfw-ruffle-boot-socks",
+    ],
+  },
+  {
+    slug: "nashville-night-out-her",
+    title: "Nashville Night Out",
+    tagline: "Broadway-ready, dialed up",
+    occasion: "Bar / club show · late",
+    vibe:
+      "Lower Broadway, a honky-tonk crawl, the kind of night that ends at last call. A backless fringe romper or an embroidered shirt dress, the comfortable boots you can two-step in, a fringe jacket for when it cools off, and turquoise to finish it.",
+    productSlugs: [
+      "wfw-ella-lust-fringe-romper",
+      "wfw-hisea-rollda-boots",
+      "wfw-prettygarden-fringe-jacket",
+      "wfw-turquoise-dangle-earrings",
+      "wfw-beaudrm-concho-belt",
+      "wfw-inogih-fedora-hat",
+    ],
+  },
 ];
 
 export function getAllLooks(): Look[] {

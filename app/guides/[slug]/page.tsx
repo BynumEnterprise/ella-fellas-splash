@@ -4,6 +4,7 @@ import Link from "next/link";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
+import { Sparkles, ArrowRight } from "lucide-react";
 import { getAllGuideContent, getGuideBySlug } from "@/lib/content";
 import { ArticleSchema } from "@/components/schema/ArticleSchema";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
@@ -12,6 +13,8 @@ import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
 import { TableOfContents } from "@/components/TableOfContents";
 import { TrustByline } from "@/components/TrustByline";
 import { TrustSignal } from "@/components/TrustSignal";
+import { LookCard } from "@/components/LookCard";
+import { getLooksForGuide } from "@/lib/looks";
 import { extractTocItems } from "@/lib/toc";
 import { formatDate } from "@/lib/utils";
 
@@ -61,7 +64,8 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
 
   const tocItems = extractTocItems(item.body);
 
-  // Build related guides: same category first, then most recent; exclude current
+  const guideLooks = getLooksForGuide(slug);
+
   const allGuides = getAllGuideContent();
   const sameCategory = allGuides.filter(
     (g) => g.slug !== slug && g.frontmatter.category === item.frontmatter.category
@@ -114,6 +118,32 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
         />
       </div>
 
+      {guideLooks.length > 0 && (
+        <section className="mt-12 pt-8 border-t border-ink/10">
+          <p className="text-[11px] uppercase tracking-[0.18em] text-clay font-bold flex items-center gap-1.5">
+            <Sparkles className="w-3.5 h-3.5 text-primary" /> Shop the Look
+          </p>
+          <h2 className="font-display text-2xl md:text-3xl text-denim mt-1 mb-2">
+            Skip the guesswork &mdash; grab a ready-made outfit
+          </h2>
+          <p className="text-ink/75 mb-6">
+            We turned the advice above into complete, buyable outfits. Each one is
+            real boots, hats, shirts and gear you can grab on Amazon in one scroll.
+          </p>
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {guideLooks.map((look) => (
+              <LookCard key={look.slug} look={look} />
+            ))}
+          </div>
+          <Link
+            href="/shop/looks"
+            className="mt-6 inline-flex items-center gap-1.5 text-sm font-display tracking-wide text-primary hover:gap-2.5 transition-all"
+          >
+            SEE ALL SHOP-THE-LOOK OUTFITS <ArrowRight className="w-4 h-4" />
+          </Link>
+        </section>
+      )}
+
       {item.frontmatter.faq && item.frontmatter.faq.length > 0 && (
         <section className="mt-12 pt-8 border-t border-ink/10">
           <h2 className="font-display text-2xl md:text-3xl text-denim mb-5">
@@ -134,7 +164,6 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
 
       <AffiliateDisclosure />
 
-      {/* Related guides */}
       {relatedGuides.length > 0 && (
         <section className="mt-12 pt-8 border-t border-ink/10">
           <h2 className="font-display text-2xl text-denim mb-5">Keep reading</h2>
@@ -162,4 +191,3 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
     </article>
   );
 }
-

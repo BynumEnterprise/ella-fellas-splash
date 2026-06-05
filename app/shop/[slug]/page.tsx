@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { Star, Check, Truck, RotateCcw, Award, ShoppingBag } from "lucide-react";
+import { Star, Check, Truck, RotateCcw, Award, ShoppingBag, Sparkles, ArrowRight } from "lucide-react";
 import { AffiliateLink } from "@/components/AffiliateLink";
 import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
 import { amazonSearchUrl, amazonUrl } from "@/lib/affiliates";
@@ -11,6 +11,7 @@ import {
   getProduct,
   getProductsByCategory,
 } from "@/lib/shop";
+import { getLooksForProduct, getLookProducts } from "@/lib/looks";
 import { ProductGallery } from "./ProductGallery";
 import { ProductSchema } from "@/components/schema/ProductSchema";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
@@ -36,7 +37,6 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
-/** Render a 5-star rating row with the rating + review count next to it. */
 function RatingRow({ rating, count }: { rating: number; count: number }) {
   const fullStars = Math.floor(rating);
   const hasHalf = rating - fullStars >= 0.4 && rating - fullStars < 0.9;
@@ -75,6 +75,13 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
   const related = getProductsByCategory(product.category)
     .filter((p) => p.slug !== product.slug)
     .slice(0, 4);
+
+  const looks = getLooksForProduct(product.slug);
+  const primaryLook = looks[0];
+  const completeTheLook = primaryLook
+    ? getLookProducts(primaryLook).filter((p) => p.slug !== product.slug).slice(0, 4)
+    : [];
+
   const galleryImages = [product.image, ...(product.gallery ?? [])];
   const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
   const pageUrl = `${SITE_URL}/shop/${product.slug}`;
@@ -94,7 +101,6 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
     <article className="mx-auto max-w-6xl px-4 py-8">
       <ProductSchema product={product} url={pageUrl} />
       <BreadcrumbSchema items={breadcrumbItems} />
-      {/* Breadcrumb */}
       <nav className="text-xs text-ink/60 mb-6 flex items-center gap-1.5">
         <Link href="/shop" className="hover:text-primary">Shop</Link>
         {category && (
@@ -110,14 +116,12 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
       </nav>
 
       <div className="grid lg:grid-cols-[1.1fr_1fr] gap-10 mb-14">
-        {/* LEFT: Gallery */}
         <ProductGallery
           images={galleryImages}
           alt={product.name}
           badge={product.badge}
         />
 
-        {/* RIGHT: Details + CTA */}
         <div className="flex flex-col">
           {category && (
             <p className="text-[11px] uppercase tracking-[0.18em] text-clay font-bold mb-3">
@@ -133,7 +137,6 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
             </p>
           )}
 
-          {/* Rating + price row */}
           <div className="mt-4 flex flex-col gap-3">
             {product.rating != null && product.reviewCount != null && (
               <RatingRow rating={product.rating} count={product.reviewCount} />
@@ -150,12 +153,10 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
             )}
           </div>
 
-          {/* Blurb */}
           <p className="text-base text-ink/85 mt-5 leading-relaxed">
             {product.blurb}
           </p>
 
-          {/* Primary CTA */}
           <AffiliateLink
             href={amazonHref}
             source={`amazon-detail-${product.slug}`}
@@ -166,7 +167,6 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
           </AffiliateLink>
           <p className="text-[11px] text-ink/55 mt-2.5 text-center">{ctaSubLabel}</p>
 
-          {/* Trust badges */}
           <div className="mt-6 grid grid-cols-3 gap-2 pt-5 border-t border-ink/10">
             <div className="flex flex-col items-center gap-1.5 text-center">
               <Truck className="w-5 h-5 text-primary" strokeWidth={1.5} />
@@ -188,7 +188,6 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
             </div>
           </div>
 
-          {/* Why we picked it — editorial trust block */}
           <div className="mt-6 p-5 bg-denim/5 border-l-4 border-primary rounded-r-lg">
             <p className="text-[11px] uppercase tracking-[0.18em] text-clay font-bold mb-2">
               Why the fellas picked it
@@ -196,7 +195,21 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
             <p className="text-sm text-ink/85 leading-relaxed">{product.why}</p>
           </div>
 
-          {/* What to expect */}
+          {primaryLook && (
+            <Link
+              href={`/shop/looks/${primaryLook.slug}`}
+              className="mt-5 flex items-center gap-3 p-4 bg-primary/8 border border-primary/30 rounded-lg hover:bg-primary/15 transition-colors group"
+            >
+              <Sparkles className="w-5 h-5 text-primary flex-shrink-0" />
+              <span className="text-sm text-ink/85 flex-1">
+                Part of the{" "}
+                <span className="font-display text-denim">{primaryLook.title}</span>{" "}
+                look &mdash; see the full outfit.
+              </span>
+              <ArrowRight className="w-4 h-4 text-primary group-hover:translate-x-0.5 transition-transform" />
+            </Link>
+          )}
+
           <div className="mt-6">
             <p className="text-[11px] uppercase tracking-[0.18em] text-clay font-bold mb-3">
               What to expect
@@ -223,7 +236,6 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
         </div>
       </div>
 
-      {/* Secondary CTA strip — full-width denim band */}
       <section className="bg-denim text-paper rounded-xl px-6 py-7 md:px-10 md:py-9 mb-14 flex flex-col md:flex-row items-start md:items-center gap-5 md:gap-8">
         <div className="flex-1">
           <p className="font-display text-xl md:text-2xl tracking-wide">
@@ -243,7 +255,60 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
         </AffiliateLink>
       </section>
 
-      {/* Related picks in same category */}
+      {completeTheLook.length > 0 && primaryLook && (
+        <section className="mb-14">
+          <div className="flex items-end justify-between gap-4 flex-wrap mb-5">
+            <div>
+              <p className="text-[11px] uppercase tracking-[0.18em] text-clay font-bold flex items-center gap-1.5">
+                <Sparkles className="w-3.5 h-3.5 text-primary" /> Complete the look
+              </p>
+              <h2 className="font-display text-2xl text-denim tracking-wider mt-1">
+                GOES WITH THE {primaryLook.title.toUpperCase()}
+              </h2>
+            </div>
+            <Link
+              href={`/shop/looks/${primaryLook.slug}`}
+              className="inline-flex items-center gap-1.5 text-sm font-display tracking-wide text-primary hover:gap-2.5 transition-all whitespace-nowrap"
+            >
+              SEE THE FULL LOOK <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {completeTheLook.map((r) => (
+              <Link
+                key={r.slug}
+                href={`/shop/${r.slug}`}
+                className="group block bg-paper border border-ink/12 rounded-xl overflow-hidden hover:border-primary hover:shadow-md transition-all"
+              >
+                <div className="aspect-square overflow-hidden bg-ink/5">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={r.image}
+                    alt={r.name}
+                    loading="lazy"
+                    className="w-full h-full object-contain p-3 group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div className="p-4">
+                  <p className="font-display text-sm text-denim leading-snug line-clamp-2">{r.name}</p>
+                  <div className="flex items-center justify-between mt-2">
+                    {r.price && (
+                      <p className="text-xs text-primary uppercase tracking-wider font-medium">{r.price}</p>
+                    )}
+                    {r.rating != null && (
+                      <p className="text-xs text-ink/60 flex items-center gap-0.5">
+                        <Star className="w-3 h-3 fill-primary text-primary" strokeWidth={1.5} />
+                        {r.rating.toFixed(1)}
+                      </p>
+                    )}
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
+
       {related.length > 0 && (
         <section className="mb-12">
           <h2 className="font-display text-2xl text-denim tracking-wider mb-5">

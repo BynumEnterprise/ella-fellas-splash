@@ -1,10 +1,10 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import Link from "next/link";
-import { Star, SlidersHorizontal, X } from "lucide-react";
+import { SlidersHorizontal, X } from "lucide-react";
 import type { ShopProduct, SortKey } from "@/lib/shop";
 import { PRICE_BUCKETS, priceToNumber, sortProducts } from "@/lib/shop";
+import { ProductCard } from "@/components/ProductCard";
 
 interface Props {
   products: ShopProduct[];
@@ -42,7 +42,6 @@ export function ShopFilters({ products, categoryTitle }: Props) {
           : "flex flex-col gap-7"
       }
     >
-      {/* Price filter */}
       <div>
         <p className="text-[11px] uppercase tracking-[0.18em] text-clay font-bold mb-3">
           Price
@@ -72,7 +71,6 @@ export function ShopFilters({ products, categoryTitle }: Props) {
         </div>
       </div>
 
-      {/* Active filters / reset */}
       {activePrices.length > 0 && (
         <button
           type="button"
@@ -87,13 +85,11 @@ export function ShopFilters({ products, categoryTitle }: Props) {
 
   return (
     <div className="grid lg:grid-cols-[220px_1fr] gap-8">
-      {/* DESKTOP filter sidebar */}
       <aside>
         <FilterPanel inline />
       </aside>
 
       <div>
-        {/* Top bar: results count + sort + mobile filter button */}
         <div className="flex flex-wrap items-center justify-between gap-3 mb-5">
           <p className="text-sm text-ink/70">
             <span className="font-bold text-denim">{filtered.length}</span> of{" "}
@@ -128,7 +124,6 @@ export function ShopFilters({ products, categoryTitle }: Props) {
           </div>
         </div>
 
-        {/* Product grid */}
         {filtered.length === 0 ? (
           <div className="text-center py-16 border border-dashed border-ink/15 rounded-xl">
             <p className="text-ink/60">No picks match those filters.</p>
@@ -143,62 +138,17 @@ export function ShopFilters({ products, categoryTitle }: Props) {
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
             {filtered.map((p) => (
-              <Link
+              <ProductCard
                 key={p.slug}
-                href={`/shop/${p.slug}`}
-                className="group bg-paper border border-ink/12 rounded-xl overflow-hidden flex flex-col hover:border-primary hover:shadow-md transition-all"
-              >
-                <div className="relative aspect-square overflow-hidden bg-paper">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={p.image}
-                    alt={p.name}
-                    loading="lazy"
-                    className="w-full h-full object-contain p-3 group-hover:scale-105 transition-transform duration-500"
-                  />
-                  {p.badge && (
-                    <span className="absolute top-3 left-3 bg-denim text-paper text-[10px] uppercase tracking-[0.15em] px-2 py-0.5 rounded-full font-medium">
-                      {p.badge}
-                    </span>
-                  )}
-                </div>
-                <div className="p-4 flex-1 flex flex-col">
-                  <h3 className="font-display text-base text-denim leading-snug line-clamp-2">
-                    {p.name}
-                  </h3>
-                  <p className="text-xs text-ink/65 mt-1.5 line-clamp-2 flex-1">
-                    {p.blurb}
-                  </p>
-                  <div className="flex items-center justify-between mt-3 pt-3 border-t border-ink/8">
-                    <div className="flex items-center gap-1">
-                      {p.rating != null && (
-                        <>
-                          <Star className="w-3 h-3 fill-primary text-primary" strokeWidth={1.5} />
-                          <span className="text-[11px] text-ink/70 font-medium">
-                            {p.rating.toFixed(1)}
-                          </span>
-                          {p.reviewCount != null && (
-                            <span className="text-[11px] text-ink/45">
-                              ({p.reviewCount > 999 ? `${(p.reviewCount / 1000).toFixed(1)}k` : p.reviewCount})
-                            </span>
-                          )}
-                        </>
-                      )}
-                    </div>
-                    {p.price && (
-                      <span className="font-display text-sm text-denim tracking-wider">
-                        {p.price}
-                      </span>
-                    )}
-                  </div>
-                </div>
-              </Link>
+                product={p}
+                source="category"
+                showBlurb
+              />
             ))}
           </div>
         )}
       </div>
 
-      {/* MOBILE filter drawer */}
       {openMobileFilters && (
         <div className="lg:hidden fixed inset-0 z-50 flex">
           <div

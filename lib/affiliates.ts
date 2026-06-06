@@ -43,8 +43,6 @@ const VIVID_PERFORMER = "https://www.vividseats.com/ella-langley-tickets/perform
  */
 const KNOWN_TICKPICK_URLS: Record<string, string> = {
   // Keys MUST match TourDate.id in data/tour-dates.json exactly.
-  "estero-hertz-arena-2026-05-14":
-    "https://www.tickpick.com/buy-ella-langley-tickets-hertz-arena-5-14-26-7pm/7715671/",
   "oklahoma-city-zoo-amphitheatre-2026-06-18":
     "https://www.tickpick.com/buy-ella-langley-tickets-oklahoma-city-zoo-amphitheatre-6-18-26-7pm/7715697/",
   "independence-cable-dahmer-arena-2026-06-19":

@@ -115,13 +115,38 @@ const KNOWN_SEATGEEK_URLS: Record<string, string> = {
 
 /**
  * Verified Vivid Seats event-page URLs keyed by TourDate.id. Confirmed in a
- * browser (venue + date match). NOTE: Vivid currently lists Ella's HEADLINE
- * tour stops one month later than our dates (e.g. Aug shows appear under Sept),
- * so those have no reliable per-event match and fall back to the performer page
- * to avoid sending fans to a wrong-date page. Only festival / Morgan Wallen
- * dates that match exactly are deep-linked here.
+ * browser. NOTE: Vivid's URL slug embeds a cosmetic (wrong) date roughly one
+ * month later than the real show, but each /production/<id> resolves to the
+ * CORRECT event — page title + on-page date were verified to match our show
+ * before being added here. Keyed by TourDate.id.
  */
 const KNOWN_VIVID_URLS: Record<string, string> = {
+  // Headline Dandelion Tour stops (production id verified to the correct date).
+  "oklahoma-city-zoo-amphitheatre-2026-06-18":
+    "https://www.vividseats.com/ella-langley-tickets-oklahoma-city-okc-zoo-amphitheatre-9-5-2026--concerts-rock/production/6605452",
+  "independence-cable-dahmer-arena-2026-06-19":
+    "https://www.vividseats.com/ella-langley-tickets-independence-cable-dahmer-arena-9-6-2026--concerts-rock/production/6605447",
+  "salem-salem-civic-center-2026-06-25":
+    "https://www.vividseats.com/ella-langley-tickets-salem-salem-civic-center-9-7-2026--concerts-rock/production/6605441",
+  "wilmington-live-oak-bank-pavilion-2026-06-26":
+    "https://www.vividseats.com/ella-langley-tickets-wilmington-live-oak-bank-pavilion-9-8-2026--concerts-rock/production/6605439",
+  "pikeville-appalachian-wireless-arena-2026-07-23":
+    "https://www.vividseats.com/ella-langley-tickets-pikeville-appalachian-wireless-arena-9-9-2026--concerts-rock/production/6605433",
+  "cary-koka-booth-amphitheatre-2026-07-24":
+    "https://www.vividseats.com/ella-langley-tickets-cary-koka-booth-amphitheatre-at-regency-park-9-10-2026--concerts-rock/production/6605431",
+  "north-charleston-north-charleston-coliseum-2026-07-25":
+    "https://www.vividseats.com/ella-langley-tickets-north-charleston-north-charleston-coliseum-9-11-2026--concerts-rock/production/6605429",
+  "gilford-banknh-pavilion-2026-07-30":
+    "https://www.vividseats.com/ella-langley-tickets-gilford-banknh-pavilion-9-12-2026--concerts-rock/production/6605427",
+  "canandaigua-cmac-2026-07-31":
+    "https://www.vividseats.com/ella-langley-tickets-canandaigua-constellation-brands-performing-arts-center-9-13-2026--concerts-rock/production/6605425",
+  "austin-moody-center-2026-08-13":
+    "https://www.vividseats.com/ella-langley-tickets-austin-moody-center-atx-9-14-2026--concerts-rock/production/6605421",
+  "corpus-christi-american-bank-center-2026-08-14":
+    "https://www.vividseats.com/ella-langley-tickets-corpus-christi-hilliard-center-9-15-2026--concerts-rock/production/6605423",
+  "fort-worth-dickies-arena-2026-08-15":
+    "https://www.vividseats.com/ella-langley-tickets-fort-worth-dickies-arena-9-16-2026--concerts-rock/production/6605419",
+  // Festival / Morgan Wallen dates that match exactly.
   "lexington-railbird-festival-2026-06-07":
     "https://www.vividseats.com/railbird-festival-tickets-lexington-the-red-mile-6-7-2026--concerts-music-festivals/production/6163370",
   "philadelphia-lincoln-financial-field-2026-08-01":

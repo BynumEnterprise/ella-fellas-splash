@@ -15,7 +15,7 @@ import { getAllLooks } from "@/lib/looks";
 export const metadata: Metadata = {
   title: "The Fellas Shop — boutique gear for country fans",
   description:
-    "Hand-picked men's gear for the Ella Langley superfan: shop-the-look outfits, concert essentials, western wear, whiskey & bar, ranch decor, vinyl, and 140+ curated picks across 10 categories. Every link buys on Amazon.",
+    "Hand-picked men's gear for the Ella Langley superfan: shop-the-look outfits, concert essentials, western wear, whiskey & bar, ranch decor, vinyl, and 160+ curated picks across 10 categories. Every link buys on Amazon.",
 };
 
 export default function ShopPage() {

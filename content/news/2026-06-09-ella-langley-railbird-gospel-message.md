@@ -22,8 +22,8 @@ Then she did the thing that makes these moments land instead of feeling like a s
 
 ## Why this keeps happening
 
-If you've followed Ella for a while, the throughline isn't new. "Loving Life Again," the Dandelion cut she's said is one of the most sentimental things she's written, came out of a genuinely hard stretch last year — the same season she opened up about her mental health after the 2025 ACMs. The speech before it isn't a bit. It's the song's backstory said out loud, and crowds clearly feel the difference.
+If you've followed Ella for a while, the throughline isn't new. ["Loving Life Again"](/songs/loving-life-again), the Dandelion cut she's said is one of the most sentimental things she's written, came out of a genuinely hard stretch last year — the same season she opened up about her mental health after the 2025 ACMs. The speech before it isn't a bit. It's the song's backstory said out loud, and crowds clearly feel the difference.
 
 That's also why we think it travels. Country is full of faith, but few artists at her level are this plainspoken about the low parts of it. Two viral moments in three weeks, from two different stops, says fans are coming for more than the hits.
 
-She's right back at it soon — the [full Dandelion Tour schedule](/tour) runs through August, and if Railbird is any sign, the talk before "Loving Life Again" is becoming as much a part of the show as the song.
+She's right back at it soon — the [full Dandelion Tour schedule](/tour) runs through August, and if Railbird is any sign, the talk before "Loving Life Again" is becoming as much a part of the show as the song. Catching a festival stop this summer? Our [cowgirl festival-day look](/shop/looks/cowgirl-festival-day) was built for exactly that kind of afternoon.

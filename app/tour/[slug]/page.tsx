@@ -6,6 +6,7 @@ import { getAllTourDates, getTourDate } from "@/lib/data";
 import { AffiliateLink } from "@/components/AffiliateLink";
 import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
 import { ConcertGearWidget } from "@/components/ConcertGearWidget";
+import { PlanYourTrip } from "@/components/PlanYourTrip";
 import { MusicEventSchema } from "@/components/schema/MusicEventSchema";
 import { ticketUrl, hotelUrl } from "@/lib/affiliates";
 import type { TicketEventContext } from "@/lib/affiliates";
@@ -32,6 +33,9 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
 
   const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
   const pageUrl = `${SITE_URL}/tour/${d.id}`;
+  // Past-show handling matches getUpcomingTourDates() in lib/data.ts (date >= today).
+  const today = new Date().toISOString().slice(0, 10);
+  const isPast = d.date < today;
   // Pass the FULL event context (crucially `id`) to ticketUrl so each source can
   // resolve its verified per-event deep link from the KNOWN_* maps. Passing a
   // bare query string here (the old behavior) left ctx.id undefined and every
@@ -171,6 +175,15 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
           FIND HOTELS NEAR {d.venue.toUpperCase()}
         </AffiliateLink>
       </section>
+
+      {!isPast && (
+        <PlanYourTrip
+          city={d.city}
+          cityState={`${d.city}, ${d.state}`}
+          venue={d.venue}
+          date={d.date}
+        />
+      )}
 
       <ConcertGearWidget show={{ venue: d.venue, venueCapacity: d.venueCapacity }} />
 

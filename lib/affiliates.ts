@@ -218,3 +218,56 @@ export function hotelUrl(city: string): string {
   // Booking.com not currently on Awin US -- bare link until a hotel affiliate program (e.g. Stay22/Expedia) is set up.
   return `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(city)}`;
 }
+
+// ─────────────────────────────────────────────────────────────────────────────
+// PLAN YOUR TRIP — travel-affiliate module
+// Vrbo is wired and live (CJ). Everything else below reads from an env var and
+// returns null until the program is approved + the link is set. The
+// PlanYourTrip component hides any option whose getter returns null.
+// ─────────────────────────────────────────────────────────────────────────────
+
+// Vrbo via CJ (vacation rentals, ~2%). Hardcoded base click URL — we have this
+// program live. Deep-links to a Vrbo city search by URL-encoding the destination.
+const VRBO_CLICK = "https://www.kqzyfj.com/click-101760569-10697641";
+
+/** Affiliate deep link to Vrbo vacation-rental results for a given city. */
+export function vrboUrl(city: string): string {
+  const dest = `https://www.vrbo.com/search?destination=${encodeURIComponent(city)}`;
+  return `${VRBO_CLICK}?url=${encodeURIComponent(dest)}`;
+}
+
+/**
+ * Pending travel/experience affiliate slots. Each reads a NEXT_PUBLIC_AFF_<NAME>
+ * env var and returns its value, or null if unset. Returning null lets the
+ * PlanYourTrip component cleanly hide anything we don't yet have a link for.
+ *
+ * Populate these in Vercel env once each program is approved:
+ *   Hotel-loyalty POINTS programs (Impact, pending review):
+ *     NEXT_PUBLIC_AFF_IHG, NEXT_PUBLIC_AFF_HILTON,
+ *     NEXT_PUBLIC_AFF_MARRIOTT, NEXT_PUBLIC_AFF_CHOICE
+ *   Hotel / flight booking (room nights, future):
+ *     NEXT_PUBLIC_AFF_PRICELINE, NEXT_PUBLIC_AFF_TRIPDOTCOM, NEXT_PUBLIC_AFF_CHEAPOAIR
+ *   Tickets / experiences (future):
+ *     NEXT_PUBLIC_AFF_GAMETIME, NEXT_PUBLIC_AFF_TICKETNETWORK,
+ *     NEXT_PUBLIC_AFF_VIATOR, NEXT_PUBLIC_AFF_GETYOURGUIDE
+ */
+function envLink(value: string | undefined): string | null {
+  return value && value.trim() ? value : null;
+}
+
+// Hotel-loyalty points programs (NOT room booking — minor footnote only).
+export const ihgUrl = (): string | null => envLink(process.env.NEXT_PUBLIC_AFF_IHG);
+export const hiltonUrl = (): string | null => envLink(process.env.NEXT_PUBLIC_AFF_HILTON);
+export const marriottUrl = (): string | null => envLink(process.env.NEXT_PUBLIC_AFF_MARRIOTT);
+export const choiceUrl = (): string | null => envLink(process.env.NEXT_PUBLIC_AFF_CHOICE);
+
+// Hotel / flight booking partners (room nights & airfare).
+export const pricelineUrl = (): string | null => envLink(process.env.NEXT_PUBLIC_AFF_PRICELINE);
+export const tripDotComUrl = (): string | null => envLink(process.env.NEXT_PUBLIC_AFF_TRIPDOTCOM);
+export const cheapOairUrl = (): string | null => envLink(process.env.NEXT_PUBLIC_AFF_CHEAPOAIR);
+
+// Tickets / experiences.
+export const gametimeUrl = (): string | null => envLink(process.env.NEXT_PUBLIC_AFF_GAMETIME);
+export const ticketNetworkUrl = (): string | null => envLink(process.env.NEXT_PUBLIC_AFF_TICKETNETWORK);
+export const viatorUrl = (): string | null => envLink(process.env.NEXT_PUBLIC_AFF_VIATOR);
+export const getYourGuideUrl = (): string | null => envLink(process.env.NEXT_PUBLIC_AFF_GETYOURGUIDE);

@@ -110,7 +110,13 @@ export function wrapEmail(opts: {
  * headings/links/lists carry the brand colors in clients that honor <style>.
  */
 export function newsletterMarkdownToHtml(markdownBody: string): string {
-  const rendered = marked.parse(markdownBody, { async: false }) as string;
+  // Absolutize internal links: email clients turn a root-relative href like
+  // "/news/x" into the invalid "http:///news/x". Force every internal link/img
+  // to a full https://ellafellas.com URL. (Belt-and-suspenders: senders should
+  // already write absolute URLs.)
+  const rendered = (marked.parse(markdownBody, { async: false }) as string)
+    .replace(/href="\/(?!\/)/g, `href="${SITE_URL}/`)
+    .replace(/src="\/(?!\/)/g, `src="${SITE_URL}/`);
   const styled = `
   <style>
     .nl h1 { font-family:Impact,sans-serif; color:#2F4858; letter-spacing:0.03em; font-size:26px; margin:16px 0 8px; }

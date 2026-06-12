@@ -14,7 +14,7 @@ sources:
     url: "https://www.billboard.com/lists/ella-langley-choosin-texas-hot-100-number-one-10-weeks/"
 ---
 
-We've spent most of this year tracking what "Choosin' Texas" is doing to the Hot 100, but the quieter record is the one we'd circle this week. As of the chart dated for the week of June 6, "Choosin' Texas" has spent 26 weeks at No. 1 on Billboard's Hot Country Songs chart, and [Parade reports it has now passed Morgan Wallen's "Last Night"](https://parade.com/entertainment/country-star-ella-langley-30-million-monthly-spotify-listeners-dandelion-tour-2026) to become the fifth-longest-running No. 1 in the entire history of the chart. For a single still climbing, that's the number we keep staring at.
+We've spent most of this year tracking what ["Choosin' Texas"](/songs/choosin-texas) is doing to the Hot 100, but the quieter record is the one we'd circle this week. As of the chart dated for the week of June 6, "Choosin' Texas" has spent 26 weeks at No. 1 on Billboard's Hot Country Songs chart, and [Parade reports it has now passed Morgan Wallen's "Last Night"](https://parade.com/entertainment/country-star-ella-langley-30-million-monthly-spotify-listeners-dandelion-tour-2026) to become the fifth-longest-running No. 1 in the entire history of the chart. For a single still climbing, that's the number we keep staring at.
 
 ## What 26 weeks at No. 1 actually means
 
@@ -30,4 +30,4 @@ The strangest sign of how big this is: "Choosin' Texas" keeps getting in its own
 
 This lands the same week she crossed 30 million monthly Spotify listeners and a few days after she swept her ACM categories, so the chart record is one line in a much longer ledger — and we've been [keeping that ledger all spring](/news/2026-05-30-choosin-texas-tenth-week-hot-100), back to the song's 10th week atop the Hot 100. If you're new to all of this, our [running guide to every record she's set](/about) lays out the full picture, and our [ranking of every Ella Langley song](/guides/best-ella-langley-songs-ranked) puts "Choosin' Texas" next to the rest of the catalog.
 
-We said weeks ago that the floor under this song still wasn't close. Twenty-six weeks in, with the women's runner-up record one week away and a [tour rolling through the summer](/tour), we're not betting against it yet.
+We said weeks ago that the floor under this song still wasn't close. Twenty-six weeks in, with the women's runner-up record one week away and a [tour rolling through the summer](/tour), we're not 

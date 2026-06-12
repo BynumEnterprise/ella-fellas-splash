@@ -15,7 +15,7 @@ We figured "Be Her" topping country radio was the headline, and then the rest of
 
 ## The three songs doing it
 
-"Be Her" is holding at No. 1 for a second straight week, which on its own is a nice follow-up to the [fastest-flying airplay No. 1 of her career](/news/2026-05-31-be-her-country-airplay-number-one) we wrote about last week. But it's not alone up there. "Choosin' Texas," the song that ran the table on the Hot 100 all spring, is camped at No. 5. And her Morgan Wallen duet "I Can't Love You Anymore" just cracked the top 10 at No. 10. Three Ella titles, top 10, all at once.
+["Be Her"](/songs/be-her) is holding at No. 1 for a second straight week, which on its own is a nice follow-up to the [fastest-flying airplay No. 1 of her career](/news/2026-05-31-be-her-country-airplay-number-one) we wrote about last week. But it's not alone up there. ["Choosin' Texas"](/songs/choosin-texas), the song that ran the table on the Hot 100 all spring, is camped at No. 5. And her Morgan Wallen duet "I Can't Love You Anymore" just cracked the top 10 at No. 10. Three Ella titles, top 10, all at once.
 
 ## Why that's a genuinely rare line on the page
 
@@ -23,4 +23,4 @@ Country radio is a slow, stubborn format. Getting one song to the top is hard; g
 
 What we like about this one is that it isn't a streaming quirk or a one-week spike. Airplay is the format voting with its actual rotations: programmers across the country are choosing to play "Be Her," "Choosin' Texas," and the Wallen collab in the same week. That's three different lanes — a power ballad, a barn-burner, and a duet — all working at once.
 
-It also ties neatly into the summer she's running. The Wallen duet climbing makes more sense when you remember she's [opening his stadium nights while headlining her own Dandelion run](/news/2026-06-02-summer-two-tours-ahead), so both audiences are hearing her constantly. If you want to catch any of it live, the full routing is on our [tour page](/tour) — and after CMA Fest and Railbird this week, there's plenty left on the calendar.
+It also ties neatly into the summer she's running. The Wallen duet climbing makes more sense when you remember she's [opening his stadium nights while headlining her own Dandelion run](/news/2026-06-02-summer-two-tours-ahead), so both audiences are hearing her constantly. If you want to catch any of it live, the full routing is on our [tour page](/tour) — and after CMA Fest and Railbird this we

@@ -17,7 +17,7 @@ We told you opening night was the date we'd circled, and Ella didn't waste it. T
 
 ## Her set
 
-For her slot, Ella leaned right into the song that started all of this, breaking into "You Look Like You Love Me" early and letting the stadium carry the hook back at her. She closed out with "Weren't for the Wind," the 2024 cut that's quietly become one of the steadiest singalongs in her catalog. It was a tight stadium-revue set rather than a full headline night — exactly the kind of short window we figured she'd attack — and on her second-ever time playing Nissan, she handled it like someone who's done this for years.
+For her slot, Ella leaned right into the song that started all of this, breaking into ["You Look Like You Love Me"](/songs/you-look-like-you-love-me) early and letting the stadium carry the hook back at her. She closed out with ["Weren't for the Wind"](/songs/werent-for-the-wind), the 2024 cut that's quietly become one of the steadiest singalongs in her catalog. It was a tight stadium-revue set rather than a full headline night — exactly the kind of short window we figured she'd attack — and on her second-ever time playing Nissan, she handled it like someone who's done this for years.
 
 ## The Gretchen Wilson moment
 
@@ -25,4 +25,4 @@ Then came the part we didn't see coming. Later in the night, Gretchen Wilson pul
 
 ## What's next
 
-Ella barely gets a breath. She's straight into the Morgan Wallen stadium run, with Pittsburgh's Acrisure Stadium up on Saturday, June 6, then [Railbird Festival in Lexington on Sunday, June 7](/news/2026-06-04-ella-langley-railbird-festival-2026), where she sits third from the top behind Tyler Childers. If Thursday proved anything, it's that she's comfortable on the biggest stages now — go see one. Our [tour hub](/tour) tracks every date as it lands.
+Ella barely gets a breath. She's straight into the Morgan Wallen stadium run, with Pittsburgh's Acrisure Stadium up on Saturday, June 6, then [Railbird Festival in Lexington on Sunday, June 7](/news/2026-06-04-ella-langley-railbird-festival-2026), where she sits third from the top behind Tyler Childers. If Thursday proved anything, it's that she's comfortable on the biggest stages now —

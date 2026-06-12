@@ -162,25 +162,12 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
         </section>
       )}
 
-      <section className="mb-8">
-        <h2 className="font-display text-2xl text-denim mb-3">HOTELS NEARBY</h2>
-        <p className="text-sm text-ink/80 mb-3">
-          Anywhere within 1.5 miles of the venue is the move — Uber surge kicks in by 9 PM on show nights.
-        </p>
-        <AffiliateLink
-          href={hotelUrl(`${d.city}, ${d.state}`)}
-          source="booking"
-          className="inline-flex items-center gap-2 px-4 py-2.5 bg-primary text-ink font-display tracking-wide rounded-md hover:bg-primary-dark hover:text-paper"
-        >
-          FIND HOTELS NEAR {d.venue.toUpperCase()}
-        </AffiliateLink>
-      </section>
-
       {!isPast && (
         <PlanYourTrip
           city={d.city}
           cityState={`${d.city}, ${d.state}`}
           venue={d.venue}
+          venueAddress={d.venueAddress}
           date={d.date}
         />
       )}

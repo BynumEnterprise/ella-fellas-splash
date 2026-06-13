@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Calendar, Clock, Disc3, MapPin, Music, ShoppingBag, Ticket, TrendingUp } from "lucide-react";
 import { getUpcomingTourDates, getAllSongs } from "@/lib/data";
 import { getAllNews } from "@/lib/content";
@@ -39,11 +40,13 @@ export default function HomePage() {
       {/* HERO — full bleed image, brand-name overlay */}
       <section className="relative -mt-px overflow-hidden">
         <div className="relative h-[68vh] min-h-[440px] max-h-[640px] w-full">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+          <Image
             src={HERO_IMAGE}
             alt="A country concert crowd at dusk"
-            className="absolute inset-0 w-full h-full object-cover"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-denim/30 via-denim/55 to-denim" />
           <div className="absolute inset-0 flex items-center justify-center text-center px-4">

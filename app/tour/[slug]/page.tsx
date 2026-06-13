@@ -20,9 +20,16 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const d = getTourDate(slug);
   if (!d) return {};
+  const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
+  const canonical = `${SITE_URL}/tour/${d.id}`;
+  const title = `Ella Langley in ${d.city}, ${d.state} | Ella Fellas`;
+  const description = `Tickets, parking, hotels, openers, and everything you need for Ella Langley's ${d.tour} stop at ${d.venue} in ${d.city} on ${formatDate(d.date, "long")}.`;
   return {
-    title: `Ella Langley in ${d.city}, ${d.state} — ${d.venue}`,
-    description: `Tickets, parking, hotels, openers, and everything you need for Ella Langley's ${d.tour} stop at ${d.venue} in ${d.city} on ${formatDate(d.date, "long")}.`,
+    title: { absolute: title },
+    description,
+    alternates: { canonical },
+    openGraph: { title, description, url: canonical, type: "article" },
+    twitter: { card: "summary_large_image", title, description },
   };
 }
 

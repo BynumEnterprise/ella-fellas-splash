@@ -886,22 +886,6 @@ export const EXTENDED_CATALOG: ShopProduct[] = [
     badge: "Coffee table",
   }),
   c({
-    slug: "fc-cash-autobiography",
-    asin: "0060727535",
-    amazonTitle: "Cash: The Autobiography — The Man in Black's Memoir",
-    category: "fan-collection",
-    name: "Johnny Cash: The Autobiography",
-    blurb:
-      "Cash in his own words, written before he died. Honest, religious, brutal in places. The man without the Hollywood filter.",
-    query: "Johnny Cash The Autobiography Cash",
-    price: "$10.23",
-    rating: 4.7,
-    reviewCount: 4600,
-    why: "Read it in two nights. Cash on his addictions, his family, and his faith — everything the biopic glossed over.",
-    image: "https://m.media-amazon.com/images/I/81q7XRHlOrL._AC_SL1500_.jpg",
-    badge: "Required reading",
-  }),
-  c({
     slug: "fc-willie-roll-me-up",
     asin: "0062293311",
     amazonTitle: "Roll Me Up and Smoke Me When I Die — Willie Nelson Memoir",

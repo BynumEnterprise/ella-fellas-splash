@@ -16,7 +16,7 @@ sources:
 
 # What's in Ella Langley's Road Bag: Her Tour Must-Haves, Itemized
 
-We spend a lot of time on this site telling you [what to bring to an Ella Langley show](/guides/what-to-bring-to-an-ella-langley-concert). Yesterday we got the reverse angle: [Billboard sat down with Ella](https://www.billboard.com/culture/product-recommendations/ella-langley-favorite-beauty-products-travel-tour-essentials-1236267825/) and asked what *she* packs for life on the road, and her tour must-haves turned out to be one of the most relatable lists we've read from anyone running two tours at once. No mystery skincare regimen, no $400 headphones. A Bible, eye drops, jerky, lip balm, her own perfume, and her dogs.
+We spend a lot of time on this site telling you [what to bring to an Ella Langley show](/guides/what-to-bring-ella-langley-concert). Yesterday we got the reverse angle: [Billboard sat down with Ella](https://www.billboard.com/culture/product-recommendations/ella-langley-favorite-beauty-products-travel-tour-essentials-1236267825/) and asked what *she* packs for life on the road, and her tour must-haves turned out to be one of the most relatable lists we've read from anyone running two tours at once. No mystery skincare regimen, no $400 headphones. A Bible, eye drops, jerky, lip balm, her own perfume, and her dogs.
 
 The interview ran alongside a pretty wild setting, too. The Sunday before CMA Fest, Chase Sapphire Reserve put on "Dinner at the Opry" — an invite-only dinner served on the actual Grand Ole Opry stage, with food from Bastion (one of Nashville's only Michelin-starred restaurants) and a Tecovas boot-personalization suite. Ella flew in between tour stops and played three songs for the room: "Be Her," "Loving Life Again," and "Choosin' Texas."
 

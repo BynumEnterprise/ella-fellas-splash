@@ -17,11 +17,7 @@ export function AffiliateLink({ href, source = "unknown", children, className, a
       rel="noopener nofollow sponsored"
       aria-label={ariaLabel}
       className={className}
-      onClick={() => {
-        if (typeof window !== "undefined" && (window as any).plausible) {
-          (window as any).plausible("AffiliateClick", { props: { source } });
-        }
-      }}
+      data-affiliate-source={source}
     >
       {children}
     </a>

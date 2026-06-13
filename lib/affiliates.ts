@@ -10,6 +10,25 @@ const IDS = {
   booking: process.env.NEXT_PUBLIC_BOOKING_AFFILIATE_ID ?? "",
 };
 
+// Affiliate query-param name per ticket source. Appended to ANY ticket URL
+// (including verified deep links) so attribution fires once the env IDs are set.
+// Until an ID is configured the URL is returned unchanged (no commission, but
+// the link still works for fans).
+const AFF_PARAM: Record<TicketSource, string> = {
+  tickpick: "aff",
+  seatgeek: "aid",
+  vivid: "aff",
+  stubhub: "utm_source",
+  ticketmaster: "clickid",
+};
+
+function withAff(url: string, source: TicketSource): string {
+  const id = IDS[source];
+  if (!id) return url;
+  const sep = url.includes("?") ? "&" : "?";
+  return `${url}${sep}${AFF_PARAM[source]}=${encodeURIComponent(id)}`;
+}
+
 /** Optional per-show explicit ticket URLs (overrides search). Maps show id -> source -> URL. */
 interface DirectTicketLinks {
   tickpick?: string;
@@ -165,9 +184,9 @@ export function ticketUrl(input: string | TicketEventContext, source: TicketSour
 
   // 2. Per-source verified deep link keyed by show id
   if (ctx.id) {
-    if (source === "tickpick" && KNOWN_TICKPICK_URLS[ctx.id]) return KNOWN_TICKPICK_URLS[ctx.id];
-    if (source === "seatgeek" && KNOWN_SEATGEEK_URLS[ctx.id]) return KNOWN_SEATGEEK_URLS[ctx.id];
-    if (source === "vivid" && KNOWN_VIVID_URLS[ctx.id]) return KNOWN_VIVID_URLS[ctx.id];
+    if (source === "tickpick" && KNOWN_TICKPICK_URLS[ctx.id]) return withAff(KNOWN_TICKPICK_URLS[ctx.id], "tickpick");
+    if (source === "seatgeek" && KNOWN_SEATGEEK_URLS[ctx.id]) return withAff(KNOWN_SEATGEEK_URLS[ctx.id], "seatgeek");
+    if (source === "vivid" && KNOWN_VIVID_URLS[ctx.id]) return withAff(KNOWN_VIVID_URLS[ctx.id], "vivid");
   }
 
   const q = encodeURIComponent(ctx.query);

@@ -560,5 +560,19 @@
     "soldOut": true,
     "ticketPriceRange": "Festival pass",
     "ticketAffiliatePath": "/tickets/lexington-railbird-festival-2026-06-07"
+  },
+  {
+    "id": "virginia-beach-patriotic-festival-2027-05-29",
+    "date": "2027-05-29",
+    "city": "Virginia Beach",
+    "state": "VA",
+    "venue": "Virginia Beach Oceanfront",
+    "venueAddress": "5th Street & Atlantic Ave, Virginia Beach, VA 23451",
+    "tour": "Patriotic Festival 2027",
+    "tourType": "festival",
+    "openers": [],
+    "soldOut": false,
+    "ticketPriceRange": "Festival pass",
+    "ticketAffiliatePath": "/tickets/virginia-beach-patriotic-festival-2027-05-29"
   }
 ]

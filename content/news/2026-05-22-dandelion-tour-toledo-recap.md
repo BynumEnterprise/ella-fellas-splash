@@ -34,7 +34,7 @@ We're updating this list as cleaner audio surfaces. The main story: Riley Green 
 
 **The stage build is more arena-rock than country.** No barn-wood backdrops, no rhinestone. A gold-lit half-circle with the band tight behind her, a single neon DANDELION sign over the drum riser. It plays like a country show that's read up on Springsteen.
 
-**"weren't for the wind" still gets the loudest singalong.** Choosin' Texas is the chart-breaker; "weren't for the wind" is the song the room owns. If you're going to a stop later in the summer, prepare to lose your voice somewhere around verse two.
+**"weren't for the wind" still gets the loudest singalong.** ["Choosin' Texas"](/songs/choosin-texas) is the chart-breaker and ["Be Her"](/songs/be-her) is the current radio monster; "weren't for the wind" is the song the room owns. If you're going to a stop later in the summer, prepare to lose your voice somewhere around verse two.
 
 **The runtime is 95 minutes, no opener-overlap.** Doors at 6:30, Kameron Marlowe at 7:30, Gabriella Rose at 8:15, Ella at 9:15, lights up at 10:50. If you're driving in, plan dinner before 6.
 
@@ -46,8 +46,8 @@ A few of the remaining dates — Cary NC, Austin TX, Fort Worth TX — sold out 
 
 [See all remaining tour dates →](/tour)
 
+Can't make a show, or just want the night on your shelf afterward? The [Dandelion vinyl in our shop](/shop/fc-dandelion-vinyl) is the whole setlist's home base.
+
 ---
 
-*Sources: Whiskey Riff opening-night recap, Setlist.fm, and reports from fans in the room. Photos credit: official Dandelion Tour press kit.*
-
-*This page contains affiliate links. We may earn a small commission on tickets purchased through our links, at no extra cost to you.*
+*Sources: Whiskey Riff opening

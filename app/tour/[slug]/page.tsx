@@ -8,7 +8,7 @@ import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
 import { ConcertGearWidget } from "@/components/ConcertGearWidget";
 import { PlanYourTrip } from "@/components/PlanYourTrip";
 import { MusicEventSchema } from "@/components/schema/MusicEventSchema";
-import { ticketUrl, hotelUrl } from "@/lib/affiliates";
+import { ticketUrl, hotelUrl, ticketNetworkUrl } from "@/lib/affiliates";
 import type { TicketEventContext } from "@/lib/affiliates";
 import { eventQuery, formatDate } from "@/lib/utils";
 
@@ -57,6 +57,8 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
   const seatGeekUrl = ticketUrl(ctx, "seatgeek");
   const tixUrl = ticketUrl(ctx, "tickpick");
   const vividUrl = ticketUrl(ctx, "vivid");
+  // TicketNetwork (CJ, 12.5%) — primary, highest-paying ticket CTA.
+  const tnUrl = ticketNetworkUrl();
   const isMWStadium = d.tourType === "support" && (d.venueCapacity ?? 0) >= 40000;
   const tmUrl = isMWStadium
     ? ticketUrl(`${d.headliner ?? "Morgan Wallen"} ${d.city}`, "ticketmaster")
@@ -97,6 +99,12 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
             ? "Sold out at face value. Resale starts around the price range above and climbs as the show approaches."
             : "Buy direct or check the secondary market for better seat options."}
         </p>
+        {/* Primary, highest-paying CTA: TicketNetwork (CJ, 12.5%). */}
+        <AffiliateLink href={tnUrl} source="ticketnetwork" className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-6 py-3.5 bg-primary text-paper font-display text-lg tracking-wide rounded-md shadow-sm hover:bg-primary/90">
+          <span aria-hidden="true">🎟</span> GET TICKETS ON TICKETNETWORK
+        </AffiliateLink>
+        {/* Secondary: also-compare options (verified direct-event deep links). */}
+        <p className="text-xs uppercase tracking-wider text-ink/50 mt-4 mb-2">Also compare prices on</p>
         <div className="flex flex-wrap gap-2">
           <AffiliateLink href={seatGeekUrl} source="seatgeek" className="inline-flex items-center gap-2 px-4 py-2.5 bg-denim text-paper font-display tracking-wide rounded-md hover:bg-denim/90">
             <Ticket className="w-4 h-4" /> SEATGEEK

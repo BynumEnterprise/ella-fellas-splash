@@ -287,6 +287,17 @@ export const cheapOairUrl = (): string | null => envLink(process.env.NEXT_PUBLIC
 
 // Tickets / experiences.
 export const gametimeUrl = (): string | null => envLink(process.env.NEXT_PUBLIC_AFF_GAMETIME);
-export const ticketNetworkUrl = (): string | null => envLink(process.env.NEXT_PUBLIC_AFF_TICKETNETWORK);
+// TicketNetwork (CJ, 12.5% commission) — APPROVED & LIVE. The CJ click URL
+// deep-links by appending ?url=<URL-encoded destination on ticketnetwork.com>.
+// Defaults to the verified Ella Langley performer page. An env override
+// (NEXT_PUBLIC_AFF_TICKETNETWORK) wins if set, but the real affiliate link is
+// the hardcoded default so it works without any env wiring.
+const TICKETNETWORK_CJ_CLICK = "https://www.anrdoezrs.net/click-101760569-12324527";
+const TICKETNETWORK_ELLA_LANGLEY = "https://www.ticketnetwork.com/performers/ella-langley-tickets";
+export const ticketNetworkUrl = (dest: string = TICKETNETWORK_ELLA_LANGLEY): string => {
+  const override = envLink(process.env.NEXT_PUBLIC_AFF_TICKETNETWORK);
+  if (override) return override;
+  return `${TICKETNETWORK_CJ_CLICK}?url=${encodeURIComponent(dest)}`;
+};
 export const viatorUrl = (): string | null => envLink(process.env.NEXT_PUBLIC_AFF_VIATOR);
 export const getYourGuideUrl = (): string | null => envLink(process.env.NEXT_PUBLIC_AFF_GETYOURGUIDE);

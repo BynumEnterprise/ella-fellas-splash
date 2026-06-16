@@ -77,6 +77,12 @@ export default function HomePage() {
                   SONG GUIDE
                 </Link>
               </div>
+              <p className="text-sm text-paper/75 mt-5">
+                New here?{" "}
+                <Link href="/guides/what-are-ella-fellas" className="text-primary font-medium hover:underline">
+                  What &ldquo;Ella Fellas&rdquo; even means &rarr;
+                </Link>
+              </p>
             </div>
           </div>
         </div>
@@ -313,14 +319,4 @@ export default function HomePage() {
             JOIN THE FELLAS
           </h2>
           <p className="text-paper/80 max-w-xl mx-auto mb-6 leading-relaxed">
-            Tour drops, album updates, and concert prep guides &mdash; sent only when there&apos;s
-            something worth telling you about. No spam. Unsubscribe anytime.
-          </p>
-          <div className="max-w-md mx-auto">
-            <NewsletterSignup placement="homepage" />
-          </div>
-        </section>
-      </div>
-    </div>
-  );
-}
+            Tour drops, album updates, and conc

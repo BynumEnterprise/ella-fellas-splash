@@ -35,6 +35,8 @@ Stream it. If you're sitting on Spotify and you've been holding off because it's
 
 If you want the live version, she's been opening shows on the Dandelion Tour with [loving life again](/songs/loving-life-again) and saving "Choosin' Texas" for the encore.
 
+Want more? Read [what "Choosin' Texas" actually means](/songs/choosin-texas), grab dates and tickets on our [Ella Langley tour guide](/tour), or take the record home with the [Dandelion vinyl in our shop](/shop/fc-dandelion-vinyl).
+
 ---
 
 *Source: Billboard Hot 100 chart data, week ending May 17, 2026.*

@@ -83,4 +83,8 @@ export default function AboutPage() {
 
       <h2>Contact</h2>
       <p>
-        <a href="mailto:hi@ellafellas.com">hi@ellafellas.com</a> &mdash
+        <a href="mailto:hi@ellafellas.com">hi@ellafellas.com</a> &mdash; for everything else.
+      </p>
+    </article>
+  );
+}

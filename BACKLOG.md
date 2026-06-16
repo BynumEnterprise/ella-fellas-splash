@@ -14,8 +14,6 @@ Format: `- [ ] YYYY-MM-DD <source-job>: <action>` → mark `- [x] done YYYY-MM-D
   - progress 2026-06-12: fixed 3 more — 06-05 cma-fest-recap (commit d9ffb22), 06-06 three-country-airplay-top-10s (749a088), 06-07 choosin-texas-record (9166935). 06-11 fest preview verified already compliant. Remaining: ~11 posts (06-04 and earlier).
   - progress 2026-06-14: fixed 05-23 be-her-top-two-hot-100 (commit e2b276d) — added /tour, /songs/be-her, /songs/choosin-texas, /shop/fc-dandelion-vinyl links. Remaining: ~10 posts (05-22 and earlier).
   - progress 2026-06-15: fixed 05-22 dandelion-tour-toledo-recap (commit bfc067c) — added /songs/choosin-texas, /songs/be-her, /shop/fc-dandelion-vinyl links (already had /tour). Remaining: ~9 posts (05-21 and earlier).
+  - progress 2026-06-16: fixed 05-21 choosin-texas-week-seven (commit 0e52b99) — added /songs/choosin-texas, /tour, /shop/fc-dandelion-vinyl links (already had /songs/loving-life-again). Remaining: ~8 posts (05-20 and earlier).
 - [ ] 2026-06-09 audit: September pivot — when tour ends Aug 15, rotate homepage + editorial calendar toward gift-guide/evergreen content.
-
-## Done
-
-- [x] don
+- [ ] 2026-06-15 se

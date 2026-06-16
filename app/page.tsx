@@ -319,4 +319,14 @@ export default function HomePage() {
             JOIN THE FELLAS
           </h2>
           <p className="text-paper/80 max-w-xl mx-auto mb-6 leading-relaxed">
-            Tour drops, album updates, and conc
+            Tour drops, album updates, and concert prep guides &mdash; sent only when there&apos;s
+            something worth telling you about. No spam. Unsubscribe anytime.
+          </p>
+          <div className="max-w-md mx-auto">
+            <NewsletterSignup placement="homepage" />
+          </div>
+        </section>
+      </div>
+    </div>
+  );
+}

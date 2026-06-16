@@ -14,8 +14,9 @@ export default function AboutPage() {
       </h1>
       <p className="text-lg">
         We&apos;re an independent, fan-run news and tour site for country music artist Ella Langley.
-        Built by fans, for the <strong>Fellas</strong> &mdash; the male side of her fanbase and anyone
-        else along for the ride.
+        Built by fans, for the{" "}
+        <a href="/guides/what-are-ella-fellas"><strong>Fellas</strong></a> &mdash; the male side of
+        her fanbase and anyone else along for the ride.
       </p>
 
       <h2>Who we are</h2>
@@ -82,8 +83,4 @@ export default function AboutPage() {
 
       <h2>Contact</h2>
       <p>
-        <a href="mailto:hi@ellafellas.com">hi@ellafellas.com</a> &mdash; for everything else.
-      </p>
-    </article>
-  );
-}
+        <a href="mailto:hi@ellafellas.com">hi@ellafellas.com</a> &mdash

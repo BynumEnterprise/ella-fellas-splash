@@ -25,7 +25,7 @@ And the timing is almost too good. Ella walks onto that beach stage the same wee
 
 ## How to get 5 O'Clock Somewhere Fest tickets
 
-Tickets are still available through [the festival's Ticketmaster page](https://www.ticketmaster.com/5-oclock-somewhere-fest-tickets/artist/4299049) as of Thursday, in single-day and two-day weekend options, plus VIP tiers with dedicated entrances, shaded lounges, and platform viewing. If you're within driving distance of South Florida and you've been waiting for a low-commitment way to see Ella live this summer, a festival day pass is about as easy as it gets — no arena markup, eight other acts thrown in.
+Tickets are still available through [TicketNetwork](https://www.anrdoezrs.net/click-101760569-12324527?url=https://www.ticketnetwork.com/performers/ella-langley-tickets) as of Thursday, in single-day and two-day weekend options, plus VIP tiers with dedicated entrances, shaded lounges, and platform viewing. If you're within driving distance of South Florida and you've been waiting for a low-commitment way to see Ella live this summer, a festival day pass is about as easy as it gets — no arena markup, eight other acts thrown in.
 
 There's also a Writers Cove acoustic stage tucked into the grounds, with Nashville writers like Marcus Hummon and Sarah Buxton playing stripped-down sets between main-stage acts. If you care about how these songs get made — and if you read this site, you do — don't skip it.
 

@@ -30,8 +30,8 @@ export default function DisclaimerPage() {
 
       <h2>Affiliate disclosure</h2>
       <p>
-        This site contains affiliate links to ticket marketplaces (TickPick, Vivid Seats, SeatGeek,
-        Ticketmaster), Amazon, and travel booking platforms. If you click an affiliate link and make
+        This site contains affiliate links to a ticket marketplace (TicketNetwork), Amazon,
+        and travel booking platforms. If you click an affiliate link and make
         a purchase, we may earn a commission at no additional cost to you. Affiliate revenue helps
         keep this site running. We only link to products and services we&apos;d recommend to a friend.
       </p>

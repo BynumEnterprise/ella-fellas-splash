@@ -1,16 +1,15 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Calendar, MapPin, Clock, Ticket, Users } from "lucide-react";
+import { Calendar, MapPin, Clock, Users } from "lucide-react";
 import { getAllTourDates, getTourDate } from "@/lib/data";
 import { AffiliateLink } from "@/components/AffiliateLink";
 import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
 import { ConcertGearWidget } from "@/components/ConcertGearWidget";
 import { PlanYourTrip } from "@/components/PlanYourTrip";
 import { MusicEventSchema } from "@/components/schema/MusicEventSchema";
-import { ticketUrl, hotelUrl, ticketNetworkUrl } from "@/lib/affiliates";
-import type { TicketEventContext } from "@/lib/affiliates";
-import { eventQuery, formatDate } from "@/lib/utils";
+import { ticketNetworkUrl } from "@/lib/affiliates";
+import { formatDate } from "@/lib/utils";
 
 export async function generateStaticParams() {
   return getAllTourDates().map((d) => ({ slug: d.id }));
@@ -43,26 +42,9 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
   // Past-show handling matches getUpcomingTourDates() in lib/data.ts (date >= today).
   const today = new Date().toISOString().slice(0, 10);
   const isPast = d.date < today;
-  // Pass the FULL event context (crucially `id`) to ticketUrl so each source can
-  // resolve its verified per-event deep link from the KNOWN_* maps. Passing a
-  // bare query string here (the old behavior) left ctx.id undefined and every
-  // show fell back to the performer page.
-  const ctx: TicketEventContext = {
-    query: eventQuery(d),
-    id: d.id,
-    date: d.date,
-    venue: d.venue,
-    city: d.city,
-  };
-  const seatGeekUrl = ticketUrl(ctx, "seatgeek");
-  const tixUrl = ticketUrl(ctx, "tickpick");
-  const vividUrl = ticketUrl(ctx, "vivid");
-  // TicketNetwork (CJ, 12.5%) — primary, highest-paying ticket CTA.
+  // TicketNetwork (CJ, 12.5%) — the SOLE ticket CTA for every show
+  // (headline, support and stadium dates all use this one affiliate link).
   const tnUrl = ticketNetworkUrl();
-  const isMWStadium = d.tourType === "support" && (d.venueCapacity ?? 0) >= 40000;
-  const tmUrl = isMWStadium
-    ? ticketUrl(`${d.headliner ?? "Morgan Wallen"} ${d.city}`, "ticketmaster")
-    : null;
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-10">
@@ -103,26 +85,8 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
         <AffiliateLink href={tnUrl} source="ticketnetwork" className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-6 py-3.5 bg-primary text-paper font-display text-lg tracking-wide rounded-md shadow-sm hover:bg-primary/90">
           <span aria-hidden="true">🎟</span> GET TICKETS ON TICKETNETWORK
         </AffiliateLink>
-        {/* Secondary: also-compare options (verified direct-event deep links). */}
-        <p className="text-xs uppercase tracking-wider text-ink/50 mt-4 mb-2">Also compare prices on</p>
-        <div className="flex flex-wrap gap-2">
-          <AffiliateLink href={seatGeekUrl} source="seatgeek" className="inline-flex items-center gap-2 px-4 py-2.5 bg-denim text-paper font-display tracking-wide rounded-md hover:bg-denim/90">
-            <Ticket className="w-4 h-4" /> SEATGEEK
-          </AffiliateLink>
-          {tmUrl && (
-            <AffiliateLink href={tmUrl} source="ticketmaster" className="inline-flex items-center gap-2 px-4 py-2.5 bg-denim text-paper font-display tracking-wide rounded-md hover:bg-denim/90">
-              <Ticket className="w-4 h-4" /> TICKETMASTER
-            </AffiliateLink>
-          )}
-          <AffiliateLink href={tixUrl} source="tickpick" className="inline-flex items-center gap-2 px-4 py-2.5 bg-ink/10 text-denim font-display tracking-wide rounded-md hover:bg-ink/20 border border-ink/20">
-            <Ticket className="w-4 h-4" /> TICKPICK
-          </AffiliateLink>
-          <AffiliateLink href={vividUrl} source="vivid" className="inline-flex items-center gap-2 px-4 py-2.5 bg-ink/10 text-denim font-display tracking-wide rounded-md hover:bg-ink/20 border border-ink/20">
-            <Ticket className="w-4 h-4" /> VIVID SEATS
-          </AffiliateLink>
-        </div>
         <p className="text-xs text-ink/50 mt-3">
-          Tip: SeatGeek usually has the most listings for {d.tourType === "support" ? `${d.headliner ?? "this tour"}` : "Ella"}&apos;s shows. Resale prices on TickPick &amp; Vivid Seats are often lower for sold-out dates.
+          TicketNetwork lists seats for {d.tourType === "support" ? `${d.headliner ?? "this tour"}` : "Ella"}&apos;s shows with buyer-guaranteed resale &mdash; browse the full price range before you buy.
         </p>
       </section>
 

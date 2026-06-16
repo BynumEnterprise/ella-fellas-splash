@@ -38,7 +38,7 @@ export default function PrivacyPage() {
         <li><strong>Vercel</strong> — hosts this site</li>
         <li><strong>Supabase</strong> — stores newsletter subscriber data (email + optional city)</li>
         <li><strong>Resend</strong> — delivers newsletter emails</li>
-        <li><strong>Affiliate networks</strong> (TickPick, Amazon Associates, Impact Radius, Awin, Partnerize) — track clicks and conversions for commission attribution. Each has its own privacy policy.</li>
+        <li><strong>Affiliate networks</strong> (TicketNetwork via CJ, Amazon Associates, Impact Radius, Awin, Partnerize) — track clicks and conversions for commission attribution. Each has its own privacy policy.</li>
       </ul>
 
       <h2>Your rights</h2>

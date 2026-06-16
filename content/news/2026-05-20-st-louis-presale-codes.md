@@ -37,9 +37,9 @@ The Friday-night setlists tend to run a song longer than the weeknight ones. Cou
 
 ## If you don't have a ticket
 
-It's sold out at face. Resale today is sitting between $85 (upper deck back) and $475 (floor section A). The price is rising, not falling — there's no benefit to waiting. If you want in, buy through TickPick now (lowest secondary fees), screenshot your transfer confirmation, and head over.
+It's sold out at face. Resale today is sitting between $85 (upper deck back) and $475 (floor section A). The price is rising, not falling — there's no benefit to waiting. If you want in, grab a resale seat now, screenshot your transfer confirmation, and head over.
 
-[Check TickPick for St. Louis →](/tour/st-louis-chaifetz-arena-2026-05-08)
+[Check resale prices on TicketNetwork →](https://www.anrdoezrs.net/click-101760569-12324527?url=https://www.ticketnetwork.com/performers/ella-langley-tickets)
 
 ---
 

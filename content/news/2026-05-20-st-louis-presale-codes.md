@@ -28,18 +28,22 @@ For dinner before, Pappy's Smokehouse (7 min away) or BC's Kitchen if you want a
 
 Based on the Toledo opening night setlist, expect:
 
-- Opens with "loving life again"
+- Opens with ["loving life again"](/songs/loving-life-again)
 - Mid-show stretch with the Hungover deep cuts ("nicotine," "paint the town blue")
 - Riley Green or a stand-in for the duets around track 8-9
-- Encore lands on "Choosin' Texas"
+- Encore lands on ["Choosin' Texas"](/songs/choosin-texas)
 
 The Friday-night setlists tend to run a song longer than the weeknight ones. Could be a cover (she's done Patty Loveless before) or could be a new Dandelion cut nobody's heard live yet.
 
 ## If you don't have a ticket
 
-It's sold out at face. Resale today is sitting between $85 (upper deck back) and $475 (floor section A). The price is rising, not falling — there's no benefit to waiting. If you want in, grab a resale seat now, screenshot your transfer confirmation, and head over.
+It's sold out at face. Resale today is sitting between $85 (upper deck back) and $475 (floor section A). The price is rising, not falling — there's no benefit to waiting. If you want in, buy through our [St. Louis show page](/tour/st-louis-chaifetz-arena-2026-05-08) now, screenshot your transfer confirmation, and head over.
 
-[Check resale prices on TicketNetwork →](https://www.anrdoezrs.net/click-101760569-12324527?url=https://www.ticketnetwork.com/performers/ella-langley-tickets)
+[Get St. Louis tickets →](/tour/st-louis-chaifetz-arena-2026-05-08)
+
+## Take a piece of the night home
+
+Can't make it, or want the souvenir? The *Dandelion* record is the one we'd grab — see it on our [Dandelion vinyl shop look](/shop/fc-dandelion-vinyl). And if you're chasing more of the run, the full [Dandelion Tour schedule](/tour) has every 2026 date.
 
 ---
 

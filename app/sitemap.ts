@@ -12,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticUrls = [
     "",
     "/tour",
+    "/plan-your-trip",
     "/songs",
     "/news",
     "/guides",

@@ -44,7 +44,7 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
   const isPast = d.date < today;
   // TicketNetwork (CJ, 12.5%) — the SOLE ticket CTA for every show
   // (headline, support and stadium dates all use this one affiliate link).
-  const tnUrl = ticketNetworkUrl();
+  const tnUrl = ticketNetworkUrl(d.id);
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-10">

@@ -42,7 +42,7 @@ We're updating this list as cleaner audio surfaces. The main story: Riley Green 
 
 The Dandelion Tour visits St. Louis next (May 8) before stretching into the South in mid-May. We've got the [full tour page](/tour) with venue info, openers, parking notes, and the cheapest seats we've found on each show.
 
-A few of the remaining dates — Cary NC, Austin TX, Fort Worth TX — sold out within hours of the on-sale and resale is climbing fast. If you're going, the play is to grab tickets *now* through TickPick (lowest service fees on the secondary market) rather than waiting for prices to drop.
+A few of the remaining dates — Cary NC, Austin TX, Fort Worth TX — sold out within hours of the on-sale and resale is climbing fast. If you're going, the play is to grab tickets *now* on TicketNetwork rather than waiting for prices to drop — secondary prices on hot dates climb as the show gets closer, they don't fall.
 
 [See all remaining tour dates →](/tour)
 

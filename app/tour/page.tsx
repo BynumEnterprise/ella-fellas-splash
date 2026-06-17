@@ -66,7 +66,7 @@ export default function TourIndexPage() {
         <section className="mb-10">
           <h2 className="font-display text-2xl text-denim mb-4">SUPPORTING MORGAN WALLEN (STADIUMS)</h2>
           <p className="text-sm text-ink/70 mb-4">
-            Direct support — 45-minute set, then Wallen headlines. All sold at face value via Ticketmaster.
+            Direct support — 45-minute set, then Wallen headlines. All sold at face value on the primary on-sale.
           </p>
           <div className="grid md:grid-cols-2 gap-3">
             {support.map((d) => <TourCard key={d.id} d={d} />)}

@@ -25,7 +25,7 @@ Want this and everything we publish sent straight to your inbox? Sign up for our
 The decisions you make before you buy affect the entire rest of the night. Getting this part right matters.
 
 - [ ] **Check the full [tour schedule](/tour)** for your nearest city — some markets have multiple dates
-- [ ] Compare platforms before buying: TickPick shows no-fee prices, which is usually 15-20% cheaper than StubHub on the same seat for the same view
+- [ ] Check the all-in price before buying: TicketNetwork shows the total cost up front so you can compare seats by real out-the-door price, not a base price that balloons at checkout
 - [ ] Decide your section before you start shopping: front floor, lower bowl sides, or upper bowl — each has a different price/experience tradeoff
 - [ ] **Check the [Dandelion Tour survival guide](/guides/ella-langley-dandelion-tour-survival-guide)** for venue-specific timing and opener info before committing to a seat location
 - [ ] Screenshot or download your ticket immediately — do not rely on an email link loading on show night

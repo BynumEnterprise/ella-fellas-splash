@@ -13,7 +13,7 @@ The Dandelion Tour is Ella Langley's first headlining arena run. 16 dates, May t
 
 **Lock the ticket.** Resale prices are climbing every week. The pattern across 2026 country headliners has been: resale plateaus a week out, then spikes 20-30% in the final 72 hours. If you're waiting for prices to drop, you're playing the wrong game. Buy when you decide you're going.
 
-The cheapest reliable secondary marketplace right now is TickPick — they don't charge service fees on top of the listed price, which usually saves you 15-20% versus StubHub or Vivid Seats on the same seat.
+For resale seats, browse TicketNetwork — every listing shows the all-in price up front and is backed by a buyer guarantee, so you know exactly what you're paying before you commit.
 
 **Check the venue's bag policy.** Most arenas on the Dandelion Tour are now clear-bag only or no-bag. The exception is the amphitheaters (Cary, Wilmington, Gilford), which still allow standard small bags. Check the venue page for your specific show.
 
@@ -82,7 +82,7 @@ If you want the post-show country bar scene, every city on the tour has one wort
 
 [Full tour page with venue-specific guides →](/tour)
 
-If your city is still on the schedule and you haven't bought tickets yet, the realistic resale picture: most dates are $85-$250 in the upper bowl on TickPick, $250-$475 on the floor. The Texas dates (Austin, Fort Worth) and the Cary NC date are the highest-priced of the run — buy those now if you're going.
+If your city is still on the schedule and you haven't bought tickets yet, the realistic resale picture: most dates are $85-$250 in the upper bowl on TicketNetwork, $250-$475 on the floor. The Texas dates (Austin, Fort Worth) and the Cary NC date are the highest-priced of the run — buy those now if you're going.
 
 ---
 

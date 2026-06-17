@@ -420,86 +420,6 @@
     "ticketAffiliatePath": "/tickets/pittsburgh-acrisure-stadium-2026-06-06"
   },
   {
-    "id": "atlanta-mercedes-benz-stadium-2026-06-26",
-    "date": "2026-06-26",
-    "city": "Atlanta",
-    "state": "GA",
-    "venue": "Mercedes-Benz Stadium",
-    "venueAddress": "1 AMB Dr NW, Atlanta, GA 30313",
-    "venueCapacity": 71000,
-    "tour": "Still The Problem Tour (Morgan Wallen)",
-    "tourType": "support",
-    "openers": [
-      "Ella Langley (direct support)"
-    ],
-    "headliner": "Morgan Wallen",
-    "doorsTime": "17:00",
-    "showTime": "18:30",
-    "soldOut": true,
-    "ticketPriceRange": "Resale $185-$1,200",
-    "ticketAffiliatePath": "/tickets/atlanta-mercedes-benz-stadium-2026-06-26"
-  },
-  {
-    "id": "nashville-nissan-stadium-2026-07-10",
-    "date": "2026-07-10",
-    "city": "Nashville",
-    "state": "TN",
-    "venue": "Nissan Stadium",
-    "venueAddress": "1 Titans Way, Nashville, TN 37213",
-    "venueCapacity": 69143,
-    "tour": "Still The Problem Tour (Morgan Wallen)",
-    "tourType": "support",
-    "openers": [
-      "Ella Langley (direct support)"
-    ],
-    "headliner": "Morgan Wallen",
-    "doorsTime": "17:00",
-    "showTime": "18:30",
-    "soldOut": true,
-    "ticketPriceRange": "Resale $185-$1,200",
-    "ticketAffiliatePath": "/tickets/nashville-nissan-stadium-2026-07-10"
-  },
-  {
-    "id": "tampa-raymond-james-stadium-2026-07-17",
-    "date": "2026-07-17",
-    "city": "Tampa",
-    "state": "FL",
-    "venue": "Raymond James Stadium",
-    "venueAddress": "4201 N Dale Mabry Hwy, Tampa, FL 33607",
-    "venueCapacity": 65890,
-    "tour": "Still The Problem Tour (Morgan Wallen)",
-    "tourType": "support",
-    "openers": [
-      "Ella Langley (direct support)"
-    ],
-    "headliner": "Morgan Wallen",
-    "doorsTime": "17:00",
-    "showTime": "18:30",
-    "soldOut": true,
-    "ticketPriceRange": "Resale $185-$1,200",
-    "ticketAffiliatePath": "/tickets/tampa-raymond-james-stadium-2026-07-17"
-  },
-  {
-    "id": "arlington-att-stadium-2026-07-24",
-    "date": "2026-07-24",
-    "city": "Arlington",
-    "state": "TX",
-    "venue": "AT&T Stadium",
-    "venueAddress": "1 AT&T Way, Arlington, TX 76011",
-    "venueCapacity": 80000,
-    "tour": "Still The Problem Tour (Morgan Wallen)",
-    "tourType": "support",
-    "openers": [
-      "Ella Langley (direct support)"
-    ],
-    "headliner": "Morgan Wallen",
-    "doorsTime": "17:00",
-    "showTime": "18:30",
-    "soldOut": true,
-    "ticketPriceRange": "Resale $185-$1,200",
-    "ticketAffiliatePath": "/tickets/arlington-att-stadium-2026-07-24"
-  },
-  {
     "id": "philadelphia-lincoln-financial-field-2026-08-01",
     "date": "2026-08-01",
     "city": "Philadelphia",
@@ -574,5 +494,104 @@
     "soldOut": false,
     "ticketPriceRange": "Festival pass",
     "ticketAffiliatePath": "/tickets/virginia-beach-patriotic-festival-2027-05-29"
+  },
+  {
+    "id": "chicago-soldier-field-2026-06-20",
+    "date": "2026-06-20",
+    "city": "Chicago",
+    "state": "IL",
+    "venue": "Soldier Field",
+    "venueAddress": "1410 Special Olympics Dr, Chicago, IL 60605",
+    "venueCapacity": 61500,
+    "tour": "Still The Problem Tour",
+    "tourType": "support",
+    "openers": [
+      "Ella Langley (direct support)",
+      "Gavin Adcock",
+      "Zach John King"
+    ],
+    "headliner": "Morgan Wallen",
+    "doorsTime": "16:00",
+    "showTime": "17:30",
+    "soldOut": false,
+    "ticketPriceRange": "Resale $185-$1,200",
+    "ticketAffiliatePath": "/tickets/chicago-soldier-field-2026-06-20"
+  },
+  {
+    "id": "clemson-memorial-stadium-2026-06-27",
+    "date": "2026-06-27",
+    "city": "Clemson",
+    "state": "SC",
+    "venue": "Memorial Stadium",
+    "venueAddress": "Memorial Stadium, Clemson, SC 29634",
+    "venueCapacity": 81500,
+    "tour": "Still The Problem Tour",
+    "tourType": "support",
+    "openers": [
+      "Ella Langley (direct support)",
+      "Gavin Adcock",
+      "Jason Scott and the High Heat"
+    ],
+    "headliner": "Morgan Wallen",
+    "doorsTime": "16:00",
+    "showTime": "17:30",
+    "soldOut": false,
+    "ticketPriceRange": "Resale $185-$1,200",
+    "ticketAffiliatePath": "/tickets/clemson-memorial-stadium-2026-06-27"
+  },
+  {
+    "id": "baltimore-mt-bank-stadium-2026-07-18",
+    "date": "2026-07-18",
+    "city": "Baltimore",
+    "state": "MD",
+    "venue": "M&T Bank Stadium",
+    "venueAddress": "1101 Russell St, Baltimore, MD 21230",
+    "venueCapacity": 71000,
+    "tour": "Still The Problem Tour",
+    "tourType": "support",
+    "openers": [
+      "Ella Langley (direct support)",
+      "Gavin Adcock",
+      "Jason Scott and the High Heat"
+    ],
+    "headliner": "Morgan Wallen",
+    "doorsTime": "16:00",
+    "showTime": "17:30",
+    "soldOut": false,
+    "ticketPriceRange": "Resale $185-$1,200",
+    "ticketAffiliatePath": "/tickets/baltimore-mt-bank-stadium-2026-07-18"
+  },
+  {
+    "id": "springfield-illinois-state-fair-2026-08-21",
+    "date": "2026-08-21",
+    "city": "Springfield",
+    "state": "IL",
+    "venue": "Illinois State Fairgrounds (Grandstand)",
+    "venueAddress": "Illinois State Fairgrounds, Springfield, IL 62702",
+    "tour": "Illinois State Fair",
+    "tourType": "festival",
+    "openers": [
+      "Ella Langley"
+    ],
+    "soldOut": false,
+    "ticketPriceRange": "Festival pass",
+    "ticketAffiliatePath": "/tickets/springfield-illinois-state-fair-2026-08-21"
+  },
+  {
+    "id": "cowboys-music-festival-2026-07-10",
+    "date": "2026-07-10",
+    "city": "Calgary",
+    "state": "AB",
+    "venue": "Cowboys Park",
+    "venueAddress": "1220 9 Ave SW, Calgary, AB T2N 1N4, Canada",
+    "tour": "Cowboys Music Festival",
+    "tourType": "festival",
+    "openers": [
+      "Ella Langley",
+      "BigXThaPlug"
+    ],
+    "soldOut": false,
+    "ticketPriceRange": "Festival pass",
+    "ticketAffiliatePath": "/tickets/cowboys-music-festival-2026-07-10"
   }
 ]

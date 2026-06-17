@@ -15,5 +15,9 @@ Format: `- [ ] YYYY-MM-DD <source-job>: <action>` → mark `- [x] done YYYY-MM-D
   - progress 2026-06-14: fixed 05-23 be-her-top-two-hot-100 (commit e2b276d) — added /tour, /songs/be-her, /songs/choosin-texas, /shop/fc-dandelion-vinyl links. Remaining: ~10 posts (05-22 and earlier).
   - progress 2026-06-15: fixed 05-22 dandelion-tour-toledo-recap (commit bfc067c) — added /songs/choosin-texas, /songs/be-her, /shop/fc-dandelion-vinyl links (already had /tour). Remaining: ~9 posts (05-21 and earlier).
   - progress 2026-06-16: fixed 05-21 choosin-texas-week-seven (commit 0e52b99) — added /songs/choosin-texas, /tour, /shop/fc-dandelion-vinyl links (already had /songs/loving-life-again). Remaining: ~8 posts (05-20 and earlier).
+  - progress 2026-06-17: fixed 05-20 st-louis-presale-codes (commit 0b66432) — added /songs/choosin-texas, /songs/loving-life-again, /tour, /shop/fc-dandelion-vinyl links AND removed a TickPick prose mention (TicketNetwork-only policy). Remaining: ~7 posts (05-19 and earlier).
 - [ ] 2026-06-09 audit: September pivot — when tour ends Aug 15, rotate homepage + editorial calendar toward gift-guide/evergreen content.
 - [ ] 2026-06-15 se
+- [x] done 2026-06-16 (commit 1efc9bc) growth: Built "What Are Ella Fellas?" explainer page /guides/what-are-ella-fellas (targets GSC query at pos #10), linked from homepage hero + About; in sitemap. ORIGINAL ITEM: Build/strengthen a "What are Ella Fellas?" explainer page — GSC query "what are ella fellas" sits at position 10 (page 1) with impressions but 0 clicks; this is the fan-identity term we want to own. Internal-link it from homepage + every news post.
+- [ ] 2026-06-16 growth: Start an Organic Social motion — Organic Social = 0 sessions in GA4 (pure upside). Post short Ella Langley setlist/recap + "what to wear to the show" clips to country-fan subreddits/TikTok linking the next-show tour page.
+- [ ] 2026-06-16 growth: Strengthen tour pages f

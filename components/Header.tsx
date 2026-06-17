@@ -3,6 +3,7 @@ import { SearchBox } from "@/components/SearchBox";
 
 const NAV = [
   { href: "/tour", label: "Tour" },
+  { href: "/plan-your-trip", label: "Plan a Trip" },
   { href: "/songs", label: "Songs" },
   { href: "/news", label: "News" },
   { href: "/guides", label: "Guides" },

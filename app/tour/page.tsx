@@ -3,9 +3,9 @@ import { getAllTourDates } from "@/lib/data";
 import { TourCard } from "@/components/TourCard";
 
 export const metadata: Metadata = {
-  title: "Tour Dates 2026",
+  title: { absolute: "Ella Langley Tour 2026: Dates, Cities & Tickets | Ella Fellas" },
   description:
-    "Every confirmed Ella Langley tour date in 2026 — the Dandelion headlining tour, Morgan Wallen support dates, and festivals.",
+    "Every 2026 Ella Langley tour date: the Dandelion headlining tour, Morgan Wallen stadium support dates, and festivals — with tickets, set times & city guides.",
   alternates: { canonical: "/tour" },
   openGraph: { url: "/tour", images: ["/opengraph-image.png"] },
 };

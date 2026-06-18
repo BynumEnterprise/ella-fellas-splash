@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!d) return {};
   const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
   const canonical = `${SITE_URL}/tour/${d.id}`;
-  const title = `Ella Langley in ${d.city}, ${d.state} | Ella Fellas`;
+  const title = `Ella Langley ${d.city} Tickets | Ella Fellas`;
   const description = `Ella Langley at ${d.venue}, ${d.city} — ${formatDate(d.date, "long")}. Tickets, parking, hotels, and openers.`;
   return {
     title: { absolute: title },
@@ -94,6 +94,11 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
         </AffiliateLink>
         <p className="text-xs text-ink/50 mt-3">
           TicketNetwork lists seats for {d.tourType === "support" ? `${d.headliner ?? "this tour"}` : "Ella"}&apos;s shows with buyer-guaranteed resale &mdash; browse the full price range before you buy.
+        </p>
+        <p className="text-sm text-ink/70 mt-3">
+          Not sure where to sit? Read our{" "}
+          <Link href="/guides/best-seats-ella-langley-concert" className="underline text-denim hover:text-primary">best seats for an Ella Langley concert</Link>{" "}
+          guide before you pick.
         </p>
       </section>
 

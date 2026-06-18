@@ -79,6 +79,23 @@ export default function HomePage() {
                   SONG GUIDE
                 </Link>
               </div>
+              {nextShow && (
+                <Link
+                  href={`/tour/${nextShow.id}`}
+                  className="mt-5 inline-flex flex-wrap items-center justify-center gap-x-2 gap-y-1 rounded-md bg-primary/15 backdrop-blur border border-primary/40 px-5 py-2.5 text-paper hover:bg-primary/25 transition-colors"
+                >
+                  <span className="text-xs uppercase tracking-[0.18em] text-primary font-medium">
+                    Next show
+                  </span>
+                  <span className="text-sm font-medium">
+                    {nextShow.city}, {nextShow.state} &middot; {formatDate(nextShow.date, "long")}
+                  </span>
+                  <span className="inline-flex items-center gap-1.5 text-sm font-display tracking-wide text-primary">
+                    <Ticket className="w-4 h-4" />
+                    Get Tickets &rarr;
+                  </span>
+                </Link>
+              )}
               <p className="text-sm text-paper/75 mt-5">
                 New here?{" "}
                 <Link href="/guides/what-are-ella-fellas" className="text-primary font-medium hover:underline">

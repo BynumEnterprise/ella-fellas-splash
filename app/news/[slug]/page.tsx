@@ -5,6 +5,7 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import { getAllNews, getNewsBySlug } from "@/lib/content";
 import { ArticleSchema } from "@/components/schema/ArticleSchema";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
+import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { formatDate } from "@/lib/utils";
 
 export async function generateStaticParams() {
@@ -75,6 +76,16 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ sl
       <div className="prose-content">
         <MDXRemote source={item.body} />
       </div>
+
+      <section className="mt-10 bg-denim text-paper rounded-xl p-6 md:p-8">
+        <h2 className="font-display text-2xl text-paper tracking-wider mb-2">
+          NEVER MISS AN ELLA UPDATE
+        </h2>
+        <p className="text-paper/80 text-sm mb-5 leading-relaxed">
+          Daily Ella Langley news, tour alerts, and ticket-drop notifications &mdash; straight to your inbox.
+        </p>
+        <NewsletterSignup placement="news-inline" />
+      </section>
 
       <hr className="my-10" />
 

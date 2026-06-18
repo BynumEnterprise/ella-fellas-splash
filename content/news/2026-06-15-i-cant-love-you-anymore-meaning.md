@@ -12,7 +12,7 @@ sources:
   - "https://en.wikipedia.org/wiki/I_Can't_Love_You_Anymore"
 ---
 
-# Two People Who Can't Let Go: Inside "I Can't Love You Anymore"
+## Two People Who Can't Let Go: Inside "I Can't Love You Anymore"
 
 If you've been wondering what "I Can't Love You Anymore" by Ella Langley and Morgan Wallen is actually about, here's the short version: it's a breakup song sung by two people who haven't fully broken up yet. The title sounds like a clean goodbye, but the whole point is that neither voice in the song believes it. They keep saying it's over while circling right back to each other — and that gap between what they're saying and what they're doing is where the song lives.
 

@@ -6,7 +6,7 @@ category: "chart-news"
 excerpt: "Dandelion has now been out for a month. We pulled the streaming and chart numbers. They're better than even her team probably hoped."
 ---
 
-Dandelion dropped April 10. Today marks one month with the album in the world. Here's where it stands.
+Dandelion came out April 10. Today marks one month with the album in the world. Here's where it stands.
 
 ## Album sales (pure + equivalent)
 

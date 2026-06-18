@@ -11,7 +11,7 @@ sources:
   - "https://holler.country/news/general/ella-langley-2026-the-dandelion-tour-everything-you-need-to-know/"
 ---
 
-# Ella Langley in Oklahoma City: Your Zoo Amphitheatre Ticket Guide
+## Ella Langley in Oklahoma City: Your Zoo Amphitheatre Ticket Guide
 
 If you're after Ella Langley Oklahoma City tickets, you've got almost no time to think about it — the Dandelion Tour rolls into the Zoo Amphitheatre on Thursday, June 18, 2026. This one's an outdoor show under the trees instead of an arena, which changes the whole night: smaller crowd, open sky, and a venue locals have loved for decades. Here's everything we'd want sorted before walking through the gate.
 

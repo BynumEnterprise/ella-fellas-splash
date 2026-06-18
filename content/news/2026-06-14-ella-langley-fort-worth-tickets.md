@@ -11,7 +11,7 @@ sources:
   - "https://www.billboard.com/music/chart-beat/be-her-ella-langley-fastest-country-airplay-no-1-1236260193/"
 ---
 
-# Ella Langley in Fort Worth: Your Dickies Arena Tickets & Finale Guide
+## Ella Langley in Fort Worth: Your Dickies Arena Tickets & Finale Guide
 
 If you want Ella Langley Fort Worth tickets, this is the one to circle. The Dandelion Tour wraps on August 15, 2026, at Dickies Arena, and a tour finale always plays a little different than a random Tuesday in the middle of the run. Hometown-adjacent Texas crowd, the last night of a long tour, a band that's road-tight by now — Fort Worth gets the version of this show everyone else has been posting about all summer.
 

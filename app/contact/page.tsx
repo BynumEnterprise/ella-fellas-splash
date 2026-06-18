@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Contact", alternates: { canonical: "/contact" } };
+export const metadata: Metadata = { title: "Contact", description: "Get in touch with Ella Fellas \u2014 questions, tips, song requests, sponsorship/newsletter ads, or corrections. Reach the independent Ella Langley fan team by email.", alternates: { canonical: "/contact" } };
 
 export default function ContactPage() {
   return (

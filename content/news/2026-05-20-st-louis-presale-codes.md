@@ -4,7 +4,7 @@ slug: "2026-05-20-st-louis-presale-codes"
 publishedAt: "2026-05-20"
 category: "tour-prep"
 excerpt: "Chaifetz Arena, Friday night, sold out. If you've got a ticket, here's everything you need. If you don't, here's the resale picture."
-relatedTours: ["st-louis-chaifetz-arena-2026-05-08"]
+relatedTours: ["st.-louis-chaifetz-arena-2026-05-08"]
 ---
 
 Quick guide for the Fellas heading to Chaifetz tomorrow night.
@@ -37,9 +37,9 @@ The Friday-night setlists tend to run a song longer than the weeknight ones. Cou
 
 ## If you don't have a ticket
 
-It's sold out at face. Resale today is sitting between $85 (upper deck back) and $475 (floor section A). The price is rising, not falling — there's no benefit to waiting. If you want in, buy through our [St. Louis show page](/tour/st-louis-chaifetz-arena-2026-05-08) now, screenshot your transfer confirmation, and head over.
+It's sold out at face. Resale today is sitting between $85 (upper deck back) and $475 (floor section A). The price is rising, not falling — there's no benefit to waiting. If you want in, buy through our [St. Louis show page](/tour/st.-louis-chaifetz-arena-2026-05-08) now, screenshot your transfer confirmation, and head over.
 
-[Get St. Louis tickets →](/tour/st-louis-chaifetz-arena-2026-05-08)
+[Get St. Louis tickets →](/tour/st.-louis-chaifetz-arena-2026-05-08)
 
 ## Take a piece of the night home
 

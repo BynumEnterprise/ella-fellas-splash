@@ -1,5 +1,5 @@
 import Link from "next/link";
-export const metadata = { title: "Goodbye" };
+export const metadata = { title: "Goodbye", robots: { index: false } };
 export default function GoodbyePage() {
   return (
     <article className="mx-auto max-w-2xl px-4 py-20 text-center">

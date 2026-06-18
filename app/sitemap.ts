@@ -12,7 +12,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticUrls = [
     "",
     "/tour",
-    "/plan-your-trip",
     "/songs",
     "/news",
     "/guides",
@@ -52,7 +51,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  const tour = getAllTourDates().map((d) => ({
+  const todayStr = new Date().toISOString().slice(0, 10);
+  const tour = getAllTourDates()
+    .filter((d) => d.date >= todayStr)
+    .map((d) => ({
     url: `${SITE_URL}/tour/${d.id}`,
     lastModified: now,
     changeFrequency: "daily" as const,

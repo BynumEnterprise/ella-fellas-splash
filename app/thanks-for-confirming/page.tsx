@@ -1,5 +1,5 @@
 import Link from "next/link";
-export const metadata = { title: "Thanks for confirming" };
+export const metadata = { title: "Thanks for confirming", robots: { index: false } };
 export default function ThanksPage() {
   return (
     <article className="mx-auto max-w-2xl px-4 py-20 text-center">

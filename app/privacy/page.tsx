@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Privacy Policy", alternates: { canonical: "/privacy" } };
+export const metadata: Metadata = { title: "Privacy Policy", description: "How Ella Fellas handles your data: what we collect (newsletter email, anonymous analytics), how it is used, and your choices. Read our privacy policy.", alternates: { canonical: "/privacy" } };
 
 export default function PrivacyPage() {
   return (

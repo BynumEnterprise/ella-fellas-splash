@@ -12,6 +12,8 @@ import { formatDate, formatTime } from "@/lib/utils";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  description:
+    "Your daily Ella Langley fan HQ: 2026 tour dates and tickets, song meanings, concert-prep guides, trip planning, and a curated shop. Independent, fan-run, updated daily.",
   alternates: { canonical: "/" },
 };
 

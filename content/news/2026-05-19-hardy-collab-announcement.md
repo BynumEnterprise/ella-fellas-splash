@@ -9,7 +9,7 @@ relatedSongs: ["never-met-anyone-like-you"]
 
 A quick one for the Wednesday rundown.
 
-HARDY posted a 14-second voice memo on his Instagram last night with the caption "next one with @ellalangley loading." The clip is just rhythm guitar and a partial vocal — not enough to call it a song yet — but it's enough to confirm what we suspected since Dandelion dropped: "Never Met Anyone Like You" was the start, not the end.
+HARDY posted a 14-second voice memo on his Instagram last night with the caption "next one with @ellalangley loading." The clip is just rhythm guitar and a partial vocal — not enough to call it a song yet — but it's enough to confirm what we suspected since Dandelion came out: "Never Met Anyone Like You" was the start, not the end.
 
 ## What we know
 

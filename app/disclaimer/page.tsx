@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Disclaimer", alternates: { canonical: "/disclaimer" } };
+export const metadata: Metadata = { title: "Disclaimer", description: "Ella Fellas is an independent, fan-run Ella Langley site \u2014 not affiliated with Ella Langley, her label, or her official merch. Read our full disclaimer and affiliate disclosure.", alternates: { canonical: "/disclaimer" } };
 
 export default function DisclaimerPage() {
   return (

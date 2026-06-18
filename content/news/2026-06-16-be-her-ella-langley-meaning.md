@@ -11,7 +11,7 @@ sources:
   - "https://www.billboard.com/music/chart-beat/be-her-ella-langley-fastest-country-airplay-no-1-1236260193/"
 ---
 
-# Wanting to Be Her: The Real Meaning Behind Ella Langley's "Be Her"
+## Wanting to Be Her: The Real Meaning Behind Ella Langley's "Be Her"
 
 If you came looking for the **"Be Her" Ella Langley meaning**, here is the short version: the song is not about wanting to be someone else. It is about wanting to become the steadier, more grounded version of yourself you can already picture — the woman you keep falling short of. That gap, and the ache of staring across it, is the whole song.
 

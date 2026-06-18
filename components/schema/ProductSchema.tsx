@@ -31,15 +31,9 @@ export function ProductSchema({
   }
   json.offers = offer;
 
-  if (product.rating != null && product.reviewCount != null && product.reviewCount > 0) {
-    json.aggregateRating = {
-      "@type": "AggregateRating",
-      ratingValue: product.rating,
-      reviewCount: product.reviewCount,
-      bestRating: 5,
-      worstRating: 1,
-    };
-  }
+  // aggregateRating intentionally omitted: this is an independent affiliate site that does not
+  // host first-party reviews. Emitting Product AggregateRating from Amazon-derived numbers risks a
+  // Google structured-data manual action. The visible "(N Amazon reviews)" label stays (attributed).
 
   return (
     <script

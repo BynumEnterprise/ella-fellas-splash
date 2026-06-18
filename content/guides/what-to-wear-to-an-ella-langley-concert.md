@@ -68,7 +68,7 @@ The split tells you something important: you can dress all the way up or all the
 
 You want to look like a guy who likes country music, who showed up to enjoy a show, and who didn't think too hard about it. The mistake is treating it like a costume party. The win is looking exactly like yourself, slightly cleaned up, in clothes that work for standing in an arena for four hours.
 
-[Get tour alerts for your city →](/tools/tour-alerts)
+[See all 2026 Ella Langley tour dates →](/tour)
 
 ---
 

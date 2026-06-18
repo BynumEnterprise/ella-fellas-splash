@@ -1,21 +1,40 @@
 import type { TourDate } from "@/lib/types";
 
 export function MusicEventSchema({ d, url }: { d: TourDate; url: string }) {
-  const performers: { "@type": string; name: string }[] = [
-    { "@type": "MusicGroup", name: d.headliner ?? "Ella Langley" },
+  const names = [
+    d.headliner ?? "Ella Langley",
+    ...(d.tourType !== "support" ? ["Ella Langley", ...d.openers] : []),
   ];
-  if (d.tourType !== "support") {
-    performers.push({ "@type": "MusicGroup", name: "Ella Langley" });
-    d.openers.forEach((o) => performers.push({ "@type": "MusicGroup", name: o }));
+  const performers = [...new Set(names)].map((name) => ({
+    "@type": "MusicGroup",
+    name,
+  }));
+
+  const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
+  const prices = (d.ticketPriceRange.replace(/,/g, "").match(/\d+(?:\.\d+)?/g) ?? []).map(Number);
+
+  const offers: any = {
+    "@type": "Offer",
+    url,
+    availability: d.soldOut
+      ? "https://schema.org/SoldOut"
+      : "https://schema.org/InStock",
+    priceRange: d.ticketPriceRange,
+  };
+  if (prices.length) {
+    offers.priceCurrency = "USD";
+    offers.lowPrice = String(Math.min(...prices));
+    offers.highPrice = String(Math.max(...prices));
   }
 
   const json: any = {
     "@context": "https://schema.org",
     "@type": "MusicEvent",
-    name: `Ella Langley — ${d.tour}, ${d.city}`,
+    name: `Ella Langley \u2014 ${d.tour}, ${d.city}`,
     startDate: `${d.date}T${(d.showTime ?? "19:30").padStart(5, "0")}`,
     eventStatus: "https://schema.org/EventScheduled",
     eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+    image: `${SITE}/opengraph-image.png`,
     location: {
       "@type": "Place",
       name: d.venue,
@@ -28,14 +47,7 @@ export function MusicEventSchema({ d, url }: { d: TourDate; url: string }) {
       },
     },
     performer: performers,
-    offers: {
-      "@type": "Offer",
-      url,
-      priceRange: d.ticketPriceRange,
-      availability: d.soldOut
-        ? "https://schema.org/SoldOut"
-        : "https://schema.org/InStock",
-    },
+    offers,
   };
 
   return (

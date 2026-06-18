@@ -23,6 +23,7 @@ export function ArticleSchema({
     datePublished: publishedAt,
     dateModified: updatedAt ?? publishedAt,
     url,
+    image: `${process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com"}/opengraph-image.png`,
     author: {
       "@type": "Organization",
       name: "Ella Fellas Team",

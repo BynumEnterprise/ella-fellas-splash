@@ -18,6 +18,7 @@ import { SpotifyEmbed } from "@/components/SpotifyEmbed";
 import { YouTubeEmbed } from "@/components/YouTubeEmbed";
 import type { Song } from "@/lib/types";
 import { MusicRecordingSchema } from "@/components/schema/MusicRecordingSchema";
+import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 
 export async function generateStaticParams() {
   return getAllSongs().map((s) => ({ slug: s.slug }));
@@ -76,6 +77,12 @@ export default async function SongPage({ params }: { params: Promise<{ slug: str
 
   return (
     <article className="mx-auto max-w-5xl px-4 py-10">
+      <BreadcrumbSchema
+        items={[
+          { name: "Songs", url: `${SITE_URL}/songs` },
+          { name: s.title, url: songUrl },
+        ]}
+      />
       <MusicRecordingSchema s={s} url={songUrl} />
 
       <nav className="text-xs text-ink/60 mb-6">

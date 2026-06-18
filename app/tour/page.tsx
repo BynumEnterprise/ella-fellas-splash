@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Every confirmed Ella Langley tour date in 2026 — the Dandelion headlining tour, Morgan Wallen support dates, and festivals.",
   alternates: { canonical: "/tour" },
-  openGraph: { url: "/tour" },
+  openGraph: { url: "/tour", images: ["/opengraph-image.png"] },
 };
 
 export default function TourIndexPage() {

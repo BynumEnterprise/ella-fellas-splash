@@ -3,7 +3,7 @@ title: "Ella & HARDY Drop a New One Together. Here's the Short Version."
 slug: "2026-05-19-hardy-collab-announcement"
 publishedAt: "2026-05-19"
 category: "music-news"
-excerpt: "'Never Met Anyone Like You' is the hardest song on Dandelion, and it's the song every country radio station tried to ignore for a week before giving in. Then HARDY teased a follow-up."
+excerpt: "'Never Met Anyone Like You' is the hardest song on Dandelion - and country radio fought it for a week. Then HARDY teased a follow-up."
 relatedSongs: ["never-met-anyone-like-you"]
 ---
 

@@ -4,7 +4,7 @@ slug: "presale-codes-explained"
 category: "concert-prep"
 publishedAt: "2026-05-08"
 updatedAt: "2026-05-22"
-excerpt: "Citi card, Verified Fan, fan club, radio station, Live Nation — which presale actually gets you in, and which one is just marketing? Here's the working hierarchy."
+excerpt: "Citi, Verified Fan, fan club, radio, Live Nation - which presale actually gets you in, and which is just marketing? The working hierarchy."
 faq:
   - q: "What is the best presale for Ella Langley tickets?"
     a: 'The Citi card presale is the most reliable option still accessible to most fans. Go to citientertainment.com and use the code CITI. Verified Fan presales offered better access but registration closed in January 2026 for the Dandelion Tour, so that window has passed for current dates.'

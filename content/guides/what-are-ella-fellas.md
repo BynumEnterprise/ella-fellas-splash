@@ -3,7 +3,7 @@ title: "What Are Ella Fellas? The Fan Nickname, Explained"
 slug: "what-are-ella-fellas"
 category: "fan-onboarding"
 publishedAt: "2026-06-16"
-excerpt: "You keep seeing the phrase \"Ella Fellas\" in comment sections and concert lines. Here's what it actually means, where it came from, and how to tell it apart from her official merch line."
+excerpt: "You keep seeing \"Ella Fellas\" in comments and concert lines. Here is what it means, where it came from, and how it differs from her merch line."
 faq:
   - q: "What does \"Ella Fellas\" mean?"
     a: "\"Ella Fellas\" is the affectionate nickname for fans of country singer Ella Langley, leaning toward the guys in the crowd but used loosely for anyone who's all in on her music. It's a fan-culture term, not an official fan-club name. People use it the way other fanbases use their own nicknames to tag themselves online and at shows."

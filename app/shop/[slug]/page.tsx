@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const p = getProduct(slug);
   if (!p) return {};
   return {
-    title: { absolute: `${p.name} — Ella Fellas Shop` },
+    title: { absolute: `${p.name} — Ella Fellas` },
     description: p.blurb,
     openGraph: {
       title: `${p.name} — Ella Fellas`,

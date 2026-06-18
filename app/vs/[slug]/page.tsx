@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllComparisons, getComparison } from "@/lib/data";
 import { FaqSchema } from "@/components/schema/FaqSchema";
+import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 import type { FaqItem } from "@/lib/types";
 
 export async function generateStaticParams() {
@@ -48,6 +49,12 @@ export default async function ComparisonPage({ params }: { params: Promise<{ slu
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-10">
+      <BreadcrumbSchema
+        items={[
+          { name: "Compare", url: "/vs" },
+          { name: `Ella Langley vs ${c.compareTo}`, url: `/vs/${slug}` },
+        ]}
+      />
       <FaqSchema items={faqItems} />
 
       <nav className="text-xs text-ink/60 mb-4">

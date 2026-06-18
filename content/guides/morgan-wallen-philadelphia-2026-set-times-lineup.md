@@ -4,7 +4,7 @@ slug: "morgan-wallen-philadelphia-2026-set-times-lineup"
 category: "tour-guide"
 publishedAt: "2026-06-16"
 updatedAt: "2026-06-16"
-excerpt: "Morgan Wallen closes the 2026 Still The Problem Tour at Lincoln Financial Field on August 1, with Ella Langley as direct support. Lineup, set-time intel, and tickets."
+excerpt: "Morgan Wallen closes the 2026 Still The Problem Tour at Lincoln Financial Field on Aug 1, with Ella Langley. Lineup, set-time intel, and tickets."
 faq:
   - q: "Who is opening for Morgan Wallen in Philadelphia on August 1, 2026?"
     a: "The August 1 finale at Lincoln Financial Field has Ella Langley as direct support, along with Hudson Westbrook and Blake Whiten, with Morgan Wallen headlining."

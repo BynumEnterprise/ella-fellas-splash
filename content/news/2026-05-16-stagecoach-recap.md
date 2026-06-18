@@ -3,7 +3,7 @@ title: "What Actually Happened at Stagecoach: The Ella Set Everyone's Still Talk
 slug: "2026-05-16-stagecoach-recap"
 publishedAt: "2026-05-16"
 category: "tour-recap"
-excerpt: "Three weeks later, Ella's Stagecoach set is still the festival's most-clipped moment. Here's the setlist, the unexpected guest, and the one song nobody saw coming."
+excerpt: "Three weeks on, Ella's Stagecoach set is still the festival's most-clipped moment. The setlist, the surprise guest, and the song nobody expected."
 ---
 
 It's been three weeks since Stagecoach. Most festival moments have a 96-hour social media half-life and then fade. Ella Langley's Stagecoach set is still circulating.

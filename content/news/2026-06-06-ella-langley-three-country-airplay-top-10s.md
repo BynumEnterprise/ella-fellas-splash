@@ -3,7 +3,7 @@ title: "Ella Just Became the First Woman With Three Country Airplay Top 10s at O
 slug: "2026-06-06-ella-langley-three-country-airplay-top-10s"
 publishedAt: "2026-06-06"
 category: "news"
-excerpt: "Be Her holds No. 1 a second week, and with two more songs alongside it Ella becomes the first woman ever to park three titles in the Country Airplay top 10 at the same time."
+excerpt: "'Be Her' holds No. 1 a second week, and with two more songs Ella becomes the first woman ever with three Country Airplay top 10s at once."
 sources:
   - title: "Billboard — 'Ella-bration'! Langley Becomes First Woman to Score Three Simultaneous Top 10s on Country Airplay"
     url: "https://www.billboard.com/music/chart-beat/ella-langley-country-airplay-top-10s-1236265669/"

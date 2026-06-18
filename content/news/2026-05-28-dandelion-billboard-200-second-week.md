@@ -3,7 +3,7 @@ title: "Dandelion Is Back at #1 on the Billboard 200 (And This Time It Stuck)"
 slug: "2026-05-28-dandelion-billboard-200-second-week"
 publishedAt: "2026-05-28"
 category: "chart-news"
-excerpt: "The ACMs were two weeks ago and we're still buzzing, but the chart news this week is honestly just as fun. Dandelion is back at #1 on the Billboard 200, and this time it held."
+excerpt: "The ACMs were two weeks ago and we're still buzzing, but the chart news is just as fun: Dandelion is back at #1 on the Billboard 200 - and it held."
 relatedSongs: ["choosin-texas", "be-her", "dandelion"]
 sources:
   - title: "Ella Langley's 'Dandelion' Spends Second Week Atop Billboard 200"

@@ -7,6 +7,7 @@ import {
   getCategory,
   getProductsByCategory,
 } from "@/lib/shop";
+import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 import { ShopFilters } from "./ShopFilters";
 
 export async function generateStaticParams() {
@@ -25,6 +26,7 @@ export async function generateMetadata({
     title: `${cat.title} — The Fellas Shop`,
     description: cat.intro,
     alternates: { canonical: `/shop/category/${slug}` },
+    openGraph: { url: `/shop/category/${slug}`, images: ["/opengraph-image.png"] },
   };
 }
 
@@ -40,6 +42,12 @@ export default async function CategoryPage({
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-10">
+      <BreadcrumbSchema
+        items={[
+          { name: "Shop", url: "/shop" },
+          { name: cat.title, url: `/shop/category/${slug}` },
+        ]}
+      />
       {/* Breadcrumb */}
       <nav className="text-xs text-ink/60 mb-5 flex items-center gap-1.5">
         <Link href="/shop" className="hover:text-primary">

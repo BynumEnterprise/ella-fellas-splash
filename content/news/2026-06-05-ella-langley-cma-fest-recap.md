@@ -3,7 +3,7 @@ title: "Ella Langley's CMA Fest Opening Night: The Gretchen Wilson Duet We Didn'
 slug: "2026-06-05-ella-langley-cma-fest-recap"
 publishedAt: "2026-06-05"
 category: "news"
-excerpt: "Ella opened CMA Fest at Nissan Stadium Thursday night, then got pulled back out for a surprise Gretchen Wilson duet that stole the evening. Here's what went down."
+excerpt: "Ella opened CMA Fest at Nissan Stadium Thursday, then returned for a surprise Gretchen Wilson duet that stole the night. Here's what went down."
 sources:
   - title: "AOL — CMA Fest 2026 kicks off with FGL reunion, Jelly Roll sermon and Ella Langley"
     url: "https://www.aol.com/news/cma-fest-2026-kicks-off-055336039.html"

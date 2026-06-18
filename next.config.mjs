@@ -8,12 +8,17 @@ const nextConfig = {
   },
   async redirects() {
     return [
-      // Consolidate the duplicate "what to bring" guide into the canonical one (SEO: avoid cannibalization).
       {
         source: "/guides/what-to-bring-to-an-ella-langley-concert",
         destination: "/guides/what-to-bring-ella-langley-concert",
         permanent: true,
       },
+      { source: "/things-to-do", destination: "/plan-your-trip", permanent: true },
+      { source: "/travel", destination: "/plan-your-trip", permanent: true },
+      { source: "/experiences", destination: "/plan-your-trip", permanent: true },
+      { source: "/plan", destination: "/plan-your-trip", permanent: true },
+      { source: "/tours", destination: "/tour", permanent: true },
+      { source: "/favicon.ico", destination: "/icon.png", permanent: true },
     ];
   },
   async headers() {

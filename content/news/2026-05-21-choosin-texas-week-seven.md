@@ -3,7 +3,7 @@ title: "'Choosin' Texas' Just Hit Week Seven at #1. Here's What That Actually Me
 slug: "2026-05-21-choosin-texas-week-seven"
 publishedAt: "2026-05-21"
 category: "chart-news"
-excerpt: "Seven weeks at #1 on the Hot 100. We unpack the records 'Choosin' Texas' has now broken, the ones still in play, and what makes this run different from anything in modern country."
+excerpt: "Seven weeks at #1 on the Hot 100. The records 'Choosin' Texas' has broken, the ones still in play, and what makes this run different."
 relatedSongs: ["choosin-texas"]
 sources:
   - "https://www.billboard.com/charts/hot-100/"

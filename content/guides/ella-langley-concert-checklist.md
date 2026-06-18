@@ -4,7 +4,7 @@ slug: "ella-langley-concert-checklist"
 category: "concert-prep"
 publishedAt: "2026-06-03"
 updatedAt: "2026-06-03"
-excerpt: "Everything you need before, during, and after an Ella Langley show — organized, skimmable, and actually printable. Tick these off and you will not have a bad night."
+excerpt: "Everything you need before, during, and after an Ella Langley show - organized, skimmable, and printable. Tick these off for a great night."
 faq:
   - q: "What should I bring to an Ella Langley concert?"
     a: 'Your ticket (digital or printed), a valid photo ID, a clear bag that meets the venue policy, a portable phone charger, earplugs if you are in the lower bowl, and some cash for parking and tips. Check the specific venue page for your show before you leave — bag rules vary by arena.'

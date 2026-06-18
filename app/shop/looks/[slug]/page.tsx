@@ -9,6 +9,7 @@ import {
   getLookProducts,
   getLookTotal,
 } from "@/lib/looks";
+import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 
 const WESTERN_LOOKS = new Set([
   "stagecoach-western",
@@ -30,10 +31,10 @@ export async function generateMetadata({
   const look = getLook(slug);
   if (!look) return {};
   return {
-    title: `${look.title} — Shop the Look | The Fellas Shop`,
+    title: `${look.title} — Shop the Look`,
     description: look.vibe,
     alternates: { canonical: `/shop/looks/${slug}` },
-    openGraph: { title: `${look.title} — Shop the Look`, description: look.vibe },
+    openGraph: { title: `${look.title} — Shop the Look`, description: look.vibe, images: ["/opengraph-image.png"] },
   };
 }
 
@@ -53,6 +54,13 @@ export default async function LookDetailPage({
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-10">
+      <BreadcrumbSchema
+        items={[
+          { name: "Shop", url: "/shop" },
+          { name: "Looks", url: "/shop/looks" },
+          { name: look.title, url: `/shop/looks/${slug}` },
+        ]}
+      />
       <nav className="text-xs text-ink/60 mb-5 flex items-center gap-1.5 flex-wrap">
         <Link href="/shop" className="hover:text-primary">Shop</Link>
         <span aria-hidden>&middot;</span>

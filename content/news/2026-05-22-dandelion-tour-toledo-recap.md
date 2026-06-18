@@ -3,7 +3,7 @@ title: "Dandelion Tour Opener in Toledo: What Actually Happened"
 slug: "2026-05-22-dandelion-tour-toledo-recap"
 publishedAt: "2026-05-22"
 category: "tour-recap"
-excerpt: "Ella Langley opened her first headlining arena tour at Toledo's Huntington Center. Here's the setlist, the moments that hit, and what to expect if you're still on the schedule."
+excerpt: "Ella Langley opened her first headlining arena tour at Toledo's Huntington Center. The setlist, the moments that hit, and what to expect next."
 heroImage: "/images/news/toledo-2026-05-07.jpg"
 relatedSongs: ["choosin-texas", "you-look-like-you-love-me", "loving-life-again", "dandelion"]
 relatedTours: ["toledo-huntington-center-2026-05-07"]
@@ -42,7 +42,7 @@ We're updating this list as cleaner audio surfaces. The main story: Riley Green 
 
 The Dandelion Tour visits St. Louis next (May 8) before stretching into the South in mid-May. We've got the [full tour page](/tour) with venue info, openers, parking notes, and the cheapest seats we've found on each show.
 
-A few of the remaining dates — Cary NC, Austin TX, Fort Worth TX — sold out within hours of the on-sale and resale is climbing fast. If you're going, the play is to grab tickets *now* on TicketNetwork rather than waiting for prices to drop — secondary prices on hot dates climb as the show gets closer, they don't fall.
+A few of the remaining dates — Cary NC, Austin TX, [the Fort Worth finale at Dickies Arena](/tour/fort-worth-dickies-arena-2026-08-15) — sold out within hours of the on-sale and resale is climbing fast. If you're going, the play is to grab tickets *now* on TicketNetwork rather than waiting for prices to drop — secondary prices on hot dates climb as the show gets closer, they don't fall.
 
 [See all remaining tour dates →](/tour)
 

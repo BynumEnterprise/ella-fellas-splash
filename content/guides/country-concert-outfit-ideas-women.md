@@ -4,7 +4,7 @@ slug: "country-concert-outfit-ideas-women"
 category: "concert-prep"
 publishedAt: "2026-06-03"
 updatedAt: "2026-06-03"
-excerpt: "Six real looks for a country concert in 2026 - from the classic denim-and-boots to outdoor festival heat - with honest styling notes and nothing you have to buy twice."
+excerpt: "Six real country-concert looks for 2026, from classic denim-and-boots to festival heat, with honest styling notes and nothing you buy twice."
 faq:
   - q: "What should a woman wear to a country concert?"
     a: "There is no dress code, but the most common looks are denim with cowboy boots, a sundress with ankle booties, or a western-influenced going-out top with dark jeans. Comfort matters as much as the look - plan for three to four hours on your feet. Closed-toe shoes, a layer you can tie around your waist, and a clear bag if the venue requires one are all smart moves regardless of which outfit you go with."

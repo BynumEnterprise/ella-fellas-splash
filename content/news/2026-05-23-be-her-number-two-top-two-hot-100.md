@@ -3,7 +3,7 @@ title: "'Be Her' Just Locked Down #2. Ella Now Owns the Top Two Spots on the Hot
 slug: "2026-05-23-be-her-number-two-top-two-hot-100"
 publishedAt: "2026-05-23"
 category: "chart-news"
-excerpt: "Choosin' Texas holds at #1 for a tenth week. Be Her sits at #2 and won't move. Here's the company Ella is keeping with this one, and why the second song matters more than the milestone."
+excerpt: "'Choosin' Texas' holds at #1 a tenth week and 'Be Her' sits at #2. The company Ella keeps here, and why the second song matters most."
 relatedSongs: ["choosin-texas", "be-her"]
 sources:
   - "https://www.billboard.com/lists/ella-langley-choosin-texas-hot-100-number-one-10-weeks/"

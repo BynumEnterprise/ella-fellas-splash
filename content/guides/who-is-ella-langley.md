@@ -4,7 +4,7 @@ slug: "who-is-ella-langley"
 category: "fan-onboarding"
 publishedAt: "2026-06-16"
 updatedAt: "2026-06-16"
-excerpt: "Found Ella Langley because she is direct support on Morgan Wallen's 2026 tour? Here is the quick bio, her biggest songs, and why she is worth showing up early for."
+excerpt: "Found Ella Langley as direct support on Morgan Wallen's 2026 tour? A quick bio, her biggest songs, and why she is worth showing up early for."
 faq:
   - q: "Why is Ella Langley opening for Morgan Wallen?"
     a: "Ella Langley is one of the biggest names in country right now, so she has the direct-support slot -- the act right before the headliner -- on a run of Morgan Wallen's 2026 Still The Problem Tour stadium dates."

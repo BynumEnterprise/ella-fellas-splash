@@ -3,7 +3,7 @@ title: "Ella Langley at Railbird Festival 2026: Set Time & Songs"
 slug: "2026-06-04-ella-langley-railbird-festival-2026"
 publishedAt: "2026-06-04"
 category: "news"
-excerpt: "Ella plays Railbird Festival on Sunday, June 7 in Lexington. Set time is now confirmed: 8:15 PM on the Elkhorn Stage. Here's where she lands and the Dandelion songs to expect."
+excerpt: "Ella plays Railbird Festival on Sunday, June 7 in Lexington, confirmed for 8:15 PM on the Elkhorn Stage. The Dandelion songs to expect."
 sources:
   - title: "JamBase — Railbird Festival 2026 Lineup & Tickets"
     url: "https://www.jambase.com/festival/railbird-festival-2026"

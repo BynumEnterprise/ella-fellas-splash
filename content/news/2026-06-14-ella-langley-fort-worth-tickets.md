@@ -3,7 +3,7 @@ title: "Ella Langley Fort Worth Tickets: Dickies Arena Finale"
 slug: "2026-06-14-ella-langley-fort-worth-tickets"
 publishedAt: "2026-06-14"
 category: "tour-news"
-excerpt: "Ella Langley closes the Dandelion Tour at Dickies Arena on Aug 15. Where to find Fort Worth tickets, the best seats, parking, and what to expect from the last show of the run."
+excerpt: "Ella Langley closes the Dandelion Tour at Dickies Arena on Aug 15. Fort Worth tickets, the best seats, parking, and what to expect from the finale."
 relatedSongs: ["be-her", "choosin-texas"]
 sources:
   - "https://dickiesarena.com/event/2026-08-15-ella-langley/"

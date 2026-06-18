@@ -8,6 +8,7 @@ import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
 import { ConcertGearWidget } from "@/components/ConcertGearWidget";
 import { PlanYourTrip } from "@/components/PlanYourTrip";
 import { MusicEventSchema } from "@/components/schema/MusicEventSchema";
+import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 import { ticketNetworkUrl } from "@/lib/affiliates";
 import { formatDate } from "@/lib/utils";
 
@@ -48,6 +49,12 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-10">
+      <BreadcrumbSchema
+        items={[
+          { name: "Tour", url: `${SITE_URL}/tour` },
+          { name: `Ella Langley in ${d.city}, ${d.state}`, url: pageUrl },
+        ]}
+      />
       <MusicEventSchema d={d} url={pageUrl} />
 
       <nav className="text-xs text-ink/60 mb-4">

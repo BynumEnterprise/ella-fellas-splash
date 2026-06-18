@@ -82,7 +82,7 @@ If you want the post-show country bar scene, every city on the tour has one wort
 
 [Full tour page with venue-specific guides →](/tour)
 
-If your city is still on the schedule and you haven't bought tickets yet, the realistic resale picture: most dates are $85-$250 in the upper bowl on TicketNetwork, $250-$475 on the floor. The Texas dates (Austin, Fort Worth) and the Cary NC date are the highest-priced of the run — buy those now if you're going.
+If your city is still on the schedule and you haven't bought tickets yet, the realistic resale picture: most dates are $85-$250 in the upper bowl on TicketNetwork, $250-$475 on the floor. The Texas dates ([Austin's Moody Center](/tour/austin-moody-center-2026-08-13), Fort Worth) and the Cary NC date are the highest-priced of the run — buy those now if you're going.
 
 ---
 

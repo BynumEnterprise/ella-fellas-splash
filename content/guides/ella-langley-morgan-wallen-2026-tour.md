@@ -4,7 +4,7 @@ slug: "ella-langley-morgan-wallen-2026-tour"
 category: "tour-guide"
 publishedAt: "2026-06-16"
 updatedAt: "2026-06-16"
-excerpt: "Ella Langley is direct support on Morgan Wallen's 2026 Still The Problem Tour. Here are the upcoming stadium co-bills, who else is on each lineup, and how to get tickets."
+excerpt: "Ella Langley is direct support on Morgan Wallen's 2026 Still The Problem Tour. The stadium co-bills, each lineup, and how to get tickets."
 faq:
   - q: "Is Ella Langley opening for Morgan Wallen in 2026?"
     a: "Yes. Ella Langley is direct support on a run of Morgan Wallen's 2026 Still The Problem Tour stadium dates. Direct support is the slot right before the headliner, so she plays late in the evening to a full stadium."

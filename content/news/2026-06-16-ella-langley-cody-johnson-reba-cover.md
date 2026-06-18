@@ -3,7 +3,7 @@ title: "Ella Langley & Cody Johnson's Surprise Reba Cover"
 slug: "2026-06-16-ella-langley-cody-johnson-reba-cover"
 publishedAt: "2026-06-16"
 category: "music-news"
-excerpt: "Ella Langley and Cody Johnson stunned Braves Country Fest with an unannounced duet of Reba McEntire's 'Whoever's in New England.' Here's the story behind the moment."
+excerpt: "Ella Langley and Cody Johnson stunned Braves Country Fest with an unannounced duet of Reba's 'Whoever's in New England.' The story behind it."
 relatedSongs: ["be-her", "choosin-texas"]
 sources:
   - "https://www.billboard.com/music/country/cody-johnson-ella-langley-mcentire-braves-country-fest-1236273396/"

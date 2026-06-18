@@ -4,7 +4,7 @@ slug: "morgan-wallen-baltimore-2026-set-times-lineup"
 category: "tour-guide"
 publishedAt: "2026-06-16"
 updatedAt: "2026-06-16"
-excerpt: "Morgan Wallen plays M&T Bank Stadium in Baltimore on July 18, 2026, with Ella Langley as direct support. Full lineup, what we know about set times, and how to get tickets."
+excerpt: "Morgan Wallen plays M&T Bank Stadium in Baltimore on July 18, 2026, with Ella Langley as direct support. Lineup, set-time intel, and tickets."
 faq:
   - q: "Who is opening for Morgan Wallen in Baltimore on July 18, 2026?"
     a: "The July 18 show at M&T Bank Stadium has Ella Langley as direct support, plus Gavin Adcock and Jason Scott and the High Heat, with Morgan Wallen headlining."

@@ -4,7 +4,7 @@ slug: "traveling-to-an-ella-langley-show"
 category: "concert-prep"
 publishedAt: "2026-06-11"
 updatedAt: "2026-06-11"
-excerpt: "Coming in from out of town for an Ella Langley show? Here's our full trip-planning playbook — where to stay, how to get there, and exactly what to pack so the only thing you're thinking about is the set."
+excerpt: "Coming from out of town for an Ella Langley show? Our trip-planning playbook: where to stay, how to get there, and exactly what to pack."
 ---
 
 Half the fun of an Ella Langley show is the road trip to get there. We've made enough of these weekends out of a Tuesday-night arena date that we've got the whole thing down to a system. Here's how we plan a trip around a show so the only thing we're sweating is whether she opens with "You Look Like You Love Me."

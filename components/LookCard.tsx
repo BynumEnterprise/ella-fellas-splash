@@ -24,6 +24,7 @@ export function LookCard({ look }: Props) {
               src={p.image}
               alt={p.name}
               loading="lazy"
+              decoding="async"
               className="w-full h-full object-contain p-3 group-hover:scale-105 transition-transform duration-500"
             />
           </div>

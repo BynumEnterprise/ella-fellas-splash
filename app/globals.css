@@ -6,6 +6,14 @@
   html {
     scroll-behavior: smooth;
   }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
   body {
     background: theme('colors.paper');
     color: theme('colors.ink');
@@ -32,7 +40,7 @@
     line-height: 1.7;
   }
   .prose-content a {
-    color: theme('colors.primary.DEFAULT');
+    color: theme('colors.primary.dark');
     text-decoration: underline;
     text-underline-offset: 2px;
   }

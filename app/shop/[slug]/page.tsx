@@ -286,6 +286,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
                     src={r.image}
                     alt={r.name}
                     loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-contain p-3 group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
@@ -327,6 +328,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
                     src={r.image}
                     alt={r.name}
                     loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-contain p-3 group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>

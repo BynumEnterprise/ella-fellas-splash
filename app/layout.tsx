@@ -61,8 +61,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div style={{ display: "none" }} aria-hidden="true">
           Impact-Site-Verification: 465e0e70-5146-444d-9120-8c91daea7d51
         </div>
+        <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-denim focus:text-paper focus:px-4 focus:py-2 focus:rounded-md">Skip to content</a>
         <Header />
-        <main className="flex-1">{children}</main>
+        <main id="main-content" className="flex-1">{children}</main>
         <Footer />
         <WebSiteSchema />
       </body>

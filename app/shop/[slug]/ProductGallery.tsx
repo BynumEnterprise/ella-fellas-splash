@@ -25,6 +25,8 @@ export function ProductGallery({ images, alt, badge }: ProductGalleryProps) {
         <img
           src={activeImage}
           alt={alt}
+          fetchPriority="high"
+          decoding="async"
           className="w-full h-full object-contain p-4"
         />
         {badge && (
@@ -54,6 +56,7 @@ export function ProductGallery({ images, alt, badge }: ProductGalleryProps) {
                 src={img}
                 alt=""
                 loading="lazy"
+                decoding="async"
                 className="w-full h-full object-contain p-1"
               />
             </button>

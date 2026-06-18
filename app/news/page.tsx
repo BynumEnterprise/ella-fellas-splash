@@ -21,6 +21,7 @@ export default function NewsIndexPage() {
           and the takes nobody else has the time to write.
         </p>
       </header>
+      <h2 className="sr-only">Latest articles</h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
         {news.map((n) => (
           <NewsCard

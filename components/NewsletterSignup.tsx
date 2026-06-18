@@ -52,8 +52,11 @@ export function NewsletterSignup({ placement = "inline" }: { placement?: string 
     <form onSubmit={onSubmit} className="space-y-3">
       <div className="flex flex-col sm:flex-row gap-2">
         <input
+          id={`newsletter-email-${placement}`}
+          name="email"
           type="email"
           required
+          autoComplete="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="your.email@example.com"
@@ -61,7 +64,10 @@ export function NewsletterSignup({ placement = "inline" }: { placement?: string 
           aria-label="Email address"
         />
         <input
+          id={`newsletter-city-${placement}`}
+          name="city"
           type="text"
+          autoComplete="address-level2"
           value={city}
           onChange={(e) => setCity(e.target.value)}
           placeholder="City (optional)"

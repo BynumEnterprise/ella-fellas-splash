@@ -16,7 +16,7 @@ export default {
         ink: "#1A1A1A",
         paper: "#FAF7F0",
         denim: "#2F4858",
-        clay: "clay"
+        clay: "#A14A30"
       },
       fontFamily: {
         display: ["var(--font-display)", "Impact", "sans-serif"],

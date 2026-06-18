@@ -1,5 +1,5 @@
 ---
-title: "Morgan Wallen Baltimore 2026: Set Times, Lineup & Who's Opening at M&T Bank Stadium"
+title: "Morgan Wallen Baltimore 2026: Set Times & Lineup"
 slug: "morgan-wallen-baltimore-2026-set-times-lineup"
 category: "tour-guide"
 publishedAt: "2026-06-16"

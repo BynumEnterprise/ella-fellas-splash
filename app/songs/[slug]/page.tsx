@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: `${s.title}${s.feat ? ` (feat. ${s.feat})` : ""} — Ella Langley`,
     description: s.tldr,
     alternates: { canonical: `/songs/${slug}` },
-    openGraph: { url: `/songs/${slug}` },
+    openGraph: { url: `/songs/${slug}`, images: ["/opengraph-image.png"] },
   };
 }
 

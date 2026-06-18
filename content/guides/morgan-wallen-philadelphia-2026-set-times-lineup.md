@@ -1,5 +1,5 @@
 ---
-title: "Morgan Wallen Philadelphia 2026: Set Times, Lineup & Who's Opening at Lincoln Financial Field"
+title: "Morgan Wallen Philadelphia 2026: Set Times & Lineup"
 slug: "morgan-wallen-philadelphia-2026-set-times-lineup"
 category: "tour-guide"
 publishedAt: "2026-06-16"

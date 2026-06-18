@@ -1,5 +1,5 @@
 ---
-title: "Morgan Wallen Clemson 2026: Set Times, Lineup & Who's Opening at Memorial Stadium"
+title: "Morgan Wallen Clemson 2026: Set Times & Lineup"
 slug: "morgan-wallen-clemson-2026-set-times-lineup"
 category: "tour-guide"
 publishedAt: "2026-06-16"

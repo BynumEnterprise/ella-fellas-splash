@@ -1,5 +1,5 @@
 ---
-title: "Morgan Wallen Chicago 2026: Set Times, Lineup & Who's Opening at Soldier Field"
+title: "Morgan Wallen Chicago 2026: Set Times & Lineup"
 slug: "morgan-wallen-chicago-2026-set-times-lineup"
 category: "tour-guide"
 publishedAt: "2026-06-16"

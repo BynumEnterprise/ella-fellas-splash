@@ -77,7 +77,6 @@ export const LOOKS: Look[] = [
       "ww-ariat-rebar-flannel",
       "ww-levis-501-original",
       "ww-ariat-heritage-roughstock",
-      "ww-trucker-cap-low-pro",
       "wb-stanley-classic-flask",
       "ec-collapsible-cup",
     ],
@@ -126,7 +125,6 @@ export const LOOKS: Look[] = [
       "to-coleman-camp-chair",
       "to-corn-hole-set",
       "to-stanley-thermos",
-      "ww-trucker-cap-low-pro",
       "ww-venado-henley",
     ],
   },
@@ -138,10 +136,8 @@ export const LOOKS: Look[] = [
     vibe:
       "Half the outdoor dates flirt with a rain delay. A packable shell, ponchos for the crew, a waterproof-backed blanket and a cap keep the night going when the sky opens up.",
     productSlugs: [
-      "ec-foldable-rain-jacket",
       "ec-rain-poncho-5pk",
       "ec-blanket-waterproof",
-      "ww-trucker-cap-low-pro",
       "ec-anker-powercore-10k",
       "ec-airtag-keychain",
     ],

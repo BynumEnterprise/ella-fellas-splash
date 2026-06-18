@@ -14,13 +14,19 @@ const nextConfig = {
         destination: "/guides/what-to-bring-ella-langley-concert",
         permanent: true,
       },
-      // Travel-intent paths → the Plan Your Trip hub (so any travel URL resolves, never 404s).
-      { source: "/things-to-do", destination: "/plan-your-trip", permanent: true },
-      { source: "/travel", destination: "/plan-your-trip", permanent: true },
-      { source: "/experiences", destination: "/plan-your-trip", permanent: true },
-      { source: "/plan", destination: "/plan-your-trip", permanent: true },
-      // "/tours" (plural) is a common mistype of the tour-dates page.
-      { source: "/tours", destination: "/tour", permanent: true },
+    ];
+  },
+  async headers() {
+    return [
+      {
+        source: "/:path*",
+        headers: [
+          { key: "X-Content-Type-Options", value: "nosniff" },
+          { key: "X-Frame-Options", value: "SAMEORIGIN" },
+          { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+          { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=()" },
+        ],
+      },
     ];
   },
 };

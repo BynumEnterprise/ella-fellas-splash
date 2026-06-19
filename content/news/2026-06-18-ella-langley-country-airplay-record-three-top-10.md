@@ -31,14 +31,12 @@ It also says something about the songs themselves. These are not interchangeable
 
 The "Be Her" No. 1 is its own line in the record book. Holding the top of Country Airplay for a second consecutive week makes it Ella's second multiweek No. 1 on the chart — and it arrived as the fastest-climbing No. 1 of her career, reaching the summit in its 15th week. For a song this plainspoken about wanting to drink less and pray more, a slow, durable climb feels right.
 
-All three of these songs live on **[Dandelion](/songs/dandelion)**, the album that debuted at No. 1 on the Billboard 200 earlier this year. The duet was added on the reissue, which is part of why the record kept feeding itself: a new track entering the top 10 while the older singles refused to fall out of it.
+All three of these songs live on **[Dandelion](/songs/dandelion)**, the album that debuted at No. 1 on the Billboard 200 earlier this year. The duet was added on the reissue, which is part of why the record kept feeding itself: a new track entering the top 10 while the older singles refused to fall out of it. If you want the record that holds all three, the [Dandelion vinyl](/shop/fc-dandelion-vinyl) is the pressing we keep on the shelf.
 
 ## What to Watch Next
 
 The obvious question is whether Ella can stretch the run. Country Airplay is a weekly chart, so the three-in-the-top-10 feat can vanish the moment any of the songs slips a rank. "I Can't Love You Anymore" at No. 10 is the most fragile of the three; "Be Her" at No. 1 is the most secure. If the duet holds or climbs, the streak continues. If it dips, the record still stands — it already happened, and the history books do not un-write it.
 
-She is doing all of this in the middle of a packed touring summer, too. The [2026 Dandelion Tour](/tour) is her first headlining arena run, and these are exactly the songs filling those setlists night after night. Radio dominance and a sold-out tour tend to feed each other, which is usually how an artist turns one big year into a lasting career.
+She is doing all of this in the middle of a packed touring summer, too. The [2026 Dandelion Tour](/tour) is her first headlining arena run, and these are exactly the songs filling those setlists night after night — here's [her full 2026 setlist](/guides/ella-langley-setlist-2026), in order. Radio dominance and a sold-out tour tend to feed each other, which is usually how an artist turns one big year into a lasting career.
 
-For now, the simplest way to say it: in one week in June, Ella Langley did something no woman in country radio had ever done. We will be a little surprised if it is the last record she breaks this year.
-
-*Chart figures via Billboard's Country Airplay chart dated June 13, 2026.*
+For now, the simplest way to say it: in one week in June, Ella Langl

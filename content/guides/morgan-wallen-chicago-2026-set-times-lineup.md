@@ -1,10 +1,10 @@
 ---
-title: "Morgan Wallen Chicago 2026: Set Times & Lineup"
+title: "Morgan Wallen Chicago Openers & Set Times 2026"
 slug: "morgan-wallen-chicago-2026-set-times-lineup"
 category: "tour-guide"
 publishedAt: "2026-06-16"
-updatedAt: "2026-06-16"
-excerpt: "Morgan Wallen plays Soldier Field on June 20, 2026, with Ella Langley as direct support. The full lineup, set-time intel, and how to get tickets."
+updatedAt: "2026-06-20"
+excerpt: "Who's opening for Morgan Wallen in Chicago, June 20, 2026? Ella Langley plays direct support, plus Gavin Adcock and Zach John King. Set times inside."
 faq:
   - q: "Who is opening for Morgan Wallen in Chicago on June 20, 2026?"
     a: "On the Saturday, June 20 show at Soldier Field, the openers are Ella Langley as direct support, plus Gavin Adcock and Zach John King, with Morgan Wallen headlining."

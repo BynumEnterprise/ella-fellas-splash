@@ -16,7 +16,7 @@ That was sixty days ago. Here's what actually changed.
 
 **Streaming.** Spotify monthly listeners jumped from 14.2M pre-ACMs to 21.8M today. That's a 53% lift in two months, and most of it landed in the first three weeks after the ceremony. The award-show bump is real and faster than the "Choosin' Texas" #1 bump.
 
-**Tour pricing.** Average resale prices on the Dandelion Tour rose roughly 35% in the four weeks after the awards. Some of that is "Choosin' Texas" continuing to climb. A lot of it was awards-show validation that this is the artist of the moment.
+**Tour pricing.** Average resale prices on the [Dandelion Tour](/tour) rose roughly 35% in the four weeks after the awards. Some of that is "Choosin' Texas" continuing to climb. A lot of it was awards-show validation that this is the artist of the moment.
 
 **Newsroom positioning.** Coverage shifted from "rising star" to "country's new lead." Every major music publication that had written a profile in 2024 ran a follow-up by April. The framing went from "is this for real" to "OK, what's next."
 
@@ -34,4 +34,4 @@ The ACM sweep was confirmation, not coronation. The people who decide what count
 
 The next test is the CMAs in November. Same shortlists, different voting body. A repeat sweep there moves her from "the artist of 2026" to "the artist of this decade."
 
-That's a conversation we'll be ready to have. Until then, the answer to "did the sweep matter" is: it mattered to the people who weren't paying attention yet. The people who already were just nodded.
+If you want to relive the run that got her here, our [“Be Her” breakdown](/songs/be-her) covers the song carrying her current setlists, and the [Dandelion vinyl](/shop/fc-dandelion-vinyl) is the cleanest way to own the album at the center of it all. That's a conversation we'll be ready to have. Until then, the answer to "did the sweep matter" is: it mattered to the people who weren't paying attention yet. The people who already were just nodded.

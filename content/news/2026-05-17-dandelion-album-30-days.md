@@ -34,10 +34,11 @@ She has the top two songs on country radio right now.
 
 The album is doing the rare thing of building, not fading. Most modern albums lose 60-70% of week-1 streaming volume by week 4. Dandelion is at roughly 78% retention — the kind of curve usually reserved for catalog-defining releases.
 
-The most likely explanation: the Dandelion Tour. Touring with an album generally extends its life by 40-60% in retention metrics. With 26 confirmed tour dates over the summer, this album is going to live a long time.
+The most likely explanation: the [Dandelion Tour](/tour). Touring with an album generally extends its life by 40-60% in retention metrics. With 26 confirmed tour dates over the summer, this album is going to live a long time. If "Choosin' Texas" is the song pulling those streams, our ["Choosin' Texas" breakdown](/songs/choosin-texas) digs into why it connected the way it did.
 
 ## What to watch
 
 The next chart-moving event is "Don't Mind If I Do" continuing its Country Airplay run. If it does what "Choosin' Texas" did and stays at #1 for 5+ weeks, we're looking at the year's defining country airplay duo.
 
-[Read every Dandelion song breakdown →](/songs)
+[Read every Dandelion song breakdown &rarr;](/songs) &middot; and if the numbers have you wanting the album on your shelf, the [Dandelion vinyl](/shop/fc-dandelion-vinyl) is the version we'd grab.
+

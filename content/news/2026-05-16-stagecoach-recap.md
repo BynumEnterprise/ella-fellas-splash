@@ -13,14 +13,14 @@ It's been three weeks since Stagecoach. Most festival moments have a 96-hour soc
 1. loving life again
 2. weren't for the wind
 3. nicotine
-4. be her
+4. [be her](/songs/be-her)
 5. dandelion
 6. don't mind if i do (Riley Green walks out)
 7. you look like you love me (Riley stays out)
 8. never met anyone like you (HARDY surprise — the moment)
 9. paint the town blue
 10. (extended jam, no vocal)
-11. Choosin' Texas
+11. [Choosin' Texas](/songs/choosin-texas)
 
 ## The HARDY moment
 
@@ -40,4 +40,4 @@ Stagecoach's contract with her was reportedly a sub-headliner slot. She's now bo
 
 The Railbird Festival (Lexington, KY, June 7) is the next one on her schedule. We'd guess the set is now closer to 75 minutes than 45, and she may bring out more guests.
 
-[See the full tour schedule →](/tour)
+Want the set on your shelf? Grab the [Dandelion album on vinyl](/shop/fc-dandelion-vinyl), and check every upcoming stop on the [full tour schedule](/tour).

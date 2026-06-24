@@ -18,6 +18,8 @@ Soldier Field, a Saturday night in June, and Morgan Wallen on the marquee -- tha
 
 *FTC note: some links on this page are affiliate links. If you buy through them we may earn a small commission at no cost to you. We only recommend things we would actually use.*
 
+> **Already been to Chicago? Here's what's next.** The Soldier Field night is in the books, but the Wallen run rolls on. The next stadium stop is Clemson on June 27 -- see our [Morgan Wallen Clemson set times and openers guide](/guides/morgan-wallen-clemson-2026-set-times-lineup) for who's on the bill and when to get there. And if Ella was the reason you came, she's headlining her own rooms all year: the full [Ella Langley tour dates and tickets](/tour) are right here, including her newly added fall shows.
+
 ## The lineup, top to bottom
 
 Here is the running order for the June 20 Soldier Field date:

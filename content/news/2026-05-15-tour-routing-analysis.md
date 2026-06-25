@@ -53,4 +53,4 @@ The Dandelion Tour routing isn't a snub. It's the most efficient possible execut
 
 Translation: she's not skipping the West Coast. She's deferring it to when she can do it right.
 
-[See the full tour map →](/tour)
+While you wait, dig into the album 

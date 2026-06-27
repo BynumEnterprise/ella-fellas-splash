@@ -29,7 +29,7 @@ Not sold out at face. There were still upper-bowl tickets at face value as of th
 
 ## What she'll probably play
 
-Based on Toledo and St. Louis: opens with "loving life again," runs the Hungover deep cuts mid-show, brings out a guest for the duets around track 8 (in Florida this'll likely be a recorded Riley Green vocal or a stand-in, since Riley isn't on this leg), closes with "Choosin' Texas."
+Based on Toledo and St. Louis: opens with ["loving life again"](/songs/loving-life-again), runs the Hungover deep cuts mid-show, brings out a guest for the duets around track 8 (in Florida this'll likely be a recorded Riley Green vocal or a stand-in, since Riley isn't on this leg), closes with ["Choosin' Texas"](/songs/choosin-texas).
 
 The Florida set may also include a new Dandelion cut nobody's heard live yet — pattern is she debuts a new song on the second show of any geographic stretch.
 
@@ -41,7 +41,7 @@ If you're driving home tonight: I-75 north clears quickly after midnight. South 
 
 ## Tomorrow night
 
-She rolls up I-95 to Savannah's Enmarket Arena (sold out at face, resale $145+). Same set, different state.
+She rolls up I-95 to Savannah's Enmarket Arena (sold out at face, resale $145+). Same set, different state. Can't make either Florida night? The [Dandelion vinyl](/shop/fc-dandelion-vinyl) is the next best way to live with these songs.
 
 [Get tickets for tonight →](/tour/estero-hertz-arena-2026-05-14)
 [See tomorrow's Savannah show →](/tour/savannah-enmarket-arena-2026-05-15)

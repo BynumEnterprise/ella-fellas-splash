@@ -40,6 +40,6 @@ The Greek Theatre is a fixed-seat amphitheater, so unlike Red Rocks you are choo
 
 ## Making a Night of It in LA
 
-Coming in from out of town for one of these? Griffith Park parking is stacked-and-shuttle, so build in extra time, and the surrounding Los Feliz neighborhood is an easy pre-show dinner stop. For travel logistics that apply to any stop on the run, our [traveling to an Ella Langley show guide](/guides/traveling-to-an-ella-langley-show) covers timing, getting in, and what to leave in the car. Then queue up ["Be Her"](/songs/be-her) and ["Choosin' Texas"](/songs/choosin-texas) on the drive in -- by the time you hit Griffith Park you will know every word.
+Coming in from out of town for one of these? Griffith Park parking is stacked-and-shuttle, so build in extra time, and the surrounding Los Feliz neighborhood is an easy pre-show dinner stop. For travel logistics that apply to any stop on the run, our [traveling to an Ella Langley show guide](/guides/traveling-to-an-ella-langley-show) covers timing, getting in, and what to leave in the car. The Greek enforces a clear-bag policy, so sort that before you go -- a [clear stadium bag from our shop](/shop/ec-clear-stadium-bag) clears the gate fast and saves you the bag-check line. Then queue up ["Be Her"](/songs/be-her) and ["Choosin' Texas"](/songs/choosin-texas) on the drive in -- by the time you hit Griffith Park you will know every word.
 
-*Some links on this page are affiliate links -- we may earn a small commission at no cost to you. Ticket times, dates, and on-sale details are subject to change; confirm on the official tour page and venue listing before you buy.*
+*Some links on this page are affiliate link

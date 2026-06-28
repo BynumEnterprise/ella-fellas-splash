@@ -49,6 +49,6 @@ Red Rocks is general-bench seating top to bottom -- there are no individual chai
 
 ## What the Night Actually Feels Like
 
-If you have never seen this tour, the spring shows set a high bar. For a feel of the pacing, the singalongs, and how the set builds, our [Oklahoma City recap and setlist](/news/2026-06-19-ella-langley-oklahoma-city-recap-setlist) is the closest thing to a preview. Pair it with a listen to what ["Choosin' Texas" really means](/songs/choosin-texas) before October and you will know every word by the time you are standing on those rocks.
+If you have never seen this tour, the spring shows set a high bar. For a feel of the pacing, the singalongs, and how the set builds, our [Oklahoma City recap and setlist](/news/2026-06-19-ella-langley-oklahoma-city-recap-setlist) is the closest thing to a preview. Pair it with a listen to what ["Choosin' Texas" really means](/songs/choosin-texas) before October and you will know every word by the time you are standing on those rocks. One practical note for the climb up: Red Rocks runs a clear-bag policy, so a [clear stadium bag from our shop](/shop/ec-clear-stadium-bag) will save you a headache at the gate.
 
-*Some links on this page are affiliate links -- we may earn a small commission at no cost to you. Ticket times and dates are subject to change; confirm on the official tour page before you buy.*
+*Some links on thi

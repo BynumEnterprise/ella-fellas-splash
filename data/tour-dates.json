@@ -590,5 +590,105 @@
     "soldOut": false,
     "ticketPriceRange": "$45-$285",
     "ticketAffiliatePath": "/tickets/hamilton-td-coliseum-2026-07-16"
+  },
+  {
+    "id": "green-bay-resch-center-2026-08-20",
+    "date": "2026-08-20",
+    "city": "Green Bay",
+    "state": "WI",
+    "venue": "Resch Center",
+    "venueAddress": "820 Tony Canadeo Run, Green Bay, WI 54304",
+    "venueCapacity": 8600,
+    "tour": "The Dandelion Tour",
+    "tourType": "headlining",
+    "openers": [
+      "ERNEST",
+      "Gabriella Rose"
+    ],
+    "doorsTime": "18:30",
+    "showTime": "19:30",
+    "soldOut": false,
+    "ticketPriceRange": "$45-$285",
+    "ticketAffiliatePath": "/tickets/green-bay-resch-center-2026-08-20"
+  },
+  {
+    "id": "morrison-red-rocks-amphitheatre-2026-10-07",
+    "date": "2026-10-07",
+    "city": "Morrison",
+    "state": "CO",
+    "venue": "Red Rocks Amphitheatre",
+    "venueAddress": "18300 W Alameda Pkwy, Morrison, CO 80465",
+    "venueCapacity": 9525,
+    "tour": "The Dandelion Tour",
+    "tourType": "headlining",
+    "openers": [
+      "Kameron Marlowe",
+      "Gabriella Rose"
+    ],
+    "doorsTime": "18:00",
+    "showTime": "19:30",
+    "soldOut": false,
+    "ticketPriceRange": "$45-$285",
+    "ticketAffiliatePath": "/tickets/morrison-red-rocks-amphitheatre-2026-10-07"
+  },
+  {
+    "id": "los-angeles-greek-theatre-2026-10-13",
+    "date": "2026-10-13",
+    "city": "Los Angeles",
+    "state": "CA",
+    "venue": "The Greek Theatre",
+    "venueAddress": "2700 N Vermont Ave, Los Angeles, CA 90027",
+    "venueCapacity": 5900,
+    "tour": "The Dandelion Tour",
+    "tourType": "headlining",
+    "openers": [
+      "ERNEST",
+      "Laci Kaye Booth"
+    ],
+    "doorsTime": "18:30",
+    "showTime": "19:30",
+    "soldOut": false,
+    "ticketPriceRange": "$45-$285",
+    "ticketAffiliatePath": "/tickets/los-angeles-greek-theatre-2026-10-13"
+  },
+  {
+    "id": "los-angeles-greek-theatre-2026-10-14",
+    "date": "2026-10-14",
+    "city": "Los Angeles",
+    "state": "CA",
+    "venue": "The Greek Theatre",
+    "venueAddress": "2700 N Vermont Ave, Los Angeles, CA 90027",
+    "venueCapacity": 5900,
+    "tour": "The Dandelion Tour",
+    "tourType": "headlining",
+    "openers": [
+      "ERNEST",
+      "Laci Kaye Booth"
+    ],
+    "doorsTime": "18:30",
+    "showTime": "19:30",
+    "soldOut": false,
+    "ticketPriceRange": "$45-$285",
+    "ticketAffiliatePath": "/tickets/los-angeles-greek-theatre-2026-10-14"
+  },
+  {
+    "id": "st.-paul-grand-casino-arena-2026-10-31",
+    "date": "2026-10-31",
+    "city": "St. Paul",
+    "state": "MN",
+    "venue": "Grand Casino Arena",
+    "venueAddress": "199 W Kellogg Blvd, St Paul, MN 55102",
+    "venueCapacity": 18000,
+    "tour": "The Dandelion Tour",
+    "tourType": "headlining",
+    "openers": [
+      "Kameron Marlowe",
+      "Gabriella Rose"
+    ],
+    "doorsTime": "18:30",
+    "showTime": "19:30",
+    "soldOut": false,
+    "ticketPriceRange": "$45-$285",
+    "ticketAffiliatePath": "/tickets/st.-paul-grand-casino-arena-2026-10-31"
   }
 ]

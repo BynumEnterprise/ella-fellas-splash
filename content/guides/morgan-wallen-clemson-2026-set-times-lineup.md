@@ -3,7 +3,7 @@ title: "Morgan Wallen Clemson 2026: Set Times & Lineup"
 slug: "morgan-wallen-clemson-2026-set-times-lineup"
 category: "tour-guide"
 publishedAt: "2026-06-16"
-updatedAt: "2026-06-26"
+updatedAt: "2026-06-29"
 excerpt: "Morgan Wallen plays Clemson's Memorial Stadium on June 27, 2026, with Ella Langley as direct support. Lineup, set-time intel, and tickets."
 faq:
   - q: "Who is opening for Morgan Wallen in Clemson on June 27, 2026?"
@@ -15,6 +15,8 @@ faq:
 ---
 
 Death Valley does not host many concerts. So when Morgan Wallen brings the Still The Problem Tour to Clemson's Memorial Stadium on June 27, 2026, it is a genuine event -- one of the biggest nights of the summer in upstate South Carolina. And the act in the prime slot right before Wallen is Ella Langley. If you have been waiting to see her on a stage this size, this is the one.
+
+> **The Clemson show has wrapped.** Chasing the next stadium night? Morgan Wallen plays [Baltimore on July 18 with Ella Langley](/guides/morgan-wallen-baltimore-2026-set-times-lineup) -- set times and openers are mapped there. You can also catch Ella headlining her own [Dandelion Tour dates](/tour).
 
 *FTC note: some links on this page are affiliate links. If you buy through them we may earn a small commission at no cost to you. We only point you to gear we would actually bring to a show.*
 

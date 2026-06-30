@@ -3,8 +3,8 @@ title: "Morgan Wallen Chicago Openers & Set Times 2026"
 slug: "morgan-wallen-chicago-2026-set-times-lineup"
 category: "tour-guide"
 publishedAt: "2026-06-16"
-updatedAt: "2026-06-20"
-excerpt: "Who's opening for Morgan Wallen in Chicago, June 20, 2026? Ella Langley plays direct support, plus Gavin Adcock and Zach John King. Set times inside."
+updatedAt: "2026-06-30"
+excerpt: "Who is opening for Morgan Wallen in Chicago? Ella Langley played direct support on June 20, 2026, with Gavin Adcock and Zach John King. Full lineup and set times."
 faq:
   - q: "Who is opening for Morgan Wallen in Chicago on June 20, 2026?"
     a: "On the Saturday, June 20 show at Soldier Field, the openers are Ella Langley as direct support, plus Gavin Adcock and Zach John King, with Morgan Wallen headlining."
@@ -18,7 +18,11 @@ Soldier Field, a Saturday night in June, and Morgan Wallen on the marquee -- tha
 
 *FTC note: some links on this page are affiliate links. If you buy through them we may earn a small commission at no cost to you. We only recommend things we would actually use.*
 
-> **Already been to Chicago? Here's what's next.** The Soldier Field night is in the books, but the Wallen run rolls on. The next stadium stop is Clemson on June 27 -- see our [Morgan Wallen Clemson set times and openers guide](/guides/morgan-wallen-clemson-2026-set-times-lineup) for who's on the bill and when to get there. And if Ella was the reason you came, she's headlining her own rooms all year: the full [Ella Langley tour dates and tickets](/tour) are right here, including her newly added fall shows.
+## Who's Opening for Morgan Wallen in Chicago?
+
+**Ella Langley opened for Morgan Wallen in Chicago as direct support, along with Gavin Adcock and Zach John King.** The show was Saturday, June 20, 2026 at Soldier Field, with Wallen headlining and Ella in the prime slot right before him. If you're researching the bill after the fact or comparing it to the other stops on the run, that's the full opening lineup, top to bottom.
+
+> **Already been to Chicago? Here's what's next.** The Soldier Field night is in the books, but the Wallen run rolls on. The next live dates are the Cowboys Music Festival on July 10 and the Baltimore stadium show on July 18 -- see our [Morgan Wallen Baltimore set times and openers guide](/guides/morgan-wallen-baltimore-2026-set-times-lineup) for who's on the bill and when to get there. And if Ella was the reason you came, she's headlining her own rooms all year: the full [Ella Langley tour dates and tickets](/tour) are right here, including her newly added fall shows.
 
 ## The lineup, top to bottom
 

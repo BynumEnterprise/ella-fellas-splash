@@ -61,6 +61,8 @@ Made in Wisconsin since 1892. The moc toe is USA-made, hand-stitched, and the we
 
 <a href="https://www.kqzyfj.com/click-101760569-15736262" target="_blank" rel="nofollow sponsored">Pinto Ranch Western Wear</a> — if you want premium leathers, exotic skins, or a full western boot fitting experience, Pinto Ranch is the destination. They carry the kind of boots you see on stage — Tony Lama, Lucchese, Tecovas, Justin — and they do it right. Good pick if you're investing in a show boot that doubles as a going-out boot for the next five years.
 
+Speaking of the boots you see on stage: Ella herself is a Tecovas loyalist, and the brand is now an official Dandelion Tour sponsor. We broke down [the Tecovas boots Ella Langley actually wears](/news/2026-07-01-what-boots-does-ella-langley-wear-tecovas) — the Loretta, the Jolene, and how to copy the shape at any budget.
+
 ---
 
 ## The gear that makes boots actually work

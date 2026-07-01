@@ -204,7 +204,7 @@ export const EXTENDED_CATALOG: ShopProduct[] = [
     blurb:
       "Soak, snap, wear. Drops your neck temp 20 degrees during a 95-degree August matinee.",
     query: "cooling towel concert summer",
-    price: "$11.12",
+    price: "$16.99",
     rating: 4.5,
     reviewCount: 27767,
     why: "Mid-summer outdoor shows are brutal. A wet cooling towel around the neck buys you another hour without going down.",
@@ -316,7 +316,7 @@ export const EXTENDED_CATALOG: ShopProduct[] = [
     blurb:
       "Folds flat in a back pocket, opens to a real glass. For the discreet swig in the parking lot before tip-off.",
     query: "collapsible silicone shot cup pocket",
-    price: "$12.99",
+    price: "$9.99",
     rating: 4.7,
     reviewCount: 2300,
     why: "Less plastic feel than a folding shot glass, won't crack like a metal one. Slips into a Levi's coin pocket.",
@@ -432,7 +432,7 @@ export const EXTENDED_CATALOG: ShopProduct[] = [
     blurb:
       "Full-grain leather, classic western width. Finishes the boots-and-snap look without trying.",
     query: "CHAOREN western leather belt",
-    price: "$32.99",
+    price: "$14.99",
     rating: 4.5,
     reviewCount: 29580,
     why: "Real full-grain leather at a price that does not sting. Two buckles included so it pairs whether you're dressed up or pasture-honest.",

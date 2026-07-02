@@ -1,10 +1,10 @@
 ---
-title: "Morgan Wallen Philadelphia 2026: Set Times & Lineup"
+title: "Morgan Wallen Philadelphia Openers & Set Times 2026"
 slug: "morgan-wallen-philadelphia-2026-set-times-lineup"
 category: "tour-guide"
 publishedAt: "2026-06-16"
-updatedAt: "2026-06-16"
-excerpt: "Morgan Wallen closes the 2026 Still The Problem Tour at Lincoln Financial Field on Aug 1, with Ella Langley. Lineup, set-time intel, and tickets."
+updatedAt: "2026-07-02"
+excerpt: "Who is opening for Morgan Wallen in Philadelphia? Ella Langley plays direct support at the Aug 1, 2026 tour finale, with Hudson Westbrook and Blake Whiten."
 faq:
   - q: "Who is opening for Morgan Wallen in Philadelphia on August 1, 2026?"
     a: "The August 1 finale at Lincoln Financial Field has Ella Langley as direct support, along with Hudson Westbrook and Blake Whiten, with Morgan Wallen headlining."
@@ -18,6 +18,12 @@ The 2026 Still The Problem Tour ends where a lot of great runs end -- in Philade
 
 *FTC note: some links on this page are affiliate links. If you buy through them we may earn a small commission at no cost to you. We only point you to things we would actually use.*
 
+## Who's Opening for Morgan Wallen in Philadelphia?
+
+**Ella Langley opens for Morgan Wallen in Philadelphia as direct support, along with Hudson Westbrook and Blake Whiten.** The show is the tour finale on Saturday, August 1, 2026 at Lincoln Financial Field, with Wallen headlining and Ella in the prime slot right before him. Wallen plays the city across the weekend and the openers differ by night -- August 1 is the Ella Langley date, so make sure that's the one you're buying.
+
+> **Not in Philly yet? Here's the rest of the run.** Closing night at the Linc is the last stop, but the summer is packed before it. The next live date is the Baltimore stadium show on July 18 -- see our [Morgan Wallen Baltimore set times and openers guide](/guides/morgan-wallen-baltimore-2026-set-times-lineup) for who's on the bill and when to get there. And if Ella is the reason you're going, she's headlining her own rooms all year: the full [Ella Langley tour dates and tickets](/tour) are right here.
+
 ## The lineup, top to bottom
 
 Here is the running order for the August 1 Lincoln Financial Field date:
@@ -27,7 +33,6 @@ Here is the running order for the August 1 Lincoln Financial Field date:
 - **Hudson Westbrook**
 - **Blake Whiten**
 
-A quick note for Philly, because Wallen plays the city across the weekend and the openers differ by night: August 1 is the night Ella Langley is on the bill. Make sure that is the date you are buying.
 
 Direct support is the slot to be in your seat for. Ella goes on last among the openers, after dark, to a full stadium -- a real set with the production behind it. Hudson Westbrook and Blake Whiten open the night earlier on.
 

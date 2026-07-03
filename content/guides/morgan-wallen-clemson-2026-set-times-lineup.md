@@ -16,7 +16,7 @@ faq:
 
 Death Valley does not host many concerts. So when Morgan Wallen brings the Still The Problem Tour to Clemson's Memorial Stadium on June 27, 2026, it is a genuine event -- one of the biggest nights of the summer in upstate South Carolina. And the act in the prime slot right before Wallen is Ella Langley. If you have been waiting to see her on a stage this size, this is the one.
 
-> **The Clemson show has wrapped.** Chasing the next stadium night? Morgan Wallen plays [Baltimore on July 18 with Ella Langley](/guides/morgan-wallen-baltimore-2026-set-times-lineup) -- set times and openers are mapped there. You can also catch Ella headlining her own [Dandelion Tour dates](/tour).
+> **The Clemson show has wrapped.** Chasing the next Ella Langley night? She headlines her own [Dandelion Tour](/tour) all summer -- the next dates are [Pikeville, KY on July 23](/tour/pikeville-appalachian-wireless-arena-2026-07-23) and [Cary, NC on July 24](/tour/cary-koka-booth-amphitheatre-2026-07-24). Want set times and openers before the show? [Get free show alerts](/) for your date.
 
 *FTC note: some links on this page are affiliate links. If you buy through them we may earn a small commission at no cost to you. We only point you to gear we would actually bring to a show.*
 

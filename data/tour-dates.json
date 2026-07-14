@@ -612,6 +612,246 @@
     "ticketAffiliatePath": "/tickets/green-bay-resch-center-2026-08-20"
   },
   {
+    "id": "north-little-rock-simmons-bank-arena-2026-08-22",
+    "date": "2026-08-22",
+    "city": "North Little Rock",
+    "state": "AR",
+    "venue": "Simmons Bank Arena",
+    "venueAddress": "1 Simmons Bank Arena Dr, North Little Rock, AR 72114",
+    "venueCapacity": 18000,
+    "tour": "The Dandelion Tour",
+    "tourType": "headlining",
+    "openers": [
+      "ERNEST",
+      "Gabriella Rose"
+    ],
+    "doorsTime": "18:30",
+    "showTime": "19:30",
+    "soldOut": false,
+    "ticketPriceRange": "$45-$285",
+    "ticketAffiliatePath": "/tickets/north-little-rock-simmons-bank-arena-2026-08-22"
+  },
+  {
+    "id": "auburn-neville-arena-2026-08-28",
+    "date": "2026-08-28",
+    "city": "Auburn",
+    "state": "AL",
+    "venue": "Neville Arena",
+    "venueAddress": "250 Beard-Eaves Ct, Auburn, AL 36849",
+    "venueCapacity": 9121,
+    "tour": "The Dandelion Tour",
+    "tourType": "headlining",
+    "openers": [
+      "ERNEST",
+      "Gabriella Rose"
+    ],
+    "doorsTime": "18:30",
+    "showTime": "19:30",
+    "soldOut": false,
+    "ticketPriceRange": "$45-$285",
+    "ticketAffiliatePath": "/tickets/auburn-neville-arena-2026-08-28"
+  },
+  {
+    "id": "auburn-neville-arena-2026-08-29",
+    "date": "2026-08-29",
+    "city": "Auburn",
+    "state": "AL",
+    "venue": "Neville Arena",
+    "venueAddress": "250 Beard-Eaves Ct, Auburn, AL 36849",
+    "venueCapacity": 9121,
+    "tour": "The Dandelion Tour",
+    "tourType": "headlining",
+    "openers": [
+      "ERNEST",
+      "Gabriella Rose"
+    ],
+    "doorsTime": "18:30",
+    "showTime": "19:30",
+    "soldOut": false,
+    "ticketPriceRange": "$45-$285",
+    "ticketAffiliatePath": "/tickets/auburn-neville-arena-2026-08-29"
+  },
+  {
+    "id": "newark-prudential-center-2026-09-10",
+    "date": "2026-09-10",
+    "city": "Newark",
+    "state": "NJ",
+    "venue": "Prudential Center",
+    "venueAddress": "25 Lafayette St, Newark, NJ 07102",
+    "venueCapacity": 16755,
+    "tour": "The Dandelion Tour",
+    "tourType": "headlining",
+    "openers": [
+      "ERNEST",
+      "Gabriella Rose"
+    ],
+    "doorsTime": "18:30",
+    "showTime": "19:30",
+    "soldOut": false,
+    "ticketPriceRange": "$45-$285",
+    "ticketAffiliatePath": "/tickets/newark-prudential-center-2026-09-10"
+  },
+  {
+    "id": "state-college-bryce-jordan-center-2026-09-11",
+    "date": "2026-09-11",
+    "city": "State College",
+    "state": "PA",
+    "venue": "Bryce Jordan Center",
+    "venueAddress": "127 Bryce Jordan Center, University Park, PA 16802",
+    "venueCapacity": 15000,
+    "tour": "The Dandelion Tour",
+    "tourType": "headlining",
+    "openers": [
+      "ERNEST",
+      "Gabriella Rose"
+    ],
+    "doorsTime": "18:30",
+    "showTime": "19:30",
+    "soldOut": false,
+    "ticketPriceRange": "$45-$285",
+    "ticketAffiliatePath": "/tickets/state-college-bryce-jordan-center-2026-09-11"
+  },
+  {
+    "id": "charleston-charleston-coliseum-2026-09-12",
+    "date": "2026-09-12",
+    "city": "Charleston",
+    "state": "WV",
+    "venue": "Charleston Coliseum",
+    "venueAddress": "200 Civic Center Dr, Charleston, WV 25301",
+    "venueCapacity": 13500,
+    "tour": "The Dandelion Tour",
+    "tourType": "headlining",
+    "openers": [
+      "ERNEST",
+      "Gabriella Rose"
+    ],
+    "doorsTime": "18:30",
+    "showTime": "19:30",
+    "soldOut": false,
+    "ticketPriceRange": "$45-$285",
+    "ticketAffiliatePath": "/tickets/charleston-charleston-coliseum-2026-09-12"
+  },
+  {
+    "id": "oxford-sjb-pavilion-2026-09-17",
+    "date": "2026-09-17",
+    "city": "Oxford",
+    "state": "MS",
+    "venue": "SJB Pavilion",
+    "venueAddress": "120 Hill Dr, University, MS 38677",
+    "venueCapacity": 9500,
+    "tour": "The Dandelion Tour",
+    "tourType": "headlining",
+    "openers": [
+      "Kameron Marlowe",
+      "Gabriella Rose"
+    ],
+    "doorsTime": "18:30",
+    "showTime": "19:30",
+    "soldOut": false,
+    "ticketPriceRange": "$45-$285",
+    "ticketAffiliatePath": "/tickets/oxford-sjb-pavilion-2026-09-17"
+  },
+  {
+    "id": "athens-akins-ford-arena-2026-09-18",
+    "date": "2026-09-18",
+    "city": "Athens",
+    "state": "GA",
+    "venue": "Akins Ford Arena",
+    "venueAddress": "300 N Thomas St, Athens, GA 30601",
+    "venueCapacity": 8500,
+    "tour": "The Dandelion Tour",
+    "tourType": "headlining",
+    "openers": [
+      "Kameron Marlowe",
+      "Gabriella Rose"
+    ],
+    "doorsTime": "18:30",
+    "showTime": "19:30",
+    "soldOut": false,
+    "ticketPriceRange": "$45-$285",
+    "ticketAffiliatePath": "/tickets/athens-akins-ford-arena-2026-09-18"
+  },
+  {
+    "id": "jacksonville-vystar-veterans-memorial-arena-2026-09-19",
+    "date": "2026-09-19",
+    "city": "Jacksonville",
+    "state": "FL",
+    "venue": "VyStar Veterans Memorial Arena",
+    "venueAddress": "300 A Philip Randolph Blvd, Jacksonville, FL 32202",
+    "venueCapacity": 15000,
+    "tour": "The Dandelion Tour",
+    "tourType": "headlining",
+    "openers": [
+      "Kameron Marlowe",
+      "Gabriella Rose"
+    ],
+    "doorsTime": "18:30",
+    "showTime": "19:30",
+    "soldOut": false,
+    "ticketPriceRange": "$45-$285",
+    "ticketAffiliatePath": "/tickets/jacksonville-vystar-veterans-memorial-arena-2026-09-19"
+  },
+  {
+    "id": "knoxville-food-city-center-2026-09-24",
+    "date": "2026-09-24",
+    "city": "Knoxville",
+    "state": "TN",
+    "venue": "Food City Center",
+    "venueAddress": "1600 Phillip Fulmer Way, Knoxville, TN 37916",
+    "venueCapacity": 21678,
+    "tour": "The Dandelion Tour",
+    "tourType": "headlining",
+    "openers": [
+      "Kameron Marlowe",
+      "Gabriella Rose"
+    ],
+    "doorsTime": "18:30",
+    "showTime": "19:30",
+    "soldOut": false,
+    "ticketPriceRange": "$45-$285",
+    "ticketAffiliatePath": "/tickets/knoxville-food-city-center-2026-09-24"
+  },
+  {
+    "id": "columbus-schottenstein-center-2026-09-25",
+    "date": "2026-09-25",
+    "city": "Columbus",
+    "state": "OH",
+    "venue": "Schottenstein Center",
+    "venueAddress": "555 Borror Dr, Columbus, OH 43210",
+    "venueCapacity": 18809,
+    "tour": "The Dandelion Tour",
+    "tourType": "headlining",
+    "openers": [
+      "Kameron Marlowe",
+      "Gabriella Rose"
+    ],
+    "doorsTime": "18:30",
+    "showTime": "19:30",
+    "soldOut": false,
+    "ticketPriceRange": "$45-$285",
+    "ticketAffiliatePath": "/tickets/columbus-schottenstein-center-2026-09-25"
+  },
+  {
+    "id": "moline-vibrant-arena-at-the-mark-2026-09-26",
+    "date": "2026-09-26",
+    "city": "Moline",
+    "state": "IL",
+    "venue": "Vibrant Arena at The MARK",
+    "venueAddress": "1201 River Dr, Moline, IL 61265",
+    "venueCapacity": 12000,
+    "tour": "The Dandelion Tour",
+    "tourType": "headlining",
+    "openers": [
+      "Kameron Marlowe",
+      "Gabriella Rose"
+    ],
+    "doorsTime": "18:30",
+    "showTime": "19:30",
+    "soldOut": false,
+    "ticketPriceRange": "$45-$285",
+    "ticketAffiliatePath": "/tickets/moline-vibrant-arena-at-the-mark-2026-09-26"
+  },
+  {
     "id": "morrison-red-rocks-amphitheatre-2026-10-07",
     "date": "2026-10-07",
     "city": "Morrison",
@@ -630,6 +870,46 @@
     "soldOut": false,
     "ticketPriceRange": "$45-$285",
     "ticketAffiliatePath": "/tickets/morrison-red-rocks-amphitheatre-2026-10-07"
+  },
+  {
+    "id": "tulsa-bok-center-2026-10-09",
+    "date": "2026-10-09",
+    "city": "Tulsa",
+    "state": "OK",
+    "venue": "BOK Center",
+    "venueAddress": "200 S Denver Ave, Tulsa, OK 74103",
+    "venueCapacity": 19199,
+    "tour": "The Dandelion Tour",
+    "tourType": "headlining",
+    "openers": [
+      "Kameron Marlowe",
+      "Gabriella Rose"
+    ],
+    "doorsTime": "18:30",
+    "showTime": "19:30",
+    "soldOut": false,
+    "ticketPriceRange": "$45-$285",
+    "ticketAffiliatePath": "/tickets/tulsa-bok-center-2026-10-09"
+  },
+  {
+    "id": "lubbock-united-supermarkets-arena-2026-10-10",
+    "date": "2026-10-10",
+    "city": "Lubbock",
+    "state": "TX",
+    "venue": "United Supermarkets Arena",
+    "venueAddress": "1701 Indiana Ave, Lubbock, TX 79409",
+    "venueCapacity": 15098,
+    "tour": "The Dandelion Tour",
+    "tourType": "headlining",
+    "openers": [
+      "Kameron Marlowe",
+      "Gabriella Rose"
+    ],
+    "doorsTime": "18:30",
+    "showTime": "19:30",
+    "soldOut": false,
+    "ticketPriceRange": "$45-$285",
+    "ticketAffiliatePath": "/tickets/lubbock-united-supermarkets-arena-2026-10-10"
   },
   {
     "id": "los-angeles-greek-theatre-2026-10-13",
@@ -670,6 +950,46 @@
     "soldOut": false,
     "ticketPriceRange": "$45-$285",
     "ticketAffiliatePath": "/tickets/los-angeles-greek-theatre-2026-10-14"
+  },
+  {
+    "id": "des-moines-caseys-center-2026-10-29",
+    "date": "2026-10-29",
+    "city": "Des Moines",
+    "state": "IA",
+    "venue": "Casey's Center",
+    "venueAddress": "233 Center St, Des Moines, IA 50309",
+    "venueCapacity": 16980,
+    "tour": "The Dandelion Tour",
+    "tourType": "headlining",
+    "openers": [
+      "Kameron Marlowe",
+      "Gabriella Rose"
+    ],
+    "doorsTime": "18:30",
+    "showTime": "19:30",
+    "soldOut": false,
+    "ticketPriceRange": "$45-$285",
+    "ticketAffiliatePath": "/tickets/des-moines-caseys-center-2026-10-29"
+  },
+  {
+    "id": "lincoln-pinnacle-bank-arena-2026-10-30",
+    "date": "2026-10-30",
+    "city": "Lincoln",
+    "state": "NE",
+    "venue": "Pinnacle Bank Arena",
+    "venueAddress": "400 Pinnacle Arena Dr, Lincoln, NE 68508",
+    "venueCapacity": 15147,
+    "tour": "The Dandelion Tour",
+    "tourType": "headlining",
+    "openers": [
+      "Kameron Marlowe",
+      "Gabriella Rose"
+    ],
+    "doorsTime": "18:30",
+    "showTime": "19:30",
+    "soldOut": false,
+    "ticketPriceRange": "$45-$285",
+    "ticketAffiliatePath": "/tickets/lincoln-pinnacle-bank-arena-2026-10-30"
   },
   {
     "id": "st.-paul-grand-casino-arena-2026-10-31",

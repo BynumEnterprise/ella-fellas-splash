@@ -1,9 +1,9 @@
 ---
-title: "Morgan Wallen Clemson 2026: Set Times & Lineup"
+title: "Who's Opening for Morgan Wallen in Clemson? Set Times & Lineup"
 slug: "morgan-wallen-clemson-2026-set-times-lineup"
 category: "tour-guide"
 publishedAt: "2026-06-16"
-updatedAt: "2026-06-29"
+updatedAt: "2026-07-15"
 excerpt: "Morgan Wallen plays Clemson's Memorial Stadium on June 27, 2026, with Ella Langley as direct support. Lineup, set-time intel, and tickets."
 faq:
   - q: "Who is opening for Morgan Wallen in Clemson on June 27, 2026?"

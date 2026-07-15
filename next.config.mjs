@@ -19,6 +19,13 @@ const nextConfig = {
       { source: "/plan", destination: "/plan-your-trip", permanent: true },
       { source: "/tours", destination: "/tour", permanent: true },
       { source: "/favicon.ico", destination: "/icon.png", permanent: true },
+      // 301s for removed pages still in Google's index (GSC 404 report, Jul 2026)
+      { source: "/tour/chicago-soldier-field-2026-05-29", destination: "/tour", permanent: true },
+      { source: "/tour/nashville-nissan-stadium-2026-07-10", destination: "/tour", permanent: true },
+      { source: "/tour/tampa-raymond-james-stadium-2026-07-17", destination: "/tour", permanent: true },
+      { source: "/tour/arlington-att-stadium-2026-07-24", destination: "/tour", permanent: true },
+      { source: "/shop/ww-trucker-cap-low-pro", destination: "/shop", permanent: true },
+      { source: "/shop/ec-foldable-rain-jacket", destination: "/shop", permanent: true },
     ];
   },
   async headers() {

@@ -17,6 +17,7 @@ import { LookCard } from "@/components/LookCard";
 import { getLooksForGuide } from "@/lib/looks";
 import { extractTocItems } from "@/lib/toc";
 import { formatDate } from "@/lib/utils";
+import { NewsletterSignup } from "@/components/NewsletterSignup";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const REHYPE_PLUGINS: any[] = [
@@ -108,6 +109,16 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
           updatedAt={item.frontmatter.updatedAt}
         />
       </header>
+
+      <aside className="mb-8 bg-primary/10 border border-primary/40 rounded-lg p-5">
+        <p className="font-display text-xl text-denim tracking-wide mb-1">
+          GET SET-TIME &amp; OPENER ALERTS FOR YOUR SHOW
+        </p>
+        <p className="text-sm text-ink/70 mb-3">
+          One email when set times, openers, or ticket drops change for the shows you care about. No spam.
+        </p>
+        <NewsletterSignup placement="guide-inline" />
+      </aside>
 
       <TableOfContents items={tocItems} />
 

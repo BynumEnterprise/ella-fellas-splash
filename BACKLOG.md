@@ -130,3 +130,12 @@ Format: `- [ ] YYYY-MM-DD <source-job>: <action>` → mark `- [x] done YYYY-MM-D
 - [ ] 2026-07-15 competitor-gap: build /guides/ella-langley-2027-tour ('what we know' page) — 'ella langley tour 2025'-pattern queries proved fans search a year ahead; own '2027' before ellalangleytours.com builds theirs.
 - [ ] 2026-07-15 competitor-gap: per-on-sale presale-code posts (presale.codes model) — when the next on-sale is announced (new dates/2027), publish the presale schedule + code source within hours.
 - [ ] 2026-07-15 competitor-gap (small template tweak): make the TrustByline author name link to /about (author entity signal; competitor uses a named persona with byline on every article).
+
+## Session 2026-07-15 (final batch — user authorized all + backlink sends)
+- [x] done 2026-07-15 (205c0d3): byline "By the Ella Fellas team" now links to /about (author-entity E-E-A-T signal).
+- [x] done 2026-07-15 (736fcbc): /guides/ella-langley-2027-tour — owns the early-demand "2027 tour" query; one confirmed date (Virginia Beach Patriotic Festival 5/29/27), honest speculation, presale funnel.
+- [x] done 2026-07-15: tour-refresh scheduled job prompt updated — now checks FESTIVAL sources + updates opener TBAs on the fall guide pages (root cause of the Ottawa/REDWEST misses).
+- [x] done 2026-07-15: SENT the 6 remaining backlink outreach emails (user-authorized) — awktravels, momspark, chicagomusicguide (BOUNCED: server misconfigured, dead address), greenville360, livemusicgetaways, highwayqueens, goodcountry/bluegrass, countryuniverse, whiskeychick(CMNB). ~9 sent, 1 hard bounce (Chicago Music Guide — their mail server is broken, not our issue).
+- [x] done 2026-07-15: Google News Publisher Center — "Ella Fellas" publication added (US/English) so the /news-sitemap.xml feeds Google News surfaces.
+- [x] done 2026-07-15: NEWSLETTER ANALYTICS shipped end-to-end — email_events table (Supabase), /api/newsletter/webhook endpoint (4c6458e, shared-key auth), Resend webhook registered+ENABLED (All Events), and a live Cowork artifact dashboard "ella-fellas-newsletter-analytics" (signups w/ email+status+source+date, opens, clicks, most-clicked links, per-send engagement). Owner is on the confirmed list.
+- [ ] 2026-07-15 (owner, optional): pre-approve the Baltimore day-of email task with "Run now" so Sat's send doesn't pause on a permission prompt.

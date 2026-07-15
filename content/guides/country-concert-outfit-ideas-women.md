@@ -104,6 +104,17 @@ The outfit is one decision. The bag policy is another. Most major arenas require
 
 The other thing worth doing: browse the [shop](/shop) for the concert-prep basics (portable charger, earplugs, clear bag) so those decisions are already made before you get to the outfit. The outfit is the fun part. The bag policy is not.
 
+## Shop the look (reader favorites)
+
+The pieces that keep showing up in Ella crowds, all verified listings from [the shop](/shop):
+
+- [IUV chunky-heel cowgirl boots](https://www.amazon.com/dp/B0DTHHK2S1?tag=ellafellas-20) -- $49.99, the danceable-height crowd favorite
+- [Choiran embroidered cowgirl boots](https://www.amazon.com/dp/B0CRPNQ4YJ?tag=ellafellas-20) -- $59.99, the statement pair
+- [Wrangler Premium Patch Mae jean](https://www.amazon.com/dp/B00J60ZABO?tag=ellafellas-20) -- $30.50, the boot-cut that actually fits over boots
+- [Ruffle knee-high boot socks, 3-pack](https://www.amazon.com/dp/B0FZ86NJLC?tag=ellafellas-20) -- $18.99, the difference between cute boots and comfortable cute boots
+
+*FTC note: the links above are affiliate links -- if you buy through them we may earn a small commission at no cost to you.*
+
 ---
 
 *Heading to an Ella Langley show this year? Start with the [Dandelion Tour survival guide](/guides/ella-langley-dandelion-tour-survival-guide) for venue-specific notes, parking, and what the crowd is like at your specific stop.*

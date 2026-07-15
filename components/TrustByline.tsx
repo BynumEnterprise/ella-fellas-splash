@@ -16,9 +16,12 @@ export function TrustByline({ publishedAt, updatedAt }: TrustBylineProps) {
   const displayDate = updatedAt ?? publishedAt;
   return (
     <div className="flex flex-wrap items-center gap-x-3 gap-y-1 border-l-4 border-primary pl-3 py-1 my-4">
-      <span className="text-xs font-semibold text-denim uppercase tracking-wider">
+      <a
+        href="/about"
+        className="text-xs font-semibold text-denim uppercase tracking-wider hover:text-primary underline-offset-2 hover:underline"
+      >
         By the Ella Fellas team
-      </span>
+      </a>
       <span className="text-xs text-ink/40 hidden sm:inline">&middot;</span>
       <span className="text-xs text-ink/60 italic">
         country fans who track every Ella Langley tour stop

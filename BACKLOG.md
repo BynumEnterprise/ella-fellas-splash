@@ -98,3 +98,19 @@ Format: `- [ ] YYYY-MM-DD <source-job>: <action>` → mark `- [x] done YYYY-MM-D
 - [x] done 2026-07-15: Sent one-time confirmation-reminder email to the 9 real unconfirmed subscribers (skipped 3 owner test addresses + 1 typo'd domain hmaio.com). Owner approved.
 - [x] verified 2026-07-15: GA4 custom dimensions for affiliate_click (network, destination) already registered Jul 14 by the growth job — item closed.
 - [ ] 2026-07-15 audit: CJ dashboard shows 2 'offers pending approval' (program-term offers needing publisher acceptance) — CJ's filter UI blocks automation; OWNER should review at members.cj.com. Also pending: REVOLVE application (5%, awaiting advertiser).
+
+## Traffic Growth Plan queue (added 2026-07-15 — see Ella_Fellas_Traffic_Growth_Plan_2026-07-15.docx; do in order, ONE per daily run)
+- [ ] 2026-07-15 growth-plan: CTR HARVEST 1 — retitle the Chicago guide to lead with opener NAMES ("Gavin Adcock & Zach John King...") + confirm verbatim "Who's Opening for Morgan Wallen in Chicago" H2; cluster sits at pos 4.4-8.2 with ~3K impr/28d and <2% CTR.
+- [ ] 2026-07-15 growth-plan: CTR HARVEST 2 — same treatment for Clemson ("morgan wallen clemson openers" 502 impr, pos 10.1, ZERO clicks) and cross-link its tail to Baltimore/Philly.
+- [ ] 2026-07-15 growth-plan: PER-OPENER PAGES (one per day, 6 total): gavin-adcock, jason-scott-and-the-high-heat, kaitlin-butts, laci-kaye-booth, gabriella-rose, hudson-westbrook — each answers "who is X" + "what time does X go on for <headliner>" (GSC: "what time does gavin adcock come on stage for morgan wallen" 125 impr) + links every show they play + gear module. Category: fan-guide.
+- [ ] 2026-07-15 growth-plan: FALL-EXTENSION set-times pages, publish EARLY to mature (Chicago took ~18 days): priority order = Red Rocks Oct 7, Greek Theatre LA Oct 13-14 (one page, two nights), Auburn Aug 28-29 (support CONFIRMED: ERNEST + Gabriella Rose), Green Bay Aug 20 (fall-leg opener). TN links exist? check KNOWN_TICKETNETWORK_URLS, extend if needed.
+- [ ] 2026-07-15 growth-plan: add bio/relationship FAQ block to /guides/who-is-ella-langley — married? Riley Green? age (26, Hope Hull AL)? — factual, sourced, tasteful; competitor ellalangleytours.com harvests this query pool with a single FAQ.
+- [ ] 2026-07-15 growth-plan: UNIQUE OG IMAGES — generate a branded 1200x630+ title-on-image OG per news post/guide (Discover requires 1200px+ and max-image-preview:large, which shipped aa0d4ff). Start with the 10 highest-traffic pages.
+- [ ] 2026-07-15 growth-plan: E-E-A-T — add /about-the-fellas author+editorial page (who writes, sourcing policy, corrections) and link it from every guide byline.
+- [ ] 2026-07-15 growth-plan: NEWS SITEMAP (Google News format, last 48h of posts) + call scripts/indexnow-submit.sh on every publish for faster QDF indexing.
+- [ ] 2026-07-15 growth-plan: SETLIST FRESHNESS — post-show job should also update /guides/ella-langley-setlist-2026 with a "what changed in <city>" diff block within hours of each show.
+- [ ] 2026-07-15 growth-plan: EMAIL LOOP — daily-newsletter job: on show days, lead with "tonight's set times + checklist" for that show (repeat traffic + affiliate clicks per send).
+- [ ] 2026-07-15 growth-plan (OWNER): create TikTok + Instagram accounts — TikTok Discover pages RANK ON GOOGLE PAGE 1 for our exact queries; ~12 drafted batches waiting in social/. 30 minutes, highest-leverage human task on the board.
+- [ ] 2026-07-15 growth-plan (OWNER): Reddit day-of-show posts (r/CountryMusic, city subs) with verified set times + link; jobs can draft the copy, human posts it.
+- [ ] 2026-07-15 growth-plan (OWNER): backlink seeding — pitch the "which night is Ella playing" two-night answers to Holler/Whiskey Riff/Country Now writers; submit site to fan directories/wikis.
+- [ ] 2026-07-15 growth-plan: PINTEREST (semi-owner) — create board + pin the women's outfit guide images ("country concert outfit ideas" is Pinterest-native and compounds for years).

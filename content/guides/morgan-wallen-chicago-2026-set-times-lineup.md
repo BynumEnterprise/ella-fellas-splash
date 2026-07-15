@@ -1,9 +1,9 @@
 ---
-title: "Morgan Wallen Chicago Openers & Set Times 2026"
+title: "Who's Opening for Morgan Wallen in Chicago? Set Times 2026"
 slug: "morgan-wallen-chicago-2026-set-times-lineup"
 category: "tour-guide"
 publishedAt: "2026-06-16"
-updatedAt: "2026-06-30"
+updatedAt: "2026-07-15"
 excerpt: "Who is opening for Morgan Wallen in Chicago? Ella Langley played direct support on June 20, 2026, with Gavin Adcock and Zach John King. Full lineup and set times."
 faq:
   - q: "Who is opening for Morgan Wallen in Chicago on June 20, 2026?"

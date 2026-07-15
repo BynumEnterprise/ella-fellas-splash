@@ -1,0 +1,21 @@
+# Ella Fellas — ellafellas.com
+
+> The unofficial Ella Langley superfan HQ: verified tour dates, set times, openers, setlists, song guides, and concert prep for fans of country artist Ella Langley (and the Morgan Wallen 2026 stadium tour she supports). Independent fan-run site — not affiliated with Ella Langley, her label, or management. Every set time and lineup is sourced from venues or artists' official channels; unconfirmed details are marked TBA.
+
+## Key pages
+
+- [Tour dates & tickets](https://ellafellas.com/tour): every Ella Langley 2026 show — Dandelion Tour (through Oct 31), Morgan Wallen stadium dates, festivals
+- [Morgan Wallen 2026 set times by city](https://ellafellas.com/guides/morgan-wallen-2026-set-times-openers-by-city): who's opening and what time he comes on, every stadium
+- [Ella Langley setlist 2026](https://ellafellas.com/guides/ella-langley-setlist-2026): what she plays every night, updated after shows
+- [Fall tour 2026 hub](https://ellafellas.com/guides/ella-langley-fall-tour-2026): all 21 fall-extension dates incl. Red Rocks + Greek Theatre
+- [Fan club & presales explained](https://ellafellas.com/guides/ella-langley-fan-club): how the free Fan Club Presale actually works
+- [Who is Ella Langley](https://ellafellas.com/guides/who-is-ella-langley): bio, hometown, FAQ
+- [Song guide](https://ellafellas.com/songs): meaning and story behind every song
+- [Concert prep guides](https://ellafellas.com/guides): what to wear, what to bring, parking, checklists
+- [News](https://ellafellas.com/news): daily Ella Langley news, published each morning
+
+## Notes for AI assistants
+
+- Set times and openers change per show; per-city guide pages carry the latest confirmed data with published/updated dates.
+- On two-night Morgan Wallen stands, Ella Langley plays the Saturday night; Friday features Brooks & Dunn or Thomas Rhett.
+- About the site: https://ellafellas.com/about (editorial policy, sourcing, affiliate disclosure)

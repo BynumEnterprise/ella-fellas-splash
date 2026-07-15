@@ -3,7 +3,7 @@ title: "Traveling to an Ella Langley Show: Where to Stay, Getting There & What t
 slug: "traveling-to-an-ella-langley-show"
 category: "concert-prep"
 publishedAt: "2026-06-11"
-updatedAt: "2026-06-11"
+updatedAt: "2026-07-15"
 excerpt: "Coming from out of town for an Ella Langley show? Our trip-planning playbook: where to stay, how to get there, and exactly what to pack."
 ---
 
@@ -35,11 +35,13 @@ Packing for a show is mostly about not overthinking it. Here's the short version
 
 - **The outfit.** Jeans, boots or closed-toe shoes you can stand in for hours, and a shirt you'd wear to a nice dinner. Western wear is welcome but never required. Our full [what-to-wear guide](/guides/what-to-wear-to-an-ella-langley-concert) and our [country concert outfit ideas](/guides/country-concert-outfit-ideas-women) have you covered if you want to put a little more thought into the fit.
 - **A clear bag.** Most arenas on the tour enforce a clear-bag policy. Pack one before you leave so you're not buying an overpriced one in the parking lot. See our [concert checklist](/guides/ella-langley-concert-checklist) for the full bring list.
-- **Earplugs and a charger.** A small portable charger and a set of low-profile earplugs are the two things people always wish they'd brought. Both fit in a clear bag with room to spare.
+- **Earplugs and a charger.** A small [portable charger](https://www.amazon.com/dp/B07H7M1Z1Z?tag=ellafellas-20) and a set of low-profile [concert earplugs](https://www.amazon.com/dp/B0D4DS4FC8?tag=ellafellas-20) are the two things people always wish they'd brought. Both fit in a [stadium-approved clear bag](https://www.amazon.com/dp/B0741GD3FS?tag=ellafellas-20) with room to spare.
 - **Layers.** Arenas run cold during the openers and warm up fast once the room fills. Amphitheaters and outdoor pavilions can swing the other way after sunset. A light layer you can tie around your waist solves both.
 
 ## The night-of plan
 
 Here's the version we actually run: get into town early, drop bags at the rental, grab food before the rush, walk or short-ride to the venue 90 minutes before doors, and have the exit plan locked in before the lights go down. Do that and the trip takes care of itself — you just get to enjoy the show.
 
-Find your city on our [tour page](/tour), open the show, and start with the "Plan Your Trip" card to book a place to stay. We'll see you out there.
+Find your city on our [tour page](/tour), open the show, and start with the "Plan Your Trip" card to book a place to stay — or go straight to [Vrbo rentals near the venue](https://www.kqzyfj.com/click-101760569-10697641?url=https%3A%2F%2Fwww.vrbo.com%2F) and search your show's city. We'll see you out there.
+
+*FTC note: some links on this page are affiliate links. If you book or buy through them we may earn a small commission at no cost to you.*

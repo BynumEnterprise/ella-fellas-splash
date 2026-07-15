@@ -13,7 +13,7 @@ Bring a clear bag, your ID, a portable charger, and something to protect your ea
 
 Most arenas and amphitheaters on the Dandelion Tour run a clear-bag policy. The standard is a bag no larger than 12" x 6" x 12" in clear plastic, vinyl, or PVC — or a small clutch no bigger than roughly a hand size. If you walk up with a regular backpack or a canvas tote, security will turn you around to your car. That's a 30-minute round trip you don't want to take during the opener.
 
-Pick up a compliant clear bag before you go. Amazon has plenty for under $15 — search for "stadium-approved clear bag" and check the dimensions. [Vorspack and Hoxis](https://www.amazon.com/s?k=stadium+clear+bag&tag=ellafellas-20) both make solid ones that hold everything you need without feeling flimsy. If you're at an amphitheater (the outdoor venues), check the specific venue page — some still allow small opaque bags under a certain size, but don't assume.
+Pick up a compliant clear bag before you go. Amazon has plenty for under $15 — search for "stadium-approved clear bag" and check the dimensions. [This stadium-approved clear crossbody](https://www.amazon.com/dp/B0741GD3FS?tag=ellafellas-20) is the one we keep in the shop — it holds everything you need that hold everything you need without feeling flimsy. If you're at an amphitheater (the outdoor venues), check the specific venue page — some still allow small opaque bags under a certain size, but don't assume.
 
 *Some links on this page are affiliate links — we may earn a small commission at no cost to you.*
 
@@ -27,16 +27,16 @@ Here's what to bring, in rough order of importance:
 - Credit card or cash — covered in detail below
 
 **Tech**
-- Portable charger, fully charged before you leave — [a compact 10,000mAh unit](https://www.amazon.com/s?k=compact+portable+charger+10000mah&tag=ellafellas-20) gets a dead iPhone from 0% to 80% and still has charge left for your friend
+- Portable charger, fully charged before you leave — [the Anker PowerCore 10,000](https://www.amazon.com/dp/B07H7M1Z1Z?tag=ellafellas-20) gets a dead iPhone from 0% to 80% and still has charge left for your friend
 - The cable your phone actually uses (obvious in hindsight, always forgotten)
 - Phone in a case — floor shows are physical, you will bump into people
 
 **Hearing**
-- Earplugs — specifically foam or reusable concert plugs rated around 20 dB NRR, not the foam construction ones that muffle everything. [Loop Quiet](https://www.amazon.com/s?k=loop+quiet+earplugs&tag=ellafellas-20) or Eargasm Squealers cost $20-$30 and make the show sound cleaner, not quieter. If you're in the first 20 rows of floor or lower bowl, your ears will ring afterward without them.
+- Earplugs — specifically foam or reusable concert plugs rated around 20 dB NRR, not the foam construction ones that muffle everything. [Loop Experience 2](https://www.amazon.com/dp/B0D4DS4FC8?tag=ellafellas-20) or Eargasm Squealers cost $20-$35 and make the show sound cleaner, not quieter. If you're in the first 20 rows of floor or lower bowl, your ears will ring afterward without them.
 
 **Comfort and weather**
 - A light layer — arenas run cold during the openers (often 63-66°F) and warm up fast once the room fills. A zip hoodie or denim jacket fits in a clear bag.
-- Rain poncho if you're at an outdoor amphitheater — the [packable kind](https://www.amazon.com/s?k=packable+rain+poncho+clear+bag+size&tag=ellafellas-20) compresses to the size of a baseball and fits flat in your clear bag. Check the forecast two days out, not the morning of.
+- Rain poncho if you're at an outdoor amphitheater — a [disposable 5-pack](https://www.amazon.com/dp/B076ZHMR3S?tag=ellafellas-20) compresses to the size of a baseball and fits flat in your clear bag. Check the forecast two days out, not the morning of.
 - Comfortable boots or closed-toe shoes you've worn before. Not new ones. Your feet will thank you at the 2.5-hour mark. If you're going western, <a href="https://www.kqzyfj.com/click-101760569-15736262" target="_blank" rel="nofollow sponsored">Pinto Ranch</a> carries the boots and pearl-snaps that actually hold up past show night.
 
 **Cash and cards**

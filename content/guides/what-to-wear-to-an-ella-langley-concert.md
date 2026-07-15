@@ -70,6 +70,17 @@ You want to look like a guy who likes country music, who showed up to enjoy a sh
 
 [See all 2026 Ella Langley tour dates →](/tour)
 
+## Shop the look (the exact pieces)
+
+The uniform, purchasable in four clicks -- all picks we keep in [the shop](/shop) with verified listings:
+
+- [Wrangler Cowboy Cut pearl-snap shirt](https://www.amazon.com/dp/B000RF62QY?tag=ellafellas-20) -- $32.50, the unofficial crowd uniform
+- [Ariat Heritage Roughstock boots](https://www.amazon.com/dp/B00XB0HR1G?tag=ellafellas-20) -- $199.95, the buy-once pair (break them in a week early)
+- [Resistol Denison 7X straw hat](https://www.amazon.com/dp/B09824V8BS?tag=ellafellas-20) -- $94.95, for the summer/festival stops
+- [CHAOREN western leather belt](https://www.amazon.com/dp/B09NZG637M?tag=ellafellas-20) -- $14.99, finishes the look without trying
+
+*FTC note: the links above are affiliate links -- if you buy through them we may earn a small commission at no cost to you.*
+
 ---
 
 *Got a show coming up? Check our [tour pages](/tour) for venue-specific tips — parking, hotels, what to eat nearby, what to expect from the crowd.*

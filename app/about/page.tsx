@@ -74,6 +74,20 @@ export default function AboutPage() {
         official merch at <a href="https://ellalangley.us" target="_blank" rel="noopener">ellalangley.us</a>.
       </p>
 
+      <h2>Editorial policy &amp; corrections</h2>
+      <p>
+        Every set time, lineup, price, and date we publish is sourced from the venue, the artist&apos;s
+        official channels, or a named publication &mdash; never inferred. When something isn&apos;t confirmed
+        yet (openers TBA, times not posted), we say so on the page instead of guessing, and we update
+        the page when the venue confirms. Every guide shows its published and last-updated dates.
+      </p>
+      <p>
+        Got a correction? Email us and we&apos;ll fix it fast &mdash; a fan site is only useful if it&apos;s
+        right. Affiliate relationships (below) never influence what we write: the gear picks and ticket
+        links exist because they&apos;re what we&apos;d tell a friend, and we mark every affiliate page
+        with a disclosure line.
+      </p>
+
       <h2>Affiliate disclosure</h2>
       <p>
         Some of the links on our tour pages and guides are affiliate links &mdash; primarily ticket

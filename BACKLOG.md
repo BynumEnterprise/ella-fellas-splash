@@ -124,3 +124,9 @@ Format: `- [ ] YYYY-MM-DD <source-job>: <action>` → mark `- [x] done YYYY-MM-D
 - [x] done 2026-07-15: one-time scheduled task ella-fellas-baltimore-dayof-email (Sat 7/18 7:30a CT) — weekday newsletter doesn't cover Saturday show days; owner is on the confirmed list.
 - [x] verified 2026-07-15: MusicEvent+Offer schema already live on tour pages; Pinto Ranch CJ link already live on western /shop/looks pages — both prior backlog items confirmed done, no action.
 - [ ] 2026-07-16+ daily job: per-city fall set-times pages, ~2-3 weeks before each show (next up: Springfield 8/21, N. Little Rock 8/22 in early Aug); link each from the fall hub as built.
+
+- [x] done 2026-07-15 (2fa34fe): added 2 MISSING Ella shows to tour data — Ottawa Bluesfest Fri 7/17 (Ella 8:30 PM, LeBreton Flats; verified AXS + festival schedule) and REDWEST Country Festival SLC Oct 16-17 (Ella headlines; verified redwestslc.com). Found via competitor gap analysis (ellalangleytours.com covered both).
+- [ ] 2026-07-15 competitor-gap (tour-refresh job): ADD FESTIVAL SOURCES to the Sunday tour-refresh check — the job missed both festival bookings; check Holler festival pages + her official site's full itinerary, not just Dandelion Tour routing.
+- [ ] 2026-07-15 competitor-gap: build /guides/ella-langley-2027-tour ('what we know' page) — 'ella langley tour 2025'-pattern queries proved fans search a year ahead; own '2027' before ellalangleytours.com builds theirs.
+- [ ] 2026-07-15 competitor-gap: per-on-sale presale-code posts (presale.codes model) — when the next on-sale is announced (new dates/2027), publish the presale schedule + code source within hours.
+- [ ] 2026-07-15 competitor-gap (small template tweak): make the TrustByline author name link to /about (author entity signal; competitor uses a named persona with byline on every article).

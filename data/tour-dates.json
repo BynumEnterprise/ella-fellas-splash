@@ -1010,5 +1010,39 @@
     "soldOut": false,
     "ticketPriceRange": "$45-$285",
     "ticketAffiliatePath": "/tickets/st.-paul-grand-casino-arena-2026-10-31"
+  },
+  {
+    "id": "ottawa-bluesfest-2026-07-17",
+    "date": "2026-07-17",
+    "city": "Ottawa",
+    "state": "ON",
+    "venue": "LeBreton Flats Park (Ottawa Bluesfest)",
+    "venueAddress": "1 Vimy Pl, Ottawa, ON K1A 0M8, Canada",
+    "venueCapacity": 30000,
+    "tour": "RBC Ottawa Bluesfest",
+    "tourType": "festival",
+    "openers": [],
+    "doorsTime": "17:00",
+    "showTime": "20:30",
+    "soldOut": false,
+    "ticketPriceRange": "Day passes",
+    "ticketAffiliatePath": "/tickets/ottawa-bluesfest-2026-07-17"
+  },
+  {
+    "id": "redwest-festival-2026-10-16",
+    "date": "2026-10-16",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "venue": "Utah State Fairpark (REDWEST Country Festival)",
+    "venueAddress": "155 N 1000 W, Salt Lake City, UT 84116",
+    "venueCapacity": 25000,
+    "tour": "REDWEST Country Festival",
+    "tourType": "festival",
+    "openers": [],
+    "doorsTime": "",
+    "showTime": "",
+    "soldOut": false,
+    "ticketPriceRange": "Festival passes",
+    "ticketAffiliatePath": "/tickets/redwest-festival-2026-10-16"
   }
 ]

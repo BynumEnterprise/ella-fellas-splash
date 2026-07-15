@@ -3,9 +3,13 @@ title: "Who Is Ella Langley? Meet Morgan Wallen's 2026 Tour Opener"
 slug: "who-is-ella-langley"
 category: "fan-onboarding"
 publishedAt: "2026-06-16"
-updatedAt: "2026-06-16"
+updatedAt: "2026-07-15"
 excerpt: "Found Ella Langley as direct support on Morgan Wallen's 2026 tour? A quick bio, her biggest songs, and why she is worth showing up early for."
 faq:
+  - q: "Is Ella Langley married? Is she dating Riley Green?"
+    a: "Ella Langley is not married. She and Riley Green recorded the breakout duet 'You Look Like You Love Me' and toured together, which fueled fan speculation, but neither artist has confirmed a relationship and Ella keeps her personal life private."
+  - q: "Where is Ella Langley from?"
+    a: "Hope Hull, Alabama, just outside Montgomery. She attended Auburn University before leaving to pursue music in Nashville in 2019 -- and in August 2026 she returns to play two nights at Auburn's Neville Arena."
   - q: "Why is Ella Langley opening for Morgan Wallen?"
     a: "Ella Langley is one of the biggest names in country right now, so she has the direct-support slot -- the act right before the headliner -- on a run of Morgan Wallen's 2026 Still The Problem Tour stadium dates."
   - q: "What is Ella Langley's most famous song?"
@@ -62,3 +66,12 @@ We see this all the time, so let us clear it up: Ella's famous duet is with **Ri
 If this is your first Ella set, do it right. Run our [country concert checklist](/guides/ella-langley-concert-checklist), and if you want a keepsake, the [Dandelion vinyl](/shop/fc-dandelion-vinyl) is the one we keep on the shelf.
 
 And if you want to actually keep up with her -- new music, new dates, the next Wallen co-bill announcement -- sign up for our free newsletter in the footer below. We send the real news, fast. Welcome to the Fellas.
+
+
+## The questions everybody Googles
+
+**Is she married / dating Riley Green?** Not married. The "You Look Like You Love Me" duet and the tours together set off the speculation, but neither of them has ever confirmed anything, and she keeps that part of her life offline. We cover the music, not the gossip -- but that's the honest state of it.
+
+**Where's she from?** Hope Hull, Alabama -- and the Auburn chapter of her story comes full circle this August with [two nights at Neville Arena](/guides/ella-langley-auburn-2026), ERNEST and Gabriella Rose supporting.
+
+**Where do I start with her music?** The [song guide](/songs) ranks and explains everything; [the setlist guide](/guides/ella-langley-setlist-2026) is what she's actually playing this tour.

@@ -117,3 +117,10 @@ Format: `- [ ] YYYY-MM-DD <source-job>: <action>` → mark `- [x] done YYYY-MM-D
 
 - [ ] 2026-07-15 growth-plan: submit /news-sitemap.xml in GSC Sitemaps UI (one click, needs a browser session with GSC access — any job or the owner).
 - [ ] 2026-07-15 growth-plan: fall pages have TBA times/openers — weekly tour-refresh job should re-check Red Rocks/Greek/Auburn/Green Bay venue pages and update the guides when confirmed.
+
+- [x] done 2026-07-15 (231ae7e): FALL TOUR HUB /guides/ella-langley-fall-tour-2026 — all 21 extension dates indexed with internal links; per-city guide cadence continues via daily job (~2-3 wks before each show, the proven QDF window).
+- [x] done 2026-07-15 (a99e4ad): /llms.txt shipped for the emerging AI Assistant channel (GEO).
+- [x] done 2026-07-15: github-mirror refreshed to current HEAD (was Jun 26 stale).
+- [x] done 2026-07-15: one-time scheduled task ella-fellas-baltimore-dayof-email (Sat 7/18 7:30a CT) — weekday newsletter doesn't cover Saturday show days; owner is on the confirmed list.
+- [x] verified 2026-07-15: MusicEvent+Offer schema already live on tour pages; Pinto Ranch CJ link already live on western /shop/looks pages — both prior backlog items confirmed done, no action.
+- [ ] 2026-07-16+ daily job: per-city fall set-times pages, ~2-3 weeks before each show (next up: Springfield 8/21, N. Little Rock 8/22 in early Aug); link each from the fall hub as built.

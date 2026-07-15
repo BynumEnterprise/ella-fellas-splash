@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { AffiliateLink } from "@/components/AffiliateLink";
-import { amazonSearchUrl } from "@/lib/affiliates";
+import { amazonUrl } from "@/lib/affiliates";
 
 interface Pick {
   name: string;
-  query: string;
+  asin: string;
   blurb: string;
   price: string;
   image: string;
@@ -16,7 +16,7 @@ const img = (id: string) =>
 const UNIVERSAL: Pick[] = [
   {
     name: "High-fidelity concert earplugs",
-    query: "concert earplugs high fidelity",
+    asin: "B0D4DS4FC8", // Loop Experience 2 — verified shop product ec-loop-experience-2
     blurb:
       "Knock the volume down without muffling Ella's vocals. Saves your ears for the next stop on the tour.",
     price: "$25-$35",
@@ -24,7 +24,7 @@ const UNIVERSAL: Pick[] = [
   },
   {
     name: "10,000 mAh portable charger",
-    query: "anker portable charger 10000mAh",
+    asin: "B07H7M1Z1Z", // Anker PowerCore 10000 — verified shop product ec-anker-powercore-10k
     blurb:
       "Doors open early, encore runs late. Two phone charges keeps you covered through the rideshare home.",
     price: "$20-$30",
@@ -34,7 +34,7 @@ const UNIVERSAL: Pick[] = [
 
 const STADIUM_BAG: Pick = {
   name: "Clear stadium-approved sling",
-  query: "clear stadium sling bag NFL approved men",
+  asin: "B0741GD3FS", // Clear stadium crossbody — verified shop product ec-clear-stadium-bag
   blurb:
     "Most NFL stadiums on the Morgan Wallen tour enforce a clear-bag policy at the gate. Easier to buy ahead than panic-buy on-site.",
   price: "$15-$25",
@@ -43,7 +43,7 @@ const STADIUM_BAG: Pick = {
 
 const RAIN_PONCHO: Pick = {
   name: "Disposable rain poncho 4-pack",
-  query: "disposable rain poncho 4 pack",
+  asin: "B076ZHMR3S", // Hagon PRO ponchos 5-pack — verified shop product ec-rain-poncho-5pk
   blurb:
     "Outdoor amphitheater shows mean weather is part of the deal. One rain delay justifies the eight bucks.",
   price: "$8-$15",
@@ -52,7 +52,7 @@ const RAIN_PONCHO: Pick = {
 
 const WATER_BOTTLE: Pick = {
   name: "Refillable insulated water bottle",
-  query: "Hydro Flask 24oz water bottle",
+  asin: "B01KXHIXSK", // Hydro Flask 24oz — verified shop product ec-hydroflask-24
   blurb:
     "Most venues let you bring an empty bottle through security. Free fill stations beat $7 arena water.",
   price: "$25-$45",
@@ -127,7 +127,7 @@ export function ConcertGearWidget({ show }: { show: ShowContext }) {
               <p className="text-sm text-ink/70 mt-1 leading-relaxed">{p.blurb}</p>
             </div>
             <AffiliateLink
-              href={amazonSearchUrl(p.query)}
+              href={amazonUrl(p.asin)}
               source="amazon-tour-gear"
               className="inline-flex items-center px-3 py-1.5 bg-denim text-paper font-display tracking-wide text-xs rounded-md hover:bg-denim/90 whitespace-nowrap self-center"
               ariaLabel={`Shop ${p.name} on Amazon`}

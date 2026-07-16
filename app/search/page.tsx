@@ -62,8 +62,9 @@ const INTENTS: { triggers: string[]; expand: string[] }[] = [
     expand: ["meaning", "song", "breakdown"] },
 ];
 
-/** Query + everything that query probably means, lowercased. */
-export function expandQuery(query: string): string[] {
+/** Query + everything that query probably means, lowercased. (Not exported: Next.js
+ * only allows specific exports from a page file.) */
+function expandQuery(query: string): string[] {
   const q = query.toLowerCase().trim();
   const terms = new Set<string>([q]);
   for (const intent of INTENTS) {

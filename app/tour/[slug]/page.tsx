@@ -228,7 +228,7 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
         <NightPlanView plan={plan} />
         {!isPast && (
           <Link
-            href={`/plan?show=${d.id}`}
+            href={`/plan-my-night?show=${d.id}`}
             className="mt-5 inline-flex items-center gap-2 px-5 py-3 bg-denim text-paper font-display tracking-wide rounded-md hover:bg-denim/90"
           >
             BUILD MY PERSONALIZED PLAN &rarr;

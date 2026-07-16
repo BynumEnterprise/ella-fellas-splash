@@ -5,7 +5,6 @@ import { Calendar, MapPin, Clock, Users } from "lucide-react";
 import { getAllTourDates, getTourDate } from "@/lib/data";
 import { AffiliateLink } from "@/components/AffiliateLink";
 import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
-import { ConcertGearWidget } from "@/components/ConcertGearWidget";
 import { PlanYourTrip } from "@/components/PlanYourTrip";
 import { MusicEventSchema } from "@/components/schema/MusicEventSchema";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
@@ -247,7 +246,8 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
         />
       )}
 
-      {!isPast && <ConcertGearWidget show={{ venue: d.venue, venueCapacity: d.venueCapacity }} />}
+      {/* Gear now lives in the night plan above (context-aware: clear bag only at stadiums,
+          poncho only outdoors, layers only when it is cold) — one packing list, not two. */}
 
       <section className="mb-8 bg-paper border border-ink/10 rounded-lg p-5">
         <h2 className="font-display text-xl text-denim mb-2">WHAT TO WEAR</h2>

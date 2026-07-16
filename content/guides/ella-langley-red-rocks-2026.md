@@ -3,11 +3,11 @@ title: "Ella Langley at Red Rocks 2026: Tickets, Times & What to Know"
 slug: "ella-langley-red-rocks-2026"
 category: "tour-guide"
 publishedAt: "2026-07-15"
-updatedAt: "2026-07-15"
+updatedAt: "2026-07-16"
 excerpt: "Ella Langley plays Red Rocks Amphitheatre (Morrison) on Wednesday, October 7, 2026 on the Dandelion Tour fall extension. Times, support, tickets, and how to plan it."
 faq:
   - q: "What time does Ella Langley go on in Morrison?"
-    a: "Red Rocks has not posted times yet. Headline shows there typically start 7:00-8:00 PM; we update this page when the venue confirms."
+    a: "Red Rocks lists gates at 6:00 PM and the show at 7:30 PM. Support: Kameron Marlowe and Gabriella Rose."
   - q: "Where is the Ella Langley Morrison concert?"
     a: "At Red Rocks Amphitheatre, Morrison, CO, on Wednesday, October 7, 2026."
   - q: "How do I get tickets for Ella Langley in Morrison?"
@@ -16,7 +16,7 @@ faq:
 
 Red Rocks is the bucket-list booking of the whole Dandelion Tour fall extension -- the 9,500-seat natural amphitheatre carved into the Colorado foothills where every artist films their live video. Ella plays it **Wednesday, October 7, 2026**, and this will be one of the most in-demand nights of the fall leg.
 
-Three things veterans know about Red Rocks that first-timers learn the hard way: the venue sits at 6,450 feet (mild altitude hits harder with alcohol, hydrate all day), it's an outdoor show in Colorado in October (bring real layers -- nights drop into the 40s), and the walk up from the lower lots is a genuine hike. Show times aren't posted yet; Red Rocks headline shows typically run 7:00-8:00 PM starts, and we'll update this page the moment the venue confirms.
+Three things veterans know about Red Rocks that first-timers learn the hard way: the venue sits at 6,450 feet (mild altitude hits harder with alcohol, hydrate all day), it's an outdoor show in Colorado in October (bring real layers -- nights drop into the 40s), and the walk up from the lower lots is a genuine hike. Gates are listed at 6:00 PM with the show at 7:30 PM, and **Kameron Marlowe and Gabriella Rose** open.
 
 ## Tickets
 

@@ -3,11 +3,11 @@ title: "Ella Langley Green Bay 2026: Fall Leg Opener, Times & Tickets"
 slug: "ella-langley-green-bay-2026"
 category: "tour-guide"
 publishedAt: "2026-07-15"
-updatedAt: "2026-07-15"
+updatedAt: "2026-07-16"
 excerpt: "Ella Langley plays Resch Center (Green Bay) on Thursday, August 20, 2026 on the Dandelion Tour fall extension. Times, support, tickets, and how to plan it."
 faq:
   - q: "What time does Ella Langley go on in Green Bay?"
-    a: "The Resch Center lists a 7:00 PM start. The night's support act isn't confirmed yet -- the fall leg rotates ERNEST, Kameron Marlowe, Gabriella Rose, and Laci Kaye Booth."
+    a: "The Resch Center lists doors at 6:30 PM and the show at 7:30 PM. Support is confirmed: ERNEST and Gabriella Rose."
   - q: "Where is the Ella Langley Green Bay concert?"
     a: "At Resch Center, Green Bay, WI, on Thursday, August 20, 2026."
   - q: "How do I get tickets for Ella Langley in Green Bay?"
@@ -16,7 +16,7 @@ faq:
 
 **Thursday, August 20, 2026** at the Resch Center is opening night of the Dandelion Tour's 21-date fall extension -- the first show after the summer leg wraps in Fort Worth, and the night the fall-leg production and setlist debut. First-night shows are collector's items: new songs get soft-launched, staging changes appear, and the recap writes itself.
 
-The fall leg rotates ERNEST, Kameron Marlowe, Gabriella Rose, and Laci Kaye Booth as support; Green Bay's bill isn't confirmed yet and we'll update this page when it is. The venue lists a 7:00 PM start.
+Support is confirmed for opening night: **ERNEST and Gabriella Rose**. The venue lists doors at 6:30 PM and the show at 7:30 PM.
 
 ## Tickets
 

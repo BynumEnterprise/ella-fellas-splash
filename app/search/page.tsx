@@ -28,12 +28,60 @@ interface Group {
   results: Result[];
 }
 
+/**
+ * INTENT EXPANSION
+ * ================
+ * People don't search the words we wrote. They ask questions: "what do I bring
+ * to an outdoor show", "when should I get there", "is it sold out". A literal
+ * substring match returns nothing for those, which reads as "this site has no
+ * answer" — when in fact we have a whole guide for it.
+ *
+ * So: map real question-shaped phrasing onto the vocabulary our pages actually
+ * use, then match on the union. Deterministic, no embeddings, no API cost.
+ */
+const INTENTS: { triggers: string[]; expand: string[] }[] = [
+  { triggers: ["bring", "pack", "packing", "carry", "allowed", "bag", "purse", "backpack", "clear bag"],
+    expand: ["what to bring", "checklist", "clear bag", "earplugs", "charger", "essentials"] },
+  { triggers: ["wear", "outfit", "dress", "clothes", "boots", "hat", "what should i wear"],
+    expand: ["what to wear", "outfit", "boots", "hat", "western"] },
+  { triggers: ["time", "start", "late", "early", "when", "come on", "go on", "stage time", "get there", "doors"],
+    expand: ["set times", "doors", "openers", "start time", "lineup"] },
+  { triggers: ["open", "opener", "opening", "support", "who is playing", "lineup"],
+    expand: ["openers", "lineup", "support", "direct support"] },
+  { triggers: ["stay", "hotel", "sleep", "airbnb", "rental", "where to stay", "crash"],
+    expand: ["plan your trip", "traveling", "where to stay", "hotels"] },
+  { triggers: ["park", "parking", "drive", "transit", "uber", "lyft", "getting there"],
+    expand: ["parking", "transit", "getting to", "directions"] },
+  { triggers: ["ticket", "sold out", "resale", "presale", "code", "cheap", "price", "seats"],
+    expand: ["tickets", "sold out", "presale codes", "best seats", "resale"] },
+  { triggers: ["setlist", "songs", "play live", "what does she play"],
+    expand: ["setlist", "songs", "2026 setlist"] },
+  { triggers: ["who is", "about ella", "new to", "beginner", "start with"],
+    expand: ["who is ella langley", "for beginners", "bio"] },
+  { triggers: ["meaning", "about the song", "lyrics"],
+    expand: ["meaning", "song", "breakdown"] },
+];
+
+/** Query + everything that query probably means, lowercased. */
+export function expandQuery(query: string): string[] {
+  const q = query.toLowerCase().trim();
+  const terms = new Set<string>([q]);
+  for (const intent of INTENTS) {
+    if (intent.triggers.some((t) => q.includes(t))) {
+      intent.expand.forEach((e) => terms.add(e));
+    }
+  }
+  // individual words too, so "outdoor amphitheater" still hits "amphitheater"
+  q.split(/\s+/).filter((w) => w.length > 3).forEach((w) => terms.add(w));
+  return Array.from(terms);
+}
+
 function matches(query: string, ...fields: (string | undefined | null)[]): boolean {
   const hay = fields
     .filter((f): f is string => Boolean(f))
     .join(" ")
     .toLowerCase();
-  return hay.includes(query);
+  return expandQuery(query).some((t) => hay.includes(t));
 }
 
 function buildGroups(query: string): Group[] {
@@ -227,6 +275,13 @@ export default async function SearchPage({
             popular section:
           </p>
           <PopularLinks />
+          <p className="mt-4 text-sm">
+            Planning a specific show?{" "}
+            <Link href="/plan" className="font-semibold text-denim underline underline-offset-2 hover:text-primary">
+              Build your night plan
+            </Link>{" "}
+            &mdash; it answers when to leave, what to pack, and when she&apos;s on.
+          </p>
         </div>
       )}
 

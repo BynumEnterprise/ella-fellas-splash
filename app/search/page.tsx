@@ -62,39 +62,39 @@ const INTENTS: { triggers: string[]; expand: string[] }[] = [
     expand: ["meaning", "song", "breakdown"] },
 ];
 
-/** Query + everything that query probably means, lowercased. (Not exported: Next.js
- * only allows specific exports from a page file.) */
-function expandQuery(query: string): string[] {
-  const q = query.toLowerCase().trim();
-  const terms = new Set<string>([q]);
+/** Intent phrases this query implies — empty if it's just a keyword search. */
+function intentPhrases(q: string): string[] {
+  const out = new Set<string>();
   for (const intent of INTENTS) {
     if (intent.triggers.some((t) => q.includes(t))) {
-      intent.expand.forEach((e) => terms.add(e));
+      intent.expand.forEach((e) => out.add(e));
     }
   }
-  // Individual words too — but NOT the words that appear on literally every page
-  // of a site about one artist's concerts. Without this stoplist, "what do i bring
-  // to an outdoor show" matches "show" and returns basically the whole site, which
-  // is exactly as useless as returning nothing.
-  const STOP = new Set([
-    "show", "shows", "ella", "langley", "concert", "concerts", "tour", "tours",
-    "what", "when", "where", "which", "does", "should", "your", "this", "that",
-    "with", "from", "will", "they", "have", "about", "into", "more", "than",
-    "then", "there", "here", "some", "just", "like", "want", "need", "going",
-    "night", "time", "times", "2026", "2027",
-  ]);
-  q.split(/\s+/)
-    .filter((w) => w.length > 3 && !STOP.has(w))
-    .forEach((w) => terms.add(w));
-  return Array.from(terms);
+  return Array.from(out);
 }
 
+/**
+ * Two-tier match.
+ *
+ * 1. LITERAL first — keyword searches ("earplugs", "red rocks") behave exactly
+ *    as before, matched across everything including body text.
+ * 2. INTENT fallback — only when the literal search finds nothing, and only
+ *    against the headline fields (title/short description). Matching intent
+ *    phrases against full body text unions half the site: on a site about one
+ *    artist's concerts, almost every page mentions earplugs or a checklist
+ *    somewhere. Scoping the fallback to titles surfaces THE page that answers
+ *    the question instead of everything that brushes past it.
+ */
 function matches(query: string, ...fields: (string | undefined | null)[]): boolean {
-  const hay = fields
-    .filter((f): f is string => Boolean(f))
-    .join(" ")
-    .toLowerCase();
-  return expandQuery(query).some((t) => hay.includes(t));
+  const q = query.toLowerCase().trim();
+  const present = fields.filter((f): f is string => Boolean(f));
+  const hay = present.join(" ").toLowerCase();
+  if (hay.includes(q)) return true;
+
+  const intents = intentPhrases(q);
+  if (intents.length === 0) return false;
+  const head = present.slice(0, 2).join(" ").toLowerCase();
+  return intents.some((t) => head.includes(t));
 }
 
 function buildGroups(query: string): Group[] {

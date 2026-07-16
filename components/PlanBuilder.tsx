@@ -2,30 +2,70 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
+import { CheckCircle2, HelpCircle } from "lucide-react";
 import type { TourDate } from "@/lib/types";
 import { buildNightPlan, type Arrival, type Party } from "@/lib/night-plan";
+import { parseShowRequest, type Intent } from "@/lib/plan-parse";
 import { NightPlanView } from "@/components/NightPlan";
+import { NearbyPicks } from "@/components/NearbyPicks";
+import { AskBox } from "@/components/AskBox";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 
 /**
- * Interactive night planner.
+ * Ask in plain English -> a real show + what you asked for.
  *
- * Runs 100% in the browser off data we already ship — no API call, no inference,
- * no cost per visitor, and it physically cannot invent a set time.
+ * Runs entirely in the browser off data we already ship: no API call, no cost
+ * per visitor, and it cannot invent a show or a set time — it only ever resolves
+ * to something already in tour-dates.json, or admits it couldn't and asks.
  */
-export function PlanBuilder({ shows, initialShowId }: { shows: TourDate[]; initialShowId?: string }) {
+export function PlanBuilder({
+  shows,
+  initialShowId,
+}: {
+  shows: TourDate[];
+  initialShowId?: string;
+}) {
   const [showId, setShowId] = useState<string>(
-    initialShowId && shows.some((s) => s.id === initialShowId) ? initialShowId : ""
+    initialShowId && shows.some((s) => s.id === initialShowId)
+      ? initialShowId
+      : "",
   );
   const [arrival, setArrival] = useState<Arrival>("driving");
   const [party, setParty] = useState<Party>("couple");
   const [firstShow, setFirstShow] = useState(false);
+  const [asked, setAsked] = useState(false);
+  const [understood, setUnderstood] = useState<string>("");
+  const [candidates, setCandidates] = useState<TourDate[]>([]);
+  const [intents, setIntents] = useState<Intent[]>([]);
 
-  const show = useMemo(() => shows.find((s) => s.id === showId), [shows, showId]);
+  function handleAsk(text: string) {
+    const r = parseShowRequest(text, shows);
+    setAsked(true);
+    setUnderstood(r.understood);
+    setCandidates(r.candidates);
+    setIntents(r.intents);
+    if (r.show) setShowId(r.show.id);
+    else if (r.candidates.length) setShowId("");
+    // Their words drive the follow-ups too — but they can still override below.
+    if (r.intents.includes("stay")) setArrival("staying");
+    else if (r.intents.includes("parking")) setArrival("driving");
+  }
+
+  const show = useMemo(
+    () => shows.find((s) => s.id === showId),
+    [shows, showId],
+  );
   const plan = useMemo(
     () => (show ? buildNightPlan(show, { arrival, party, firstShow }) : null),
-    [show, arrival, party, firstShow]
+    [show, arrival, party, firstShow],
   );
+
+  // If they asked for something specific, lead with it. If they just picked a
+  // show, show them everything.
+  const want = {
+    stay: intents.includes("stay") || intents.length === 0,
+    food: intents.includes("food") || intents.length === 0,
+  };
 
   const pill = (active: boolean) =>
     `px-3 py-2 rounded-full text-sm border transition ${
@@ -34,82 +74,173 @@ export function PlanBuilder({ shows, initialShowId }: { shows: TourDate[]; initi
         : "bg-paper text-denim border-ink/25 hover:border-primary"
     }`;
 
+  const dateLabel = (s: TourDate) =>
+    new Date(s.date + "T12:00:00Z").toLocaleDateString("en-US", {
+      weekday: "short",
+      month: "short",
+      day: "numeric",
+      timeZone: "UTC",
+    });
+
   return (
     <div>
-      {/* Step 1 — which show */}
-      <div className="mb-5">
-        <label htmlFor="show" className="block font-display text-lg text-denim tracking-wide mb-1">
-          1. WHICH SHOW ARE YOU GOING TO?
+      <AskBox onAsk={handleAsk} />
+
+      {/* What we understood — always visible, always correctable. */}
+      {asked && understood && (
+        <div
+          className={`mt-4 flex items-start gap-2 rounded-md p-3 text-sm border ${
+            show ? "bg-primary/10 border-primary/40" : "bg-ink/5 border-ink/20"
+          }`}
+        >
+          {show ? (
+            <CheckCircle2
+              className="w-4 h-4 mt-0.5 text-primary flex-shrink-0"
+              aria-hidden="true"
+            />
+          ) : (
+            <HelpCircle
+              className="w-4 h-4 mt-0.5 text-clay flex-shrink-0"
+              aria-hidden="true"
+            />
+          )}
+          <div>
+            <p className="text-ink/85">
+              {show ? (
+                <>
+                  Got it — <strong>{understood}</strong>
+                </>
+              ) : (
+                understood
+              )}
+            </p>
+            {candidates.length > 0 && (
+              <div className="flex flex-wrap gap-2 mt-2">
+                {candidates.map((c) => (
+                  <button
+                    key={c.id}
+                    type="button"
+                    onClick={() => {
+                      setShowId(c.id);
+                      setCandidates([]);
+                      setUnderstood(
+                        `${c.city}, ${c.state} — ${dateLabel(c)} at ${c.venue}.`,
+                      );
+                    }}
+                    className="px-3 py-1.5 rounded-full text-xs border border-denim/30 text-denim hover:border-primary hover:text-primary"
+                  >
+                    {dateLabel(c)} · {c.city}, {c.state}
+                  </button>
+                ))}
+              </div>
+            )}
+            {show && (
+              <p className="text-xs text-ink/60 mt-1">
+                Not right? Change it below.
+              </p>
+            )}
+          </div>
+        </div>
+      )}
+
+      {/* Show picker — the fallback and the correction path. */}
+      <div className="mt-5 mb-5">
+        <label
+          htmlFor="show"
+          className="block font-display text-lg text-denim tracking-wide mb-1"
+        >
+          {asked ? "OR PICK YOUR SHOW" : "OR JUST PICK YOUR SHOW"}
         </label>
         <select
           id="show"
           value={showId}
-          onChange={(e) => setShowId(e.target.value)}
+          onChange={(e) => {
+            setShowId(e.target.value);
+            setCandidates([]);
+            setUnderstood("");
+          }}
           className="w-full px-4 py-3 border-2 border-denim/30 focus:border-primary outline-none rounded-md bg-paper text-ink"
         >
           <option value="">Pick your show…</option>
           {shows.map((s) => (
             <option key={s.id} value={s.id}>
-              {new Date(s.date + "T12:00:00Z").toLocaleDateString("en-US", {
-                month: "short",
-                day: "numeric",
-                timeZone: "UTC",
-              })}{" "}
-              — {s.city}, {s.state} · {s.venue}
+              {dateLabel(s)} — {s.city}, {s.state} · {s.venue}
               {s.soldOut ? " (sold out)" : ""}
             </option>
           ))}
         </select>
       </div>
 
-      {/* Step 2 — three questions */}
       {show && (
         <div className="mb-6 space-y-4">
           <div>
-            <p className="font-display text-lg text-denim tracking-wide mb-2">2. HOW ARE YOU DOING THE NIGHT?</p>
+            <p className="font-display text-lg text-denim tracking-wide mb-2">
+              HOW ARE YOU DOING THE NIGHT?
+            </p>
             <div className="flex flex-wrap gap-2">
-              <button type="button" onClick={() => setArrival("local")} className={pill(arrival === "local")}>
+              <button
+                type="button"
+                onClick={() => setArrival("local")}
+                className={pill(arrival === "local")}
+              >
                 I live here
               </button>
-              <button type="button" onClick={() => setArrival("driving")} className={pill(arrival === "driving")}>
+              <button
+                type="button"
+                onClick={() => setArrival("driving")}
+                className={pill(arrival === "driving")}
+              >
                 Driving in &amp; back
               </button>
-              <button type="button" onClick={() => setArrival("staying")} className={pill(arrival === "staying")}>
+              <button
+                type="button"
+                onClick={() => setArrival("staying")}
+                className={pill(arrival === "staying")}
+              >
                 Staying the night
               </button>
             </div>
           </div>
-
           <div>
-            <p className="font-display text-lg text-denim tracking-wide mb-2">3. WHO&apos;S WITH YOU?</p>
+            <p className="font-display text-lg text-denim tracking-wide mb-2">
+              WHO&apos;S WITH YOU?
+            </p>
             <div className="flex flex-wrap gap-2">
-              <button type="button" onClick={() => setParty("solo")} className={pill(party === "solo")}>
+              <button
+                type="button"
+                onClick={() => setParty("solo")}
+                className={pill(party === "solo")}
+              >
                 Just me
               </button>
-              <button type="button" onClick={() => setParty("couple")} className={pill(party === "couple")}>
+              <button
+                type="button"
+                onClick={() => setParty("couple")}
+                className={pill(party === "couple")}
+              >
                 Two of us
               </button>
-              <button type="button" onClick={() => setParty("group")} className={pill(party === "group")}>
+              <button
+                type="button"
+                onClick={() => setParty("group")}
+                className={pill(party === "group")}
+              >
                 A group
               </button>
             </div>
           </div>
-
-          <div>
-            <label className="flex items-center gap-2 text-sm text-ink/80">
-              <input
-                type="checkbox"
-                checked={firstShow}
-                onChange={(e) => setFirstShow(e.target.checked)}
-                className="w-4 h-4 accent-[#b0562e]"
-              />
-              This is my first Ella show
-            </label>
-          </div>
+          <label className="flex items-center gap-2 text-sm text-ink/80">
+            <input
+              type="checkbox"
+              checked={firstShow}
+              onChange={(e) => setFirstShow(e.target.checked)}
+              className="w-4 h-4 accent-[#b0562e]"
+            />
+            This is my first Ella show
+          </label>
         </div>
       )}
 
-      {/* Result */}
       {show && plan && (
         <div className="border-t-2 border-primary/30 pt-6">
           <div className="bg-paper border border-ink/15 rounded-lg p-5">
@@ -131,24 +262,31 @@ export function PlanBuilder({ shows, initialShowId }: { shows: TourDate[]; initi
             </Link>
           </div>
 
-          {/* The moment they care most = the moment to ask for the email. */}
+          {(want.stay || want.food) && (
+            <div className="mt-6 bg-paper border border-ink/15 rounded-lg p-5">
+              <NearbyPicks d={show} want={want} />
+            </div>
+          )}
+
           <div className="mt-6 bg-primary/10 border border-primary/40 rounded-lg p-5">
             <p className="font-display text-xl text-denim tracking-wide mb-1">
               WANT SET-TIME ALERTS FOR {show.city.toUpperCase()}?
             </p>
             <p className="text-sm text-ink/75 mb-3">
-              Venues confirm the night-of running order late. We&apos;ll email you the moment set times
-              for this show are posted — plus the game plan above. No spam, unsubscribe anytime.
+              Venues confirm the night-of running order late. We&apos;ll email
+              you the moment set times for this show are posted — plus the game
+              plan above. No spam, unsubscribe anytime.
             </p>
             <NewsletterSignup placement={`plan-${show.id}`} />
           </div>
         </div>
       )}
 
-      {!show && (
+      {!show && !asked && (
         <p className="text-sm text-ink/60">
-          Pick a show and we&apos;ll build the night around it — when to leave, what the gate will and won&apos;t
-          let you carry, when she&apos;s actually on, and where to crash after.
+          Tell us the city and day and we&apos;ll build the night around it —
+          when to leave, what the gate will and won&apos;t let you carry, when
+          she&apos;s actually on, where to eat, and where to crash.
         </p>
       )}
     </div>

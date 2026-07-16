@@ -199,7 +199,7 @@ export function PlanYourTrip({ city, cityState, venue, venueAddress }: Props) {
             <Hotel className="w-4 h-4" /> {b.label.toUpperCase()}
           </AffiliateLink>
         ))}
-        <AffiliateLink href={hotelUrl(dest)} source="booking" className={secondaryBtn}>
+        <AffiliateLink href={hotelUrl(dest, city)} source="expedia" className={secondaryBtn}>
           <Hotel className="w-4 h-4" /> HOTELS NEARBY
         </AffiliateLink>
       </div>

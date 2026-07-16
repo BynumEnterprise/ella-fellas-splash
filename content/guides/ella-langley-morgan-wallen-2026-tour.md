@@ -3,13 +3,13 @@ title: "Ella Langley on Morgan Wallen's 2026 Stadium Tour: Dates, Lineups & Tick
 slug: "ella-langley-morgan-wallen-2026-tour"
 category: "tour-guide"
 publishedAt: "2026-06-16"
-updatedAt: "2026-06-16"
+updatedAt: "2026-07-16"
 excerpt: "Ella Langley is direct support on Morgan Wallen's 2026 Still The Problem Tour. The stadium co-bills, each lineup, and how to get tickets."
 faq:
   - q: "Is Ella Langley opening for Morgan Wallen in 2026?"
     a: "Yes. Ella Langley is direct support on a run of Morgan Wallen's 2026 Still The Problem Tour stadium dates. Direct support is the slot right before the headliner, so she plays late in the evening to a full stadium."
   - q: "Which Morgan Wallen 2026 shows does Ella Langley play?"
-    a: "The upcoming stadium co-bills where Ella is direct support include Chicago (Soldier Field, June 20), Clemson (Memorial Stadium, June 27), Baltimore (M&T Bank Stadium, July 18), and Philadelphia (Lincoln Financial Field, August 1). Each show has its own page with tickets."
+    a: "In 2026 Ella has been direct support at Chicago (Soldier Field, June 20) and Clemson (Memorial Stadium, June 27), with Baltimore (M&T Bank Stadium, July 18) and the Philadelphia tour finale (Lincoln Financial Field, August 1) still to come. Each show has its own page with tickets."
   - q: "Does Ella Langley have a duet with Morgan Wallen?"
     a: "No. Ella's breakout duet is you look like you love me with Riley Green, not Morgan Wallen. The Wallen connection is the tour -- she is one of his direct-support acts in 2026, not a duet partner."
 ---
@@ -28,12 +28,14 @@ It also means timing matters. Gates open hours before Wallen, and the openers ru
 
 ## The upcoming co-bill stadium dates
 
-Here are the upcoming 2026 Still The Problem Tour stops where Ella Langley is direct support. Each one links to its own show page, where you will find the venue details, the full running order, and the "Get tickets" button.
+Two co-bill dates remain in 2026, and the next one is this Saturday. Each links to its own show page, where you will find the venue details, the full running order, and the "Get tickets" button.
 
-- **Chicago -- Soldier Field -- Saturday, June 20, 2026.** Lineup: Ella Langley (direct support), Gavin Adcock, and Zach John King, with Morgan Wallen headlining. [See the Chicago show page and tickets.](/tour/chicago-soldier-field-2026-06-20)
-- **Clemson -- Memorial Stadium -- Saturday, June 27, 2026.** Lineup: Ella Langley (direct support), Gavin Adcock, and Jason Scott and the High Heat, with Wallen headlining. [See the Clemson show page and tickets.](/tour/clemson-memorial-stadium-2026-06-27)
 - **Baltimore -- M&T Bank Stadium -- Saturday, July 18, 2026.** Lineup: Ella Langley (direct support), Gavin Adcock, and Jason Scott and the High Heat, with Wallen headlining. [See the Baltimore show page and tickets.](/tour/baltimore-mt-bank-stadium-2026-07-18)
 - **Philadelphia -- Lincoln Financial Field -- Saturday, August 1, 2026.** This is the tour's final night, and Ella's bill includes Hudson Westbrook and Blake Whiten, with Wallen headlining. [See the Philadelphia show page and tickets.](/tour/philadelphia-lincoln-financial-field-2026-08-01)
+
+Already in the books: **Chicago** (Soldier Field, June 20) and **Clemson** (Memorial Stadium, June 27), where Ella held the direct-support slot both nights. Their guides stay up for the record: [Chicago set times and openers](/guides/morgan-wallen-chicago-2026-set-times-lineup) and [Clemson set times and openers](/guides/morgan-wallen-clemson-2026-set-times-lineup).
+
+Wondering when to show up? Listed start times on this tour have run 4:30 to 5:30 PM with Wallen on after dark -- the full city-by-city breakdown lives on our [Morgan Wallen 2026 set times and openers hub](/guides/morgan-wallen-2026-set-times-openers-by-city).
 
 We update this list as more dates are confirmed. Bookmark it, or better yet, get it sent to you -- our free newsletter (signup is in the footer of every page) is where we post co-bill news the day it drops.
 

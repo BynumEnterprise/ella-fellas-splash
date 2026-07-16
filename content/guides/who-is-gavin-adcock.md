@@ -4,15 +4,15 @@ slug: "who-is-gavin-adcock"
 category: "fan-guide"
 publishedAt: "2026-07-15"
 updatedAt: "2026-07-15"
-excerpt: "Who is Gavin Adcock? Quick bio, what time they go on, and every 2026 show they play on Morgan Wallen's Still The Problem Tour -- so you know whether to show up early."
+excerpt: "Who is Gavin Adcock? Quick bio, what time he goes on, and every 2026 show he plays on Morgan Wallen's Still The Problem Tour -- so you know whether to show up early."
 faq:
-  - q: "Who is Gavin Adcock?"
-    a: "Gavin Adcock is a Georgia-raised country-rock singer who played college football before music took over, and his live sets carry that linebacker energy -- raw vocals, heavy guitars, and a crowd that gets loud early. Songs like 'A Cigarette' built his reputation on streaming, but the live show is the argument: he plays like the headline slot is his to steal."
+  - q: "Is Gavin Adcock worth showing up early for?"
+    a: "Yes -- if you like your country loud. Adcock's mid-bill slot is the one that wakes a stadium up, and fans who skip it to beat the beer line consistently regret it. Budget an hour: gates to his set is a shorter window than most people expect."
   - q: "What time does Gavin Adcock go on stage?"
     a: "Adcock plays the mid-bill slot on Morgan Wallen's 2026 stadium dates -- after the listed show start and before Ella Langley. At recent shows with 4:30-5:30 PM starts, that put him on stage in the early evening. Exact night-of times are posted by each stadium."
 ---
 
-If you've got tickets to Morgan Wallen's Still The Problem Tour this year, Gavin Adcock might be the rowdiest slot on the Morgan Wallen bill -- and the difference between catching them and missing them is usually about an hour of showing up early. Here's the quick version.
+If you've got tickets to Morgan Wallen's Still The Problem Tour this year, Gavin Adcock might be the rowdiest slot on the Morgan Wallen bill -- and the difference between catching him and missing him is usually about an hour of showing up early. Here's the quick version.
 
 ## Who is Gavin Adcock?
 

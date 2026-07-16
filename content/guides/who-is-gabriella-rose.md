@@ -4,15 +4,15 @@ slug: "who-is-gabriella-rose"
 category: "fan-guide"
 publishedAt: "2026-07-15"
 updatedAt: "2026-07-15"
-excerpt: "Who is Gabriella Rose? Quick bio, what time they go on, and every 2026 show they play on Ella Langley's Dandelion Tour -- so you know whether to show up early."
+excerpt: "Who is Gabriella Rose? Quick bio, what time she goes on, and every 2026 show she plays on Ella Langley's Dandelion Tour -- so you know whether to show up early."
 faq:
-  - q: "Who is Gabriella Rose?"
-    a: "Gabriella Rose is a young country singer-songwriter and one of the Dandelion Tour's rotating openers -- and she has a bigger role than most support acts: on nights she's on the bill, Ella has brought her out mid-set to duet 'Butterfly Season' from the Dandelion album. Which means her name on the poster changes Ella's setlist too."
+  - q: "Is Gabriella Rose worth showing up early for?"
+    a: "More than most openers: on nights Rose is on the bill, Ella has brought her out mid-set to duet 'Butterfly Season' from the Dandelion album. Her name on the poster is effectively a setlist spoiler -- you get a song you wouldn't otherwise hear."
   - q: "What time does Gabriella Rose go on stage?"
     a: "Openers on the Dandelion Tour play from the listed 7:00 PM start. Gabriella Rose is confirmed for both Auburn, AL shows (Aug 28-29) with ERNEST, and on her nights Ella typically brings her out to duet Butterfly Season."
 ---
 
-If you've got tickets to Ella Langley's Dandelion Tour this year, Gabriella Rose might be the opener who joins Ella's set every night she's on the bill -- and the difference between catching them and missing them is usually about an hour of showing up early. Here's the quick version.
+If you've got tickets to Ella Langley's Dandelion Tour this year, Gabriella Rose might be the opener who joins Ella's set every night she's on the bill -- and the difference between catching her and missing her is usually about an hour of showing up early. Here's the quick version.
 
 ## Who is Gabriella Rose?
 

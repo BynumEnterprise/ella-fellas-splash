@@ -72,8 +72,20 @@ function expandQuery(query: string): string[] {
       intent.expand.forEach((e) => terms.add(e));
     }
   }
-  // individual words too, so "outdoor amphitheater" still hits "amphitheater"
-  q.split(/\s+/).filter((w) => w.length > 3).forEach((w) => terms.add(w));
+  // Individual words too — but NOT the words that appear on literally every page
+  // of a site about one artist's concerts. Without this stoplist, "what do i bring
+  // to an outdoor show" matches "show" and returns basically the whole site, which
+  // is exactly as useless as returning nothing.
+  const STOP = new Set([
+    "show", "shows", "ella", "langley", "concert", "concerts", "tour", "tours",
+    "what", "when", "where", "which", "does", "should", "your", "this", "that",
+    "with", "from", "will", "they", "have", "about", "into", "more", "than",
+    "then", "there", "here", "some", "just", "like", "want", "need", "going",
+    "night", "time", "times", "2026", "2027",
+  ]);
+  q.split(/\s+/)
+    .filter((w) => w.length > 3 && !STOP.has(w))
+    .forEach((w) => terms.add(w));
   return Array.from(terms);
 }
 

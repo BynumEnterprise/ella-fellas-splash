@@ -22,14 +22,16 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!d) return {};
   const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
   const canonical = `${SITE_URL}/tour/${d.id}`;
-  const title = `Ella Langley ${d.city} Tickets | Ella Fellas`;
+  // Include the date so two-night stands (e.g. Auburn Aug 28 + 29) don't produce identical titles.
+  const title = `Ella Langley ${d.city} ${formatDate(d.date, "short")}: Tickets & Set Times | Ella Fellas`;
+  const ogImage = `/api/og?title=${encodeURIComponent(`Ella Langley in ${d.city}`)}&kicker=${encodeURIComponent(`${formatDate(d.date, "short")} · ${d.venue}`)}`;
   const description = `Ella Langley at ${d.venue}, ${d.city} — ${formatDate(d.date, "long")}. Tickets, parking, hotels, and openers.`;
   return {
     title: { absolute: title },
     description,
     alternates: { canonical },
-    openGraph: { title, description, url: canonical, type: "article", images: ["/opengraph-image.png"] },
-    twitter: { card: "summary_large_image", title, description, images: ["/opengraph-image.png"] },
+    openGraph: { title, description, url: canonical, type: "article", images: [ogImage] },
+    twitter: { card: "summary_large_image", title, description, images: [ogImage] },
   };
 }
 

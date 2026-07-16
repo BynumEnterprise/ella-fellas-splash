@@ -16,6 +16,18 @@ export async function generateStaticParams() {
   return getAllTourDates().map((d) => ({ slug: d.id }));
 }
 
+/** "18:00" -> "6:00 PM". Falls back to the raw string if it isn't HH:MM. */
+function to12h(t?: string): string | undefined {
+  if (!t) return undefined;
+  const m = /^(\d{1,2}):(\d{2})$/.exec(t.trim());
+  if (!m) return t;
+  let h = parseInt(m[1], 10);
+  const min = m[2];
+  const ampm = h >= 12 ? "PM" : "AM";
+  h = h % 12 || 12;
+  return `${h}:${min} ${ampm}`;
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const d = getTourDate(slug);
@@ -80,6 +92,28 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
         <p className="text-sm text-ink/60 mt-1">{d.tour}</p>
       </header>
 
+      {isPast ? (
+        <section className="bg-denim/5 border-2 border-denim/25 rounded-lg p-5 mb-6">
+          <p className="text-xs uppercase tracking-wider text-denim font-medium mb-1">
+            THIS SHOW HAS ALREADY HAPPENED
+          </p>
+          <h2 className="font-display text-2xl text-denim">
+            {formatDate(d.date, "long")} is in the books
+          </h2>
+          <p className="text-sm text-ink/80 mt-1 mb-4">
+            Tickets for this date are long gone &mdash; but Ella is on the road through October.
+            Find the next show near you, or read what she played on this run.
+          </p>
+          <div className="flex flex-wrap gap-3">
+            <Link href="/tour" className="inline-flex items-center justify-center px-5 py-3 bg-primary text-paper font-display text-lg tracking-wide rounded-md shadow-sm hover:bg-primary/90">
+              SEE UPCOMING SHOWS &rarr;
+            </Link>
+            <Link href="/guides/ella-langley-setlist-2026" className="inline-flex items-center justify-center px-5 py-3 border-2 border-denim/30 text-denim font-display text-lg tracking-wide rounded-md hover:border-primary hover:text-primary">
+              WHAT SHE PLAYED
+            </Link>
+          </div>
+        </section>
+      ) : (
       <section className="bg-primary/15 border-2 border-primary rounded-lg p-5 mb-6">
         <p className="text-xs uppercase tracking-wider text-denim font-medium mb-1">
           {d.soldOut ? "RESALE" : "TICKETS"} · {d.ticketPriceRange}
@@ -103,6 +137,7 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
           guide before you pick.
         </p>
       </section>
+      )}
 
       <section className="mb-8">
         <h2 className="font-display text-2xl text-denim mb-3">VENUE INFO</h2>
@@ -121,9 +156,9 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
             <li className="flex items-start gap-2">
               <Clock className="w-4 h-4 mt-0.5 text-primary flex-shrink-0" />
               <span>
-                {d.doorsTime && <>Doors {d.doorsTime}</>}
+                {d.doorsTime && <>Doors {to12h(d.doorsTime)}</>}
                 {d.doorsTime && d.showTime && " · "}
-                {d.showTime && <>Show {d.showTime}</>}
+                {d.showTime && <>Show {to12h(d.showTime)}</>}
               </span>
             </li>
           )}
@@ -165,7 +200,7 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
         />
       )}
 
-      <ConcertGearWidget show={{ venue: d.venue, venueCapacity: d.venueCapacity }} />
+      {!isPast && <ConcertGearWidget show={{ venue: d.venue, venueCapacity: d.venueCapacity }} />}
 
       <section className="mb-8 bg-paper border border-ink/10 rounded-lg p-5">
         <h2 className="font-display text-xl text-denim mb-2">WHAT TO WEAR</h2>

@@ -41,11 +41,11 @@ For the cities on Ella's own arena run rather than these Wallen stadium dates, o
 
 On the Still the Problem Tour, Ella is the opener — expect a tight set of her biggest songs rather than the full Dandelion Tour show, and a stadium crowd that's there for Wallen too. On her own dates she plays a longer headline set with her full production. Both are worth it; they're just different nights out. If you want the deep-cuts-and-storytelling version, go to a Dandelion Tour stop. If you want the stadium-energy, two-headliners-for-the-price version, these Wallen dates deliver.
 
-One more reason these shows are fun right now: Ella and Wallen put out "I Can't Love You Anymore" together, and we broke down [what that duet is actually about](/news/i-cant-love-you-anymore-meaning) if you want to know the song before you hear it live.
+One more reason these shows are fun right now: Ella and Wallen put out "I Can't Love You Anymore" together, and we broke down [what that duet is actually about](/news/2026-06-15-i-cant-love-you-anymore-meaning) if you want to know the song before you hear it live.
 
 ## Before You Go
 
-Stadium shows mean long walks, security lines, and weather you can't control. Our rundown of [what's actually worth bringing to an Ella Langley show](/news/ella-langley-tour-must-haves) covers the basics, and if you're still sorting out who else is on the bill, here's [everyone opening on the Dandelion Tour](/news/who-is-opening-for-ella-langley-dandelion-tour).
+Stadium shows mean long walks, security lines, and weather you can't control. Our rundown of [what's actually worth bringing to an Ella Langley show](/news/2026-06-10-ella-langley-tour-must-haves) covers the basics, and if you're still sorting out who else is on the bill, here's [everyone opening on the Dandelion Tour](/news/2026-06-21-who-is-opening-for-ella-langley-dandelion-tour).
 
 Bottom line: the next chance to see Ella Langley on Morgan Wallen's tour is Clemson on June 27, with Baltimore and Philadelphia close behind. Match the date to the city, double-check it's a night she's on, and you're set.
 

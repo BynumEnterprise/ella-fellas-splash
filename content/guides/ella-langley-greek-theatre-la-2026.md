@@ -3,11 +3,11 @@ title: "Ella Langley Greek Theatre 2026: Both LA Nights, Times & Tickets"
 slug: "ella-langley-greek-theatre-la-2026"
 category: "tour-guide"
 publishedAt: "2026-07-15"
-updatedAt: "2026-07-15"
+updatedAt: "2026-07-16"
 excerpt: "Ella Langley plays The Greek Theatre (Los Angeles) on Tuesday-Wednesday, October 13-14, 2026 on the Dandelion Tour fall extension. Times, support, tickets, and how to plan it."
 faq:
   - q: "What time does Ella Langley go on in Los Angeles?"
-    a: "The Greek has not posted times for either night yet. We update this page when times are confirmed. Expect standard early-evening amphitheatre starts."
+    a: "Both nights list doors at 6:30 PM and the show at 7:30 PM, with ERNEST and Laci Kaye Booth supporting."
   - q: "Where is the Ella Langley Los Angeles concert?"
     a: "At The Greek Theatre, 2700 N Vermont Ave, Los Angeles, CA, on Tuesday-Wednesday, October 13-14, 2026."
   - q: "How do I get tickets for Ella Langley in Los Angeles?"
@@ -16,7 +16,7 @@ faq:
 
 Two nights at the Greek -- **Tuesday, October 13 and Wednesday, October 14, 2026** -- are Ella's LA statement shows: the outdoor Griffith Park amphitheatre where country acts historically prove they can draw on the West Coast. Booking two nights says the demand is already there.
 
-Listed start times aren't confirmed yet (Greek headline shows typically run early-mid evening); we'll update when the venue posts them. Two-night stands also mean setlist variation -- if any stop on the fall leg gets different songs night-to-night, it's this one. Our [setlist guide](/guides/ella-langley-setlist-2026) tracks changes after every show.
+Both nights list doors at 6:30 PM and a 7:30 PM show, with **ERNEST and Laci Kaye Booth** supporting. Two-night stands also mean setlist variation -- if any stop on the fall leg gets different songs night-to-night, it's this one. Our [setlist guide](/guides/ella-langley-setlist-2026) tracks changes after every show.
 
 ## Tickets
 

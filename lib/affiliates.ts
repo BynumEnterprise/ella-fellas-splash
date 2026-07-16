@@ -14,37 +14,56 @@ export function amazonSearchUrl(query: string): string {
 // Awin publisher ID (used by other affiliate links if needed)
 const AWIN_AFFID = "2906263";
 
-/**
- * Hotel search for a city — Expedia, via the Expedia Group Travel Creator program.
- *
- * APPROVED 2026-07-16 ("Welcome, Bynum Enterprises! Your application was approved").
- * Expedia Group runs affiliate tracking on PARTNERIZE, not CJ. The link is two parts
- * (per Expedia's own linking guide):
- *   1. tracking prefix: https://prf.hn/click/camref:<CAMREF>
- *   2. the destination: the full Expedia URL to send the reader to
- *
- * The camref is unique per publisher PER POINT OF SALE and only exists inside the
- * Travel Creator dashboard (console.vap.expedia.com -> Links). Set it in Vercel as
- * NEXT_PUBLIC_AFF_EXPEDIA_CAMREF and every hotel link across the tour pages, the
- * Plan Your Trip module and the night planner starts earning — no code change.
- *
- * Until it's set this returns the bare (unmonetized) Expedia search, which is still
- * a correct, useful link for the reader. Never emit a GUESSED camref: a wrong one
- * doesn't fail loudly, it silently credits somebody else.
- *
- * NOTE this is NOT the CJ pattern used by ticketNetworkUrl()/vrboUrl()
- * (<click-base>?url=...). Vrbo stays on CJ — that program is live and earning.
- */
-export function hotelUrl(city: string, pubref?: string): string {
-  const dest = `https://www.expedia.com/Hotel-Search?destination=${encodeURIComponent(city)}`;
-  const camref = process.env.NEXT_PUBLIC_AFF_EXPEDIA_CAMREF?.trim();
-  if (!camref) return dest;
+// ─── EXPEDIA (hotels) — Expedia Group Travel Creator ─────────────────────────
+// APPROVED + LIVE 2026-07-16. These IDs are NOT secrets (they ride in every public
+// link, same as the Amazon tag) so they're hardcoded: the links earn on deploy,
+// with no env var to forget.
+//
+// VERIFIED END-TO-END 2026-07-16 against links produced by Expedia's own Link
+// builder, then followed in a real browser to confirm tracking actually fires:
+//   official  -> affcid=US.DIRECT.PHG.1110l37284.1100l68075, afflid/clickref set, regionId=738 (Baltimore)
+//   ours      -> identical affcid + afflid/clickref. Attribution is driven by camref.
+//
+// Shape (do NOT "improve" this — it's copied from the builder's real output):
+//   https://expedia.com/affiliate
+//     ?siteid=1                      <- Expedia USA point of sale
+//     &landingPage=<encoded Expedia URL>
+//     &camref=<publisher id>         <- THE thing that pays us
+//     &creativeref=<creative id>
+//     &adref=<free-form>             <- optional; lands in affdtl for reporting
+//
+// NOTE: this is NOT the `prf.hn/click/camref:.../destination:...` Partnerize shape
+// documented in Expedia's older Vrbo linking guide. That guide describes the Vrbo
+// program; the Travel Creator link builder emits the /affiliate?... form above.
+// Tested: adref is OPTIONAL (omitting it keeps the identical affcid) and accepts a
+// custom value, which passes through verbatim as affdtl=PHG.<clickref>.<adref>.
+// It's also NOT the CJ `<click-base>?url=` shape — Vrbo below stays on CJ.
+const EXPEDIA_SITEID = "1";
+const EXPEDIA_CAMREF = "1100l5Pw9U";
+const EXPEDIA_CREATIVEREF = "1100l68075";
 
-  // pubref is Partnerize's sub-tracking slot — it tells us WHICH page earned the
-  // booking. Restricted to url-safe chars so a stray character can't break the link.
-  const ref = (pubref ?? "").replace(/[^a-zA-Z0-9_-]/g, "").slice(0, 60);
-  const refPart = ref ? `/pubref:${ref}` : "";
-  return `https://prf.hn/click/camref:${camref}${refPart}/destination:${encodeURIComponent(dest)}`;
+/**
+ * Affiliate hotel search on Expedia for a city.
+ *
+ * @param city  e.g. "Baltimore, MD" — Expedia resolves this to a real region.
+ * @param adref optional per-page reference (we pass the show id / city) so the
+ *              Travel Creator reports show WHICH show earned the booking.
+ */
+export function hotelUrl(city: string, adref?: string): string {
+  const dest = `https://www.expedia.com/Hotel-Search?destination=${encodeURIComponent(city)}`;
+  const camref = (process.env.NEXT_PUBLIC_AFF_EXPEDIA_CAMREF ?? EXPEDIA_CAMREF).trim() || EXPEDIA_CAMREF;
+
+  // Restricted to url-safe chars so a stray character can't corrupt the query.
+  const ref = (adref ?? "").replace(/[^a-zA-Z0-9_-]/g, "").slice(0, 60);
+  const refPart = ref ? `&adref=${ref}` : "";
+
+  return (
+    `https://expedia.com/affiliate?siteid=${EXPEDIA_SITEID}` +
+    `&landingPage=${encodeURIComponent(dest)}` +
+    `&camref=${camref}` +
+    `&creativeref=${EXPEDIA_CREATIVEREF}` +
+    refPart
+  );
 }
 
 // ─────────────────────────────────────────────────────────────────────────────

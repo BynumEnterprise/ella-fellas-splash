@@ -40,26 +40,29 @@ interface Group {
  * use, then match on the union. Deterministic, no embeddings, no API cost.
  */
 const INTENTS: { triggers: string[]; expand: string[] }[] = [
-  { triggers: ["bring", "pack", "packing", "carry", "allowed", "bag", "purse", "backpack", "clear bag"],
-    expand: ["what to bring", "checklist", "clear bag", "earplugs", "charger", "essentials"] },
-  { triggers: ["wear", "outfit", "dress", "clothes", "boots", "hat", "what should i wear"],
-    expand: ["what to wear", "outfit", "boots", "hat", "western"] },
-  { triggers: ["time", "start", "late", "early", "when", "come on", "go on", "stage time", "get there", "doors"],
-    expand: ["set times", "doors", "openers", "start time", "lineup"] },
-  { triggers: ["open", "opener", "opening", "support", "who is playing", "lineup"],
-    expand: ["openers", "lineup", "support", "direct support"] },
-  { triggers: ["stay", "hotel", "sleep", "airbnb", "rental", "where to stay", "crash"],
-    expand: ["plan your trip", "traveling", "where to stay", "hotels"] },
-  { triggers: ["park", "parking", "drive", "transit", "uber", "lyft", "getting there"],
-    expand: ["parking", "transit", "getting to", "directions"] },
-  { triggers: ["ticket", "sold out", "resale", "presale", "code", "cheap", "price", "seats"],
-    expand: ["tickets", "sold out", "presale codes", "best seats", "resale"] },
-  { triggers: ["setlist", "songs", "play live", "what does she play"],
-    expand: ["setlist", "songs", "2026 setlist"] },
-  { triggers: ["who is", "about ella", "new to", "beginner", "start with"],
-    expand: ["who is ella langley", "for beginners", "bio"] },
-  { triggers: ["meaning", "about the song", "lyrics"],
-    expand: ["meaning", "song", "breakdown"] },
+  // expand[] must be DISTINCTIVE phrases that appear in the TITLE of the page that
+  // actually answers the question. Generic nouns ("earplugs", "boots") match dozens
+  // of product names and blow the result set up — keep these tight.
+  { triggers: ["bring", "pack", "packing", "carry", "allowed", "clear bag", "bag policy"],
+    expand: ["what to bring", "concert checklist"] },
+  { triggers: ["wear", "outfit", "dress", "what should i wear"],
+    expand: ["what to wear", "outfit ideas"] },
+  { triggers: ["get there", "how early", "arrive", "come on", "go on", "stage time", "start time", "what time"],
+    expand: ["set times", "survival guide"] },
+  { triggers: ["opener", "opening", "support act", "who is playing", "lineup", "whos opening", "who's opening"],
+    expand: ["openers", "opening acts explained", "set times"] },
+  { triggers: ["stay", "hotel", "sleep", "airbnb", "where to stay", "crash", "lodging"],
+    expand: ["traveling to an ella langley show", "plan your trip"] },
+  { triggers: ["park", "parking", "transit", "uber", "getting there", "drive in"],
+    expand: ["parking", "transit"] },
+  { triggers: ["sold out", "resale", "presale", "promo code", "cheap ticket", "best seat"],
+    expand: ["sold-out", "presale codes", "best seats"] },
+  { triggers: ["setlist", "what does she play", "songs live"],
+    expand: ["setlist"] },
+  { triggers: ["who is ella", "new to ella", "beginner", "never heard"],
+    expand: ["who is ella langley", "for beginners"] },
+  { triggers: ["fan club", "join the", "presale access"],
+    expand: ["fan club"] },
 ];
 
 /** Intent phrases this query implies — empty if it's just a keyword search. */

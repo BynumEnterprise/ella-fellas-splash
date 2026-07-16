@@ -15,27 +15,36 @@ export function amazonSearchUrl(query: string): string {
 const AWIN_AFFID = "2906263";
 
 /**
- * Hotel search for a city.
+ * Hotel search for a city — Expedia, via the Expedia Group Travel Creator program.
  *
- * Applied to Booking.com North America on CJ 2026-07-16 (advertiser 7864295,
- * 4% lead, serviceable US/CA) — status: pending advertiser review.
+ * APPROVED 2026-07-16 ("Welcome, Bynum Enterprises! Your application was approved").
+ * Expedia Group runs affiliate tracking on PARTNERIZE, not CJ. The link is two parts
+ * (per Expedia's own linking guide):
+ *   1. tracking prefix: https://prf.hn/click/camref:<CAMREF>
+ *   2. the destination: the full Expedia URL to send the reader to
  *
- * The MOMENT it's approved, set NEXT_PUBLIC_AFF_BOOKING_CJ in Vercel to the CJ
- * click base for that program, e.g.
- *   https://www.anrdoezrs.net/click-101760569-<AID>
- * and every hotel link across all tour pages + Plan Your Trip modules starts
- * earning — no code change, no redeploy of logic. Until then this returns the
- * bare (unmonetized) Booking.com link, which still helps the reader.
+ * The camref is unique per publisher PER POINT OF SALE and only exists inside the
+ * Travel Creator dashboard (console.vap.expedia.com -> Links). Set it in Vercel as
+ * NEXT_PUBLIC_AFF_EXPEDIA_CAMREF and every hotel link across the tour pages, the
+ * Plan Your Trip module and the night planner starts earning — no code change.
  *
- * Same CJ deep-link pattern as ticketNetworkUrl()/vrboUrl(): <click-base>?url=<encoded destination>.
+ * Until it's set this returns the bare (unmonetized) Expedia search, which is still
+ * a correct, useful link for the reader. Never emit a GUESSED camref: a wrong one
+ * doesn't fail loudly, it silently credits somebody else.
+ *
+ * NOTE this is NOT the CJ pattern used by ticketNetworkUrl()/vrboUrl()
+ * (<click-base>?url=...). Vrbo stays on CJ — that program is live and earning.
  */
-export function hotelUrl(city: string): string {
-  const dest = `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(city)}`;
-  const clickBase = process.env.NEXT_PUBLIC_AFF_BOOKING_CJ;
-  if (clickBase && clickBase.trim()) {
-    return `${clickBase.trim()}?url=${encodeURIComponent(dest)}`;
-  }
-  return dest;
+export function hotelUrl(city: string, pubref?: string): string {
+  const dest = `https://www.expedia.com/Hotel-Search?destination=${encodeURIComponent(city)}`;
+  const camref = process.env.NEXT_PUBLIC_AFF_EXPEDIA_CAMREF?.trim();
+  if (!camref) return dest;
+
+  // pubref is Partnerize's sub-tracking slot — it tells us WHICH page earned the
+  // booking. Restricted to url-safe chars so a stray character can't break the link.
+  const ref = (pubref ?? "").replace(/[^a-zA-Z0-9_-]/g, "").slice(0, 60);
+  const refPart = ref ? `/pubref:${ref}` : "";
+  return `https://prf.hn/click/camref:${camref}${refPart}/destination:${encodeURIComponent(dest)}`;
 }
 
 // ─────────────────────────────────────────────────────────────────────────────

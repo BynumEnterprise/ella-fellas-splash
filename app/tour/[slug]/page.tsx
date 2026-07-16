@@ -11,6 +11,8 @@ import { MusicEventSchema } from "@/components/schema/MusicEventSchema";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 import { ticketNetworkUrl } from "@/lib/affiliates";
 import { formatDate } from "@/lib/utils";
+import { buildNightPlan, findStandSiblings } from "@/lib/night-plan";
+import { NightPlanView } from "@/components/NightPlan";
 
 export async function generateStaticParams() {
   return getAllTourDates().map((d) => ({ slug: d.id }));
@@ -60,6 +62,11 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
   // TicketNetwork (CJ, 12.5%) — the SOLE ticket CTA for every show
   // (headline, support and stadium dates all use this one affiliate link).
   const tnUrl = ticketNetworkUrl(d.id);
+
+  // Build-time night plan — deterministic, grounded in this show's own data, and
+  // server-rendered so it's indexable and instant on mobile.
+  const plan = buildNightPlan(d);
+  const siblings = findStandSiblings(d, getAllTourDates());
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-10">
@@ -189,6 +196,46 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
           </p>
         </section>
       )}
+
+      {/* Which night? — two-night stands (Baltimore, Auburn, LA Greek) */}
+      {siblings.length > 0 && (
+        <section className="mb-8 bg-primary/10 border-2 border-primary/40 rounded-lg p-5">
+          <h2 className="font-display text-xl text-denim tracking-wide mb-2">
+            WHICH NIGHT SHOULD YOU GO?
+          </h2>
+          <p className="text-sm text-ink/80 mb-3">
+            {d.venue} has more than one night on this run, and the bills can differ &mdash; check your
+            ticket before you plan around it.
+          </p>
+          <ul className="space-y-2 text-sm">
+            <li className="font-semibold text-denim">
+              {formatDate(d.date, "long")} &mdash; this page
+              {d.openers.length > 0 && <span className="font-normal text-ink/75"> &middot; {d.openers.join(", ")}</span>}
+            </li>
+            {siblings.map((s2) => (
+              <li key={s2.id}>
+                <Link href={`/tour/${s2.id}`} className="font-semibold text-denim underline underline-offset-2 hover:text-primary">
+                  {formatDate(s2.date, "long")}
+                </Link>
+                {s2.openers.length > 0 && <span className="text-ink/75"> &middot; {s2.openers.join(", ")}</span>}
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {/* Night plan — build-time, indexable */}
+      <section className="mb-8 bg-paper border border-ink/15 rounded-lg p-5">
+        <NightPlanView plan={plan} />
+        {!isPast && (
+          <Link
+            href={`/plan?show=${d.id}`}
+            className="mt-5 inline-flex items-center gap-2 px-5 py-3 bg-denim text-paper font-display tracking-wide rounded-md hover:bg-denim/90"
+          >
+            BUILD MY PERSONALIZED PLAN &rarr;
+          </Link>
+        )}
+      </section>
 
       {!isPast && (
         <PlanYourTrip

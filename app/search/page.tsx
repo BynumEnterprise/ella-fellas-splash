@@ -277,7 +277,7 @@ export default async function SearchPage({
           <PopularLinks />
           <p className="mt-4 text-sm">
             Planning a specific show?{" "}
-            <Link href="/plan" className="font-semibold text-denim underline underline-offset-2 hover:text-primary">
+            <Link href="/plan-my-night" className="font-semibold text-denim underline underline-offset-2 hover:text-primary">
               Build your night plan
             </Link>{" "}
             &mdash; it answers when to leave, what to pack, and when she&apos;s on.

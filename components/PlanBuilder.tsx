@@ -34,6 +34,7 @@ export function PlanBuilder({
   const [party, setParty] = useState<Party>("couple");
   const [firstShow, setFirstShow] = useState(false);
   const [asked, setAsked] = useState(false);
+  const [resolved, setResolved] = useState(false);
   const [understood, setUnderstood] = useState<string>("");
   const [candidates, setCandidates] = useState<TourDate[]>([]);
   const [intents, setIntents] = useState<Intent[]>([]);
@@ -41,11 +42,14 @@ export function PlanBuilder({
   function handleAsk(text: string) {
     const r = parseShowRequest(text, shows);
     setAsked(true);
+    setResolved(!!r.show);
     setUnderstood(r.understood);
     setCandidates(r.candidates);
     setIntents(r.intents);
-    if (r.show) setShowId(r.show.id);
-    else if (r.candidates.length) setShowId("");
+    // Clear the previous show unless we resolved a new one. Leaving it up would
+    // print a full Tulsa plan under the words "we couldn't match that" — the exact
+    // kind of confident-but-wrong answer this whole thing exists to avoid.
+    setShowId(r.show ? r.show.id : "");
     // Their words drive the follow-ups too — but they can still override below.
     if (r.intents.includes("stay")) setArrival("staying");
     else if (r.intents.includes("parking")) setArrival("driving");
@@ -90,10 +94,12 @@ export function PlanBuilder({
       {asked && understood && (
         <div
           className={`mt-4 flex items-start gap-2 rounded-md p-3 text-sm border ${
-            show ? "bg-primary/10 border-primary/40" : "bg-ink/5 border-ink/20"
+            resolved
+              ? "bg-primary/10 border-primary/40"
+              : "bg-ink/5 border-ink/20"
           }`}
         >
-          {show ? (
+          {resolved ? (
             <CheckCircle2
               className="w-4 h-4 mt-0.5 text-primary flex-shrink-0"
               aria-hidden="true"

@@ -6,8 +6,8 @@ publishedAt: "2026-07-15"
 updatedAt: "2026-07-15"
 excerpt: "Who is Jason Scott & The High Heat? Quick bio, what time they go on, and every 2026 show they play on Morgan Wallen's Still The Problem Tour -- so you know whether to show up early."
 faq:
-  - q: "Who is Jason Scott & The High Heat?"
-    a: "Jason Scott & The High Heat are an Oklahoma City outfit playing full-band heartland country-rock -- tight, warm, and built for big rooms. They're the first act on several 2026 Still The Problem stadium bills, which means they play to the early crowd and win over whoever showed up on time."
+  - q: "Is Jason Scott & The High Heat worth showing up early for?"
+    a: "If you like full-band heartland country -- think warm, road-worn, played by people who've done a thousand bar gigs -- yes. The trade-off is timing: they play first, in daylight, which means leaving home earlier than a headliner-only plan requires."
   - q: "What time does Jason Scott & The High Heat go on stage?"
     a: "Jason Scott & The High Heat typically play first on the Morgan Wallen 2026 stadium bills they appear on, going on at the listed show start time (4:30-5:30 PM at recent stadium dates)."
 ---

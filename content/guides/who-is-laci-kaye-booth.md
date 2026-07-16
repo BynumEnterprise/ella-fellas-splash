@@ -4,15 +4,15 @@ slug: "who-is-laci-kaye-booth"
 category: "fan-guide"
 publishedAt: "2026-07-15"
 updatedAt: "2026-07-15"
-excerpt: "Who is Laci Kaye Booth? Quick bio, what time they go on, and every 2026 show they play on Ella Langley's Dandelion Tour -- so you know whether to show up early."
+excerpt: "Who is Laci Kaye Booth? Quick bio, what time she goes on, and every 2026 show she plays on Ella Langley's Dandelion Tour -- so you know whether to show up early."
 faq:
-  - q: "Who is Laci Kaye Booth?"
-    a: "Laci Kaye Booth is a Texas singer who first broke nationally on American Idol and has since carved out a lane of hazy, Americana-leaning country -- a voice you recognize in two notes. On a tour famous for booking women, she is one of the rotating support acts fans most hope shows up on their night."
+  - q: "Is Laci Kaye Booth worth showing up early for?"
+    a: "She's the rotating support act fans most hope draws their night. Her hazy, Americana-leaning country is a genuine change of pace from the rest of the bill -- and it's a voice you recognize in about two notes."
   - q: "What time does Laci Kaye Booth go on stage?"
     a: "Support acts on the Dandelion Tour go on at the listed start time (7:00 PM at most stops). Laci Kaye Booth is confirmed for Pikeville on July 23 with Kaitlin Butts."
 ---
 
-If you've got tickets to Ella Langley's Dandelion Tour this year, Laci Kaye Booth might be the dreamiest voice on the tour -- and the difference between catching them and missing them is usually about an hour of showing up early. Here's the quick version.
+If you've got tickets to Ella Langley's Dandelion Tour this year, Laci Kaye Booth might be the dreamiest voice on the tour -- and the difference between catching her and missing her is usually about an hour of showing up early. Here's the quick version.
 
 ## Who is Laci Kaye Booth?
 

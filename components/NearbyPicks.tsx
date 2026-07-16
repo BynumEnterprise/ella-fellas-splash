@@ -60,7 +60,7 @@ export function NearbyPicks({ d, want }: { d: TourDate; want: { stay?: boolean; 
             >
               <House className="w-4 h-4" aria-hidden="true" /> VACATION RENTALS
             </AffiliateLink>
-            <AffiliateLink href={hotelUrl(`${d.city}, ${d.state}`)} source="booking" className={chip}>
+            <AffiliateLink href={hotelUrl(`${d.city}, ${d.state}`, d.id)} source="expedia" className={chip}>
               <Hotel className="w-4 h-4" aria-hidden="true" /> Hotels nearby
             </AffiliateLink>
             <a href={maps(`hotels near ${near}`)} target="_blank" rel="noopener noreferrer" className={chip}>

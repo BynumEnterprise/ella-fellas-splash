@@ -174,3 +174,24 @@ Format: `- [ ] YYYY-MM-DD <source-job>: <action>` → mark `- [x] done YYYY-MM-D
 - ALWAYS check list_deployments for state=ERROR after pushing .tsx — a broken build silently leaves the site on the last good deploy, so curl'ing the site looks "fine" while your commits aren't live.
 
 - [ ] 2026-07-16 NEXT (optional AI upgrade): natural-language input on /plan-my-night ("I'm driving to Baltimore Saturday with 3 friends") needs an LLM key in Vercel — the owner must add it (I can't enter API keys). Structure it like hotelUrl(): read an env var, fall back to the current 3-question UI when absent. The deterministic engine stays the source of truth for times either way.
+
+## 2026-07-15 — Natural-language night planner (shipped)
+Visitors can now type the request the way they'd say it out loud — "I wanna go to the
+Baltimore show Saturday, help me get tickets and stay somewhere and a restaurant nearby"
+— and get a real plan back. Resolver is `lib/plan-parse.ts`: deterministic slot-filling
+over `tour-dates.json` (city/venue aliases -> date narrowing -> intent extraction).
+
+Why not an LLM: the site's whole credibility is "we don't invent set times, we cite the
+venue." A model that hallucinates one set time costs more trust than the feature earns.
+The parser can only ever return a show that exists in our data, a list of candidates to
+choose from, or an honest "we couldn't find that." 50/50 cases pass, including the
+must-not-hallucinate set (garbage input, cities we don't play, past shows).
+
+### Deploy rules learned the hard way (read before pushing .tsx)
+- **Build locally first.** `npm install && npx next build` in a clone catches everything
+  Vercel would catch, before it's public. This is now the gate.
+- **Never push N commits back-to-back.** Each one triggers its own deploy and they race —
+  the deploy that FINISHES last takes the production alias, not the one committed last.
+  On this change the 1st commit's build won and production served a tree missing the other
+  3 files, while every deploy read "READY". Push, or finish with a single commit at HEAD,
+  then verify the live HTML — not just the deploy state.

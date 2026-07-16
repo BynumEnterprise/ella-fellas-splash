@@ -14,9 +14,28 @@ export function amazonSearchUrl(query: string): string {
 // Awin publisher ID (used by other affiliate links if needed)
 const AWIN_AFFID = "2906263";
 
+/**
+ * Hotel search for a city.
+ *
+ * Applied to Booking.com North America on CJ 2026-07-16 (advertiser 7864295,
+ * 4% lead, serviceable US/CA) — status: pending advertiser review.
+ *
+ * The MOMENT it's approved, set NEXT_PUBLIC_AFF_BOOKING_CJ in Vercel to the CJ
+ * click base for that program, e.g.
+ *   https://www.anrdoezrs.net/click-101760569-<AID>
+ * and every hotel link across all tour pages + Plan Your Trip modules starts
+ * earning — no code change, no redeploy of logic. Until then this returns the
+ * bare (unmonetized) Booking.com link, which still helps the reader.
+ *
+ * Same CJ deep-link pattern as ticketNetworkUrl()/vrboUrl(): <click-base>?url=<encoded destination>.
+ */
 export function hotelUrl(city: string): string {
-  // Booking.com not currently on Awin US -- bare link until a hotel affiliate program (e.g. Stay22/Expedia) is set up.
-  return `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(city)}`;
+  const dest = `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(city)}`;
+  const clickBase = process.env.NEXT_PUBLIC_AFF_BOOKING_CJ;
+  if (clickBase && clickBase.trim()) {
+    return `${clickBase.trim()}?url=${encodeURIComponent(dest)}`;
+  }
+  return dest;
 }
 
 // ─────────────────────────────────────────────────────────────────────────────

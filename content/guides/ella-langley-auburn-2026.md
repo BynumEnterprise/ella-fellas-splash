@@ -3,11 +3,11 @@ title: "Ella Langley Auburn 2026: Two Hometown-State Nights with ERNEST"
 slug: "ella-langley-auburn-2026"
 category: "tour-guide"
 publishedAt: "2026-07-15"
-updatedAt: "2026-07-15"
+updatedAt: "2026-07-16"
 excerpt: "Ella Langley plays Neville Arena (Auburn) on Friday-Saturday, August 28-29, 2026 on the Dandelion Tour fall extension. Times, support, tickets, and how to plan it."
 faq:
   - q: "What time does Ella Langley go on in Auburn?"
-    a: "Times are not posted yet; Dandelion Tour arena stops have mostly listed 7:00 PM starts. Support for both nights is confirmed: ERNEST and Gabriella Rose."
+    a: "Neville Arena lists doors at 6:30 PM and the show at 7:30 PM for both nights. Support is confirmed for both: ERNEST and Gabriella Rose."
   - q: "Where is the Ella Langley Auburn concert?"
     a: "At Neville Arena, Auburn, AL, on Friday-Saturday, August 28-29, 2026."
   - q: "How do I get tickets for Ella Langley in Auburn?"
@@ -16,7 +16,7 @@ faq:
 
 This one's personal. Ella grew up in Hope Hull, Alabama and famously dropped out of Auburn University to chase Nashville -- and on **August 28-29, 2026** she comes back to play TWO nights at Neville Arena, on campus, with **ERNEST and Gabriella Rose** confirmed as support for both shows.
 
-Expect these to be the emotional peak of the fall leg -- Alabama crowds treat Ella as their own, and a two-night on-campus stand at the school she left is the kind of full-circle moment artists talk about from the stage. On Gabriella Rose nights Ella has been bringing her out to duet "Butterfly Season", so the setlist should get the special treatment too. Times aren't posted yet; arena stops on this tour have mostly listed 7:00 PM starts.
+Expect these to be the emotional peak of the fall leg -- Alabama crowds treat Ella as their own, and a two-night on-campus stand at the school she left is the kind of full-circle moment artists talk about from the stage. On Gabriella Rose nights Ella has been bringing her out to duet "Butterfly Season", so the setlist should get the special treatment too. Neville Arena lists doors at 6:30 PM and the show at 7:30 PM.
 
 ## Tickets
 

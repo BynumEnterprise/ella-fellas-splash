@@ -102,6 +102,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "daily" as const,
       priority: 0.9,
     }));
+  const setlists = getAllTourDates().map((d) => ({
+    url: `${SITE_URL}/tour/${d.id}/setlist`,
+    lastModified: new Date(),
+    changeFrequency: "daily" as const,
+    priority: 0.8,
+  }));
   const openers = OPENERS.map((o) => ({
     url: `${SITE_URL}/openers/${o.slug}`,
     lastModified: new Date(),
@@ -109,5 +115,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticUrls, ...shopCategories, ...products, ...looks, ...tour, ...setTimes, ...openers, ...songs, ...comps, ...news, ...guides];
+  return [...staticUrls, ...shopCategories, ...products, ...looks, ...tour, ...setTimes, ...setlists, ...openers, ...songs, ...comps, ...news, ...guides];
 }

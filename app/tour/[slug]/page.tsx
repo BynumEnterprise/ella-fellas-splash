@@ -145,7 +145,13 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
           >
             What time does she actually go on in {d.city}? &rarr;
           </Link>{" "}
-          Doors, listed start and the full running order for this show.
+          Doors, listed start and the full running order for this show.{" "}
+          <Link
+            href={`/tour/${d.id}/setlist`}
+            className="font-semibold text-denim underline decoration-primary/60 underline-offset-4 hover:text-primary"
+          >
+            Setlist &rarr;
+          </Link>
         </p>
 
         <VenueSeating d={d} />

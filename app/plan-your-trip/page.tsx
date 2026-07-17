@@ -106,6 +106,7 @@ export default function PlanYourTripHubPage() {
           <div className="grid md:grid-cols-2 gap-3">
             {upcoming.map((d) => {
               const where = `${d.city}, ${d.state}`;
+              const stay = { venue: d.venue, date: d.date };
               const directions = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(
                 [d.venue, d.venueAddress, where].filter(Boolean).join(", "),
               )}`;
@@ -144,7 +145,7 @@ export default function PlanYourTripHubPage() {
                       </a>
                     )}
                     <AffiliateLink
-                      href={vrboUrl(where)}
+                      href={vrboUrl(where, stay)}
                       source="vrbo"
                       ariaLabel={`Find a vacation rental in ${d.city}`}
                       className={chip}
@@ -152,7 +153,7 @@ export default function PlanYourTripHubPage() {
                       <Home className="w-4 h-4" /> Vacation rentals
                     </AffiliateLink>
                     <AffiliateLink
-                      href={hotelsComUrl(where)}
+                      href={hotelsComUrl(where, stay)}
                       source="hotels-com"
                       ariaLabel={`Search hotels in ${d.city} on Hotels.com`}
                       className={chip}

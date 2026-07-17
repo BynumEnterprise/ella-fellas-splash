@@ -13,6 +13,7 @@ const maps = (q: string) => `https://www.google.com/maps/search/?api=1&query=${e
  */
 export function NearbyPicks({ d, want }: { d: TourDate; want: { stay?: boolean; food?: boolean } }) {
   const near = `${d.venue}, ${d.city}, ${d.state}`;
+  const stay = { venue: d.venue, date: d.date };
   const chip =
     "inline-flex items-center gap-1.5 px-3 py-2 text-sm bg-paper border border-ink/20 rounded-full text-denim hover:bg-ink/10";
 
@@ -53,7 +54,7 @@ export function NearbyPicks({ d, want }: { d: TourDate; want: { stay?: boolean; 
           </p>
           <div className="flex flex-wrap gap-2">
             <AffiliateLink
-              href={vrboUrl(`${d.city}, ${d.state}`)}
+              href={vrboUrl(`${d.city}, ${d.state}`, stay)}
               source="vrbo"
               ariaLabel={`Find a vacation rental in ${d.city} on Vrbo`}
               className="inline-flex items-center gap-2 px-4 py-2.5 bg-denim text-paper font-display tracking-wide rounded-md hover:bg-denim/90"
@@ -61,14 +62,14 @@ export function NearbyPicks({ d, want }: { d: TourDate; want: { stay?: boolean; 
               <House className="w-4 h-4" aria-hidden="true" /> VACATION RENTALS
             </AffiliateLink>
             <AffiliateLink
-              href={hotelsComUrl(`${d.city}, ${d.state}`)}
+              href={hotelsComUrl(`${d.city}, ${d.state}`, stay)}
               source="hotels-com"
               ariaLabel={`Search hotels in ${d.city} on Hotels.com`}
               className={chip}
             >
               <Hotel className="w-4 h-4" aria-hidden="true" /> Hotels.com
             </AffiliateLink>
-            <AffiliateLink href={hotelUrl(`${d.city}, ${d.state}`, d.id)} source="expedia" className={chip}>
+            <AffiliateLink href={hotelUrl(`${d.city}, ${d.state}`, d.id, stay)} source="expedia" className={chip}>
               <Hotel className="w-4 h-4" aria-hidden="true" /> Expedia
             </AffiliateLink>
             <a href={maps(`hotels near ${near}`)} target="_blank" rel="noopener noreferrer" className={chip}>

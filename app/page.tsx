@@ -172,6 +172,26 @@ export default function HomePage() {
           <SpotifyEmbed id="2PyJAiQjp1OPkow2FJZKHR" />
         </section>
 
+        {/* UPCOMING TOUR DATES */}
+        {upcomingTours.length > 1 && (
+          <section className="mb-14">
+            <div className="flex items-baseline justify-between mb-5">
+              <h2 className="font-display text-3xl md:text-4xl text-denim tracking-wider inline-flex items-center gap-3">
+                <Ticket className="w-7 h-7 text-primary" />
+                UPCOMING TOUR DATES
+              </h2>
+              <Link href="/tour" className="text-sm text-primary hover:underline">
+                Full tour &rarr;
+              </Link>
+            </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {upcomingTours.slice(1, 7).map((show) => (
+                <TourCard key={show.id} d={show} />
+              ))}
+            </div>
+          </section>
+        )}
+
         {/* DANDELION SHOWCASE — now with backdrop imagery on each card */}
         {dandelionPicks.length > 0 && (
           <section className="mb-14">
@@ -283,26 +303,6 @@ export default function HomePage() {
                     </span>
                   </div>
                 </Link>
-              ))}
-            </div>
-          </section>
-        )}
-
-        {/* UPCOMING TOUR DATES */}
-        {upcomingTours.length > 1 && (
-          <section className="mb-14">
-            <div className="flex items-baseline justify-between mb-5">
-              <h2 className="font-display text-3xl md:text-4xl text-denim tracking-wider inline-flex items-center gap-3">
-                <Ticket className="w-7 h-7 text-primary" />
-                UPCOMING TOUR DATES
-              </h2>
-              <Link href="/tour" className="text-sm text-primary hover:underline">
-                Full tour &rarr;
-              </Link>
-            </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {upcomingTours.slice(1, 7).map((show) => (
-                <TourCard key={show.id} d={show} />
               ))}
             </div>
           </section>

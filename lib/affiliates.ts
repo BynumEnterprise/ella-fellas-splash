@@ -49,8 +49,10 @@ const EXPEDIA_CREATIVEREF = "1100l68075";
  * @param adref optional per-page reference (we pass the show id / city) so the
  *              Travel Creator reports show WHICH show earned the booking.
  */
-export function hotelUrl(city: string, adref?: string): string {
-  const dest = `https://www.expedia.com/Hotel-Search?destination=${encodeURIComponent(city)}`;
+export function hotelUrl(city: string, adref?: string, opts?: StayOpts): string {
+  const dest =
+    `https://www.expedia.com/Hotel-Search?destination=${encodeURIComponent(stayDestination(city, opts?.venue))}` +
+    stayDates(opts?.date);
   const camref = (process.env.NEXT_PUBLIC_AFF_EXPEDIA_CAMREF ?? EXPEDIA_CAMREF).trim() || EXPEDIA_CAMREF;
 
   // Restricted to url-safe chars so a stray character can't corrupt the query.
@@ -121,13 +123,37 @@ export function ticketNetworkUrl(showId?: string): string {
 // PlanYourTrip component hides any option whose getter returns null.
 // ─────────────────────────────────────────────────────────────────────────────
 
+/** Options shared by the stay/travel link builders. */
+export interface StayOpts {
+  /** Venue name — centers the search on the stadium/venue, not the city center. */
+  venue?: string;
+  /** Show date (YYYY-MM-DD) — pre-fills check-in = show night, check-out = next day. */
+  date?: string;
+}
+
+/** "Venue, City, ST" when we know the venue (Expedia-family sites geocode
+ *  landmarks and sort results by distance from them), else just "City, ST". */
+function stayDestination(city: string, venue?: string): string {
+  return venue && venue.trim() ? `${venue}, ${city}` : city;
+}
+
+/** `&startDate=<show night>&endDate=<morning after>` (empty if no/invalid date). */
+function stayDates(date?: string): string {
+  if (!date || !/^\d{4}-\d{2}-\d{2}$/.test(date)) return "";
+  const d = new Date(`${date}T12:00:00Z`);
+  d.setUTCDate(d.getUTCDate() + 1);
+  return `&startDate=${date}&endDate=${d.toISOString().slice(0, 10)}`;
+}
+
 // Vrbo via CJ (vacation rentals, ~2%). Hardcoded base click URL — we have this
 // program live. Deep-links to a Vrbo city search by URL-encoding the destination.
 const VRBO_CLICK = "https://www.kqzyfj.com/click-101760569-10697641";
 
-/** Affiliate deep link to Vrbo vacation-rental results for a given city. */
-export function vrboUrl(city: string): string {
-  const dest = `https://www.vrbo.com/search?destination=${encodeURIComponent(city)}`;
+/** Affiliate deep link to Vrbo vacation-rental results near the show. */
+export function vrboUrl(city: string, opts?: StayOpts): string {
+  const dest =
+    `https://www.vrbo.com/search?destination=${encodeURIComponent(stayDestination(city, opts?.venue))}` +
+    `${stayDates(opts?.date)}&adults=2`;
   return `${VRBO_CLICK}?url=${encodeURIComponent(dest)}`;
 }
 
@@ -179,12 +205,14 @@ const HOTELSCOM_CLICK = "https://www.jdoqocy.com/click-101760569-15734399";
 // EconomyBookings.com" (link id 15736982, deep-linking enabled). Sale: 55%.
 const ECONOMYBOOKINGS_CLICK = "https://www.tkqlhce.com/click-101760569-15736982";
 
-/** Affiliate deep link to Hotels.com search results for a given city. */
-export function hotelsComUrl(city: string): string {
+/** Affiliate deep link to Hotels.com results near the show (venue-centered, show dates). */
+export function hotelsComUrl(city: string, opts?: StayOpts): string {
   const override = envLink(process.env.NEXT_PUBLIC_AFF_HOTELSCOM);
   const base = override ?? HOTELSCOM_CLICK;
   if (!base.includes("/click-")) return base;
-  const dest = `https://www.hotels.com/Hotel-Search?destination=${encodeURIComponent(city)}`;
+  const dest =
+    `https://www.hotels.com/Hotel-Search?destination=${encodeURIComponent(stayDestination(city, opts?.venue))}` +
+    stayDates(opts?.date);
   return `${base}?url=${encodeURIComponent(dest)}`;
 }
 

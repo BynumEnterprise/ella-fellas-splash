@@ -55,7 +55,7 @@ const chip =
  * stay. Free Google Maps features show on every page; affiliate stay/flight
  * options layer in as each NEXT_PUBLIC_AFF_* env link is populated.
  */
-export function PlanYourTrip({ city, cityState, venue, venueAddress }: Props) {
+export function PlanYourTrip({ city, cityState, venue, venueAddress, date }: Props) {
   const where = cityState ?? city;
   const dest = where;
   const mapQuery = [venue, venueAddress, where].filter(Boolean).join(", ");
@@ -79,7 +79,8 @@ export function PlanYourTrip({ city, cityState, venue, venueAddress }: Props) {
   ].filter((b) => b.href) as { label: string; href: string }[];
 
   const flights = cheapOairUrl();
-  const hotelsCom = hotelsComUrl(dest);
+  const stay = { venue, date };
+  const hotelsCom = hotelsComUrl(dest, stay);
   const rentalCar = economyBookingsUrl();
   const experiencesHref = viatorUrl() ?? getYourGuideUrl();
 
@@ -187,7 +188,7 @@ export function PlanYourTrip({ city, cityState, venue, venueAddress }: Props) {
       <h3 className="font-display text-lg text-denim mb-2">Where to stay</h3>
       <div className="flex flex-wrap gap-2">
         <AffiliateLink
-          href={vrboUrl(dest)}
+          href={vrboUrl(dest, stay)}
           source="vrbo"
           ariaLabel={`Find a vacation rental in ${city} on Vrbo`}
           className={primaryBtn}
@@ -214,7 +215,7 @@ export function PlanYourTrip({ city, cityState, venue, venueAddress }: Props) {
             <Hotel className="w-4 h-4" /> HOTELS.COM
           </AffiliateLink>
         )}
-        <AffiliateLink href={hotelUrl(dest, city)} source="expedia" className={secondaryBtn}>
+        <AffiliateLink href={hotelUrl(dest, city, stay)} source="expedia" className={secondaryBtn}>
           <Hotel className="w-4 h-4" /> HOTELS NEARBY
         </AffiliateLink>
       </div>

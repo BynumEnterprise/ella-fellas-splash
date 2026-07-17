@@ -3,13 +3,15 @@ title: "Morgan Wallen Baltimore Openers & Set Times 2026: Both Nights"
 slug: "morgan-wallen-baltimore-2026-set-times-lineup"
 category: "tour-guide"
 publishedAt: "2026-06-16"
-updatedAt: "2026-07-15"
+updatedAt: "2026-07-17"
 excerpt: "Morgan Wallen plays TWO nights at M&T Bank Stadium (July 17-18, 2026). Which night has Ella Langley, which has Brooks & Dunn, gates, set times, and tickets."
 faq:
   - q: "Who is opening for Morgan Wallen in Baltimore 2026?"
     a: "It depends on the night. Friday, July 17 has Brooks & Dunn, Gavin Adcock, and Jason Scott & The High Heat. Saturday, July 18 has Ella Langley as direct support, plus Gavin Adcock and Jason Scott & The High Heat."
   - q: "Which night is Ella Langley playing in Baltimore?"
     a: "Saturday, July 18. Brooks & Dunn play the Friday, July 17 show. Gavin Adcock and Jason Scott & The High Heat play both nights."
+  - q: "What time does Ella Langley go on in Baltimore?"
+    a: "Ella plays direct support on Saturday, July 18 -- she is the act immediately before Morgan Wallen, going on after dark. The show is listed at 4:30 PM, but that is when the first opener plays, not Ella. On this tour the direct-support slot has run roughly 90 minutes before the headliner. M&T Bank Stadium posts the night-of running order on the day."
   - q: "What time does the Morgan Wallen Baltimore show start?"
     a: "Both nights are listed at 4:30 PM on the venue's official ticketing links, with openers running in sequence from the show start and Wallen headlining after dark. The stadium posts the night-of running order closer to showtime."
   - q: "Where is the Morgan Wallen Baltimore 2026 concert?"
@@ -38,6 +40,12 @@ The Ravens' own event page confirms the full bill -- Brooks & Dunn, Ella Langley
 Stadium shows on this tour have run openers in sequence from the listed start, with Wallen going on well after sunset. We are not going to invent exact slot times -- M&T Bank Stadium posts the running order night-of. What history on this tour says: get inside by the listed start if you want the full Ella set. At Chicago and Clemson, the direct-support slot ran roughly 90 minutes before the headliner.
 
 If Wallen is how you found Ella, start with [Who Is Ella Langley?](/guides/who-is-ella-langley), then see every Ella-on-Wallen date this summer on the hub: [Ella Langley on Morgan Wallen's 2026 Stadium Tour](/guides/ella-langley-morgan-wallen-2026-tour). Set times for every city are on the [Morgan Wallen 2026 set times hub](/guides/morgan-wallen-2026-set-times-openers-by-city).
+
+## What Time Does Ella Langley Go On in Baltimore?
+
+**She is on right before Morgan Wallen, after dark, on Saturday, July 18.** Direct support is the last slot before the headliner, so the 4:30 PM listed start is the first opener -- not her. On this tour that slot has landed roughly 90 minutes ahead of Wallen. The stadium posts the exact running order night-of; we are not going to invent a number.
+
+If you are here for Ella specifically, her own headline shows run completely differently -- 7:00 PM start, on around 9:00 PM. All of it is broken out by city on [what time Ella Langley goes on stage in 2026](/guides/ella-langley-2026-set-times-by-city).
 
 ## Concert essentials (NFL stadium rules apply)
 

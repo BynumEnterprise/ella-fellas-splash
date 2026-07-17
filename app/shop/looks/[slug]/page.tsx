@@ -16,6 +16,9 @@ const WESTERN_LOOKS = new Set([
   "going-out-western",
   "arena-night",
   "honky-tonk-night",
+  "cowgirl-arena-night",
+  "fringe-and-boots",
+  "western-night-out-him",
 ]);
 
 export function generateStaticParams() {

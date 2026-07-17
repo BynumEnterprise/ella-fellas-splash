@@ -207,6 +207,108 @@ export const LOOKS: Look[] = [
       "wfw-inogih-fedora-hat",
     ],
   },
+  // ============================================================
+  // === EXPANSION 2026-07 — head-to-toe bundles built from the new verified pieces
+  // ============================================================
+  {
+    slug: "cowgirl-arena-night",
+    title: "Cowgirl Arena Night",
+    tagline: "Boots, bootcut, and real tooled leather",
+    occasion: "Arena · evening",
+    vibe:
+      "The indoor headline rooms, where you want the fit to read western without looking like a costume. Full-grain boots, a true bootcut that clears the shaft, a snap shirt, and the tooled belt that pulls the whole thing together.",
+    productSlugs: [
+      "wfw-ariat-round-up-boot",
+      "wfw-wrangler-bailey-bootcut",
+      "wfw-wrangler-snap-work-shirt",
+      "wfw-ariat-concho-belt",
+      "wfw-fluffy-sense-cowboy-hat",
+      "wfw-rustic-couture-earrings",
+      "wfw-montana-west-crossbody",
+    ],
+  },
+  {
+    slug: "fringe-and-boots",
+    title: "Fringe & Boots",
+    tagline: "Fringe that moves when you do",
+    occasion: "Festival · going out",
+    vibe:
+      "For the night you want the outfit to do some of the work. Fringe on the romper, fringe on the jacket, a studded hat, and a clear bag so the gate takes thirty seconds instead of an argument.",
+    productSlugs: [
+      "wfw-evelust-fringe-dress",
+      "wfw-wellatent-fringe-jacket",
+      "wfw-soda-choya-bootie",
+      "wfw-eohak-studded-hat",
+      "wfw-wrangler-heart-earrings",
+      "wfw-ketiee-clear-bag",
+    ],
+  },
+  {
+    slug: "cutoffs-and-cowboy-boots",
+    title: "Cutoffs & Cowboy Boots",
+    tagline: "The formula nobody has improved on",
+    occasion: "Outdoor · daytime",
+    vibe:
+      "Cutoff 501s and boots is fifty years old and still right. Add a snap shirt you can open over a tank, a cheap hat you will not guard all night, and shades you can afford to lose in a crowd.",
+    productSlugs: [
+      "wfw-levis-501-shorts",
+      "wfw-wrangler-snap-work-shirt",
+      "wfw-soda-choya-bootie",
+      "wfw-eohak-studded-hat",
+      "ec-polarspex-polarized-sunglasses",
+      "wfw-ketiee-clear-bag",
+      "wfw-wrangler-boot-socks",
+    ],
+  },
+  {
+    slug: "western-night-out-him",
+    title: "Western Night Out",
+    tagline: "Pearl snaps, felt hat, trophy buckle",
+    occasion: "Arena · evening",
+    vibe:
+      "When the show is the reason you got dressed. Cowhide boots, a bootcut that sits over the shaft, a tone-on-tone snap shirt, and a Montana Silversmiths buckle doing the talking.",
+    productSlugs: [
+      "ww-justin-copper-kettle",
+      "ww-ariat-m4-boundary",
+      "ww-ely-pearl-snap",
+      "ww-ariat-boss-felt-hat",
+      "ww-buckle-six-shooter",
+      "ww-ariat-tek-socks",
+    ],
+  },
+  {
+    slug: "daytime-festival-him",
+    title: "Daytime Festival Fit",
+    tagline: "Straw hat, shade, and air",
+    occasion: "Outdoor festival · daytime",
+    vibe:
+      "Noon to headliner in July. Straw breathes, the K87 does not cling, the Durangos have an athletic shoe hiding inside them, and the shades cost little enough to lose.",
+    productSlugs: [
+      "ww-durango-rebel-frontier",
+      "ww-ariat-m4-boundary",
+      "ww-carhartt-k87-tee",
+      "ww-justin-20x-straw",
+      "ww-knockaround-classics",
+      "ww-masop-western-buckle",
+      "ww-wrangler-ultra-dri-boot-socks",
+    ],
+  },
+  {
+    slug: "sundown-layers-him",
+    title: "Sundown Layers",
+    tagline: "Hot at seven, cold by ten",
+    occasion: "Amphitheater · evening",
+    vibe:
+      "The outdoor-show problem nobody plans for. A midweight flannel with stretch, a sherpa vest over it that leaves your arms free, and over-the-calf socks that will not slide down inside a boot.",
+    productSlugs: [
+      "ww-carhartt-flex-flannel",
+      "ww-wrangler-sherpa-vest",
+      "ww-ariat-m4-boundary",
+      "ww-durango-rebel-frontier",
+      "ww-ariat-boss-felt-hat",
+      "ww-dan-post-otc-socks-4pk",
+    ],
+  },
 ];
 
 export function getAllLooks(): Look[] {

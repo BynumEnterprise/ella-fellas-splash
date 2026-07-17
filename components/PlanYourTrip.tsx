@@ -225,7 +225,7 @@ export function PlanYourTrip({ city, cityState, venue, venueAddress, date }: Pro
       </p>
       {loyalty.length > 0 && (
         <p className="text-xs text-ink/50 mt-2">
-          Hotel rewards member?{" "}
+          Topping up loyalty points for the trip?{" "}
           {loyalty.map((l, i) => (
             <span key={l.label}>
               {i > 0 && <span className="mx-1">·</span>}

@@ -50,8 +50,9 @@ function merchantForUrl(url: string, host: string, network: string): string {
   // Expedia's affiliate links wrap the real destination in ?landingPage=
   if (network === "expedia") return "expedia.com";
   if (network === "amazon") return "amazon.com";
-  // Impact links are <brand>.pxf.io / <brand>.sjv.io — the subdomain IS the brand.
-  if (network === "impact") return host;
+  // Impact links are <brand>.<vanity> — the subdomain IS the brand, so report
+  // "ihg" / "hilton" / "marriott" / "choice" rather than an opaque redirect host.
+  if (network === "impact") return host.split(".")[0] || host;
   return host.replace(/^www\./, "");
 }
 
@@ -61,12 +62,17 @@ function amazonAsin(url: string): string | null {
   return m ? m[1].toUpperCase() : null;
 }
 
+// Impact gives every brand its own vanity domain, so there is no single Impact
+// hostname to match. ADD A SUFFIX HERE whenever a new Impact brand is wired, or
+// its clicks silently fire no event. (hmxg=IHG, ijrn=Hilton, mtko=Choice.)
+const IMPACT_SUFFIXES = [".pxf.io", ".sjv.io", ".hmxg.net", ".ijrn.net", ".mtko.net"];
+
 function networkForHost(host: string): string | null {
   host = host.toLowerCase();
   for (const d in NETWORK_BY_DOMAIN) {
     if (host === d || host.endsWith("." + d)) return NETWORK_BY_DOMAIN[d];
   }
-  if (host.endsWith(".pxf.io") || host.endsWith(".sjv.io")) return "impact";
+  if (IMPACT_SUFFIXES.some((d) => host.endsWith(d))) return "impact";
   return null;
 }
 

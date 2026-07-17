@@ -175,11 +175,29 @@ function envLink(value: string | undefined): string | null {
   return value && value.trim() ? value : null;
 }
 
-// Hotel-loyalty points programs (NOT room booking — minor footnote only).
-export const ihgUrl = (): string | null => envLink(process.env.NEXT_PUBLIC_AFF_IHG);
-export const hiltonUrl = (): string | null => envLink(process.env.NEXT_PUBLIC_AFF_HILTON);
-export const marriottUrl = (): string | null => envLink(process.env.NEXT_PUBLIC_AFF_MARRIOTT);
-export const choiceUrl = (): string | null => envLink(process.env.NEXT_PUBLIC_AFF_CHOICE);
+// ─────────────────────────────────────────────────────────────────────────────
+// Hotel-loyalty programs via Impact — links created in the user's Impact account
+// 2026-07-17 and read verbatim off the Create-a-link panel. Each redirect was
+// verified live to land on the brand's real points storefront carrying a
+// `clickid` (i.e. attribution works).
+//
+// IMPORTANT — these are POINTS.COM "buy points" programs, NOT room booking.
+// A fan looking for a room near the venue wants Hotels.com/Expedia/Vrbo above;
+// these earn only when someone BUYS LOYALTY POINTS. That's why they stay a
+// one-line footnote and never compete with the real "where to stay" CTAs.
+// Each Impact brand has its own vanity domain (hmxg/ijrn/pxf/mtko) — any new one
+// must also be added to AffiliateClickTracker or its clicks fire no GA event.
+// ─────────────────────────────────────────────────────────────────────────────
+const IHG_IMPACT = "https://ihg.hmxg.net/jRD4Y6";
+const HILTON_IMPACT = "https://hilton.ijrn.net/enJ2YX";
+const MARRIOTT_IMPACT = "https://marriott.pxf.io/QYzX7M";
+const CHOICE_IMPACT = "https://choice.mtko.net/PzYg7X";
+
+export const ihgUrl = (): string => envLink(process.env.NEXT_PUBLIC_AFF_IHG) ?? IHG_IMPACT;
+export const hiltonUrl = (): string => envLink(process.env.NEXT_PUBLIC_AFF_HILTON) ?? HILTON_IMPACT;
+export const marriottUrl = (): string =>
+  envLink(process.env.NEXT_PUBLIC_AFF_MARRIOTT) ?? MARRIOTT_IMPACT;
+export const choiceUrl = (): string => envLink(process.env.NEXT_PUBLIC_AFF_CHOICE) ?? CHOICE_IMPACT;
 
 // Hotel / flight booking partners (room nights & airfare).
 export const pricelineUrl = (): string | null => envLink(process.env.NEXT_PUBLIC_AFF_PRICELINE);

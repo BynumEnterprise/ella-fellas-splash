@@ -7,15 +7,23 @@ import {
   Navigation,
   Ticket,
   Utensils,
+  Hotel,
+  Car,
 } from "lucide-react";
 import { getAllTourDates } from "@/lib/data";
 import { AffiliateLink } from "@/components/AffiliateLink";
-import { vrboUrl, viatorUrl, getYourGuideUrl } from "@/lib/affiliates";
+import {
+  vrboUrl,
+  viatorUrl,
+  getYourGuideUrl,
+  hotelsComUrl,
+  economyBookingsUrl,
+} from "@/lib/affiliates";
 
 export const metadata: Metadata = {
   title: "Plan Your Trip to an Ella Langley Show (2026)",
   description:
-    "Plan your Ella Langley concert trip: an interactive map for every venue, where to eat and drink nearby, things to do in each tour city, and where to stay — for every 2026 show.",
+    "Plan your Ella Langley concert trip: an interactive map for every venue, where to eat and drink nearby, things to do in each tour city, hotels and rental cars, and where to stay — for every 2026 show.",
   alternates: { canonical: "/plan-your-trip" },
   openGraph: { url: "/plan-your-trip" },
 };
@@ -54,7 +62,8 @@ export default function PlanYourTripHubPage() {
           Going to an Ella Langley show in 2026? Here is everything you need to turn one
           night into a great trip — an interactive map for every venue, where to eat and
           drink nearby, things to do in each city, and where to stay so you are not
-          fighting post-show traffic. Pick your show below to open its full planner.
+          fighting post-show traffic — plus hotels and a rental car for the cities you have to
+          fly into. Pick your show below to open its full planner.
         </p>
       </header>
 
@@ -77,7 +86,8 @@ export default function PlanYourTripHubPage() {
           <Home className="w-6 h-6 text-denim mb-2" />
           <h2 className="font-display text-lg text-denim">Where to stay</h2>
           <p className="text-sm text-ink/70 mt-1">
-            Vacation rentals and hotels close to the venue, so the night ends easy.
+            Vacation rentals and hotels close to the venue — plus a rental car so the
+            night ends easy.
           </p>
         </div>
       </section>
@@ -136,10 +146,26 @@ export default function PlanYourTripHubPage() {
                     <AffiliateLink
                       href={vrboUrl(where)}
                       source="vrbo"
-                      ariaLabel={`Find a place to stay in ${d.city}`}
+                      ariaLabel={`Find a vacation rental in ${d.city}`}
                       className={chip}
                     >
-                      <Home className="w-4 h-4" /> Where to stay
+                      <Home className="w-4 h-4" /> Vacation rentals
+                    </AffiliateLink>
+                    <AffiliateLink
+                      href={hotelsComUrl(where)}
+                      source="hotels-com"
+                      ariaLabel={`Search hotels in ${d.city} on Hotels.com`}
+                      className={chip}
+                    >
+                      <Hotel className="w-4 h-4" /> Hotels
+                    </AffiliateLink>
+                    <AffiliateLink
+                      href={economyBookingsUrl()}
+                      source="economybookings"
+                      ariaLabel={`Compare rental cars for ${d.city}`}
+                      className={chip}
+                    >
+                      <Car className="w-4 h-4" /> Rental car
                     </AffiliateLink>
                     <a
                       href={directions}

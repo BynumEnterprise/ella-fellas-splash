@@ -165,35 +165,40 @@ export const viatorUrl = (): string | null => envLink(process.env.NEXT_PUBLIC_AF
 export const getYourGuideUrl = (): string | null => envLink(process.env.NEXT_PUBLIC_AFF_GETYOURGUIDE);
 
 // ─────────────────────────────────────────────────────────────────────────────
-// CJ programs approved 2026-07 — Hotels.com (travel/hotels) + EconomyBookings
-// (rental cars). Both are CJ, so clicks already track as network "cj" via
-// components/AffiliateClickTracker.tsx (kqzyfj.com / anrdoezrs.net are mapped).
-//
-// TO ACTIVATE: set the CJ click URL for each in Vercel env, then redeploy:
-//   NEXT_PUBLIC_AFF_HOTELSCOM         = https://www.kqzyfj.com/click-101760569-<linkId>
-//   NEXT_PUBLIC_AFF_ECONOMYBOOKINGS   = https://www.kqzyfj.com/click-101760569-<linkId>
-// (Grab each from CJ → Links → the advertiser → copy the click URL. The link id
-// is program-specific and must come from CJ — never invent one, or the click
-// tracks to nothing and the sale is lost.)
+// CJ programs approved 2026-07 — Hotels.com (hotels/travel) + EconomyBookings
+// (rental cars). Both click URLs below were copied verbatim from CJ's Get Code
+// panel for website "Ella Fellas (ellafellas.com) - 101760569". Never invent a
+// CJ link id: a wrong id tracks to nothing and the commission is lost.
 // ─────────────────────────────────────────────────────────────────────────────
 
-/**
- * Hotels.com via CJ. Deep-links to a Hotels.com city search when the env value
- * is a CJ click URL; falls back to using the raw link as-is otherwise.
- * Returns null until the program link is set (the UI then hides the option).
- */
-export function hotelsComUrl(city: string): string | null {
-  const base = envLink(process.env.NEXT_PUBLIC_AFF_HOTELSCOM);
-  if (!base) return null;
+// Hotels.com via CJ — advertiser 1702763, "Evergreen Link for Hotels.com"
+// (link id 15734399, deep-linking enabled). Evergreen = does not expire.
+const HOTELSCOM_CLICK = "https://www.jdoqocy.com/click-101760569-15734399";
+
+// EconomyBookings.com via CJ — advertiser 6385999, "Evergreen Link for
+// EconomyBookings.com" (link id 15736982, deep-linking enabled). Sale: 55%.
+const ECONOMYBOOKINGS_CLICK = "https://www.tkqlhce.com/click-101760569-15736982";
+
+/** Affiliate deep link to Hotels.com search results for a given city. */
+export function hotelsComUrl(city: string): string {
+  const override = envLink(process.env.NEXT_PUBLIC_AFF_HOTELSCOM);
+  const base = override ?? HOTELSCOM_CLICK;
   if (!base.includes("/click-")) return base;
   const dest = `https://www.hotels.com/Hotel-Search?destination=${encodeURIComponent(city)}`;
   return `${base}?url=${encodeURIComponent(dest)}`;
 }
 
 /**
- * EconomyBookings via CJ (rental cars). EconomyBookings has no reliable public
- * city-search URL pattern, so we send tracked traffic to their landing page
- * rather than guessing a deep link. Returns null until the link is set.
+ * Affiliate link to EconomyBookings (rental cars) via CJ.
+ *
+ * NOTE: verified 2026-07-17 in a real browser — EconomyBookings has NO public
+ * per-city URL pattern. /car-rental/<city>/ silently 302s to /car-rental/all
+ * for EVERY slug (real cities included), and their location index only links
+ * continents, not cities. So we deliberately do NOT guess a city deep link
+ * (that is exactly the dead-URL mistake that got us rejected elsewhere); we
+ * send tracked traffic to their landing page, where the pick-up-location search
+ * box is the first thing on the screen.
  */
-export const economyBookingsUrl = (): string | null =>
-  envLink(process.env.NEXT_PUBLIC_AFF_ECONOMYBOOKINGS);
+export function economyBookingsUrl(): string {
+  return envLink(process.env.NEXT_PUBLIC_AFF_ECONOMYBOOKINGS) ?? ECONOMYBOOKINGS_CLICK;
+}

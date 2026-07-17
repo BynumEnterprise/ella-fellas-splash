@@ -1,7 +1,7 @@
-import { Utensils, Coffee, Beer, Hotel, House, MapPin } from "lucide-react";
+import { Utensils, Coffee, Beer, Hotel, House, MapPin, Car } from "lucide-react";
 import type { TourDate } from "@/lib/types";
 import { AffiliateLink } from "@/components/AffiliateLink";
-import { vrboUrl, hotelUrl } from "@/lib/affiliates";
+import { vrboUrl, hotelUrl, hotelsComUrl, economyBookingsUrl } from "@/lib/affiliates";
 
 const maps = (q: string) => `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`;
 
@@ -60,13 +60,34 @@ export function NearbyPicks({ d, want }: { d: TourDate; want: { stay?: boolean; 
             >
               <House className="w-4 h-4" aria-hidden="true" /> VACATION RENTALS
             </AffiliateLink>
+            <AffiliateLink
+              href={hotelsComUrl(`${d.city}, ${d.state}`)}
+              source="hotels-com"
+              ariaLabel={`Search hotels in ${d.city} on Hotels.com`}
+              className={chip}
+            >
+              <Hotel className="w-4 h-4" aria-hidden="true" /> Hotels.com
+            </AffiliateLink>
             <AffiliateLink href={hotelUrl(`${d.city}, ${d.state}`, d.id)} source="expedia" className={chip}>
-              <Hotel className="w-4 h-4" aria-hidden="true" /> Hotels nearby
+              <Hotel className="w-4 h-4" aria-hidden="true" /> Expedia
             </AffiliateLink>
             <a href={maps(`hotels near ${near}`)} target="_blank" rel="noopener noreferrer" className={chip}>
               <MapPin className="w-4 h-4" aria-hidden="true" /> See them on the map
             </a>
           </div>
+
+          <p className="text-xs text-ink/60 mt-3 mb-2">
+            Driving in or flying? A rental car makes the venue-to-hotel run a lot easier
+            than a post-show rideshare surge.
+          </p>
+          <AffiliateLink
+            href={economyBookingsUrl()}
+            source="economybookings"
+            ariaLabel={`Compare rental cars for ${d.city}`}
+            className={chip}
+          >
+            <Car className="w-4 h-4" aria-hidden="true" /> Compare rental cars
+          </AffiliateLink>
         </div>
       )}
     </div>

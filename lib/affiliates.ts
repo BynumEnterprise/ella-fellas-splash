@@ -163,3 +163,37 @@ export const cheapOairUrl = (): string | null => envLink(process.env.NEXT_PUBLIC
 // Experiences.
 export const viatorUrl = (): string | null => envLink(process.env.NEXT_PUBLIC_AFF_VIATOR);
 export const getYourGuideUrl = (): string | null => envLink(process.env.NEXT_PUBLIC_AFF_GETYOURGUIDE);
+
+// ─────────────────────────────────────────────────────────────────────────────
+// CJ programs approved 2026-07 — Hotels.com (travel/hotels) + EconomyBookings
+// (rental cars). Both are CJ, so clicks already track as network "cj" via
+// components/AffiliateClickTracker.tsx (kqzyfj.com / anrdoezrs.net are mapped).
+//
+// TO ACTIVATE: set the CJ click URL for each in Vercel env, then redeploy:
+//   NEXT_PUBLIC_AFF_HOTELSCOM         = https://www.kqzyfj.com/click-101760569-<linkId>
+//   NEXT_PUBLIC_AFF_ECONOMYBOOKINGS   = https://www.kqzyfj.com/click-101760569-<linkId>
+// (Grab each from CJ → Links → the advertiser → copy the click URL. The link id
+// is program-specific and must come from CJ — never invent one, or the click
+// tracks to nothing and the sale is lost.)
+// ─────────────────────────────────────────────────────────────────────────────
+
+/**
+ * Hotels.com via CJ. Deep-links to a Hotels.com city search when the env value
+ * is a CJ click URL; falls back to using the raw link as-is otherwise.
+ * Returns null until the program link is set (the UI then hides the option).
+ */
+export function hotelsComUrl(city: string): string | null {
+  const base = envLink(process.env.NEXT_PUBLIC_AFF_HOTELSCOM);
+  if (!base) return null;
+  if (!base.includes("/click-")) return base;
+  const dest = `https://www.hotels.com/Hotel-Search?destination=${encodeURIComponent(city)}`;
+  return `${base}?url=${encodeURIComponent(dest)}`;
+}
+
+/**
+ * EconomyBookings via CJ (rental cars). EconomyBookings has no reliable public
+ * city-search URL pattern, so we send tracked traffic to their landing page
+ * rather than guessing a deep link. Returns null until the link is set.
+ */
+export const economyBookingsUrl = (): string | null =>
+  envLink(process.env.NEXT_PUBLIC_AFF_ECONOMYBOOKINGS);

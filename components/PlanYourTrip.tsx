@@ -4,6 +4,7 @@ import {
   Navigation,
   Home,
   Hotel,
+  Car,
   Plane,
   Utensils,
   Beer,
@@ -22,6 +23,8 @@ import {
   marriottUrl,
   choiceUrl,
   hotelUrl,
+  hotelsComUrl,
+  economyBookingsUrl,
 } from "@/lib/affiliates";
 
 interface Props {
@@ -76,6 +79,8 @@ export function PlanYourTrip({ city, cityState, venue, venueAddress }: Props) {
   ].filter((b) => b.href) as { label: string; href: string }[];
 
   const flights = cheapOairUrl();
+  const hotelsCom = hotelsComUrl(dest);
+  const rentalCar = economyBookingsUrl();
   const experiencesHref = viatorUrl() ?? getYourGuideUrl();
 
   const loyalty = [
@@ -199,6 +204,16 @@ export function PlanYourTrip({ city, cityState, venue, venueAddress }: Props) {
             <Hotel className="w-4 h-4" /> {b.label.toUpperCase()}
           </AffiliateLink>
         ))}
+        {hotelsCom && (
+          <AffiliateLink
+            href={hotelsCom}
+            source="hotels-com"
+            ariaLabel={`Find hotels in ${city} on Hotels.com`}
+            className={secondaryBtn}
+          >
+            <Hotel className="w-4 h-4" /> HOTELS.COM
+          </AffiliateLink>
+        )}
         <AffiliateLink href={hotelUrl(dest, city)} source="expedia" className={secondaryBtn}>
           <Hotel className="w-4 h-4" /> HOTELS NEARBY
         </AffiliateLink>
@@ -236,7 +251,18 @@ export function PlanYourTrip({ city, cityState, venue, venueAddress }: Props) {
             <Plane className="w-4 h-4" /> FIND FLIGHTS
           </AffiliateLink>
         )}
+        {rentalCar && (
+          <AffiliateLink href={rentalCar} source="economybookings" className={secondaryBtn}>
+            <Car className="w-4 h-4" /> RENTAL CAR
+          </AffiliateLink>
+        )}
       </div>
+      {rentalCar && (
+        <p className="text-xs text-ink/50 mt-2">
+          Flying in? A rental beats surge pricing both ways on a stadium night &mdash; and
+          it doubles as your bag storage between the tailgate and the gate.
+        </p>
+      )}
 
       <p className="text-xs italic text-ink/60 mt-5">
         Some links here are affiliate links — we may earn a commission at no extra cost

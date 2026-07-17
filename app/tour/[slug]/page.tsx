@@ -6,6 +6,7 @@ import { getAllTourDates, getTourDate } from "@/lib/data";
 import { AffiliateLink } from "@/components/AffiliateLink";
 import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
 import { PlanYourTrip } from "@/components/PlanYourTrip";
+import { VenueSeating } from "@/components/VenueSeating";
 import { MusicEventSchema } from "@/components/schema/MusicEventSchema";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 import { ticketNetworkUrl } from "@/lib/affiliates";
@@ -137,10 +138,11 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
         <p className="text-xs text-ink/50 mt-3">
           TicketNetwork lists seats for {d.tourType === "support" ? `${d.headliner ?? "this tour"}` : "Ella"}&apos;s shows with buyer-guaranteed resale &mdash; browse the full price range before you buy.
         </p>
+        <VenueSeating d={d} />
         <p className="text-sm text-ink/70 mt-3">
-          Not sure where to sit? Read our{" "}
+          Want the general logic behind these picks? Our{" "}
           <Link href="/guides/best-seats-ella-langley-concert" className="underline text-denim hover:text-primary">best seats for an Ella Langley concert</Link>{" "}
-          guide before you pick.
+          guide covers floor vs. bowl vs. lawn for every venue type.
         </p>
       </section>
       )}

@@ -11,6 +11,17 @@ import { NearbyPicks } from "@/components/NearbyPicks";
 import { AskBox } from "@/components/AskBox";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 
+
+/** Fire-and-forget GA event. Analytics must never break the UI. */
+function track(name: string, params: Record<string, unknown>) {
+  try {
+    const w = window as unknown as { gtag?: (...a: unknown[]) => void };
+    if (typeof window !== "undefined" && w.gtag) w.gtag("event", name, params);
+  } catch {
+    // ignore
+  }
+}
+
 /**
  * Ask in plain English -> a real show + what you asked for.
  *
@@ -58,6 +69,16 @@ export function PlanBuilder({
 
   function handleAsk(text: string) {
     const r = parseShowRequest(text, shows);
+    // THE most valuable signal on the site: the exact words fans use, plus
+    // whether we could answer. `plan_unresolved` is a live content-gap feed —
+    // every row is a real fan question we failed, in their own phrasing.
+    track(r.show ? "plan_ask_resolved" : "plan_unresolved", {
+      search_term: text.trim().slice(0, 100).toLowerCase(),
+      intents: r.intents.join(",") || "none",
+      confidence: r.confidence,
+      ...(r.show ? { item_id: r.show.id } : {}),
+      candidate_count: r.candidates.length,
+    });
     setAsked(true);
     setResolved(!!r.show);
     setUnderstood(r.understood);
@@ -183,7 +204,10 @@ export function PlanBuilder({
             setShowId(e.target.value);
             setCandidates([]);
             setUnderstood("");
-            if (e.target.value) setScrollWanted(true);
+            if (e.target.value) {
+              setScrollWanted(true);
+              track("plan_show_select", { item_id: e.target.value, method: "dropdown" });
+            }
           }}
           className="w-full px-4 py-3 border-2 border-denim/30 focus:border-primary outline-none rounded-md bg-paper text-ink"
         >
@@ -206,21 +230,21 @@ export function PlanBuilder({
             <div className="flex flex-wrap gap-2">
               <button
                 type="button"
-                onClick={() => setArrival("local")}
+                onClick={() => { setArrival("local"); track("plan_option_select", { option_type: "arrival", option_value: "local" }); }}
                 className={pill(arrival === "local")}
               >
                 I live here
               </button>
               <button
                 type="button"
-                onClick={() => setArrival("driving")}
+                onClick={() => { setArrival("driving"); track("plan_option_select", { option_type: "arrival", option_value: "driving" }); }}
                 className={pill(arrival === "driving")}
               >
                 Driving in &amp; back
               </button>
               <button
                 type="button"
-                onClick={() => setArrival("staying")}
+                onClick={() => { setArrival("staying"); track("plan_option_select", { option_type: "arrival", option_value: "staying" }); }}
                 className={pill(arrival === "staying")}
               >
                 Staying the night
@@ -234,21 +258,21 @@ export function PlanBuilder({
             <div className="flex flex-wrap gap-2">
               <button
                 type="button"
-                onClick={() => setParty("solo")}
+                onClick={() => { setParty("solo"); track("plan_option_select", { option_type: "party", option_value: "solo" }); }}
                 className={pill(party === "solo")}
               >
                 Just me
               </button>
               <button
                 type="button"
-                onClick={() => setParty("couple")}
+                onClick={() => { setParty("couple"); track("plan_option_select", { option_type: "party", option_value: "couple" }); }}
                 className={pill(party === "couple")}
               >
                 Two of us
               </button>
               <button
                 type="button"
-                onClick={() => setParty("group")}
+                onClick={() => { setParty("group"); track("plan_option_select", { option_type: "party", option_value: "group" }); }}
                 className={pill(party === "group")}
               >
                 A group
@@ -259,7 +283,7 @@ export function PlanBuilder({
             <input
               type="checkbox"
               checked={firstShow}
-              onChange={(e) => setFirstShow(e.target.checked)}
+              onChange={(e) => { setFirstShow(e.target.checked); track("plan_option_select", { option_type: "first_show", option_value: String(e.target.checked) }); }}
               className="w-4 h-4 accent-[#b0562e]"
             />
             This is my first Ella show

@@ -15,6 +15,7 @@ import { getLooksForProduct, getLookProducts } from "@/lib/looks";
 import { ProductGallery } from "./ProductGallery";
 import { ProductSchema } from "@/components/schema/ProductSchema";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
+import { TrackOnView } from "@/components/TrackOnView";
 
 export async function generateStaticParams() {
   return SHOP_PRODUCTS.map((p) => ({ slug: p.slug }));
@@ -99,6 +100,10 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
 
   return (
     <article className="mx-auto max-w-6xl px-4 py-8">
+      <TrackOnView
+        event="view_item"
+        params={{ item_id: product.asin ?? product.slug, item_name: product.name, item_category: product.category }}
+      />
       <ProductSchema product={product} url={pageUrl} />
       <BreadcrumbSchema items={breadcrumbItems} />
       <nav className="text-xs text-ink/60 mb-6 flex items-center gap-1.5">

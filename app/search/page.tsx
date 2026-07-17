@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllGuideContent, getAllNews } from "@/lib/content";
 import { getAllSongs, getAllComparisons, getAllTourDates } from "@/lib/data";
+import { TrackOnView } from "@/components/TrackOnView";
 import { getAllProducts } from "@/lib/shop";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
@@ -286,6 +287,12 @@ export default async function SearchPage({
       {/* No results */}
       {rawQuery && totalResults === 0 && (
         <div className="text-ink/70">
+          {/* A zero-result search is a fan telling us exactly what we don't have
+              yet, in their own words. Previously invisible. */}
+          <TrackOnView
+            event="search_zero_results"
+            params={{ search_term: rawQuery.toLowerCase().slice(0, 100) }}
+          />
           <p className="mb-2">
             No matches for &ldquo;{rawQuery}&rdquo;. Try a different word, or jump to a
             popular section:

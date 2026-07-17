@@ -21,7 +21,12 @@ export function NewsletterSignup({ placement = "inline" }: { placement?: string 
       if (r.ok) {
         try {
           if (typeof window !== "undefined" && window.gtag) {
-            window.gtag("event", "newsletter_signup", { page_path: window.location.pathname });
+            // `placement` already goes to Supabase; sending it to GA too means we
+            // can see WHICH signup box converts, not just that one did.
+            window.gtag("event", "newsletter_signup", {
+              page_path: window.location.pathname,
+              placement,
+            });
           }
         } catch {
           // ignore — analytics must not block UX

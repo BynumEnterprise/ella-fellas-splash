@@ -90,15 +90,30 @@ export function AffiliateClickTracker() {
         } catch {
           return;
         }
-        const network = networkForHost(host);
-        if (!network) return;
+        let network = networkForHost(host);
+        if (!network) {
+          // SAFETY NET: a monetized link on an unmapped host would otherwise earn
+          // money completely invisibly (this is exactly how expedia.com went 35
+          // links / zero events). Anything we marked rel="sponsored" and opened in
+          // a new tab is an affiliate link by our own convention — report it as
+          // "unmapped" so it shows up in GA4 and we can go map it properly.
+          const rel = (anchor.getAttribute("rel") || "").toLowerCase();
+          if (!rel.includes("sponsored")) return;
+          network = "unmapped";
+        }
         const text = (anchor.textContent || "").trim().slice(0, 100);
         if (window.gtag) {
           const destination = merchantForUrl(anchor.href, host, network);
           const asin = network === "amazon" ? amazonAsin(anchor.href) : null;
+          // WHICH MODULE earned the click. Every AffiliateLink already sets
+          // data-affiliate-source; until now it was written to the DOM and thrown
+          // away, so a ticket click from the hero and one from the planner were
+          // indistinguishable. This is the number that tells us what to build more of.
+          const source = anchor.dataset.affiliateSource || "unknown";
           window.gtag("event", "affiliate_click", {
             network,
             destination,
+            link_source: source,
             link_url: anchor.href,
             link_text: text,
             page_path: window.location.pathname,
@@ -109,8 +124,18 @@ export function AffiliateClickTracker() {
         // swallow — tracking must never break navigation
       }
     }
+    // Middle-click fires `auxclick`, not `click`. Every affiliate link here is
+    // target="_blank", so "open in a new tab" is habitual for this audience —
+    // those opens were being counted as zero.
+    function onAux(e: MouseEvent) {
+      if (e.button === 1) onClick(e);
+    }
     document.addEventListener("click", onClick, true);
-    return () => document.removeEventListener("click", onClick, true);
+    document.addEventListener("auxclick", onAux, true);
+    return () => {
+      document.removeEventListener("click", onClick, true);
+      document.removeEventListener("auxclick", onAux, true);
+    };
   }, []);
 
   return null;

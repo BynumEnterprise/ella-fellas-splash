@@ -3,6 +3,7 @@ import { SearchBox } from "@/components/SearchBox";
 
 const NAV = [
   { href: "/tour", label: "Tour" },
+  { href: "/set-times", label: "Set Times" },
   // The interactive night planner — distinct from /plan-your-trip (the city/venue
   // travel hub), which stays linked from tour pages and guides.
   { href: "/plan-my-night", label: "Plan My Night" },

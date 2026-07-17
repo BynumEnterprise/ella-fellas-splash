@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getAllTourDates, getAllSongs, getAllComparisons } from "@/lib/data";
 import { getAllNews, getAllGuideContent } from "@/lib/content";
+import { OPENERS } from "@/lib/openers";
 import { SHOP_CATEGORY_SLUGS } from "@/lib/shop-catalog";
 import { getAllProducts } from "@/lib/shop";
 import { getAllLooks } from "@/lib/looks";
@@ -12,6 +13,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticUrls = [
     "",
     "/tour",
+    "/set-times",
+    "/openers",
     "/plan-your-trip",
     "/songs",
     "/news",
@@ -90,5 +93,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticUrls, ...shopCategories, ...products, ...looks, ...tour, ...songs, ...comps, ...news, ...guides];
+  const today = new Date().toISOString().slice(0, 10);
+  const setTimes = getAllTourDates()
+    .filter((d) => d.date >= today)
+    .map((d) => ({
+      url: `${SITE_URL}/tour/${d.id}/set-times`,
+      lastModified: new Date(),
+      changeFrequency: "daily" as const,
+      priority: 0.9,
+    }));
+  const openers = OPENERS.map((o) => ({
+    url: `${SITE_URL}/openers/${o.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.7,
+  }));
+
+  return [...staticUrls, ...shopCategories, ...products, ...looks, ...tour, ...setTimes, ...openers, ...songs, ...comps, ...news, ...guides];
 }

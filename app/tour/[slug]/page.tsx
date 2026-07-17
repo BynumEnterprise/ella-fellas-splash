@@ -138,6 +138,16 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
         <p className="text-xs text-ink/50 mt-3">
           TicketNetwork lists seats for {d.tourType === "support" ? `${d.headliner ?? "this tour"}` : "Ella"}&apos;s shows with buyer-guaranteed resale &mdash; browse the full price range before you buy.
         </p>
+        <p className="text-sm text-ink/80 mt-4">
+          <Link
+            href={`/tour/${d.id}/set-times`}
+            className="font-semibold text-denim underline decoration-primary/60 underline-offset-4 hover:text-primary"
+          >
+            What time does she actually go on in {d.city}? &rarr;
+          </Link>{" "}
+          Doors, listed start and the full running order for this show.
+        </p>
+
         <VenueSeating d={d} />
         <p className="text-sm text-ink/70 mt-3">
           Want the general logic behind these picks? Our{" "}

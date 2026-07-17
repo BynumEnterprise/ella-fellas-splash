@@ -9,6 +9,7 @@ declare global {
 
 const NETWORK_BY_DOMAIN: Record<string, string> = {
   "amazon.com": "amazon",
+  "expedia.com": "expedia",
   "pintoranch.com": "pinto_ranch",
   "kqzyfj.com": "cj",
   "anrdoezrs.net": "cj",
@@ -24,8 +25,9 @@ const NETWORK_BY_DOMAIN: Record<string, string> = {
   "awin1.com": "awin",
 };
 
-// CJ hides the merchant behind generic click domains. Map our link ids to the
-// real merchant so GA4's "Affiliate destination" dimension is human-readable.
+// CJ hides the merchant behind generic click domains (jdoqocy.com etc). Map our
+// link ids to the real merchant so GA4's "Affiliate destination" is readable.
+// ANY NEW CJ LINK ID MUST BE ADDED HERE or its clicks report as a raw domain.
 const CJ_MERCHANT_BY_LINK_ID: Record<string, string> = {
   "15734399": "hotels.com",
   "15736982": "economybookings.com",
@@ -37,6 +39,26 @@ const CJ_MERCHANT_BY_LINK_ID: Record<string, string> = {
 function cjMerchantForUrl(url: string): string | null {
   const m = url.match(/\/click-\d+-(\d+)/);
   return (m && CJ_MERCHANT_BY_LINK_ID[m[1]]) || null;
+}
+
+/**
+ * The merchant we actually sent the visitor to — what the owner wants to read in
+ * GA4, rather than a redirect hostname. Falls back to the host we saw.
+ */
+function merchantForUrl(url: string, host: string, network: string): string {
+  if (network === "cj") return cjMerchantForUrl(url) ?? host;
+  // Expedia's affiliate links wrap the real destination in ?landingPage=
+  if (network === "expedia") return "expedia.com";
+  if (network === "amazon") return "amazon.com";
+  // Impact links are <brand>.pxf.io / <brand>.sjv.io — the subdomain IS the brand.
+  if (network === "impact") return host;
+  return host.replace(/^www\./, "");
+}
+
+/** Amazon ASIN, so the owner can see WHICH product earned the click. */
+function amazonAsin(url: string): string | null {
+  const m = url.match(/\/(?:dp|gp\/aw\/d|gp\/product)\/([A-Z0-9]{10})/i);
+  return m ? m[1].toUpperCase() : null;
 }
 
 function networkForHost(host: string): string | null {
@@ -66,14 +88,15 @@ export function AffiliateClickTracker() {
         if (!network) return;
         const text = (anchor.textContent || "").trim().slice(0, 100);
         if (window.gtag) {
-          const destination =
-            network === "cj" ? cjMerchantForUrl(anchor.href) ?? host : host;
+          const destination = merchantForUrl(anchor.href, host, network);
+          const asin = network === "amazon" ? amazonAsin(anchor.href) : null;
           window.gtag("event", "affiliate_click", {
             network,
             destination,
             link_url: anchor.href,
             link_text: text,
             page_path: window.location.pathname,
+            ...(asin ? { item_id: asin } : {}),
           });
         }
       } catch {

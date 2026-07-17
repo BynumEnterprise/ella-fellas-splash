@@ -1,8 +1,8 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
-import { CheckCircle2, HelpCircle } from "lucide-react";
+import { CheckCircle2, HelpCircle, ArrowDown } from "lucide-react";
 import type { TourDate } from "@/lib/types";
 import { buildNightPlan, type Arrival, type Party } from "@/lib/night-plan";
 import { parseShowRequest, type Intent } from "@/lib/plan-parse";
@@ -39,6 +39,23 @@ export function PlanBuilder({
   const [candidates, setCandidates] = useState<TourDate[]>([]);
   const [intents, setIntents] = useState<Intent[]>([]);
 
+  // THE BUG THIS FIXES: picking a show built a correct plan ~2,000px BELOW the
+  // fold, so nothing moved in the viewport and the planner read as broken. The
+  // answer now comes to the visitor instead of waiting to be scrolled to.
+  const planRef = useRef<HTMLDivElement>(null);
+  const [scrollWanted, setScrollWanted] = useState(false);
+
+  useEffect(() => {
+    if (!scrollWanted || !planRef.current) return;
+    setScrollWanted(false);
+    if (typeof window === "undefined") return;
+    const reduce = window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches;
+    planRef.current.scrollIntoView({
+      behavior: reduce ? "auto" : "smooth",
+      block: "start",
+    });
+  }, [scrollWanted, showId]);
+
   function handleAsk(text: string) {
     const r = parseShowRequest(text, shows);
     setAsked(true);
@@ -53,6 +70,7 @@ export function PlanBuilder({
     // Their words drive the follow-ups too — but they can still override below.
     if (r.intents.includes("stay")) setArrival("staying");
     else if (r.intents.includes("parking")) setArrival("driving");
+    if (r.show) setScrollWanted(true);
   }
 
   const show = useMemo(
@@ -132,6 +150,7 @@ export function PlanBuilder({
                       setUnderstood(
                         `${c.city}, ${c.state} — ${dateLabel(c)} at ${c.venue}.`,
                       );
+                      setScrollWanted(true);
                     }}
                     className="px-3 py-1.5 rounded-full text-xs border border-denim/30 text-denim hover:border-primary hover:text-primary"
                   >
@@ -164,6 +183,7 @@ export function PlanBuilder({
             setShowId(e.target.value);
             setCandidates([]);
             setUnderstood("");
+            if (e.target.value) setScrollWanted(true);
           }}
           className="w-full px-4 py-3 border-2 border-denim/30 focus:border-primary outline-none rounded-md bg-paper text-ink"
         >
@@ -244,11 +264,29 @@ export function PlanBuilder({
             />
             This is my first Ella show
           </label>
+
+          {/* There is no "submit" on purpose — the plan below updates as you tap.
+              Say so, and give a way back down to it. */}
+          <button
+            type="button"
+            onClick={() => setScrollWanted(true)}
+            className="inline-flex items-center gap-2 text-sm font-medium text-denim underline decoration-primary/60 underline-offset-4 hover:text-primary"
+          >
+            <ArrowDown className="w-4 h-4" aria-hidden="true" />
+            Your plan updates as you tap — jump to it
+          </button>
         </div>
       )}
 
       {show && plan && (
-        <div className="border-t-2 border-primary/30 pt-6">
+        <div ref={planRef} className="border-t-2 border-primary/30 pt-6 scroll-mt-24">
+          <h2 className="font-display text-2xl md:text-3xl text-denim tracking-wide mb-1">
+            YOUR NIGHT IN {show.city.toUpperCase()}
+          </h2>
+          <p className="text-sm text-ink/70 mb-4">
+            {dateLabel(show)} · {show.venue} — built from this show&apos;s real doors and
+            listed start. Change anything above and this updates instantly.
+          </p>
           <div className="bg-paper border border-ink/15 rounded-lg p-5">
             <NightPlanView plan={plan} />
           </div>

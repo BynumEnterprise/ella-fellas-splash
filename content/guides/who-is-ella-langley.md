@@ -75,3 +75,5 @@ And if you want to actually keep up with her -- new music, new dates, the next W
 **Where's she from?** Hope Hull, Alabama -- and the Auburn chapter of her story comes full circle this August with [two nights at Neville Arena](/guides/ella-langley-auburn-2026), ERNEST and Gabriella Rose supporting.
 
 **Where do I start with her music?** The [song guide](/songs) ranks and explains everything; [the setlist guide](/guides/ella-langley-setlist-2026) is what she's actually playing this tour.
+
+**Why do people keep sharing her concert speeches?** Ella stops most shows to talk plainly about mental health, faith, and the social-media comparison trap, and the clips travel fast. We rounded up [what she keeps telling crowds from the stage](/news/2026-07-18-ella-langley-viral-stage-speeches-mental-health) -- it's the same honesty behind "Loving Life Again."

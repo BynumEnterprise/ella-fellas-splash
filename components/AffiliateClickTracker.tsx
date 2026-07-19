@@ -67,6 +67,46 @@ function amazonAsin(url: string): string | null {
 // its clicks silently fire no event. (hmxg=IHG, ijrn=Hilton, mtko=Choice.)
 const IMPACT_SUFFIXES = [".pxf.io", ".sjv.io", ".hmxg.net", ".ijrn.net", ".mtko.net"];
 
+/**
+ * COMMISSION WEIGHT — a relative planning score, NOT dollars.
+ *
+ * A raw click count treats a 12.5% ticket click and a ~2% Vrbo click the same,
+ * which quietly points us at the wrong pages to build. This weights each click by
+ * roughly how much a conversion is worth = the program's commission rate times a
+ * typical order size, expressed as a small integer. Summing `click_weight` in GA4
+ * gives a money-aware ranking of what earns, without pretending we know real sales.
+ *
+ * These are deliberately coarse and honest. Re-tune once we have real conversion
+ * data. NOT for GA4's reserved `value` param (that would masquerade as revenue).
+ */
+const CLICK_WEIGHT: Record<string, number> = {
+  ticketnetwork: 10, // 12.5% of a $100-300 resale ticket = the top earner, matches our top intent
+  hotels: 8,         // Hotels.com ~4-5% of a $200-400 stay
+  expedia: 8,        // same ballpark, different program
+  vrbo: 6,           // ~2-3% but big rental basket
+  economybookings: 5,// high % (~55%) on a small rental base
+  pinto_ranch: 4,    // western wear, mid basket
+  amazon: 2,         // ~3-4% on low baskets
+  impact_points: 1,  // buy-points programs, low fit
+  unmapped: 1,
+};
+
+/** Map a network + merchant to its planning weight. */
+function clickWeight(network: string, destination: string): number {
+  if (network === "cj") {
+    const m = destination.replace(/\.com$/, "").replace(/[^a-z]/g, "_");
+    if (m.includes("ticketnetwork")) return CLICK_WEIGHT.ticketnetwork;
+    if (m.includes("hotels")) return CLICK_WEIGHT.hotels;
+    if (m.includes("vrbo")) return CLICK_WEIGHT.vrbo;
+    if (m.includes("economybookings")) return CLICK_WEIGHT.economybookings;
+    if (m.includes("pinto")) return CLICK_WEIGHT.pinto_ranch;
+  }
+  if (network === "expedia") return CLICK_WEIGHT.expedia;
+  if (network === "amazon") return CLICK_WEIGHT.amazon;
+  if (network === "impact") return CLICK_WEIGHT.impact_points;
+  return CLICK_WEIGHT[network] ?? CLICK_WEIGHT.unmapped;
+}
+
 function networkForHost(host: string): string | null {
   host = host.toLowerCase();
   for (const d in NETWORK_BY_DOMAIN) {
@@ -113,6 +153,7 @@ export function AffiliateClickTracker() {
           window.gtag("event", "affiliate_click", {
             network,
             destination,
+            click_weight: clickWeight(network, destination),
             link_source: source,
             link_url: anchor.href,
             link_text: text,

@@ -1,7 +1,10 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getAllComparisons, getComparison } from "@/lib/data";
+import { getAllComparisons, getComparison, getUpcomingTourDates } from "@/lib/data";
+import { ticketNetworkUrl } from "@/lib/affiliates";
+import { AffiliateLink } from "@/components/AffiliateLink";
+import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
 import { FaqSchema } from "@/components/schema/FaqSchema";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 import type { FaqItem } from "@/lib/types";
@@ -26,6 +29,8 @@ export default async function ComparisonPage({ params }: { params: Promise<{ slu
   const { slug } = await params;
   const c = getComparison(slug);
   if (!c) notFound();
+
+  const nextShow = getUpcomingTourDates(1)[0];
 
   // Build FAQ items from comparison data
   const faqItems: FaqItem[] = [
@@ -139,21 +144,50 @@ export default async function ComparisonPage({ params }: { params: Promise<{ slu
         <p className="text-lg leading-relaxed">{c.verdict}</p>
       </section>
 
-      {/* Internal links: tour + songs */}
+      {/* If you like {compareTo}, the money action is "see Ella live" — a real
+          ticket CTA to her next show, not just an internal link. */}
+      {nextShow && (
+        <section className="bg-primary/10 border-2 border-primary/40 rounded-lg p-5 my-8">
+          <p className="text-xs uppercase tracking-wider text-clay font-medium mb-1">
+            Like {c.compareTo}? See Ella live.
+          </p>
+          <h2 className="font-display text-2xl text-denim leading-tight">
+            Her next show: {nextShow.city}, {nextShow.state}
+          </h2>
+          <p className="text-sm text-ink/75 mt-1 mb-4">
+            {new Date(`${nextShow.date}T12:00:00Z`).toLocaleDateString("en-US", {
+              weekday: "long",
+              month: "long",
+              day: "numeric",
+              timeZone: "UTC",
+            })}{" "}
+            &middot; {nextShow.venue}
+          </p>
+          <AffiliateLink
+            href={ticketNetworkUrl(nextShow.id)}
+            source="vs-tickets"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-paper font-display text-lg tracking-wide rounded-md hover:bg-primary/90"
+          >
+            <span aria-hidden="true">🎟</span> {nextShow.soldOut ? "FIND RESALE TICKETS" : "GET TICKETS"}
+          </AffiliateLink>
+        </section>
+      )}
+
+      {/* Internal links: full schedule + songs */}
       <section className="my-8 flex flex-col sm:flex-row gap-3">
         <Link
           href="/tour"
-          className="flex-1 bg-primary/15 border border-primary/30 rounded-lg p-4 hover:bg-primary/25 transition-colors"
+          className="flex-1 bg-paper border border-ink/10 rounded-lg p-4 hover:bg-ink/5 transition-colors"
         >
-          <p className="font-display text-denim text-lg">See Ella Langley live &rarr;</p>
-          <p className="text-sm text-ink/70 mt-1">Tour dates, tickets, venue guides</p>
+          <p className="font-display text-denim text-lg">All 2026 tour dates &rarr;</p>
+          <p className="text-sm text-ink/70 mt-1">Every city, set times, and venue guides</p>
         </Link>
         <Link
           href="/songs"
           className="flex-1 bg-paper border border-ink/10 rounded-lg p-4 hover:bg-ink/5 transition-colors"
         >
           <p className="font-display text-denim text-lg">Start with these songs &rarr;</p>
-          <p className="text-sm text-ink/70 mt-1">Every song ranked, plus vinyl at the shop</p>
+          <p className="text-sm text-ink/70 mt-1">Every song ranked, plus gear at the shop</p>
         </Link>
       </section>
 
@@ -169,6 +203,8 @@ export default async function ComparisonPage({ params }: { params: Promise<{ slu
           ))}
         </div>
       </section>
+
+      <AffiliateDisclosure />
     </article>
   );
 }

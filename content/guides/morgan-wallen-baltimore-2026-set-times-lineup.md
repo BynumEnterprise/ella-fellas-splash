@@ -3,7 +3,7 @@ title: "Morgan Wallen Baltimore Openers & Set Times 2026: Both Nights"
 slug: "morgan-wallen-baltimore-2026-set-times-lineup"
 category: "tour-guide"
 publishedAt: "2026-06-16"
-updatedAt: "2026-07-17"
+updatedAt: "2026-07-19"
 excerpt: "Morgan Wallen plays TWO nights at M&T Bank Stadium (July 17-18, 2026). Which night has Ella Langley, which has Brooks & Dunn, gates, set times, and tickets."
 faq:
   - q: "Who is opening for Morgan Wallen in Baltimore 2026?"
@@ -21,6 +21,8 @@ faq:
 Morgan Wallen brings the Still The Problem Tour to M&T Bank Stadium for **two nights** -- Friday, July 17 and Saturday, July 18, 2026 -- and the bills are different, so check your ticket before you plan your night. The short version: **Brooks & Dunn play Friday. Ella Langley plays Saturday.**
 
 *FTC note: some links on this page are affiliate links. If you buy through them we may earn a small commission at no cost to you. We only point you to gear we would actually carry to a show.*
+
+> **Next up: the tour finale in Philadelphia, Aug 1.** Both Baltimore nights are done. The last stop on Morgan Wallen's 2026 stadium run is [Lincoln Financial Field on August 1](/guides/morgan-wallen-philadelphia-2026-set-times-lineup), and Ella Langley plays direct support one more time, alongside Hudson Westbrook and Blake Whiten. If you missed her Saturday, that Philadelphia date is your final chance to catch her on this tour. See all of her own headline shows on the [Ella Langley tour page](/tour), and set your set-time alerts before the gates open so you are not guessing at showtime.
 
 ## Who's Opening for Morgan Wallen in Baltimore 2026?
 

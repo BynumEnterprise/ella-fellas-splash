@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/tour",
     "/set-times",
     "/setlists",
+    "/ticket-prices",
     "/openers",
     "/plan-your-trip",
     "/songs",

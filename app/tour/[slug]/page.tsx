@@ -140,6 +140,15 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
         </p>
         <p className="text-sm text-ink/80 mt-4">
           <Link
+            href="/ticket-prices"
+            className="font-semibold text-denim underline decoration-primary/60 underline-offset-4 hover:text-primary"
+          >
+            How much do tickets cost? &rarr;
+          </Link>{" "}
+          Compare 2026 prices for every city.
+        </p>
+        <p className="text-sm text-ink/80 mt-2">
+          <Link
             href={`/tour/${d.id}/set-times`}
             className="font-semibold text-denim underline decoration-primary/60 underline-offset-4 hover:text-primary"
           >

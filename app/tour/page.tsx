@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { getAllTourDates } from "@/lib/data";
 import { TourCard } from "@/components/TourCard";
 
@@ -51,6 +52,12 @@ export default function TourIndexPage() {
           {headlining.length} headlining + {support.length} Morgan Wallen support + {festival.length} festivals.
           Tap any date for venue info, openers, hotels nearby, and tickets.
         </p>
+        <Link
+          href="/ticket-prices"
+          className="inline-flex items-center gap-2 mt-4 px-4 py-2.5 bg-primary/15 border border-primary/40 rounded-md text-denim font-medium hover:bg-primary/25 transition-colors"
+        >
+          How much are Ella Langley tickets? See 2026 prices by city &rarr;
+        </Link>
       </header>
 
       {headlining.length > 0 && (

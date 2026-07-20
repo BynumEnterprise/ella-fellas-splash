@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { AffiliateLink } from "@/components/AffiliateLink";
 import { amazonUrl } from "@/lib/affiliates";
+import Image from "next/image";
 
 interface Pick {
   name: string;
@@ -108,13 +109,13 @@ export function ConcertGearWidget({ show }: { show: ShowContext }) {
             key={p.name}
             className="flex items-start justify-between gap-3 border-t border-ink/10 pt-3 first:border-t-0 first:pt-0"
           >
-            <div className="flex-shrink-0 w-20 h-20 rounded-md overflow-hidden bg-ink/5">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+            <div className="relative flex-shrink-0 w-20 h-20 rounded-md overflow-hidden bg-ink/5">
+              <Image
                 src={p.image}
                 alt={p.name}
-                loading="lazy"
-                className="w-full h-full object-cover"
+                fill
+                sizes="80px"
+                className="object-cover"
               />
             </div>
             <div className="flex-1 min-w-0">

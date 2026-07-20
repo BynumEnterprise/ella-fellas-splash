@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { getLookProducts, getLookTotal, type Look } from "@/lib/looks";
+import Image from "next/image";
 
 interface Props {
   look: Look;
@@ -18,14 +19,13 @@ export function LookCard({ look }: Props) {
     >
       <div className="grid grid-cols-2 gap-px bg-ink/8">
         {thumbs.map((p) => (
-          <div key={p.slug} className="aspect-square overflow-hidden bg-paper">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+          <div key={p.slug} className="relative aspect-square overflow-hidden bg-paper">
+            <Image
               src={p.image}
               alt={p.name}
-              loading="lazy"
-              decoding="async"
-              className="w-full h-full object-contain p-3 group-hover:scale-105 transition-transform duration-500"
+              fill
+              sizes="(min-width:768px) 200px, 45vw"
+              className="object-contain p-3 group-hover:scale-105 transition-transform duration-500"
             />
           </div>
         ))}

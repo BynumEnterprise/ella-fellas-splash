@@ -16,6 +16,7 @@ import { ProductGallery } from "./ProductGallery";
 import { ProductSchema } from "@/components/schema/ProductSchema";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 import { TrackOnView } from "@/components/TrackOnView";
+import Image from "next/image";
 
 export async function generateStaticParams() {
   return SHOP_PRODUCTS.map((p) => ({ slug: p.slug }));
@@ -285,14 +286,13 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
                 href={`/shop/${r.slug}`}
                 className="group block bg-paper border border-ink/12 rounded-xl overflow-hidden hover:border-primary hover:shadow-md transition-all"
               >
-                <div className="aspect-square overflow-hidden bg-ink/5">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                <div className="relative aspect-square overflow-hidden bg-ink/5">
+                  <Image
                     src={r.image}
                     alt={r.name}
-                    loading="lazy"
-                    decoding="async"
-                    className="w-full h-full object-contain p-3 group-hover:scale-105 transition-transform duration-500"
+                    fill
+                    sizes="(min-width:1024px) 25vw, 45vw"
+                    className="object-contain p-3 group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <div className="p-4">
@@ -327,14 +327,13 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
                 href={`/shop/${r.slug}`}
                 className="group block bg-paper border border-ink/12 rounded-xl overflow-hidden hover:border-primary hover:shadow-md transition-all"
               >
-                <div className="aspect-square overflow-hidden bg-ink/5">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                <div className="relative aspect-square overflow-hidden bg-ink/5">
+                  <Image
                     src={r.image}
                     alt={r.name}
-                    loading="lazy"
-                    decoding="async"
-                    className="w-full h-full object-contain p-3 group-hover:scale-105 transition-transform duration-500"
+                    fill
+                    sizes="(min-width:1024px) 25vw, 45vw"
+                    className="object-contain p-3 group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <div className="p-4">

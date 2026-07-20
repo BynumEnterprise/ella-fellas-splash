@@ -218,13 +218,12 @@ export default function HomePage() {
                   className="group bg-paper border border-ink/12 rounded-xl overflow-hidden hover:border-primary hover:shadow-md transition-all flex flex-col"
                 >
                   <div className="relative aspect-square overflow-hidden bg-ink/5">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
+                    <Image
                       src={p.image}
                       alt={p.name}
-                      loading="lazy"
-                      decoding="async"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      fill
+                      sizes="(min-width:1024px) 25vw, 50vw"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     {p.badge && (
                       <span className="absolute top-3 left-3 bg-denim/90 text-paper text-[10px] uppercase tracking-[0.15em] px-2.5 py-1 rounded-full font-medium backdrop-blur-sm">
@@ -301,13 +300,12 @@ export default function HomePage() {
                     className="group block bg-paper border border-ink/12 rounded-xl overflow-hidden hover:border-primary hover:shadow-md transition-all"
                   >
                     <div className="relative aspect-[3/2] overflow-hidden">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
+                      <Image
                         src={bg}
                         alt=""
-                        loading="lazy"
-                        decoding="async"
-                        className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        fill
+                        sizes="(min-width:768px) 33vw, 100vw"
+                        className="object-cover group-hover:scale-105 transition-transform duration-500"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-denim via-denim/65 to-denim/20" />
                       <div className="absolute inset-0 p-5 flex items-end">

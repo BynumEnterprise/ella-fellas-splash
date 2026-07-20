@@ -3,6 +3,7 @@ import { Star, ShoppingBag } from "lucide-react";
 import { AffiliateLink } from "@/components/AffiliateLink";
 import { amazonSearchUrl, amazonUrl } from "@/lib/affiliates";
 import type { ShopProduct } from "@/lib/shop";
+import Image from "next/image";
 
 interface Props {
   product: ShopProduct;
@@ -21,13 +22,12 @@ export function ProductCard({ product: p, source = "card", showBlurb = false }: 
         href={`/shop/${p.slug}`}
         className="block relative aspect-square overflow-hidden bg-paper"
       >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <Image
           src={p.image}
           alt={p.name}
-          loading="lazy"
-          decoding="async"
-          className="w-full h-full object-contain p-3 group-hover:scale-105 transition-transform duration-500"
+          fill
+          sizes="(min-width:1024px) 240px, 45vw"
+          className="object-contain p-3 group-hover:scale-105 transition-transform duration-500"
         />
         {p.badge && (
           <span className="absolute top-3 left-3 bg-denim text-paper text-[10px] uppercase tracking-[0.15em] px-2 py-0.5 rounded-full font-medium">

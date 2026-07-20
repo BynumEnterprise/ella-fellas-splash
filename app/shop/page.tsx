@@ -11,6 +11,7 @@ import {
   getFeaturedProducts,
 } from "@/lib/shop";
 import { getAllLooks } from "@/lib/looks";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "The Fellas Shop — boutique gear for country fans",
@@ -194,14 +195,14 @@ export default function ShopPage() {
                   {previews.map((p) => (
                     <div
                       key={p.slug}
-                      className="aspect-square overflow-hidden bg-paper rounded-md"
+                      className="relative aspect-square overflow-hidden bg-paper rounded-md"
                     >
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
+                      <Image
                         src={p.image}
                         alt=""
-                        loading="lazy"
-                        className="w-full h-full object-contain p-1.5"
+                        fill
+                        sizes="(min-width:768px) 200px, 40vw"
+                        className="object-contain p-1.5"
                       />
                     </div>
                   ))}

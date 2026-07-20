@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 interface ProductGalleryProps {
   images: string[];
@@ -10,8 +11,9 @@ interface ProductGalleryProps {
 
 /**
  * Image gallery with clickable thumbnails that swap the hero image.
- * Uses native <img> (not next/image) because Amazon CDN images aren't on our
- * configured next.config remotePatterns — they load fast enough as raw <img>.
+ * next/image optimizes the Amazon CDN images (remotePatterns allows all https):
+ * the product-detail hero is usually the page LCP, so it's marked priority and
+ * served as a right-sized WebP/AVIF instead of a full 1500px JPEG.
  */
 export function ProductGallery({ images, alt, badge }: ProductGalleryProps) {
   const [activeIdx, setActiveIdx] = useState(0);
@@ -21,13 +23,13 @@ export function ProductGallery({ images, alt, badge }: ProductGalleryProps) {
     <div className="flex flex-col gap-3">
       {/* Hero image */}
       <div className="relative aspect-square overflow-hidden rounded-xl bg-paper border border-ink/10 shadow-sm">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <Image
           src={activeImage}
           alt={alt}
-          fetchPriority="high"
-          decoding="async"
-          className="w-full h-full object-contain p-4"
+          fill
+          priority
+          sizes="(min-width:768px) 480px, 100vw"
+          className="object-contain p-4"
         />
         {badge && (
           <span className="absolute top-4 left-4 bg-denim text-paper text-[11px] uppercase tracking-[0.15em] px-3 py-1.5 rounded-full font-medium shadow">
@@ -45,19 +47,18 @@ export function ProductGallery({ images, alt, badge }: ProductGalleryProps) {
               type="button"
               onClick={() => setActiveIdx(idx)}
               aria-label={`View image ${idx + 1} of ${images.length}`}
-              className={`aspect-square overflow-hidden rounded-md bg-paper border-2 transition-all ${
+              className={`relative aspect-square overflow-hidden rounded-md bg-paper border-2 transition-all ${
                 idx === activeIdx
                   ? "border-primary shadow-sm"
                   : "border-ink/10 hover:border-ink/30"
               }`}
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <Image
                 src={img}
                 alt=""
-                loading="lazy"
-                decoding="async"
-                className="w-full h-full object-contain p-1"
+                fill
+                sizes="80px"
+                className="object-contain p-1"
               />
             </button>
           ))}

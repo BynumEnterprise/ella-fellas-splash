@@ -19,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/fan-club",
     "/contact-ella-langley",
     "/best-songs",
+    "/ella-langley-merch",
     "/openers",
     "/plan-your-trip",
     "/songs",

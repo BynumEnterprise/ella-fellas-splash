@@ -137,14 +137,18 @@ export default async function SongPage({ params }: { params: Promise<{ slug: str
               <Calendar className="w-3.5 h-3.5 text-primary" />
               Released {s.releaseDate}
             </span>
-            <span className="inline-flex items-center gap-1.5">
-              <Clock className="w-3.5 h-3.5 text-primary" />
-              {s.duration}
-            </span>
-            <span className="inline-flex items-center gap-1.5">
-              <Sliders className="w-3.5 h-3.5 text-primary" />
-              Prod. {s.producer}
-            </span>
+            {s.duration && (
+              <span className="inline-flex items-center gap-1.5">
+                <Clock className="w-3.5 h-3.5 text-primary" />
+                {s.duration}
+              </span>
+            )}
+            {s.producer && (
+              <span className="inline-flex items-center gap-1.5">
+                <Sliders className="w-3.5 h-3.5 text-primary" />
+                Prod. {s.producer}
+              </span>
+            )}
           </div>
         </div>
       </header>
@@ -246,16 +250,18 @@ export default async function SongPage({ params }: { params: Promise<{ slug: str
             <PenLine className="w-4 h-4 text-primary" /> WRITERS
           </h2>
           <ul className="space-y-2 text-sm">
-            {s.writers.map((w) => (
+            {(s.writers && s.writers.length > 0 ? s.writers : ["Not officially credited yet"]).map((w) => (
               <li key={w} className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-primary" aria-hidden />
                 {w}
               </li>
             ))}
           </ul>
-          <p className="text-xs text-ink/55 mt-4 pt-3 border-t border-ink/10 flex items-center gap-1.5">
-            <Mic2 className="w-3.5 h-3.5" /> Produced by {s.producer}
-          </p>
+          {s.producer && (
+            <p className="text-xs text-ink/55 mt-4 pt-3 border-t border-ink/10 flex items-center gap-1.5">
+              <Mic2 className="w-3.5 h-3.5" /> Produced by {s.producer}
+            </p>
+          )}
         </div>
 
         {s.themes.length > 0 && (

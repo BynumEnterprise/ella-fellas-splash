@@ -286,9 +286,10 @@ export default function HomePage() {
                 <Disc3 className="w-7 h-7 text-primary" />
                 START WITH DANDELION
               </h2>
-              <Link href="/songs" className="text-sm text-primary hover:underline">
-                All songs &rarr;
-              </Link>
+              <div className="flex gap-4 text-sm">
+                <Link href="/best-songs" className="text-primary hover:underline">Ranked &rarr;</Link>
+                <Link href="/songs" className="text-primary hover:underline">All songs &rarr;</Link>
+              </div>
             </div>
             <div className="grid md:grid-cols-3 gap-4">
               {dandelionPicks.map((s, i) => {

@@ -17,30 +17,42 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="mx-auto max-w-6xl px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div>
+      <div className="mx-auto max-w-6xl px-4 py-10 grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="col-span-2 md:col-span-1">
           <p className="font-display text-2xl tracking-wider text-primary">ELLA FELLAS</p>
           <p className="text-sm mt-2 text-paper/80">
             Daily HQ for Ella Langley superfans. An unofficial fan site.
           </p>
         </div>
         <div className="text-sm">
-          <p className="font-display text-primary mb-3">EXPLORE</p>
+          <p className="font-display text-primary mb-3">AT THE SHOW</p>
           <ul className="space-y-1.5">
-            <li><Link href="/tour" className="hover:text-primary">Tour</Link></li>
-            <li><Link href="/songs" className="hover:text-primary">Songs</Link></li>
-            <li><Link href="/news" className="hover:text-primary">News</Link></li>
-            <li><Link href="/guides" className="hover:text-primary">Guides</Link></li>
-            <li><Link href="/vs" className="hover:text-primary">Compare</Link></li>
+            <li><Link href="/tour" className="hover:text-primary">Tour dates</Link></li>
+            <li><Link href="/set-times" className="hover:text-primary">Set times</Link></li>
+            <li><Link href="/setlists" className="hover:text-primary">Setlists</Link></li>
+            <li><Link href="/openers" className="hover:text-primary">Openers</Link></li>
+            <li><Link href="/ticket-prices" className="hover:text-primary">Ticket prices</Link></li>
           </ul>
         </div>
         <div className="text-sm">
-          <p className="font-display text-primary mb-3">ABOUT</p>
+          <p className="font-display text-primary mb-3">FOR FANS</p>
           <ul className="space-y-1.5">
+            <li><Link href="/fan-club" className="hover:text-primary">Fan club</Link></li>
+            <li><Link href="/best-songs" className="hover:text-primary">Best songs</Link></li>
+            <li><Link href="/ella-langley-collaborations" className="hover:text-primary">Collaborations</Link></li>
+            <li><Link href="/ella-langley-merch" className="hover:text-primary">Merch &amp; vinyl</Link></li>
+            <li><Link href="/contact-ella-langley" className="hover:text-primary">Contact Ella</Link></li>
+          </ul>
+        </div>
+        <div className="text-sm">
+          <p className="font-display text-primary mb-3">MORE</p>
+          <ul className="space-y-1.5">
+            <li><Link href="/songs" className="hover:text-primary">Songs</Link></li>
+            <li><Link href="/guides" className="hover:text-primary">Guides</Link></li>
+            <li><Link href="/shop" className="hover:text-primary">Shop</Link></li>
             <li><Link href="/about" className="hover:text-primary">About this site</Link></li>
-            <li><Link href="/contact" className="hover:text-primary">Contact</Link></li>
-            <li><Link href="/disclaimer" className="hover:text-primary">Disclaimer</Link></li>
-            <li><Link href="/privacy" className="hover:text-primary">Privacy policy</Link></li>
+            <li><Link href="/contact" className="hover:text-primary">Contact us</Link></li>
+            <li><Link href="/privacy" className="hover:text-primary">Privacy</Link></li>
           </ul>
         </div>
       </div>

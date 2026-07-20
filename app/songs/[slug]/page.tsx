@@ -325,9 +325,10 @@ export default async function SongPage({ params }: { params: Promise<{ slug: str
             <h2 className="font-display text-2xl md:text-3xl text-denim tracking-wider">
               IF YOU LIKE THIS…
             </h2>
-            <Link href="/songs" className="text-sm text-primary hover:underline">
-              All songs &rarr;
-            </Link>
+            <div className="flex gap-4 text-sm">
+              <Link href="/best-songs" className="text-primary hover:underline">Best songs &rarr;</Link>
+              {s.feat && <Link href="/ella-langley-collaborations" className="text-primary hover:underline">Collabs &rarr;</Link>}
+            </div>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-3">
             {related.map((r) => {

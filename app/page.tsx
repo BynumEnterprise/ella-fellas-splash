@@ -149,22 +149,23 @@ export default function HomePage() {
           </section>
         )}
 
-        {/* SPOTIFY EMBED — let visitors press play immediately */}
-        <section className="mb-14 grid md:grid-cols-[280px_1fr] gap-6 items-center">
+        {/* SPOTIFY EMBED — compact on mobile so tour dates surface sooner */}
+        <section className="mb-8 md:mb-14 grid md:grid-cols-[280px_1fr] gap-3 md:gap-6 items-center">
           <div>
-            <p className="text-xs uppercase tracking-[0.18em] text-clay font-medium mb-2">
+            <p className="text-xs uppercase tracking-[0.18em] text-clay font-medium mb-1">
               Now spinning
             </p>
-            <h2 className="font-display text-2xl md:text-3xl text-denim tracking-wider leading-tight">
+            <h2 className="font-display text-lg md:text-3xl text-denim tracking-wider leading-tight">
               PRESS PLAY ON DANDELION
             </h2>
-            <p className="text-sm text-ink/75 mt-2 leading-relaxed">
+            {/* Long blurb only on desktop — on mobile it just pushes the fold down. */}
+            <p className="hidden md:block text-sm text-ink/75 mt-2 leading-relaxed">
               Ella&apos;s 2026 second album. Country, but not always quiet. Start here and read the
               song-by-song breakdowns over on the songs page.
             </p>
             <Link
               href="/songs"
-              className="inline-block mt-3 text-sm text-primary font-medium hover:underline"
+              className="inline-block mt-1 md:mt-3 text-sm text-primary font-medium hover:underline"
             >
               Read the song guide &rarr;
             </Link>
@@ -188,63 +189,6 @@ export default function HomePage() {
               {upcomingTours.slice(1, 7).map((show) => (
                 <TourCard key={show.id} d={show} />
               ))}
-            </div>
-          </section>
-        )}
-
-        {/* DANDELION SHOWCASE — now with backdrop imagery on each card */}
-        {dandelionPicks.length > 0 && (
-          <section className="mb-14">
-            <div className="flex items-baseline justify-between mb-5">
-              <h2 className="font-display text-3xl md:text-4xl text-denim tracking-wider inline-flex items-center gap-3">
-                <Disc3 className="w-7 h-7 text-primary" />
-                START WITH DANDELION
-              </h2>
-              <Link href="/songs" className="text-sm text-primary hover:underline">
-                All songs &rarr;
-              </Link>
-            </div>
-            <div className="grid md:grid-cols-3 gap-4">
-              {dandelionPicks.map((s, i) => {
-                const bg = DANDELION_CARD_IMAGES[i % DANDELION_CARD_IMAGES.length];
-                return (
-                  <Link
-                    key={s.slug}
-                    href={`/songs/${s.slug}`}
-                    className="group block bg-paper border border-ink/12 rounded-xl overflow-hidden hover:border-primary hover:shadow-md transition-all"
-                  >
-                    <div className="relative aspect-[3/2] overflow-hidden">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
-                        src={bg}
-                        alt=""
-                        loading="lazy"
-                        decoding="async"
-                        className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-denim via-denim/65 to-denim/20" />
-                      <div className="absolute inset-0 p-5 flex items-end">
-                        <p className="font-display text-2xl text-paper lowercase leading-none relative z-10 drop-shadow-lg">
-                          {s.title}
-                        </p>
-                      </div>
-                      <Disc3
-                        className="absolute right-3 top-3 w-10 h-10 text-paper/70 drop-shadow"
-                        strokeWidth={1.5}
-                        aria-hidden
-                      />
-                    </div>
-                    <div className="p-4">
-                      <p className="text-xs uppercase tracking-[0.15em] text-clay font-medium">
-                        Dandelion &middot; {s.duration}
-                      </p>
-                      <p className="text-sm text-ink/75 mt-2 line-clamp-2 leading-relaxed">
-                        {s.tldr}
-                      </p>
-                    </div>
-                  </Link>
-                );
-              })}
             </div>
           </section>
         )}
@@ -331,6 +275,63 @@ export default function HomePage() {
                   category={item.frontmatter.category}
                 />
               ))}
+            </div>
+          </section>
+        )}
+
+        {/* DANDELION SHOWCASE — now with backdrop imagery on each card */}
+        {dandelionPicks.length > 0 && (
+          <section className="mb-14">
+            <div className="flex items-baseline justify-between mb-5">
+              <h2 className="font-display text-3xl md:text-4xl text-denim tracking-wider inline-flex items-center gap-3">
+                <Disc3 className="w-7 h-7 text-primary" />
+                START WITH DANDELION
+              </h2>
+              <Link href="/songs" className="text-sm text-primary hover:underline">
+                All songs &rarr;
+              </Link>
+            </div>
+            <div className="grid md:grid-cols-3 gap-4">
+              {dandelionPicks.map((s, i) => {
+                const bg = DANDELION_CARD_IMAGES[i % DANDELION_CARD_IMAGES.length];
+                return (
+                  <Link
+                    key={s.slug}
+                    href={`/songs/${s.slug}`}
+                    className="group block bg-paper border border-ink/12 rounded-xl overflow-hidden hover:border-primary hover:shadow-md transition-all"
+                  >
+                    <div className="relative aspect-[3/2] overflow-hidden">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={bg}
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                        className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-denim via-denim/65 to-denim/20" />
+                      <div className="absolute inset-0 p-5 flex items-end">
+                        <p className="font-display text-2xl text-paper lowercase leading-none relative z-10 drop-shadow-lg">
+                          {s.title}
+                        </p>
+                      </div>
+                      <Disc3
+                        className="absolute right-3 top-3 w-10 h-10 text-paper/70 drop-shadow"
+                        strokeWidth={1.5}
+                        aria-hidden
+                      />
+                    </div>
+                    <div className="p-4">
+                      <p className="text-xs uppercase tracking-[0.15em] text-clay font-medium">
+                        Dandelion &middot; {s.duration}
+                      </p>
+                      <p className="text-sm text-ink/75 mt-2 line-clamp-2 leading-relaxed">
+                        {s.tldr}
+                      </p>
+                    </div>
+                  </Link>
+                );
+              })}
             </div>
           </section>
         )}

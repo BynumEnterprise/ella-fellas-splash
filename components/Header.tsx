@@ -38,11 +38,13 @@ const NAV: NavItem[] = [
     label: "Discover",
     children: [
       { href: "/songs", label: "Songs" },
+      { href: "/best-songs", label: "Best Songs" },
       { href: "/news", label: "News" },
       { href: "/guides", label: "Guides" },
       { href: "/vs", label: "Compare Artists" },
     ],
   },
+  { href: "/fan-club", label: "Fan Club" },
   { href: "/shop", label: "Shop" },
   { href: "/about", label: "About" },
 ];

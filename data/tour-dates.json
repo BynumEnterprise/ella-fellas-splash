@@ -173,8 +173,8 @@
       "Laci Kaye Booth",
       "Kaitlin Butts"
     ],
-    "doorsTime": "18:30",
-    "showTime": "19:30",
+    "doorsTime": "18:00",
+    "showTime": "19:00",
     "soldOut": false,
     "ticketPriceRange": "$45-$285",
     "ticketAffiliatePath": "/tickets/pikeville-appalachian-wireless-arena-2026-07-23"
@@ -193,8 +193,8 @@
       "Laci Kaye Booth",
       "Kaitlin Butts"
     ],
-    "doorsTime": "18:30",
-    "showTime": "19:30",
+    "doorsTime": "17:30",
+    "showTime": "19:00",
     "soldOut": true,
     "ticketPriceRange": "Resale $85-$450",
     "ticketAffiliatePath": "/tickets/cary-koka-booth-amphitheatre-2026-07-24"
@@ -213,8 +213,8 @@
       "Laci Kaye Booth",
       "Kaitlin Butts"
     ],
-    "doorsTime": "18:30",
-    "showTime": "19:30",
+    "doorsTime": "18:00",
+    "showTime": "19:00",
     "soldOut": true,
     "ticketPriceRange": "Resale $85-$450",
     "ticketAffiliatePath": "/tickets/north-charleston-north-charleston-coliseum-2026-07-25"
@@ -233,8 +233,8 @@
       "Laci Kaye Booth",
       "Kameron Marlowe"
     ],
-    "doorsTime": "18:30",
-    "showTime": "19:30",
+    "doorsTime": "17:30",
+    "showTime": "19:00",
     "soldOut": false,
     "ticketPriceRange": "$45-$285",
     "ticketAffiliatePath": "/tickets/gilford-banknh-pavilion-2026-07-30"
@@ -253,8 +253,8 @@
       "Laci Kaye Booth",
       "Kameron Marlowe"
     ],
-    "doorsTime": "18:30",
-    "showTime": "19:30",
+    "doorsTime": "17:30",
+    "showTime": "19:00",
     "soldOut": false,
     "ticketPriceRange": "$45-$285",
     "ticketAffiliatePath": "/tickets/canandaigua-cmac-2026-07-31"

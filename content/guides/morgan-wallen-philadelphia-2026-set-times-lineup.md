@@ -1,10 +1,10 @@
 ---
-title: "Morgan Wallen Philadelphia Openers & Set Times 2026"
+title: "Who's Opening for Morgan Wallen in Philadelphia? Set Times 2026"
 slug: "morgan-wallen-philadelphia-2026-set-times-lineup"
 category: "tour-guide"
 publishedAt: "2026-06-16"
-updatedAt: "2026-07-15"
-excerpt: "Who is opening for Morgan Wallen in Philadelphia? Ella Langley plays direct support at the Aug 1, 2026 tour finale, with Hudson Westbrook and Blake Whiten."
+updatedAt: "2026-07-21"
+excerpt: "Who is opening for Morgan Wallen in Philadelphia? Ella Langley plays direct support at the Aug 1, 2026 Lincoln Financial Field finale, with Hudson Westbrook and Blake Whiten. Set times, gates, and last-chance tickets."
 faq:
   - q: "Who is opening for Morgan Wallen in Philadelphia on August 1, 2026?"
     a: "The August 1 finale at Lincoln Financial Field has Ella Langley as direct support, along with Hudson Westbrook and Blake Whiten, with Morgan Wallen headlining."

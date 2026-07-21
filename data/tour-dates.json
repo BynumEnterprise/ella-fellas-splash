@@ -410,11 +410,13 @@
     "tour": "Still The Problem Tour (Morgan Wallen)",
     "tourType": "support",
     "openers": [
+      "Blake Whiten",
+      "Hudson Westbrook",
       "Ella Langley (direct support)"
     ],
     "headliner": "Morgan Wallen",
-    "doorsTime": "17:00",
-    "showTime": "18:30",
+    "doorsTime": "16:30",
+    "showTime": "17:30",
     "soldOut": true,
     "ticketPriceRange": "Resale $185-$1,200",
     "ticketAffiliatePath": "/tickets/philadelphia-lincoln-financial-field-2026-08-01"

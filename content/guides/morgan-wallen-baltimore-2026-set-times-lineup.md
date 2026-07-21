@@ -3,7 +3,7 @@ title: "Morgan Wallen Baltimore Openers & Set Times 2026: Both Nights"
 slug: "morgan-wallen-baltimore-2026-set-times-lineup"
 category: "tour-guide"
 publishedAt: "2026-06-16"
-updatedAt: "2026-07-19"
+updatedAt: "2026-07-21"
 excerpt: "Morgan Wallen plays TWO nights at M&T Bank Stadium (July 17-18, 2026). Which night has Ella Langley, which has Brooks & Dunn, gates, set times, and tickets."
 faq:
   - q: "Who is opening for Morgan Wallen in Baltimore 2026?"
@@ -18,7 +18,7 @@ faq:
     a: "At M&T Bank Stadium, home of the Ravens, at 1101 Russell St in downtown Baltimore, Maryland."
 ---
 
-Morgan Wallen brings the Still The Problem Tour to M&T Bank Stadium for **two nights** -- Friday, July 17 and Saturday, July 18, 2026 -- and the bills are different, so check your ticket before you plan your night. The short version: **Brooks & Dunn play Friday. Ella Langley plays Saturday.**
+Morgan Wallen brought the Still The Problem Tour to M&T Bank Stadium for **two nights** -- Friday, July 17 and Saturday, July 18, 2026 -- and the bills were different each night. The short version: **Brooks & Dunn play Friday. Ella Langley plays Saturday.**
 
 *FTC note: some links on this page are affiliate links. If you buy through them we may earn a small commission at no cost to you. We only point you to gear we would actually carry to a show.*
 
@@ -35,7 +35,9 @@ Morgan Wallen brings the Still The Problem Tour to M&T Bank Stadium for **two ni
 
 The Ravens' own event page confirms the full bill -- Brooks & Dunn, Ella Langley, Gavin Adcock, and Jason Scott & The High Heat -- with supporting acts varying by night. Saturday is the Ella night, and direct support is the slot that matters: she goes on right before Wallen, after dark, to a full stadium.
 
-[**Get Baltimore tickets ->**](https://www.anrdoezrs.net/click-101760569-12324527?url=https%3A%2F%2Fwww.ticketnetwork.com%2Ftickets%2F7529807%2Fmorgan-wallen-ella-langley-gavin-adcock-jason-scott-and-the-high-heat-tickets-sat-jul-18-2026-mt-bank-stadium)
+Both Baltimore nights have come and gone. If you still want in on this tour, the August 1 Philadelphia finale is the last show left to buy:
+
+[**Get Philadelphia (Aug 1) tickets ->**](https://www.anrdoezrs.net/click-101760569-12324527?url=https%3A%2F%2Fwww.ticketnetwork.com%2Ftickets%2F7529811%2Fmorgan-wallen-ella-langley-hudson-westbrook-blake-whiten-tickets-sat-aug-1-2026-lincoln-financial-field)
 
 ## What we actually know about set times
 

@@ -41,7 +41,7 @@ It also sets up the album's most honest moments. The self-examination Ella reach
 
 ## Hearing It Live
 
-'Dandelion' has become one of the grounding moments of the Dandelion Tour, the stretch where the arena settles in and listens. If you are heading to a show — like [the Nashville stop at Nissan Stadium on July 10](/tour/nashville-nissan-stadium-2026-07-10) — it is worth learning the words before you go. And if you are still figuring out what to wear under stadium lights, our [arena-night outfit guide](/shop/looks/arena-night) has ideas that hold up from the parking lot to the encore.
+'Dandelion' has become one of the grounding moments of the Dandelion Tour, the stretch where the arena settles in and listens. If you are heading to a show — like an upcoming stop on [the Ella Langley tour](/tour) — it is worth learning the words before you go. And if you are still figuring out what to wear under stadium lights, our [arena-night outfit guide](/shop/looks/arena-night) has ideas that hold up from the parking lot to the encore.
 
 The takeaway: 'Dandelion' is Ella Langley planting a flag. She is the weed in the yard, the Alabama girl who would not be repotted, and the song is her saying she likes it that way.
 

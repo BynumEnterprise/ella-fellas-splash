@@ -15,8 +15,10 @@
     ],
     "doorsTime": "18:30",
     "showTime": "19:30",
+    "timesConfirmed": false,
     "soldOut": true,
     "ticketPriceRange": "Resale $85-$450",
+    "pricesConfirmed": true,
     "ticketAffiliatePath": "/tickets/toledo-huntington-center-2026-05-07"
   },
   {
@@ -35,8 +37,10 @@
     ],
     "doorsTime": "18:30",
     "showTime": "19:30",
+    "timesConfirmed": false,
     "soldOut": true,
     "ticketPriceRange": "Resale $85-$450",
+    "pricesConfirmed": true,
     "ticketAffiliatePath": "/tickets/st.-louis-chaifetz-arena-2026-05-08"
   },
   {
@@ -55,8 +59,10 @@
     ],
     "doorsTime": "18:30",
     "showTime": "19:30",
+    "timesConfirmed": false,
     "soldOut": false,
     "ticketPriceRange": "$45-$285",
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/estero-hertz-arena-2026-05-14"
   },
   {
@@ -75,8 +81,10 @@
     ],
     "doorsTime": "18:30",
     "showTime": "19:30",
+    "timesConfirmed": false,
     "soldOut": true,
     "ticketPriceRange": "Resale $85-$450",
+    "pricesConfirmed": true,
     "ticketAffiliatePath": "/tickets/savannah-enmarket-arena-2026-05-15"
   },
   {
@@ -95,8 +103,10 @@
     ],
     "doorsTime": "18:30",
     "showTime": "19:30",
+    "timesConfirmed": false,
     "soldOut": false,
     "ticketPriceRange": "$45-$285",
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/oklahoma-city-zoo-amphitheatre-2026-06-18"
   },
   {
@@ -115,8 +125,10 @@
     ],
     "doorsTime": "18:30",
     "showTime": "19:30",
+    "timesConfirmed": false,
     "soldOut": true,
     "ticketPriceRange": "Resale $85-$450",
+    "pricesConfirmed": true,
     "ticketAffiliatePath": "/tickets/independence-cable-dahmer-arena-2026-06-19"
   },
   {
@@ -135,8 +147,10 @@
     ],
     "doorsTime": "18:30",
     "showTime": "19:30",
+    "timesConfirmed": false,
     "soldOut": false,
     "ticketPriceRange": "$45-$285",
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/salem-salem-civic-center-2026-06-25"
   },
   {
@@ -155,8 +169,10 @@
     ],
     "doorsTime": "18:30",
     "showTime": "19:30",
+    "timesConfirmed": false,
     "soldOut": true,
     "ticketPriceRange": "Resale $85-$450",
+    "pricesConfirmed": true,
     "ticketAffiliatePath": "/tickets/wilmington-live-oak-bank-pavilion-2026-06-26"
   },
   {
@@ -175,8 +191,10 @@
     ],
     "doorsTime": "18:00",
     "showTime": "19:00",
+    "timesConfirmed": true,
     "soldOut": false,
     "ticketPriceRange": "$45-$285",
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/pikeville-appalachian-wireless-arena-2026-07-23"
   },
   {
@@ -195,8 +213,10 @@
     ],
     "doorsTime": "17:30",
     "showTime": "19:00",
+    "timesConfirmed": true,
     "soldOut": true,
     "ticketPriceRange": "Resale $85-$450",
+    "pricesConfirmed": true,
     "ticketAffiliatePath": "/tickets/cary-koka-booth-amphitheatre-2026-07-24"
   },
   {
@@ -215,8 +235,10 @@
     ],
     "doorsTime": "18:00",
     "showTime": "19:00",
+    "timesConfirmed": true,
     "soldOut": true,
     "ticketPriceRange": "Resale $85-$450",
+    "pricesConfirmed": true,
     "ticketAffiliatePath": "/tickets/north-charleston-north-charleston-coliseum-2026-07-25"
   },
   {
@@ -235,8 +257,10 @@
     ],
     "doorsTime": "17:30",
     "showTime": "19:00",
+    "timesConfirmed": true,
     "soldOut": false,
     "ticketPriceRange": "$45-$285",
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/gilford-banknh-pavilion-2026-07-30"
   },
   {
@@ -255,8 +279,10 @@
     ],
     "doorsTime": "17:30",
     "showTime": "19:00",
+    "timesConfirmed": true,
     "soldOut": false,
     "ticketPriceRange": "$45-$285",
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/canandaigua-cmac-2026-07-31"
   },
   {
@@ -275,8 +301,10 @@
     ],
     "doorsTime": "18:30",
     "showTime": "19:30",
+    "timesConfirmed": false,
     "soldOut": true,
     "ticketPriceRange": "Resale $85-$450",
+    "pricesConfirmed": true,
     "ticketAffiliatePath": "/tickets/austin-moody-center-2026-08-13"
   },
   {
@@ -295,8 +323,10 @@
     ],
     "doorsTime": "18:30",
     "showTime": "19:30",
+    "timesConfirmed": false,
     "soldOut": false,
     "ticketPriceRange": "$45-$285",
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/corpus-christi-american-bank-center-2026-08-14"
   },
   {
@@ -315,8 +345,10 @@
     ],
     "doorsTime": "18:30",
     "showTime": "19:30",
+    "timesConfirmed": false,
     "soldOut": true,
     "ticketPriceRange": "Resale $85-$450",
+    "pricesConfirmed": true,
     "ticketAffiliatePath": "/tickets/fort-worth-dickies-arena-2026-08-15"
   },
   {
@@ -335,8 +367,10 @@
     "headliner": "Morgan Wallen",
     "doorsTime": "17:00",
     "showTime": "18:30",
+    "timesConfirmed": true,
     "soldOut": true,
     "ticketPriceRange": "Resale $185-$1,200",
+    "pricesConfirmed": true,
     "ticketAffiliatePath": "/tickets/tuscaloosa-bryant-denny-stadium-2026-04-18"
   },
   {
@@ -355,8 +389,10 @@
     "headliner": "Morgan Wallen",
     "doorsTime": "17:00",
     "showTime": "18:30",
+    "timesConfirmed": true,
     "soldOut": true,
     "ticketPriceRange": "Resale $185-$1,200",
+    "pricesConfirmed": true,
     "ticketAffiliatePath": "/tickets/east-lansing-spartan-stadium-2026-05-22"
   },
   {
@@ -375,8 +411,10 @@
     "headliner": "Morgan Wallen",
     "doorsTime": "17:00",
     "showTime": "18:30",
+    "timesConfirmed": true,
     "soldOut": true,
     "ticketPriceRange": "Resale $185-$1,200",
+    "pricesConfirmed": true,
     "ticketAffiliatePath": "/tickets/foxborough-gillette-stadium-2026-06-05"
   },
   {
@@ -395,8 +433,10 @@
     "headliner": "Morgan Wallen",
     "doorsTime": "17:00",
     "showTime": "18:30",
+    "timesConfirmed": true,
     "soldOut": true,
     "ticketPriceRange": "Resale $185-$1,200",
+    "pricesConfirmed": true,
     "ticketAffiliatePath": "/tickets/pittsburgh-acrisure-stadium-2026-06-06"
   },
   {
@@ -417,8 +457,10 @@
     "headliner": "Morgan Wallen",
     "doorsTime": "16:30",
     "showTime": "17:30",
+    "timesConfirmed": true,
     "soldOut": true,
     "ticketPriceRange": "Resale $185-$1,200",
+    "pricesConfirmed": true,
     "ticketAffiliatePath": "/tickets/philadelphia-lincoln-financial-field-2026-08-01"
   },
   {
@@ -433,7 +475,9 @@
     "openers": [],
     "soldOut": true,
     "ticketPriceRange": "Festival pass",
-    "ticketAffiliatePath": "/tickets/indio-stagecoach-festival-2026-04-24"
+    "pricesConfirmed": true,
+    "ticketAffiliatePath": "/tickets/indio-stagecoach-festival-2026-04-24",
+    "timesConfirmed": false
   },
   {
     "id": "bellville-rock-the-country-2026-05-01",
@@ -447,7 +491,9 @@
     "openers": [],
     "soldOut": true,
     "ticketPriceRange": "Festival pass",
-    "ticketAffiliatePath": "/tickets/bellville-rock-the-country-2026-05-01"
+    "pricesConfirmed": true,
+    "ticketAffiliatePath": "/tickets/bellville-rock-the-country-2026-05-01",
+    "timesConfirmed": false
   },
   {
     "id": "lexington-railbird-festival-2026-06-07",
@@ -461,7 +507,9 @@
     "openers": [],
     "soldOut": true,
     "ticketPriceRange": "Festival pass",
-    "ticketAffiliatePath": "/tickets/lexington-railbird-festival-2026-06-07"
+    "pricesConfirmed": true,
+    "ticketAffiliatePath": "/tickets/lexington-railbird-festival-2026-06-07",
+    "timesConfirmed": false
   },
   {
     "id": "virginia-beach-patriotic-festival-2027-05-29",
@@ -475,7 +523,9 @@
     "openers": [],
     "soldOut": false,
     "ticketPriceRange": "Festival pass",
-    "ticketAffiliatePath": "/tickets/virginia-beach-patriotic-festival-2027-05-29"
+    "pricesConfirmed": true,
+    "ticketAffiliatePath": "/tickets/virginia-beach-patriotic-festival-2027-05-29",
+    "timesConfirmed": false
   },
   {
     "id": "chicago-soldier-field-2026-06-20",
@@ -495,8 +545,10 @@
     "headliner": "Morgan Wallen",
     "doorsTime": "16:00",
     "showTime": "17:30",
+    "timesConfirmed": true,
     "soldOut": false,
     "ticketPriceRange": "Resale $185-$1,200",
+    "pricesConfirmed": true,
     "ticketAffiliatePath": "/tickets/chicago-soldier-field-2026-06-20"
   },
   {
@@ -517,8 +569,10 @@
     "headliner": "Morgan Wallen",
     "doorsTime": "16:00",
     "showTime": "17:30",
+    "timesConfirmed": true,
     "soldOut": false,
     "ticketPriceRange": "Resale $185-$1,200",
+    "pricesConfirmed": true,
     "ticketAffiliatePath": "/tickets/clemson-memorial-stadium-2026-06-27"
   },
   {
@@ -539,8 +593,10 @@
     "headliner": "Morgan Wallen",
     "doorsTime": "16:00",
     "showTime": "17:30",
+    "timesConfirmed": true,
     "soldOut": false,
     "ticketPriceRange": "Resale $185-$1,200",
+    "pricesConfirmed": true,
     "ticketAffiliatePath": "/tickets/baltimore-mt-bank-stadium-2026-07-18"
   },
   {
@@ -557,7 +613,9 @@
     ],
     "soldOut": false,
     "ticketPriceRange": "Festival pass",
-    "ticketAffiliatePath": "/tickets/springfield-illinois-state-fair-2026-08-21"
+    "pricesConfirmed": true,
+    "ticketAffiliatePath": "/tickets/springfield-illinois-state-fair-2026-08-21",
+    "timesConfirmed": false
   },
   {
     "id": "cowboys-music-festival-2026-07-10",
@@ -574,7 +632,9 @@
     ],
     "soldOut": false,
     "ticketPriceRange": "Festival pass",
-    "ticketAffiliatePath": "/tickets/cowboys-music-festival-2026-07-10"
+    "pricesConfirmed": true,
+    "ticketAffiliatePath": "/tickets/cowboys-music-festival-2026-07-10",
+    "timesConfirmed": false
   },
   {
     "id": "hamilton-td-coliseum-2026-07-16",
@@ -589,8 +649,10 @@
     "openers": [],
     "doorsTime": "18:00",
     "showTime": "19:00",
+    "timesConfirmed": true,
     "soldOut": false,
     "ticketPriceRange": "$45-$285",
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/hamilton-td-coliseum-2026-07-16"
   },
   {
@@ -609,8 +671,10 @@
     ],
     "doorsTime": "18:30",
     "showTime": "19:30",
+    "timesConfirmed": false,
     "soldOut": false,
     "ticketPriceRange": "$45-$285",
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/green-bay-resch-center-2026-08-20"
   },
   {
@@ -629,8 +693,10 @@
     ],
     "doorsTime": "18:30",
     "showTime": "19:30",
+    "timesConfirmed": false,
     "soldOut": false,
     "ticketPriceRange": "$45-$285",
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/north-little-rock-simmons-bank-arena-2026-08-22"
   },
   {
@@ -649,8 +715,10 @@
     ],
     "doorsTime": "18:30",
     "showTime": "19:30",
+    "timesConfirmed": false,
     "soldOut": false,
     "ticketPriceRange": "$45-$285",
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/auburn-neville-arena-2026-08-28"
   },
   {
@@ -669,8 +737,10 @@
     ],
     "doorsTime": "18:30",
     "showTime": "19:30",
+    "timesConfirmed": false,
     "soldOut": false,
     "ticketPriceRange": "$45-$285",
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/auburn-neville-arena-2026-08-29"
   },
   {
@@ -689,8 +759,10 @@
     ],
     "doorsTime": "18:30",
     "showTime": "19:30",
+    "timesConfirmed": false,
     "soldOut": false,
     "ticketPriceRange": "$45-$285",
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/newark-prudential-center-2026-09-10"
   },
   {
@@ -709,8 +781,10 @@
     ],
     "doorsTime": "18:30",
     "showTime": "19:30",
+    "timesConfirmed": false,
     "soldOut": false,
     "ticketPriceRange": "$45-$285",
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/state-college-bryce-jordan-center-2026-09-11"
   },
   {
@@ -729,8 +803,10 @@
     ],
     "doorsTime": "18:30",
     "showTime": "19:30",
+    "timesConfirmed": false,
     "soldOut": false,
     "ticketPriceRange": "$45-$285",
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/charleston-charleston-coliseum-2026-09-12"
   },
   {
@@ -749,8 +825,10 @@
     ],
     "doorsTime": "18:30",
     "showTime": "19:30",
+    "timesConfirmed": false,
     "soldOut": false,
     "ticketPriceRange": "$45-$285",
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/oxford-sjb-pavilion-2026-09-17"
   },
   {
@@ -769,8 +847,10 @@
     ],
     "doorsTime": "18:30",
     "showTime": "19:30",
+    "timesConfirmed": false,
     "soldOut": false,
     "ticketPriceRange": "$45-$285",
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/athens-akins-ford-arena-2026-09-18"
   },
   {
@@ -789,8 +869,10 @@
     ],
     "doorsTime": "18:30",
     "showTime": "19:30",
+    "timesConfirmed": false,
     "soldOut": false,
     "ticketPriceRange": "$45-$285",
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/jacksonville-vystar-veterans-memorial-arena-2026-09-19"
   },
   {
@@ -809,8 +891,10 @@
     ],
     "doorsTime": "18:30",
     "showTime": "19:30",
+    "timesConfirmed": false,
     "soldOut": false,
     "ticketPriceRange": "$45-$285",
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/knoxville-food-city-center-2026-09-24"
   },
   {
@@ -829,8 +913,10 @@
     ],
     "doorsTime": "18:30",
     "showTime": "19:30",
+    "timesConfirmed": false,
     "soldOut": false,
     "ticketPriceRange": "$45-$285",
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/columbus-schottenstein-center-2026-09-25"
   },
   {
@@ -849,8 +935,10 @@
     ],
     "doorsTime": "18:30",
     "showTime": "19:30",
+    "timesConfirmed": false,
     "soldOut": false,
     "ticketPriceRange": "$45-$285",
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/moline-vibrant-arena-at-the-mark-2026-09-26"
   },
   {
@@ -869,8 +957,10 @@
     ],
     "doorsTime": "18:00",
     "showTime": "19:30",
+    "timesConfirmed": true,
     "soldOut": false,
     "ticketPriceRange": "$45-$285",
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/morrison-red-rocks-amphitheatre-2026-10-07"
   },
   {
@@ -889,8 +979,10 @@
     ],
     "doorsTime": "18:30",
     "showTime": "19:30",
+    "timesConfirmed": false,
     "soldOut": false,
     "ticketPriceRange": "$45-$285",
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/tulsa-bok-center-2026-10-09"
   },
   {
@@ -909,8 +1001,10 @@
     ],
     "doorsTime": "18:30",
     "showTime": "19:30",
+    "timesConfirmed": false,
     "soldOut": false,
     "ticketPriceRange": "$45-$285",
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/lubbock-united-supermarkets-arena-2026-10-10"
   },
   {
@@ -929,8 +1023,10 @@
     ],
     "doorsTime": "18:30",
     "showTime": "19:30",
+    "timesConfirmed": false,
     "soldOut": false,
     "ticketPriceRange": "$45-$285",
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/los-angeles-greek-theatre-2026-10-13"
   },
   {
@@ -949,8 +1045,10 @@
     ],
     "doorsTime": "18:30",
     "showTime": "19:30",
+    "timesConfirmed": false,
     "soldOut": false,
     "ticketPriceRange": "$45-$285",
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/los-angeles-greek-theatre-2026-10-14"
   },
   {
@@ -969,8 +1067,10 @@
     ],
     "doorsTime": "18:30",
     "showTime": "19:30",
+    "timesConfirmed": false,
     "soldOut": false,
     "ticketPriceRange": "$45-$285",
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/des-moines-caseys-center-2026-10-29"
   },
   {
@@ -989,8 +1089,10 @@
     ],
     "doorsTime": "18:30",
     "showTime": "19:30",
+    "timesConfirmed": false,
     "soldOut": false,
     "ticketPriceRange": "$45-$285",
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/lincoln-pinnacle-bank-arena-2026-10-30"
   },
   {
@@ -1009,8 +1111,10 @@
     ],
     "doorsTime": "18:30",
     "showTime": "19:30",
+    "timesConfirmed": false,
     "soldOut": false,
     "ticketPriceRange": "$45-$285",
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/st.-paul-grand-casino-arena-2026-10-31"
   },
   {
@@ -1026,8 +1130,10 @@
     "openers": [],
     "doorsTime": "17:00",
     "showTime": "20:30",
+    "timesConfirmed": true,
     "soldOut": false,
     "ticketPriceRange": "Day passes",
+    "pricesConfirmed": true,
     "ticketAffiliatePath": "/tickets/ottawa-bluesfest-2026-07-17"
   },
   {
@@ -1043,8 +1149,10 @@
     "openers": [],
     "doorsTime": "",
     "showTime": "",
+    "timesConfirmed": false,
     "soldOut": false,
     "ticketPriceRange": "Festival passes",
+    "pricesConfirmed": true,
     "ticketAffiliatePath": "/tickets/redwest-festival-2026-10-16"
   }
 ]

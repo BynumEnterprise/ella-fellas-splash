@@ -8,7 +8,11 @@ import type { TourDate } from "@/lib/types";
  * reason people trust the answer is that we NEVER INVENT A STAGE TIME.
  *
  * The distinction this file enforces:
- *   CONFIRMED  — doors + listed start come from the venue/ticket listing. Real.
+ *   CONFIRMED  — doors + listed start come from the venue/ticket listing for THIS
+ *                date. Signalled by `timesConfirmed` on the row. Real.
+ *   TYPICAL    — the row carries the tour-wide default (doors 18:30 / start 19:30)
+ *                because nothing has been published for this date yet. We show it
+ *                as a typical time and say so. We do NOT call it confirmed.
  *   ORDER      — who plays in what sequence. Real (from tour-dates.json openers).
  *   STAGE TIME — the minute an artist actually walks on. NOT published in advance
  *                by anyone. We say so instead of guessing.
@@ -34,6 +38,12 @@ export interface SetSlot {
 export interface SetTimesInfo {
   doors?: string;
   listedStart?: string;
+  /**
+   * True when doors/listedStart were published for this specific date. When
+   * false the clock times are the tour-wide default and every surface that
+   * renders them must label them as typical, not confirmed.
+   */
+  timesConfirmed: boolean;
   slots: SetSlot[];
   /** True when the venue has published an actual running order. */
   hasConfirmedRunningOrder: boolean;
@@ -57,6 +67,7 @@ export function to12h(t?: string): string | undefined {
 export function buildSetTimes(d: TourDate): SetTimesInfo {
   const doors = to12h(d.doorsTime);
   const listedStart = to12h(d.showTime);
+  const timesConfirmed = d.timesConfirmed === true;
   const openers = (d.openers ?? []).filter(
     (o) => o && !/^ella langley/i.test(o.trim()),
   );
@@ -73,12 +84,14 @@ export function buildSetTimes(d: TourDate): SetTimesInfo {
     slots.push({
       name,
       role: ellaHeadlines && openers.length > 1 && lastOpener ? "direct-support" : "opener",
-      timeConfirmed: Boolean(first && listedStart),
-      time: first && listedStart ? listedStart : undefined,
+      timeConfirmed: Boolean(first && listedStart && timesConfirmed),
+      time: first && listedStart && timesConfirmed ? listedStart : undefined,
       note: first
-        ? listedStart
+        ? listedStart && timesConfirmed
           ? `The listed start time. The first act goes on at or near this — this is the number that matters if you don't want to miss anyone.`
-          : `Opens the night. This venue hasn't posted a start time yet.`
+          : listedStart
+            ? `Opens the night. ${listedStart} is the typical start for this tour — the venue hasn't posted this date's time yet, so treat it as a guide and check your ticket.`
+            : `Opens the night. This venue hasn't posted a start time yet.`
         : `Follows ${openers[i - 1]}. Venues don't publish changeover times in advance.`,
     });
   });
@@ -108,19 +121,22 @@ export function buildSetTimes(d: TourDate): SetTimesInfo {
   }
 
   const parts: string[] = [];
-  if (doors) parts.push(`Doors ${doors}`);
-  if (listedStart) parts.push(`listed start ${listedStart}`);
+  if (doors) parts.push(`Doors ${timesConfirmed ? "" : "typically "}${doors}`);
+  if (listedStart) parts.push(`${timesConfirmed ? "listed start" : "typical start"} ${listedStart}`);
+  const order = slots.length
+    ? `Running order: ${slots.map((s) => s.name).join(" → ")}.`
+    : "Running order not posted yet.";
+  const caveat = timesConfirmed
+    ? ""
+    : " These are the usual times for this tour — the venue hasn't confirmed this date yet, so check your ticket.";
   const summary = parts.length
-    ? `${parts.join(", ")}. ${
-        slots.length
-          ? `Running order: ${slots.map((s) => s.name).join(" → ")}.`
-          : "Running order not posted yet."
-      }`
+    ? `${parts.join(", ")}. ${order}${caveat}`
     : "This venue hasn't posted doors or a start time for this show yet.";
 
   return {
     doors,
     listedStart,
+    timesConfirmed,
     slots,
     // We only ever have the listed start, never a per-artist stage time in advance.
     hasConfirmedRunningOrder: false,

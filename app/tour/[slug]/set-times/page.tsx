@@ -42,7 +42,9 @@ export async function generateMetadata({
   const st = buildSetTimes(d);
   const title = `Ella Langley ${d.city} Set Times: What Time Does She Go On? (${fmt(d.date).replace(/^\w+, /, "")})`;
   const desc = st.doors
-    ? `Set times for Ella Langley at ${d.venue}, ${d.city} — doors ${st.doors}${st.listedStart ? `, listed start ${st.listedStart}` : ""}, full running order, and when she's actually on. Updated as the venue confirms.`
+    ? st.timesConfirmed
+      ? `Set times for Ella Langley at ${d.venue}, ${d.city} — doors ${st.doors}${st.listedStart ? `, listed start ${st.listedStart}` : ""}, full running order, and when she's actually on. Updated as the venue confirms.`
+      : `Set times and running order for Ella Langley at ${d.venue}, ${d.city}. ${d.venue} hasn't confirmed this date's times yet — we show the typical times for this tour and update the moment they're posted.`
     : `Set times and running order for Ella Langley at ${d.venue}, ${d.city}. We post the real times as the venue confirms them — we never invent one.`;
   return {
     title: { absolute: `${title} | Ella Fellas` },
@@ -75,18 +77,28 @@ export default async function SetTimesPage({ params }: { params: Promise<{ slug:
         ? `Ella headlines this show, so she's on last${
             d.openers?.length ? ` — after ${d.openers.join(" and ")}` : ""
           }. ${d.venue} has not published her exact stage time${
-            st.listedStart ? `; the listed start time for the night is ${st.listedStart}` : ""
+            st.listedStart
+              ? st.timesConfirmed
+                ? `; the listed start time for the night is ${st.listedStart}`
+                : `; ${st.listedStart} is the typical start time on this tour, but ${d.venue} hasn't confirmed this date`
+              : ""
           }. Venues almost never post the headliner's stage time in advance, and we don't invent one — we update this page the moment it's confirmed.`
         : `Ella is direct support on this date, which means she plays right before ${
             d.headliner ?? "the headliner"
           }. ${
-            st.listedStart ? `The listed start time is ${st.listedStart}. ` : ""
+            st.listedStart
+              ? st.timesConfirmed
+                ? `The listed start time is ${st.listedStart}. `
+                : `The typical start time on this tour is ${st.listedStart}, though this date isn't confirmed yet. `
+              : ""
           }Be inside by the listed start — support sets are the easiest thing to miss.`,
     },
     {
       q: `What time do doors open at ${d.venue}?`,
       a: st.doors
-        ? `Doors open at ${st.doors} for this show.`
+        ? st.timesConfirmed
+          ? `Doors open at ${st.doors} for this show.`
+          : `${d.venue} hasn't published a door time for this date yet. Doors are usually ${st.doors} on this tour, so plan around that and check your ticket — we update this page as soon as the venue confirms.`
         : `${d.venue} hasn't published a door time for this date yet. This page updates when it does.`,
     },
     {
@@ -145,15 +157,23 @@ export default async function SetTimesPage({ params }: { params: Promise<{ slug:
           <div className="flex items-start gap-3">
             <DoorOpen className="w-5 h-5 text-primary mt-1" aria-hidden="true" />
             <div>
-              <p className="text-xs uppercase tracking-wider text-clay font-medium">Doors</p>
-              <p className="font-display text-2xl text-denim">{st.doors ?? "Not posted yet"}</p>
+              <p className="text-xs uppercase tracking-wider text-clay font-medium">
+                Doors{st.doors && !st.timesConfirmed ? " (typical)" : ""}
+              </p>
+              <p className="font-display text-2xl text-denim">
+                {st.doors ? `${st.timesConfirmed ? "" : "~"}${st.doors}` : "Not posted yet"}
+              </p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <Clock className="w-5 h-5 text-primary mt-1" aria-hidden="true" />
             <div>
-              <p className="text-xs uppercase tracking-wider text-clay font-medium">Listed start</p>
-              <p className="font-display text-2xl text-denim">{st.listedStart ?? "Not posted yet"}</p>
+              <p className="text-xs uppercase tracking-wider text-clay font-medium">
+                {st.listedStart && !st.timesConfirmed ? "Typical start" : "Listed start"}
+              </p>
+              <p className="font-display text-2xl text-denim">
+                {st.listedStart ? `${st.timesConfirmed ? "" : "~"}${st.listedStart}` : "Not posted yet"}
+              </p>
             </div>
           </div>
         </div>

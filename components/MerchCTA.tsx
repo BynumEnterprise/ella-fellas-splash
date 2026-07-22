@@ -1,7 +1,6 @@
 import { ArrowRight, ShoppingBag, Star } from "lucide-react";
 import { AffiliateLink } from "@/components/AffiliateLink";
-
-const STORE_URL = "https://rz7eec-0u.myshopify.com/";
+import { shopUrl } from "@/lib/merch-store";
 
 interface MerchCTAProps {
   /** GA4 link_source for this placement, e.g. "set_times_merch". */
@@ -14,15 +13,17 @@ interface MerchCTAProps {
  * Funnel into the Ella Fellas merch store — our own unofficial, fan-made line,
  * always labeled as such. CSS-only visuals (no images), so it costs nothing in
  * Core Web Vitals. Clicks are tracked by the global AffiliateClickTracker:
- * myshopify.com maps to the "merch_store" network there, and the `source` prop
- * becomes GA4's link_source via data-affiliate-source.
+ * shopellafellas.com maps to the "merch_store" network there, and the `source`
+ * prop becomes GA4's link_source via data-affiliate-source. The same `source`
+ * is also the utm_content on the outbound href (see lib/merch-store.ts), so the
+ * store's separate GA4 property can attribute the visit to this placement.
  */
 export function MerchCTA({ source, variant = "card", className = "" }: MerchCTAProps) {
   if (variant === "banner") {
     return (
       <section className={className}>
         <AffiliateLink
-          href={STORE_URL}
+          href={shopUrl("/", source)}
           source={source}
           ariaLabel="Shop unofficial Ella Fellas merch"
           className="group relative block overflow-hidden rounded-xl bg-denim border border-denim text-paper p-6 md:p-8 hover:shadow-xl transition-shadow"
@@ -70,7 +71,7 @@ export function MerchCTA({ source, variant = "card", className = "" }: MerchCTAP
 
   return (
     <AffiliateLink
-      href={STORE_URL}
+      href={shopUrl("/", source)}
       source={source}
       ariaLabel="Shop unofficial Ella Fellas merch"
       className={`group flex items-center gap-4 bg-paper border border-ink/12 rounded-xl p-5 hover:border-primary hover:shadow-md transition-all ${className}`}

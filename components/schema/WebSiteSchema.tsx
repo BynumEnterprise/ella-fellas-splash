@@ -9,7 +9,7 @@ export function WebSiteSchema() {
     description:
       "Unofficial fan-run news and tour information site for country music artist Ella Langley.",
     logo: `${url}/logo.png`,
-    sameAs: ["https://rz7eec-0u.myshopify.com/"],
+    sameAs: ["https://shopellafellas.com"],
   };
   const website = {
     "@context": "https://schema.org",

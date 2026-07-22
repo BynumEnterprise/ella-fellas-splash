@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { SearchBox } from "@/components/SearchBox";
+import { shopUrl } from "@/lib/merch-store";
 
 type NavLink = { href: string; label: string };
 type NavGroup = { label: string; children: NavLink[] };
@@ -45,7 +46,7 @@ const NAV: NavItem[] = [
     ],
   },
   { href: "/fan-club", label: "Fan Club" },
-  { href: "https://rz7eec-0u.myshopify.com/", label: "Shop" },
+  { href: shopUrl("/", "nav_shop"), label: "Shop" },
   { href: "/about", label: "About" },
 ];
 

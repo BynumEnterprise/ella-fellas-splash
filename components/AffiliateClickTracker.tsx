@@ -24,6 +24,7 @@ const NETWORK_BY_DOMAIN: Record<string, string> = {
   "stubhub.com": "stubhub",
   "awin1.com": "awin",
   "myshopify.com": "merch_store",
+  "shopellafellas.com": "merch_store", // our POD store on its own domain
 };
 
 // CJ hides the merchant behind generic click domains (jdoqocy.com etc). Map our

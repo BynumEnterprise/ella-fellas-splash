@@ -45,7 +45,7 @@ const NAV: NavItem[] = [
     ],
   },
   { href: "/fan-club", label: "Fan Club" },
-  { href: "/shop", label: "Shop" },
+  { href: "https://rz7eec-0u.myshopify.com/", label: "Shop" },
   { href: "/about", label: "About" },
 ];
 

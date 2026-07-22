@@ -94,8 +94,15 @@ export default function SetTimesHub() {
                 <div className="text-right">
                   <p className="text-sm text-ink/70">
                     <Clock className="w-3.5 h-3.5 inline mr-1 text-primary" aria-hidden="true" />
-                    Doors {st.doors ?? "TBA"}
-                    {st.listedStart ? ` · Start ${st.listedStart}` : ""}
+                    Doors {st.doors ? `${st.timesConfirmed ? "" : "~"}${st.doors}` : "TBA"}
+                    {st.listedStart
+                      ? ` · Start ${st.timesConfirmed ? "" : "~"}${st.listedStart}`
+                      : ""}
+                    {st.doors && !st.timesConfirmed ? (
+                      <span className="block text-[11px] text-ink/45 mt-0.5">
+                        typical — not yet confirmed
+                      </span>
+                    ) : null}
                   </p>
                   <p className="text-xs text-ink/50 mt-0.5">
                     {d.openers?.length ? d.openers.join(" · ") : "Support TBA"}

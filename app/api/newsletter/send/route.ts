@@ -158,7 +158,18 @@ export async function POST(req: Request) {
     .from("newsletter_sends")
     .upsert({ send_date: sendDate, subject, recipient_count: recipients.length }, { onConflict: "send_date" });
 
-  // --- send, sequentially, tolerating individual failures ---
+  // --- send, sequentially, THROTTLED to respect Resend's 10 req/sec cap ---
+  // Resend rejects the tail of a fast loop with 429 rate_limit_exceeded, which
+  // silently dropped recipients on every send once the list passed ~10. We now
+  // (a) pace sends well under 10/sec and (b) retry a rate-limited recipient with
+  // escalating backoff instead of giving up on them.
+  const sleep = (ms: number) => new Promise((res) => setTimeout(res, ms));
+  const isRateLimit = (err?: string) =>
+    !!err &&
+    (err.includes("429") ||
+      err.toLowerCase().includes("rate_limit") ||
+      err.toLowerCase().includes("too many requests"));
+
   let sent = 0;
   const failures: { email: string; error?: string }[] = [];
   for (const sub of recipients) {
@@ -169,9 +180,17 @@ export async function POST(req: Request) {
       unsubscribeUrl: unsubUrl,
       preheader: typeof resolved.frontmatter.subject === "string" ? resolved.frontmatter.subject : undefined,
     });
-    const r = await sendEmail({ to: sub.email, subject, html, listUnsubscribeUrl: unsubUrl });
+
+    let r = await sendEmail({ to: sub.email, subject, html, listUnsubscribeUrl: unsubUrl });
+    for (let attempt = 1; attempt <= 5 && !r.ok && isRateLimit(r.error); attempt++) {
+      await sleep(1000 * attempt);
+      r = await sendEmail({ to: sub.email, subject, html, listUnsubscribeUrl: unsubUrl });
+    }
     if (r.ok) sent++;
     else failures.push({ email: sub.email, error: r.error });
+
+    // Base pacing between recipients: ~6-7 sends/sec, comfortably under 10/sec.
+    await sleep(150);
   }
 
   await supabase

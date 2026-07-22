@@ -23,6 +23,7 @@ const NETWORK_BY_DOMAIN: Record<string, string> = {
   "ticketmaster.com": "ticketmaster",
   "stubhub.com": "stubhub",
   "awin1.com": "awin",
+  "myshopify.com": "merch_store",
 };
 
 // CJ hides the merchant behind generic click domains (jdoqocy.com etc). Map our
@@ -50,6 +51,8 @@ function merchantForUrl(url: string, host: string, network: string): string {
   // Expedia's affiliate links wrap the real destination in ?landingPage=
   if (network === "expedia") return "expedia.com";
   if (network === "amazon") return "amazon.com";
+  // Our own Shopify POD store — report a readable name, not the random shop host.
+  if (network === "merch_store") return "ella_fellas_merch";
   // Impact links are <brand>.<vanity> — the subdomain IS the brand, so report
   // "ihg" / "hilton" / "marriott" / "choice" rather than an opaque redirect host.
   if (network === "impact") return host.split(".")[0] || host;
@@ -87,6 +90,7 @@ const CLICK_WEIGHT: Record<string, number> = {
   economybookings: 5,// high % (~55%) on a small rental base
   pinto_ranch: 4,    // western wear, mid basket
   amazon: 2,         // ~3-4% on low baskets
+  merch_store: 8,    // our own POD line — full print margin per order (~$8-13), not a % commission
   impact_points: 1,  // buy-points programs, low fit
   unmapped: 1,
 };

@@ -13,6 +13,7 @@ import { ticketNetworkUrl } from "@/lib/affiliates";
 import { formatDate } from "@/lib/utils";
 import { buildNightPlan, findStandSiblings } from "@/lib/night-plan";
 import { NightPlanView } from "@/components/NightPlan";
+import { MerchCTA } from "@/components/MerchCTA";
 
 export async function generateStaticParams() {
   return getAllTourDates().map((d) => ({ slug: d.id }));
@@ -286,6 +287,8 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
           Full guide &rarr;
         </Link>
       </section>
+
+      <MerchCTA source="tour_merch" className="mb-8" />
 
       <AffiliateDisclosure />
     </article>

@@ -19,6 +19,7 @@ import { YouTubeEmbed } from "@/components/YouTubeEmbed";
 import type { Song } from "@/lib/types";
 import { MusicRecordingSchema } from "@/components/schema/MusicRecordingSchema";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
+import { MerchCTA } from "@/components/MerchCTA";
 
 export async function generateStaticParams() {
   return getAllSongs().map((s) => ({ slug: s.slug }));
@@ -359,6 +360,9 @@ export default async function SongPage({ params }: { params: Promise<{ slug: str
           </div>
         </section>
       )}
+      <div className="mt-14 pt-10 border-t border-ink/10">
+        <MerchCTA source="song_merch" />
+      </div>
     </article>
   );
 }

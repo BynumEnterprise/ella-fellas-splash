@@ -5,6 +5,7 @@ import { getProduct } from "@/lib/shop";
 import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
 import { FaqSchema } from "@/components/schema/FaqSchema";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
+import { MerchCTA } from "@/components/MerchCTA";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
 const TITLE = "Where to Buy Ella Langley Merch & Vinyl (2026)";
@@ -118,6 +119,8 @@ export default function MerchPage() {
           </Link>
         </div>
       </div>
+
+      <MerchCTA source="merch_page_merch" className="mb-8" />
 
       <h2 className="font-display text-2xl text-denim tracking-wide mb-4">COMMON QUESTIONS</h2>
       <div className="space-y-4 mb-8">

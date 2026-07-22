@@ -8,6 +8,7 @@ import { TourCard } from "@/components/TourCard";
 import { NewsCard } from "@/components/NewsCard";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { SpotifyEmbed } from "@/components/SpotifyEmbed";
+import { MerchCTA } from "@/components/MerchCTA";
 import { formatDate, formatTime } from "@/lib/utils";
 import type { Metadata } from "next";
 
@@ -148,6 +149,9 @@ export default function HomePage() {
             </div>
           </section>
         )}
+
+        {/* MERCH BANNER — between the next-show card and the Dandelion player */}
+        <MerchCTA variant="banner" source="home_merch_banner" className="mb-8 md:mb-14" />
 
         {/* SPOTIFY EMBED — compact on mobile so tour dates surface sooner */}
         <section className="mb-8 md:mb-14 grid md:grid-cols-[280px_1fr] gap-3 md:gap-6 items-center">

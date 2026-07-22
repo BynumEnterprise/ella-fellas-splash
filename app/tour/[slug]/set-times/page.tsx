@@ -9,6 +9,7 @@ import { ticketNetworkUrl } from "@/lib/affiliates";
 import { AffiliateLink } from "@/components/AffiliateLink";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
+import { MerchCTA } from "@/components/MerchCTA";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
@@ -244,6 +245,8 @@ export default async function SetTimesPage({ params }: { params: Promise<{ slug:
           <Music className="w-4 h-4" /> PLAN MY NIGHT
         </Link>
       </div>
+
+      <MerchCTA source="set_times_merch" className="mb-8" />
 
       <h2 className="font-display text-2xl text-denim tracking-wide mb-3">COMMON QUESTIONS</h2>
       <div className="space-y-4 mb-8">

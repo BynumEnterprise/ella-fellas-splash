@@ -190,9 +190,23 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
             <li className="flex items-start gap-2">
               <Clock className="w-4 h-4 mt-0.5 text-primary flex-shrink-0" />
               <span>
-                {d.doorsTime && <>Doors {to12h(d.doorsTime)}</>}
-                {d.doorsTime && d.showTime && " · "}
-                {d.showTime && <>Show {to12h(d.showTime)}</>}
+                {d.timesConfirmed ? (
+                  <>
+                    {d.doorsTime && <>Doors {to12h(d.doorsTime)}</>}
+                    {d.doorsTime && d.showTime && " · "}
+                    {d.showTime && <>Show {to12h(d.showTime)}</>}
+                  </>
+                ) : (
+                  <>
+                    {d.doorsTime && <>Doors ~{to12h(d.doorsTime)}</>}
+                    {d.doorsTime && d.showTime && " · "}
+                    {d.showTime && <>Show ~{to12h(d.showTime)}</>}
+                    <span className="block text-xs text-ink/60 mt-0.5">
+                      Typical times for this tour — {d.venue} hasn&apos;t confirmed this
+                      date yet. Check your ticket before you leave.
+                    </span>
+                  </>
+                )}
               </span>
             </li>
           )}

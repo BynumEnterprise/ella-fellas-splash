@@ -14,8 +14,16 @@ export interface TourDate {
   headliner?: string;
   doorsTime?: string;
   showTime?: string;
+  /**
+   * True only when doorsTime/showTime came from the venue or ticket listing for
+   * THIS date. False means the row carries the tour-wide default (18:30/19:30)
+   * and the times must be presented as typical, never as confirmed fact.
+   */
+  timesConfirmed?: boolean;
   soldOut: boolean;
   ticketPriceRange: string;
+  /** True only when ticketPriceRange was researched for THIS date, not the default. */
+  pricesConfirmed?: boolean;
   ticketAffiliatePath: string;
 }
 

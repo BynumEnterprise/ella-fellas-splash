@@ -13,25 +13,35 @@ export function MusicEventSchema({ d, url }: { d: TourDate; url: string }) {
   const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
   const prices = (d.ticketPriceRange.replace(/,/g, "").match(/\d+(?:\.\d+)?/g) ?? []).map(Number);
 
+  // Only publish price structured data when the range was researched for THIS
+  // date. The tour-wide default ($45-$285) is a placeholder, and emitting it as
+  // lowPrice/highPrice tells Google a price we cannot stand behind.
   const offers: any = {
     "@type": "Offer",
     url,
     availability: d.soldOut
       ? "https://schema.org/SoldOut"
       : "https://schema.org/InStock",
-    priceRange: d.ticketPriceRange,
   };
-  if (prices.length) {
-    offers.priceCurrency = "USD";
-    offers.lowPrice = String(Math.min(...prices));
-    offers.highPrice = String(Math.max(...prices));
+  if (d.pricesConfirmed) {
+    offers.priceRange = d.ticketPriceRange;
+    if (prices.length) {
+      offers.priceCurrency = "USD";
+      offers.lowPrice = String(Math.min(...prices));
+      offers.highPrice = String(Math.max(...prices));
+    }
   }
 
   const json: any = {
     "@context": "https://schema.org",
     "@type": "MusicEvent",
     name: `Ella Langley \u2014 ${d.tour}, ${d.city}`,
-    startDate: `${d.date}T${(d.showTime ?? "19:30").padStart(5, "0")}`,
+    // schema.org accepts a plain Date for startDate. When we do not have a
+    // confirmed start time we publish the date only rather than asserting a
+    // clock time we guessed.
+    startDate: d.timesConfirmed && d.showTime
+      ? `${d.date}T${d.showTime.padStart(5, "0")}`
+      : d.date,
     eventStatus: "https://schema.org/EventScheduled",
     eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
     image: `${SITE}/opengraph-image.png`,

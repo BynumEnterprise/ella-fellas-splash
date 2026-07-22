@@ -26,3 +26,5 @@ For the July 10-16 tracking week, Billboard reports 24 million official U.S. str
 Here's the stakes now: one more week on top and "Choosin' Texas" stands alone — the longest-leading non-holiday Hot 100 No. 1 ever by a woman with no male-billed acts. Among all songs by women, only Mariah's "All I Want for Christmas Is You" (22 weeks) has led longer. So yes, we'll be refreshing the chart again next Monday. At this point it's a weekly ritual around here.
 
 Meanwhile the Dandelion Tour rolls into a huge week — Pikeville tomorrow, then Cary, North Charleston, Canandaigua and Gilford. [Set times, seating tips and ticket links are on our tour page](/tour) if you're catching one of these while the song that's chasing Whitney and Mariah is still sitting at No. 1.
+
+New around here because of the chart run? Start with [what "Choosin' Texas" actually means](/news/2026-07-22-choosin-texas-meaning) — kangaroo story included — then the ["Choosin' Texas" song page](/songs/choosin-texas) for the full chart history, and if you're headed to one of this week's shows, our [Arena Night look](/shop/looks/arena-night) is what we'd wear to see it live.

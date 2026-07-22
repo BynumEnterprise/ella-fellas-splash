@@ -2,10 +2,10 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
-import { CheckCircle2, HelpCircle, ArrowDown } from "lucide-react";
+import { CheckCircle2, HelpCircle, ArrowDown, Ticket, Utensils, Beer, Car } from "lucide-react";
 import type { TourDate } from "@/lib/types";
-import { buildNightPlan, type Arrival, type Party } from "@/lib/night-plan";
-import { parseShowRequest, type Intent } from "@/lib/plan-parse";
+import { buildNightPlan, buildPlanBlocks, type Arrival, type Party, type PlanBlock } from "@/lib/night-plan";
+import { parseShowRequest, type Intent, type Activities } from "@/lib/plan-parse";
 import { NightPlanView } from "@/components/NightPlan";
 import { NearbyPicks } from "@/components/NearbyPicks";
 import { AskBox } from "@/components/AskBox";
@@ -22,12 +22,25 @@ function track(name: string, params: Record<string, unknown>) {
   }
 }
 
+const BLOCK_ICON = {
+  tickets: Ticket,
+  dinner: Utensils,
+  drinks: Beer,
+  parking: Car,
+} as const;
+
 /**
  * Ask in plain English -> a real show + what you asked for.
  *
  * Runs entirely in the browser off data we already ship: no API call, no cost
  * per visitor, and it cannot invent a show or a set time — it only ever resolves
- * to something already in tour-dates.json, or admits it couldn't and asks.
+ * to something already in tour-dates.json.
+ *
+ * IT ALWAYS ANSWERS. "I wanna go to the next show and get tickets and go out for
+ * dinner before and then drinks after" used to bounce to the manual picker,
+ * because nothing in it names a city. Now relative asks resolve, and anything we
+ * still can't pin down falls back to the next show with the assumption stated
+ * out loud and the alternatives one tap below the plan.
  */
 export function PlanBuilder({
   shows,
@@ -46,9 +59,11 @@ export function PlanBuilder({
   const [firstShow, setFirstShow] = useState(false);
   const [asked, setAsked] = useState(false);
   const [resolved, setResolved] = useState(false);
+  const [assumed, setAssumed] = useState(false);
   const [understood, setUnderstood] = useState<string>("");
   const [candidates, setCandidates] = useState<TourDate[]>([]);
   const [intents, setIntents] = useState<Intent[]>([]);
+  const [activities, setActivities] = useState<Activities | null>(null);
 
   // THE BUG THIS FIXES: picking a show built a correct plan ~2,000px BELOW the
   // fold, so nothing moved in the viewport and the planner read as broken. The
@@ -69,10 +84,10 @@ export function PlanBuilder({
 
   function handleAsk(text: string) {
     const r = parseShowRequest(text, shows);
-    // THE most valuable signal on the site: the exact words fans use, plus
-    // whether we could answer. `plan_unresolved` is a live content-gap feed —
-    // every row is a real fan question we failed, in their own phrasing.
-    track(r.show ? "plan_ask_resolved" : "plan_unresolved", {
+    // THE most valuable signal on the site: the exact words fans use, plus how
+    // confidently we answered. `plan_ask_assumed` is the content-gap feed now —
+    // every row is a real fan question we had to guess our way through.
+    track(r.assumed ? "plan_ask_assumed" : "plan_ask_resolved", {
       search_term: text.trim().slice(0, 100).toLowerCase(),
       intents: r.intents.join(",") || "none",
       confidence: r.confidence,
@@ -80,13 +95,12 @@ export function PlanBuilder({
       candidate_count: r.candidates.length,
     });
     setAsked(true);
-    setResolved(!!r.show);
+    setResolved(!!r.show && !r.assumed);
+    setAssumed(r.assumed);
     setUnderstood(r.understood);
     setCandidates(r.candidates);
     setIntents(r.intents);
-    // Clear the previous show unless we resolved a new one. Leaving it up would
-    // print a full Tulsa plan under the words "we couldn't match that" — the exact
-    // kind of confident-but-wrong answer this whole thing exists to avoid.
+    setActivities(r.activities);
     setShowId(r.show ? r.show.id : "");
     // Their words drive the follow-ups too — but they can still override below.
     if (r.intents.includes("stay")) setArrival("staying");
@@ -102,12 +116,16 @@ export function PlanBuilder({
     () => (show ? buildNightPlan(show, { arrival, party, firstShow }) : null),
     [show, arrival, party, firstShow],
   );
+  const blocks: PlanBlock[] = useMemo(
+    () => (show && activities ? buildPlanBlocks(show, activities) : []),
+    [show, activities],
+  );
 
   // If they asked for something specific, lead with it. If they just picked a
   // show, show them everything.
   const want = {
-    stay: intents.includes("stay") || intents.length === 0,
-    food: intents.includes("food") || intents.length === 0,
+    stay: activities ? activities.hotel || activities.none : intents.length === 0,
+    food: activities ? activities.dinner || activities.drinks || activities.none : intents.length === 0,
   };
 
   const pill = (active: boolean) =>
@@ -124,6 +142,16 @@ export function PlanBuilder({
       day: "numeric",
       timeZone: "UTC",
     });
+
+  const pickAnother = (c: TourDate) => {
+    setShowId(c.id);
+    setCandidates([]);
+    setAssumed(false);
+    setResolved(true);
+    setUnderstood(`${c.city}, ${c.state} — ${dateLabel(c)} at ${c.venue}.`);
+    setScrollWanted(true);
+    track("plan_show_select", { item_id: c.id, method: "candidate_chip" });
+  };
 
   return (
     <div>
@@ -151,7 +179,7 @@ export function PlanBuilder({
           )}
           <div>
             <p className="text-ink/85">
-              {show ? (
+              {show && !assumed ? (
                 <>
                   Got it — <strong>{understood}</strong>
                 </>
@@ -159,30 +187,9 @@ export function PlanBuilder({
                 understood
               )}
             </p>
-            {candidates.length > 0 && (
-              <div className="flex flex-wrap gap-2 mt-2">
-                {candidates.map((c) => (
-                  <button
-                    key={c.id}
-                    type="button"
-                    onClick={() => {
-                      setShowId(c.id);
-                      setCandidates([]);
-                      setUnderstood(
-                        `${c.city}, ${c.state} — ${dateLabel(c)} at ${c.venue}.`,
-                      );
-                      setScrollWanted(true);
-                    }}
-                    className="px-3 py-1.5 rounded-full text-xs border border-denim/30 text-denim hover:border-primary hover:text-primary"
-                  >
-                    {dateLabel(c)} · {c.city}, {c.state}
-                  </button>
-                ))}
-              </div>
-            )}
             {show && (
               <p className="text-xs text-ink/60 mt-1">
-                Not right? Change it below.
+                Not right? Change it below — your plan is already built.
               </p>
             )}
           </div>
@@ -203,6 +210,7 @@ export function PlanBuilder({
           onChange={(e) => {
             setShowId(e.target.value);
             setCandidates([]);
+            setAssumed(false);
             setUnderstood("");
             if (e.target.value) {
               setScrollWanted(true);
@@ -311,6 +319,53 @@ export function PlanBuilder({
             {dateLabel(show)} · {show.venue} — built from this show&apos;s real doors and
             listed start. Change anything above and this updates instantly.
           </p>
+
+          {/* What they actually asked for, in the order the night happens. */}
+          {blocks.length > 0 && (
+            <div className="mb-6 space-y-3">
+              {blocks.map((b) => {
+                const Icon = BLOCK_ICON[b.key];
+                return (
+                  <div key={b.key} className="bg-paper border border-ink/15 rounded-lg p-4">
+                    <div className="flex flex-wrap items-baseline gap-x-2">
+                      <h3 className="flex items-center gap-2 font-display text-lg text-denim tracking-wide">
+                        <Icon className="w-4 h-4 text-primary" aria-hidden="true" />
+                        {b.title.toUpperCase()}
+                      </h3>
+                      {b.time && (
+                        <span className="font-display text-lg text-clay tracking-wide">{b.time}</span>
+                      )}
+                    </div>
+                    <p className="text-sm text-ink/75 leading-relaxed mt-1">{b.body}</p>
+                    <div className="flex flex-wrap gap-2 mt-3">
+                      {b.links.map((l) =>
+                        l.external ? (
+                          <a
+                            key={l.href}
+                            href={l.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 px-3 py-2 text-sm bg-paper border border-ink/20 rounded-full text-denim hover:bg-ink/10"
+                          >
+                            {l.label}
+                          </a>
+                        ) : (
+                          <Link
+                            key={l.href}
+                            href={l.href}
+                            className="inline-flex items-center gap-1.5 px-4 py-2 text-sm bg-primary text-paper font-semibold rounded-full hover:bg-primary/90"
+                          >
+                            {l.label} &rarr;
+                          </Link>
+                        ),
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+
           <div className="bg-paper border border-ink/15 rounded-lg p-5">
             <NightPlanView plan={plan} />
           </div>
@@ -329,6 +384,27 @@ export function PlanBuilder({
               FULL PACKING LIST
             </Link>
           </div>
+
+          {/* The picker sits BELOW the plan, never instead of it. */}
+          {(assumed || candidates.length > 0) && candidates.length > 0 && (
+            <div className="mt-6 bg-ink/5 border border-ink/20 rounded-lg p-4">
+              <p className="text-sm text-ink/80 mb-2">
+                Not this one? Tap the show you meant and the whole plan rebuilds:
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {candidates.map((c) => (
+                  <button
+                    key={c.id}
+                    type="button"
+                    onClick={() => pickAnother(c)}
+                    className="px-3 py-1.5 rounded-full text-xs border border-denim/30 text-denim hover:border-primary hover:text-primary"
+                  >
+                    {dateLabel(c)} · {c.city}, {c.state}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
 
           {(want.stay || want.food) && (
             <div className="mt-6 bg-paper border border-ink/15 rounded-lg p-5">

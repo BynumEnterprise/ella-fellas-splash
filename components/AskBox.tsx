@@ -13,6 +13,7 @@ export function AskBox({
   const [text, setText] = useState(initial);
 
   const examples = [
+    "The next show — tickets, dinner before, drinks after",
     "Baltimore Saturday — tickets, a hotel and dinner nearby",
     "What time does she go on in Tulsa?",
     "Red Rocks in October, where should I stay?",
@@ -35,7 +36,7 @@ export function AskBox({
           type="text"
           value={text}
           onChange={(e) => setText(e.target.value)}
-          placeholder="e.g. I want to go to the Baltimore show Saturday — tickets, somewhere to stay, and food nearby"
+          placeholder="e.g. I wanna go to the next show, get tickets, dinner before and drinks after"
           className="flex-1 px-4 py-3 border-2 border-denim/30 focus:border-primary outline-none rounded-md bg-paper text-ink"
         />
         <button

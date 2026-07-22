@@ -1,4 +1,5 @@
 import type { TourDate } from "@/lib/types";
+import type { Activities } from "@/lib/plan-parse";
 
 /**
  * NIGHT PLAN ENGINE
@@ -294,4 +295,115 @@ export function findStandSiblings(d: TourDate, all: TourDate[]): TourDate[] {
     .filter((o) => o.id !== d.id && o.venue === d.venue && o.city === d.city)
     .filter((o) => Math.abs(new Date(o.date).getTime() - new Date(d.date).getTime()) <= 3 * 864e5)
     .sort((a, b) => (a.date < b.date ? -1 : 1));
+}
+
+/* ------------------------- what they actually asked for ------------------------- */
+
+export interface PlanBlockLink {
+  label: string;
+  href: string;
+  /** true = off-site (Google Maps), false = an internal route */
+  external: boolean;
+}
+
+export interface PlanBlock {
+  key: "tickets" | "dinner" | "drinks" | "parking";
+  title: string;
+  /** null whenever we can't compute an honest clock time */
+  time: string | null;
+  body: string;
+  links: PlanBlockLink[];
+}
+
+const mapsSearch = (q: string) =>
+  `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`;
+
+/**
+ * Turns the ASK ("tickets, dinner before, drinks after") into blocks, each one
+ * grounded in this show's real data.
+ *
+ * SAME NON-NEGOTIABLE RULE: no invented restaurants, no invented end time, no
+ * invented prices. Eating and drinking send people to live local results around
+ * the real venue address; timings are computed off doorsTime/showTime and go
+ * silent (time: null) with an honest sentence when the venue hasn't posted them.
+ */
+export function buildPlanBlocks(d: TourDate, a: Activities): PlanBlock[] {
+  const blocks: PlanBlock[] = [];
+  const doors = parseHHMM(d.doorsTime);
+  const start = parseHHMM(d.showTime);
+  const anchor = doors ?? start;
+  const near = `${d.venue}, ${d.city}, ${d.state}`;
+  const all = a.none; // asked for nothing specific -> show the whole night
+
+  if (a.tickets || all) {
+    blocks.push({
+      key: "tickets",
+      title: d.soldOut ? "Tickets — sold out at face value" : "Tickets",
+      time: null,
+      body: d.soldOut
+        ? `${d.venue} is sold out at face value for this date, so resale is the way in — prices move daily, and they usually soften in the last 48 hours. Listed range right now: ${d.ticketPriceRange}.`
+        : `${d.venue}, ${d.city} — listed range ${d.ticketPriceRange}. The show page has the seating breakdown for this exact room before you pay.`,
+      links: [
+        {
+          label: d.soldOut ? "Find resale tickets" : "Get tickets",
+          href: `/tour/${d.id}`,
+          external: false,
+        },
+      ],
+    });
+  }
+
+  if (a.dinner || all) {
+    const before = a.dinnerWhen !== "after";
+    // Two hours ahead of doors is a table you can finish without rushing the gate.
+    const t = before && anchor != null ? fmt(anchor - 120) : null;
+    blocks.push({
+      key: "dinner",
+      title: before ? "Dinner before" : "Food after",
+      time: t,
+      body: before
+        ? anchor != null
+          ? `Sit down around ${t} and you're eating, paying and walking in without watching the clock — doors are ${fmt(doors ?? start) ?? "not posted yet"}. These are live results around ${d.venue}, not a list we made up, so hours and openings are current.`
+          : `${d.venue} hasn't posted doors or start times for this date yet, so we won't put a fake number on your reservation — book about two hours before the listed start once it's up. These are live results around the venue, not a list we made up.`
+        : `Post-show food near ${d.venue} — live local results, so late-night hours are current. Check the closing time before you count on a place.`,
+      links: [
+        { label: "Restaurants near the venue", href: mapsSearch(`restaurants near ${near}`), external: true },
+        { label: "Something quick", href: mapsSearch(`fast casual restaurants near ${near}`), external: true },
+      ],
+    });
+  }
+
+  if (a.drinks || all) {
+    const after = a.drinksWhen !== "before";
+    const t = !after && anchor != null ? fmt(anchor - 60) : null;
+    blocks.push({
+      key: "drinks",
+      title: after ? "Drinks after" : "Drinks before",
+      time: t,
+      body: after
+        ? `We don't post an end time until the venue does — but you'll be out shortly after the encore, and the lot empties all at once, so walking somewhere close beats sitting in it. Live results for bars and honky tonks around ${d.venue}; check closing times, small-city last call comes early.`
+        : anchor != null
+          ? `Grab one around ${t}, close enough to walk in when doors open at ${fmt(doors ?? start)}. Live local results around ${d.venue}.`
+          : `Times aren't posted for this date yet, so we can't time your first round honestly — here are the bars closest to ${d.venue}.`,
+      links: [
+        { label: "Bars & honky tonks nearby", href: mapsSearch(`bars and honky tonks near ${near}`), external: true },
+        { label: "Late-night spots", href: mapsSearch(`late night bars near ${near}`), external: true },
+      ],
+    });
+  }
+
+  if (a.parking) {
+    blocks.push({
+      key: "parking",
+      title: "Parking",
+      time: anchor != null ? fmt(anchor - (hasStadiumBagRules(d) ? 90 : 60)) : null,
+      body:
+        anchor != null
+          ? `Be rolling in by then and the lot is a walk, not a jog. Live lot and garage results around ${d.venue} — book ahead if the map shows prepaid options.`
+          : `Doors aren't posted yet, so we can't give you a leave-by time we'd stand behind. Here are the lots and garages around ${d.venue}.`,
+      links: [{ label: "Parking near the venue", href: mapsSearch(`parking near ${near}`), external: true }],
+    });
+  }
+
+  return blocks;
 }

@@ -158,11 +158,18 @@ export default function TicketPricesPage() {
                   <p className="text-sm text-ink/70">{d.venue}</p>
                 </div>
                 <div className="text-right">
-                  <p className="font-display text-xl text-denim">{d.ticketPriceRange}</p>
+                  <p className="font-display text-xl text-denim">
+                    {d.pricesConfirmed ? d.ticketPriceRange : `~${d.ticketPriceRange}`}
+                  </p>
                   <p className="text-xs text-ink/50">
                     {d.soldOut ? "Sold out at face · resale" : resale ? "Resale market" : "Face value + resale"}
                     {low === null ? " · see marketplace" : ""}
                   </p>
+                  {!d.pricesConfirmed && (
+                    <p className="text-[11px] text-ink/45 mt-0.5">
+                      typical tour range · check live prices
+                    </p>
+                  )}
                 </div>
               </div>
               <div className="mt-3">

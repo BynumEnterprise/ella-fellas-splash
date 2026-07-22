@@ -79,7 +79,8 @@ export default function FanClubPage() {
           organically, fans got tagged <strong>&ldquo;Ella Fellas,&rdquo;</strong> and it stuck. It
           spread from a viral clip and fans and country outlets ran with it. So the honest answer:
           unofficially, Ella Langley fans are <strong>Ella Fellas</strong>. That&apos;s exactly where
-          this site got its name — we&apos;re the unofficial superfan HQ.
+          this site got its name — we&apos;re the unofficial superfan HQ. Full story:{" "}
+          <Link href="/what-is-an-ella-fella" className="underline text-denim hover:text-primary">What is an Ella Fella?</Link>
         </p>
       </div>
 

@@ -4,10 +4,12 @@ export function WebSiteSchema() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "Ella Fellas",
+    alternateName: ["Ella Fella", "Ella Fellas HQ"],
     url,
     description:
       "Unofficial fan-run news and tour information site for country music artist Ella Langley.",
     logo: `${url}/logo.png`,
+    sameAs: ["https://rz7eec-0u.myshopify.com/"],
   };
   const website = {
     "@context": "https://schema.org",

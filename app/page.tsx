@@ -99,8 +99,8 @@ export default function HomePage() {
               )}
               <p className="text-sm text-paper/75 mt-5">
                 New here?{" "}
-                <Link href="/guides/what-are-ella-fellas" className="text-primary font-medium hover:underline">
-                  What &ldquo;Ella Fellas&rdquo; even means &rarr;
+                <Link href="/what-is-an-ella-fella" className="text-primary font-medium hover:underline">
+                  What is an Ella Fella? &rarr;
                 </Link>
               </p>
             </div>

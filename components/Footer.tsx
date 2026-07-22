@@ -19,7 +19,9 @@ export function Footer() {
 
       <div className="mx-auto max-w-6xl px-4 py-10 grid grid-cols-2 md:grid-cols-4 gap-8">
         <div className="col-span-2 md:col-span-1">
-          <p className="font-display text-2xl tracking-wider text-primary">ELLA FELLAS</p>
+          <p className="font-display text-2xl tracking-wider text-primary">
+            <Link href="/" className="hover:text-primary/80">ELLA FELLAS</Link>
+          </p>
           <p className="text-sm mt-2 text-paper/80">
             Daily HQ for Ella Langley superfans. An unofficial fan site.
           </p>
@@ -38,6 +40,7 @@ export function Footer() {
           <p className="font-display text-primary mb-3">FOR FANS</p>
           <ul className="space-y-1.5">
             <li><Link href="/fan-club" className="hover:text-primary">Fan club</Link></li>
+            <li><Link href="/what-is-an-ella-fella" className="hover:text-primary">What is an Ella Fella?</Link></li>
             <li><Link href="/best-songs" className="hover:text-primary">Best songs</Link></li>
             <li><Link href="/ella-langley-collaborations" className="hover:text-primary">Collaborations</Link></li>
             <li><Link href="/ella-langley-merch" className="hover:text-primary">Merch &amp; vinyl</Link></li>

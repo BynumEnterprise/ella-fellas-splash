@@ -26,6 +26,8 @@ const nextConfig = {
       { source: "/tour/arlington-att-stadium-2026-07-24", destination: "/tour", permanent: true },
       { source: "/shop/ww-trucker-cap-low-pro", destination: "/shop", permanent: true },
       { source: "/shop/ec-foldable-rain-jacket", destination: "/shop", permanent: true },
+      // Consolidate duplicate "Ella Fellas" explainers into the definitive page (Jul 2026)
+      { source: "/guides/what-are-ella-fellas", destination: "/what-is-an-ella-fella", permanent: true },
     ];
   },
   async headers() {

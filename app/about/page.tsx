@@ -15,7 +15,7 @@ export default function AboutPage() {
       <p className="text-lg">
         We&apos;re an independent, fan-run news and tour site for country music artist Ella Langley.
         Built by fans, for the{" "}
-        <a href="/guides/what-are-ella-fellas"><strong>Fellas</strong></a> &mdash; the male side of
+        <a href="/what-is-an-ella-fella"><strong>Fellas</strong></a> &mdash; the male side of
         her fanbase and anyone else along for the ride.
       </p>
 

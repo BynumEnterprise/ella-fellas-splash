@@ -19,14 +19,14 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Ella Fellas — the unofficial Ella Langley superfan HQ",
+    default: "Ella Fellas — The Ella Langley Fan Community: News, Tours & Merch",
     template: "%s | Ella Fellas",
   },
   description:
-    "Daily Ella Langley news, tour stop guides, ticket alerts, and everything in between. Built by fans, for the Fellas.",
+    "Ella Fellas is the unofficial Ella Langley fan community HQ: daily news, tour stop guides, ticket alerts, and everything in between. Built by fans, for the Fellas.",
   openGraph: {
     type: "website",
-    title: "Ella Fellas — the unofficial Ella Langley superfan HQ",
+    title: "Ella Fellas — The Ella Langley Fan Community: News, Tours & Merch",
     description:
       "Daily news, tour guides, song breakdowns, and concert-prep guides for Ella Langley fans.",
     siteName: "Ella Fellas",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ella Fellas — the unofficial Ella Langley superfan HQ",
+    title: "Ella Fellas — The Ella Langley Fan Community: News, Tours & Merch",
     description:
       "Daily news, tour guides, song breakdowns, and concert-prep guides for Ella Langley fans.",
     images: ["/opengraph-image.png"],

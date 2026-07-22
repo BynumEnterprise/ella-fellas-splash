@@ -36,4 +36,4 @@ Ella's official merch line is "Ella's Fellas" -- and the fan side of that is us.
 
 Want the practical version of a fan club? **Join the Fellas** below -- our free email list sends tour drops, ticket alerts, and set-time updates for the shows you care about, and nothing else. Between that and Ella's official list, you will never miss an on-sale again.
 
-New here? Start with [Who Is Ella Langley?](/guides/who-is-ella-langley) and [what "Ella Fellas" even means](/guides/what-are-ella-fellas).
+New here? Start with [Who Is Ella Langley?](/guides/who-is-ella-langley) and [what an "Ella Fella" is](/what-is-an-ella-fella).

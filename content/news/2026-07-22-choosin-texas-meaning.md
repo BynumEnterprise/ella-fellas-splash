@@ -44,4 +44,4 @@ Not bad for a 30-minute write about a kangaroo traffic stop.
 
 ## Hear It Live
 
-Ella is playing ["Choosin' Texas"](/songs/choosin-texas) every night this summer, both on her own Dandelion Tour dates and in her stadium sets with Morgan Wallen. If you want to catch the moment 40,000 people yell "I can tell" back at her, check the [tour schedule](/tour) for a show near you. And if this one is on repeat for you, our breakdown of ["Be Her"](/songs/be-her) — the follow-up single currently pulling its own chart weight — is the natural next listen.
+Ella is playing ["Choosin' Texas"](/songs/choosin-texas) every night this summer, both on her own Dandelion Tour dates and in her stadium sets with Morgan Wallen. If you want to catch the moment 40,000 people yell "I can tell" back at her, check the [tour schedule](/tour) for a show near you. Pull on our [cutoffs-and-cowboy-boots look](/shop/looks/cutoffs-and-cowboy-boots) and you are two-step ready before the first downbeat. And if this one is on repeat for you, our breakdown of ["Be Her"](/songs/be-her) — the follow-up single currently pulling its own chart weight — is the natural next listen.

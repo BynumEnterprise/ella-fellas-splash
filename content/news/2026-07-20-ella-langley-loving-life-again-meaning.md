@@ -44,6 +44,6 @@ For the full picture, you can see the song in the context of the record on [the 
 
 ## Where to Hear It
 
-"Loving Life Again" is streaming everywhere as part of *Dandelion*, and it has been a nightly highlight on the road — the quiet spot in the set where the whole room goes still. If you want to catch it live before radio fully catches up, check [the current Dandelion Tour dates](/tour) and find the show nearest you.
+"Loving Life Again" is streaming everywhere as part of *Dandelion*, and it has been a nightly highlight on the road — the quiet spot in the set where the whole room goes still. If you want to catch it live before radio fully catches up, check [the current Dandelion Tour dates](/tour) and find the show nearest you. And if you are headed out to hear it, our [amphitheater lawn look](/shop/looks/amphitheater-lawn) is built for exactly that kind of easy summer-night set.
 
 *If any of this hits close to home: this piece is about a song and the story its writer has chosen to share publicly. If you are struggling with your own mental health, reaching out to someone you trust is always worth it.*

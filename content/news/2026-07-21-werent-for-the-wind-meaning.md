@@ -41,4 +41,4 @@ The song did more than resonate — it broke her through. Per Billboard and Wiki
 
 ## Other Ella Langley Songs You'll Love
 
-If this one hooked you, dig into the full [song page for "Weren't for the Wind"](/songs/werent-for-the-wind), then work through the rest of the catalog with our [best Ella Langley songs, ranked](/guides/best-ella-langley-songs-ranked). And if hearing it live is the goal, check the current [Ella Langley tour dates and tickets](/tour) to find a show near you.
+If this one hooked you, dig into the full [song page for "Weren't for the Wind"](/songs/werent-for-the-wind), then work through the rest of the catalog with our [best Ella Langley songs, ranked](/guides/best-ella-langley-songs-ranked). And if hearing it live is the goal, check the current [Ella Langley tour dates and tickets](/tour) to find a show near you. And when you go, our [fringe-and-boots concert look](/shop/looks/fringe-and-boots) leans into the same windswept, all-heart mood as the song.

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About Ella Fellas",
@@ -18,6 +19,24 @@ export default function AboutPage() {
         <a href="/what-is-an-ella-fella"><strong>Fellas</strong></a> &mdash; the male side of
         her fanbase and anyone else along for the ride.
       </p>
+
+      <figure className="my-8">
+        <Image
+          src="https://upload.wikimedia.org/wikipedia/commons/5/56/Ella_Langley_2026_%28cropped%29.jpg"
+          alt="Country singer Ella Langley performing live in 2026"
+          width={782}
+          height={990}
+          className="w-full max-w-sm mx-auto rounded-xl shadow-md"
+          sizes="(max-width: 768px) 100vw, 384px"
+          priority={false}
+        />
+        <figcaption className="text-xs text-ink/60 mt-2 text-center not-prose">
+          Ella Langley, 2026. Photo by{" "}
+          <a href="https://commons.wikimedia.org/wiki/File:Ella_Langley_2026_(cropped).jpg" target="_blank" rel="noopener">Rick Munroe</a>{" "}
+          via Wikimedia Commons, licensed under{" "}
+          <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>.
+        </figcaption>
+      </figure>
 
       <h2>Who we are</h2>
       <p>
@@ -48,6 +67,23 @@ export default function AboutPage() {
         breakdowns, ticket and presale tracking, concert-prep guides, and reasonable takes on the
         biggest country artist of 2026.
       </p>
+
+      <figure className="my-8">
+        <Image
+          src="https://upload.wikimedia.org/wikipedia/commons/0/05/Ella_Langley_in_Concert_2025.jpg"
+          alt="Ella Langley performing in concert in Grand Rapids, Michigan"
+          width={1215}
+          height={1620}
+          className="w-full max-w-md mx-auto rounded-xl shadow-md"
+          sizes="(max-width: 768px) 100vw, 448px"
+        />
+        <figcaption className="text-xs text-ink/60 mt-2 text-center not-prose">
+          Ella Langley live in Grand Rapids, 2025. Photo by{" "}
+          <a href="https://commons.wikimedia.org/wiki/File:Ella_Langley_in_Concert_2025.jpg" target="_blank" rel="noopener">BrDen</a>{" "}
+          via Wikimedia Commons, licensed under{" "}
+          <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>.
+        </figcaption>
+      </figure>
 
       <h2>What we don&apos;t do</h2>
       <p>

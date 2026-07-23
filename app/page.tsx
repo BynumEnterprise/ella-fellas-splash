@@ -177,6 +177,45 @@ export default function HomePage() {
           <SpotifyEmbed id="2PyJAiQjp1OPkow2FJZKHR" />
         </section>
 
+        {/* MEET ELLA — bio strip with a licensed, credited press photo */}
+        <section className="mb-8 md:mb-14 grid md:grid-cols-[240px_1fr] gap-4 md:gap-7 items-center">
+          <figure className="m-0">
+            <Image
+              src="https://upload.wikimedia.org/wikipedia/commons/5/56/Ella_Langley_2026_%28cropped%29.jpg"
+              alt="Country singer Ella Langley performing live in 2026"
+              width={782}
+              height={990}
+              className="w-full rounded-xl shadow-md"
+              sizes="(max-width: 768px) 100vw, 240px"
+            />
+            <figcaption className="text-[10px] text-ink/55 mt-1 text-center">
+              Photo:{" "}
+              <a href="https://commons.wikimedia.org/wiki/File:Ella_Langley_2026_(cropped).jpg" target="_blank" rel="noopener" className="underline">Rick Munroe</a>{" "}
+              / Wikimedia,{" "}
+              <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener" className="underline">CC BY-SA 4.0</a>
+            </figcaption>
+          </figure>
+          <div>
+            <p className="text-xs uppercase tracking-[0.18em] text-clay font-medium mb-1">
+              Meet the artist
+            </p>
+            <h2 className="font-display text-lg md:text-3xl text-denim tracking-wider leading-tight">
+              WHO IS ELLA LANGLEY?
+            </h2>
+            <p className="text-sm text-ink/75 mt-2 leading-relaxed">
+              The Alabama-born country singer-songwriter behind the breakout &ldquo;You Look Like You Love Me&rdquo;
+              and the 2026 album <em>Dandelion</em>. We track her tour, her songs, and her shows every
+              day &mdash; from a fan&apos;s seat, not the label&apos;s desk.
+            </p>
+            <Link
+              href="/about"
+              className="inline-block mt-1 md:mt-3 text-sm text-primary font-medium hover:underline"
+            >
+              More about Ella &rarr;
+            </Link>
+          </div>
+        </section>
+
         {/* UPCOMING TOUR DATES */}
         {upcomingTours.length > 1 && (
           <section className="mb-14">

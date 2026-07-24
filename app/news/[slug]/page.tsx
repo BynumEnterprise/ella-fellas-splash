@@ -6,6 +6,7 @@ import { getAllNews, getNewsBySlug } from "@/lib/content";
 import { ArticleSchema } from "@/components/schema/ArticleSchema";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
+import { ShowCTA } from "@/components/ShowCTA";
 import { formatDate } from "@/lib/utils";
 
 export async function generateStaticParams() {
@@ -72,6 +73,8 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ sl
         </h1>
         <p className="text-lg text-ink/80 italic mt-3">{item.frontmatter.excerpt}</p>
       </header>
+
+      <ShowCTA showId={item.frontmatter.showId} source="news" />
 
       <div className="prose-content">
         <MDXRemote source={item.body} />

@@ -74,7 +74,12 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ sl
         <p className="text-lg text-ink/80 italic mt-3">{item.frontmatter.excerpt}</p>
       </header>
 
-      <ShowCTA showId={item.frontmatter.showId} source="news" />
+      <ShowCTA
+        showId={item.frontmatter.showId}
+        title={item.frontmatter.title}
+        slug={slug}
+        source="news"
+      />
 
       <div className="prose-content">
         <MDXRemote source={item.body} />

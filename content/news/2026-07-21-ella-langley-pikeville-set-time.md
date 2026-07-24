@@ -3,6 +3,7 @@ title: "Ella Langley Pikeville Set Time: What Time She Goes On at Appalachian Wi
 slug: "2026-07-21-ella-langley-pikeville-set-time"
 publishedAt: "2026-07-21"
 category: "tour-prep"
+showId: "pikeville-appalachian-wireless-arena-2026-07-23"
 excerpt: "Ella Langley headlines Appalachian Wireless Arena in Pikeville, KY on Thursday, July 23 with Laci Kaye Booth and Kaitlin Butts. Doors, set times, who plays when, and what she's been playing."
 relatedSongs: ["be-her", "choosin-texas", "loving-life-again"]
 sources:

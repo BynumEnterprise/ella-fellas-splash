@@ -14,6 +14,8 @@ import { formatDate } from "@/lib/utils";
 import { buildNightPlan, findStandSiblings } from "@/lib/night-plan";
 import { NightPlanView } from "@/components/NightPlan";
 import { MerchCTA } from "@/components/MerchCTA";
+import { TripPlannerPanel } from "@/components/TripPlannerPanel";
+import { vrboUrl, hotelUrl, cheapOairUrl, economyBookingsUrl } from "@/lib/affiliates";
 
 export async function generateStaticParams() {
   return getAllTourDates().map((d) => ({ slug: d.id }));
@@ -279,13 +281,28 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
       </section>
 
       {!isPast && (
-        <PlanYourTrip
+        <TripPlannerPanel
           city={d.city}
-          cityState={`${d.city}, ${d.state}`}
           venue={d.venue}
-          venueAddress={d.venueAddress}
-          date={d.date}
-        />
+          doors={to12h(d.doorsTime)}
+          show={to12h(d.showTime)}
+          timesConfirmed={d.timesConfirmed}
+          links={{
+            tickets: tnUrl,
+            stay: vrboUrl(`${d.city}, ${d.state}`, { venue: d.venue, date: d.date }),
+            hotels: hotelUrl(`${d.city}, ${d.state}`, d.city, { venue: d.venue, date: d.date }),
+            flights: cheapOairUrl() ?? undefined,
+            car: economyBookingsUrl() ?? undefined,
+          }}
+        >
+          <PlanYourTrip
+            city={d.city}
+            cityState={`${d.city}, ${d.state}`}
+            venue={d.venue}
+            venueAddress={d.venueAddress}
+            date={d.date}
+          />
+        </TripPlannerPanel>
       )}
 
       {/* Gear now lives in the night plan above (context-aware: clear bag only at stadiums,

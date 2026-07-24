@@ -91,4 +91,6 @@ export interface ArticleFrontmatter {
   relatedTours?: string[];
   sources?: string[];
   faq?: FaqItem[];
+  /** TourDate.id — powers the show CTA (deep-link tickets + trip planner). */
+  showId?: string;
 }

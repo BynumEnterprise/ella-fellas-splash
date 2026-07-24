@@ -18,6 +18,7 @@ import { getLooksForGuide } from "@/lib/looks";
 import { extractTocItems } from "@/lib/toc";
 import { formatDate } from "@/lib/utils";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
+import { ShowCTA } from "@/components/ShowCTA";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const REHYPE_PLUGINS: any[] = [
@@ -119,6 +120,8 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
         </p>
         <NewsletterSignup placement="guide-inline" />
       </aside>
+
+      <ShowCTA showId={item.frontmatter.showId} source="guide" />
 
       <TableOfContents items={tocItems} />
 

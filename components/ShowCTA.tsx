@@ -1,29 +1,71 @@
+import Link from "next/link";
+import { Ticket, ShoppingBag } from "lucide-react";
 import { AffiliateLink } from "@/components/AffiliateLink";
 import { PlanYourTrip } from "@/components/PlanYourTrip";
 import { ticketNetworkUrl } from "@/lib/affiliates";
 import { shopUrl } from "@/lib/merch-store";
-import { getTourDate } from "@/lib/data";
-import { Ticket, ShoppingBag } from "lucide-react";
+import { getAllTourDates, getTourDate } from "@/lib/data";
+import type { TourDate } from "@/lib/types";
 
 interface Props {
-  /** TourDate.id — deep-links tickets to the exact event and powers the trip
-   *  planner. Omit for evergreen posts; tickets fall back to the Ella Langley
-   *  performer page and the trip module is hidden. */
+  /** Explicit TourDate.id from frontmatter — always wins when present. */
   showId?: string;
+  /** Post title + slug, used to auto-resolve the show when showId is absent. */
+  title?: string;
+  slug?: string;
   /** GA4 source prefix for this placement, e.g. "guide" or "news". */
   source: string;
+}
+
+function slugify(s: string): string {
+  return s
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+/**
+ * Resolve which show a post is about. Explicit frontmatter showId wins. Otherwise
+ * we only auto-match when it is unambiguous: the post text must name an UPCOMING
+ * show's city, and if that city has more than one upcoming date the venue must be
+ * named too. No match => no trip module (we never guess a show).
+ */
+function resolveShow(showId?: string, title?: string, slug?: string): TourDate | undefined {
+  const today = new Date().toISOString().slice(0, 10);
+
+  if (showId) {
+    const d = getTourDate(showId);
+    // A past show gets no trip planner and no dead event deep-link.
+    return d && d.date >= today ? d : undefined;
+  }
+
+  const hay = `${slugify(title ?? "")}-${slug ?? ""}`;
+  const upcoming = getAllTourDates().filter((d) => d.date >= today);
+  const byCity = upcoming.filter((d) => hay.includes(slugify(d.city)));
+
+  if (byCity.length === 1) return byCity[0];
+  if (byCity.length > 1) {
+    const withVenue = byCity.filter((d) =>
+      slugify(d.venue)
+        .split("-")
+        .some((tok) => tok.length >= 4 && hay.includes(tok)),
+    );
+    if (withVenue.length === 1) return withVenue[0];
+  }
+  return undefined;
 }
 
 /**
  * High-intent affiliate block for show-related content (set-times guides,
  * tour-prep news). Tickets (TicketNetwork / CJ) + Shop Ella Fellas merch up top,
  * then the full Plan Your Trip module (stay / rental car / flights / venue map)
- * whenever the show resolves. All links tracked via AffiliateLink and the store
- * UTM helper.
+ * whenever we can pin the post to a specific upcoming show.
  */
-export function ShowCTA({ showId, source }: Props) {
-  const td = showId ? getTourDate(showId) : undefined;
-  const tnUrl = ticketNetworkUrl(showId);
+export function ShowCTA({ showId, title, slug, source }: Props) {
+  const td = resolveShow(showId, title, slug);
+  // Deep-link to the exact event only when we resolved an upcoming show;
+  // otherwise fall back to the Ella Langley performer page.
+  const tnUrl = ticketNetworkUrl(td?.id);
 
   return (
     <div className="mb-8">
@@ -56,6 +98,14 @@ export function ShowCTA({ showId, source }: Props) {
             <ShoppingBag className="w-5 h-5" /> SHOP ELLA FELLAS
           </AffiliateLink>
         </div>
+        {td && (
+          <p className="text-xs text-ink/60 mt-3">
+            Going to {td.city}?{" "}
+            <Link href={`/tour/${td.id}`} className="underline hover:text-primary">
+              Full show page &rarr;
+            </Link>
+          </p>
+        )}
       </section>
 
       {td && (

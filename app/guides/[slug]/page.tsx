@@ -121,7 +121,12 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
         <NewsletterSignup placement="guide-inline" />
       </aside>
 
-      <ShowCTA showId={item.frontmatter.showId} source="guide" />
+      <ShowCTA
+        showId={item.frontmatter.showId}
+        title={item.frontmatter.title}
+        slug={slug}
+        source="guide"
+      />
 
       <TableOfContents items={tocItems} />
 

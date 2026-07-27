@@ -4,7 +4,7 @@ slug: "morgan-wallen-philadelphia-2026-set-times-lineup"
 category: "tour-guide"
 showId: "philadelphia-lincoln-financial-field-2026-08-01"
 publishedAt: "2026-06-16"
-updatedAt: "2026-07-21"
+updatedAt: "2026-07-27"
 excerpt: "Who is opening for Morgan Wallen in Philadelphia? Ella Langley plays direct support at the Aug 1, 2026 Lincoln Financial Field finale, with Hudson Westbrook and Blake Whiten. Set times, gates, and last-chance tickets."
 faq:
   - q: "Who is opening for Morgan Wallen in Philadelphia on August 1, 2026?"
@@ -52,6 +52,8 @@ Our rule of thumb: to see Ella Langley, be inside and in position by the listed 
 ## The venue: Lincoln Financial Field
 
 Lincoln Financial Field, home of the Eagles, sits in the South Philadelphia sports complex at 1 Lincoln Financial Field Way. It is open-air, so an early-August evening can run hot and then cool after sunset -- plan a layer. As an NFL stadium it enforces a clear-bag policy at the gates; our [best clear bags for concerts](/guides/best-clear-bags-for-concerts) guide has the bags that clear security cleanly.
+
+Before you drive in, read our [Lincoln Financial Field bag policy, parking and gates guide](/guides/lincoln-financial-field-concert-guide) -- it has the exact bag sizes security accepts, the $40 concert parking rate, the SEPTA route in, and the one detail that trips people up: floor and GA tickets enter at the South Gate, not the nearest gate to your car.
 
 ## Getting tickets
 

@@ -41,7 +41,9 @@ export async function generateMetadata({
   if (!d) return {};
   const st = buildSetTimes(d);
   const title = `Ella Langley ${d.city} Set Times: What Time Does She Go On? (${fmt(d.date).replace(/^\w+, /, "")})`;
-  const desc = st.doors
+  const desc = st.ellaStageTime
+    ? `Ella Langley goes on at ${st.ellaStageTime} at ${d.venue}, ${d.city} — ${d.venue}'s own posted running order for this date${st.doors ? `, doors ${st.doors}` : ""}. Full set times for every act on the bill.`
+    : st.doors
     ? st.timesConfirmed
       ? `Set times for Ella Langley at ${d.venue}, ${d.city} — doors ${st.doors}${st.listedStart ? `, listed start ${st.listedStart}` : ""}, full running order, and when she's actually on. Updated as the venue confirms.`
       : `Set times and running order for Ella Langley at ${d.venue}, ${d.city}. ${d.venue} hasn't confirmed this date's times yet — we show the typical times for this tour and update the moment they're posted.`
@@ -73,7 +75,13 @@ export default async function SetTimesPage({ params }: { params: Promise<{ slug:
   const faq = [
     {
       q: `What time does Ella Langley go on stage in ${d.city}?`,
-      a: st.ellaHeadlines
+      a: st.ellaStageTime
+        ? `${d.venue} has published the running order for this date: Ella Langley goes on at ${st.ellaStageTime}.${
+            st.doors ? ` Doors are at ${st.doors}` : ""
+          }${st.listedStart ? `${st.doors ? " and t" : " T"}he night's listed start is ${st.listedStart}` : ""}${
+            st.doors || st.listedStart ? "." : ""
+          } That time comes straight from the venue's own event page, not an estimate — schedules can still move a few minutes on the night, so treat it as the target and get in early.`
+        : st.ellaHeadlines
         ? `Ella headlines this show, so she's on last${
             d.openers?.length ? ` — after ${d.openers.join(" and ")}` : ""
           }. ${d.venue} has not published her exact stage time${
@@ -153,6 +161,16 @@ export default async function SetTimesPage({ params }: { params: Promise<{ slug:
 
       {/* The answer, up top, because that's why they're here. */}
       <div className="bg-paper border-2 border-primary/40 rounded-lg p-5 mb-8">
+        {st.ellaStageTime ? (
+          <div className="mb-4 pb-4 border-b border-primary/25">
+            <p className="text-xs uppercase tracking-wider text-clay font-medium">
+              Ella on stage &middot; posted by {d.venue}
+            </p>
+            <p className="font-display text-4xl md:text-5xl text-primary leading-tight mt-1">
+              {st.ellaStageTime}
+            </p>
+          </div>
+        ) : null}
         <div className="grid sm:grid-cols-2 gap-4 mb-4">
           <div className="flex items-start gap-3">
             <DoorOpen className="w-5 h-5 text-primary mt-1" aria-hidden="true" />
@@ -207,6 +225,11 @@ export default async function SetTimesPage({ params }: { params: Promise<{ slug:
                     {s.role === "direct-support" && (
                       <span className="ml-2 text-xs uppercase tracking-wider text-clay">Direct support</span>
                     )}
+                    {s.role === "side-stage" && (
+                      <span className="ml-2 text-xs uppercase tracking-wider text-clay">
+                        {s.stageName ?? "Side stage"}
+                      </span>
+                    )}
                   </p>
                   <p className={`font-display text-lg ${s.timeConfirmed ? "text-primary" : "text-ink/40"}`}>
                     {s.timeConfirmed ? s.time : "Time not posted"}
@@ -219,17 +242,45 @@ export default async function SetTimesPage({ params }: { params: Promise<{ slug:
         </ol>
       )}
 
-      <div className="flex items-start gap-2 text-sm text-ink/75 bg-ink/5 border border-ink/15 rounded-md p-4 mb-8">
-        <AlertTriangle className="w-4 h-4 text-primary shrink-0 mt-0.5" aria-hidden="true" />
-        <p>
-          <strong>Why we don&apos;t print an exact stage time:</strong> venues and tours don&apos;t
-          publish per-artist stage times in advance — they get set the day of the show and change
-          with weather, curfews and production. Every site that gives you a confident minute is
-          guessing. We publish doors and the listed start because those are real, and we update this
-          page when the running order is actually confirmed. If you want the number the moment it
-          exists, get on the list below.
-        </p>
-      </div>
+      {st.hasConfirmedRunningOrder ? (
+        <div className="flex items-start gap-2 text-sm text-ink/75 bg-primary/5 border border-primary/30 rounded-md p-4 mb-8">
+          <Clock className="w-4 h-4 text-primary shrink-0 mt-0.5" aria-hidden="true" />
+          <p>
+            <strong>Where these times come from:</strong> {d.venue} published this running order on
+            its own event page for this date, so the per-act times above are the venue&apos;s, not
+            our estimates — we never print a stage time we can&apos;t source.{" "}
+            {st.stageTimesSource ? (
+              <>
+                You can{" "}
+                <a
+                  href={st.stageTimesSource}
+                  rel="nofollow noopener noreferrer"
+                  target="_blank"
+                  className="underline decoration-primary/40 underline-offset-4 hover:text-primary"
+                >
+                  check the venue&apos;s schedule yourself
+                </a>
+                .{" "}
+              </>
+            ) : null}
+            Day-of schedules can still shift with weather, curfews and production, so treat these as
+            the target and get in early.
+          </p>
+        </div>
+      ) : (
+        <div className="flex items-start gap-2 text-sm text-ink/75 bg-ink/5 border border-ink/15 rounded-md p-4 mb-8">
+          <AlertTriangle className="w-4 h-4 text-primary shrink-0 mt-0.5" aria-hidden="true" />
+          <p>
+            <strong>Why we don&apos;t print an exact stage time:</strong> most venues and tours
+            don&apos;t publish per-artist stage times in advance — they get set the day of the show
+            and change with weather, curfews and production. Every site that gives you a confident
+            minute for a show like this is guessing. We publish doors and the listed start because
+            those are real, we publish the venue&apos;s own schedule the moment it posts one, and we
+            update this page when the running order is actually confirmed. If you want the number the
+            moment it exists, get on the list below.
+          </p>
+        </div>
+      )}
 
       <div className="bg-primary/10 border border-primary/40 rounded-lg p-5 mb-8">
         <p className="font-display text-xl text-denim tracking-wide mb-1">

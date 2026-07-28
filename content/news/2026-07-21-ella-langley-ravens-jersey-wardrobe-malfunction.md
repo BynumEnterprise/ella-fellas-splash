@@ -22,3 +22,5 @@ The set itself didn't lose a step either. Baltimore got "Choosin' Texas," "weren
 Honestly, this is the same thread we pulled on in our piece about [her viral stage speeches](/news/2026-07-18-ella-langley-viral-stage-speeches-mental-health): what's winning people over isn't just the songs, it's how completely unbothered and human she is up there. A wardrobe disaster in the rain is about as unscripted as it gets, and she treated it like a Tuesday.
 
 Next up she's back to headlining -- Pikeville, KY at Appalachian Wireless Arena this Thursday, July 23, with Kaitlin Butts and Laci Kaye Booth. Full Dandelion set, no 45-minute clock. [Tickets and details on our tour page](/tour).
+
+If the duet is the part you keep replaying, the full story of ["I Can't Love You Anymore"](/songs/i-cant-love-you-anymore) — writers, chart run and where it sits in the Dandelion era — is on its song page. And since Baltimore proved that an outdoor show in July can turn on you fast, our [rain-ready look](/shop/looks/rain-ready) is the packing list we'd use for the next one.

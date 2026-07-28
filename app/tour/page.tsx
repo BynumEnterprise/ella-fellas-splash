@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllTourDates } from "@/lib/data";
 import { TourCard } from "@/components/TourCard";
+import { MerchCTA } from "@/components/MerchCTA";
 
 export const metadata: Metadata = {
   title: { absolute: "Ella Langley Tour 2026: Dates, Cities & Tickets | Ella Fellas" },
@@ -89,6 +90,8 @@ export default function TourIndexPage() {
           </div>
         </section>
       )}
+      <MerchCTA source="tour_index_merch" variant="banner" className="mt-12" />
+
     </article>
   );
 }

@@ -10,7 +10,9 @@ import {
   Beer,
   Compass,
   ChevronDown,
+  ShoppingBag,
 } from "lucide-react";
+import { shopUrl } from "@/lib/merch-store";
 
 export interface TripPlannerLinks {
   tickets: string;
@@ -66,10 +68,11 @@ export function TripPlannerPanel({
   const [needTickets, setNeedTickets] = useState(false);
   const [dinner, setDinner] = useState(false);
   const [drinks, setDrinks] = useState(false);
+  const [gear, setGear] = useState(false);
   const [showAll, setShowAll] = useState(false);
 
   const answered =
-    travel !== null || overnight !== null || needTickets || dinner || drinks;
+    travel !== null || overnight !== null || needTickets || dinner || drinks || gear;
   const near = (term: string) =>
     GMAPS + encodeURIComponent(term + " near " + venue + ", " + city);
 
@@ -98,6 +101,10 @@ export function TripPlannerPanel({
   steps.push(
     "Ella headlines after the openers — we do not print a stage time we cannot source.",
   );
+  if (gear)
+    steps.push(
+      "Order your shirt now — it is printed to order, so give it a few days before show day.",
+    );
   if (drinks) steps.push("Head somewhere close after the encore and let the lot clear out.");
   if (overnight) steps.push("Stay within ~1.5 miles so the post-show surge does not get you.");
 
@@ -186,6 +193,13 @@ export function TripPlannerPanel({
             >
               Drinks after
             </button>
+            <button
+              type="button"
+              onClick={() => setGear((v) => !v)}
+              className={chip + " " + (gear ? chipOn : chipOff)}
+            >
+              Need something to wear
+            </button>
           </div>
 
           {answered && (
@@ -264,6 +278,17 @@ export function TripPlannerPanel({
                 {drinks && (
                   <a href={near("bars")} target="_blank" rel="noopener noreferrer" className={cta}>
                     <Beer className="w-4 h-4" /> BARS NEARBY
+                  </a>
+                )}
+                {gear && (
+                  <a
+                    href={shopUrl("/", "planner_gear_merch")}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-affiliate-source="planner_gear_merch"
+                    className={cta}
+                  >
+                    <ShoppingBag className="w-4 h-4" /> SHOP ELLA FELLAS MERCH
                   </a>
                 )}
               </div>

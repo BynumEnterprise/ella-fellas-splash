@@ -6,6 +6,7 @@ import { buildSetTimes } from "@/lib/set-times";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
+import { MerchCTA } from "@/components/MerchCTA";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
 const TITLE = "Ella Langley Set Times 2026: What Time Does She Go On, By City";
@@ -126,6 +127,8 @@ export default function SetTimesHub() {
         </p>
         <NewsletterSignup placement="set-times-hub" />
       </div>
+
+      <MerchCTA source="set_times_hub_merch" variant="banner" className="mb-8" />
 
       <AffiliateDisclosure />
     </article>

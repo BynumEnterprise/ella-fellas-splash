@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { getAllGuideContent } from "@/lib/content";
+import { MerchCTA } from "@/components/MerchCTA";
 
 export const metadata: Metadata = {
   title: "Ella Langley Guides",
@@ -215,6 +216,8 @@ export default function GuidesIndexPage() {
           .
         </p>
       </div>
+      <MerchCTA source="guides_index_merch" variant="banner" className="mt-12" />
+
     </article>
   );
 }

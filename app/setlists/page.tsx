@@ -6,6 +6,7 @@ import { getSetlist, mostRecentSetlist } from "@/lib/setlists";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
+import { MerchCTA } from "@/components/MerchCTA";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
 const TITLE = "Ella Langley Setlist 2026: Every Show, Song by Song";
@@ -155,6 +156,8 @@ export default function SetlistsHub() {
         <Link href="/openers" className="underline text-denim hover:text-primary">who&apos;s opening</Link>{" "}
         for your city first.
       </p>
+
+      <MerchCTA source="setlists_hub_merch" variant="banner" className="mb-8" />
 
       <AffiliateDisclosure />
     </article>

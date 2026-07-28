@@ -280,8 +280,8 @@
     "doorsTime": "17:30",
     "showTime": "19:00",
     "timesConfirmed": true,
-    "soldOut": false,
-    "ticketPriceRange": "$45-$285",
+    "soldOut": true,
+    "ticketPriceRange": "Resale $85-$450",
     "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/canandaigua-cmac-2026-07-31"
   },

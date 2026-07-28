@@ -7,6 +7,7 @@ import { getSetlist, mostRecentSetlist } from "@/lib/setlists";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
+import { MerchCTA } from "@/components/MerchCTA";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
 
@@ -186,6 +187,8 @@ export default async function SetlistPage({ params }: { params: Promise<{ slug: 
           SONG MEANINGS <ExternalLink className="w-4 h-4" />
         </Link>
       </div>
+
+      <MerchCTA source="setlist_merch" variant="banner" className="mb-8" />
 
       <AffiliateDisclosure />
     </article>

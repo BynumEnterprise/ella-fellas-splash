@@ -40,6 +40,6 @@ Sold out at face — the [Philadelphia show page](/tour/philadelphia-lincoln-fin
 
 ## Can't make it, or want a full Ella night?
 
-Her own Dandelion Tour is running the same week: [Gilford, NH (July 30)](/tour/gilford-banknh-pavilion-2026-07-30) and [Canandaigua, NY (July 31)](/tour/canandaigua-cmac-2026-07-31) — full headline sets, and neither is sold out as of this writing. Every date lives on the [tour hub](/tour).
+Her own Dandelion Tour is running the same week: [Gilford, NH (July 30)](/tour/gilford-banknh-pavilion-2026-07-30) and [Canandaigua, NY (July 31)](/tour/canandaigua-cmac-2026-07-31) — full headline sets, roughly two hours of Ella instead of a support slot. Canandaigua has since sold out at face and is a resale-only room now; Gilford is the one to check first, and the show pages carry current availability either way. Every date lives on the [tour hub](/tour).
 
 *Disclosure: Some links here are affiliate links. If you buy through them we may earn a small commission at no extra cost to you.*

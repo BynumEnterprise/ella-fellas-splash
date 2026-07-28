@@ -3,7 +3,7 @@ title: "Ella Langley's North Charleston Setlist: Every Song, July 25"
 slug: "2026-07-28-ella-langley-north-charleston-recap-setlist"
 publishedAt: "2026-07-28"
 category: "news"
-excerpt: "The full 21-song North Charleston Coliseum setlist, the three-song acoustic run with Kaitlin Butts and Laci Kaye Booth, and what it tells you about Gilford and Philly."
+excerpt: "The full 21-song North Charleston Coliseum setlist, the acoustic run with Kaitlin Butts and Laci Kaye Booth, and what it means for Gilford and Philly."
 sources:
   - title: "Ella Langley Setlist at North Charleston Coliseum, North Charleston, SC, July 25, 2026 (setlist.fm)"
     url: "https://www.setlist.fm/setlist/ella-langley/2026/north-charleston-coliseum-north-charleston-sc-2b4bf866.html"

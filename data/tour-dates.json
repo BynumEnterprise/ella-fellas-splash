@@ -258,9 +258,30 @@
     "doorsTime": "17:00",
     "showTime": "19:00",
     "timesConfirmed": true,
-    "soldOut": false,
-    "ticketPriceRange": "$45-$285",
+    "soldOut": true,
+    "ticketPriceRange": "Resale $85-$450",
     "pricesConfirmed": false,
+    "stageTimes": [
+      {
+        "name": "Whitney Doucet",
+        "time": "17:00",
+        "sideStage": true,
+        "stageName": "Hazy Little Stage"
+      },
+      {
+        "name": "Laci Kaye Booth",
+        "time": "19:10"
+      },
+      {
+        "name": "Kameron Marlowe",
+        "time": "19:50"
+      },
+      {
+        "name": "Ella Langley",
+        "time": "21:00"
+      }
+    ],
+    "stageTimesSource": "https://www.banknhpavilion.com/?page=event_info&show_code=073026",
     "ticketAffiliatePath": "/tickets/gilford-banknh-pavilion-2026-07-30"
   },
   {
@@ -459,8 +480,8 @@
     "showTime": "17:30",
     "timesConfirmed": true,
     "soldOut": true,
-    "ticketPriceRange": "Resale $185-$1,200",
-    "pricesConfirmed": true,
+    "ticketPriceRange": "Resale from $424",
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/philadelphia-lincoln-financial-field-2026-08-01"
   },
   {

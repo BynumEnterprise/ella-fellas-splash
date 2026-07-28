@@ -46,3 +46,5 @@ Whatever city she's in next, keep an eye on the middle of the set. That's usuall
 ---
 
 *This is a sensitive topic. If you're struggling with your mental health, you don't have to white-knuckle it alone — in the U.S. you can call or text 988 to reach the Suicide & Crisis Lifeline, 24/7.*
+
+If you want the songs those speeches usually lead into, start with ["Be Her"](/songs/be-her) and ["Loving Life Again"](/songs/loving-life-again) — both of them say out loud what she's been telling crowds between numbers. Upcoming dates are on the [Ella Langley tour page](/tour), and our [arena night look](/shop/looks/arena-night) is what we'd wear to hear it in person.

@@ -24,7 +24,34 @@ export interface TourDate {
   ticketPriceRange: string;
   /** True only when ticketPriceRange was researched for THIS date, not the default. */
   pricesConfirmed?: boolean;
+  /**
+   * Per-act running order with real clock times, as PUBLISHED BY THE VENUE for
+   * this specific date. Populate this ONLY from the venue's own event page (some
+   * Live Nation amphitheatres post a full schedule; Ticketmaster and AXS never
+   * do). Never from a resale listing, never inferred, never estimated from the
+   * listed start. When absent, the set-times surfaces fall back to order-only
+   * wording — which is the correct, honest default.
+   */
+  stageTimes?: StageTime[];
+  /** URL of the venue page stageTimes were read from. Required whenever stageTimes is set. */
+  stageTimesSource?: string;
   ticketAffiliatePath: string;
+}
+
+/** One act's published stage time. See TourDate.stageTimes for sourcing rules. */
+export interface StageTime {
+  /** Act name. Matched against `openers` / "Ella Langley" / `headliner` case-insensitively. */
+  name: string;
+  /** 24-hour "HH:MM", same format as doorsTime/showTime. */
+  time: string;
+  /**
+   * True for acts on a secondary/side stage (e.g. BankNH Pavilion's "Hazy Little
+   * Stage"). These are NOT added to `openers` — the last entry of `openers` is
+   * rendered as direct support, so a side-stage act in there would be mislabelled.
+   */
+  sideStage?: boolean;
+  /** Optional venue label for the side stage, e.g. "Hazy Little Stage". */
+  stageName?: string;
 }
 
 export interface ChartPeak {

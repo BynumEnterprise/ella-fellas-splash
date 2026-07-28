@@ -38,7 +38,7 @@ The real Gilford setlist posts on the [setlist page](/tour/gilford-banknh-pavili
 
 BankNH is a lakes-region amphitheatre with a covered pavilion and a lawn, so weather is part of the plan — a late-July New Hampshire evening can cool off after dark, and lawn seats mean bringing whatever the venue allows. Check the clear-bag and lawn-chair policy before you leave. For seating and where the sightlines are best, see the [set-times and where-to-sit page](/tour/gilford-banknh-pavilion-2026-07-30/set-times).
 
-Still need a ticket? Check the [Gilford show page](/tour/gilford-banknh-pavilion-2026-07-30) for current availability and the verified box-office source — availability on a lakes-region summer amphitheatre show can move fast in the final days, so the show page is the number to trust over anything we could freeze into this post.
+**This one is sold out at face.** Ticketmaster now returns "tickets are sold out" for July 30, so resale is the only way in — the [Gilford show page](/tour/gilford-banknh-pavilion-2026-07-30) points at the verified sources. Prices on a sold-out amphitheatre night swing hard in the last 48 hours, in both directions, so compare the all-in checkout total rather than the sticker price, and don't panic-buy on Wednesday if you can wait.
 
 ## The next night
 

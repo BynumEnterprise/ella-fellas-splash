@@ -34,3 +34,5 @@ If you are trying to decide whether to catch her on a headline night versus a fe
 ## The takeaway
 
 Ella Langley's Ottawa Bluesfest set is the clearest single-night snapshot yet of how far this year has taken her: a sold-out riverfront, 40,000 voices, and a headliner who still stops to thank the room. If you want the studio versions of what those fans were singing back, start with our [best Ella Langley songs, ranked](/guides/best-ella-langley-songs-ranked), then plan your own night — because on current evidence, these crowds are only getting bigger.
+
+The song that carried the loudest singalong of the night has its own page here too — ["Choosin' Texas"](/songs/choosin-texas), with the writers, the release timeline and the full Hot 100 run. And if your next Ella night is an outdoor one, our [amphitheater lawn look](/shop/looks/amphitheater-lawn) covers what actually works on grass after sundown.

@@ -34,7 +34,7 @@ The real Canandaigua setlist goes up on the [setlist page](/tour/canandaigua-cma
 
 CMAC is a covered-pavilion-plus-lawn amphitheatre, and a late-July Finger Lakes night can cool down noticeably after dark — bring a layer for lawn seats, and check the venue's clear-bag and lawn-chair rules before you go. For seating and the best sightlines (pavilion vs. lawn), see the [set-times and where-to-sit page](/tour/canandaigua-cmac-2026-07-31/set-times).
 
-Not sold out at face last we checked — the [Canandaigua show page](/tour/canandaigua-cmac-2026-07-31) points to the verified box-office source.
+Heads up: CMAC has this one marked **sold out** at face value, so the resale market is the way in now — the [Canandaigua show page](/tour/canandaigua-cmac-2026-07-31) points to the verified sources and live resale listings. Prices on sold-out nights tend to move a lot in the last 48 hours, in both directions.
 
 ## Earlier that week
 

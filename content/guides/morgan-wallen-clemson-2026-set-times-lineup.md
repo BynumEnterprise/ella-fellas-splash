@@ -3,7 +3,7 @@ title: "Who's Opening for Morgan Wallen in Clemson? Set Times & Lineup"
 slug: "morgan-wallen-clemson-2026-set-times-lineup"
 category: "tour-guide"
 publishedAt: "2026-06-16"
-updatedAt: "2026-07-15"
+updatedAt: "2026-07-29"
 excerpt: "Morgan Wallen plays Clemson's Memorial Stadium on June 27, 2026, with Ella Langley as direct support. Lineup, set-time intel, and tickets."
 faq:
   - q: "Who is opening for Morgan Wallen in Clemson on June 27, 2026?"
@@ -16,7 +16,7 @@ faq:
 
 Death Valley does not host many concerts. So when Morgan Wallen brings the Still The Problem Tour to Clemson's Memorial Stadium on June 27, 2026, it is a genuine event -- one of the biggest nights of the summer in upstate South Carolina. And the act in the prime slot right before Wallen is Ella Langley. If you have been waiting to see her on a stage this size, this is the one.
 
-> **The Clemson show has wrapped.** Chasing the next Ella Langley night? She headlines her own [Dandelion Tour](/tour) all summer -- the next dates are [Pikeville, KY on July 23](/tour/pikeville-appalachian-wireless-arena-2026-07-23) and [Cary, NC on July 24](/tour/cary-koka-booth-amphitheatre-2026-07-24). Want set times and openers before the show? [Get free show alerts](/) for your date.
+> **The Clemson show has wrapped.** Chasing the next Ella Langley night? She headlines her own [Dandelion Tour](/tour) all summer -- the next dates are [Gilford, NH on July 30](/tour/gilford-banknh-pavilion-2026-07-30) and [Canandaigua, NY on July 31](/tour/canandaigua-cmac-2026-07-31), then the final Wallen co-bill in [Philadelphia on August 1](/guides/morgan-wallen-philadelphia-2026-set-times-lineup). Every remaining date is on our [Ella Langley tour and tickets page](/tour), and she is doing all of it while [rewriting the Billboard record book](/guides/ella-langley-billboard-records).
 
 *FTC note: some links on this page are affiliate links. If you buy through them we may earn a small commission at no cost to you. We only point you to gear we would actually bring to a show.*
 

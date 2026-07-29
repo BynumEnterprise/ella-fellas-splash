@@ -259,7 +259,7 @@
     "showTime": "19:00",
     "timesConfirmed": true,
     "soldOut": true,
-    "ticketPriceRange": "Resale $85-$450",
+    "ticketPriceRange": "Resale from $920",
     "pricesConfirmed": false,
     "stageTimes": [
       {
@@ -302,7 +302,7 @@
     "showTime": "19:00",
     "timesConfirmed": true,
     "soldOut": true,
-    "ticketPriceRange": "Resale $85-$450",
+    "ticketPriceRange": "Resale from $948",
     "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/canandaigua-cmac-2026-07-31"
   },
@@ -480,7 +480,7 @@
     "showTime": "17:30",
     "timesConfirmed": true,
     "soldOut": true,
-    "ticketPriceRange": "Resale from $424",
+    "ticketPriceRange": "Resale from $369",
     "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/philadelphia-lincoln-financial-field-2026-08-01"
   },

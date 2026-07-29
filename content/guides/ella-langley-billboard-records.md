@@ -33,13 +33,20 @@ Below is every chart record we can source to a named publication, what the old n
 
 ## The Ella Langley Billboard records at a glance
 
-| Chart | The record | The number | Previous holder |
-|---|---|---|---|
-| Hot 100 | Most weeks at No. 1 by a woman with no co-billed act, holiday songs excluded | 15 weeks, "Choosin' Texas" (through the chart reported July 27, 2026) | Mariah Carey, "We Belong Together" and Whitney Houston, "I Will Always Love You" — 14 each |
-| Hot Country Songs | Longest-running No. 1 by a solo woman in the chart's history (dates to 1958) | 28 weeks and counting, "Choosin' Texas" (as of the chart dated June 27, 2026) | Gabby Barrett, "I Hope" — 27 weeks |
-| Country Airplay | First woman ever with three songs in the top 10 in the same week | Chart dated June 13, 2026 | Nobody. Only Morgan Wallen had done it at all, for one week in 2023 |
-| Hot Country Songs | Second woman ever to hold the entire top three | Chart dated May 9, 2026 | Beyoncé, one week in 2024 |
-| Country Airplay | Her own longest-leading No. 1 | 4 weeks, "Be Her" | Her own "Choosin' Texas" — 3 nonconsecutive weeks |
+**Hot 100 — most weeks at No. 1 by a woman with no co-billed act, holiday songs excluded.**
+15 weeks, "Choosin' Texas," through the chart reported July 27, 2026. *Previously:* Mariah Carey's "We Belong Together" and Whitney Houston's "I Will Always Love You," 14 weeks each.
+
+**Hot Country Songs — longest-running No. 1 by a solo woman in the chart's history, which dates to 1958.**
+28 weeks and counting, "Choosin' Texas," as of the chart dated June 27, 2026. *Previously:* Gabby Barrett's "I Hope," 27 weeks.
+
+**Country Airplay — first woman ever with three songs in the top 10 in the same week.**
+Chart dated June 13, 2026. *Previously:* nobody. Only Morgan Wallen had ever done it at all, for one week in 2023.
+
+**Hot Country Songs — second woman ever to hold the entire top three.**
+Chart dated May 9, 2026. *Previously:* Beyoncé, for one week in 2024.
+
+**Country Airplay — her own longest-leading No. 1.**
+4 weeks, "Be Her." *Previously:* her own "Choosin' Texas," 3 nonconsecutive weeks.
 
 ## Hot 100: the 15-week run that passed Whitney and Mariah
 

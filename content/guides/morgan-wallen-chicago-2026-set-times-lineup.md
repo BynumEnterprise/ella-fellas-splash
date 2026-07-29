@@ -3,7 +3,7 @@ title: "Who's Opening for Morgan Wallen in Chicago? Set Times 2026"
 slug: "morgan-wallen-chicago-2026-set-times-lineup"
 category: "tour-guide"
 publishedAt: "2026-06-16"
-updatedAt: "2026-07-15"
+updatedAt: "2026-07-29"
 excerpt: "Who is opening for Morgan Wallen in Chicago? Ella Langley played direct support on June 20, 2026, with Gavin Adcock and Zach John King. Full lineup and set times."
 faq:
   - q: "Who is opening for Morgan Wallen in Chicago on June 20, 2026?"
@@ -22,7 +22,7 @@ Soldier Field, a Saturday night in June, and Morgan Wallen on the marquee -- tha
 
 **Ella Langley opened for Morgan Wallen in Chicago as direct support, along with Gavin Adcock and Zach John King.** The show was Saturday, June 20, 2026 at Soldier Field, with Wallen headlining and Ella in the prime slot right before him. If you're researching the bill after the fact or comparing it to the other stops on the run, that's the full opening lineup, top to bottom.
 
-> **Already been to Chicago? Here's what's next.** The Soldier Field night is in the books, but the Wallen run rolls on. The next live dates are the Cowboys Music Festival on July 10 and the Baltimore stadium show on July 18 -- see our [Morgan Wallen Baltimore set times and openers guide](/guides/morgan-wallen-baltimore-2026-set-times-lineup) for who's on the bill and when to get there. And if Ella was the reason you came, she's headlining her own rooms all year: the full [Ella Langley tour dates and tickets](/tour) are right here, including her newly added fall shows.
+> **Already been to Chicago? Here's what's next.** The Soldier Field night is in the books, and so is the rest of Wallen's summer run through Baltimore. The last co-bill of the season is [Philadelphia on August 1](/guides/morgan-wallen-philadelphia-2026-set-times-lineup) at Lincoln Financial Field -- set times, openers and stadium logistics are all in that guide. And if Ella was the reason you came, she is headlining her own rooms through the fall: browse [Ella Langley tour dates and tickets](/tour) for every remaining 2026 show. She is also mid-record-run -- here is [every Billboard record she has broken in 2026](/guides/ella-langley-billboard-records).
 
 ## The lineup, top to bottom
 

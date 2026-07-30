@@ -18,7 +18,7 @@
     "timesConfirmed": false,
     "soldOut": true,
     "ticketPriceRange": "Resale $85-$450",
-    "pricesConfirmed": true,
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/toledo-huntington-center-2026-05-07"
   },
   {
@@ -40,7 +40,7 @@
     "timesConfirmed": false,
     "soldOut": true,
     "ticketPriceRange": "Resale $85-$450",
-    "pricesConfirmed": true,
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/st.-louis-chaifetz-arena-2026-05-08"
   },
   {
@@ -84,7 +84,7 @@
     "timesConfirmed": false,
     "soldOut": true,
     "ticketPriceRange": "Resale $85-$450",
-    "pricesConfirmed": true,
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/savannah-enmarket-arena-2026-05-15"
   },
   {
@@ -128,7 +128,7 @@
     "timesConfirmed": false,
     "soldOut": true,
     "ticketPriceRange": "Resale $85-$450",
-    "pricesConfirmed": true,
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/independence-cable-dahmer-arena-2026-06-19"
   },
   {
@@ -172,7 +172,7 @@
     "timesConfirmed": false,
     "soldOut": true,
     "ticketPriceRange": "Resale $85-$450",
-    "pricesConfirmed": true,
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/wilmington-live-oak-bank-pavilion-2026-06-26"
   },
   {
@@ -216,7 +216,7 @@
     "timesConfirmed": true,
     "soldOut": true,
     "ticketPriceRange": "Resale $85-$450",
-    "pricesConfirmed": true,
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/cary-koka-booth-amphitheatre-2026-07-24"
   },
   {
@@ -238,7 +238,7 @@
     "timesConfirmed": true,
     "soldOut": true,
     "ticketPriceRange": "Resale $85-$450",
-    "pricesConfirmed": true,
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/north-charleston-north-charleston-coliseum-2026-07-25"
   },
   {
@@ -391,7 +391,7 @@
     "timesConfirmed": true,
     "soldOut": true,
     "ticketPriceRange": "Resale $185-$1,200",
-    "pricesConfirmed": true,
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/tuscaloosa-bryant-denny-stadium-2026-04-18"
   },
   {
@@ -413,7 +413,7 @@
     "timesConfirmed": true,
     "soldOut": true,
     "ticketPriceRange": "Resale $185-$1,200",
-    "pricesConfirmed": true,
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/east-lansing-spartan-stadium-2026-05-22"
   },
   {
@@ -435,7 +435,7 @@
     "timesConfirmed": true,
     "soldOut": true,
     "ticketPriceRange": "Resale $185-$1,200",
-    "pricesConfirmed": true,
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/foxborough-gillette-stadium-2026-06-05"
   },
   {
@@ -457,7 +457,7 @@
     "timesConfirmed": true,
     "soldOut": true,
     "ticketPriceRange": "Resale $185-$1,200",
-    "pricesConfirmed": true,
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/pittsburgh-acrisure-stadium-2026-06-06"
   },
   {
@@ -569,7 +569,7 @@
     "timesConfirmed": true,
     "soldOut": false,
     "ticketPriceRange": "Resale $185-$1,200",
-    "pricesConfirmed": true,
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/chicago-soldier-field-2026-06-20"
   },
   {
@@ -593,7 +593,7 @@
     "timesConfirmed": true,
     "soldOut": false,
     "ticketPriceRange": "Resale $185-$1,200",
-    "pricesConfirmed": true,
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/clemson-memorial-stadium-2026-06-27"
   },
   {
@@ -617,7 +617,7 @@
     "timesConfirmed": true,
     "soldOut": false,
     "ticketPriceRange": "Resale $185-$1,200",
-    "pricesConfirmed": true,
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/baltimore-mt-bank-stadium-2026-07-18"
   },
   {

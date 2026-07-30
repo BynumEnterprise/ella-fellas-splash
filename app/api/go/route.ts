@@ -2,51 +2,48 @@ import { NextResponse } from "next/server";
 import { getSupabaseServer } from "@/lib/supabase";
 
 /**
- * GET /api/go?u=<encoded destination>&sid=<cj sub-id>&t=<link type>&c=<campaign>
+ * GET /api/go?u=<encoded destination>&sid=<attribution tag>&t=<link type>&c=<campaign>
  *
- * First-party click tracker for the Ella Fellas newsletter.
+ * First-party click tracker for the Ella Fellas newsletter. Logs the click into
+ * Supabase `email_events` then 302s to the destination.
  *
- * WHY THIS EXISTS: Resend only emits email.clicked events if the SENDING domain
- * has a tracking subdomain configured, which requires a DNS record and forces the
- * From address and the tracking domain to match. Rather than depend on that, every
- * commercial link in the newsletter points here first. We log the click ourselves
- * and 302 on to the real destination, so click data is first-party, lands in the
- * same email_events table the dashboard already reads, and carries far more detail
- * than Resend would give us (which show, which merchant, which send).
+ * WHY IT EXISTS: Resend only emits email.clicked events when the sending domain has
+ * a verified tracking subdomain, which needs a DNS record and forces the From address
+ * to match the tracking domain. This route removes that dependency, keeps tracking on
+ * ellafellas.com, and captures more than Resend would (which show, which merchant,
+ * which send).
  *
- * SECURITY: this is a redirector, so it is strictly allowlisted by destination
- * host. An open redirect would be abusable for phishing that borrows our domain's
- * reputation. Anything not on the allowlist is rejected with 400 and never
- * redirected to. Add hosts here deliberately, never from user input.
+ * ─────────────────────────────────────────────────────────────────────────────
+ * ALLOWLIST — WE ONLY EVER REDIRECT TO OUR OWN DOMAINS. THIS IS DELIBERATE.
+ * ─────────────────────────────────────────────────────────────────────────────
+ * Two independent reasons, and neither is negotiable:
+ *
+ * 1. AFFILIATE NETWORK POLICY. Amazon's Associates Operating Agreement flatly
+ *    prohibits Associates links in email — any email, including newsletters. It is
+ *    a material breach and Amazon terminates accounts and forfeits unpaid earnings
+ *    for it, without warning. CJ treats email as a "special" promotional method that
+ *    requires explicit per-advertiser approval, which we do not have for
+ *    TicketNetwork. So an affiliate link must NEVER appear in an email.
+ *
+ *    The compliant pattern, which this route enforces: the newsletter links to OUR
+ *    page (ellafellas.com/tour/<id>, ellafellas.com/shop/<slug>, shopellafellas.com),
+ *    and the affiliate link lives on that page. That is ordinary web promotion and
+ *    is allowed by both networks. We still learn exactly which show and which send
+ *    drove the click, because that is logged here.
+ *
+ * 2. OPEN-REDIRECT SAFETY. A redirector that forwards anywhere is a phishing tool
+ *    that borrows this domain's reputation. Failing closed prevents that.
+ *
+ * Consequence to understand before editing: adding an affiliate host here would
+ * re-open the compliance hole. If a link 400s, that is this route doing its job —
+ * fix the link to point at one of our own pages, do not widen the allowlist.
  */
 
 const ALLOWED_HOSTS = new Set([
-  // CJ Affiliate click domains (TicketNetwork, Pinto Ranch, Vrbo)
-  "www.anrdoezrs.net",
-  "anrdoezrs.net",
-  "www.dpbolvw.net",
-  "dpbolvw.net",
-  "www.jdoqocy.com",
-  "jdoqocy.com",
-  "www.kqzyfj.com",
-  "kqzyfj.com",
-  "www.tkqlhce.com",
-  "tkqlhce.com",
-  // Awin
-  "www.awin1.com",
-  "awin1.com",
-  // Ticket destinations (also reached directly on occasion)
-  "www.ticketnetwork.com",
-  "ticketnetwork.com",
-  // Owned store + main site
-  "shopellafellas.com",
-  "www.shopellafellas.com",
   "ellafellas.com",
   "www.ellafellas.com",
-  // Amazon affiliate
-  "www.amazon.com",
-  "amazon.com",
-  "amzn.to",
+  "shopellafellas.com",
+  "www.shopellafellas.com",
 ]);
 
 function isAllowed(raw: string): URL | null {
@@ -72,8 +69,13 @@ export async function GET(req: Request) {
 
   const dest = isAllowed(target);
   if (!dest) {
-    // Never redirect to an unvetted host. Fail closed.
-    return NextResponse.json({ error: "destination not allowed" }, { status: 400 });
+    return NextResponse.json(
+      {
+        error: "destination not allowed",
+        hint: "This tracker only forwards to ellafellas.com and shopellafellas.com. Affiliate links must never be placed in email — link to the on-site page that carries the affiliate link instead.",
+      },
+      { status: 400 },
+    );
   }
 
   const sid = searchParams.get("sid") ?? null;

@@ -8,6 +8,8 @@ import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { ShowCTA } from "@/components/ShowCTA";
 import { formatDate } from "@/lib/utils";
+import { PhotoFigure } from "@/components/PhotoFigure";
+import { getPhoto, pickPhotoForSlug } from "@/lib/photos";
 
 export async function generateStaticParams() {
   return getAllNews().map((n) => ({ slug: n.slug }));
@@ -17,6 +19,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const n = getNewsBySlug(slug);
   if (!n) return {};
+  const leadPhoto = getPhoto(n.frontmatter.heroPhoto) ?? pickPhotoForSlug(slug);
+  const ogImage = leadPhoto
+    ? leadPhoto.src
+    : `/api/og?title=${encodeURIComponent(n.frontmatter.title)}&kicker=${encodeURIComponent("NEWS — " + (n.frontmatter.publishedAt ?? ""))}`;
   return {
     title: n.frontmatter.title,
     description: n.frontmatter.excerpt,
@@ -26,7 +32,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       description: n.frontmatter.excerpt,
       publishedTime: n.frontmatter.publishedAt,
       url: `/news/${slug}`,
-      images: [`/api/og?title=${encodeURIComponent(n.frontmatter.title)}&kicker=${encodeURIComponent("NEWS — " + (n.frontmatter.publishedAt ?? ""))}`],
+      images: [ogImage],
     },
     alternates: { canonical: `/news/${slug}` },
   };
@@ -37,6 +43,7 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ sl
   const item = getNewsBySlug(slug);
   if (!item) notFound();
 
+  const leadPhoto = getPhoto(item.frontmatter.heroPhoto) ?? pickPhotoForSlug(item.slug);
   const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
   const url = `${SITE_URL}/news/${item.slug}`;
   const breadcrumbItems = [
@@ -53,6 +60,7 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ sl
         publishedAt={item.frontmatter.publishedAt}
         updatedAt={item.frontmatter.updatedAt}
         url={url}
+        image={leadPhoto?.src}
       />
 
       <BreadcrumbSchema items={breadcrumbItems} />
@@ -74,6 +82,15 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ sl
         <p className="text-lg text-ink/80 italic mt-3">{item.frontmatter.excerpt}</p>
       </header>
 
+      {leadPhoto && (
+        <PhotoFigure
+          photo={leadPhoto.id}
+          caption={item.frontmatter.heroPhotoCaption}
+          priority
+          full
+        />
+      )}
+
       <ShowCTA
         showId={item.frontmatter.showId}
         title={item.frontmatter.title}
@@ -82,7 +99,7 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ sl
       />
 
       <div className="prose-content">
-        <MDXRemote source={item.body} />
+        <MDXRemote source={item.body} components={{ Figure: PhotoFigure }} />
       </div>
 
       <section className="mt-10 bg-denim text-paper rounded-xl p-6 md:p-8">

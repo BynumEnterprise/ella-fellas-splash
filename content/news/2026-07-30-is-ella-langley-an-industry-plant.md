@@ -5,6 +5,8 @@ publishedAt: "2026-07-30"
 category: "music-news"
 excerpt: "The industry plant talk around Ella Langley ignores seven years of dates. Here's the real timeline, from a 2019 Nashville move to 15 weeks at No. 1 on the Hot 100."
 relatedSongs: ["choosin-texas", "you-look-like-you-love-me", "dandelion"]
+heroPhoto: "grand-rapids-2025"
+heroPhotoCaption: "Ella Langley at The Intersection in Grand Rapids, Michigan on February 27, 2025 -- a club show, a little over a year before she was headlining arenas. This is the stretch of the timeline the industry-plant theory skips."
 sources:
   - "https://www.billboard.com/lists/ella-langley-choosin-texas-hot-100-number-one-15-weeks/"
   - "https://us.cnn.com/2026/07/29/entertainment/ella-langley-choosin-texas"
@@ -39,6 +41,8 @@ Five years of writing rooms before her first Hot 100 entry. Two more before the 
 ## The receipt that landed this week
 
 The best rebuttal to the plant theory came from inside the tour bus. On July 27, Laci Kaye Booth — who is opening for Langley on this leg, including tonight in Gilford — posted a flashback video of the two of them from the early days, playing, in her words, "for about 7 people." Whiskey Riff picked it up.
+
+<Figure photo="fest-2026" caption="Fifteen months after the club photo above: Langley on a festival stage at Alan Jackson's 5 O'Clock Somewhere Fest in West Palm Beach, June 12, 2026. The jump looks instant from outside. It wasn't." />
 
 Booth is now the first name on an amphitheatre bill with Langley. Nobody plants a seven-person room and waits seven years for the harvest. If you want more on the openers she has been deliberately booking, we wrote up [who Laci Kaye Booth is](/guides/who-is-laci-kaye-booth).
 

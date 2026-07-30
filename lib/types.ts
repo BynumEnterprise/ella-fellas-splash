@@ -114,6 +114,10 @@ export interface ArticleFrontmatter {
   category: string;
   excerpt: string;
   heroImage?: string;
+  /** id from lib/photos.ts — renders a credited lead photo under the headline. */
+  heroPhoto?: string;
+  /** Optional per-post caption override for the lead photo. */
+  heroPhotoCaption?: string;
   relatedSongs?: string[];
   relatedTours?: string[];
   sources?: string[];

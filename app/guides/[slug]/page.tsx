@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { MDXRemote } from "next-mdx-remote/rsc";
+import { PhotoFigure } from "@/components/PhotoFigure";
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import { Sparkles, ArrowRight } from "lucide-react";
@@ -133,6 +134,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
       <div className="prose-content">
         <MDXRemote
           source={item.body}
+          components={{ Figure: PhotoFigure }}
           options={{ mdxOptions: { rehypePlugins: REHYPE_PLUGINS } }}
         />
       </div>

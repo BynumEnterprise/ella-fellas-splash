@@ -1,0 +1,98 @@
+/**
+ * Licensed photo registry.
+ *
+ * EVERY photo we publish must be one we are legally allowed to publish, with
+ * attribution rendered on the page. Right now that means Creative Commons
+ * images from Wikimedia Commons, credited TASL-style (Title, Author, Source,
+ * License). Press/wire/Getty photos and screenshots of her socials are NOT
+ * allowed here — we do not have a license for them.
+ *
+ * To add a photo:
+ *  1. Confirm the license on the Commons file page (CC BY / CC BY-SA / PD only).
+ *  2. Save a web-sized copy (max 1400px wide, q82 JPEG) to public/images/ella/.
+ *  3. Add an entry below with the photographer, file page URL, and license URL.
+ */
+
+export interface CreditedPhoto {
+  id: string;
+  /** Path under /public. */
+  src: string;
+  width: number;
+  height: number;
+  /** Descriptive alt text. Never starts with "image of". */
+  alt: string;
+  /** Short caption shown under the photo. */
+  caption: string;
+  /** Photographer / rights holder, exactly as credited at the source. */
+  photographer: string;
+  /** Link to the source file page. */
+  sourceName: string;
+  sourceUrl: string;
+  /** e.g. "CC BY-SA 4.0" */
+  license: string;
+  licenseUrl: string;
+}
+
+export const ELLA_PHOTOS: CreditedPhoto[] = [
+  {
+    id: "fest-2026",
+    src: "/images/ella/ella-langley-5-oclock-somewhere-fest-2026.jpg",
+    width: 1021,
+    height: 1534,
+    alt: "Ella Langley singing into a microphone stand under stage lights at Alan Jackson's 5 O'Clock Somewhere Fest in West Palm Beach, June 2026",
+    caption:
+      "Ella Langley on stage at Alan Jackson's 5 O'Clock Somewhere Fest in West Palm Beach, Florida, June 12, 2026.",
+    photographer: "Rick Munroe",
+    sourceName: "Wikimedia Commons",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Ella_Langley_2026.jpg",
+    license: "CC BY-SA 4.0",
+    licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/",
+  },
+  {
+    id: "grand-rapids-2025",
+    src: "/images/ella/ella-langley-grand-rapids-2025.jpg",
+    width: 1215,
+    height: 1620,
+    alt: "Ella Langley performing with a guitar at The Intersection in Grand Rapids, Michigan in February 2025",
+    caption:
+      "Ella Langley at The Intersection in Grand Rapids, Michigan, February 27, 2025 — a club show, a year before the arenas.",
+    photographer: "BrDen",
+    sourceName: "Wikimedia Commons",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:Ella_Langley_in_Concert_2025.jpg",
+    license: "CC BY 4.0",
+    licenseUrl: "https://creativecommons.org/licenses/by/4.0/",
+  },
+  {
+    id: "grand-rapids-2025-portrait",
+    src: "/images/ella/ella-langley-grand-rapids-2025-portrait.jpg",
+    width: 1207,
+    height: 1192,
+    alt: "Close crop of Ella Langley mid-song at a 2025 club show in Grand Rapids, Michigan",
+    caption:
+      "Ella Langley mid-song in Grand Rapids, Michigan, February 2025.",
+    photographer: "BrDen",
+    sourceName: "Wikimedia Commons",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:Ella_Langley_in_Concert_2025_cropped.jpg",
+    license: "CC BY 4.0",
+    licenseUrl: "https://creativecommons.org/licenses/by/4.0/",
+  },
+];
+
+export function getPhoto(id?: string): CreditedPhoto | undefined {
+  if (!id) return undefined;
+  return ELLA_PHOTOS.find((p) => p.id === id);
+}
+
+/**
+ * Deterministic pick so a post always renders the same photo (no build-to-build
+ * churn) while different posts spread across the pool.
+ */
+export function pickPhotoForSlug(slug: string): CreditedPhoto {
+  let h = 0;
+  for (let i = 0; i < slug.length; i++) {
+    h = (h * 31 + slug.charCodeAt(i)) % 100000;
+  }
+  return ELLA_PHOTOS[h % ELLA_PHOTOS.length];
+}

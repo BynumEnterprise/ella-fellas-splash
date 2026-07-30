@@ -31,6 +31,7 @@ export default function NewsIndexPage() {
             excerpt={n.frontmatter.excerpt}
             publishedAt={n.frontmatter.publishedAt}
             category={n.frontmatter.category}
+            heroPhoto={n.frontmatter.heroPhoto}
           />
         ))}
       </div>

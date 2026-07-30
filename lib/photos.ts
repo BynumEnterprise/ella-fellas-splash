@@ -31,6 +31,12 @@ export interface CreditedPhoto {
   /** e.g. "CC BY-SA 4.0" */
   license: string;
   licenseUrl: string;
+  /**
+   * CSS object-position for cropped contexts (index cards, capped hero).
+   * Concert shots put the subject well below centre, so a plain object-cover
+   * crop lands on a guitar or an elbow. Point this at her face.
+   */
+  focus: string;
 }
 
 export const ELLA_PHOTOS: CreditedPhoto[] = [
@@ -47,6 +53,7 @@ export const ELLA_PHOTOS: CreditedPhoto[] = [
     sourceUrl: "https://commons.wikimedia.org/wiki/File:Ella_Langley_2026.jpg",
     license: "CC BY-SA 4.0",
     licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/",
+    focus: "50% 18%",
   },
   {
     id: "grand-rapids-2025",
@@ -62,21 +69,7 @@ export const ELLA_PHOTOS: CreditedPhoto[] = [
       "https://commons.wikimedia.org/wiki/File:Ella_Langley_in_Concert_2025.jpg",
     license: "CC BY 4.0",
     licenseUrl: "https://creativecommons.org/licenses/by/4.0/",
-  },
-  {
-    id: "grand-rapids-2025-portrait",
-    src: "/images/ella/ella-langley-grand-rapids-2025-portrait.jpg",
-    width: 1207,
-    height: 1192,
-    alt: "Close crop of Ella Langley mid-song at a 2025 club show in Grand Rapids, Michigan",
-    caption:
-      "Ella Langley mid-song in Grand Rapids, Michigan, February 2025.",
-    photographer: "BrDen",
-    sourceName: "Wikimedia Commons",
-    sourceUrl:
-      "https://commons.wikimedia.org/wiki/File:Ella_Langley_in_Concert_2025_cropped.jpg",
-    license: "CC BY 4.0",
-    licenseUrl: "https://creativecommons.org/licenses/by/4.0/",
+    focus: "50% 30%",
   },
 ];
 

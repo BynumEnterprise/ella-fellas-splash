@@ -27,6 +27,7 @@ export function NewsCard({ slug, title, excerpt, publishedAt, category, heroPhot
             alt={photo.alt}
             fill
             sizes="(max-width: 768px) 100vw, 33vw"
+            style={{ objectPosition: photo.focus }}
             className="object-cover"
           />
         </div>

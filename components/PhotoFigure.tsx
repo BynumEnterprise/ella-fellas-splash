@@ -59,7 +59,8 @@ export function PhotoFigure({ photo, caption, priority = false, full = false }: 
           height={p.height}
           sizes="(max-width: 768px) 100vw, 720px"
           priority={priority}
-          className={full ? "w-full max-h-[520px] object-cover object-top" : "w-full h-auto"}
+          style={full ? { objectPosition: p.focus } : undefined}
+          className={full ? "w-full max-h-[520px] object-cover" : "w-full h-auto"}
         />
       </div>
       <figcaption className="mt-2 text-xs text-ink/70 leading-relaxed">

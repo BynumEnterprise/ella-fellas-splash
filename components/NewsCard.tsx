@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { formatDate } from "@/lib/utils";
-import { getPhoto, pickPhotoForSlug } from "@/lib/photos";
+import { getPhoto, pickPhotoByPosition } from "@/lib/photos";
 
 interface Props {
   slug: string;
@@ -9,12 +9,14 @@ interface Props {
   excerpt: string;
   publishedAt: string;
   category: string;
-  /** id from lib/photos.ts; falls back to a deterministic pick. */
+  /** id from lib/photos.ts; falls back to a rotation by feed position. */
   heroPhoto?: string;
+  /** Position in the news feed — keeps consecutive cards off the same photo. */
+  feedIndex?: number;
 }
 
-export function NewsCard({ slug, title, excerpt, publishedAt, category, heroPhoto }: Props) {
-  const photo = getPhoto(heroPhoto) ?? pickPhotoForSlug(slug);
+export function NewsCard({ slug, title, excerpt, publishedAt, category, heroPhoto, feedIndex = 0 }: Props) {
+  const photo = getPhoto(heroPhoto) ?? pickPhotoByPosition(feedIndex);
   return (
     <Link
       href={`/news/${slug}`}

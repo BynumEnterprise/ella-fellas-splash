@@ -23,7 +23,7 @@ export default function NewsIndexPage() {
       </header>
       <h2 className="sr-only">Latest articles</h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {news.map((n) => (
+        {news.map((n, i) => (
           <NewsCard
             key={n.slug}
             slug={n.slug}
@@ -32,6 +32,7 @@ export default function NewsIndexPage() {
             publishedAt={n.frontmatter.publishedAt}
             category={n.frontmatter.category}
             heroPhoto={n.frontmatter.heroPhoto}
+            feedIndex={i}
           />
         ))}
       </div>

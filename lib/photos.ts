@@ -79,13 +79,13 @@ export function getPhoto(id?: string): CreditedPhoto | undefined {
 }
 
 /**
- * Deterministic pick so a post always renders the same photo (no build-to-build
- * churn) while different posts spread across the pool.
+ * Pick by the post's position in the (date-sorted) news feed, so consecutive
+ * posts never land on the same photo. Hashing the slug looked random but
+ * produced visible runs of the same image down the index page — with a small
+ * pool, rotating by position is strictly better. Deterministic, so the card
+ * thumbnail and the article's lead photo always agree.
  */
-export function pickPhotoForSlug(slug: string): CreditedPhoto {
-  let h = 0;
-  for (let i = 0; i < slug.length; i++) {
-    h = (h * 31 + slug.charCodeAt(i)) % 100000;
-  }
-  return ELLA_PHOTOS[h % ELLA_PHOTOS.length];
+export function pickPhotoByPosition(index: number): CreditedPhoto {
+  const i = Number.isFinite(index) && index >= 0 ? index : 0;
+  return ELLA_PHOTOS[i % ELLA_PHOTOS.length];
 }

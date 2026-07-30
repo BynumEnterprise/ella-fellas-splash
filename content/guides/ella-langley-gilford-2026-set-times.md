@@ -3,13 +3,13 @@ title: "Ella Langley Gilford 2026: Set Times, Openers & Tickets"
 slug: "ella-langley-gilford-2026-set-times"
 category: "tour-guide"
 publishedAt: "2026-07-15"
-updatedAt: "2026-07-15"
-excerpt: "Ella Langley headlines BankNH Pavilion in Gilford, NH on Thursday, July 30, 2026 on the Dandelion Tour. Doors, set times, openers, and tickets."
+updatedAt: "2026-07-30"
+excerpt: "Ella Langley headlines BankNH Pavilion in Gilford, NH on Thursday, July 30, 2026. Venue-posted set times -- Ella at 9:00 PM -- plus openers, doors, and tickets."
 faq:
   - q: "What time does Ella Langley go on in Gilford?"
-    a: "BankNH Pavilion lists the show at 7:00 PM on July 30. Gates at the Pavilion usually open about 90 minutes before showtime."
+    a: "Ella Langley goes on at 9:00 PM on July 30 per BankNH Pavilion's posted running order. Parking opens 4:30 PM, doors 5:00 PM, Laci Kaye Booth 7:10 PM, Kameron Marlowe 7:50 PM."
   - q: "Who is opening for Ella Langley in Gilford?"
-    a: "The venue has not confirmed this date's openers yet. The Dandelion Tour rotates support including Kaitlin Butts, Laci Kaye Booth, Gabriella Rose, Kameron Marlowe, and Madeline Edwards; check back closer to the show."
+    a: "Laci Kaye Booth opens at 7:10 PM and Kameron Marlowe plays direct support at 7:50 PM. Whitney Doucet plays the Hazy Little Stage on the plaza at 5:00 PM."
   - q: "Where is the Ella Langley Gilford concert?"
     a: "At BankNH Pavilion, 72 Meadowbrook Ln, Gilford, NH, on Thursday, July 30, 2026."
 ---
@@ -24,14 +24,23 @@ Ella Langley headlines BankNH Pavilion in Gilford, NH on **Thursday, July 30, 20
 
 - **Date:** Thursday, July 30, 2026
 - **Venue:** BankNH Pavilion, 72 Meadowbrook Ln, Gilford, NH
-- **Times:** The venue lists the show at 7:00 PM; gates at BankNH Pavilion usually open about 90 minutes before showtime.
+- **Times (venue-posted):** parking 4:30 PM, doors 5:00 PM, Whitney Doucet 5:00 PM on the Hazy Little Stage, Laci Kaye Booth 7:10 PM, Kameron Marlowe 7:50 PM, **Ella Langley 9:00 PM**
 - **Tour:** The Dandelion Tour (her first headline arena run)
 
 [**Get Gilford tickets ->**](https://www.anrdoezrs.net/click-101760569-12324527?url=https%3A%2F%2Fwww.ticketnetwork.com%2Ftickets%2F7715679%2Fella-langley-tickets-thu-jul-30-2026-bank-of-new-hampshire-pavilion)
 
 ## Who's opening in Gilford?
 
-The venue has not published the support for this date yet. The Dandelion Tour rotates a small cast of openers -- Kaitlin Butts, Laci Kaye Booth, Gabriella Rose, Kameron Marlowe, and Madeline Edwards have all covered dates on this leg -- and Ella has been deliberate about booking women, which Rolling Stone called out as genuinely unusual for a country arena tour. We update this page the moment the night's bill is confirmed.
+BankNH Pavilion has published the full running order, so these are the venue's own posted times rather than our estimates:
+
+- **5:00 PM** -- **Whitney Doucet**, Hazy Little Stage out on the plaza
+- **7:10 PM** -- **Laci Kaye Booth**
+- **7:50 PM** -- **Kameron Marlowe** (direct support)
+- **9:00 PM** -- **Ella Langley**
+
+Posted times can slide a few minutes on the night, so treat 9:00 PM as the target rather than a stopwatch. Entry runs Artist VIP, Venue VIP, Fast Lane, then general population starting at doors. Kameron Marlowe in the direct-support slot is a real draw on his own, and Ella has been deliberate about booking women across this leg -- background on [Laci Kaye Booth](/guides/who-is-laci-kaye-booth) and [Kameron Marlowe's set](/news/2026-07-21-ella-langley-gilford-banknh-set-time).
+
+**This date is sold out at face value.** Ticketmaster returns no inventory for July 30, so resale is the way in -- compare the all-in checkout total, not the sticker price, because prices on a sold-out shed night move hard in both directions in the final 48 hours.
 
 New to Ella? Start with [Who Is Ella Langley?](/guides/who-is-ella-langley) and what she's been playing every night on the [2026 setlist guide](/guides/ella-langley-setlist-2026). Full run of dates on the [tour page](/tour) and show specifics on the [Gilford show page](/tour/gilford-banknh-pavilion-2026-07-30).
 

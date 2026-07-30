@@ -11,7 +11,7 @@ sources:
   - "https://eu.usatoday.com/story/entertainment/music/2026/05/15/acm-host-shania-twain-interview/90102563007/"
 ---
 
-# Ella Langley's Shania Twain Cover Took Off — and Shania Wrote Back
+## Ella Langley's Shania Twain Cover Took Off — and Shania Wrote Back
 
 Every so often a quiet little video does more than a whole press cycle, and Ella Langley's Shania Twain cover is one of those. Earlier this month she sat at a piano in a dim room and sang Shania Twain's 'You're Still the One' straight into her phone, captioned "I'll never get over this song." No band, no production, just her voice and the keys. It crossed 3 million views on TikTok in a hurry — and then the one person every country singer would want watching actually did.
 

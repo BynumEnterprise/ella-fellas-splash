@@ -13,7 +13,7 @@ sources:
     url: "https://inmusicblog.com/news/ella-langley-choosin-texas-15-weeks-number-one-hot-100/"
 ---
 
-# 'Choosin' Texas' Is Now the Longest-Running Non-Holiday No. 1 by a Woman
+## 'Choosin' Texas' Is Now the Longest-Running Non-Holiday No. 1 by a Woman
 
 We spent last Monday saying [Ella Langley was one week from standing alone](/news/2026-07-21-ella-langley-choosin-texas-14-weeks-ties-whitney-mariah). Monday came. "Choosin' Texas" logged a 15th week at No. 1 on the Billboard Hot 100, and the tie is over — Langley now passes Mariah Carey's "We Belong Together" (2005) and Whitney Houston's "I Will Always Love You" (1992-93) for the most weeks at No. 1 by a woman with no co-billed act, holiday songs excluded, per [Billboard](https://www.billboard.com/lists/ella-langley-choosin-texas-hot-100-number-one-15-weeks/).
 

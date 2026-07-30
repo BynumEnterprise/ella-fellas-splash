@@ -11,7 +11,7 @@ sources:
   - "https://www.instagram.com/p/DWpYdGjD7m7/"
 ---
 
-# The Boots Ella Langley Actually Wears — and Why Tecovas Is All Over Her Tour
+## The Boots Ella Langley Actually Wears — and Why Tecovas Is All Over Her Tour
 
 If you've watched any Dandelion Tour clip and wondered what boots Ella Langley wears, the short answer is Tecovas — and it's not a one-off styling choice. The Austin-based western boot brand is now an official sponsor of the tour, and the two have been circling each other long enough that this reads less like a paycheck and more like a fan finally getting the keys to the brand she already loved.
 

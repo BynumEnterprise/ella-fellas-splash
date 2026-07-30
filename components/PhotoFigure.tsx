@@ -45,15 +45,21 @@ export function PhotoFigure({ photo, caption, priority = false, full = false }: 
   if (!p) return null;
   return (
     <figure className={full ? "my-8" : "my-8 mx-auto max-w-xl"}>
-      <div className="overflow-hidden rounded-xl border border-ink/10 bg-paper">
+      <div
+        className={
+          full
+            ? "overflow-hidden rounded-xl border border-ink/10 bg-denim/5 max-h-[520px] flex justify-center"
+            : "overflow-hidden rounded-xl border border-ink/10 bg-paper"
+        }
+      >
         <Image
           src={p.src}
           alt={p.alt}
           width={p.width}
           height={p.height}
-          sizes="(max-width: 768px) 100vw, 640px"
+          sizes="(max-width: 768px) 100vw, 720px"
           priority={priority}
-          className="w-full h-auto"
+          className={full ? "w-full max-h-[520px] object-cover object-top" : "w-full h-auto"}
         />
       </div>
       <figcaption className="mt-2 text-xs text-ink/70 leading-relaxed">

@@ -13,7 +13,7 @@ sources:
     url: "https://countrynow.com/gretchen-wilson-re-recording-here-for-the-party-as-a-duets-album-with-ella-langley-cody-johnson-more/"
 ---
 
-# Ella Is on Gretchen Wilson's New Duets Version of 'Here for the Party'
+## Ella Is on Gretchen Wilson's New Duets Version of 'Here for the Party'
 
 Here is a collaboration we did not see coming. Gretchen Wilson is going back to the album that made her — her 2004 debut *Here for the Party* — and re-recording the whole thing as a duets record. And when she listed off the artists she pulled in, Ella's name was right there alongside Cody Johnson, Miranda Lambert, Tanya Tucker, Travis Tritt and Ashley McBryde.
 

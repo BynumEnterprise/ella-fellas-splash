@@ -11,7 +11,7 @@ sources:
   - "https://themusicuniverse.com/gretchen-wilson-enlists-ella-langley-for-here-for-the-party-re-recording/"
 ---
 
-# Ella Just Got Pulled Into a 2004 Classic — and It Fits Like It Was Always Hers
+## Ella Just Got Pulled Into a 2004 Classic — and It Fits Like It Was Always Hers
 
 While the charts keep rewriting themselves around her, Ella picked up a different kind of credit this week: a featured spot on one of the rowdiest songs country radio has ever produced. Gretchen Wilson released a brand-new duet version of her signature anthem ["Here for the Party"](https://youtu.be/gmg8o4o_Xfc?si=o4BldB53qGESwkA7) with Ella on June 26, and it's the lead single from a re-recorded album Wilson has been quietly building.
 

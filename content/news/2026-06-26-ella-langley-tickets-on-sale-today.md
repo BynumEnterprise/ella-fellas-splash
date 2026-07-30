@@ -12,7 +12,7 @@ sources:
   - "https://www.ticketnews.com/2026/06/ella-langley-expands-dandelion-tour-through-october/"
 ---
 
-# Ella Langley Tickets Are On Sale Now: Your Dandelion Tour Game Plan
+## Ella Langley Tickets Are On Sale Now: Your Dandelion Tour Game Plan
 
 If you got shut out of yesterday's presale, take a breath -- this is the morning that matters. **Ella Langley tickets** for the new fall leg of the Dandelion Tour go to general on-sale today, Friday, June 26 at 10 a.m. local time, and after the way Thursday's presale went, a lot of us are walking into this one a little gun-shy. Below is exactly what happened, what to do differently this morning, and how to actually land seats without overpaying.
 

@@ -11,7 +11,7 @@ sources:
   - "https://www.billboard.com/pro/gabby-barrett-i-hope-breaks-hot-country-songs-record/"
 ---
 
-# Choosin' Texas Just Rewrote the Record Book
+## Choosin' Texas Just Rewrote the Record Book
 
 We have watched ["Choosin' Texas"](/songs/choosin-texas) do a lot of remarkable things this year, but this one belongs in a frame. As of this week's Billboard charts, the song has spent **28 weeks at No. 1 on Hot Country Songs** -- making it the longest-running chart-topper by a solo woman in the history of that ranking, which dates back to 1958.
 

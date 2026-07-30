@@ -13,7 +13,7 @@ sources:
     url: "https://www.northcharlestoncoliseumpac.com/events/detail/ella-langley"
 ---
 
-# What Ella Langley Played at North Charleston Coliseum
+## What Ella Langley Played at North Charleston Coliseum
 
 The North Charleston setlist took a couple of days to land on setlist.fm, so here it is in full: Ella Langley played 19 songs plus a two-song encore at North Charleston Coliseum on Saturday, July 25, with Kaitlin Butts and Laci Kaye Booth on the bill, per [setlist.fm](https://www.setlist.fm/setlist/ella-langley/2026/north-charleston-coliseum-north-charleston-sc-2b4bf866.html).
 

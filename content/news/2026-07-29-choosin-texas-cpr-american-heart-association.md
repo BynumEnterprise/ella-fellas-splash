@@ -11,7 +11,7 @@ sources:
     url: "https://www.heart.org/en/cpr"
 ---
 
-# The Biggest Song of 2026 Is Also a CPR Metronome
+## The Biggest Song of 2026 Is Also a CPR Metronome
 
 This is our favorite kind of Ella news: completely unplanned, actually useful, and a little bit funny.
 

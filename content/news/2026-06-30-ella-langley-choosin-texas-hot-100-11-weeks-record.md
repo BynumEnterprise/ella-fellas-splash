@@ -11,7 +11,7 @@ sources:
   - "https://www.whiskeyriff.com/2026/06/29/ella-langley-continues-to-smash-records-as-choosin-texas-returns-to-1-on-the-hot-100-for-its-11th-week/"
 ---
 
-# Choosin' Texas Climbs Back to No. 1 and Rewrites the Record Book
+## Choosin' Texas Climbs Back to No. 1 and Rewrites the Record Book
 
 A month after we figured its Hot 100 reign was finished, ["Choosin' Texas"](/songs/choosin-texas) is back on top. Ella Langley's crossover anthem returned to No. 1 on this week's Billboard Hot 100, pushing its total to **11 weeks at the summit** — and with that eleventh week, Ella now owns the longest-leading Hot 100 No. 1 by a woman with a country hit. It is the song's first week back at the top in more than a month; it last led the chart dated May 18.
 

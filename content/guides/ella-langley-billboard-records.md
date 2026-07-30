@@ -25,7 +25,7 @@ sources:
     url: "https://www.billboard.com/music/chart-beat/ella-langleys-be-her-longest-country-airplay-number-1-1236280756/"
 ---
 
-# Ella Langley's Billboard Records, All in One Place
+## Ella Langley's Billboard Records, All in One Place
 
 Trying to keep track of the Ella Langley Billboard records in 2026 has turned into a part-time job. She has broken marks on four different charts this year, some of them held by names like Whitney Houston, Mariah Carey and Gabby Barrett, and the coverage arrives one headline at a time with no running tally anywhere. So we built the tally.
 

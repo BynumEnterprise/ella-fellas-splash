@@ -10,7 +10,7 @@ sources:
   - "https://clemsontigers.com/wallen-2026"
 ---
 
-# Which Morgan Wallen Stadium Shows Does Ella Langley Play in 2026?
+## Which Morgan Wallen Stadium Shows Does Ella Langley Play in 2026?
 
 If you're trying to figure out where to catch Ella Langley on Morgan Wallen's tour, here's the short version: she's the direct support act on nine of the 21 stadium nights on Wallen's 2026 Still the Problem Tour, and the next one is this Saturday, June 27, in Clemson, South Carolina. She isn't on every date — Wallen rotates Thomas Rhett, HARDY, and Brooks & Dunn across the other nights — so checking the lineup before you buy matters.
 

@@ -11,7 +11,7 @@ sources:
   - "https://holler.country/news/general/ella-langley-2026-the-dandelion-tour-everything-you-need-to-know/"
 ---
 
-# Every Opener on Ella Langley's Dandelion Tour Is a Woman — Here's Who
+## Every Opener on Ella Langley's Dandelion Tour Is a Woman — Here's Who
 
 If you are wondering who's opening for Ella Langley on the 2026 Dandelion Tour, the short answer is the part worth talking about: every single one of them is a woman. Across the whole headlining run, Ella handed the opening slots to other women in country music — five of them, rotating by date — and she did it on purpose. For her first arena tour as the headliner, that is a quiet statement that lands louder than most.
 

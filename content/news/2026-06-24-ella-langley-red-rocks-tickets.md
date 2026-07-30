@@ -12,7 +12,7 @@ sources:
   - "https://www.jambase.com/article/ella-langley-tour-dates-fall-2026"
 ---
 
-# Ella Langley at Red Rocks: How to Get Tickets for the Oct 7 Show
+## Ella Langley at Red Rocks: How to Get Tickets for the Oct 7 Show
 
 If you have been waiting for the right night to finally see her live, this is it. **Ella Langley Red Rocks tickets** go on sale this week, and the show -- Wednesday, October 7, 2026 at Red Rocks Amphitheatre in Morrison, Colorado -- is part of the new fall leg of the Dandelion Tour. Below is everything you need to actually land seats: the presale date, the general on-sale time, who is opening, and the smartest way to play a high-demand on-sale at a room that always sells fast.
 

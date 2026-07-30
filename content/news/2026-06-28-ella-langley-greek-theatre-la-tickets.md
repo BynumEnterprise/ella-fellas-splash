@@ -12,7 +12,7 @@ sources:
   - "https://holler.country/news/breaking/ella-langley-announces-second-leg-of-2026-dandelion-tour-heres-all-the-presale-info-you-need/"
 ---
 
-# Ella Langley's Two-Night Greek Theatre Run: How to Get LA Tickets
+## Ella Langley's Two-Night Greek Theatre Run: How to Get LA Tickets
 
 If you are out West and have been waiting for the right night, here it is: **Ella Langley plays Greek Theatre LA tickets** for two straight nights, Tuesday and Wednesday, October 13-14, 2026, in Los Angeles. It is one of only a couple of two-night stands on the new fall leg of the Dandelion Tour, which tells you everything about how the West Coast has taken to her this year. Below is the honest state of play now that the on-sale has come and gone: what the run is, where face-value seats stand, and the smartest way to still land tickets without overpaying.
 

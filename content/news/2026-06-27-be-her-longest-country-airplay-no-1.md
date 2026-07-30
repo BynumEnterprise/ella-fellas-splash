@@ -11,7 +11,7 @@ sources:
   - "https://www.billboard.com/music/chart-beat/be-her-ella-langley-fastest-country-airplay-no-1-1236260193/"
 ---
 
-# 'Be Her' Is Now Ella's Longest-Reigning Country Airplay No. 1
+## 'Be Her' Is Now Ella's Longest-Reigning Country Airplay No. 1
 
 We've been keeping a close eye on "Be Her" all month, and this week it crossed a line none of Ella's other singles ever have. On the Country Airplay chart dated June 27, "Be Her" holds at No. 1 for a fourth straight week — making it the longest-leading hit of her entire career on that chart.
 

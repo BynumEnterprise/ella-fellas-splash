@@ -15,7 +15,7 @@ sources:
     url: "https://americansongwriter.com/ella-langley-reflects-on-mental-health-breakthrough-that-led-to-new-song-loving-life-again/"
 ---
 
-# What Ella Langley Keeps Telling Us From the Stage
+## What Ella Langley Keeps Telling Us From the Stage
 
 If you've caught an Ella Langley show this summer, you've probably noticed the set has a second gear that has nothing to do with the guitars. Somewhere in the middle of the night she'll pull the band down, grab the mic with both hands, and talk to the crowd like she's talking to one person. Those few minutes have been getting clipped and shared everywhere lately, and it's worth pulling them together — because the mental health honesty is quickly becoming as much a part of an Ella Langley concert as "Choosin' Texas."
 

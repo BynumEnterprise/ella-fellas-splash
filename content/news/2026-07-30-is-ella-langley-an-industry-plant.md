@@ -14,7 +14,7 @@ sources:
   - "https://www.billboard.com/music/chart-beat/ella-langley-hot-100-debut-you-look-like-you-love-me-1235723166/"
 ---
 
-# Is Ella Langley an Industry Plant? Here's the Seven-Year Paper Trail
+## Is Ella Langley an Industry Plant? Here's the Seven-Year Paper Trail
 
 If you have been anywhere near country music discourse this week, you have seen the question: is Ella Langley an industry plant? CNN ran a piece on July 29 headlined "Is 'Choosin' Texas' the song of the summer or a 'psyop'?" — and that word, psyop, is where the argument has landed. Fifteen weeks at No. 1 on the Hot 100 is the kind of number that makes people assume somebody bought it.
 

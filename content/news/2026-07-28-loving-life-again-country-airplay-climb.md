@@ -13,7 +13,7 @@ sources:
     url: "https://countrynow.com/ella-langley-shares-turning-point-behind-loving-life-again-i-looked-at-myself-in-the-mirror-and-i-didnt-recognize-the-person-that-i-saw/"
 ---
 
-# The Radio Numbers on 'Loving Life Again' Are Getting Loud
+## The Radio Numbers on 'Loving Life Again' Are Getting Loud
 
 We told you two weeks ago that ["Loving Life Again" was headed to country radio](/news/2026-07-14-ella-langley-loving-life-again-radio-single) as the fourth single from *Dandelion*. Here is what happened next, and it is a lot faster than most singles move.
 

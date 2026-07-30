@@ -11,7 +11,7 @@ sources:
   - "https://parade.com/entertainment/country-star-earns-third-straight-top-10-hit-amid-2026-tour"
 ---
 
-# Three Songs, One Week: How Ella Langley Rewrote the Country Airplay Record Book
+## Three Songs, One Week: How Ella Langley Rewrote the Country Airplay Record Book
 
 If you want the headline on the **Ella Langley Country Airplay record** without the chart jargon: she just became the first woman in history to hold three spots inside the Country Airplay top 10 at the same time. One artist. Three songs. One weekly chart. That had never happened for a woman before.
 

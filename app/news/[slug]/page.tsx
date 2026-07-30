@@ -9,7 +9,7 @@ import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { ShowCTA } from "@/components/ShowCTA";
 import { formatDate } from "@/lib/utils";
 import { PhotoFigure } from "@/components/PhotoFigure";
-import { getPhoto, pickPhotoByPosition } from "@/lib/photos";
+import { assignPhotos } from "@/lib/photos";
 
 export async function generateStaticParams() {
   return getAllNews().map((n) => ({ slug: n.slug }));
@@ -19,9 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const n = getNewsBySlug(slug);
   if (!n) return {};
-  const leadPhoto =
-    getPhoto(n.frontmatter.heroPhoto) ??
-    pickPhotoByPosition(getAllNews().findIndex((x) => x.slug === slug));
+  const leadPhoto = assignPhotos(getAllNews()).get(slug);
   const ogImage = leadPhoto
     ? leadPhoto.src
     : `/api/og?title=${encodeURIComponent(n.frontmatter.title)}&kicker=${encodeURIComponent("NEWS — " + (n.frontmatter.publishedAt ?? ""))}`;
@@ -45,9 +43,7 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ sl
   const item = getNewsBySlug(slug);
   if (!item) notFound();
 
-  const leadPhoto =
-    getPhoto(item.frontmatter.heroPhoto) ??
-    pickPhotoByPosition(getAllNews().findIndex((x) => x.slug === item.slug));
+  const leadPhoto = assignPhotos(getAllNews()).get(item.slug);
   const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
   const url = `${SITE_URL}/news/${item.slug}`;
   const breadcrumbItems = [

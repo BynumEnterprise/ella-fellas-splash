@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { formatDate } from "@/lib/utils";
-import { getPhoto, pickPhotoByPosition } from "@/lib/photos";
+import type { CreditedPhoto } from "@/lib/photos";
 
 interface Props {
   slug: string;
@@ -9,26 +9,25 @@ interface Props {
   excerpt: string;
   publishedAt: string;
   category: string;
-  /** id from lib/photos.ts; falls back to a rotation by feed position. */
-  heroPhoto?: string;
-  /** Position in the news feed — keeps consecutive cards off the same photo. */
-  feedIndex?: number;
+  /** Resolved by assignPhotos() on the index so no two neighbours repeat. */
+  photo?: CreditedPhoto;
+  /** Render the first card as a large featured tile. */
+  featured?: boolean;
 }
 
-export function NewsCard({ slug, title, excerpt, publishedAt, category, heroPhoto, feedIndex = 0 }: Props) {
-  const photo = getPhoto(heroPhoto) ?? pickPhotoByPosition(feedIndex);
+export function NewsCard({ slug, title, excerpt, publishedAt, category, photo, featured = false }: Props) {
   return (
     <Link
       href={`/news/${slug}`}
       className="block bg-paper border border-ink/10 rounded-lg overflow-hidden hover:border-primary hover:shadow-md transition-all"
     >
       {photo && (
-        <div className="relative w-full h-40 bg-denim/5">
+        <div className={`relative w-full bg-denim/5 ${featured ? "h-64 md:h-80" : "h-40"}`}>
           <Image
             src={photo.src}
             alt={photo.alt}
             fill
-            sizes="(max-width: 768px) 100vw, 33vw"
+            sizes={featured ? "(max-width: 768px) 100vw, 66vw" : "(max-width: 768px) 100vw, 33vw"}
             style={{ objectPosition: photo.focus }}
             className="object-cover"
           />
@@ -41,12 +40,16 @@ export function NewsCard({ slug, title, excerpt, publishedAt, category, heroPhot
         </span>
         <span className="text-ink/60">{formatDate(publishedAt)}</span>
       </div>
-      <h3 className="text-lg font-display mt-2 text-denim leading-tight">{title}</h3>
+      <h3 className={`font-display mt-2 text-denim leading-tight ${featured ? "text-2xl md:text-3xl" : "text-lg"}`}>{title}</h3>
       <p className="text-sm text-ink/80 mt-2 line-clamp-3">{excerpt}</p>
       <p className="mt-3 text-sm font-medium text-primary">Read &rarr;</p>
-      <p className="mt-2 text-[10px] text-ink/45">
-        Photo: {photo.photographer} / {photo.sourceName}, {photo.license}
-      </p>
+      {photo && (
+        <p className="mt-2 text-[10px] text-ink/45">
+          {photo.rights === "cc"
+            ? `Photo: ${photo.photographer} / ${photo.sourceName}, ${photo.license}`
+            : "Ella Fellas photo"}
+        </p>
+      )}
       </div>
     </Link>
   );

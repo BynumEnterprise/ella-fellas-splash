@@ -2,6 +2,9 @@ import Image from "next/image";
 import { getPhoto, type CreditedPhoto } from "@/lib/photos";
 
 function Credit({ photo }: { photo: CreditedPhoto }) {
+  if (photo.rights !== "cc") {
+    return <span className="block text-[11px] text-ink/55 mt-1">Ella Fellas photo</span>;
+  }
   return (
     <span className="block text-[11px] text-ink/55 mt-1">
       Photo:{" "}

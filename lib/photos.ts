@@ -162,9 +162,10 @@ export interface PhotoAssignable {
  *  1. An explicit `heroPhoto` in frontmatter always wins.
  *  2. Otherwise prefer a photo whose topic tags match the slug/title, so a duet
  *     story gets the duet photo.
- *  3. Never reuse the photo used by either of the two preceding posts, and
- *     otherwise take the least-recently-used photo — that is what stops /news
- *     from looking like the same picture stamped 80 times.
+ *  3. Never reuse a photo used by any of the three preceding posts, and
+ *     otherwise take the least-recently-used photo. Three, not one: /news is a
+ *     3-column grid, so post i sits directly BELOW post i-3 — blocking only the
+ *     immediate neighbour still left the same picture stacked down a column.
  *
  * Deterministic, so a card thumbnail and that post's lead photo always agree.
  */
@@ -181,7 +182,7 @@ export function assignPhotos(posts: PhotoAssignable[]): Map<string, CreditedPhot
       chosen = explicit;
     } else {
       const haystack = `${post.slug} ${post.frontmatter.title ?? ""}`.toLowerCase();
-      const blocked = new Set(recent.slice(-2));
+      const blocked = new Set(recent.slice(-3));
       const eligible = ELLA_PHOTOS.filter((p) => !blocked.has(p.id));
       const pool = eligible.length ? eligible : ELLA_PHOTOS;
 

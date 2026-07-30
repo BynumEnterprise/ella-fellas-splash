@@ -339,14 +339,14 @@
     "tour": "The Dandelion Tour",
     "tourType": "headlining",
     "openers": [
-      "Laci Kaye Booth",
+      "Gabriella Rose",
       "Kaitlin Butts"
     ],
     "doorsTime": "18:30",
-    "showTime": "19:30",
+    "showTime": "19:00",
     "timesConfirmed": false,
-    "soldOut": false,
-    "ticketPriceRange": "$45-$285",
+    "soldOut": true,
+    "ticketPriceRange": "Resale from $621",
     "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/corpus-christi-american-bank-center-2026-08-14"
   },
@@ -361,15 +361,15 @@
     "tour": "The Dandelion Tour",
     "tourType": "headlining",
     "openers": [
-      "Laci Kaye Booth",
+      "Gabriella Rose",
       "Kaitlin Butts"
     ],
     "doorsTime": "18:30",
-    "showTime": "19:30",
+    "showTime": "19:00",
     "timesConfirmed": false,
     "soldOut": true,
     "ticketPriceRange": "Resale $85-$450",
-    "pricesConfirmed": true,
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/fort-worth-dickies-arena-2026-08-15"
   },
   {

@@ -117,7 +117,7 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ sl
       <footer className="text-xs text-ink/60">
         <p className="font-display tracking-wide text-denim mb-1">THE ELLA FELLAS EDITORS</p>
         <p>
-          Daily Ella Langley coverage. AI-assisted, human-edited.{" "}
+          Daily Ella Langley coverage, written and edited by fans.{" "}
           <Link href="/about" className="text-primary hover:underline">About us</Link>
         </p>
       </footer>

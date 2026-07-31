@@ -43,11 +43,12 @@ export default function DisclaimerPage() {
         ticket provider before purchasing.
       </p>
 
-      <h2>AI-assisted content</h2>
+      <h2>Our editorial standards</h2>
       <p>
-        We use AI tools to help research and draft articles. Every published piece is reviewed by a
-        human editor for accuracy and tone before going live. We mention this because we&apos;d rather
-        be transparent than have you guess.
+        Every published piece is reviewed for accuracy and tone before going live. Facts like chart
+        positions, dates, set times, and quotes are sourced from named publications or official
+        venue and artist channels, and we link to those sources in the article so you can check
+        them yourself. If we get something wrong, email us and we&apos;ll correct it.
       </p>
 
       <h2>Takedown requests</h2>

@@ -93,12 +93,12 @@ export default function AboutPage() {
         or invent insider sources we don&apos;t have. When we&apos;re paraphrasing, we link out.
       </p>
 
-      <h2>How we&apos;re built</h2>
+      <h2>How we work</h2>
       <p>
-        Ella Fellas is built with AI tools to help us cover her career faster and more
-        comprehensively than a single fan with a blog ever could. Every article gets a human edit
-        for accuracy and tone before it goes out. We&apos;re transparent about this because we&apos;d
-        rather you trust us than be surprised.
+        We follow Ella&apos;s career closely &mdash; the charts, the setlists, the tour schedule, the
+        interviews &mdash; and we publish something new most days. Every piece gets checked against
+        named sources before it goes out, and every article we run links to where we got it, so you
+        can read the original for yourself.
       </p>
 
       <h2>For Ella&apos;s team</h2>

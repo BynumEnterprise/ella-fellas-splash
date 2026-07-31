@@ -324,7 +324,7 @@
     "showTime": "19:00",
     "timesConfirmed": false,
     "soldOut": true,
-    "ticketPriceRange": "Resale from $585",
+    "ticketPriceRange": "Resale from $409",
     "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/austin-moody-center-2026-08-13"
   },
@@ -346,7 +346,7 @@
     "showTime": "19:00",
     "timesConfirmed": false,
     "soldOut": true,
-    "ticketPriceRange": "Resale from $621",
+    "ticketPriceRange": "Resale from $511",
     "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/corpus-christi-american-bank-center-2026-08-14"
   },
@@ -480,7 +480,7 @@
     "showTime": "17:30",
     "timesConfirmed": true,
     "soldOut": true,
-    "ticketPriceRange": "Resale from $424",
+    "ticketPriceRange": "Resale from $329",
     "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/philadelphia-lincoln-financial-field-2026-08-01"
   },

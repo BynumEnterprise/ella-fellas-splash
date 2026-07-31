@@ -40,10 +40,10 @@ For where to sit — lower bowl versus the club levels versus the pit, and which
 
 ## Still need tickets?
 
-**This one is sold out at face value.** Ticketmaster is showing no standard tickets for August 13 — only verified resale, currently starting around $585 all-in. So resale is the way in, and the [Austin show page](/tour/austin-moody-center-2026-08-13) carries the current listings and sources. Check that page for live availability rather than trusting a number in an article; sold-out arena pricing moves in both directions, sometimes sharply, in the final week.
+**This one is sold out at face value.** Ticketmaster is showing no standard tickets for August 13 — only verified resale, currently starting around $409 all-in. So resale is the way in, and the [Austin show page](/tour/austin-moody-center-2026-08-13) carries the current listings and sources. Check that page for live availability rather than trusting a number in an article; sold-out arena pricing moves in both directions, sometimes sharply, in the final week.
 
 ## Can't make it that night?
 
-The Texas run continues right after: [Corpus Christi on August 14](/tour/corpus-christi-american-bank-center-2026-08-14), which still had face-value tickets last we checked, and [Fort Worth at Dickies Arena on August 15](/tour/fort-worth-dickies-arena-2026-08-15), which is also resale-only now. Three nights, three rooms, same headliner — if Austin's out of reach, Corpus Christi is the one to look at. Every date is on the [tour hub](/tour).
+The Texas run continues right after: [Corpus Christi on August 14](/tour/corpus-christi-american-bank-center-2026-08-14), which has since gone resale-only as well, and [Fort Worth at Dickies Arena on August 15](/tour/fort-worth-dickies-arena-2026-08-15), which is also resale-only now. Three nights, three rooms, same headliner — if Austin's out of reach, Corpus Christi is the one to look at. Every date is on the [tour hub](/tour).
 
 *Disclosure: Some links here are affiliate links. If you buy through them we may earn a small commission at no extra cost to you.*

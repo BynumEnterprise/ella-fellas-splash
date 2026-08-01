@@ -252,11 +252,11 @@
     "tour": "The Dandelion Tour",
     "tourType": "headlining",
     "openers": [
-      "Laci Kaye Booth",
-      "Kameron Marlowe"
+      "Kameron Marlowe",
+      "Laci Kaye Booth"
     ],
     "doorsTime": "17:00",
-    "showTime": "19:00",
+    "showTime": "19:10",
     "timesConfirmed": true,
     "soldOut": true,
     "ticketPriceRange": "Resale from $714",
@@ -295,8 +295,8 @@
     "tour": "The Dandelion Tour",
     "tourType": "headlining",
     "openers": [
-      "Laci Kaye Booth",
-      "Kameron Marlowe"
+      "Kameron Marlowe",
+      "Laci Kaye Booth"
     ],
     "doorsTime": "17:30",
     "showTime": "19:00",

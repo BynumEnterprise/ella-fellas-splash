@@ -364,9 +364,9 @@
       "Gabriella Rose",
       "Kaitlin Butts"
     ],
-    "doorsTime": "18:30",
+    "doorsTime": "18:00",
     "showTime": "19:00",
-    "timesConfirmed": false,
+    "timesConfirmed": true,
     "soldOut": true,
     "ticketPriceRange": "Resale $85-$450",
     "pricesConfirmed": false,

@@ -15,7 +15,7 @@ sources:
 
 This is our favorite kind of Ella news: completely unplanned, actually useful, and a little bit funny.
 
-Ella teamed up with the American Heart Association on tour to learn hands-only CPR, and somewhere in the middle of it somebody did the math on her own record. "Choosin' Texas" runs at 112 beats per minute. The AHA recommends chest compressions at 100 to 120 per minute. The song is sitting right in the pocket, [per iHeartRadio](https://thekat.iheart.com/content/2026-07-29-this-ella-langley-song-is-right-on-the-beat-/).
+Ella teamed up with the American Heart Association on tour to learn hands-only CPR, and somewhere in the middle of it somebody did the math on her own record. ["Choosin' Texas"](/songs/choosin-texas) runs at 112 beats per minute. The AHA recommends chest compressions at 100 to 120 per minute. The song is sitting right in the pocket, [per iHeartRadio](https://thekat.iheart.com/content/2026-07-29-this-ella-langley-song-is-right-on-the-beat-/).
 
 So the song that has been stuck in your head since March is now, technically, a piece of safety equipment.
 
@@ -31,4 +31,4 @@ There is something a little poetic about this one. "Choosin' Texas" is a kiss-of
 
 Now it's the beat somebody might keep in their head while they're keeping a stranger alive. That's a strange and pretty good second life for a breakup song.
 
-Ella's back on stage Thursday at Bank of New Hampshire Pavilion in Gilford before the run rolls on — [check the tour page](/tour) for dates, set times and tickets. And if the encore feels like it's the right speed, now you know why.
+Ella's back on stage Thursday at Bank of New Hampshire Pavilion in Gilford before the run rolls on — [check the tour page](/tour) for dates, set times and tickets — and if you're headed to one, the [Arena Night look](/shop/looks/arena-night) is our go-to. And if the encore feels like it's the right speed, now you know why.

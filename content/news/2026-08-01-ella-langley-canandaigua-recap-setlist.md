@@ -3,7 +3,7 @@ title: "Ella Langley Canandaigua Setlist & Recap: Sold-Out Friday Night at CMAC"
 slug: "2026-08-01-ella-langley-canandaigua-recap-setlist"
 publishedAt: "2026-08-01"
 category: "news"
-excerpt: "Ella sold out CMAC in the Finger Lakes Friday night — enough of a crowd that the sheriff's office put out a traffic alert. Here's what we know so far, plus the setlist she's been playing all summer."
+excerpt: "Ella sold out CMAC in the Finger Lakes Friday night — enough of a crowd that the sheriff's office put out a traffic alert. Here's the fan-logged setlist and everything else we know so far."
 heroPhoto: "leopard-jumpsuit-night"
 heroPhotoCaption: "Ella Langley headlining — the kind of night Canandaigua got on Friday."
 sources:
@@ -11,8 +11,8 @@ sources:
     url: "https://www.cmacevents.com/event/ellalangley/"
   - title: "Finger Lakes Daily News — Canandaigua traffic alert for sold-out Ella Langley show"
     url: "https://www.fingerlakesdailynews.com/local/canandaigua-traffic-alert-sold-out-ella-langley-show-expected-to-cause-delays/"
-  - title: "setlist.fm — Ella Langley at Live Oak Bank Pavilion, Wilmington, June 26, 2026"
-    url: "https://www.setlist.fm/setlist/ella-langley/2026/live-oak-bank-pavilion-wilmington-nc-2b4bf862.html"
+  - title: "setlist.fm — Ella Langley at CMAC, Canandaigua, July 31, 2026 (fan-logged)"
+    url: "https://www.setlist.fm/setlist/ella-langley/2026/constellation-brands--marvin-sands-performing-arts-center-canandaigua-ny-3b703ca8.html"
   - title: "setlist.fm — Ella Langley 2026 tour statistics"
     url: "https://www.setlist.fm/stats/average-setlist/ella-langley-6bfde672.html?year=2026"
 ---
@@ -29,28 +29,28 @@ Back-to-back sold-out amphitheater nights in New Hampshire and upstate New York,
 
 ## The setlist
 
-The fan-logged Canandaigua setlist hasn't hit setlist.fm yet — we'll update this page the moment it does. But her Dandelion Tour set has barely moved all summer, so here's what she played at her most recent logged headline show (Wilmington, NC, June 26, per setlist.fm), and Friday almost certainly ran close to it:
+A fan logged the Canandaigua set to setlist.fm the same night. One caveat before you read it: setlist.fm flags this one as possibly incomplete and out of order, so treat the sequence as approximate until more reports firm it up. Here's what got logged:
 
 1. Dandelion
 2. I Gotta Quit
 3. Bottom of Your Boots
-4. Country Boy's Dream Girl
-5. girl you're taking home
+4. Here for the Party (Gretchen Wilson cover)
+5. Country Boy's Dream Girl
 6. 20-20
 7. You & Me Time
-8. Last Call for Us
-9. Here for the Party (Gretchen Wilson cover)
-10. Broken
-11. Somethin' Simple
-12. Butterfly Season
-13. Speaking Terms (acoustic)
+8. Broken
+9. Last Call for Us
+10. Strangers (Kameron Marlowe cover)
+11. Butterfly Season
+12. Somethin' Simple
+13. Dreams (Fleetwood Mac cover)
 14. Be Her
 15. you look like you love me
 16. Loving Life Again
 17. Choosin' Texas
 18. [weren't for the wind](/songs/werent-for-the-wind)
 
-That closing run — "you look like you love me" through "weren't for the wind" — has ended nearly every show on this tour, and per setlist.fm's 2026 stats, "weren't for the wind" has closed 23 of her last 26 logged sets. If Friday broke that streak, we want to hear about it.
+Two covers stand out beyond the usual Gretchen Wilson moment: Kameron Marlowe's "Strangers" and Fleetwood Mac's "Dreams" — the same pair she pulled out in Gilford the night before, where Marlowe and Laci Kaye Booth each joined her on stage for them. And the closing run held: per setlist.fm's 2026 stats, "weren't for the wind" has now ended 23 of her last 26 logged sets.
 
 ## Were you there?
 

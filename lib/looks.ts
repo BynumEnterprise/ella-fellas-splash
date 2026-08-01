@@ -185,7 +185,6 @@ export const LOOKS: Look[] = [
     productSlugs: [
       "wfw-verdusa-rodeo-dress",
       "wfw-iuv-festival-boots",
-      "wfw-felt-wide-brim-hat",
       "wfw-milumia-fringe-vest",
       "wfw-avecon-feather-earrings",
       "wfw-ruffle-boot-socks",

@@ -41,7 +41,7 @@ export const EXTENDED_CATALOG: ShopProduct[] = [
     blurb:
       "Lowers volume without muffling vocals. You will hear every word and not leave with your ears ringing.",
     query: "Loop Experience 2 earplugs",
-    price: "$34.95",
+    price: "$44.95",
     rating: 4.6,
     reviewCount: 38280,
     why: "The viral pick for concert ear protection. 17dB reduction, swap-in mute plugs for openers, and they look like jewelry instead of foam.",
@@ -83,7 +83,7 @@ export const EXTENDED_CATALOG: ShopProduct[] = [
     blurb:
       "Doors open at 5:30 and you will not be home until midnight. Phones die fast at outdoor shows.",
     query: "Anker PowerCore 10000",
-    price: "$21.99",
+    price: "$29.95",
     rating: 4.6,
     reviewCount: 21330,
     why: "Anker is the trusted brand. 10K mAh is two full charges — enough for openers, headliner, and the rideshare home.",
@@ -120,7 +120,7 @@ export const EXTENDED_CATALOG: ShopProduct[] = [
     blurb:
       "Half the tour stops are outdoor amphitheatres. One rain delay justifies the ten dollars.",
     query: "Hagon rain poncho 5 pack",
-    price: "$9.99",
+    price: "$12.99",
     rating: 4.5,
     reviewCount: 17962,
     why: "Five in a pack covers the crew. Better to have one and not need it than the opposite.",
@@ -372,7 +372,7 @@ export const EXTENDED_CATALOG: ShopProduct[] = [
     blurb:
       "The unofficial crowd uniform. Costs less than forty bucks, fits in any venue from honky-tonk to arena.",
     query: "Wrangler Cowboy Cut snap shirt",
-    price: "$32.50",
+    price: "$44.99",
     rating: 4.4,
     reviewCount: 14977,
     why: "The Cowboy Cut has been the rodeo shirt for fifty years. Pearl snaps so you can rip it open in the heat. Tapered if you are built, boxy if you are not.",
@@ -392,7 +392,7 @@ export const EXTENDED_CATALOG: ShopProduct[] = [
     blurb:
       "If you are doing the festival circuit, a real Resistol is the buy-once move.",
     query: "Resistol Denison straw cowboy hat",
-    price: "$94.95",
+    price: "$59.99",
     rating: 4.2,
     reviewCount: 421,
     why: "Resistol made hats for John Wayne and George Strait. The 7X Bangora is vented, packable, holds shape after a sweaty stadium summer.",
@@ -412,7 +412,7 @@ export const EXTENDED_CATALOG: ShopProduct[] = [
     blurb:
       "Layers over a pearl-snap when the temp drops after sunset. Most-photographed jacket in country music.",
     query: "Levi's Trucker Jacket",
-    price: "$98.00",
+    price: "$62.65",
     rating: 4.6,
     reviewCount: 21119,
     why: "Spring and fall amphitheatre shows get cold after sunset. The Trucker layers without bulk, breaks in better with age, and pairs with everything in this section.",
@@ -2549,27 +2549,6 @@ export const EXTENDED_CATALOG: ShopProduct[] = [
     badge: "Budget pick",
   }),
   c({
-    slug: "wfw-felt-wide-brim-hat",
-    asin: "B0FC2HZQ52",
-    category: "what-to-wear",
-    name: "Felt wide-brim western hat",
-    amazonTitle: "Western Cowboy Hats for Women Classic Felt Wide Brim Fedora Hat with Belt Buckle Retro Panama Hat Unisex Rolled up Cap",
-    blurb:
-      "A classic felt wide-brim with a buckle band — the cheap lid that looks anything but.",
-    query: "womens felt wide brim western hat buckle band",
-    price: "$18.99",
-    rating: 4.6,
-    reviewCount: 106,
-    why: "Under twenty dollars for a felt brim that photographs like it cost five times that. The rolled brim holds its shape, and the buckle band does the Western talking so you do not have to.",
-    image: "https://m.media-amazon.com/images/I/81vStW3IMiL._AC_SL1500_.jpg",
-    gallery: [
-      "https://m.media-amazon.com/images/I/41b910kB2mL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/41yphMkbZIL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/51Lt-zDVYWL._AC_SL1500_.jpg",
-    ],
-    badge: "Best value lid",
-  }),
-  c({
     slug: "wfw-inogih-fedora-hat",
     asin: "B09YLDNMWS",
     category: "what-to-wear",
@@ -2673,27 +2652,6 @@ export const EXTENDED_CATALOG: ShopProduct[] = [
       "https://m.media-amazon.com/images/I/31Vkz4njX3L._AC_SL1500_.jpg",
     ],
     badge: "Finishing touch",
-  }),
-  c({
-    slug: "wfw-montana-west-jewelry-set",
-    asin: "B0D923XP1M",
-    category: "what-to-wear",
-    name: "Montana West western jewelry set",
-    amazonTitle: "Montana West Rustic Couture's Western Jewelry Set for Women Cowgirl Vintage Western Necklace Earring",
-    blurb:
-      "A matched necklace-and-earring set so you do not have to assemble the look piece by piece.",
-    query: "Montana West western jewelry set necklace earrings",
-    price: "$15.99",
-    rating: 4.4,
-    reviewCount: 642,
-    why: "Montana West is the trusted name in Western accessories, and a matched set takes the guesswork out. Necklace and earrings in one go for the price of a single trendy piece.",
-    image: "https://m.media-amazon.com/images/I/71PCsMfAcWL._AC_SL1500_.jpg",
-    gallery: [
-      "https://m.media-amazon.com/images/I/41pFvMN4uPL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/416Pa512dxL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/41gm++TcX4L._AC_SL1500_.jpg",
-    ],
-    badge: "Matched set",
   }),
   c({
     slug: "wfw-avecon-feather-earrings",

@@ -65,7 +65,7 @@ New here and want the short version of the catalog? Start with [Who Is Ella Lang
 
 ## Hear it live before the fall leg
 
-The Dandelion Tour is at BankNH Pavilion in Gilford, NH tonight and CMAC in Canandaigua, NY tomorrow, then it picks back up in Texas in mid-August and runs through Halloween in Saint Paul. Every date, city, and set time lives on the [tour hub](/tour), and the fall run is broken out in the [fall 2026 tour guide](/guides/ella-langley-fall-tour-2026). Seats for the fall dates are on [TicketNetwork](https://www.anrdoezrs.net/click-101760569-12324527) if your city is still open.
+The Dandelion Tour picks back up Thursday, August 13 at Moody Center in Austin, runs a Texas trio through Fort Worth that weekend, and keeps going through Halloween in Saint Paul. If you land seats for an arena date, the [Arena Night look](/shop/looks/arena-night) was built for it. Every date, city, and set time lives on the [tour hub](/tour), and the fall run is broken out in the [fall 2026 tour guide](/guides/ella-langley-fall-tour-2026). Seats for the fall dates are on [TicketNetwork](https://www.anrdoezrs.net/click-101760569-12324527) if your city is still open.
 
 If you would rather have the record than the argument, the [Dandelion vinyl look](/shop/fc-dandelion-vinyl) is in the shop.
 

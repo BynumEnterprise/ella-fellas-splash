@@ -40,7 +40,7 @@ For where to sit — lower bowl versus the club levels versus the pit, and which
 
 ## Still need tickets?
 
-**This one is sold out at face value.** Ticketmaster is showing no standard tickets for August 13 — only verified resale, currently starting around $409 all-in. So resale is the way in, and the [Austin show page](/tour/austin-moody-center-2026-08-13) carries the current listings and sources. Check that page for live availability rather than trusting a number in an article; sold-out arena pricing moves in both directions, sometimes sharply, in the final week.
+**This one is sold out at face value.** Ticketmaster is showing no standard tickets for August 13 — only verified resale, currently starting around $386 all-in. So resale is the way in, and the [Austin show page](/tour/austin-moody-center-2026-08-13) carries the current listings and sources. Check that page for live availability rather than trusting a number in an article; sold-out arena pricing moves in both directions, sometimes sharply, in the final week.
 
 ## Can't make it that night?
 

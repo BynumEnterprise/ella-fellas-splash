@@ -5,17 +5,22 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
 /**
  * SENDING IDENTITY.
  *
- * We send as ellafellas.com — the brand the reader actually signed up for.
- * This is intentionally NOT read from EMAIL_FROM: that env var was set to
- * hello@bynummailer.com (an internal ops domain), which is off-brand and hurts
- * recognition in the inbox. The From address is not a secret, so the brand
- * owns it in code rather than in a "sensitive" env var. ellafellas.com is
- * verified for sending in Resend (DKIM + SPF/MX green), so this is a drop-in.
+ * The brand domain (daily@ellafellas.com) is what we WANT here, and
+ * ellafellas.com is fully verified for sending in Resend (DKIM + SPF/MX green).
+ * It is not live yet for one reason: the RESEND_API_KEY currently in Vercel is
+ * a DOMAIN-RESTRICTED key scoped to bynummailer.com, so sending as
+ * ellafellas.com fails with:
+ *   403 "This API key is not authorized to send emails from ellafellas.com"
+ * (verified live 2026-08-05 — the confirmation email 403'd).
  *
- * Reply-to STILL reads its env var: replies need to land in a mailbox someone
- * actually reads, and ellafellas.com has receiving disabled in Resend.
+ * TO SWITCH: create a Resend API key with Full access (or one scoped to
+ * ellafellas.com), update RESEND_API_KEY in Vercel, then set
+ * EMAIL_FROM = "Ella Fellas <daily@ellafellas.com>" (or flip the fallback
+ * below). Nothing else needs to change — open tracking is already enabled on
+ * ellafellas.com in Resend.
  */
-export const FROM_ADDRESS = "Ella Fellas <daily@ellafellas.com>";
+export const FROM_ADDRESS =
+  process.env.EMAIL_FROM ?? "Ella Fellas <daily@ellafellas.com>";
 export const REPLY_TO = process.env.EMAIL_REPLY_TO ?? "hi@ellafellas.com";
 
 /**

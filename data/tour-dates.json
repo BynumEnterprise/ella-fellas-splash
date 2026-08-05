@@ -320,11 +320,11 @@
       "Gabriella Rose",
       "Kaitlin Butts"
     ],
-    "doorsTime": "18:30",
+    "doorsTime": "18:00",
     "showTime": "19:00",
-    "timesConfirmed": false,
+    "timesConfirmed": true,
     "soldOut": true,
-    "ticketPriceRange": "Resale from $386",
+    "ticketPriceRange": "Resale from $546",
     "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/austin-moody-center-2026-08-13"
   },
@@ -342,11 +342,11 @@
       "Gabriella Rose",
       "Kaitlin Butts"
     ],
-    "doorsTime": "18:30",
+    "doorsTime": "18:00",
     "showTime": "19:00",
-    "timesConfirmed": false,
+    "timesConfirmed": true,
     "soldOut": true,
-    "ticketPriceRange": "Resale from $297",
+    "ticketPriceRange": "Resale from $326",
     "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/corpus-christi-american-bank-center-2026-08-14"
   },

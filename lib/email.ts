@@ -2,8 +2,20 @@ import { marked } from "marked";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
 
-export const FROM_ADDRESS =
-  process.env.EMAIL_FROM ?? "Ella Fellas <daily@ellafellas.com>";
+/**
+ * SENDING IDENTITY.
+ *
+ * We send as ellafellas.com — the brand the reader actually signed up for.
+ * This is intentionally NOT read from EMAIL_FROM: that env var was set to
+ * hello@bynummailer.com (an internal ops domain), which is off-brand and hurts
+ * recognition in the inbox. The From address is not a secret, so the brand
+ * owns it in code rather than in a "sensitive" env var. ellafellas.com is
+ * verified for sending in Resend (DKIM + SPF/MX green), so this is a drop-in.
+ *
+ * Reply-to STILL reads its env var: replies need to land in a mailbox someone
+ * actually reads, and ellafellas.com has receiving disabled in Resend.
+ */
+export const FROM_ADDRESS = "Ella Fellas <daily@ellafellas.com>";
 export const REPLY_TO = process.env.EMAIL_REPLY_TO ?? "hi@ellafellas.com";
 
 /**

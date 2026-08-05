@@ -13,7 +13,7 @@ sources:
     url: "https://wkml.com/2026/07/13/ella-langley-sends-loving-life-again-to-country-radio-as-fourth-single-from-dandelion/"
 ---
 
-We finally know what's following "Choosin' Texas" and "Be Her" at country radio, and Ella picked the one a lot of us were quietly hoping for. Per [Holler](https://holler.country/news/breaking/ella-langley-is-sending-loving-life-again-to-country-radio-as-her-next-single/) and [Whiskey Riff](https://www.whiskeyriff.com/2026/07/08/ella-langely-to-send-loving-life-again-as-her-next-single-to-country-radio/), "Loving Life Again" is headed to country radio as the fourth single from *Dandelion*.
+We finally know what's following "Choosin' Texas" and "Be Her" at country radio, and Ella picked the one a lot of us were quietly hoping for. Per [Holler](https://holler.country/news/breaking/ella-langley-is-sending-loving-life-again-to-country-radio-as-her-next-single/) and [Whiskey Riff](https://www.whiskeyriff.com/2026/07/08/ella-langely-to-send-loving-life-again-as-her-next-single-to-country-radio/), ["Loving Life Again"](/songs/loving-life-again) is headed to country radio as the fourth single from *Dandelion*.
 
 If you've been to a show on this tour, you already know why this one matters. It's the quiet spot in the set — the song Ella wrote about climbing out of the stretch when she stepped back from the road to take care of her health, watching her dreams come true and feeling like an impostor in her own life anyway. She's talked openly about that season, and you can hear every bit of it in the song. It first showed up as a promotional release back in March before landing on the album in April, and fans have been treating it like a single ever since.
 
@@ -21,4 +21,4 @@ The choice says something, too. She could have gone with another swaggering hit 
 
 No word yet on an official impact date or where it'll debut on the charts as a proper single, but we'll be watching Country Airplay closely over the next few weeks.
 
-If you want to hear it live before radio catches up, check the [Dandelion Tour dates](/tour) — it's been a nightly highlight all summer.
+If you want to hear it live before radio catches up, check the [Dandelion Tour dates](/tour) — it's been a nightly highlight all summer. And if you're headed to an outdoor show, the [Amphitheater Lawn look](/shop/looks/amphitheater-lawn) was built for exactly that.

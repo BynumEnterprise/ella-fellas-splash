@@ -23,7 +23,7 @@ Fifteen spots in one week, two weeks after impact, is the kind of move programme
 
 ## Where It Sits Everywhere Else
 
-The Billboard picture backs it up. As of this week, "Loving Life Again" is at No. 36 on the Hot 100, No. 24 on Country Airplay, and No. 19 on Country Streaming Songs. That's a song building at radio while it's already streaming like a hit — usually the combination that turns into a long chart run.
+The Billboard picture backs it up. As of this week, ["Loving Life Again"](/songs/loving-life-again) is at No. 36 on the Hot 100, No. 24 on Country Airplay, and No. 19 on Country Streaming Songs. That's a song building at radio while it's already streaming like a hit — usually the combination that turns into a long chart run.
 
 Worth remembering: this song was charting before it was ever a single. Off album release alone it reached No. 21 on the Hot 100 and No. 5 on Hot Country Songs. Radio is the last piece, and it's finally in.
 
@@ -33,4 +33,4 @@ Worth remembering: this song was charting before it was ever a single. Off album
 
 If you want the full breakdown of the lyrics — the quarter horse, the pine trees, her grandmother on the porch — we went line by line in [what "Loving Life Again" is really about](/news/2026-07-20-ella-langley-loving-life-again-meaning).
 
-It's been in the setlist all summer, usually in the back half of the main set. Gilford, Canandaigua and Philadelphia are up this week — [check the tour page](/tour) for dates and times before you go.
+It's been in the setlist all summer, usually in the back half of the main set. Next up is [Austin at Moody Center on August 13](/tour/austin-moody-center-2026-08-13) — [check the tour page](/tour) for dates and times before you go, and the [Arena Night look](/shop/looks/arena-night) if you're making a night of it.

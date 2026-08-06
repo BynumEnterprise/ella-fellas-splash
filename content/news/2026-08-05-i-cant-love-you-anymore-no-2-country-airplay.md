@@ -34,4 +34,4 @@ Here's the stat that stings a little: only two Ella songs have ever cracked the 
 
 One of those streaks breaks in the next few weeks. Either Ella's duet becomes the rare Wallen record to stall in the runner-up spot, or "Don't We" hands the baton to its own labelmate and Ella gets No. 1 number five. We know which one we're rooting for.
 
-She's back on the road with the [Dandelion Tour's second leg starting August 20 in Green Bay](/tour) — if this song hits No. 1 while she's out there, that celebration is going to be something. Browse [every song we've broken down](/songs) if you want the full story behind the singles.
+She's back on the road with the [Dandelion Tour's second leg starting August 20 in Green Bay](/tour) — if this song hits No. 1 while she's out there, that celebration is going to be something. Browse [every song we've broken down](/songs) if you want the full story behind the singles. And if you're catching a leg-two show, our [Arena Night look](/shop/looks/arena-night) is the fit we'd wear to hear the duet live.

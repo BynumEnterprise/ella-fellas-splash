@@ -324,7 +324,7 @@
     "showTime": "19:00",
     "timesConfirmed": true,
     "soldOut": true,
-    "ticketPriceRange": "Resale from $546",
+    "ticketPriceRange": "Resale from $539",
     "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/austin-moody-center-2026-08-13"
   },
@@ -346,7 +346,7 @@
     "showTime": "19:00",
     "timesConfirmed": true,
     "soldOut": true,
-    "ticketPriceRange": "Resale from $326",
+    "ticketPriceRange": "Resale from $483",
     "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/corpus-christi-american-bank-center-2026-08-14"
   },
@@ -368,7 +368,7 @@
     "showTime": "19:00",
     "timesConfirmed": true,
     "soldOut": true,
-    "ticketPriceRange": "Resale from $418",
+    "ticketPriceRange": "Resale from $460",
     "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/fort-worth-dickies-arena-2026-08-15"
   },
@@ -687,14 +687,14 @@
     "tour": "The Dandelion Tour",
     "tourType": "headlining",
     "openers": [
-      "ERNEST",
-      "Gabriella Rose"
+      "Laci Kaye Booth",
+      "ERNEST"
     ],
-    "doorsTime": "18:30",
-    "showTime": "19:30",
-    "timesConfirmed": false,
+    "doorsTime": "18:00",
+    "showTime": "19:00",
+    "timesConfirmed": true,
     "soldOut": false,
-    "ticketPriceRange": "$45-$285",
+    "ticketPriceRange": "From $103",
     "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/green-bay-resch-center-2026-08-20"
   },

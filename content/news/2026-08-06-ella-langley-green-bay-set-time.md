@@ -46,6 +46,6 @@ Good news on this one: **it hasn't sold out.** The Resch Center still has standa
 
 ## Can't make it that night?
 
-The late-August run rolls straight on from here: [Springfield, IL on August 21](/tour/springfield-illinois-state-fair-2026-08-21) at the Illinois State Fair Grandstand, and [North Little Rock on August 22](/tour/north-little-rock-simmons-bank-arena-2026-08-22) at Simmons Bank Arena — both still available at face value too. Every date, with current status, is on the [tour hub](/tour).
+The late-August run rolls straight on from here: [Springfield, IL on August 21](/tour/springfield-illinois-state-fair-2026-08-21) at the Illinois State Fair Grandstand — still on sale at face — and [North Little Rock on August 22](/tour/north-little-rock-simmons-bank-arena-2026-08-22) at Simmons Bank Arena, which has since sold out at face value and is resale-only now. Every date, with current status, is on the [tour hub](/tour).
 
 *Disclosure: Some links here are affiliate links. If you buy through them we may earn a small commission at no extra cost to you.*

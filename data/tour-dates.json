@@ -368,7 +368,7 @@
     "showTime": "19:00",
     "timesConfirmed": true,
     "soldOut": true,
-    "ticketPriceRange": "Resale from $449",
+    "ticketPriceRange": "Resale from $425",
     "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/fort-worth-dickies-arena-2026-08-15"
   },
@@ -711,14 +711,14 @@
     "tour": "The Dandelion Tour",
     "tourType": "headlining",
     "openers": [
-      "ERNEST",
-      "Gabriella Rose"
+      "Laci Kaye Booth",
+      "ERNEST"
     ],
-    "doorsTime": "18:30",
-    "showTime": "19:30",
-    "timesConfirmed": false,
-    "soldOut": false,
-    "ticketPriceRange": "$45-$285",
+    "doorsTime": "18:00",
+    "showTime": "19:00",
+    "timesConfirmed": true,
+    "soldOut": true,
+    "ticketPriceRange": "Resale from $206",
     "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/north-little-rock-simmons-bank-arena-2026-08-22"
   },

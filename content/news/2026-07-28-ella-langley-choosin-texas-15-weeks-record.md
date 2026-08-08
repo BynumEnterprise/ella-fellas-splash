@@ -51,7 +51,7 @@ Set times, opener lineups, where to sit and ticket links for each are on the [El
 
 Plenty of people are hearing this song for the first time this month. Two places to start: [what "Choosin' Texas" is actually about](/news/2026-07-22-choosin-texas-meaning), kangaroo story and all, and the [full "Choosin' Texas" song page](/songs/choosin-texas) with the writers, the release history and every week of this chart run in one place. Released October 17, 2025 as the lead single from *Dandelion*, written by Langley with Luke Dick, Miranda Lambert and JoyBeth Taylor, produced by Lambert and Ben West — it also hit No. 1 in Australia, Canada, Ireland and New Zealand and cracked the UK top five.
 
-And if you're headed to Gilford, Canandaigua or Philly this week, our [Arena Night look](/shop/looks/arena-night) is what we'd wear to watch history stay at No. 1 for one more Monday.
+The run didn't stop at 15. "Choosin' Texas" went on to a [16th week at No. 1 as country swept the entire Hot 100 top five for the first time](/news/2026-08-08-ella-langley-country-hot-100-top-5-sweep). If you're catching a show on the [Dandelion Tour](/tour) this fall, our [Arena Night look](/shop/looks/arena-night) is what we'd wear to watch history stay at No. 1.
 
 ---
 

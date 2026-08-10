@@ -3,7 +3,7 @@ title: "Ella Langley Green Bay Set Time: When She Goes On at the Resch Center (A
 slug: "2026-08-06-ella-langley-green-bay-set-time"
 publishedAt: "2026-08-06"
 category: "tour-prep"
-excerpt: "Ella Langley plays the Resch Center in Green Bay on Thursday, August 20 with Laci Kaye Booth and ERNEST. The venue-posted 7:00 PM start, who plays when, arena notes, and one of the few Dandelion dates you can still grab at face value."
+excerpt: "Ella Langley plays the Resch Center in Green Bay on Thursday, August 20 with Laci Kaye Booth and ERNEST. The venue-posted 7:00 PM start, who plays when, arena notes, and how to grab resale now that it's sold out at face."
 relatedSongs: ["you-look-like-you-love-me", "werent-for-the-wind", "choosin-texas"]
 sources:
   - "https://www.reschcomplex.com/events/detail/ella-langley-the-dandelion-tour"
@@ -11,7 +11,7 @@ sources:
   - "https://holler.country/news/general/ella-langley-2026-the-dandelion-tour-everything-you-need-to-know/"
 ---
 
-Ella Langley brings The Dandelion Tour to the **Resch Center in Green Bay on Thursday, August 20, 2026** — an arena show right in the shadow of Lambeau Field. It's a date she added after most of the tour had already sold out, which makes it a little unusual: unlike the Texas run the week before, you can still walk up to this one at face value. Here's the timing and the plan.
+Ella Langley brings The Dandelion Tour to the **Resch Center in Green Bay on Thursday, August 20, 2026** — an arena show right in the shadow of Lambeau Field. It's a date she added after most of the tour had already sold out, and it's now gone the same way — face value is sold out and the Resch Center is showing resale only. Here's the timing and the plan.
 
 ## Who plays when
 
@@ -42,10 +42,10 @@ For where to sit — lower bowl versus the upper level, and which sections get t
 
 ## Still need tickets?
 
-Good news on this one: **it hasn't sold out.** The Resch Center still has standard tickets on sale, starting around **$103** all-in — a genuine rarity on a tour where most rooms went to resale-only months ago. So you don't have to chase the secondary market here. The [Green Bay show page](/tour/green-bay-resch-center-2026-08-20) carries the current listings; check it for live availability rather than trusting a number in an article, since face-value inventory on an added arena date can move quickly once word gets out.
+This one has now **sold out at face value** — the Resch Center is showing resale tickets only, starting around **$234** all-in as of early August (resale prices swing hard in the final 48 hours, so expect movement). The [Green Bay show page](/tour/green-bay-resch-center-2026-08-20) carries current listings and the resale link; check it for live availability rather than trusting a number in an article.
 
 ## Can't make it that night?
 
-The late-August run rolls straight on from here: [Springfield, IL on August 21](/tour/springfield-illinois-state-fair-2026-08-21) at the Illinois State Fair Grandstand — still on sale at face — and [North Little Rock on August 22](/tour/north-little-rock-simmons-bank-arena-2026-08-22) at Simmons Bank Arena, which has since sold out at face value and is resale-only now. Every date, with current status, is on the [tour hub](/tour).
+The late-August run rolls straight on from here: [Springfield, IL on August 21](/tour/springfield-illinois-state-fair-2026-08-21) at the Illinois State Fair Grandstand — now sold out at face, resale only — and [North Little Rock on August 22](/tour/north-little-rock-simmons-bank-arena-2026-08-22) at Simmons Bank Arena, also sold out at face and resale-only now. Every date, with current status, is on the [tour hub](/tour).
 
 *Disclosure: Some links here are affiliate links. If you buy through them we may earn a small commission at no extra cost to you.*

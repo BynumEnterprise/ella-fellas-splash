@@ -324,7 +324,7 @@
     "showTime": "19:00",
     "timesConfirmed": true,
     "soldOut": true,
-    "ticketPriceRange": "Resale from $384",
+    "ticketPriceRange": "Resale from $368",
     "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/austin-moody-center-2026-08-13"
   },
@@ -346,7 +346,7 @@
     "showTime": "19:00",
     "timesConfirmed": true,
     "soldOut": true,
-    "ticketPriceRange": "Resale from $357",
+    "ticketPriceRange": "Resale from $411",
     "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/corpus-christi-american-bank-center-2026-08-14"
   },
@@ -632,9 +632,9 @@
     "openers": [
       "ERNEST"
     ],
-    "soldOut": false,
-    "ticketPriceRange": "$59-$134",
-    "pricesConfirmed": true,
+    "soldOut": true,
+    "ticketPriceRange": "Resale $85-$450",
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/springfield-illinois-state-fair-2026-08-21",
     "timesConfirmed": true,
     "doorsTime": "19:00",
@@ -695,8 +695,8 @@
     "doorsTime": "18:00",
     "showTime": "19:00",
     "timesConfirmed": true,
-    "soldOut": false,
-    "ticketPriceRange": "From $103",
+    "soldOut": true,
+    "ticketPriceRange": "Resale from $234",
     "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/green-bay-resch-center-2026-08-20"
   },
@@ -718,7 +718,7 @@
     "showTime": "19:00",
     "timesConfirmed": true,
     "soldOut": true,
-    "ticketPriceRange": "Resale from $206",
+    "ticketPriceRange": "Resale from $209",
     "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/north-little-rock-simmons-bank-arena-2026-08-22"
   },

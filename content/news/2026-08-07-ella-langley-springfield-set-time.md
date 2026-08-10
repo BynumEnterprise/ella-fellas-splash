@@ -3,7 +3,7 @@ title: "Ella Langley Illinois State Fair Set Time: When She Goes On in Springfie
 slug: "2026-08-07-ella-langley-springfield-set-time"
 publishedAt: "2026-08-07"
 category: "tour-prep"
-excerpt: "Ella Langley headlines the Illinois State Fair Grandstand in Springfield on Friday, August 21 with ERNEST. The fair's posted 8:00 PM start, gates an hour before, grandstand ticket tiers, and what to know about an outdoor fair show."
+excerpt: "Ella Langley headlines the Illinois State Fair Grandstand in Springfield on Friday, August 21 with ERNEST. The fair's posted 8:00 PM start, gates an hour before, how to find resale now that face value is gone, and what to know about an outdoor fair show."
 relatedSongs: ["choosin-texas", "you-look-like-you-love-me", "be-her"]
 sources:
   - "https://statefair.illinois.gov/entertainment/grandstand/event.ella-langley.html"
@@ -34,10 +34,10 @@ For where to sit — the Grandstand tiers run from the **Track** and premium **B
 
 ## Still need tickets?
 
-Unlike the sold-out Texas arena nights, this one still has face-value seats. The fair lists Grandstand tickets from around **$59** in the back tiers up to **$134** for the Blue Ribbon Zone, with mid tiers in between — plus fair admission on top. The [Springfield show page](/tour/springfield-illinois-state-fair-2026-08-21) carries current listings and sources; check there for live availability rather than trusting a number in an article, since fair-show pricing can move as the date gets close.
+This one has now **sold out at face value** — Ticketmaster lists the grandstand as sold out, so the secondary market is the way in, and resale on a fair grandstand can swing hard in the final days. The [Springfield show page](/tour/springfield-illinois-state-fair-2026-08-21) carries current listings and the resale link; check there for live availability rather than trusting a number in an article.
 
 ## Can't make it that night?
 
-The night before, Ella opens the fall leg up in Wisconsin: [Green Bay at the Resch Center on August 20](/tour/green-bay-resch-center-2026-08-20), which still has face-value tickets too. Every date is on the [tour hub](/tour).
+The night before, Ella opens the fall leg up in Wisconsin: [Green Bay at the Resch Center on August 20](/tour/green-bay-resch-center-2026-08-20), which has also sold out at face and is resale-only now. Every date is on the [tour hub](/tour).
 
 *Disclosure: Some links here are affiliate links. If you buy through them we may earn a small commission at no extra cost to you.*

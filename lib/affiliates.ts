@@ -97,6 +97,7 @@ const KNOWN_TICKETNETWORK_URLS: Record<string, string> = {
   "austin-moody-center-2026-08-13": "https://www.ticketnetwork.com/tickets/7715690/ella-langley-tickets-thu-aug-13-2026-moody-center-atx",
   "corpus-christi-american-bank-center-2026-08-14": "https://www.ticketnetwork.com/tickets/7715696/ella-langley-tickets-fri-aug-14-2026-hilliard-center-arena",
   "fort-worth-dickies-arena-2026-08-15": "https://www.ticketnetwork.com/tickets/7715693/ella-langley-tickets-sat-aug-15-2026-dickies-arena",
+  "green-bay-resch-center-2026-08-20": "https://www.ticketnetwork.com/tickets/8071937/ella-langley-ernest-laci-kaye-booth-tickets-thu-aug-20-2026-resch-center",
   "philadelphia-lincoln-financial-field-2026-08-01": "https://www.ticketnetwork.com/tickets/7529811/morgan-wallen-ella-langley-hudson-westbrook-blake-whiten-tickets-sat-aug-1-2026-lincoln-financial-field",
   "chicago-soldier-field-2026-06-20": "https://www.ticketnetwork.com/tickets/7529805/morgan-wallen-ella-langley-gavin-adcock-zach-john-king-tickets-sat-jun-20-2026-soldier-field",
   "clemson-memorial-stadium-2026-06-27": "https://www.ticketnetwork.com/tickets/7538546/morgan-wallen-ella-langley-gavin-adcock-jason-scott-and-the-high-heat-tickets-sat-jun-27-2026-frank-howard-field-at-clemson-memorial-stadium",

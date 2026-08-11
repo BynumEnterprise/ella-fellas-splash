@@ -3,7 +3,7 @@ title: "Ella Langley 2027 Tour: Confirmed Dates & What We Know"
 slug: "ella-langley-2027-tour"
 category: "tour-guide"
 publishedAt: "2026-07-15"
-updatedAt: "2026-07-15"
+updatedAt: "2026-08-11"
 excerpt: "Is Ella Langley touring in 2027? One date is already confirmed — Patriotic Festival in Virginia Beach — and here's how the rest of 2027 is likely to shape up, updated as announcements land."
 faq:
   - q: "Is Ella Langley touring in 2027?"
@@ -15,6 +15,10 @@ faq:
 ---
 
 Fans are already searching for Ella Langley's 2027 plans -- we saw the same thing happen a year early with "tour 2025" and "tour 2026" searches -- so this page is the honest, running answer. No invented dates, no recycled rumors: what's confirmed, what's likely, and how to be first in line when the real announcements land.
+
+## When Is Ella Langley's 2027 Tour?
+
+As of August 2026, Ella Langley has not announced a 2027 headline tour. One 2027 date is on the books -- the Patriotic Festival in Virginia Beach, VA on May 29, 2027 -- and that is the only confirmed 2027 booking so far. Her current [Dandelion Tour](/tour) runs through October 31, 2026, and if 2026 is any guide, a 2027 run would be revealed in stages in late 2026 or early 2027, with a free Fan Club Presale opening before each public on-sale. We update this page the day any new date is confirmed.
 
 ## Confirmed 2027 dates (so far)
 
@@ -34,4 +38,4 @@ None of that is announced. When it is, the pattern from 2026 says: dates reveal 
 - [Join the Fellas](/guides/ella-langley-fan-club) below -- we send tour-drop alerts the day announcements happen, and nothing else
 - Until then: the [2026 fall run](/guides/ella-langley-fall-tour-2026) still has 21 dates left, including [Red Rocks](/guides/ella-langley-red-rocks-2026) and [two nights at the Greek](/guides/ella-langley-greek-theatre-la-2026)
 
-*This page is updated whenever a 2027 date is confirmed. Last checked: July 15, 2026.*
+*This page is updated whenever a 2027 date is confirmed. Last checked: August 11, 2026.*

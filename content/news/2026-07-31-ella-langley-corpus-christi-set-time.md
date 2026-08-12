@@ -40,7 +40,7 @@ For where to sit — floor versus lower bowl and which sections actually get the
 
 ## Still need tickets?
 
-**This one is sold out at face value.** Ticketmaster is showing no standard tickets for August 14 — only verified resale, currently starting around $357 all-in. The [Corpus Christi show page](/tour/corpus-christi-american-bank-center-2026-08-14) carries the current listings and sources; check there for live availability rather than trusting a number in an article, because sold-out arena pricing moves in both directions, sometimes sharply, in the final week.
+**This one is sold out at face value.** Ticketmaster is showing no standard tickets for August 14 — only verified resale, currently starting around $575 all-in. The [Corpus Christi show page](/tour/corpus-christi-american-bank-center-2026-08-14) carries the current listings and sources; check there for live availability rather than trusting a number in an article, because sold-out arena pricing moves in both directions, sometimes sharply, in the final week.
 
 ## Can't make it that night?
 

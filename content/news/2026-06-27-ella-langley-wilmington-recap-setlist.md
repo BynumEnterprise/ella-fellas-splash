@@ -6,7 +6,7 @@ category: "news"
 excerpt: "Ella Langley closed out a back-to-back Carolinas weekend at Live Oak Bank Pavilion on Friday night. Here's the full Wilmington setlist, the surprises she pulled out, and where she heads next."
 heroImage: "/images/news/wilmington-live-oak-bank-pavilion-2026-06-26.jpg"
 relatedSongs: ["choosin-texas", "be-her", "werent-for-the-wind", "dandelion"]
-relatedTours: ["wilmington-live-oak-bank-pavilion-2026-06-26", "nashville-nissan-stadium-2026-07-10"]
+relatedTours: ["wilmington-live-oak-bank-pavilion-2026-06-26"]
 sources:
   - "https://www.setlist.fm/setlist/ella-langley/2026/live-oak-bank-pavilion-wilmington-nc-2b4bf862.html"
   - "https://www.setlist.fm/setlists/ella-langley-6bfde672.html"
@@ -55,8 +55,9 @@ Were you on the lawn in Wilmington Friday night? We want the stuff the setlist d
 
 ## Next show
 
-The headlining run takes a breath here, and Ella jumps back over to the stadiums: she's direct support for Morgan Wallen on the **Still The Problem Tour, Friday, July 10, at Nissan Stadium in Nashville**. A hometown-adjacent stadium night with that bill is going to move -- if you've been waiting to catch her in a big room, this is the one.
+After Wilmington the headlining run took a breath and Ella jumped back to the stadiums as direct support for Morgan Wallen on the **Still The Problem Tour**, including a July 10 night at Nissan Stadium in Nashville. That stretch is behind her now -- the Dandelion Tour's own headline dates are what's ahead.
 
-> **[Get Nashville tickets and show info on the tour page ->](/tour/nashville-nissan-stadium-2026-07-10)**
+> **[See Ella's current tour dates and tickets ->](/tour)**
 
 Heading to a summer stop? An amphitheater or stadium night has its own rhythm -- dressed up a little, on your feet from the first chord. Our [Arena Night look](/shop/looks/arena-night) is built for exactly that.
+

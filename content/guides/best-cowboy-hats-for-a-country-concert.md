@@ -74,7 +74,7 @@ $379.99 is a real commitment. This is the buy-once-cry-once purchase. It is not 
 
 ### Everyday Option: Low-Profile Trucker Cap -- $26.99
 
-[Shop on Amazon](https://www.amazon.com/dp/B09DCH99YB?tag=ellafellas-20) | [See it in the shop](/shop/ww-trucker-cap-low-pro)
+[Shop on Amazon](https://www.amazon.com/dp/B09DCH99YB?tag=ellafellas-20)
 
 This is the honest answer for people who are not hat people but want something on their head. The trucker cap is the working lid of the country world -- lower profile than the fashion caps, mesh back so it does not cook your head, and it fits in a bag when you do not need it.
 
@@ -123,3 +123,4 @@ The hat that works is the hat that looks like it has been worn before. The hat t
 If you are going to [CMA Fest 2026](/guides/ella-langley-cma-fest-2026-guide), a straw hat is the right call. If you are heading to a fall or winter show on the [Dandelion Tour](/tour), a felt hat or no hat at all is the right call. And if you are on the fence, our [what-to-wear guide](/guides/what-to-wear-to-an-ella-langley-concert) has the full breakdown of what the actual crowd looks like at an Ella show -- which might make the decision easier.
 
 Check the [concert checklist](/guides/ella-langley-concert-checklist) and the [shop](/shop) for everything else you need before you go.
+

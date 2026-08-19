@@ -3,11 +3,13 @@ title: "Every Opening Act on the Dandelion Tour, Ranked by Whether to Show Up Ea
 slug: "opening-acts-explained"
 category: "concert-prep"
 publishedAt: "2026-05-12"
-updatedAt: "2026-05-22"
+updatedAt: "2026-08-19"
 excerpt: "Five different opening acts rotate across the Dandelion Tour. Here's who they are, what they sound like, and which ones are worth getting to the venue at doors."
 ---
 
-The Dandelion Tour has five different opening acts rotating across its 16 dates. If you've never seen any of them, this is your cheat sheet — sorted by which ones make showing up at doors actually worth it.
+The Dandelion Tour rotates several different opening acts across its dates. If you've never seen any of them, this is your cheat sheet — sorted by which ones make showing up at doors actually worth it.
+
+> **Fall update:** The arena leg wrapped in Fort Worth on August 15, and the tour's second leg opens August 20 in Green Bay and runs to Halloween. The rotation below carries over, with Ernest joining as a new name for the fall. For the fall bill and who's confirmed where, see [who's opening for Ella Langley on the second leg](/news/2026-08-19-whos-opening-for-ella-langley-dandelion-tour).
 
 ## 1. Kameron Marlowe — show up at doors
 
@@ -63,6 +65,6 @@ The Dandelion Tour has five different opening acts rotating across its 16 dates.
 
 The Dandelion Tour has the deepest opening-act roster of any country tour this summer. Wallen's stadium dates have bigger names, but they're more established. Ella's openers are the next class up — these are the names you'll see headlining their own arena runs in 2028-2029.
 
-If you're going to a show, plan to be in the venue when doors open at 6:30. The five-act bill is worth the early arrival.
+If you're going to a show, plan to be in the venue when doors open at 6:30. The bill is worth the early arrival.
 
 [See which openers are on your show date →](/tour)

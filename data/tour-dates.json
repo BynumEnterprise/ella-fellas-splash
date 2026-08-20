@@ -733,14 +733,14 @@
     "tour": "The Dandelion Tour",
     "tourType": "headlining",
     "openers": [
-      "ERNEST",
-      "Gabriella Rose"
+      "Gabriella Rose",
+      "ERNEST"
     ],
-    "doorsTime": "18:30",
-    "showTime": "19:30",
-    "timesConfirmed": false,
-    "soldOut": false,
-    "ticketPriceRange": "$45-$285",
+    "doorsTime": "18:00",
+    "showTime": "19:00",
+    "timesConfirmed": true,
+    "soldOut": true,
+    "ticketPriceRange": "Resale $85-$450",
     "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/auburn-neville-arena-2026-08-28"
   },
@@ -755,14 +755,14 @@
     "tour": "The Dandelion Tour",
     "tourType": "headlining",
     "openers": [
-      "ERNEST",
-      "Gabriella Rose"
+      "Gabriella Rose",
+      "ERNEST"
     ],
-    "doorsTime": "18:30",
-    "showTime": "19:30",
-    "timesConfirmed": false,
-    "soldOut": false,
-    "ticketPriceRange": "$45-$285",
+    "doorsTime": "18:00",
+    "showTime": "19:00",
+    "timesConfirmed": true,
+    "soldOut": true,
+    "ticketPriceRange": "Resale $85-$450",
     "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/auburn-neville-arena-2026-08-29"
   },

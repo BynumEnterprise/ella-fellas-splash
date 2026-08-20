@@ -1,10 +1,10 @@
 ---
-title: "What to Wear to an Ella Langley Concert"
+title: "What to Wear to an Ella Langley Concert (2026)"
 slug: "what-to-wear-to-an-ella-langley-concert"
 category: "concert-prep"
 publishedAt: "2026-05-01"
-updatedAt: "2026-05-22"
-excerpt: "An honest guide for the guys who got tickets and now have one question: do I need to buy a cowboy hat? (No. Mostly.)"
+updatedAt: "2026-08-20"
+excerpt: "What to wear to an Ella Langley concert in 2026: real outfit ideas for guys and gals — boots, denim, hats, and what to skip. No costume required."
 faq:
   - q: "Do I need to buy a cowboy hat for an Ella Langley concert?"
     a: "No. If you do not already own a hat, wear nothing on your head. A brand-new hat at a country concert reads as a costume, and country crowds notice instantly. The exception is if you wear hats regularly and simply do not have one with you."

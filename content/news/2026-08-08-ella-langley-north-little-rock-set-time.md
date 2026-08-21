@@ -19,7 +19,7 @@ Ella Langley brings The Dandelion Tour to **Simmons Bank Arena in North Little R
 Simmons Bank Arena has posted the two numbers that matter, and they're the ones to build your night around:
 
 - **7:00 PM CT** — show starts (the venue's own posted time)
-- **6:00 PM CT** — doors open
+- **5:30 PM CT** — doors open
 
 The bill, per the venue and the Arkansas Democrat-Gazette announcement, is **Laci Kaye Booth** first, then **ERNEST** in the direct-support slot, then **Ella Langley**.
 
@@ -43,7 +43,7 @@ For where to sit — lower bowl versus the 200-level, and which sections get the
 
 ## Still need tickets?
 
-Be straight with yourself on this one: **face value is gone.** When this date went on sale it listed in the $45–$285 range, but the arena's standard inventory has sold through — Ticketmaster is now showing verified-resale listings only, starting around **$206** all-in and climbing from there. That floor moves in both directions in the final week, sometimes sharply in the last 48 hours as sellers cut prices to move seats, so it's worth checking more than once. The [North Little Rock show page](/tour/north-little-rock-simmons-bank-arena-2026-08-22) carries the current listings — trust the live number there over any figure in an article.
+Be straight with yourself on this one: **face value is gone.** When this date went on sale it listed in the $45–$285 range, but the arena's standard inventory has sold through — Ticketmaster is now showing verified-resale listings only, starting around **$210** all-in and climbing from there. That floor moves in both directions in the final week, sometimes sharply in the last 48 hours as sellers cut prices to move seats, so it's worth checking more than once. The [North Little Rock show page](/tour/north-little-rock-simmons-bank-arena-2026-08-22) carries the current listings — trust the live number there over any figure in an article.
 
 ## Can't make it that night?
 

@@ -130,6 +130,14 @@ export default function SetTimesHub() {
 
       <MerchCTA source="set_times_hub_merch" variant="banner" className="mb-8" />
 
+      <p className="text-sm text-ink/70 mb-6">
+        Wondering who&apos;s on before her? See{" "}
+        <Link href="/openers" className="underline text-denim hover:text-primary">
+          who&apos;s opening for Ella Langley on the Dandelion Tour, city by city
+        </Link>
+        .
+      </p>
+
       <AffiliateDisclosure />
     </article>
   );

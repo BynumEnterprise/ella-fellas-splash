@@ -53,12 +53,20 @@ export default function TourIndexPage() {
           {headlining.length} headlining + {support.length} Morgan Wallen support + {festival.length} festivals.
           Tap any date for venue info, openers, hotels nearby, and tickets.
         </p>
-        <Link
-          href="/ticket-prices"
-          className="inline-flex items-center gap-2 mt-4 px-4 py-2.5 bg-primary/15 border border-primary/40 rounded-md text-denim font-medium hover:bg-primary/25 transition-colors"
-        >
-          How much are Ella Langley tickets? See 2026 prices by city &rarr;
-        </Link>
+        <div className="flex flex-wrap gap-3 mt-4">
+          <Link
+            href="/ticket-prices"
+            className="inline-flex items-center gap-2 px-4 py-2.5 bg-primary/15 border border-primary/40 rounded-md text-denim font-medium hover:bg-primary/25 transition-colors"
+          >
+            How much are Ella Langley tickets? See 2026 prices by city &rarr;
+          </Link>
+          <Link
+            href="/openers"
+            className="inline-flex items-center gap-2 px-4 py-2.5 bg-primary/15 border border-primary/40 rounded-md text-denim font-medium hover:bg-primary/25 transition-colors"
+          >
+            Who&apos;s opening for Ella Langley? See every city&apos;s support act &rarr;
+          </Link>
+        </div>
       </header>
 
       {headlining.length > 0 && (

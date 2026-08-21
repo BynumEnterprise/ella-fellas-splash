@@ -42,14 +42,21 @@ export default function OpenersHub() {
       <header className="mb-6">
         <p className="text-xs uppercase tracking-wider text-clay font-medium">Support acts</p>
         <h1 className="font-display text-4xl md:text-5xl text-denim mt-2 leading-tight">
-          WHO&apos;S OPENING FOR ELLA?
+          WHO&apos;S OPENING FOR ELLA LANGLEY?
         </h1>
         <p className="text-lg text-ink/80 mt-3 max-w-2xl leading-relaxed">
-          The support acts on the Dandelion Tour change city to city — which is exactly why the
-          ticket sites can&apos;t tell you who you&apos;re actually getting. Here&apos;s the real
-          answer, per artist and per date.
+          The openers on Ella Langley&apos;s 2026 Dandelion Tour change city to city — which is
+          exactly why the ticket sites can&apos;t tell you who you&apos;re actually getting.
+          Here&apos;s the real answer, per artist and per date.
         </p>
       </header>
+
+      <p className="text-base text-ink/80 mb-6 leading-relaxed">
+        <strong>Short answer:</strong> the openers for Ella Langley&apos;s 2026 Dandelion Tour are
+        Gabriella Rose, Kameron Marlowe, ERNEST, Kaitlin Butts, Laci Kaye Booth and Dylan
+        Marlowe — the support act rotates by date, so which one you get depends on your city. The
+        city-by-city table below has the exact bill for every remaining show.
+      </p>
 
       <h2 className="font-display text-2xl text-denim tracking-wide mb-4">THE ARTISTS</h2>
       <div className="grid md:grid-cols-2 gap-3 mb-8">
@@ -73,7 +80,7 @@ export default function OpenersHub() {
         ))}
       </div>
 
-      <h2 className="font-display text-2xl text-denim tracking-wide mb-4">WHO PLAYS YOUR CITY</h2>
+      <h2 className="font-display text-2xl text-denim tracking-wide mb-4">WHO&apos;S OPENING FOR ELLA LANGLEY IN EACH CITY?</h2>
       <div className="space-y-2 mb-8">
         {shows.map((d) => (
           <div key={d.id} className="border border-ink/15 rounded-lg p-3 bg-paper">

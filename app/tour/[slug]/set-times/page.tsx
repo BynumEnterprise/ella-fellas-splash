@@ -334,6 +334,10 @@ export default async function SetTimesPage({ params }: { params: Promise<{ slug:
         <Link href="/set-times" className="underline text-denim hover:text-primary">
           set times for every 2026 Ella Langley show
         </Link>
+        , or find out{" "}
+        <Link href="/openers" className="underline text-denim hover:text-primary">
+          who&apos;s opening for Ella Langley on the Dandelion Tour
+        </Link>
         .
       </p>
 

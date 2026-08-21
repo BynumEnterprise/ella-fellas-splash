@@ -23,4 +23,5 @@ We've actually watched Drake circle Ella's music before. Back in June, [he was c
 
 Will an actual collaboration happen? Nobody's confirmed a thing, and a rapper praising a country songwriter's pen doesn't automatically mean they're booking studio time. But the timing — her nodding to his catalog, him nodding right back within 24 hours — is the kind of mutual respect these things sometimes grow out of. For now it's a genuinely fun moment for a fanbase that has watched Ella's year get bigger by the week.
 
-While the internet dreams up genre-bending duets, the real-world plan is simpler: Ella's back on the road for the second leg of the Dandelion Tour. [Check the full run of dates](/tour) and grab your seats before they're gone.
+While the internet dreams up genre-bending duets, the real-world plan is simpler: Ella's back on the road for the second leg of the Dandelion Tour, with [the song that earned the “goated pen”](/songs/choosin-texas) at the center of the set. [Check the full run of dates](/tour), grab your seats before they’re gone, and if you’re going, our [Arena Night look](/shop/looks/arena-night) has you covered.
+

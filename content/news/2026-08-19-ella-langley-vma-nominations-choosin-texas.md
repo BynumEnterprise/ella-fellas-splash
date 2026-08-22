@@ -21,8 +21,8 @@ The Best Country field is stacked this year. Ella is up against Kacey Musgraves'
 
 Part of what got "Choosin' Texas" here is the video itself, which has racked up more than 70 million views and pulled in a few famous faces along the way. It's the kind of visual that keeps finding new fans months after release, and clearly the kind that gets an artist noticed by a voting body that lives and breathes music video.
 
-The two nods cap a stretch that already includes her ACM haul and a fresh round of MusicRow recognition — if you missed that one, here's [where her latest award nominations stand](/news/2026-08-11-ella-langley-musicrow-awards-nominations). "Choosin' Texas" itself has been a chart fixture for months; we broke down [its run to gold across the pond](/news/2026-07-30-choosin-texas-uk-top-3-gold) earlier this summer.
+The two nods cap a stretch that already includes her ACM haul and a fresh round of MusicRow recognition — if you missed that one, here's [where her latest award nominations stand](/news/2026-08-11-ella-langley-musicrow-awards-nominations). "Choosin' Texas" itself has been a chart fixture for months; we dug into [what the song is actually about](/songs/choosin-texas) and broke down [its run to gold across the pond](/news/2026-07-30-choosin-texas-uk-top-3-gold) earlier this summer.
 
 The 2026 VMAs air live Sunday, Sept. 27 at 7:30 p.m. ET from Los Angeles, carried on CBS and MTV with a stream on Paramount+. Madonna and Taylor Swift lead the overall field, but we'll be tuned in for one name in the country race.
 
-If you want to catch Ella live before awards season, the second leg of the Dandelion Tour is about to roll — [see the full run of dates](/tour) and grab your seats.
+If you want to catch Ella live before awards season, the second leg of the Dandelion Tour is about to roll — [see the full run of dates](/tour) and grab your seats. And if you're pulling an outfit together for the night, our [Arena Night look](/shop/looks/arena-night) is built for exactly that.

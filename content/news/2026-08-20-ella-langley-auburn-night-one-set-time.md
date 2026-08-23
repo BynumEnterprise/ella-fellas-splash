@@ -4,7 +4,7 @@ slug: "2026-08-20-ella-langley-auburn-night-one-set-time"
 publishedAt: "2026-08-20"
 category: "tour-prep"
 excerpt: "Ella Langley plays Neville Arena in Auburn on Friday, August 28 with Gabriella Rose and ERNEST — a homecoming for the former Auburn student. The 7:00 PM start, who plays when, arena notes, and how to grab resale now that it's sold out at face."
-relatedSongs: ["you-look-like-you-love-me", "alabama-plates", "choosin-texas"]
+relatedSongs: ["you-look-like-you-love-me", "choosin-texas"]
 sources:
   - "https://www.axs.com/events/1504687/ella-langley-tickets"
   - "https://auburntigers.com/news/2026/06/22/country-superstar-ella-langley-to-play-two-night-concert-at-neville-arena"
@@ -28,7 +28,7 @@ Come early for the openers. **ERNEST** is one of Nashville's most-cut songwriter
 
 ## What she's been playing
 
-No predicted setlist here. Her recent Dandelion Tour nights have leaned on the songs everyone came for — "[Choosin' Texas](/songs/choosin-texas)," "[you look like you love me](/songs/you-look-like-you-love-me)," "[weren't for the wind](/songs/werent-for-the-wind)," "[Be Her](/songs/be-her)," and "[Nicotine](/songs/nicotine)" — woven in with the deeper *Dandelion* cuts. On an Alabama stage don't be surprised if "[Alabama Plates](/songs/alabama-plates)" hits harder than anywhere else on the run.
+No predicted setlist here. Her recent Dandelion Tour nights have leaned on the songs everyone came for — "[Choosin' Texas](/songs/choosin-texas)," "[you look like you love me](/songs/you-look-like-you-love-me)," "[weren't for the wind](/songs/werent-for-the-wind)," "[Be Her](/songs/be-her)," and "[Nicotine](/songs/nicotine)" — woven in with the deeper *Dandelion* cuts. On an Alabama stage, in front of a near-hometown crowd, the singalongs tend to hit harder than anywhere else on the run.
 
 The actual Auburn setlist goes up on the [setlist page](/tour/auburn-neville-arena-2026-08-28/setlist) within a couple of hours of the encore.
 

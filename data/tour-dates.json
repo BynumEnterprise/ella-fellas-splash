@@ -1,5 +1,53 @@
 [
   {
+    "id": "tuscaloosa-bryant-denny-stadium-2026-04-18",
+    "date": "2026-04-18",
+    "city": "Tuscaloosa",
+    "state": "AL",
+    "venue": "Bryant-Denny Stadium",
+    "venueAddress": "920 Paul W Bryant Dr, Tuscaloosa, AL 35487",
+    "venueCapacity": 100000,
+    "tour": "Still The Problem Tour (Morgan Wallen)",
+    "tourType": "support",
+    "openers": [
+      "Ella Langley (direct support)"
+    ],
+    "headliner": "Morgan Wallen",
+    "doorsTime": "17:00",
+    "showTime": "18:30",
+    "soldOut": true,
+    "ticketPriceRange": "Resale $185-$1,200",
+    "ticketAffiliatePath": "/tickets/tuscaloosa-bryant-denny-stadium-2026-04-18"
+  },
+  {
+    "id": "indio-stagecoach-festival-2026-04-24",
+    "date": "2026-04-24",
+    "city": "Indio",
+    "state": "CA",
+    "venue": "Empire Polo Club",
+    "venueAddress": "81-800 Avenue 51, Indio, CA 92201",
+    "tour": "Stagecoach Festival",
+    "tourType": "festival",
+    "openers": [],
+    "soldOut": true,
+    "ticketPriceRange": "Festival pass",
+    "ticketAffiliatePath": "/tickets/indio-stagecoach-festival-2026-04-24"
+  },
+  {
+    "id": "bellville-rock-the-country-2026-05-01",
+    "date": "2026-05-01",
+    "city": "Bellville",
+    "state": "TX",
+    "venue": "Austin County Fairgrounds",
+    "venueAddress": "1076 N Tesch Ln, Bellville, TX 77418",
+    "tour": "Rock The Country",
+    "tourType": "festival",
+    "openers": [],
+    "soldOut": true,
+    "ticketPriceRange": "Festival pass",
+    "ticketAffiliatePath": "/tickets/bellville-rock-the-country-2026-05-01"
+  },
+  {
     "id": "toledo-huntington-center-2026-05-07",
     "date": "2026-05-07",
     "city": "Toledo",
@@ -15,10 +63,8 @@
     ],
     "doorsTime": "18:30",
     "showTime": "19:30",
-    "timesConfirmed": false,
     "soldOut": true,
     "ticketPriceRange": "Resale $85-$450",
-    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/toledo-huntington-center-2026-05-07"
   },
   {
@@ -37,10 +83,8 @@
     ],
     "doorsTime": "18:30",
     "showTime": "19:30",
-    "timesConfirmed": false,
     "soldOut": true,
     "ticketPriceRange": "Resale $85-$450",
-    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/st.-louis-chaifetz-arena-2026-05-08"
   },
   {
@@ -59,10 +103,8 @@
     ],
     "doorsTime": "18:30",
     "showTime": "19:30",
-    "timesConfirmed": false,
     "soldOut": false,
     "ticketPriceRange": "$45-$285",
-    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/estero-hertz-arena-2026-05-14"
   },
   {
@@ -81,11 +123,103 @@
     ],
     "doorsTime": "18:30",
     "showTime": "19:30",
-    "timesConfirmed": false,
     "soldOut": true,
     "ticketPriceRange": "Resale $85-$450",
-    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/savannah-enmarket-arena-2026-05-15"
+  },
+  {
+    "id": "east-lansing-spartan-stadium-2026-05-22",
+    "date": "2026-05-22",
+    "city": "East Lansing",
+    "state": "MI",
+    "venue": "Spartan Stadium",
+    "venueAddress": "325 W Shaw Ln, East Lansing, MI 48823",
+    "venueCapacity": 75000,
+    "tour": "Still The Problem Tour (Morgan Wallen)",
+    "tourType": "support",
+    "openers": [
+      "Ella Langley (direct support)"
+    ],
+    "headliner": "Morgan Wallen",
+    "doorsTime": "17:00",
+    "showTime": "18:30",
+    "soldOut": true,
+    "ticketPriceRange": "Resale $185-$1,200",
+    "ticketAffiliatePath": "/tickets/east-lansing-spartan-stadium-2026-05-22"
+  },
+  {
+    "id": "chicago-soldier-field-2026-05-29",
+    "date": "2026-05-29",
+    "city": "Chicago",
+    "state": "IL",
+    "venue": "Soldier Field",
+    "venueAddress": "1410 Special Olympics Dr, Chicago, IL 60605",
+    "venueCapacity": 61500,
+    "tour": "Still The Problem Tour (Morgan Wallen)",
+    "tourType": "support",
+    "openers": [
+      "Ella Langley (direct support)"
+    ],
+    "headliner": "Morgan Wallen",
+    "doorsTime": "17:00",
+    "showTime": "18:30",
+    "soldOut": true,
+    "ticketPriceRange": "Resale $185-$1,200",
+    "ticketAffiliatePath": "/tickets/chicago-soldier-field-2026-05-29"
+  },
+  {
+    "id": "foxborough-gillette-stadium-2026-06-05",
+    "date": "2026-06-05",
+    "city": "Foxborough",
+    "state": "MA",
+    "venue": "Gillette Stadium",
+    "venueAddress": "1 Patriot Pl, Foxborough, MA 02035",
+    "venueCapacity": 65878,
+    "tour": "Still The Problem Tour (Morgan Wallen)",
+    "tourType": "support",
+    "openers": [
+      "Ella Langley (direct support)"
+    ],
+    "headliner": "Morgan Wallen",
+    "doorsTime": "17:00",
+    "showTime": "18:30",
+    "soldOut": true,
+    "ticketPriceRange": "Resale $185-$1,200",
+    "ticketAffiliatePath": "/tickets/foxborough-gillette-stadium-2026-06-05"
+  },
+  {
+    "id": "lexington-railbird-festival-2026-06-07",
+    "date": "2026-06-07",
+    "city": "Lexington",
+    "state": "KY",
+    "venue": "The Infield at Red Mile",
+    "venueAddress": "1200 Red Mile Rd, Lexington, KY 40504",
+    "tour": "Railbird Festival",
+    "tourType": "festival",
+    "openers": [],
+    "soldOut": true,
+    "ticketPriceRange": "Festival pass",
+    "ticketAffiliatePath": "/tickets/lexington-railbird-festival-2026-06-07"
+  },
+  {
+    "id": "pittsburgh-acrisure-stadium-2026-06-12",
+    "date": "2026-06-12",
+    "city": "Pittsburgh",
+    "state": "PA",
+    "venue": "Acrisure Stadium",
+    "venueAddress": "100 Art Rooney Ave, Pittsburgh, PA 15212",
+    "venueCapacity": 68400,
+    "tour": "Still The Problem Tour (Morgan Wallen)",
+    "tourType": "support",
+    "openers": [
+      "Ella Langley (direct support)"
+    ],
+    "headliner": "Morgan Wallen",
+    "doorsTime": "17:00",
+    "showTime": "18:30",
+    "soldOut": true,
+    "ticketPriceRange": "Resale $185-$1,200",
+    "ticketAffiliatePath": "/tickets/pittsburgh-acrisure-stadium-2026-06-12"
   },
   {
     "id": "oklahoma-city-zoo-amphitheatre-2026-06-18",
@@ -103,10 +237,8 @@
     ],
     "doorsTime": "18:30",
     "showTime": "19:30",
-    "timesConfirmed": false,
     "soldOut": false,
     "ticketPriceRange": "$45-$285",
-    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/oklahoma-city-zoo-amphitheatre-2026-06-18"
   },
   {
@@ -125,10 +257,8 @@
     ],
     "doorsTime": "18:30",
     "showTime": "19:30",
-    "timesConfirmed": false,
     "soldOut": true,
     "ticketPriceRange": "Resale $85-$450",
-    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/independence-cable-dahmer-arena-2026-06-19"
   },
   {
@@ -147,11 +277,29 @@
     ],
     "doorsTime": "18:30",
     "showTime": "19:30",
-    "timesConfirmed": false,
     "soldOut": false,
     "ticketPriceRange": "$45-$285",
-    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/salem-salem-civic-center-2026-06-25"
+  },
+  {
+    "id": "atlanta-mercedes-benz-stadium-2026-06-26",
+    "date": "2026-06-26",
+    "city": "Atlanta",
+    "state": "GA",
+    "venue": "Mercedes-Benz Stadium",
+    "venueAddress": "1 AMB Dr NW, Atlanta, GA 30313",
+    "venueCapacity": 71000,
+    "tour": "Still The Problem Tour (Morgan Wallen)",
+    "tourType": "support",
+    "openers": [
+      "Ella Langley (direct support)"
+    ],
+    "headliner": "Morgan Wallen",
+    "doorsTime": "17:00",
+    "showTime": "18:30",
+    "soldOut": true,
+    "ticketPriceRange": "Resale $185-$1,200",
+    "ticketAffiliatePath": "/tickets/atlanta-mercedes-benz-stadium-2026-06-26"
   },
   {
     "id": "wilmington-live-oak-bank-pavilion-2026-06-26",
@@ -169,11 +317,49 @@
     ],
     "doorsTime": "18:30",
     "showTime": "19:30",
-    "timesConfirmed": false,
     "soldOut": true,
     "ticketPriceRange": "Resale $85-$450",
-    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/wilmington-live-oak-bank-pavilion-2026-06-26"
+  },
+  {
+    "id": "nashville-nissan-stadium-2026-07-10",
+    "date": "2026-07-10",
+    "city": "Nashville",
+    "state": "TN",
+    "venue": "Nissan Stadium",
+    "venueAddress": "1 Titans Way, Nashville, TN 37213",
+    "venueCapacity": 69143,
+    "tour": "Still The Problem Tour (Morgan Wallen)",
+    "tourType": "support",
+    "openers": [
+      "Ella Langley (direct support)"
+    ],
+    "headliner": "Morgan Wallen",
+    "doorsTime": "17:00",
+    "showTime": "18:30",
+    "soldOut": true,
+    "ticketPriceRange": "Resale $185-$1,200",
+    "ticketAffiliatePath": "/tickets/nashville-nissan-stadium-2026-07-10"
+  },
+  {
+    "id": "tampa-raymond-james-stadium-2026-07-17",
+    "date": "2026-07-17",
+    "city": "Tampa",
+    "state": "FL",
+    "venue": "Raymond James Stadium",
+    "venueAddress": "4201 N Dale Mabry Hwy, Tampa, FL 33607",
+    "venueCapacity": 65890,
+    "tour": "Still The Problem Tour (Morgan Wallen)",
+    "tourType": "support",
+    "openers": [
+      "Ella Langley (direct support)"
+    ],
+    "headliner": "Morgan Wallen",
+    "doorsTime": "17:00",
+    "showTime": "18:30",
+    "soldOut": true,
+    "ticketPriceRange": "Resale $185-$1,200",
+    "ticketAffiliatePath": "/tickets/tampa-raymond-james-stadium-2026-07-17"
   },
   {
     "id": "pikeville-appalachian-wireless-arena-2026-07-23",
@@ -186,16 +372,34 @@
     "tour": "The Dandelion Tour",
     "tourType": "headlining",
     "openers": [
-      "Laci Kaye Booth",
+      "Kameron Marlowe",
       "Kaitlin Butts"
     ],
-    "doorsTime": "18:00",
-    "showTime": "19:00",
-    "timesConfirmed": true,
+    "doorsTime": "18:30",
+    "showTime": "19:30",
     "soldOut": false,
     "ticketPriceRange": "$45-$285",
-    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/pikeville-appalachian-wireless-arena-2026-07-23"
+  },
+  {
+    "id": "arlington-at&t-stadium-2026-07-24",
+    "date": "2026-07-24",
+    "city": "Arlington",
+    "state": "TX",
+    "venue": "AT&T Stadium",
+    "venueAddress": "1 AT&T Way, Arlington, TX 76011",
+    "venueCapacity": 80000,
+    "tour": "Still The Problem Tour (Morgan Wallen)",
+    "tourType": "support",
+    "openers": [
+      "Ella Langley (direct support)"
+    ],
+    "headliner": "Morgan Wallen",
+    "doorsTime": "17:00",
+    "showTime": "18:30",
+    "soldOut": true,
+    "ticketPriceRange": "Resale $185-$1,200",
+    "ticketAffiliatePath": "/tickets/arlington-at&t-stadium-2026-07-24"
   },
   {
     "id": "cary-koka-booth-amphitheatre-2026-07-24",
@@ -208,15 +412,13 @@
     "tour": "The Dandelion Tour",
     "tourType": "headlining",
     "openers": [
-      "Laci Kaye Booth",
+      "Kameron Marlowe",
       "Kaitlin Butts"
     ],
-    "doorsTime": "17:30",
-    "showTime": "19:00",
-    "timesConfirmed": true,
+    "doorsTime": "18:30",
+    "showTime": "19:30",
     "soldOut": true,
     "ticketPriceRange": "Resale $85-$450",
-    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/cary-koka-booth-amphitheatre-2026-07-24"
   },
   {
@@ -230,15 +432,13 @@
     "tour": "The Dandelion Tour",
     "tourType": "headlining",
     "openers": [
-      "Laci Kaye Booth",
+      "Kameron Marlowe",
       "Kaitlin Butts"
     ],
-    "doorsTime": "18:00",
-    "showTime": "19:00",
-    "timesConfirmed": true,
+    "doorsTime": "18:30",
+    "showTime": "19:30",
     "soldOut": true,
     "ticketPriceRange": "Resale $85-$450",
-    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/north-charleston-north-charleston-coliseum-2026-07-25"
   },
   {
@@ -252,36 +452,13 @@
     "tour": "The Dandelion Tour",
     "tourType": "headlining",
     "openers": [
-      "Kameron Marlowe",
-      "Laci Kaye Booth"
+      "Dylan Marlowe",
+      "Gabriella Rose"
     ],
-    "doorsTime": "17:00",
-    "showTime": "19:10",
-    "timesConfirmed": true,
-    "soldOut": true,
-    "ticketPriceRange": "Resale from $714",
-    "pricesConfirmed": false,
-    "stageTimes": [
-      {
-        "name": "Whitney Doucet",
-        "time": "17:00",
-        "sideStage": true,
-        "stageName": "Hazy Little Stage"
-      },
-      {
-        "name": "Laci Kaye Booth",
-        "time": "19:10"
-      },
-      {
-        "name": "Kameron Marlowe",
-        "time": "19:50"
-      },
-      {
-        "name": "Ella Langley",
-        "time": "21:00"
-      }
-    ],
-    "stageTimesSource": "https://www.banknhpavilion.com/?page=event_info&show_code=073026",
+    "doorsTime": "18:30",
+    "showTime": "19:30",
+    "soldOut": false,
+    "ticketPriceRange": "$45-$285",
     "ticketAffiliatePath": "/tickets/gilford-banknh-pavilion-2026-07-30"
   },
   {
@@ -295,16 +472,34 @@
     "tour": "The Dandelion Tour",
     "tourType": "headlining",
     "openers": [
-      "Kameron Marlowe",
-      "Laci Kaye Booth"
+      "Dylan Marlowe",
+      "Gabriella Rose"
     ],
-    "doorsTime": "17:30",
-    "showTime": "19:00",
-    "timesConfirmed": true,
-    "soldOut": true,
-    "ticketPriceRange": "Resale from $847",
-    "pricesConfirmed": false,
+    "doorsTime": "18:30",
+    "showTime": "19:30",
+    "soldOut": false,
+    "ticketPriceRange": "$45-$285",
     "ticketAffiliatePath": "/tickets/canandaigua-cmac-2026-07-31"
+  },
+  {
+    "id": "philadelphia-lincoln-financial-field-2026-08-01",
+    "date": "2026-08-01",
+    "city": "Philadelphia",
+    "state": "PA",
+    "venue": "Lincoln Financial Field",
+    "venueAddress": "1 Lincoln Financial Field Way, Philadelphia, PA 19148",
+    "venueCapacity": 69596,
+    "tour": "Still The Problem Tour (Morgan Wallen)",
+    "tourType": "support",
+    "openers": [
+      "Ella Langley (direct support)"
+    ],
+    "headliner": "Morgan Wallen",
+    "doorsTime": "17:00",
+    "showTime": "18:30",
+    "soldOut": true,
+    "ticketPriceRange": "Resale $185-$1,200",
+    "ticketAffiliatePath": "/tickets/philadelphia-lincoln-financial-field-2026-08-01"
   },
   {
     "id": "austin-moody-center-2026-08-13",
@@ -317,15 +512,13 @@
     "tour": "The Dandelion Tour",
     "tourType": "headlining",
     "openers": [
-      "Gabriella Rose",
+      "Laci Kaye Booth",
       "Kaitlin Butts"
     ],
-    "doorsTime": "18:00",
-    "showTime": "19:00",
-    "timesConfirmed": true,
+    "doorsTime": "18:30",
+    "showTime": "19:30",
     "soldOut": true,
-    "ticketPriceRange": "Resale from $411",
-    "pricesConfirmed": false,
+    "ticketPriceRange": "Resale $85-$450",
     "ticketAffiliatePath": "/tickets/austin-moody-center-2026-08-13"
   },
   {
@@ -333,21 +526,19 @@
     "date": "2026-08-14",
     "city": "Corpus Christi",
     "state": "TX",
-    "venue": "Hilliard Center",
+    "venue": "American Bank Center",
     "venueAddress": "1901 N Shoreline Blvd, Corpus Christi, TX 78401",
     "venueCapacity": 8000,
     "tour": "The Dandelion Tour",
     "tourType": "headlining",
     "openers": [
-      "Gabriella Rose",
+      "Laci Kaye Booth",
       "Kaitlin Butts"
     ],
-    "doorsTime": "18:00",
-    "showTime": "19:00",
-    "timesConfirmed": true,
-    "soldOut": true,
-    "ticketPriceRange": "Resale from $575",
-    "pricesConfirmed": false,
+    "doorsTime": "18:30",
+    "showTime": "19:30",
+    "soldOut": false,
+    "ticketPriceRange": "$45-$285",
     "ticketAffiliatePath": "/tickets/corpus-christi-american-bank-center-2026-08-14"
   },
   {
@@ -361,366 +552,14 @@
     "tour": "The Dandelion Tour",
     "tourType": "headlining",
     "openers": [
-      "Gabriella Rose",
+      "Laci Kaye Booth",
       "Kaitlin Butts"
     ],
-    "doorsTime": "18:00",
-    "showTime": "19:00",
-    "timesConfirmed": true,
-    "soldOut": true,
-    "ticketPriceRange": "Resale from $449",
-    "pricesConfirmed": false,
-    "ticketAffiliatePath": "/tickets/fort-worth-dickies-arena-2026-08-15"
-  },
-  {
-    "id": "tuscaloosa-bryant-denny-stadium-2026-04-18",
-    "date": "2026-04-18",
-    "city": "Tuscaloosa",
-    "state": "AL",
-    "venue": "Bryant-Denny Stadium",
-    "venueAddress": "920 Paul W Bryant Dr, Tuscaloosa, AL 35487",
-    "venueCapacity": 100000,
-    "tour": "Still The Problem Tour (Morgan Wallen)",
-    "tourType": "support",
-    "openers": [
-      "Ella Langley (direct support)"
-    ],
-    "headliner": "Morgan Wallen",
-    "doorsTime": "17:00",
-    "showTime": "18:30",
-    "timesConfirmed": true,
-    "soldOut": true,
-    "ticketPriceRange": "Resale $185-$1,200",
-    "pricesConfirmed": false,
-    "ticketAffiliatePath": "/tickets/tuscaloosa-bryant-denny-stadium-2026-04-18"
-  },
-  {
-    "id": "east-lansing-spartan-stadium-2026-05-22",
-    "date": "2026-05-22",
-    "city": "East Lansing",
-    "state": "MI",
-    "venue": "Spartan Stadium",
-    "venueAddress": "325 W Shaw Ln, East Lansing, MI 48823",
-    "venueCapacity": 75000,
-    "tour": "Still The Problem Tour (Morgan Wallen)",
-    "tourType": "support",
-    "openers": [
-      "Ella Langley (direct support)"
-    ],
-    "headliner": "Morgan Wallen",
-    "doorsTime": "17:00",
-    "showTime": "18:30",
-    "timesConfirmed": true,
-    "soldOut": true,
-    "ticketPriceRange": "Resale $185-$1,200",
-    "pricesConfirmed": false,
-    "ticketAffiliatePath": "/tickets/east-lansing-spartan-stadium-2026-05-22"
-  },
-  {
-    "id": "foxborough-gillette-stadium-2026-06-05",
-    "date": "2026-06-05",
-    "city": "Foxborough",
-    "state": "MA",
-    "venue": "Gillette Stadium",
-    "venueAddress": "1 Patriot Pl, Foxborough, MA 02035",
-    "venueCapacity": 65878,
-    "tour": "Still The Problem Tour (Morgan Wallen)",
-    "tourType": "support",
-    "openers": [
-      "Ella Langley (direct support)"
-    ],
-    "headliner": "Morgan Wallen",
-    "doorsTime": "17:00",
-    "showTime": "18:30",
-    "timesConfirmed": true,
-    "soldOut": true,
-    "ticketPriceRange": "Resale $185-$1,200",
-    "pricesConfirmed": false,
-    "ticketAffiliatePath": "/tickets/foxborough-gillette-stadium-2026-06-05"
-  },
-  {
-    "id": "pittsburgh-acrisure-stadium-2026-06-06",
-    "date": "2026-06-06",
-    "city": "Pittsburgh",
-    "state": "PA",
-    "venue": "Acrisure Stadium",
-    "venueAddress": "100 Art Rooney Ave, Pittsburgh, PA 15212",
-    "venueCapacity": 68400,
-    "tour": "Still The Problem Tour (Morgan Wallen)",
-    "tourType": "support",
-    "openers": [
-      "Ella Langley (direct support)"
-    ],
-    "headliner": "Morgan Wallen",
-    "doorsTime": "17:00",
-    "showTime": "18:30",
-    "timesConfirmed": true,
-    "soldOut": true,
-    "ticketPriceRange": "Resale $185-$1,200",
-    "pricesConfirmed": false,
-    "ticketAffiliatePath": "/tickets/pittsburgh-acrisure-stadium-2026-06-06"
-  },
-  {
-    "id": "philadelphia-lincoln-financial-field-2026-08-01",
-    "date": "2026-08-01",
-    "city": "Philadelphia",
-    "state": "PA",
-    "venue": "Lincoln Financial Field",
-    "venueAddress": "1 Lincoln Financial Field Way, Philadelphia, PA 19148",
-    "venueCapacity": 69596,
-    "tour": "Still The Problem Tour (Morgan Wallen)",
-    "tourType": "support",
-    "openers": [
-      "Blake Whiten",
-      "Hudson Westbrook",
-      "Ella Langley (direct support)"
-    ],
-    "headliner": "Morgan Wallen",
-    "doorsTime": "16:30",
-    "showTime": "17:30",
-    "timesConfirmed": true,
-    "soldOut": true,
-    "ticketPriceRange": "Resale from $462",
-    "pricesConfirmed": false,
-    "ticketAffiliatePath": "/tickets/philadelphia-lincoln-financial-field-2026-08-01"
-  },
-  {
-    "id": "indio-stagecoach-festival-2026-04-24",
-    "date": "2026-04-24",
-    "city": "Indio",
-    "state": "CA",
-    "venue": "Empire Polo Club",
-    "venueAddress": "81-800 Avenue 51, Indio, CA 92201",
-    "tour": "Stagecoach Festival",
-    "tourType": "festival",
-    "openers": [],
-    "soldOut": true,
-    "ticketPriceRange": "Festival pass",
-    "pricesConfirmed": true,
-    "ticketAffiliatePath": "/tickets/indio-stagecoach-festival-2026-04-24",
-    "timesConfirmed": false
-  },
-  {
-    "id": "bellville-rock-the-country-2026-05-01",
-    "date": "2026-05-01",
-    "city": "Bellville",
-    "state": "TX",
-    "venue": "Austin County Fairgrounds",
-    "venueAddress": "1076 N Tesch Ln, Bellville, TX 77418",
-    "tour": "Rock The Country",
-    "tourType": "festival",
-    "openers": [],
-    "soldOut": true,
-    "ticketPriceRange": "Festival pass",
-    "pricesConfirmed": true,
-    "ticketAffiliatePath": "/tickets/bellville-rock-the-country-2026-05-01",
-    "timesConfirmed": false
-  },
-  {
-    "id": "lexington-railbird-festival-2026-06-07",
-    "date": "2026-06-07",
-    "city": "Lexington",
-    "state": "KY",
-    "venue": "The Infield at Red Mile",
-    "venueAddress": "1200 Red Mile Rd, Lexington, KY 40504",
-    "tour": "Railbird Festival",
-    "tourType": "festival",
-    "openers": [],
-    "soldOut": true,
-    "ticketPriceRange": "Festival pass",
-    "pricesConfirmed": true,
-    "ticketAffiliatePath": "/tickets/lexington-railbird-festival-2026-06-07",
-    "timesConfirmed": false
-  },
-  {
-    "id": "virginia-beach-patriotic-festival-2027-05-29",
-    "date": "2027-05-29",
-    "city": "Virginia Beach",
-    "state": "VA",
-    "venue": "Virginia Beach Oceanfront",
-    "venueAddress": "5th Street & Atlantic Ave, Virginia Beach, VA 23451",
-    "tour": "Patriotic Festival 2027",
-    "tourType": "festival",
-    "openers": [],
-    "soldOut": false,
-    "ticketPriceRange": "Festival pass",
-    "pricesConfirmed": true,
-    "ticketAffiliatePath": "/tickets/virginia-beach-patriotic-festival-2027-05-29",
-    "timesConfirmed": false
-  },
-  {
-    "id": "chicago-soldier-field-2026-06-20",
-    "date": "2026-06-20",
-    "city": "Chicago",
-    "state": "IL",
-    "venue": "Soldier Field",
-    "venueAddress": "1410 Special Olympics Dr, Chicago, IL 60605",
-    "venueCapacity": 61500,
-    "tour": "Still The Problem Tour",
-    "tourType": "support",
-    "openers": [
-      "Ella Langley (direct support)",
-      "Gavin Adcock",
-      "Zach John King"
-    ],
-    "headliner": "Morgan Wallen",
-    "doorsTime": "16:00",
-    "showTime": "17:30",
-    "timesConfirmed": true,
-    "soldOut": false,
-    "ticketPriceRange": "Resale $185-$1,200",
-    "pricesConfirmed": false,
-    "ticketAffiliatePath": "/tickets/chicago-soldier-field-2026-06-20"
-  },
-  {
-    "id": "clemson-memorial-stadium-2026-06-27",
-    "date": "2026-06-27",
-    "city": "Clemson",
-    "state": "SC",
-    "venue": "Memorial Stadium",
-    "venueAddress": "Memorial Stadium, Clemson, SC 29634",
-    "venueCapacity": 81500,
-    "tour": "Still The Problem Tour",
-    "tourType": "support",
-    "openers": [
-      "Ella Langley (direct support)",
-      "Gavin Adcock",
-      "Jason Scott and the High Heat"
-    ],
-    "headliner": "Morgan Wallen",
-    "doorsTime": "16:00",
-    "showTime": "17:30",
-    "timesConfirmed": true,
-    "soldOut": false,
-    "ticketPriceRange": "Resale $185-$1,200",
-    "pricesConfirmed": false,
-    "ticketAffiliatePath": "/tickets/clemson-memorial-stadium-2026-06-27"
-  },
-  {
-    "id": "baltimore-mt-bank-stadium-2026-07-18",
-    "date": "2026-07-18",
-    "city": "Baltimore",
-    "state": "MD",
-    "venue": "M&T Bank Stadium",
-    "venueAddress": "1101 Russell St, Baltimore, MD 21230",
-    "venueCapacity": 71000,
-    "tour": "Still The Problem Tour",
-    "tourType": "support",
-    "openers": [
-      "Ella Langley (direct support)",
-      "Gavin Adcock",
-      "Jason Scott and the High Heat"
-    ],
-    "headliner": "Morgan Wallen",
-    "doorsTime": "16:00",
-    "showTime": "17:30",
-    "timesConfirmed": true,
-    "soldOut": false,
-    "ticketPriceRange": "Resale $185-$1,200",
-    "pricesConfirmed": false,
-    "ticketAffiliatePath": "/tickets/baltimore-mt-bank-stadium-2026-07-18"
-  },
-  {
-    "id": "springfield-illinois-state-fair-2026-08-21",
-    "date": "2026-08-21",
-    "city": "Springfield",
-    "state": "IL",
-    "venue": "Illinois State Fairgrounds (Grandstand)",
-    "venueAddress": "Illinois State Fairgrounds, Springfield, IL 62702",
-    "tour": "Illinois State Fair",
-    "tourType": "festival",
-    "openers": [
-      "ERNEST"
-    ],
+    "doorsTime": "18:30",
+    "showTime": "19:30",
     "soldOut": true,
     "ticketPriceRange": "Resale $85-$450",
-    "pricesConfirmed": false,
-    "ticketAffiliatePath": "/tickets/springfield-illinois-state-fair-2026-08-21",
-    "timesConfirmed": true,
-    "doorsTime": "19:00",
-    "showTime": "20:00"
-  },
-  {
-    "id": "cowboys-music-festival-2026-07-10",
-    "date": "2026-07-10",
-    "city": "Calgary",
-    "state": "AB",
-    "venue": "Cowboys Park",
-    "venueAddress": "1220 9 Ave SW, Calgary, AB T2N 1N4, Canada",
-    "tour": "Cowboys Music Festival",
-    "tourType": "festival",
-    "openers": [
-      "Ella Langley",
-      "BigXThaPlug"
-    ],
-    "soldOut": false,
-    "ticketPriceRange": "Festival pass",
-    "pricesConfirmed": true,
-    "ticketAffiliatePath": "/tickets/cowboys-music-festival-2026-07-10",
-    "timesConfirmed": false
-  },
-  {
-    "id": "hamilton-td-coliseum-2026-07-16",
-    "date": "2026-07-16",
-    "city": "Hamilton",
-    "state": "ON",
-    "venue": "TD Coliseum",
-    "venueAddress": "101 York Blvd, Hamilton, ON L8R 3L4, Canada",
-    "venueCapacity": 17000,
-    "tour": "The Dandelion Tour",
-    "tourType": "headlining",
-    "openers": [],
-    "doorsTime": "18:00",
-    "showTime": "19:00",
-    "timesConfirmed": true,
-    "soldOut": false,
-    "ticketPriceRange": "$45-$285",
-    "pricesConfirmed": false,
-    "ticketAffiliatePath": "/tickets/hamilton-td-coliseum-2026-07-16"
-  },
-  {
-    "id": "green-bay-resch-center-2026-08-20",
-    "date": "2026-08-20",
-    "city": "Green Bay",
-    "state": "WI",
-    "venue": "Resch Center",
-    "venueAddress": "820 Tony Canadeo Run, Green Bay, WI 54304",
-    "venueCapacity": 8600,
-    "tour": "The Dandelion Tour",
-    "tourType": "headlining",
-    "openers": [
-      "Laci Kaye Booth",
-      "ERNEST"
-    ],
-    "doorsTime": "18:00",
-    "showTime": "19:00",
-    "timesConfirmed": true,
-    "soldOut": true,
-    "ticketPriceRange": "Resale from $234",
-    "pricesConfirmed": false,
-    "ticketAffiliatePath": "/tickets/green-bay-resch-center-2026-08-20"
-  },
-  {
-    "id": "north-little-rock-simmons-bank-arena-2026-08-22",
-    "date": "2026-08-22",
-    "city": "North Little Rock",
-    "state": "AR",
-    "venue": "Simmons Bank Arena",
-    "venueAddress": "1 Simmons Bank Arena Dr, North Little Rock, AR 72114",
-    "venueCapacity": 18000,
-    "tour": "The Dandelion Tour",
-    "tourType": "headlining",
-    "openers": [
-      "Laci Kaye Booth",
-      "ERNEST"
-    ],
-    "doorsTime": "17:30",
-    "showTime": "19:00",
-    "timesConfirmed": true,
-    "soldOut": true,
-    "ticketPriceRange": "Resale from $210",
-    "pricesConfirmed": false,
-    "ticketAffiliatePath": "/tickets/north-little-rock-simmons-bank-arena-2026-08-22"
+    "ticketAffiliatePath": "/tickets/fort-worth-dickies-arena-2026-08-15"
   },
   {
     "id": "auburn-neville-arena-2026-08-28",
@@ -728,20 +567,18 @@
     "city": "Auburn",
     "state": "AL",
     "venue": "Neville Arena",
-    "venueAddress": "250 Beard-Eaves Ct, Auburn, AL 36849",
+    "venueAddress": "720 Heisman Dr, Auburn, AL 36849",
     "venueCapacity": 9121,
     "tour": "The Dandelion Tour",
     "tourType": "headlining",
     "openers": [
-      "Gabriella Rose",
-      "ERNEST"
+      "ERNEST",
+      "Gabriella Rose"
     ],
     "doorsTime": "18:00",
     "showTime": "19:00",
-    "timesConfirmed": true,
-    "soldOut": true,
-    "ticketPriceRange": "Resale $85-$450",
-    "pricesConfirmed": false,
+    "soldOut": false,
+    "ticketPriceRange": "Prices vary",
     "ticketAffiliatePath": "/tickets/auburn-neville-arena-2026-08-28"
   },
   {
@@ -750,20 +587,18 @@
     "city": "Auburn",
     "state": "AL",
     "venue": "Neville Arena",
-    "venueAddress": "250 Beard-Eaves Ct, Auburn, AL 36849",
+    "venueAddress": "720 Heisman Dr, Auburn, AL 36849",
     "venueCapacity": 9121,
     "tour": "The Dandelion Tour",
     "tourType": "headlining",
     "openers": [
-      "Gabriella Rose",
-      "ERNEST"
+      "ERNEST",
+      "Gabriella Rose"
     ],
     "doorsTime": "18:00",
     "showTime": "19:00",
-    "timesConfirmed": true,
-    "soldOut": true,
-    "ticketPriceRange": "Resale $85-$450",
-    "pricesConfirmed": false,
+    "soldOut": false,
+    "ticketPriceRange": "Prices vary",
     "ticketAffiliatePath": "/tickets/auburn-neville-arena-2026-08-29"
   },
   {
@@ -773,25 +608,23 @@
     "state": "NJ",
     "venue": "Prudential Center",
     "venueAddress": "25 Lafayette St, Newark, NJ 07102",
-    "venueCapacity": 16755,
+    "venueCapacity": 16514,
     "tour": "The Dandelion Tour",
     "tourType": "headlining",
     "openers": [
       "ERNEST",
       "Gabriella Rose"
     ],
-    "doorsTime": "18:30",
-    "showTime": "19:30",
-    "timesConfirmed": false,
+    "doorsTime": "18:00",
+    "showTime": "19:00",
     "soldOut": false,
-    "ticketPriceRange": "$45-$285",
-    "pricesConfirmed": false,
+    "ticketPriceRange": "Prices vary",
     "ticketAffiliatePath": "/tickets/newark-prudential-center-2026-09-10"
   },
   {
-    "id": "state-college-bryce-jordan-center-2026-09-11",
+    "id": "university-park-bryce-jordan-center-2026-09-11",
     "date": "2026-09-11",
-    "city": "State College",
+    "city": "University Park",
     "state": "PA",
     "venue": "Bryce Jordan Center",
     "venueAddress": "127 Bryce Jordan Center, University Park, PA 16802",
@@ -802,20 +635,18 @@
       "ERNEST",
       "Gabriella Rose"
     ],
-    "doorsTime": "18:30",
-    "showTime": "19:30",
-    "timesConfirmed": false,
+    "doorsTime": "18:00",
+    "showTime": "19:00",
     "soldOut": false,
-    "ticketPriceRange": "$45-$285",
-    "pricesConfirmed": false,
-    "ticketAffiliatePath": "/tickets/state-college-bryce-jordan-center-2026-09-11"
+    "ticketPriceRange": "Prices vary",
+    "ticketAffiliatePath": "/tickets/university-park-bryce-jordan-center-2026-09-11"
   },
   {
     "id": "charleston-charleston-coliseum-2026-09-12",
     "date": "2026-09-12",
     "city": "Charleston",
     "state": "WV",
-    "venue": "Charleston Coliseum",
+    "venue": "Charleston Coliseum & Convention Center",
     "venueAddress": "200 Civic Center Dr, Charleston, WV 25301",
     "venueCapacity": 13500,
     "tour": "The Dandelion Tour",
@@ -824,56 +655,50 @@
       "ERNEST",
       "Gabriella Rose"
     ],
-    "doorsTime": "18:30",
-    "showTime": "19:30",
-    "timesConfirmed": false,
+    "doorsTime": "18:00",
+    "showTime": "19:00",
     "soldOut": false,
-    "ticketPriceRange": "$45-$285",
-    "pricesConfirmed": false,
+    "ticketPriceRange": "Prices vary",
     "ticketAffiliatePath": "/tickets/charleston-charleston-coliseum-2026-09-12"
   },
   {
-    "id": "oxford-sjb-pavilion-2026-09-17",
+    "id": "oxford-the-pavilion-ole-miss-2026-09-17",
     "date": "2026-09-17",
     "city": "Oxford",
     "state": "MS",
-    "venue": "SJB Pavilion",
-    "venueAddress": "120 Hill Dr, University, MS 38677",
+    "venue": "The Sandy and John Black Pavilion at Ole Miss",
+    "venueAddress": "250 Gertrude C. Ford Blvd, University, MS 38677",
     "venueCapacity": 9500,
     "tour": "The Dandelion Tour",
     "tourType": "headlining",
     "openers": [
       "Kameron Marlowe",
-      "Gabriella Rose"
+      "Laci Kaye Booth"
     ],
-    "doorsTime": "18:30",
-    "showTime": "19:30",
-    "timesConfirmed": false,
+    "doorsTime": "18:00",
+    "showTime": "19:00",
     "soldOut": false,
-    "ticketPriceRange": "$45-$285",
-    "pricesConfirmed": false,
-    "ticketAffiliatePath": "/tickets/oxford-sjb-pavilion-2026-09-17"
+    "ticketPriceRange": "Prices vary",
+    "ticketAffiliatePath": "/tickets/oxford-the-pavilion-ole-miss-2026-09-17"
   },
   {
     "id": "athens-akins-ford-arena-2026-09-18",
     "date": "2026-09-18",
     "city": "Athens",
     "state": "GA",
-    "venue": "Akins Ford Arena",
+    "venue": "Akins Ford Arena at The Classic Center",
     "venueAddress": "300 N Thomas St, Athens, GA 30601",
-    "venueCapacity": 8500,
+    "venueCapacity": 5500,
     "tour": "The Dandelion Tour",
     "tourType": "headlining",
     "openers": [
       "Kameron Marlowe",
-      "Gabriella Rose"
+      "Laci Kaye Booth"
     ],
-    "doorsTime": "18:30",
-    "showTime": "19:30",
-    "timesConfirmed": false,
+    "doorsTime": "18:00",
+    "showTime": "19:00",
     "soldOut": false,
-    "ticketPriceRange": "$45-$285",
-    "pricesConfirmed": false,
+    "ticketPriceRange": "Prices vary",
     "ticketAffiliatePath": "/tickets/athens-akins-ford-arena-2026-09-18"
   },
   {
@@ -888,14 +713,12 @@
     "tourType": "headlining",
     "openers": [
       "Kameron Marlowe",
-      "Gabriella Rose"
+      "Laci Kaye Booth"
     ],
-    "doorsTime": "18:30",
-    "showTime": "19:30",
-    "timesConfirmed": false,
+    "doorsTime": "18:00",
+    "showTime": "19:00",
     "soldOut": false,
-    "ticketPriceRange": "$45-$285",
-    "pricesConfirmed": false,
+    "ticketPriceRange": "Prices vary",
     "ticketAffiliatePath": "/tickets/jacksonville-vystar-veterans-memorial-arena-2026-09-19"
   },
   {
@@ -905,19 +728,17 @@
     "state": "TN",
     "venue": "Food City Center",
     "venueAddress": "1600 Phillip Fulmer Way, Knoxville, TN 37916",
-    "venueCapacity": 21678,
+    "venueCapacity": 21000,
     "tour": "The Dandelion Tour",
     "tourType": "headlining",
     "openers": [
       "Kameron Marlowe",
-      "Gabriella Rose"
+      "Laci Kaye Booth"
     ],
-    "doorsTime": "18:30",
-    "showTime": "19:30",
-    "timesConfirmed": false,
+    "doorsTime": "18:00",
+    "showTime": "19:00",
     "soldOut": false,
-    "ticketPriceRange": "$45-$285",
-    "pricesConfirmed": false,
+    "ticketPriceRange": "Prices vary",
     "ticketAffiliatePath": "/tickets/knoxville-food-city-center-2026-09-24"
   },
   {
@@ -927,23 +748,21 @@
     "state": "OH",
     "venue": "Schottenstein Center",
     "venueAddress": "555 Borror Dr, Columbus, OH 43210",
-    "venueCapacity": 18809,
+    "venueCapacity": 18500,
     "tour": "The Dandelion Tour",
     "tourType": "headlining",
     "openers": [
       "Kameron Marlowe",
-      "Gabriella Rose"
+      "Laci Kaye Booth"
     ],
-    "doorsTime": "18:30",
-    "showTime": "19:30",
-    "timesConfirmed": false,
+    "doorsTime": "18:00",
+    "showTime": "19:00",
     "soldOut": false,
-    "ticketPriceRange": "$45-$285",
-    "pricesConfirmed": false,
+    "ticketPriceRange": "Prices vary",
     "ticketAffiliatePath": "/tickets/columbus-schottenstein-center-2026-09-25"
   },
   {
-    "id": "moline-vibrant-arena-at-the-mark-2026-09-26",
+    "id": "moline-vibrant-arena-2026-09-26",
     "date": "2026-09-26",
     "city": "Moline",
     "state": "IL",
@@ -954,15 +773,13 @@
     "tourType": "headlining",
     "openers": [
       "Kameron Marlowe",
-      "Gabriella Rose"
+      "Laci Kaye Booth"
     ],
-    "doorsTime": "18:30",
-    "showTime": "19:30",
-    "timesConfirmed": false,
+    "doorsTime": "18:00",
+    "showTime": "19:00",
     "soldOut": false,
-    "ticketPriceRange": "$45-$285",
-    "pricesConfirmed": false,
-    "ticketAffiliatePath": "/tickets/moline-vibrant-arena-at-the-mark-2026-09-26"
+    "ticketPriceRange": "Prices vary",
+    "ticketAffiliatePath": "/tickets/moline-vibrant-arena-2026-09-26"
   },
   {
     "id": "morrison-red-rocks-amphitheatre-2026-10-07",
@@ -979,11 +796,9 @@
       "Gabriella Rose"
     ],
     "doorsTime": "18:00",
-    "showTime": "19:30",
-    "timesConfirmed": true,
+    "showTime": "19:00",
     "soldOut": false,
-    "ticketPriceRange": "$45-$285",
-    "pricesConfirmed": false,
+    "ticketPriceRange": "Prices vary",
     "ticketAffiliatePath": "/tickets/morrison-red-rocks-amphitheatre-2026-10-07"
   },
   {
@@ -993,19 +808,17 @@
     "state": "OK",
     "venue": "BOK Center",
     "venueAddress": "200 S Denver Ave, Tulsa, OK 74103",
-    "venueCapacity": 19199,
+    "venueCapacity": 19000,
     "tour": "The Dandelion Tour",
     "tourType": "headlining",
     "openers": [
       "Kameron Marlowe",
-      "Gabriella Rose"
+      "Laci Kaye Booth"
     ],
-    "doorsTime": "18:30",
-    "showTime": "19:30",
-    "timesConfirmed": false,
+    "doorsTime": "18:00",
+    "showTime": "19:00",
     "soldOut": false,
-    "ticketPriceRange": "$45-$285",
-    "pricesConfirmed": false,
+    "ticketPriceRange": "Prices vary",
     "ticketAffiliatePath": "/tickets/tulsa-bok-center-2026-10-09"
   },
   {
@@ -1015,19 +828,17 @@
     "state": "TX",
     "venue": "United Supermarkets Arena",
     "venueAddress": "1701 Indiana Ave, Lubbock, TX 79409",
-    "venueCapacity": 15098,
+    "venueCapacity": 15000,
     "tour": "The Dandelion Tour",
     "tourType": "headlining",
     "openers": [
       "Kameron Marlowe",
-      "Gabriella Rose"
+      "Laci Kaye Booth"
     ],
-    "doorsTime": "18:30",
-    "showTime": "19:30",
-    "timesConfirmed": false,
+    "doorsTime": "18:00",
+    "showTime": "19:00",
     "soldOut": false,
-    "ticketPriceRange": "$45-$285",
-    "pricesConfirmed": false,
+    "ticketPriceRange": "Prices vary",
     "ticketAffiliatePath": "/tickets/lubbock-united-supermarkets-arena-2026-10-10"
   },
   {
@@ -1035,21 +846,19 @@
     "date": "2026-10-13",
     "city": "Los Angeles",
     "state": "CA",
-    "venue": "The Greek Theatre",
+    "venue": "Greek Theatre",
     "venueAddress": "2700 N Vermont Ave, Los Angeles, CA 90027",
     "venueCapacity": 5900,
     "tour": "The Dandelion Tour",
     "tourType": "headlining",
     "openers": [
-      "ERNEST",
+      "Kameron Marlowe",
       "Laci Kaye Booth"
     ],
-    "doorsTime": "18:30",
-    "showTime": "19:30",
-    "timesConfirmed": false,
+    "doorsTime": "18:00",
+    "showTime": "19:00",
     "soldOut": false,
-    "ticketPriceRange": "$45-$285",
-    "pricesConfirmed": false,
+    "ticketPriceRange": "Prices vary",
     "ticketAffiliatePath": "/tickets/los-angeles-greek-theatre-2026-10-13"
   },
   {
@@ -1057,22 +866,34 @@
     "date": "2026-10-14",
     "city": "Los Angeles",
     "state": "CA",
-    "venue": "The Greek Theatre",
+    "venue": "Greek Theatre",
     "venueAddress": "2700 N Vermont Ave, Los Angeles, CA 90027",
     "venueCapacity": 5900,
     "tour": "The Dandelion Tour",
     "tourType": "headlining",
     "openers": [
-      "ERNEST",
+      "Kameron Marlowe",
       "Laci Kaye Booth"
     ],
-    "doorsTime": "18:30",
-    "showTime": "19:30",
-    "timesConfirmed": false,
+    "doorsTime": "18:00",
+    "showTime": "19:00",
     "soldOut": false,
-    "ticketPriceRange": "$45-$285",
-    "pricesConfirmed": false,
+    "ticketPriceRange": "Prices vary",
     "ticketAffiliatePath": "/tickets/los-angeles-greek-theatre-2026-10-14"
+  },
+  {
+    "id": "salt-lake-city-redwest-festival-2026-10-16",
+    "date": "2026-10-16",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "venue": "Utah State Fairpark",
+    "venueAddress": "155 N 1000 W, Salt Lake City, UT 84116",
+    "tour": "Redwest Festival",
+    "tourType": "festival",
+    "openers": [],
+    "soldOut": false,
+    "ticketPriceRange": "Festival pass",
+    "ticketAffiliatePath": "/tickets/salt-lake-city-redwest-festival-2026-10-16"
   },
   {
     "id": "des-moines-caseys-center-2026-10-29",
@@ -1080,20 +901,18 @@
     "city": "Des Moines",
     "state": "IA",
     "venue": "Casey's Center",
-    "venueAddress": "233 Center St, Des Moines, IA 50309",
-    "venueCapacity": 16980,
+    "venueAddress": "730 3rd St, Des Moines, IA 50309",
+    "venueCapacity": 16000,
     "tour": "The Dandelion Tour",
     "tourType": "headlining",
     "openers": [
       "Kameron Marlowe",
       "Gabriella Rose"
     ],
-    "doorsTime": "18:30",
-    "showTime": "19:30",
-    "timesConfirmed": false,
+    "doorsTime": "18:00",
+    "showTime": "19:00",
     "soldOut": false,
-    "ticketPriceRange": "$45-$285",
-    "pricesConfirmed": false,
+    "ticketPriceRange": "Prices vary",
     "ticketAffiliatePath": "/tickets/des-moines-caseys-center-2026-10-29"
   },
   {
@@ -1103,28 +922,26 @@
     "state": "NE",
     "venue": "Pinnacle Bank Arena",
     "venueAddress": "400 Pinnacle Arena Dr, Lincoln, NE 68508",
-    "venueCapacity": 15147,
+    "venueCapacity": 15500,
     "tour": "The Dandelion Tour",
     "tourType": "headlining",
     "openers": [
       "Kameron Marlowe",
       "Gabriella Rose"
     ],
-    "doorsTime": "18:30",
-    "showTime": "19:30",
-    "timesConfirmed": false,
+    "doorsTime": "18:00",
+    "showTime": "19:00",
     "soldOut": false,
-    "ticketPriceRange": "$45-$285",
-    "pricesConfirmed": false,
+    "ticketPriceRange": "Prices vary",
     "ticketAffiliatePath": "/tickets/lincoln-pinnacle-bank-arena-2026-10-30"
   },
   {
-    "id": "st.-paul-grand-casino-arena-2026-10-31",
+    "id": "saint-paul-grand-casino-arena-2026-10-31",
     "date": "2026-10-31",
-    "city": "St. Paul",
+    "city": "Saint Paul",
     "state": "MN",
     "venue": "Grand Casino Arena",
-    "venueAddress": "199 W Kellogg Blvd, St Paul, MN 55102",
+    "venueAddress": "199 W Kellogg Blvd, Saint Paul, MN 55102",
     "venueCapacity": 18000,
     "tour": "The Dandelion Tour",
     "tourType": "headlining",
@@ -1132,50 +949,24 @@
       "Kameron Marlowe",
       "Gabriella Rose"
     ],
-    "doorsTime": "18:30",
-    "showTime": "19:30",
-    "timesConfirmed": false,
+    "doorsTime": "18:00",
+    "showTime": "19:00",
     "soldOut": false,
-    "ticketPriceRange": "$45-$285",
-    "pricesConfirmed": false,
-    "ticketAffiliatePath": "/tickets/st.-paul-grand-casino-arena-2026-10-31"
+    "ticketPriceRange": "Prices vary",
+    "ticketAffiliatePath": "/tickets/saint-paul-grand-casino-arena-2026-10-31"
   },
   {
-    "id": "ottawa-bluesfest-2026-07-17",
-    "date": "2026-07-17",
-    "city": "Ottawa",
-    "state": "ON",
-    "venue": "LeBreton Flats Park (Ottawa Bluesfest)",
-    "venueAddress": "1 Vimy Pl, Ottawa, ON K1A 0M8, Canada",
-    "venueCapacity": 30000,
-    "tour": "RBC Ottawa Bluesfest",
+    "id": "virginia-beach-patriotic-festival-2027-05-29",
+    "date": "2027-05-29",
+    "city": "Virginia Beach",
+    "state": "VA",
+    "venue": "Virginia Beach Oceanfront",
+    "venueAddress": "5th St Stage, Atlantic Ave, Virginia Beach, VA 23451",
+    "tour": "Patriotic Festival",
     "tourType": "festival",
     "openers": [],
-    "doorsTime": "17:00",
-    "showTime": "20:30",
-    "timesConfirmed": true,
     "soldOut": false,
-    "ticketPriceRange": "Day passes",
-    "pricesConfirmed": true,
-    "ticketAffiliatePath": "/tickets/ottawa-bluesfest-2026-07-17"
-  },
-  {
-    "id": "redwest-festival-2026-10-16",
-    "date": "2026-10-16",
-    "city": "Salt Lake City",
-    "state": "UT",
-    "venue": "Utah State Fairpark (REDWEST Country Festival)",
-    "venueAddress": "155 N 1000 W, Salt Lake City, UT 84116",
-    "venueCapacity": 25000,
-    "tour": "REDWEST Country Festival",
-    "tourType": "festival",
-    "openers": [],
-    "doorsTime": "",
-    "showTime": "",
-    "timesConfirmed": false,
-    "soldOut": false,
-    "ticketPriceRange": "Festival passes",
-    "pricesConfirmed": true,
-    "ticketAffiliatePath": "/tickets/redwest-festival-2026-10-16"
+    "ticketPriceRange": "Festival pass",
+    "ticketAffiliatePath": "/tickets/virginia-beach-patriotic-festival-2027-05-29"
   }
 ]

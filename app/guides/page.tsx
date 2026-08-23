@@ -14,9 +14,9 @@ import { getAllGuideContent } from "@/lib/content";
 import { MerchCTA } from "@/components/MerchCTA";
 
 export const metadata: Metadata = {
-  title: "Ella Langley Guides",
+  title: "Ella Langley Concert Guides: Set Times, Tickets, Venues",
   description:
-    "Long-form guides for Ella Langley fans — concert prep, song rankings, opening acts, presale tactics, and more.",
+    "Every Ella Langley concert guide in one place: what time she goes on stage, who is opening, what to wear, where to sit, and how to get tickets.",
   alternates: { canonical: "/guides" },
   openGraph: { url: "/guides", images: ["/opengraph-image.png"] },
 };

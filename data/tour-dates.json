@@ -562,6 +562,70 @@
     "ticketAffiliatePath": "/tickets/fort-worth-dickies-arena-2026-08-15"
   },
   {
+    "id": "green-bay-resch-center-2026-08-20",
+    "date": "2026-08-20",
+    "city": "Green Bay",
+    "state": "WI",
+    "venue": "Resch Center",
+    "venueAddress": "820 Tony Canadeo Run, Green Bay, WI 54304",
+    "venueCapacity": 8600,
+    "tour": "The Dandelion Tour",
+    "tourType": "headlining",
+    "openers": [
+      "Laci Kaye Booth",
+      "ERNEST"
+    ],
+    "doorsTime": "18:00",
+    "showTime": "19:00",
+    "timesConfirmed": true,
+    "soldOut": true,
+    "ticketPriceRange": "Resale from $234",
+    "pricesConfirmed": false,
+    "ticketAffiliatePath": "/tickets/green-bay-resch-center-2026-08-20"
+  },
+  {
+    "id": "springfield-illinois-state-fair-2026-08-21",
+    "date": "2026-08-21",
+    "city": "Springfield",
+    "state": "IL",
+    "venue": "Illinois State Fairgrounds (Grandstand)",
+    "venueAddress": "Illinois State Fairgrounds, Springfield, IL 62702",
+    "tour": "Illinois State Fair",
+    "tourType": "festival",
+    "openers": [
+      "ERNEST"
+    ],
+    "soldOut": true,
+    "ticketPriceRange": "Resale $85-$450",
+    "pricesConfirmed": false,
+    "ticketAffiliatePath": "/tickets/springfield-illinois-state-fair-2026-08-21",
+    "timesConfirmed": true,
+    "doorsTime": "19:00",
+    "showTime": "20:00"
+  },
+  {
+    "id": "north-little-rock-simmons-bank-arena-2026-08-22",
+    "date": "2026-08-22",
+    "city": "North Little Rock",
+    "state": "AR",
+    "venue": "Simmons Bank Arena",
+    "venueAddress": "1 Simmons Bank Arena Dr, North Little Rock, AR 72114",
+    "venueCapacity": 18000,
+    "tour": "The Dandelion Tour",
+    "tourType": "headlining",
+    "openers": [
+      "Laci Kaye Booth",
+      "ERNEST"
+    ],
+    "doorsTime": "17:30",
+    "showTime": "19:00",
+    "timesConfirmed": true,
+    "soldOut": true,
+    "ticketPriceRange": "Resale from $210",
+    "pricesConfirmed": false,
+    "ticketAffiliatePath": "/tickets/north-little-rock-simmons-bank-arena-2026-08-22"
+  },
+  {
     "id": "auburn-neville-arena-2026-08-28",
     "date": "2026-08-28",
     "city": "Auburn",

@@ -9,9 +9,9 @@ import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 import { MerchCTA } from "@/components/MerchCTA";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
-const TITLE = "Ella Langley Set Times 2026: What Time Does She Go On, By City";
+const TITLE = "What Time Does Ella Langley Go On Stage? Set Times by City";
 const DESC =
-  "Doors, listed start and full running order for every 2026 Ella Langley show — city by city. We publish the real times and never invent a stage time.";
+  "What time does Ella Langley go on stage? We list doors, the opener and her real headline set time for every 2026 show, city by city — never a guessed time.";
 
 export const metadata: Metadata = {
   title: { absolute: `${TITLE} | Ella Fellas` },

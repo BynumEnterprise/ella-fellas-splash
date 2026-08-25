@@ -30,4 +30,4 @@ That timeline matters if you're trying to understand her. Before "you look like 
 
 "Paint the Town Blue" is one of the cornerstones of the *Hungover* era, and it's the kind of deep cut longtime fans point new listeners toward when they want to show what she does best. If you're working through her discography, the [song page for Paint the Town Blue](/songs/paint-the-town-blue) has the full details, and it pairs naturally with the rest of the heartbreak-honest corner of her writing.
 
-If you want to hear it the way it's meant to be heard — loud, in a room full of people singing it back — she's deep into The Dandelion Tour right now, including a two-night, near-hometown stand in Alabama. You can check dates and tickets on the [Ella Langley tour page](/tour).
+If you want to hear it the way it's meant to be heard — loud, in a room full of people singing it back — she's deep into The Dandelion Tour right now, including a two-night, near-hometown stand in Alabama. You can check dates and tickets on the [Ella Langley tour page](/tour) — and if you need something to wear, our [Honky-Tonk Night look](/shop/looks/honky-tonk-night) is built for exactly that kind of room.

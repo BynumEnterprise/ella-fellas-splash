@@ -133,7 +133,14 @@ export function newsletterMarkdownToHtml(markdownBody: string): string {
   // already write absolute URLs.)
   const rendered = (marked.parse(markdownBody, { async: false }) as string)
     .replace(/href="\/(?!\/)/g, `href="${SITE_URL}/`)
-    .replace(/src="\/(?!\/)/g, `src="${SITE_URL}/`);
+    .replace(/src="\/(?!\/)/g, `src="${SITE_URL}/`)
+    // Constrain product/inline images so a full-size Shopify asset (e.g. 2048px)
+    // renders as a tidy card thumbnail instead of a giant edge-to-edge photo.
+    // Inline style is used because several email clients strip <style> blocks.
+    .replace(
+      /<img /g,
+      `<img style="max-width:260px;width:100%;height:auto;display:block;border-radius:8px;margin:6px 0 14px;border:1px solid rgba(26,26,26,0.1);" `,
+    );
   const styled = `
   <style>
     .nl h1 { font-family:Impact,sans-serif; color:#2F4858; letter-spacing:0.03em; font-size:26px; margin:16px 0 8px; }
@@ -144,6 +151,7 @@ export function newsletterMarkdownToHtml(markdownBody: string): string {
     .nl a { color:#2F4858; }
     .nl hr { border:none; border-top:1px solid rgba(26,26,26,0.12); margin:24px 0; }
     .nl em { color:rgba(26,26,26,0.7); }
+    .nl img { max-width:260px; width:100%; height:auto; display:block; border-radius:8px; margin:6px 0 14px; border:1px solid rgba(26,26,26,0.1); }
   </style>
   <div class="nl">${rendered}</div>`;
   return styled;

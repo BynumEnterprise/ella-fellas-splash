@@ -29,4 +29,4 @@ For context, the only reign that still tops hers outright over a full calendar i
 
 This isn't a streaming fluke or a radio-only story. The Hot 100 weighs streams, airplay and sales together, and "Choosin' Texas" keeps showing up across all three while the rest of her catalog climbs behind it, [per Holler](https://holler.country/news/breaking/ella-langleys-choosin-texas-spends-18th-week-at-billboard-no-1/). We wrote earlier this month about the week [country swept the entire Hot 100 top five](/news/2026-08-08-ella-langley-country-hot-100-top-5-sweep) — this is the same song, still doing the heavy lifting at the very top.
 
-Next Tuesday's chart is the one to watch. If you want to hear it live while history is still being written, the [Dandelion Tour dates are here](/tour).
+Next Tuesday's chart is the one to watch. If you want to hear it live while history is still being written, the [Dandelion Tour dates are here](/tour) — our [Arena Night look](/shop/looks/arena-night) is how we'd dress for one.

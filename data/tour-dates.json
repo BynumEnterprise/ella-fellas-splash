@@ -642,7 +642,7 @@
     "doorsTime": "18:00",
     "showTime": "19:00",
     "soldOut": true,
-    "ticketPriceRange": "Resale $85-$450",
+    "ticketPriceRange": "Resale from $272",
     "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/auburn-neville-arena-2026-08-28"
   },
@@ -663,7 +663,7 @@
     "doorsTime": "18:00",
     "showTime": "19:00",
     "soldOut": true,
-    "ticketPriceRange": "Resale $85-$450",
+    "ticketPriceRange": "Resale from $342",
     "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/auburn-neville-arena-2026-08-29"
   },
@@ -678,14 +678,15 @@
     "tour": "The Dandelion Tour",
     "tourType": "headlining",
     "openers": [
-      "ERNEST",
-      "Gabriella Rose"
+      "Gabriella Rose",
+      "ERNEST"
     ],
     "doorsTime": "18:00",
     "showTime": "19:00",
-    "soldOut": false,
-    "ticketPriceRange": "Prices vary",
-    "ticketAffiliatePath": "/tickets/newark-prudential-center-2026-09-10"
+    "soldOut": true,
+    "ticketPriceRange": "Resale from $242",
+    "ticketAffiliatePath": "/tickets/newark-prudential-center-2026-09-10",
+    "pricesConfirmed": false
   },
   {
     "id": "university-park-bryce-jordan-center-2026-09-11",

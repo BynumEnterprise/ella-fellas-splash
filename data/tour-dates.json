@@ -699,13 +699,15 @@
     "tour": "The Dandelion Tour",
     "tourType": "headlining",
     "openers": [
-      "ERNEST",
-      "Gabriella Rose"
+      "Gabriella Rose",
+      "ERNEST"
     ],
     "doorsTime": "18:00",
     "showTime": "19:00",
-    "soldOut": false,
-    "ticketPriceRange": "Prices vary",
+    "timesConfirmed": true,
+    "soldOut": true,
+    "ticketPriceRange": "Resale from $144",
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/university-park-bryce-jordan-center-2026-09-11"
   },
   {

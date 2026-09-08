@@ -8,6 +8,11 @@ import { getAllLooks } from "@/lib/looks";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
 
+// Guard: any raw "&" (or other XML-unsafe char) in a slug/id makes the generated
+// sitemap.xml invalid, which makes Google drop the WHOLE sitemap ("1 error",
+// 0 discovered pages). Percent-encode every dynamic path segment.
+const seg = (v: string) => encodeURIComponent(String(v)).replace(/%2F/gi, "/");
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   const staticUrls = [
@@ -45,21 +50,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   const shopCategories = SHOP_CATEGORY_SLUGS.map((slug) => ({
-    url: `${SITE_URL}/shop/category/${slug}`,
+    url: `${SITE_URL}/shop/category/${seg(slug)}`,
     lastModified: now,
     changeFrequency: "weekly" as const,
     priority: 0.6,
   }));
 
   const products = getAllProducts().map((p) => ({
-    url: `${SITE_URL}/shop/${p.slug}`,
+    url: `${SITE_URL}/shop/${seg(p.slug)}`,
     lastModified: now,
     changeFrequency: "weekly" as const,
     priority: 0.7,
   }));
 
   const looks = getAllLooks().map((l) => ({
-    url: `${SITE_URL}/shop/looks/${l.slug}`,
+    url: `${SITE_URL}/shop/looks/${seg(l.slug)}`,
     lastModified: now,
     changeFrequency: "weekly" as const,
     priority: 0.6,
@@ -69,35 +74,35 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const tour = getAllTourDates()
     .filter((d) => d.date >= todayStr)
     .map((d) => ({
-    url: `${SITE_URL}/tour/${d.id}`,
+    url: `${SITE_URL}/tour/${seg(d.id)}`,
     lastModified: now,
     changeFrequency: "daily" as const,
     priority: 0.9,
   }));
 
   const songs = getAllSongs().map((s) => ({
-    url: `${SITE_URL}/songs/${s.slug}`,
+    url: `${SITE_URL}/songs/${seg(s.slug)}`,
     lastModified: new Date(s.releaseDate),
     changeFrequency: "monthly" as const,
     priority: 0.8,
   }));
 
   const comps = getAllComparisons().map((c) => ({
-    url: `${SITE_URL}/vs/${c.slug}`,
+    url: `${SITE_URL}/vs/${seg(c.slug)}`,
     lastModified: now,
     changeFrequency: "monthly" as const,
     priority: 0.6,
   }));
 
   const news = getAllNews().map((n) => ({
-    url: `${SITE_URL}/news/${n.slug}`,
+    url: `${SITE_URL}/news/${seg(n.slug)}`,
     lastModified: new Date(n.frontmatter.updatedAt ?? n.frontmatter.publishedAt),
     changeFrequency: "weekly" as const,
     priority: 0.7,
   }));
 
   const guides = getAllGuideContent().map((g) => ({
-    url: `${SITE_URL}/guides/${g.slug}`,
+    url: `${SITE_URL}/guides/${seg(g.slug)}`,
     lastModified: new Date(g.frontmatter.updatedAt ?? g.frontmatter.publishedAt),
     changeFrequency: "monthly" as const,
     priority: 0.8,
@@ -107,19 +112,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const setTimes = getAllTourDates()
     .filter((d) => d.date >= today)
     .map((d) => ({
-      url: `${SITE_URL}/tour/${d.id}/set-times`,
+      url: `${SITE_URL}/tour/${seg(d.id)}/set-times`,
       lastModified: new Date(),
       changeFrequency: "daily" as const,
       priority: 0.9,
     }));
   const setlists = getAllTourDates().map((d) => ({
-    url: `${SITE_URL}/tour/${d.id}/setlist`,
+    url: `${SITE_URL}/tour/${seg(d.id)}/setlist`,
     lastModified: new Date(),
     changeFrequency: "daily" as const,
     priority: 0.8,
   }));
   const openers = OPENERS.map((o) => ({
-    url: `${SITE_URL}/openers/${o.slug}`,
+    url: `${SITE_URL}/openers/${seg(o.slug)}`,
     lastModified: new Date(),
     changeFrequency: "weekly" as const,
     priority: 0.7,

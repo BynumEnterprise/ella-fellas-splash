@@ -40,7 +40,7 @@ For where to sit — lower bowl versus the upper level, and which sections get t
 
 ## Still need tickets?
 
-Face value is gone on this one — student tickets sold out, and every listing on the primary site is now resale, starting around $144 before it climbs for the better seats. Prices on a single arena date like this tend to swing hard as the show gets close, in both directions, so it's worth watching. The [University Park show page](/tour/university-park-bryce-jordan-center-2026-09-11) carries current listings and the resale link; check it for live availability rather than trusting a number in an article.
+Face value is gone on this one — student tickets sold out, and every listing on the primary site is now resale, with the lowest listings recently around $197 and climbing for the better seats. Prices on a single arena date like this tend to swing hard as the show gets close, in both directions, so it's worth watching. The [University Park show page](/tour/university-park-bryce-jordan-center-2026-09-11) carries current listings and the resale link; check it for live availability rather than trusting a number in an article.
 
 ## Can't make it?
 

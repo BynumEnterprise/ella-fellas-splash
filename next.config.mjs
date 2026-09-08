@@ -26,6 +26,15 @@ const nextConfig = {
       { source: "/tour/arlington-att-stadium-2026-07-24", destination: "/tour", permanent: true },
       { source: "/shop/ww-trucker-cap-low-pro", destination: "/shop", permanent: true },
       { source: "/shop/ec-foldable-rain-jacket", destination: "/shop", permanent: true },
+      // 301s from GSC 404 report (weekly SEO run, Sep 8 2026)
+      // Moline slug was renamed (dropped "-at-the-mark") while the show is still upcoming
+      { source: "/tour/moline-vibrant-arena-at-the-mark-2026-09-26", destination: "/tour/moline-vibrant-arena-2026-09-26", permanent: true },
+      { source: "/tour/moline-vibrant-arena-at-the-mark-2026-09-26/set-times", destination: "/tour/moline-vibrant-arena-2026-09-26/set-times", permanent: true },
+      { source: "/tour/moline-vibrant-arena-at-the-mark-2026-09-26/setlist", destination: "/tour/moline-vibrant-arena-2026-09-26/setlist", permanent: true },
+      { source: "/tour/cowboys-music-festival-2026-07-10", destination: "/tour", permanent: true },
+      { source: "/tour/cowboys-music-festival-2026-07-10/setlist", destination: "/setlists", permanent: true },
+      { source: "/tour/baltimore-mt-bank-stadium-2026-07-18", destination: "/tour", permanent: true },
+      { source: "/shop/wfw-felt-wide-brim-hat", destination: "/shop", permanent: true },
       // Consolidate duplicate "Ella Fellas" explainers into the definitive page (Jul 2026)
       { source: "/guides/what-are-ella-fellas", destination: "/what-is-an-ella-fella", permanent: true },
     ];

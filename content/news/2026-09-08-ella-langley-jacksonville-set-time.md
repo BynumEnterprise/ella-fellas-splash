@@ -41,6 +41,6 @@ Face value is gone on this one — every listing on the primary site is now resa
 
 ## Can't make it?
 
-Jacksonville caps a Southern stretch — Ella plays **[Oxford, MS](/tour/oxford-the-pavilion-ole-miss-2026-09-17)** on September 17 — still on sale at face as of this writing — and **[Athens, GA](/tour/athens-akins-ford-arena-2026-09-18)** on September 18, where face value has now sold out and resale is the only route. Every date, with current status, is on the [tour hub](/tour). If you're set on Jacksonville, resale is the route, and earlier usually beats waiting it out.
+Jacksonville caps a Southern stretch — Ella plays **[Oxford, MS](/tour/oxford-the-pavilion-ole-miss-2026-09-17)** on September 17 and **[Athens, GA](/tour/athens-akins-ford-arena-2026-09-18)** on September 18, both still on sale at face as of this writing. Every date, with current status, is on the [tour hub](/tour). If you're set on Jacksonville, resale is the route, and earlier usually beats waiting it out.
 
 *Disclosure: Some links here are affiliate links. If you buy through them we may earn a small commission at no extra cost to you.*

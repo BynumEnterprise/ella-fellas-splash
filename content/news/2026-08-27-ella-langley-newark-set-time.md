@@ -3,7 +3,7 @@ title: "Ella Langley Newark Set Time: When She Goes On at Prudential Center (Sep
 slug: "2026-08-27-ella-langley-newark-set-time"
 publishedAt: "2026-08-27"
 category: "tour-prep"
-excerpt: "Ella Langley brings The Dandelion Tour to Prudential Center in Newark on Thursday, September 10 with Gabriella Rose and ERNEST — her only New York-metro date of the run. The 7:00 PM start, who plays when, arena notes, and how to grab resale now that face value is gone."
+excerpt: "Ella Langley brings The Dandelion Tour to Prudential Center in Newark on Thursday, September 10 with Gabriella Rose and Muscadine Bloodline — her only New York-metro date of the run. The 7:00 PM start, who plays when, arena notes, and how to grab resale now that face value is gone."
 relatedSongs: ["you-look-like-you-love-me", "choosin-texas"]
 sources:
   - "https://www.prucenter.com/events/ella-langley"
@@ -20,11 +20,11 @@ Prudential Center has posted the doors and start times, so those are the numbers
 - **6:00 PM** — doors open
 - **7:00 PM** — show starts (the ticketed start time)
 
-The bill is **Gabriella Rose** first, then **ERNEST** in the direct-support slot, then **Ella Langley**.
+The bill is **Gabriella Rose** first, then **Muscadine Bloodline** in the direct-support slot, then **Ella Langley**.
 
 We're not going to make up a minute for when Ella walks out — Prudential Center lists the 7:00 PM start and doors at 6:00, but no per-act running order. That's the honest, sourced answer: the opener goes on around the printed start time, and on recent three-act Dandelion nights Ella has closed the show after both openers. If the venue posts a full schedule closer to the date, this page and the [set-times page](/tour/newark-prudential-center-2026-09-10/set-times) will get the real times.
 
-Get there for the openers. **ERNEST** is one of Nashville's most-cut songwriters with a stack of his own hits, and dropping him in the direct-support slot means the arena will already be roaring by the time Ella takes over. **Gabriella Rose** opens the night and is well worth catching from the first song.
+Get there for the openers. **Muscadine Bloodline** — the Alabama duo of Gary Stanton and Charlie Muncaster — steps into the direct-support slot after ERNEST came off this leg of the run, and their rowdy, road-tested catalog means the arena will already be roaring by the time Ella takes over. **Gabriella Rose** opens the night and is well worth catching from the first song.
 
 ## What she's been playing
 

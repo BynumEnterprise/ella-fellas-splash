@@ -767,8 +767,8 @@
     ],
     "doorsTime": "18:00",
     "showTime": "19:00",
-    "soldOut": true,
-    "ticketPriceRange": "Resale $85-$450",
+    "soldOut": false,
+    "ticketPriceRange": "From $109.75",
     "ticketAffiliatePath": "/tickets/athens-akins-ford-arena-2026-09-18",
     "pricesConfirmed": false,
     "timesConfirmed": true

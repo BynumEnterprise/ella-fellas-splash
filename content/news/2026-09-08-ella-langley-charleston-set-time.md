@@ -3,7 +3,7 @@ title: "Ella Langley Charleston Set Time: When She Goes On at the Charleston Col
 slug: "2026-09-08-ella-langley-charleston-set-time"
 publishedAt: "2026-09-08"
 category: "tour-prep"
-excerpt: "Ella Langley brings The Dandelion Tour to the Charleston Coliseum in Charleston, WV on Saturday, September 12 with Gabriella Rose and ERNEST. The 7:00 PM start, who plays when, arena notes, and how to find resale now that face value is gone."
+excerpt: "Ella Langley brings The Dandelion Tour to the Charleston Coliseum in Charleston, WV on Saturday, September 12 with Gabriella Rose and Muscadine Bloodline. The 7:00 PM start, who plays when, arena notes, and how to find resale now that face value is gone."
 relatedSongs: ["you-look-like-you-love-me", "choosin-texas", "nicotine"]
 sources:
   - "https://www.chaswvccc.com/events/2026/ella-langley-the-dandelion-tour"
@@ -18,11 +18,11 @@ Ella Langley brings The Dandelion Tour to the **Charleston Coliseum in Charlesto
 
 The ticketed start time is **7:00 PM**, with doors about an hour before — that's the reliable number to build your evening around.
 
-The bill is **Gabriella Rose** first, then **ERNEST** in the direct-support slot, then **Ella Langley**.
+The bill is **Gabriella Rose** first, then **Muscadine Bloodline** in the direct-support slot, then **Ella Langley**.
 
 We won't invent a minute for when Ella walks out. The Coliseum lists a 7:00 PM start; the first opener goes on around then, and on recent three-act Dandelion nights Ella has closed the show after both openers. If the venue posts a full per-act schedule closer to the date, this page and the [set-times page](/tour/charleston-charleston-coliseum-2026-09-12/set-times) will carry the real times.
 
-Get there early for the openers. **ERNEST** is one of Nashville's most-cut songwriters with a pile of his own hits, so the direct-support slot means the room will already be loud by the time Ella takes over. **Gabriella Rose** opens and is well worth catching from the first song.
+Get there early for the openers. **Muscadine Bloodline** — the Alabama duo of Gary Stanton and Charlie Muncaster — takes the direct-support slot after ERNEST came off this leg of the run, so the room will already be loud by the time Ella takes over. **Gabriella Rose** opens and is well worth catching from the first song.
 
 ## What she's been playing
 

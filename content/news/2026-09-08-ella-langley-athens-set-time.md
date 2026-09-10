@@ -40,7 +40,7 @@ For where to sit — lower bowl versus the upper level, and which sections get t
 
 ## Still need tickets?
 
-Face value is gone on this one now — the primary seller lists only resale, so the box-office price is no longer an option. Resale prices on a single arena date like this swing hard in the final days, in both directions, so it's worth watching rather than grabbing the first number you see. Check the [Athens show page](/tour/athens-akins-ford-arena-2026-09-18) for the current resale link and live availability, and always compare the all-in checkout total before you buy.
+As of this writing, tickets are still on sale at face value through the Classic Center box office — the lowest listed face price is around $110 before fees. That won't last if the room tightens up, so if you want the cheaper option, sooner beats later. Check the [Athens show page](/tour/athens-akins-ford-arena-2026-09-18) for current availability and pricing, and compare the all-in checkout total before you buy.
 
 ## Can't make it?
 

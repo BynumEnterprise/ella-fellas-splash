@@ -13,6 +13,8 @@ sources:
 
 We keep thinking Ella has run out of records to break, and she keeps proving us wrong. The newest one landed today: "Choosin' Texas" has been named Billboard's Song of the Summer for 2026.
 
+New to the song itself? Here is [what "Choosin' Texas" is actually about, and the wild writing-room story behind it](/news/2026-09-10-choosin-texas-meaning-story-behind-song).
+
 If you're not chart-obsessed, here's what that chart actually measures. Billboard ranks its 20 biggest songs by combined streaming, radio and sales across the Hot 100 from Memorial Day through Labor Day — this year's window ran from the June 6 chart through the one dated September 12. It's the closest thing the industry has to an official "song that owned everyone's summer" trophy, and "Choosin' Texas" took it outright.
 
 What makes this one land differently is the company around it. Country music has never claimed the entire top three of the Songs of the Summer chart before — and this year it did, with Ella sitting on two of those three spots. "Choosin' Texas" led at No. 1, Taylor Swift's "I Knew It, I Knew You" came in at No. 2, and Ella's own "Be Her" rounded out the podium at No. 3. Two of the three biggest songs of the American summer belong to a woman from Hope Hull, Alabama. That still doesn't feel real to type.

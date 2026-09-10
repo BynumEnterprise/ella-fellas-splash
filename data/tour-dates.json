@@ -679,7 +679,7 @@
     "tourType": "headlining",
     "openers": [
       "Gabriella Rose",
-      "ERNEST"
+      "Muscadine Bloodline"
     ],
     "doorsTime": "18:00",
     "showTime": "19:00",
@@ -700,13 +700,13 @@
     "tourType": "headlining",
     "openers": [
       "Gabriella Rose",
-      "ERNEST"
+      "Muscadine Bloodline"
     ],
     "doorsTime": "18:00",
     "showTime": "19:00",
     "timesConfirmed": true,
     "soldOut": true,
-    "ticketPriceRange": "Resale from $197",
+    "ticketPriceRange": "Resale from $184",
     "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/university-park-bryce-jordan-center-2026-09-11"
   },
@@ -722,12 +722,12 @@
     "tourType": "headlining",
     "openers": [
       "Gabriella Rose",
-      "ERNEST"
+      "Muscadine Bloodline"
     ],
     "doorsTime": "18:00",
     "showTime": "19:00",
     "soldOut": true,
-    "ticketPriceRange": "Resale from $148",
+    "ticketPriceRange": "Resale from $141",
     "ticketAffiliatePath": "/tickets/charleston-charleston-coliseum-2026-09-12",
     "pricesConfirmed": false
   },
@@ -767,8 +767,8 @@
     ],
     "doorsTime": "18:00",
     "showTime": "19:00",
-    "soldOut": false,
-    "ticketPriceRange": "From $109.75",
+    "soldOut": true,
+    "ticketPriceRange": "Resale $85-$450",
     "ticketAffiliatePath": "/tickets/athens-akins-ford-arena-2026-09-18",
     "pricesConfirmed": false,
     "timesConfirmed": true
@@ -790,7 +790,7 @@
     "doorsTime": "18:00",
     "showTime": "19:00",
     "soldOut": true,
-    "ticketPriceRange": "Resale from $273",
+    "ticketPriceRange": "Resale from $298",
     "ticketAffiliatePath": "/tickets/jacksonville-vystar-veterans-memorial-arena-2026-09-19",
     "pricesConfirmed": false
   },
@@ -810,9 +810,10 @@
     ],
     "doorsTime": "18:00",
     "showTime": "19:00",
-    "soldOut": false,
-    "ticketPriceRange": "Prices vary",
-    "ticketAffiliatePath": "/tickets/knoxville-food-city-center-2026-09-24"
+    "soldOut": true,
+    "ticketPriceRange": "Resale from $146",
+    "ticketAffiliatePath": "/tickets/knoxville-food-city-center-2026-09-24",
+    "pricesConfirmed": false
   },
   {
     "id": "columbus-schottenstein-center-2026-09-25",

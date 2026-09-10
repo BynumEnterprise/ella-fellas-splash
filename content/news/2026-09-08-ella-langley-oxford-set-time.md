@@ -41,6 +41,6 @@ This one's tied to a busy campus weekend, so demand is real and the picture move
 
 ## Can't make it?
 
-Oxford kicks off a Southern stretch — Ella plays **[Athens, GA](/tour/athens-akins-ford-arena-2026-09-18)** the next night on September 18 (still on sale at face as of this writing), and **[Jacksonville, FL](/tour/jacksonville-vystar-veterans-memorial-arena-2026-09-19)** on September 19, where face value is already gone and resale is the only route. Every date, with current status, is on the [tour hub](/tour).
+Oxford kicks off a Southern stretch — Ella plays **[Athens, GA](/tour/athens-akins-ford-arena-2026-09-18)** the next night on September 18 (now resale only — face value has sold out), and **[Jacksonville, FL](/tour/jacksonville-vystar-veterans-memorial-arena-2026-09-19)** on September 19, where face value is already gone and resale is the only route. Every date, with current status, is on the [tour hub](/tour).
 
 *Disclosure: Some links here are affiliate links. If you buy through them we may earn a small commission at no extra cost to you.*

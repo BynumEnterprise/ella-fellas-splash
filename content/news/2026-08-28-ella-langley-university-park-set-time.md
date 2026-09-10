@@ -3,7 +3,7 @@ title: "Ella Langley Bryce Jordan Center Set Time: When She Goes On in State Col
 slug: "2026-08-28-ella-langley-university-park-set-time"
 publishedAt: "2026-08-28"
 category: "tour-prep"
-excerpt: "Ella Langley brings The Dandelion Tour to the Bryce Jordan Center in University Park on Friday, September 11 with Gabriella Rose and ERNEST. Doors at 6, a 7:00 PM start, who plays when, arena notes, and how to grab resale now that face value is gone."
+excerpt: "Ella Langley brings The Dandelion Tour to the Bryce Jordan Center in University Park on Friday, September 11 with Gabriella Rose and Muscadine Bloodline. Doors at 6, a 7:00 PM start, who plays when, arena notes, and how to grab resale now that face value is gone."
 relatedSongs: ["choosin-texas", "you-look-like-you-love-me"]
 sources:
   - "https://bjc.psu.edu/ella-langley"
@@ -20,11 +20,11 @@ The Bryce Jordan Center has posted doors and start times, so those are the numbe
 - **6:00 PM** — doors open
 - **7:00 PM** — show starts (the ticketed start time)
 
-The bill is **Gabriella Rose** first, then **ERNEST** in the direct-support slot, then **Ella Langley**.
+The bill is **Gabriella Rose** first, then **Muscadine Bloodline** in the direct-support slot, then **Ella Langley**.
 
 We're not going to invent a minute for when Ella walks out — the arena lists the 7:00 PM start and doors at 6:00, but no per-act running order. That's the honest, sourced answer: the opener goes on around the printed start time, and on recent three-act Dandelion nights Ella has closed the show after both openers. If the venue posts a full schedule closer to the date, this page and the [set-times page](/tour/university-park-bryce-jordan-center-2026-09-11/set-times) will get the real times.
 
-Get there for the openers. **ERNEST** is one of Nashville's most-cut songwriters with a stack of his own hits, and putting him in the direct-support slot means the room will already be loud by the time Ella takes over. **Gabriella Rose** opens the night and is well worth catching from the first song.
+Get there for the openers. **Muscadine Bloodline** — the Alabama duo of Gary Stanton and Charlie Muncaster — steps into the direct-support slot after ERNEST came off this leg of the run, and their rowdy, road-tested catalog means the room will already be loud by the time Ella takes over. **Gabriella Rose** opens the night and is well worth catching from the first song.
 
 ## What she's been playing
 

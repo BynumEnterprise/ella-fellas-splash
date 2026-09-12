@@ -724,12 +724,13 @@
       "Gabriella Rose",
       "Muscadine Bloodline"
     ],
-    "doorsTime": "18:00",
+    "doorsTime": "17:30",
     "showTime": "19:00",
     "soldOut": true,
     "ticketPriceRange": "Resale from $141",
     "ticketAffiliatePath": "/tickets/charleston-charleston-coliseum-2026-09-12",
-    "pricesConfirmed": false
+    "pricesConfirmed": false,
+    "timesConfirmed": true
   },
   {
     "id": "oxford-the-pavilion-ole-miss-2026-09-17",
@@ -826,8 +827,8 @@
     "tour": "The Dandelion Tour",
     "tourType": "headlining",
     "openers": [
-      "Kameron Marlowe",
-      "Laci Kaye Booth"
+      "Laci Kaye Booth",
+      "Kameron Marlowe"
     ],
     "doorsTime": "18:00",
     "showTime": "19:00",
@@ -846,14 +847,15 @@
     "tour": "The Dandelion Tour",
     "tourType": "headlining",
     "openers": [
-      "Kameron Marlowe",
-      "Laci Kaye Booth"
+      "Laci Kaye Booth",
+      "Kameron Marlowe"
     ],
     "doorsTime": "18:00",
     "showTime": "19:00",
-    "soldOut": false,
-    "ticketPriceRange": "Prices vary",
-    "ticketAffiliatePath": "/tickets/moline-vibrant-arena-2026-09-26"
+    "soldOut": true,
+    "ticketPriceRange": "Resale $85-$450",
+    "ticketAffiliatePath": "/tickets/moline-vibrant-arena-2026-09-26",
+    "pricesConfirmed": false
   },
   {
     "id": "morrison-red-rocks-amphitheatre-2026-10-07",

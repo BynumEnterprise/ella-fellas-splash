@@ -15,6 +15,8 @@ sources:
     url: "https://variety.com/2026/music/news/ella-langleys-choosin-texas-break-hot-100-chart-record-1236847519/"
 ---
 
+*Update (September 12): "Choosin’ Texas" has since added a [21st week at No. 1](/news/2026-09-12-ella-langley-choosin-texas-21-weeks-hot-100), moving within one week of tying the longest No. 1 run in Hot 100 history.*
+
 Two weeks ago we told you the chart dated September 5 was the one to circle, because a 20th week at No. 1 would be something no non-holiday song had ever done. Well — she did it. On that Hot 100, ["Choosin' Texas"](/songs/choosin-texas) holds at the top for a 20th week, which means Ella Langley now owns the longest No. 1 run in the chart's history for any song that isn't tied to a holiday.
 
 ## She Passed the Two Songs She Was Tied With

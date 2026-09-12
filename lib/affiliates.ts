@@ -110,7 +110,7 @@ const KNOWN_TICKETNETWORK_URLS: Record<string, string> = {
   "newark-prudential-center-2026-09-10": "https://www.ticketnetwork.com/tickets/8071940/ella-langley-ernest-gabriella-rose-tickets-thu-sep-10-2026-prudential-center",
   "state-college-bryce-jordan-center-2026-09-11": "https://www.ticketnetwork.com/tickets/8071913/ella-langley-ernest-gabriella-rose-tickets-fri-sep-11-2026-bryce-jordan-center",
   "charleston-charleston-coliseum-2026-09-12": "https://www.ticketnetwork.com/tickets/8071915/ella-langley-ernest-gabriella-rose-tickets-sat-sep-12-2026-charleston-coliseum-convention-center-charleston",
-  "oxford-sjb-pavilion-2026-09-17": "https://www.ticketnetwork.com/tickets/8071942/ella-langley-kameron-marlowe-laci-kaye-booth-tickets-thu-sep-17-2026-the-sandy-and-john-black-pavilion-at-ole-miss",
+  "oxford-the-pavilion-ole-miss-2026-09-17": "https://www.ticketnetwork.com/tickets/8071942/ella-langley-kameron-marlowe-laci-kaye-booth-tickets-thu-sep-17-2026-the-sandy-and-john-black-pavilion-at-ole-miss",
   "athens-akins-ford-arena-2026-09-18": "https://www.ticketnetwork.com/tickets/8071944/ella-langley-kameron-marlowe-laci-kaye-booth-tickets-fri-sep-18-2026-akins-ford-arena-at-the-classic-center",
   "jacksonville-vystar-veterans-memorial-arena-2026-09-19": "https://www.ticketnetwork.com/tickets/8071920/ella-langley-kameron-marlowe-laci-kaye-booth-tickets-sat-sep-19-2026-vystar-veterans-memorial-arena",
   "knoxville-food-city-center-2026-09-24": "https://www.ticketnetwork.com/tickets/8071927/ella-langley-kameron-marlowe-laci-kaye-booth-tickets-thu-sep-24-2026-thompson-boling-arena-at-food-city-center",

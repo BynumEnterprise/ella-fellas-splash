@@ -16,7 +16,7 @@ Ella Langley brings The Dandelion Tour to the **Charleston Coliseum in Charlesto
 
 ## Who plays when
 
-The ticketed start time is **7:00 PM**, with doors about an hour before — that's the reliable number to build your evening around.
+The ticketed start time is **7:00 PM**, with doors at **5:30 PM** — that's the reliable number to build your evening around.
 
 The bill is **Gabriella Rose** first, then **Muscadine Bloodline** in the direct-support slot, then **Ella Langley**.
 

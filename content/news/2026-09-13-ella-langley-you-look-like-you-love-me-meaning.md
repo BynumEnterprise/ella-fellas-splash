@@ -36,6 +36,6 @@ The Riley Green partnership is worth knowing too. Their chemistry on this record
 
 ## Hearing it live
 
-This is a near-guaranteed highlight whenever it turns up in a setlist — the crowd sings both parts, which is the whole fun of a two-voice song. If you're heading to a show and want to look the part for a honky-tonk-leaning night, our [Arena Night look](/shop/looks/arena-night) is built for exactly that kind of evening.
+This is a near-guaranteed highlight whenever it turns up in a setlist — the crowd sings both parts, which is the whole fun of a two-voice song. If you're still working out which night to catch it live, our [Ella Langley tour dates and tickets](/tour) page has the full Dandelion Tour run in one place. And if you want to look the part for a honky-tonk-leaning night, our [Arena Night look](/shop/looks/arena-night) is built for exactly that kind of evening.
 
 *Ella Fellas is an independent, fan-run site. Some links on our tour and shop pages are affiliate or partner links, which may earn us a commission at no extra cost to you.*

@@ -37,10 +37,10 @@ For where to sit — lower bowl versus the upper level, and which sections get t
 
 ## Still need tickets?
 
-Good news on this one — face-value tickets are still on sale through the primary site, starting around $146 for upper-level seats, alongside the usual resale listings. Prices on a big arena date like this tend to swing hard in the final days, in both directions, so it's worth watching rather than grabbing the first number you see. The [Knoxville show page](/tour/knoxville-food-city-center-2026-09-24) carries current listings; check it for live availability, and always compare the all-in checkout total before you buy.
+Update: Knoxville has **sold out at face value** — the primary site is showing resale only, starting around $128 as of this writing. On a sold-out arena date like this, resale prices swing hard in the final 48 hours, so it's worth watching rather than grabbing the first number you see. The [Knoxville show page](/tour/knoxville-food-city-center-2026-09-24) carries current resale listings; check it for live availability, and always compare the all-in checkout total before you buy.
 
 ## Can't make it?
 
-Knoxville sits at the front of the tour's late-September push — Ella heads to **[Columbus, OH](/tour/columbus-schottenstein-center-2026-09-25)** the next night on September 25 and **[Moline, IL](/tour/moline-vibrant-arena-2026-09-26)** on September 26. Columbus is still on sale at face as of this writing; Moline has since sold out at face (resale only). Every date, with current status, is on the [tour hub](/tour). Knoxville itself still has face-value seats, so you may not need resale at all — but earlier usually beats waiting it out.
+Knoxville sits at the front of the tour's late-September push — Ella heads to **[Columbus, OH](/tour/columbus-schottenstein-center-2026-09-25)** the next night on September 25 and **[Moline, IL](/tour/moline-vibrant-arena-2026-09-26)** on September 26. Both of those have now sold out at face as well, so all three nights are on resale only. Every date, with current status, is on the [tour hub](/tour).
 
 *Disclosure: Some links here are affiliate links. If you buy through them we may earn a small commission at no extra cost to you.*

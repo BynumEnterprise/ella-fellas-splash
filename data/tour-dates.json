@@ -811,10 +811,10 @@
     ],
     "doorsTime": "18:00",
     "showTime": "19:00",
-    "soldOut": false,
-    "ticketPriceRange": "From $146",
-    "ticketAffiliatePath": "/tickets/knoxville-food-city-center-2026-09-24",
-    "pricesConfirmed": false
+    "soldOut": true,
+    "ticketPriceRange": "Resale from $128",
+    "pricesConfirmed": false,
+    "ticketAffiliatePath": "/tickets/knoxville-food-city-center-2026-09-24"
   },
   {
     "id": "columbus-schottenstein-center-2026-09-25",
@@ -832,8 +832,9 @@
     ],
     "doorsTime": "18:00",
     "showTime": "19:00",
-    "soldOut": false,
-    "ticketPriceRange": "Prices vary",
+    "soldOut": true,
+    "ticketPriceRange": "Resale from $207",
+    "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/columbus-schottenstein-center-2026-09-25"
   },
   {

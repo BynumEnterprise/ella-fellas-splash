@@ -26,6 +26,6 @@ The Schottenstein Center is a climate-controlled indoor arena, so weather is a n
 
 ## Still need tickets?
 
-As of now, face-value tickets are still on sale for Columbus. Grab them off the [show page](/tour/columbus-schottenstein-center-2026-09-25) while they last, since Friday arena nights on this run have been moving fast. If you're following the tour, the dates on either side differ: Knoxville (Sept 24) still has face-value tickets on sale, while Moline (Sept 26) has sold out at face and is living on resale now.
+Update: Columbus has **sold out at face value** — it's resale only now, starting around $207 as of this writing. Prices on a sold-out Friday arena night swing hard in the final 48 hours, so check the [show page](/tour/columbus-schottenstein-center-2026-09-25) for live resale listings and compare the all-in total before you buy. The dates on either side have gone the same way: Knoxville (Sept 24) and Moline (Sept 26) are both sold out at face and living on resale too.
 
 *A note for transparency: some ticket links on our show pages are affiliate links, which means we may earn a small commission if you buy through them, at no extra cost to you.*

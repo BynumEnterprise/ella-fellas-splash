@@ -23,4 +23,4 @@ That Entertainer of the Year nod is the headline for us. It's her first time in 
 
 Lainey, for her part, is pulling double duty — she's hosting the show while she's nominated in it. The 60th annual CMA Awards air live from Bridgestone Arena in Nashville on Tuesday, November 18, at 8 p.m. ET on ABC, streaming the same night on Disney+.
 
-For a run that already handed us an ACM sweep, [a pair of VMA nods](/news/2026-08-19-ella-langley-vma-nominations-choosin-texas), and a Hot 100 record that keeps rewriting itself, this one feels like the biggest yet. If you want to catch her before awards season peaks, [the Dandelion Tour](/tour) is rolling through the fall.
+For a run that already handed us an ACM sweep, [a pair of VMA nods](/news/2026-08-19-ella-langley-vma-nominations-choosin-texas), and a Hot 100 record that keeps rewriting itself, this one feels like the biggest yet. We've since broken down [every category she's up for, who she's up against, and how to watch](/news/2026-09-16-ella-langley-cma-awards-2026-nominations-how-to-watch). If you want to catch her before awards season peaks, [the Dandelion Tour](/tour) is rolling through the fall.

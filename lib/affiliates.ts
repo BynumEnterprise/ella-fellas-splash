@@ -115,7 +115,7 @@ const KNOWN_TICKETNETWORK_URLS: Record<string, string> = {
   "jacksonville-vystar-veterans-memorial-arena-2026-09-19": "https://www.ticketnetwork.com/tickets/8071920/ella-langley-kameron-marlowe-laci-kaye-booth-tickets-sat-sep-19-2026-vystar-veterans-memorial-arena",
   "knoxville-food-city-center-2026-09-24": "https://www.ticketnetwork.com/tickets/8071927/ella-langley-kameron-marlowe-laci-kaye-booth-tickets-thu-sep-24-2026-thompson-boling-arena-at-food-city-center",
   "columbus-schottenstein-center-2026-09-25": "https://www.ticketnetwork.com/tickets/8071929/ella-langley-kameron-marlowe-laci-kaye-booth-tickets-fri-sep-25-2026-value-city-arena-at-the-schottenstein-center",
-  "moline-vibrant-arena-at-the-mark-2026-09-26": "https://www.ticketnetwork.com/tickets/8071930/ella-langley-kameron-marlowe-laci-kaye-booth-tickets-sat-sep-26-2026-vibrant-arena-at-the-mark",
+  "moline-vibrant-arena-2026-09-26": "https://www.ticketnetwork.com/tickets/8071930/ella-langley-kameron-marlowe-laci-kaye-booth-tickets-sat-sep-26-2026-vibrant-arena-at-the-mark",
   "morrison-red-rocks-amphitheatre-2026-10-07": "https://www.ticketnetwork.com/tickets/8071946/ella-langley-kameron-marlowe-gabriella-rose-tickets-wed-oct-7-2026-red-rocks-amphitheatre",
   "tulsa-bok-center-2026-10-09": "https://www.ticketnetwork.com/tickets/8071931/ella-langley-kameron-marlowe-laci-kaye-booth-tickets-fri-oct-9-2026-bok-center",
   "lubbock-united-supermarkets-arena-2026-10-10": "https://www.ticketnetwork.com/tickets/8071948/ella-langley-kameron-marlowe-laci-kaye-booth-tickets-sat-oct-10-2026-united-supermarkets-arena",
@@ -271,3 +271,4 @@ export function hotelsComUrl(city: string, opts?: StayOpts): string {
 export function economyBookingsUrl(): string {
   return envLink(process.env.NEXT_PUBLIC_AFF_ECONOMYBOOKINGS) ?? ECONOMYBOOKINGS_CLICK;
 }
+

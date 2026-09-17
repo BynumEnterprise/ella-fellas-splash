@@ -26,6 +26,6 @@ Vibrant Arena at The Mark sits right on the river in downtown Moline. It's an in
 
 ## Tickets: face value is gone
 
-Heads up, face value has sold out for Moline. On AXS, the venue's primary seller, the only tickets left are resale, so every remaining seat is coming through the resale market. Prices tend to swing hard in the final 48 hours, so if you want in, watch the [show page](/tour/moline-vibrant-arena-2026-09-26) and don't hold out for one specific section. Nearby on the run, Columbus (Sept 25) and Knoxville (Sept 24) both still have face-value seats on sale.
+Heads up, face value has sold out for Moline. The primary sale is gone and every remaining seat is coming through the resale market. Prices tend to swing hard in the final 48 hours, so if you want in, watch the [show page](/tour/moline-vibrant-arena-2026-09-26) and don't hold out for one specific section. Nearby on the run, Columbus (Sept 25) and Knoxville (Sept 24) have both sold out at face as well, so those nights are on resale too.
 
 *A note for transparency: some ticket links on our show pages are affiliate links, which means we may earn a small commission if you buy through them, at no extra cost to you.*

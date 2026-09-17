@@ -749,8 +749,9 @@
     "doorsTime": "18:00",
     "showTime": "19:00",
     "soldOut": false,
-    "ticketPriceRange": "Prices vary",
-    "ticketAffiliatePath": "/tickets/oxford-the-pavilion-ole-miss-2026-09-17"
+    "ticketPriceRange": "From $104",
+    "ticketAffiliatePath": "/tickets/oxford-the-pavilion-ole-miss-2026-09-17",
+    "pricesConfirmed": false
   },
   {
     "id": "athens-akins-ford-arena-2026-09-18",
@@ -812,7 +813,7 @@
     "doorsTime": "18:00",
     "showTime": "19:00",
     "soldOut": true,
-    "ticketPriceRange": "Resale from $128",
+    "ticketPriceRange": "Resale from $121",
     "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/knoxville-food-city-center-2026-09-24"
   },
@@ -833,7 +834,7 @@
     "doorsTime": "18:00",
     "showTime": "19:00",
     "soldOut": true,
-    "ticketPriceRange": "Resale from $207",
+    "ticketPriceRange": "Resale from $190",
     "pricesConfirmed": false,
     "ticketAffiliatePath": "/tickets/columbus-schottenstein-center-2026-09-25"
   },
@@ -854,7 +855,7 @@
     "doorsTime": "18:00",
     "showTime": "19:00",
     "soldOut": true,
-    "ticketPriceRange": "Resale from $242",
+    "ticketPriceRange": "Resale from $238",
     "ticketAffiliatePath": "/tickets/moline-vibrant-arena-2026-09-26",
     "pricesConfirmed": false
   },

@@ -17,7 +17,7 @@ Ella Langley brings The Dandelion Tour to **Food City Center in Knoxville, TN on
 
 The ticketed start time is **7:00 PM**, with doors about an hour before — that's the reliable number to build your evening around.
 
-The bill is **Laci Kaye Booth** first, then **Kameron Marlowe** in the direct-support slot, then **Ella Langley**.
+The bill is **Laci Kaye Booth** first, then **Kameron Marlowe** in the direct-support slot, then **Ella Langley**. Seeing the Morgan Wallen cameo rumor going around? We dug into it — [here's what's actually confirmed for Knoxville](/news/2026-09-18-ella-langley-knoxville-morgan-wallen).
 
 We won't invent a minute for when Ella walks out. The listed 7:00 PM start is the confirmed number; the first opener goes on around then, and on recent three-act Dandelion nights Ella has closed the show after both openers. If the venue posts a full per-act running order closer to the date, this page and the [set-times page](/tour/knoxville-food-city-center-2026-09-24/set-times) will carry the real times.
 
@@ -37,10 +37,10 @@ For where to sit — lower bowl versus the upper level, and which sections get t
 
 ## Still need tickets?
 
-Update: Knoxville has **sold out at face value** — the primary site is showing resale only, starting around $128 as of this writing. On a sold-out arena date like this, resale prices swing hard in the final 48 hours, so it's worth watching rather than grabbing the first number you see. The [Knoxville show page](/tour/knoxville-food-city-center-2026-09-24) carries current resale listings; check it for live availability, and always compare the all-in checkout total before you buy.
+Good news: Knoxville is **not fully sold out**. The primary ticket site has shown face-value seats still available — most recently in the upper level, some with obstructed views, in the low-$100s to mid-$100s range — alongside higher resale listings. Availability and prices on a big arena date like this move day to day, so treat any single number as a snapshot. The [Knoxville show page](/tour/knoxville-food-city-center-2026-09-24) carries current listings; check it for live availability, and always compare the all-in checkout total before you buy.
 
 ## Can't make it?
 
-Knoxville sits at the front of the tour's late-September push — Ella heads to **[Columbus, OH](/tour/columbus-schottenstein-center-2026-09-25)** the next night on September 25 and **[Moline, IL](/tour/moline-vibrant-arena-2026-09-26)** on September 26. Both of those have now sold out at face as well, so all three nights are on resale only. Every date, with current status, is on the [tour hub](/tour).
+Knoxville sits at the front of the tour's late-September push — Ella heads to **[Columbus, OH](/tour/columbus-schottenstein-center-2026-09-25)** the next night on September 25 and **[Moline, IL](/tour/moline-vibrant-arena-2026-09-26)** on September 26. Columbus still has seats at face value; Moline has been running on resale only. Every date, with current status, is on the [tour hub](/tour).
 
 *Disclosure: Some links here are affiliate links. If you buy through them we may earn a small commission at no extra cost to you.*

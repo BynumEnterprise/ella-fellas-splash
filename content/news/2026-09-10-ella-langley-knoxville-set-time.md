@@ -37,10 +37,10 @@ For where to sit — lower bowl versus the upper level, and which sections get t
 
 ## Still need tickets?
 
-Good news: Knoxville is **not fully sold out**. The primary ticket site has shown face-value seats still available — most recently in the upper level, some with obstructed views, in the low-$100s to mid-$100s range — alongside higher resale listings. Availability and prices on a big arena date like this move day to day, so treat any single number as a snapshot. The [Knoxville show page](/tour/knoxville-food-city-center-2026-09-24) carries current listings; check it for live availability, and always compare the all-in checkout total before you buy.
+Update: Knoxville has **sold out at face value**. The primary allocation is gone and every remaining seat is coming through resale — most recently starting in the low-$100s for the upper level (some with obstructed views) and climbing from there. Resale prices on a big arena date swing hard in the final 48 hours, so treat any single number as a snapshot. The [Knoxville show page](/tour/knoxville-food-city-center-2026-09-24) carries current resale listings; check it for live availability, and always compare the all-in checkout total before you buy.
 
 ## Can't make it?
 
-Knoxville sits at the front of the tour's late-September push — Ella heads to **[Columbus, OH](/tour/columbus-schottenstein-center-2026-09-25)** the next night on September 25 and **[Moline, IL](/tour/moline-vibrant-arena-2026-09-26)** on September 26. Columbus still has seats at face value; Moline has been running on resale only. Every date, with current status, is on the [tour hub](/tour).
+Knoxville sits at the front of the tour's late-September push — Ella heads to **[Columbus, OH](/tour/columbus-schottenstein-center-2026-09-25)** the next night on September 25 and **[Moline, IL](/tour/moline-vibrant-arena-2026-09-26)** on September 26. Both of those have also sold out at face value and are running on resale only now. Every date, with current status, is on the [tour hub](/tour).
 
 *Disclosure: Some links here are affiliate links. If you buy through them we may earn a small commission at no extra cost to you.*

@@ -831,12 +831,13 @@
       "Laci Kaye Booth",
       "Kameron Marlowe"
     ],
-    "doorsTime": "18:00",
+    "doorsTime": "17:30",
     "showTime": "19:00",
     "soldOut": true,
     "ticketPriceRange": "Resale from $190",
     "pricesConfirmed": false,
-    "ticketAffiliatePath": "/tickets/columbus-schottenstein-center-2026-09-25"
+    "ticketAffiliatePath": "/tickets/columbus-schottenstein-center-2026-09-25",
+    "timesConfirmed": true
   },
   {
     "id": "moline-vibrant-arena-2026-09-26",
@@ -873,11 +874,12 @@
       "Kameron Marlowe",
       "Gabriella Rose"
     ],
-    "doorsTime": "18:00",
+    "doorsTime": "17:30",
     "showTime": "19:00",
     "soldOut": false,
     "ticketPriceRange": "Prices vary",
-    "ticketAffiliatePath": "/tickets/morrison-red-rocks-amphitheatre-2026-10-07"
+    "ticketAffiliatePath": "/tickets/morrison-red-rocks-amphitheatre-2026-10-07",
+    "timesConfirmed": true
   },
   {
     "id": "tulsa-bok-center-2026-10-09",

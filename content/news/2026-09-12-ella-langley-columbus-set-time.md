@@ -14,7 +14,7 @@ Ella Langley's Dandelion Tour rolls into Columbus on Friday, September 25 for a 
 
 ## Who plays when
 
-The ticketed start time is **7:00 PM**. The venue hasn't posted a minute-by-minute running order yet, so here's the honest version: doors open about an hour before the show, Laci Kaye Booth opens the night, Kameron Marlowe plays direct support, and Ella headlines. We won't print a made-up stage-time minute for Ella. The moment the Schottenstein Center posts a real schedule, the exact times go right here. If you want to catch every set, plan to be in your seat by 7.
+The ticketed start time is **7:00 PM**. The venue hasn't posted a minute-by-minute running order yet, so here's the honest version: doors open at 5:30 PM (about 90 minutes before the show), Laci Kaye Booth opens the night, Kameron Marlowe plays direct support, and Ella headlines. We won't print a made-up stage-time minute for Ella. The moment the Schottenstein Center posts a real schedule, the exact times go right here. If you want to catch every set, plan to be in your seat by 7.
 
 ## What she's been playing
 

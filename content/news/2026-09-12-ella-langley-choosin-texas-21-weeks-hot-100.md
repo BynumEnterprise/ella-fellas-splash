@@ -15,7 +15,7 @@ sources:
     url: "https://www.billboard.com/music/chart-beat/ella-langley-choosin-texas-song-of-the-summer-2026-1236335495/"
 ---
 
-*Update, September 23, 2026: it happened. "Choosin' Texas" passed Mariah Carey and now holds the [all-time Hot 100 record with 23 weeks at No. 1](/news/2026-09-23-ella-langley-choosin-texas-breaks-mariah-record). The run below is how it got there.*
+*Update, September 23, 2026: it happened. "Choosin' Texas" passed Mariah Carey and now holds the [all-time Hot 100 record with a 23rd week at No. 1](/news/2026-09-22-choosin-texas-23-weeks-breaks-hot-100-record). The run below is how it got there.*
 
 Ella Langley's "Choosin' Texas" has spent a 21st week at No. 1 on the Billboard Hot 100, on the chart dated September 12, 2026, and the number now carries a weight it didn't a month ago. Per [Billboard](https://www.billboard.com/lists/ella-langley-choosin-texas-hot-100-number-one-21st-week/), the song is within one week of tying the longest run at No. 1 in the chart's 67-year history — a record that has belonged to Mariah Carey's "All I Want for Christmas Is You" (22 weeks) and to nothing else. A country song about a girl picking a state over a person is one Monday away from the top line of the record book.
 

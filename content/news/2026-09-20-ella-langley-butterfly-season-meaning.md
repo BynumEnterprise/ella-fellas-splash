@@ -23,7 +23,7 @@ If *Dandelion* is a record about coming apart and putting yourself back together
 
 Langley uses the butterfly the way country writers have always used the seasons — as a way to say something about a person without saying it flat out. The transformation here is not something that happens *to* her; it is something she chooses. [Taste of Country reads the song as being about change and optimism](https://tasteofcountry.com/ella-langley-miranda-lambert-butterfly-season/), the willingness to grow even without a guarantee it will work out. That is a more grown-up idea than the usual "new me" anthem. A caterpillar does not get to keep any of its old life. Langley knows that, and she sings it anyway.
 
-Placed at the end of the tracklist, the song works as the album's resolution. *Dandelion* moves through romantic wreckage, imposter syndrome, burnout, and spiritual doubt, and "Butterfly Season" is the track where the narrator finally emerges on the other side. It is why the song lands harder in sequence than it does on shuffle — you have earned it by the time it arrives.
+Placed at the end of the tracklist, the song works as the album's resolution. *Dandelion* moves through romantic wreckage — the knowing surrender of ["We Know Us"](/news/2026-09-24-ella-langley-we-know-us-meaning) — imposter syndrome, burnout, and spiritual doubt, and "Butterfly Season" is the track where the narrator finally emerges on the other side. It is why the song lands harder in sequence than it does on shuffle — you have earned it by the time it arrives.
 
 ## The Co-Write: Same Day as "Choosin' Texas"
 

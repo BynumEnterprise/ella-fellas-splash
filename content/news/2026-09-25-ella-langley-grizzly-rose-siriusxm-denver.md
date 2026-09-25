@@ -1,7 +1,7 @@
 ---
 title: "Ella Langley's SiriusXM Small Stage Series: An Intimate Grizzly Rose Show in Denver (October 6)"
 slug: "2026-09-25-ella-langley-grizzly-rose-siriusxm-denver"
-publishedAt: "2026-09-25T12:30:00-05:00"
+publishedAt: "2026-09-25"
 category: "news"
 excerpt: "Ella Langley is playing SiriusXM's Small Stage Series at Denver's Grizzly Rose on October 6, the night before Red Rocks. Here's how to win your way in before the September 29 deadline, and when to hear the full set on The Highway."
 heroPhoto: "club-blue-light"

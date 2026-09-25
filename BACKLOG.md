@@ -7,6 +7,7 @@ Weekly SEO + analytics report jobs APPEND recommendations here. The daily conten
 Format: `- [ ] YYYY-MM-DD <source-job>: <action>` → mark `- [x] done YYYY-MM-DD (commit <sha>)`
 
 ## Open
+- publish-verifier 2026-09-24: Knoxville setlist RECOVERED (17 songs, commit 842011c, setlist.fm 5372cbb1) — night-of setlist-watch missed the append (2nd time in a row after Jacksonville 9/19); recap ✓, deploy READY; pre-show 10-day: Columbus 9/25 ready ✓, Moline 9/26 ready ✓
 - preshow-seo 2026-09-25: published Tulsa (Oct 9 BOK Center) set-time preview + fixed Tulsa opener order (Laci→Kameron last); 3 covered shows (Columbus/Moline/Red Rocks) swept, no drift; AXS/TM inventory unreadable headless (403), no soldOut/stage-time changes.
 - [x] done 2026-09-25 (same commit as today's post) daily-news: Freshness refresh — added the Nashville Songwriter Awards "Song of the Year" win (Sept 22, 2026, sourced to Billboard) to the flagship /news/2026-09-22-choosin-texas-23-weeks-breaks-hot-100-record post, keeping the site's top milestone page current with the newest accolade.
 - setlist-watch 2026-09-25: Knoxville 9/24 (Food City Center) setlist NOT shipped — no credible source ~3h post-show. setlist.fm curl bot-challenged (HTTP 202) + browser access declined this run; no setlist.fm show page indexed yet; WebSearch returned only a generic tour-preview with unverifiable guests (Riley Green/Miranda Lambert), not published. Zero-fabrication upheld. Retry next run.

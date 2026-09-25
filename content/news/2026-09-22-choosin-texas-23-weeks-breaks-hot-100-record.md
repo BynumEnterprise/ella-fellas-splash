@@ -11,6 +11,8 @@ sources:
     url: "https://variety.com/2026/music/news/ella-langley-breaks-record-choosin-texas-weeks-chart-mariah-1236871292/"
   - title: "Ella Langley's 'Choosin' Texas' Is the Longest-Running Number One In Hot 100 History (The Hollywood Reporter)"
     url: "https://www.hollywoodreporter.com/music/music-news/ella-langley-choosin-texas-breaks-billboard-hot-100-record-1236707403/"
+  - title: "Ella Langley, Riley Green, Vince Gill Among Top Honorees at Nashville Songwriters Awards (Billboard)"
+    url: "https://www.billboard.com/music/awards/riley-green-ella-langley-nashville-songwriters-awards-1236345315/"
 ---
 
 Last week we were writing about a tie. This week we get to write about a record. "Choosin' Texas" has logged its **23rd week at No. 1 on the Billboard Hot 100**, and that number matters more than any we've typed all year: it makes Ella Langley's smash the longest-running No. 1 in the entire history of the chart. She's no longer sharing the top of the mountain with Mariah Carey — she's standing on it alone.
@@ -23,7 +25,7 @@ Think about the company she just passed. To get here, "Choosin' Texas" had to ou
 
 ## A Song Built to Last
 
-None of this happened by accident. Langley wrote "Choosin' Texas" with Miranda Lambert, Luke Dick and Joybeth Taylor, and released it on October 17, 2025 as the lead single from [Dandelion](/news/2026-06-29-ella-langley-dandelion-meaning). Nearly a year later it's still the biggest song in the country — [The Hollywood Reporter](https://www.hollywoodreporter.com/music/music-news/ella-langley-choosin-texas-breaks-billboard-hot-100-record-1236707403/) notes it's already been certified six-times platinum by the RIAA, and it was named Billboard's Song of the Summer for 2026 along the way.
+None of this happened by accident. Langley wrote "Choosin' Texas" with Miranda Lambert, Luke Dick and Joybeth Taylor, and released it on October 17, 2025 as the lead single from [Dandelion](/news/2026-06-29-ella-langley-dandelion-meaning). Nearly a year later it's still the biggest song in the country — [The Hollywood Reporter](https://www.hollywoodreporter.com/music/music-news/ella-langley-choosin-texas-breaks-billboard-hot-100-record-1236707403/) notes it's already been certified six-times platinum by the RIAA, and it was named Billboard's Song of the Summer for 2026 along the way. The honors have kept coming, too: on September 22, 2026, "Choosin' Texas" was named Song of the Year at the Nashville Songwriter Awards at the Ryman Auditorium, a writers' award shared by Langley, Lambert, Dick and Taylor, [per Billboard](https://www.billboard.com/music/awards/riley-green-ella-langley-nashville-songwriters-awards-1236345315/).
 
 If you've followed this run with us — from the [10-week milestone](/news/2026-05-30-choosin-texas-tenth-week-hot-100) through the [20-week record](/news/2026-09-08-choosin-texas-20-weeks-hot-100-record) — you know how surreal this feels. We keep thinking there's a ceiling. There isn't one yet.
 

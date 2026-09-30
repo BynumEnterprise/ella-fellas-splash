@@ -1036,6 +1036,20 @@
     "ticketAffiliatePath": "/tickets/saint-paul-grand-casino-arena-2026-10-31"
   },
   {
+    "id": "georgetown-two-step-inn-festival-2027-04-18",
+    "date": "2027-04-18",
+    "city": "Georgetown",
+    "state": "TX",
+    "venue": "San Gabriel Park",
+    "venueAddress": "445 E Morrow St, Georgetown, TX 78626",
+    "tour": "Two Step Inn",
+    "tourType": "festival",
+    "openers": [],
+    "soldOut": false,
+    "ticketPriceRange": "Festival pass",
+    "ticketAffiliatePath": "/tickets/georgetown-two-step-inn-festival-2027-04-18"
+  },
+  {
     "id": "virginia-beach-patriotic-festival-2027-05-29",
     "date": "2027-05-29",
     "city": "Virginia Beach",

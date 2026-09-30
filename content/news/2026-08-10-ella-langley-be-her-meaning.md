@@ -33,7 +33,7 @@ That reframing changes how the whole song hits. Those specific images — the si
 
 Plenty of country songs promise transformation with a big chorus and a key change. "Be Her" does something harder and quieter: it admits that the change has not happened yet. The narrator is still in the gap, still wanting, and Langley leaves her there instead of tying a bow on it. That honesty is the reason the song has stuck with people long after its release — it does not pretend self-improvement is a finished project.
 
-It has also aged into one of her signatures. This summer Langley has been [everywhere on the Billboard charts](/news/2026-08-08-ella-langley-country-hot-100-top-5-sweep), with "Choosin' Texas" holding No. 1 for months and "Be Her" among the hits carrying her name up the Hot 100. Heard next to a chart-monster like ["Choosin' Texas,"](/songs/choosin-texas) "Be Her" is the reminder of what makes her writing land in the first place: she tells the truth about wanting something she does not have yet.
+It has also aged into one of her signatures. This summer Langley has been [everywhere on the Billboard charts](/news/2026-08-08-ella-langley-country-hot-100-top-5-sweep), with "Choosin' Texas" holding No. 1 for months and "Be Her" among the hits carrying her name up the Hot 100 — and by that fall, "Be Her" had become [the best-selling song released in all of 2026](/news/2026-09-30-ella-langley-be-her-best-selling-song-2026). Heard next to a chart-monster like ["Choosin' Texas,"](/songs/choosin-texas) "Be Her" is the reminder of what makes her writing land in the first place: she tells the truth about wanting something she does not have yet.
 
 ## Where to Hear It
 

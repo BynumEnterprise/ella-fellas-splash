@@ -912,8 +912,8 @@
     "tour": "The Dandelion Tour",
     "tourType": "headlining",
     "openers": [
-      "Kameron Marlowe",
-      "Laci Kaye Booth"
+      "Laci Kaye Booth",
+      "Kameron Marlowe"
     ],
     "doorsTime": "18:00",
     "showTime": "19:00",
@@ -932,11 +932,11 @@
     "tour": "The Dandelion Tour",
     "tourType": "headlining",
     "openers": [
-      "Kameron Marlowe",
-      "Laci Kaye Booth"
+      "Laci Kaye Booth",
+      "Kameron Marlowe"
     ],
     "doorsTime": "18:00",
-    "showTime": "19:00",
+    "showTime": "19:10",
     "soldOut": false,
     "ticketPriceRange": "Prices vary",
     "ticketAffiliatePath": "/tickets/los-angeles-greek-theatre-2026-10-13"
@@ -952,11 +952,11 @@
     "tour": "The Dandelion Tour",
     "tourType": "headlining",
     "openers": [
-      "Kameron Marlowe",
-      "Laci Kaye Booth"
+      "Laci Kaye Booth",
+      "Kameron Marlowe"
     ],
     "doorsTime": "18:00",
-    "showTime": "19:00",
+    "showTime": "19:10",
     "soldOut": false,
     "ticketPriceRange": "Prices vary",
     "ticketAffiliatePath": "/tickets/los-angeles-greek-theatre-2026-10-14"

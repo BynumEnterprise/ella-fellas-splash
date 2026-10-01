@@ -7,6 +7,7 @@ Weekly SEO + analytics report jobs APPEND recommendations here. The daily conten
 Format: `- [ ] YYYY-MM-DD <source-job>: <action>` → mark `- [x] done YYYY-MM-DD (commit <sha>)`
 
 ## Open
+- publish-verifier 2026-10-01: no show 9/30; daily news post present (choosin-texas), home 200; pre-show 10-day: Red Rocks 10/7 ready ✓, Tulsa 10/9 ready ✓, Lubbock 10/10 ready ✓ (pages 200, times+openers match, CJ money link ✓, set-time preview ✓)
 - preshow-seo 2026-09-30: all 5 in-window shows already covered (Red Rocks 10/7, Tulsa 10/9, Lubbock 10/10, LA Greek 10/13+10/14); lineups+showtimes reverified OK vs venue/AXS/JamBase; zero drift; AXS(all 5)+BOK(406) inventory unreadable headless & browser pane declined, soldOut flags unchanged
 - preshow-seo 2026-09-30: shipped 3 previews (Lubbock Oct 10 + Greek LA Oct 13/14); fixed Greek showTime 7:00->7:10 (JamBase+AXS) & opener order Laci->Kameron on Lubbock/Greek; Tulsa/Lubbock/Greek TM+AXS inventory unreadable headless (no soldOut flips)
 - publish-verifier 2026-09-29: no show; daily sanity ✓ (home+news 200, today's news posts present); pre-show 10-day — Red Rocks 10/7 ready ✓, Tulsa 10/9 ready ✓, Lubbock 10/10 pages+times+CJ-link ✓ but set-time preview MISSING (reported for preshow-seo, not authored)

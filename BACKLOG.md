@@ -7,6 +7,7 @@ Weekly SEO + analytics report jobs APPEND recommendations here. The daily conten
 Format: `- [ ] YYYY-MM-DD <source-job>: <action>` → mark `- [x] done YYYY-MM-DD (commit <sha>)`
 
 ## Open
+- publish-verifier 2026-10-02: no show 2026-10-01 (quiet day); daily sanity ✓ (news post 2026-10-02 present, ellafellas.com 200); pre-show 10-day: Red Rocks 10/7 ready ✓, Tulsa 10/9 ready ✓, Lubbock 10/10 ready ✓ (pages 200, times+openers match JSON, CJ/TicketNetwork deep links present, set-time previews published). No email sent.
 - preshow-seo 2026-10-02: published Salt Lake City / Redwest Festival preview (Oct 16); 5 shows already covered; no JSON changes (all door/show times matched); TM/AXS/BOK inventory unreadable headless — no sold-out flips.
 - preshow-seo 2026-10-01: 5 in-window shows all covered; Red Rocks + Greek door/show times reverified against venue pages (match); no running orders posted yet; Lubbock sold-out flagged but TM 401 / AXS 403 unreadable headless, left unchanged for desktop confirm; no push.
 - publish-verifier 2026-10-01: no show 9/30; daily news post present (choosin-texas), home 200; pre-show 10-day: Red Rocks 10/7 ready ✓, Tulsa 10/9 ready ✓, Lubbock 10/10 ready ✓ (pages 200, times+openers match, CJ money link ✓, set-time preview ✓)

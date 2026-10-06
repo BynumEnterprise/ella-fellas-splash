@@ -7,6 +7,7 @@ Weekly SEO + analytics report jobs APPEND recommendations here. The daily conten
 Format: `- [ ] YYYY-MM-DD <source-job>: <action>` → mark `- [x] done YYYY-MM-DD (commit <sha>)`
 
 ## Open
+- preshow-seo 2026-10-06: 6 in-window shows (Red Rocks 10/7, Tulsa 10/9, Lubbock 10/10, Greek LA 10/13+10/14, RedWest SLC 10/16) all already covered; sweeps found zero drift. Lubbock TTU page readable = NOT sold out (show 7:00pm); Red Rocks AXS, Tulsa TM/BOK, Greek TM all JS-shell/bot-walled = TM inventory not readable headless, soldOut left as-is; RedWest set times TBA. No JSON/content changes, no email.
 - publish-verifier 2026-10-05: no show yesterday; daily sanity OK (home 200, today news post present); pre-show 10-day all ready ✓ — Red Rocks 10/7, Tulsa 10/9, Lubbock 10/10, LA Greek 10/13-14, SLC RedWest 10/16 (all pages 200, times/openers match, CJ money link present, set-time previews published)
 - [ ] 2026-10-06 seo-report: Drop 'choosin texas meaning' from the priority-term list and replace it with 'be her ella langley meaning' (163 impr) and 'dandelion ella langley meaning' (92 impr) — why: all choosin-texas meaning variants together drew ~5 impressions and 0 clicks this week, so the demand assumption behind the target is wrong.
 - [ ] 2026-10-06 seo-report: Trace the new GA4 Cross-network channel — 137 sessions this week vs 0 prior, and nothing in the plan calls for paid traffic — why: an unexplained 8% of sessions could be mis-tagged internal/affiliate referrals polluting the organic baseline.

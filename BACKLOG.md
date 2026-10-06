@@ -7,6 +7,7 @@ Weekly SEO + analytics report jobs APPEND recommendations here. The daily conten
 Format: `- [ ] YYYY-MM-DD <source-job>: <action>` → mark `- [x] done YYYY-MM-DD (commit <sha>)`
 
 ## Open
+- publish-verifier 2026-10-05: no show yesterday; daily sanity OK (home 200, today news post present); pre-show 10-day all ready ✓ — Red Rocks 10/7, Tulsa 10/9, Lubbock 10/10, LA Greek 10/13-14, SLC RedWest 10/16 (all pages 200, times/openers match, CJ money link present, set-time previews published)
 - [ ] 2026-10-06 seo-report: Drop 'choosin texas meaning' from the priority-term list and replace it with 'be her ella langley meaning' (163 impr) and 'dandelion ella langley meaning' (92 impr) — why: all choosin-texas meaning variants together drew ~5 impressions and 0 clicks this week, so the demand assumption behind the target is wrong.
 - [ ] 2026-10-06 seo-report: Trace the new GA4 Cross-network channel — 137 sessions this week vs 0 prior, and nothing in the plan calls for paid traffic — why: an unexplained 8% of sessions could be mis-tagged internal/affiliate referrals polluting the organic baseline.
 - [ ] 2026-10-06 seo-report: Rewrite /tour to lead with a dated above-the-fold answer and put the next show's date + city in the title tag — why: 7,275 impressions at 1.6% CTR and pos 7.3 is the biggest single-page click leak on the site, and 'ella langley tour' (1,250 impr, pos 9.5) plus 'ella langley tour dates 2026' (805, pos 8.5) are both answer-intent queries hitting a table.

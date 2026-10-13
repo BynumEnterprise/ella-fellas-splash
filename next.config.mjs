@@ -81,6 +81,7 @@ const nextConfig = {
       { source: "/tour/oxford-sjb-pavilion-2026-09-17", destination: "/tour/oxford-the-pavilion-ole-miss-2026-09-17", permanent: true },
       { source: "/tour/st.-paul-grand-casino-arena-2026-10-31", destination: "/tour/saint-paul-grand-casino-arena-2026-10-31", permanent: true },
       { source: "/about/biography", destination: "/about", permanent: true },
+      { source: "/news/2026-07-18-ella-langley-tampa-recap-setlist", destination: "/tour", permanent: true }, // fabricated recap: Ella did not play Tampa 7/17
       { source: "/news/2026-09-11-muscadine-bloodline-joins-ella-langley-tour", destination: "/openers", permanent: true },
       { source: "/news/2026-05-26-riley-green-audition-dont-mind-if-i-do", destination: "/news", permanent: true },
       // Legacy /tickets/<id> (GSC: 27 x 404). Known tour ids -> their show page.

@@ -43,9 +43,28 @@ const nextConfig = {
       { source: "/tours", destination: "/tour", permanent: true },
       { source: "/favicon.ico", destination: "/icon.png", permanent: true },
       // 301s for removed pages still in Google's index (GSC 404 report, Jul 2026).
-      // (Chicago 5/29, Nashville 7/10, Tampa 7/17, Arlington 7/24 were removed from
-      // this list Oct 2026: those shows are back in data/tour-dates.json with live
-      // /tour and /setlist pages, and the redirect was hiding them.)
+      // Tour-data audit (Oct 13 2026, vs Wallen's official Still The Problem schedule +
+      // setlist.fm): Calgary 7/10, Clemson 6/27, Chicago 6/20 and Baltimore 7/18 are
+      // real shows and live pages again. Rows for shows Ella never played were
+      // removed (-> /tour); misdated Wallen rows moved to the real date (-> new id).
+      { source: "/tour/chicago-soldier-field-2026-05-29", destination: "/tour/chicago-soldier-field-2026-06-20", permanent: true },
+      { source: "/tour/chicago-soldier-field-2026-05-29/set-times", destination: "/tour/chicago-soldier-field-2026-06-20/set-times", permanent: true },
+      { source: "/tour/chicago-soldier-field-2026-05-29/setlist", destination: "/tour/chicago-soldier-field-2026-06-20/setlist", permanent: true },
+      { source: "/tour/pittsburgh-acrisure-stadium-2026-06-12", destination: "/tour/pittsburgh-acrisure-stadium-2026-06-06", permanent: true },
+      { source: "/tour/pittsburgh-acrisure-stadium-2026-06-12/set-times", destination: "/tour/pittsburgh-acrisure-stadium-2026-06-06/set-times", permanent: true },
+      { source: "/tour/pittsburgh-acrisure-stadium-2026-06-12/setlist", destination: "/tour/pittsburgh-acrisure-stadium-2026-06-06/setlist", permanent: true },
+      { source: "/tour/east-lansing-spartan-stadium-2026-05-22", destination: "/tour", permanent: true },
+      { source: "/tour/east-lansing-spartan-stadium-2026-05-22/:path*", destination: "/tour", permanent: true },
+      { source: "/tour/foxborough-gillette-stadium-2026-06-05", destination: "/tour", permanent: true },
+      { source: "/tour/foxborough-gillette-stadium-2026-06-05/:path*", destination: "/tour", permanent: true },
+      { source: "/tour/atlanta-mercedes-benz-stadium-2026-06-26", destination: "/tour", permanent: true },
+      { source: "/tour/atlanta-mercedes-benz-stadium-2026-06-26/:path*", destination: "/tour", permanent: true },
+      { source: "/tour/nashville-nissan-stadium-2026-07-10", destination: "/tour", permanent: true },
+      { source: "/tour/nashville-nissan-stadium-2026-07-10/:path*", destination: "/tour", permanent: true },
+      { source: "/tour/tampa-raymond-james-stadium-2026-07-17", destination: "/tour", permanent: true },
+      { source: "/tour/tampa-raymond-james-stadium-2026-07-17/:path*", destination: "/tour", permanent: true },
+      { source: "/tour/arlington-att-stadium-2026-07-24", destination: "/tour", permanent: true },
+      { source: "/tour/arlington-att-stadium-2026-07-24/:path*", destination: "/tour", permanent: true },
       { source: "/shop/ww-trucker-cap-low-pro", destination: "/shop", permanent: true },
       { source: "/shop/ec-foldable-rain-jacket", destination: "/shop", permanent: true },
       // 301s from GSC 404 report (weekly SEO run, Sep 8 2026)
@@ -53,9 +72,6 @@ const nextConfig = {
       { source: "/tour/moline-vibrant-arena-at-the-mark-2026-09-26", destination: "/tour/moline-vibrant-arena-2026-09-26", permanent: true },
       { source: "/tour/moline-vibrant-arena-at-the-mark-2026-09-26/set-times", destination: "/tour/moline-vibrant-arena-2026-09-26/set-times", permanent: true },
       { source: "/tour/moline-vibrant-arena-at-the-mark-2026-09-26/setlist", destination: "/tour/moline-vibrant-arena-2026-09-26/setlist", permanent: true },
-      { source: "/tour/cowboys-music-festival-2026-07-10", destination: "/tour", permanent: true },
-      { source: "/tour/cowboys-music-festival-2026-07-10/setlist", destination: "/setlists", permanent: true },
-      { source: "/tour/baltimore-mt-bank-stadium-2026-07-18", destination: "/tour", permanent: true },
       { source: "/shop/wfw-felt-wide-brim-hat", destination: "/shop", permanent: true },
       // Consolidate duplicate "Ella Fellas" explainers into the definitive page (Jul 2026)
       { source: "/guides/what-are-ella-fellas", destination: "/what-is-an-ella-fella", permanent: true },
@@ -64,8 +80,6 @@ const nextConfig = {
       { source: "/tour/state-college-bryce-jordan-center-2026-09-11", destination: "/tour/university-park-bryce-jordan-center-2026-09-11", permanent: true },
       { source: "/tour/oxford-sjb-pavilion-2026-09-17", destination: "/tour/oxford-the-pavilion-ole-miss-2026-09-17", permanent: true },
       { source: "/tour/st.-paul-grand-casino-arena-2026-10-31", destination: "/tour/saint-paul-grand-casino-arena-2026-10-31", permanent: true },
-      { source: "/tour/chicago-soldier-field-2026-06-20", destination: "/tour", permanent: true },
-      { source: "/tour/clemson-memorial-stadium-2026-06-27", destination: "/tour", permanent: true },
       { source: "/about/biography", destination: "/about", permanent: true },
       { source: "/news/2026-09-11-muscadine-bloodline-joins-ella-langley-tour", destination: "/openers", permanent: true },
       { source: "/news/2026-05-26-riley-green-audition-dont-mind-if-i-do", destination: "/news", permanent: true },

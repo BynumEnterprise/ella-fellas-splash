@@ -240,15 +240,18 @@
    "Dandelion",
    "I Gotta Quit",
    "Bottom of Your Boots",
-   "I Can't Love You Anymore (Morgan Wallen cover)",
+   "I Can't Love You Anymore",
+   "Here for the Party (Gretchen Wilson cover)",
    "Girl You're Taking Home",
    "20-20",
    "You & Me Time",
-   "Here for the Party (Gretchen Wilson cover)",
    "Last Call for Us",
+   "Broken",
    "Somethin' Simple",
    "Butterfly Season",
-   "Broken",
+   "Dreams (Fleetwood Mac cover, with Laci Kaye Booth)",
+   "Strangers (Kameron Marlowe cover, with Kameron Marlowe)",
+   "Wish I Didn't Know Now (Toby Keith cover)",
    "Be Her",
    "you look like you love me",
    "Loving Life Again",
@@ -257,6 +260,107 @@
   ],
   "source": "https://www.setlist.fm/setlist/ella-langley/2026/thompson-boling-arena-at-food-city-center-knoxville-tn-5372cbb1.html",
   "recordedAt": "2026-09-24",
-  "notes": "Recovery append by publish-verifier on 2026-09-25: night-of setlist-watch did not write this entry, though the recap post (2026-09-25-ella-langley-knoxville-recap-setlist) published with the same verified setlist.fm capture. 17-song headline set; no encore confirmed at time of capture. Order per the setlist.fm capture cited in the Knoxville recap."
+  "notes": "Corrected 2026-10-13: the setlist.fm page has since been filled in by more attendees. It now shows a 20-song main set (adding \"Dreams\" with Laci Kaye Booth, \"Strangers\" with Kameron Marlowe and Toby Keith's \"Wish I Didn't Know Now\") plus a 3-song encore. The original 17-song capture from 2026-09-25 was incomplete. Walk-in tape (\"Froggy Went a Courtin'\") not counted.",
+  "encore": [
+   "Speaking Terms",
+   "paint the town blue",
+   "That's Why We Fight"
+  ]
+ },
+ {
+  "showId": "columbus-schottenstein-center-2026-09-25",
+  "songs": [
+   "Dandelion",
+   "I Gotta Quit",
+   "Bottom of Your Boots",
+   "I Can't Love You Anymore",
+   "Here for the Party (Gretchen Wilson cover)",
+   "Girl You're Taking Home",
+   "20-20",
+   "You & Me Time",
+   "Last Call for Us",
+   "Broken",
+   "Somethin' Simple",
+   "Butterfly Season",
+   "Dreams (Fleetwood Mac cover, with Laci Kaye Booth)",
+   "Strangers (Kameron Marlowe cover, with Kameron Marlowe)",
+   "Be Her",
+   "you look like you love me",
+   "Loving Life Again",
+   "Choosin' Texas",
+   "weren't for the wind"
+  ],
+  "encore": [
+   "Wish I Didn't Know Now (Toby Keith cover)",
+   "That's Why We Fight"
+  ],
+  "source": "https://www.setlist.fm/setlist/ella-langley/2026/value-city-arena-columbus-oh-5b72cbac.html",
+  "recordedAt": "2026-10-13",
+  "notes": "Catch-up append 2026-10-13 (publishing was frozen Oct 6-13). Per setlist.fm: doors 5:30 PM, Ella's set 9:00-10:55 PM. Walk-in tape (BigXthaPlug's \"Hell at Night\" and the traditional \"Froggy Went a Courtin'\") not counted. Laci Kaye Booth guested on \"Dreams\", Kameron Marlowe on \"Strangers\". 19-song main set plus 2-song encore."
+ },
+ {
+  "showId": "moline-vibrant-arena-2026-09-26",
+  "songs": [
+   "Dandelion",
+   "I Gotta Quit",
+   "Bottom of Your Boots",
+   "I Can't Love You Anymore",
+   "paint the town blue",
+   "Girl You're Taking Home",
+   "20-20",
+   "You & Me Time",
+   "Broken",
+   "Here for the Party (Gretchen Wilson cover)",
+   "Last Call for Us",
+   "Somethin' Simple",
+   "Butterfly Season",
+   "Dreams (Fleetwood Mac cover, with Laci Kaye Booth)",
+   "Strangers (Kameron Marlowe cover, with Kameron Marlowe)",
+   "Speaking Terms",
+   "Be Her",
+   "you look like you love me",
+   "Loving Life Again",
+   "Choosin' Texas",
+   "weren't for the wind"
+  ],
+  "encore": [
+   "Wish I Didn't Know Now (Toby Keith cover)",
+   "That's Why We Fight"
+  ],
+  "source": "https://www.setlist.fm/setlist/ella-langley/2026/vibrant-arena-at-the-mark-moline-il-4b72cb9e.html",
+  "recordedAt": "2026-10-13",
+  "notes": "Catch-up append 2026-10-13 (publishing was frozen Oct 6-13). Walk-in tape (\"Hell at Night\", \"Froggy Went a Courtin'\") not counted. \"paint the town blue\" and \"Speaking Terms\" moved into the main set. Laci Kaye Booth guested on \"Dreams\", Kameron Marlowe on \"Strangers\". 21-song main set plus 2-song encore."
+ },
+ {
+  "showId": "morrison-red-rocks-amphitheatre-2026-10-07",
+  "songs": [
+   "Dandelion",
+   "I Gotta Quit",
+   "Bottom of Your Boots",
+   "I Can't Love You Anymore",
+   "paint the town blue",
+   "Girl You're Taking Home",
+   "20-20",
+   "You & Me Time",
+   "Broken",
+   "Here for the Party (Gretchen Wilson cover)",
+   "Last Call for Us",
+   "Somethin' Simple",
+   "Butterfly Season (with Gabriella Rose)",
+   "Strangers (Kameron Marlowe cover, with Kameron Marlowe)",
+   "Speaking Terms",
+   "Be Her",
+   "you look like you love me",
+   "Loving Life Again",
+   "Choosin' Texas",
+   "weren't for the wind"
+  ],
+  "encore": [
+   "Wish I Didn't Know Now (Toby Keith cover)",
+   "That's Why We Fight"
+  ],
+  "source": "https://www.setlist.fm/setlist/ella-langley/2026/red-rocks-amphitheatre-morrison-co-4b72cb92.html",
+  "recordedAt": "2026-10-13",
+  "notes": "Catch-up append 2026-10-13. Ella's Red Rocks headline debut. Per setlist.fm: doors 5:30 PM, Ella's set 9:00-10:45 PM. Order matches Westword's review (https://www.westword.com/music/review-ella-langley-red-rocks-40945737/), which counted 22 songs. Gabriella Rose joined for \"Butterfly Season\", Kameron Marlowe for \"Strangers\". No \"Dreams\" (Laci Kaye Booth was not on this bill). Walk-in tape not counted."
  }
 ]

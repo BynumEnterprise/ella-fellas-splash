@@ -897,9 +897,12 @@
     ],
     "doorsTime": "18:00",
     "showTime": "19:00",
-    "soldOut": false,
+    "soldOut": true,
     "ticketPriceRange": "Prices vary",
-    "ticketAffiliatePath": "/tickets/tulsa-bok-center-2026-10-09"
+    "ticketAffiliatePath": "/tickets/tulsa-bok-center-2026-10-09",
+    "canceled": true,
+    "canceledReason": "Canceled hours before showtime over a reported security threat; Tulsa police said they found no credible threat. Refund details to come from the BOK Center.",
+    "canceledSource": "https://www.billboard.com/music/country/ella-langley-concert-canceled-tulsa-oklahoma-security-threat-1236358477/"
   },
   {
     "id": "lubbock-united-supermarkets-arena-2026-10-10",

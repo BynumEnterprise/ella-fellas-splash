@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { redirect } from "next/navigation";
 import { getAllGuideContent, getAllNews } from "@/lib/content";
 import { getAllSongs, getAllComparisons, getAllTourDates } from "@/lib/data";
 import { TrackOnView } from "@/components/TrackOnView";
@@ -238,6 +239,13 @@ export default async function SearchPage({
   const rawQuery = (raw ?? "").trim();
   const query = rawQuery.toLowerCase();
 
+  // EMPTY-SEARCH NOISE FIX: GA4 Enhanced Measurement fires view_search_results
+  // on ANY page_view whose URL carries a `q` param, even `?q=` / `?q=+`. An
+  // empty submit of the on-page form (or a bot hitting /search?q=) therefore
+  // logged a "search" with a blank term. Collapse those to the bare /search URL
+  // so only real queries ever reach GA4 with a q param.
+  if (raw !== undefined && !rawQuery) redirect("/search");
+
   const groups = query ? buildGroups(query) : [];
   const totalResults = groups.reduce((n, g) => n + g.results.length, 0);
 
@@ -263,6 +271,8 @@ export default async function SearchPage({
         <input
           type="search"
           name="q"
+          required
+          minLength={1}
           defaultValue={rawQuery}
           placeholder="Search guides, songs, tour stops, shop…"
           aria-label="Search Ella Fellas"
@@ -275,6 +285,20 @@ export default async function SearchPage({
           Search
         </button>
       </form>
+
+      {/* Explicit GA4 search signal for REAL queries only (with result count).
+          Recommended-event name `search`, distinct from Enhanced Measurement's
+          view_search_results so the two never double-count. */}
+      {rawQuery && (
+        <TrackOnView
+          key={query}
+          event="search"
+          params={{
+            search_term: query.slice(0, 100),
+            search_results: totalResults,
+          }}
+        />
+      )}
 
       {/* Empty query */}
       {!rawQuery && (

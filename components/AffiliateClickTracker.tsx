@@ -121,6 +121,49 @@ function networkForHost(host: string): string | null {
   return null;
 }
 
+function slugify(v: string): string {
+  return v
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "_")
+    .replace(/^_+|_+$/g, "")
+    .slice(0, 40);
+}
+
+/**
+ * WHICH MODULE earned the click — never "unknown".
+ *
+ * 1. The link's own data-affiliate-source (every AffiliateLink sets it).
+ * 2. The nearest ancestor carrying data-affiliate-source or data-source, so a
+ *    whole widget can be tagged once instead of every link inside it.
+ * 3. Heuristic fallback for raw <a> tags in markdown/hand-written pages:
+ *    the enclosing landmark (header/nav/footer/aside) or an ancestor id, joined
+ *    with the page section from the pathname, e.g. "auto_guides_body" or
+ *    "auto_tour_footer". Prefixed "auto_" so they're easy to find and tag properly.
+ */
+function usable(v: string | undefined): v is string {
+  return Boolean(v) && v !== "unknown";
+}
+
+function linkSourceFor(anchor: HTMLAnchorElement): string {
+  const own = usable(anchor.dataset.affiliateSource) ? anchor.dataset.affiliateSource : anchor.dataset.source;
+  if (usable(own)) return own;
+  let el: HTMLElement | null | undefined = anchor.parentElement?.closest<HTMLElement>("[data-affiliate-source],[data-source]");
+  while (el) {
+    const v = usable(el.dataset.affiliateSource) ? el.dataset.affiliateSource : el.dataset.source;
+    if (usable(v)) return v;
+    el = el.parentElement?.closest<HTMLElement>("[data-affiliate-source],[data-source]");
+  }
+  const seg = slugify(window.location.pathname.split("/").filter(Boolean)[0] || "home") || "home";
+  const landmark = anchor.closest("header,nav,footer,aside");
+  if (landmark) return `auto_${seg}_${landmark.tagName.toLowerCase()}`;
+  const withId = anchor.parentElement?.closest<HTMLElement>("[id]:not(main):not(body)");
+  if (withId && withId.id && withId.id !== "main-content") {
+    const id = slugify(withId.id);
+    if (id) return `auto_${seg}_${id}`;
+  }
+  return `auto_${seg}_body`;
+}
+
 export function AffiliateClickTracker() {
   useEffect(() => {
     function onClick(e: MouseEvent) {
@@ -154,7 +197,7 @@ export function AffiliateClickTracker() {
           // data-affiliate-source; until now it was written to the DOM and thrown
           // away, so a ticket click from the hero and one from the planner were
           // indistinguishable. This is the number that tells us what to build more of.
-          const source = anchor.dataset.affiliateSource || "unknown";
+          const source = linkSourceFor(anchor);
           window.gtag("event", "affiliate_click", {
             network,
             destination,

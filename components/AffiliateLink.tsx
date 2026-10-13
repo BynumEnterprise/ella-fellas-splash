@@ -9,7 +9,10 @@ interface Props {
   ariaLabel?: string;
 }
 
-export function AffiliateLink({ href, source = "unknown", children, className, ariaLabel }: Props) {
+// No default source: an untagged link used to be stamped "unknown", which won
+// over AffiliateClickTracker's ancestor/section fallback. Omit the attribute and
+// let the tracker derive a real placement instead.
+export function AffiliateLink({ href, source, children, className, ariaLabel }: Props) {
   return (
     <a
       href={href}
@@ -17,7 +20,7 @@ export function AffiliateLink({ href, source = "unknown", children, className, a
       rel="noopener nofollow sponsored"
       aria-label={ariaLabel}
       className={className}
-      data-affiliate-source={source}
+      data-affiliate-source={source && source !== "unknown" ? source : undefined}
     >
       {children}
     </a>

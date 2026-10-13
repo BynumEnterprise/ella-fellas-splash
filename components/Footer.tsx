@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
+import { shopUrl } from "@/lib/merch-store";
 
 export function Footer() {
   return (
@@ -53,8 +54,20 @@ export function Footer() {
             <li><Link href="/songs" className="hover:text-primary">Songs</Link></li>
             <li><Link href="/guides" className="hover:text-primary">Guides</Link></li>
             <li><Link href="/shop" className="hover:text-primary">Shop</Link></li>
-            <li><Link href="/about" className="hover:text-primary">About this site</Link></li>
+            <li>
+              <a
+                href={shopUrl("/", "footer_shop")}
+                target="_blank"
+                rel="noopener"
+                data-affiliate-source="footer_shop"
+                className="hover:text-primary"
+              >
+                Ella Fellas merch store
+              </a>
+            </li>
+            <li><Link href="/about" className="hover:text-primary">About &amp; editorial policy</Link></li>
             <li><Link href="/contact" className="hover:text-primary">Contact us</Link></li>
+            <li><Link href="/disclaimer" className="hover:text-primary">Disclaimer &amp; affiliate disclosure</Link></li>
             <li><Link href="/privacy" className="hover:text-primary">Privacy</Link></li>
           </ul>
         </div>

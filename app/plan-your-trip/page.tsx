@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   description:
     "Plan your Ella Langley concert trip: an interactive map for every venue, where to eat and drink nearby, things to do in each tour city, hotels and rental cars, and where to stay — for every 2026 show.",
   alternates: { canonical: "/plan-your-trip" },
-  openGraph: { url: "/plan-your-trip" },
+  openGraph: { url: "/plan-your-trip", images: ["/opengraph-image.png"] },
 };
 
 const GMAPS = "https://www.google.com/maps/search/?api=1&query=";

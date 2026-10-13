@@ -10,9 +10,10 @@ import "./globals.css";
 const IMPACT_TRACKING_ID = "A5422852-9ce6-4a5c-a6b6-f427d0092d55";
 const IMPACT_TRACKING_SNIPPET = `(function(i,m,p,a,c,t){c.ire_o=p;c[p]=c[p]||function(){(c[p].a=c[p].a||[]).push(arguments)};t=a.createElement(m);var z=a.getElementsByTagName(m)[0];t.async=1;t.src=i;z.parentNode.insertBefore(t,z)})('https://utt.impactcdn.com/${IMPACT_TRACKING_ID}.js','script',window,document,'ire');`;
 
-const bebas = Bebas_Neue({ weight: "400", subsets: ["latin"], variable: "--font-display" });
-const inter = Inter({ subsets: ["latin"], variable: "--font-body" });
-const caveat = Caveat({ subsets: ["latin"], variable: "--font-accent" });
+const bebas = Bebas_Neue({ weight: "400", subsets: ["latin"], variable: "--font-display", display: "swap" });
+const inter = Inter({ subsets: ["latin"], variable: "--font-body", display: "swap" });
+// Accent font is decorative and used sparingly: don't preload it on every page.
+const caveat = Caveat({ subsets: ["latin"], variable: "--font-accent", display: "swap", preload: false });
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
 
@@ -24,19 +25,19 @@ export const metadata: Metadata = {
   },
   description:
     "Ella Fellas is the unofficial Ella Langley fan community HQ: daily news, tour stop guides, ticket alerts, and everything in between. Built by fans, for the Fellas.",
+  // No title/description here ON PURPOSE: Next fills og:title / og:description
+  // (and twitter:*) from each page's own title + description when they're unset.
+  // Hardcoding the homepage title here made every page that doesn't declare its
+  // own openGraph (about, contact, privacy, disclaimer, shop...) share the
+  // homepage's og:title in social cards.
   openGraph: {
     type: "website",
-    title: "Ella Fellas — The Ella Langley Fan Community: News, Tours & Merch",
-    description:
-      "Daily news, tour guides, song breakdowns, and concert-prep guides for Ella Langley fans.",
     siteName: "Ella Fellas",
+    locale: "en_US",
     images: ["/opengraph-image.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ella Fellas — The Ella Langley Fan Community: News, Tours & Merch",
-    description:
-      "Daily news, tour guides, song breakdowns, and concert-prep guides for Ella Langley fans.",
     images: ["/opengraph-image.png"],
   },
   robots: {
@@ -51,17 +52,23 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${bebas.variable} ${inter.variable} ${caveat.variable}`}>
-<head>
-    {React.createElement("meta", {
-        name: "impact-site-verification",
-            value: IMPACT_TRACKING_ID,
-              })}
-              </head>
-                    <body className="min-h-screen flex flex-col bg-paper text-ink">
-                      <Script src="https://www.googletagmanager.com/gtag/js?id=G-X10PZGV168" strategy="afterInteractive" />
-                      <Script id="ga4-init" strategy="afterInteractive">{`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-X10PZGV168');`}</Script>
-                      <AffiliateClickTracker />
-                      <script type="text/javascript" dangerouslySetInnerHTML={{ __html: IMPACT_TRACKING_SNIPPET }} />
+      <head>
+        {/* Warm up third-party origins used on every page (GA4 + Impact). */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+        <link rel="dns-prefetch" href="https://utt.impactcdn.com" />
+        {React.createElement("meta", {
+          name: "impact-site-verification",
+          value: IMPACT_TRACKING_ID,
+        })}
+      </head>
+      <body className="min-h-screen flex flex-col bg-paper text-ink">
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-X10PZGV168" strategy="afterInteractive" />
+        <Script id="ga4-init" strategy="afterInteractive">{`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-X10PZGV168');`}</Script>
+        <AffiliateClickTracker />
+        {/* Impact UTT loader: was an inline parser-blocking <script> in <body>.
+            Same snippet, now injected after hydration so it can't delay first paint. */}
+        <Script id="impact-utt" strategy="afterInteractive">{IMPACT_TRACKING_SNIPPET}</Script>
         {/* Impact.com site ownership verification */}
         <div style={{ display: "none" }} aria-hidden="true">
           Impact-Site-Verification: 465e0e70-5146-444d-9120-8c91daea7d51

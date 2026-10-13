@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
+import { ContactForm } from "./ContactForm";
 
-export const metadata: Metadata = { title: "Contact", description: "Get in touch with Ella Fellas \u2014 questions, tips, song requests, sponsorship/newsletter ads, or corrections. Reach the independent Ella Langley fan team by email.", alternates: { canonical: "/contact" } };
+export const metadata: Metadata = { title: "Contact", description: "Get in touch with Ella Fellas \u2014 questions, tips, song requests, sponsorship/newsletter ads, or corrections. Reach the independent Ella Langley fan team by email.", alternates: { canonical: "/contact" }, openGraph: { url: "/contact", title: "Contact Ella Fellas", images: ["/opengraph-image.png"] } };
 
 export default function ContactPage() {
   return (
     <article className="mx-auto max-w-3xl px-4 py-12 prose-content">
       <h1 className="font-display text-4xl text-denim mb-6">Get in touch</h1>
       <p>
-        We&apos;d love to hear from you. The fastest way to reach us is email — pick the right address
-        for what you need:
+        We&apos;d love to hear from you. Send a message below, or email the right address for what
+        you need:
       </p>
+      <ContactForm />
       <ul>
         <li>
           <strong>General questions, tips, song requests:</strong>{" "}

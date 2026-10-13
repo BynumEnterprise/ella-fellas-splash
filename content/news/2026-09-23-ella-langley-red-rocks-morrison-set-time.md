@@ -19,7 +19,7 @@ This is the rare stop where the venue posts real numbers, so we can skip the gue
 
 The bill is **Gabriella Rose** and **Kameron Marlowe** on the way to **Ella Langley**. Red Rocks hasn't published a minute-by-minute per-act running order, so we won't invent a stage-time minute for when Ella walks out — the confirmed anchors are the 5:30 doors and the 7:00 first-act start, and on recent three-act Dandelion nights Ella has closed the show after both openers. If Red Rocks posts a full schedule closer to the date (it sometimes does), the real per-act times will go straight onto the [set-times page](/tour/morrison-red-rocks-amphitheatre-2026-10-07/set-times) and here.
 
-Get up the hill early. **Kameron Marlowe** is a headliner in his own right — "Giving You Up," "Tennessee Orange" — so his opening set is a full show, not a warm-up, and **Gabriella Rose** is well worth catching from the first song. At Red Rocks the climb from the lower lots plus the security line eats more time than people expect, so treat 7:00 as the real start and build in a cushion.
+Get up the hill early. **Kameron Marlowe** is a headliner in his own right — "Giving You Up," "Burn 'Em All" — so his opening set is a full show, not a warm-up, and **Gabriella Rose** is well worth catching from the first song. At Red Rocks the climb from the lower lots plus the security line eats more time than people expect, so treat 7:00 as the real start and build in a cushion.
 
 ## What she's been playing
 

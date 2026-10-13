@@ -1,34 +1,37 @@
 ---
-title: "Ella & HARDY Drop a New One Together. Here's the Short Version."
+title: "Ella Langley & HARDY: Every Real Collaboration So Far"
 slug: "2026-05-19-hardy-collab-announcement"
 publishedAt: "2026-05-19"
+updatedAt: "2026-10-13"
 category: "music-news"
-excerpt: "'Never Met Anyone Like You' is the hardest song on Dandelion, and it's the song every country radio station tried to ignore for a week before giving in. Then HARDY teased a follow-up."
-relatedSongs: ["never-met-anyone-like-you"]
+excerpt: "Correction: an earlier version of this post reported an unconfirmed second Ella-and-HARDY single. No such release has been announced. Here's what the two have actually made together."
+relatedSongs: ["never-met-anyone-like-you", "be-her"]
+sources:
+  - "https://holler.country/news/breaking/ella-langley-confirms-release-date-for-viral-new-song-never-met-anyone-like-you/"
+  - "https://countrynow.com/ella-langley-and-hardy-never-met-anyone-like-you/"
+  - "https://en.wikipedia.org/wiki/Ella_Langley_discography"
+  - "https://en.wikipedia.org/wiki/Dandelion_(album)"
 ---
 
-A quick one for the Wednesday rundown.
+*Correction (October 13, 2026): An earlier version of this post described a teased follow-up collaboration between Ella Langley and HARDY, attributed to a social media post we could not verify. No second Ella-and-HARDY single has been announced, and we've removed those claims. We regret the error.*
 
-HARDY posted a 14-second voice memo on his Instagram last night with the caption "next one with @ellalangley loading." The clip is just rhythm guitar and a partial vocal — not enough to call it a song yet — but it's enough to confirm what we suspected since [Dandelion](/songs/dandelion) dropped: ["Never Met Anyone Like You"](/songs/never-met-anyone-like-you) was the start, not the end.
+Here is what Ella Langley and HARDY have actually made together.
 
-## What we know
+## "Never Met Anyone Like You" (2025)
 
-- The voice memo is in the same key and tempo range as "Never Met Anyone Like You"
-- It's clearly a duet, not a solo HARDY track
-- No release date, no title
+- **Released:** Friday, June 27, 2025. Ella announced the date with a post reading "Written with HARDY & Jordan Schmidt."
+- **Writers:** Ella Langley, HARDY and Jordan Schmidt.
+- **Billing:** The label release credits HARDY as a featured artist. Some outlets (Holler among them) described his role as mostly co-writing plus backing vocals.
+- **The twist:** It sounds like a love song until the bridge, when it turns into a breakup song. Ella's own line on it: "This isn't a love song." We break down the lyrics in our [song meaning post](/news/2026-08-25-ella-langley-never-met-anyone-like-you-meaning).
+- **Chart/certification:** It peaked at No. 39 on Billboard's Hot Country Songs chart and has been certified Gold by the RIAA.
+- **Album:** It was a standalone 2025 single. It is **not** on *Dandelion*.
 
-## What we're guessing
+## "Be Her" (2026)
 
-- This drops as a single sometime between July and October — gives Ella a single to push during the back half of the [Dandelion Tour](/tour)
-- The lyrical territory is darker than the first one. The voice memo has the word "burn" in it twice
-- HARDY produces this one rather than Will Bundy. The aesthetic in the teaser matches HARDY's solo work more than Ella's Dandelion sonics
+HARDY (credited under his name, Michael Hardy) is one of the writers on ["Be Her"](/songs/be-her), along with Ella, Jordan Schmidt and Smith Ahnquist. It's track 6 on [*Dandelion*](/songs/dandelion), released April 10, 2026. "Be Her" went on to peak at No. 2 on the Billboard Hot 100.
 
-## Why this matters
+## Anything new?
 
-The Ella-and-HARDY pairing is the country-rock crossover thread that connects two of Nashville's most distinct voices right now. The first collab over-performed on streaming and under-performed at radio — radio programmers don't love the rock edge. A second one will tell us whether they care about the radio side at all or whether they're building a streaming-first lane together.
+Nothing has been officially announced. If a new Ella-and-HARDY song is confirmed, we'll cover it with a source attached.
 
-We'll update this page when there's official confirmation. Until then, the first Ella-and-HARDY pairing lives on Dandelion, and if you want it on wax, the [vinyl pressing is here](/shop/fc-dandelion-vinyl).
-
----
-
-*Sources: HARDY Instagram, May 18, 2026.*
+[The "Never Met Anyone Like You" song page](/songs/never-met-anyone-like-you) · [All Ella Langley songs](/songs)

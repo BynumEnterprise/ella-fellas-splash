@@ -3,7 +3,7 @@ title: "Ella Langley for Beginners: Where to Start"
 slug: "ella-langley-for-beginners"
 category: "fan-onboarding"
 publishedAt: "2026-05-05"
-updatedAt: "2026-05-22"
+updatedAt: "2026-10-13"
 excerpt: "Your buddy is suddenly an Ella Fella and you're trying to catch up before the road trip. Here's the 30-minute crash course."
 ---
 
@@ -11,7 +11,7 @@ Maybe a friend dragged you to a show. Maybe a song hit you at a bar and you wrot
 
 ## Who she is in two sentences
 
-Ella Langley is a 26-year-old country singer-songwriter from Hope Hull, Alabama, who broke through in 2024 with the duet "you look like you love me" (with Riley Green) and has since become the biggest female country artist in the country. In 2026 she swept all seven of her ACM nominations, scored the first-ever female triple #1 on Hot Country Songs, Country Airplay, and the Hot 100, and is on the road headlining her first arena tour.
+Ella Langley is a 27-year-old country singer-songwriter from Hope Hull, Alabama, who broke through in 2024 with the duet "you look like you love me" (with Riley Green) and has since become the biggest female country artist in the country. In 2026 she swept all seven of her ACM nominations, scored the first-ever female triple #1 on Hot Country Songs, Country Airplay, and the Hot 100, and is on the road headlining her first arena tour.
 
 That's the elevator pitch. Here's how to actually get into her.
 
@@ -71,7 +71,7 @@ The closest contemporary comparisons are Lainey Wilson (different aesthetic, sim
 
 1. **Where's she from?** Hope Hull, Alabama (a town of ~2,000 outside Montgomery).
 2. **Real name?** Elizabeth Camille Langley. "Ella" is the family nickname.
-3. **How old is she?** 26 (born May 3, 1999).
+3. **How old is she?** 27 (born May 3, 1999).
 4. **Did she go to college?** Yes — Auburn, studied forestry, Phi Mu sorority, dropped out in 2019 to move to Nashville.
 5. **What's her label?** Sony Music Nashville / Columbia, under SAWGOD imprint. Signed in February 2023.
 
@@ -79,7 +79,7 @@ That's all the trivia anyone will quiz you on.
 
 ## Where to go from here
 
-Now that you've done the starter pack: if you liked it, the move is to listen to Hungover end-to-end (it's 38 minutes), then Dandelion end-to-end (47 minutes). After that, the duets with Riley Green back-to-back. After that, the HARDY collaboration.
+Now that you've done the starter pack: if you liked it, the move is to listen to Hungover end-to-end (about 45 minutes), then Dandelion end-to-end (about 57 minutes). After that, the duets with Riley Green back-to-back. After that, the HARDY collaboration.
 
 By that point you're 4 hours in and you're either an Ella Fella or you tried. Either way, the work is done.
 

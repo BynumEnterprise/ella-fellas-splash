@@ -1,51 +1,29 @@
 ---
-title: "Estero Show Tonight: Last-Minute Tips for Hertz Arena"
+title: "Estero Show: Ella Langley at Hertz Arena (May 14, 2026)"
 slug: "2026-05-14-estero-show-preview"
 publishedAt: "2026-05-14"
+updatedAt: "2026-10-13"
 category: "tour-prep"
-excerpt: "First Florida date of the Dandelion Tour. Doors in a few hours. Here's what you need to know if you're walking in cold."
+excerpt: "The Dandelion Tour's first Florida date: Hertz Arena in Estero on May 14, 2026, with Dylan Marlowe and Laci Kaye Booth opening."
+relatedTours: ["estero-hertz-arena-2026-05-14", "savannah-enmarket-arena-2026-05-15"]
 ---
 
-Show tonight at Hertz Arena, Estero. First of two Florida dates. Doors at 6:30. If you're on the road heading there now, here's the rundown.
+*Editor's note (October 13, 2026): An earlier version of this preview listed set times, venue capacity, parking prices and a predicted setlist that we could not verify. We've removed them. Below are only the confirmed details.*
 
-## Tonight's lineup
+The Dandelion Tour came to Hertz Arena in Estero, Florida on Thursday, May 14, 2026. It was the tour's first Florida date.
 
-- **Dylan Marlowe** — 7:30 PM (45 minutes)
-- **Laci Kaye Booth** — 8:15 PM (45 minutes)
-- **Ella Langley** — 9:15 PM (~95 minutes)
-- **Lights up:** ~10:50 PM
+## The bill
 
-## Hertz Arena specifics
+- **Ella Langley** (headliner)
+- **Dylan Marlowe**
+- **Laci Kaye Booth**
 
-- Capacity: 7,200 (smaller than other Dandelion dates — this one's intimate)
-- Bag policy: clear bag only, max 12"x6"x12"
-- Parking: $25 in the main lot, fills by 6 PM. Overflow lot adds 10 min walk.
-- Best entry: West gate is faster than the main north entrance
-- Closest cheap parking: the Coconut Point Mall lot (free), 5-minute walk
+## What she played
 
-## Status
+Early Dandelion Tour shows opened with the album's "Froggy Went a Courtin'" intro and the title track, ["Dandelion"](/songs/dandelion), and closed out with the big singles. On opening night in Toledo that included ["Be Her"](/songs/be-her) and ["Choosin' Texas"](/songs/choosin-texas). Our [setlists page](/setlists) has every show we've logged.
 
-Not sold out at face. There were still upper-bowl tickets at face value as of this morning ($65-95 range). If you don't have a ticket and you're nearby, this is the easiest Dandelion Tour ticket to grab last-minute.
+## Next stop
 
-## What she'll probably play
+The next night she played Savannah's Enmarket Arena (May 15) with the same openers.
 
-Based on Toledo and St. Louis: opens with ["loving life again"](/songs/loving-life-again), runs the Hungover deep cuts mid-show, brings out a guest for the duets around track 8 (in Florida this'll likely be a recorded Riley Green vocal or a stand-in, since Riley isn't on this leg), closes with ["Choosin' Texas"](/songs/choosin-texas).
-
-The Florida set may also include a new Dandelion cut nobody's heard live yet — pattern is she debuts a new song on the second show of any geographic stretch.
-
-## Post-show
-
-If you're staying around: The Ranch in Fort Myers is the country bar of the region, about 15 minutes north. Will be packed. Worth it.
-
-If you're driving home tonight: I-75 north clears quickly after midnight. South toward Naples gets some surge from the show traffic but resolves in 30 minutes.
-
-## Tomorrow night
-
-She rolls up I-95 to Savannah's Enmarket Arena (sold out at face, resale $145+). Same set, different state. Can't make either Florida night? The [Dandelion vinyl](/shop/fc-dandelion-vinyl) is the next best way to live with these songs.
-
-[Get tickets for tonight →](/tour/estero-hertz-arena-2026-05-14)
-[See tomorrow's Savannah show →](/tour/savannah-enmarket-arena-2026-05-15)
-
----
-
-*This page contains affiliate links. We may earn a small commission on tickets purchased through our links, at no extra cost to you.*
+[Estero show page →](/tour/estero-hertz-arena-2026-05-14) · [Savannah show page →](/tour/savannah-enmarket-arena-2026-05-15) · [Full tour schedule →](/tour)

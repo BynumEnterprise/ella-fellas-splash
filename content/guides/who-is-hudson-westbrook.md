@@ -12,11 +12,11 @@ faq:
     a: "Hudson Westbrook plays the Philadelphia stadium show on August 1, 2026, in the opener rotation between the listed show start and Ella Langley's direct-support set. The stadium posts exact night-of times."
 ---
 
-If you've got tickets to Morgan Wallen's Still The Problem Tour (Philadelphia) this year, Hudson Westbrook might be the youngest #1 artist in country radio history opening the tour finale -- and the difference between catching him and missing him is usually about an hour of showing up early. Here's the quick version.
+If you've got tickets to Morgan Wallen's Still The Problem Tour (Philadelphia) this year, Hudson Westbrook might be the youngest solo male ever to top country radio with a debut single, opening the tour finale -- and the difference between catching him and missing him is usually about an hour of showing up early. Here's the quick version.
 
 ## Who is Hudson Westbrook?
 
-Hudson Westbrook is a Texas country phenom from Stephenville who went from a Texas Tech student with a viral song ("Take It Slow", 2024) to the youngest solo male artist ever to top country radio with a debut single -- "House Again" hit #1 in early 2026. He's touring behind his album Texas Forever and opening for the biggest names in the format, including the Philadelphia finale of Wallen's stadium run.
+Hudson Westbrook is a Texas country phenom from Stephenville who went from a Texas Tech student with a viral song ("Take It Slow", 2024) to the youngest solo male artist ever to top country radio with a debut single -- "House Again" hit #1 on the Mediabase country chart in February 2026. He's touring behind his album Texas Forever and opening for the biggest names in the format, including the Philadelphia finale of Wallen's stadium run.
 
 ## What time does Hudson Westbrook go on?
 

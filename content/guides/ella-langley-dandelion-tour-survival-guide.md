@@ -3,33 +3,27 @@ title: "The Dandelion Tour Survival Guide"
 slug: "ella-langley-dandelion-tour-survival-guide"
 category: "concert-prep"
 publishedAt: "2026-05-01"
-updatedAt: "2026-05-22"
+updatedAt: "2026-10-13"
 excerpt: "Everything you actually need for a Dandelion Tour stop, from tickets to parking to where to go after the show. By city, by date, no fluff."
 ---
 
-The Dandelion Tour is Ella Langley's first headlining arena run. 16 dates, May through August, mostly sold out at face value. If you're going, this is the guide for getting there, getting in, getting through the show, and getting home without missing anything.
+The Dandelion Tour is Ella Langley's 2026 headlining tour. It opened May 7 in Toledo and runs through October 31 in Saint Paul, with arenas, amphitheaters and a few festival stops along the way. If you're going, this is the guide for getting there, getting in, getting through the show, and getting home without missing anything.
 
 ## Before the show — three weeks out
 
-**Lock the ticket.** Resale prices are climbing every week. The pattern across 2026 country headliners has been: resale plateaus a week out, then spikes 20-30% in the final 72 hours. If you're waiting for prices to drop, you're playing the wrong game. Buy when you decide you're going.
+**Lock the ticket.** Resale prices move around, and waiting for a last-minute drop is a gamble. If you know you're going, buy when you decide.
 
 For resale seats, browse TicketNetwork — every listing shows the all-in price up front and is backed by a buyer guarantee, so you know exactly what you're paying before you commit.
 
-**Check the venue's bag policy.** Most arenas on the Dandelion Tour are now clear-bag only or no-bag. The exception is the amphitheaters (Cary, Wilmington, Gilford), which still allow standard small bags. Check the venue page for your specific show.
+**Check the venue's bag policy.** Many arenas are clear-bag only, and amphitheater rules differ from venue to venue. Check your venue's own bag policy before you go.
 
-**Book the hotel within 48 hours of buying the ticket.** Hotels near these venues fill up fast for show nights. Anywhere within 1.5 miles of the venue is the move — Uber surge pricing kicks in by 9 PM on show nights and a 2-mile ride can run $35-50.
+**Book the hotel within 48 hours of buying the ticket.** Hotels near these venues fill up fast for show nights. Staying within walking distance of the venue saves you from post-show rideshare surge pricing.
 
 ## Day-of — the timing
 
-The Dandelion Tour show timing is consistent across the run:
+Doors and start times vary by venue, so check your ticket and our [set times page](/set-times) for your show. Most nights have two opening acts before Ella. The rotation has included Kameron Marlowe, Dylan Marlowe, Kaitlin Butts, Laci Kaye Booth, Gabriella Rose, ERNEST and Muscadine Bloodline, depending on the date. (Kameron and Dylan Marlowe are not related, despite the shared last name.) Our [opening acts guide](/guides/opening-acts-explained) covers who they are.
 
-- **Doors:** 6:30 PM (most arenas)
-- **Opener 1** (Kameron / Dylan Marlowe, varies by date): 7:30 PM
-- **Opener 2** (Gabriella Rose / Kaitlin Butts / Laci Kaye Booth): 8:15 PM
-- **Ella Langley:** 9:15 PM
-- **Lights up:** ~10:50 PM
-
-Plan your dinner before 6 PM if you want to walk into the venue when doors open. The Marlowe brothers (whichever one's opening) are worth showing up for — both write their own stuff and play tight 45-minute sets.
+Eat before doors if you want to catch the first opener.
 
 ## The setlist preview
 
@@ -66,23 +60,22 @@ If you want the post-show country bar scene, every city on the tour has one wort
 ## What to bring
 
 - Earplugs if you're floor or lower bowl — [Loop Experience 2](/shop/ec-loop-experience-2) are the actual pick (17dB reduction, don't muffle the music, and they look like jewelry)
-- [Portable phone charger](/shop/ec-anker-powercore-10k) — doors open at 5:30 PM and you won't be home until midnight
-- $40 cash for parking + tips
+- [Portable phone charger](/shop/ec-anker-powercore-10k) — between doors, two openers and the headline set, it's a long night
+- Cash or card for parking (check your venue; many lots are cashless now)
 - A light layer (arenas run cold during openers, hot during headliner)
 - Closed-toe shoes, or boots if that's your style — [Pinto Ranch](https://www.kqzyfj.com/click-101760569-15736262) has the western wear that holds up past show night
 
 ## What to leave at home
 
-- Large cameras (no DSLR / GoPro at any tour venue)
+- Large or pro cameras (most venues ban detachable-lens cameras; check your venue's policy)
 - Anything in a non-clear bag at most arenas
 - Outside drinks
-- Hopes of a meet-and-greet — there is no official one for the Dandelion Tour
 
 ## The remaining schedule at a glance
 
 [Full tour page with venue-specific guides →](/tour)
 
-If your city is still on the schedule and you haven't bought tickets yet, the realistic resale picture: most dates are $85-$250 in the upper bowl on TicketNetwork, $250-$475 on the floor. The Texas dates ([Austin's Moody Center](/tour/austin-moody-center-2026-08-13), Fort Worth) and the Cary NC date are the highest-priced of the run — buy those now if you're going.
+Remaining 2026 dates: Los Angeles (Greek Theatre, October 13 and 14), Salt Lake City (Redwest Festival, October 16), Des Moines (October 29), Lincoln (October 30) and Saint Paul (October 31). Check current resale prices on each show page.
 
 ---
 

@@ -1,44 +1,30 @@
 ---
-title: "Dandelion at 30 Days: The Numbers Are Wild"
+title: "Dandelion's First Month: The Real Chart Numbers"
 slug: "2026-05-17-dandelion-album-30-days"
 publishedAt: "2026-05-17"
+updatedAt: "2026-10-13"
 category: "chart-news"
-excerpt: "Dandelion has now been out for a month. We pulled the streaming and chart numbers. They're better than even her team probably hoped."
+excerpt: "Dandelion debuted at No. 1 on the Billboard 200 with 169,000 units and held the top spot a second week. Here are the verified numbers from its first month."
+relatedSongs: ["choosin-texas", "be-her", "dandelion"]
+sources:
+  - "https://www.billboard.com/music/chart-beat/ella-langley-dandelion-number-one-billboard-200-chart-1236226543"
+  - "https://ratingsgamemusic.com/2026/04/26/billboard-200-recap-04-24-26-justin-bieber-climbs-txt-arrives-but-ella-langley-still-no-1/"
+  - "https://www.billboard.com/lists/ella-langley-choosin-texas-hot-100-number-one-ninth-week/"
 ---
 
-Dandelion came out April 10. Today marks one month with the album in the world. Here's where it stands.
+*Correction (October 13, 2026): An earlier version of this post included streaming totals, Spotify listener counts, cumulative unit figures and chart positions that we could not verify. Several were wrong. We've replaced them with sourced numbers.*
 
-## Album sales (pure + equivalent)
+*Dandelion*, Ella Langley's second album, came out April 10, 2026 on Sawgod/Columbia. It's 18 tracks, co-produced by Ella, Miranda Lambert and Ben West.
 
-- **Week 1:** 318,000 album-equivalent units. #1 on Billboard 200.
-- **Weeks 2-4:** Held inside top 5 for three more weeks — a 95% retention rate that streaming-era country albums rarely see.
-- **Cumulative 30-day units:** 712,000. For context, that's bigger than her debut Hungover did in its first 90 days.
+## The verified numbers
 
-## Streaming
+- **Debut:** No. 1 on the Billboard 200 with about **169,000 equivalent album units** in its first week, per Luminate. It's her first No. 1 album. Her debut, *Hungover*, peaked at No. 49.
+- **How it got there:** Reports broke the week down as roughly 130.46 million on-demand streams plus about 39,000 pure album sales. Billboard called it the largest streaming debut for an album of new country material by a female country artist.
+- **Week two:** It stayed at No. 1 with about 106,000 units.
 
-- **Spotify monthly listeners:** 14.2M → 21.8M (a 53% lift in 30 days)
-- **Most-streamed track:** "Choosin' Texas" — 184M streams in 30 days (the #1 country song globally on Spotify)
-- **Hidden gainer:** "be her" — outperforming streaming expectations for a non-single, signaling fans are listening to the full album rather than cherry-picking the radio cuts. That's the metric that matters most.
+## The singles around it
 
-## Chart positions today
+- ["Choosin' Texas"](/songs/choosin-texas), the lead single, was No. 1 on the Billboard Hot 100 through this stretch. It went on to break the record for most weeks at No. 1 in the chart's history.
+- ["Be Her"](/songs/be-her) reached No. 2 on the Hot 100 behind "Choosin' Texas." That made Ella the first female country artist to hold the top two spots at once (Billboard, May 11, 2026).
 
-- Dandelion: #2 Billboard 200 (held by Bad Bunny this week)
-- Hot Country Songs: "Choosin' Texas" #1 (7 weeks)
-- Country Airplay: "Choosin' Texas" #1 (4 weeks)
-- Hot 100: "Choosin' Texas" #1 (7 weeks)
-- "Don't Mind If I Do" with Riley Green: Country Airplay #1 (current)
-
-She has the top two songs on country radio right now.
-
-## What's interesting in the data
-
-The album is doing the rare thing of building, not fading. Most modern albums lose 60-70% of week-1 streaming volume by week 4. Dandelion is at roughly 78% retention — the kind of curve usually reserved for catalog-defining releases.
-
-The most likely explanation: the [Dandelion Tour](/tour). Touring with an album generally extends its life by 40-60% in retention metrics. With 26 confirmed tour dates over the summer, this album is going to live a long time. If "Choosin' Texas" is the song pulling those streams, our ["Choosin' Texas" breakdown](/songs/choosin-texas) digs into why it connected the way it did.
-
-## What to watch
-
-The next chart-moving event is "Don't Mind If I Do" continuing its Country Airplay run. If it does what "Choosin' Texas" did and stays at #1 for 5+ weeks, we're looking at the year's defining country airplay duo.
-
-[Read every Dandelion song breakdown &rarr;](/songs) &middot; and if the numbers have you wanting the album on your shelf, the [Dandelion vinyl](/shop/fc-dandelion-vinyl) is the version we'd grab.
-
+[Every Dandelion song breakdown →](/songs) · [Full tour schedule →](/tour)

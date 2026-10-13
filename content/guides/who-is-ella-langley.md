@@ -3,7 +3,7 @@ title: "Who Is Ella Langley? Meet Morgan Wallen's 2026 Tour Opener"
 slug: "who-is-ella-langley"
 category: "fan-onboarding"
 publishedAt: "2026-06-16"
-updatedAt: "2026-07-15"
+updatedAt: "2026-10-13"
 excerpt: "Found Ella Langley as direct support on Morgan Wallen's 2026 tour? A quick bio, her biggest songs, and why she is worth showing up early for."
 faq:
   - q: "Is Ella Langley married? Is she dating Riley Green?"
@@ -15,7 +15,7 @@ faq:
   - q: "What is Ella Langley's most famous song?"
     a: "Her breakout is you look like you love me, a duet with Riley Green that went Platinum. Choosin' Texas and weren't for the wind are her other signature singles."
   - q: "Did Ella Langley do a song with Morgan Wallen?"
-    a: "No. Her famous duet is with Riley Green, not Morgan Wallen. The Wallen connection is the 2026 tour, where she is direct support -- not a duet partner."
+    a: "Yes. 'I Can't Love You Anymore' with Morgan Wallen came out April 24, 2026, on the Dandelion reissue, and went No. 1 on Billboard's Country Airplay chart. Her breakout duet, though, is 'You Look Like You Love Me' with Riley Green."
 ---
 
 Maybe you bought Morgan Wallen tickets, looked at the bill, and thought: who is Ella Langley? Or maybe you caught a clip and now you cannot stop. Either way, you are in the right place. She is the act in the prime slot right before Wallen on a run of his 2026 stadium dates, and she is very much worth getting through the gates early for. Here is the fast catch-up.
@@ -57,9 +57,9 @@ Ella was direct support on a run of 2026 Still The Problem Tour stadium dates, i
 
 Those stadium dates are now wrapped; for her remaining headline shows, see the [tour page](/tour). For the full overview -- who else is on each bill, what we know about set times, how to grab seats -- start at our hub: [Ella Langley on Morgan Wallen's 2026 Stadium Tour](/guides/ella-langley-morgan-wallen-2026-tour).
 
-## One more thing: it is not a Wallen duet
+## One more thing: yes, there is a Wallen duet
 
-We see this all the time, so let us clear it up: Ella's famous duet is with **Riley Green**, not Morgan Wallen. The Wallen connection is the tour. She is one of his direct-support acts in 2026, which is exactly why you are seeing her name on the bill. No Ella-and-Wallen single exists -- if you want the duet that started it all, that is "you look like you love me" with Riley Green.
+Ella and Morgan Wallen released ["I Can't Love You Anymore"](/songs/i-cant-love-you-anymore) on April 24, 2026. It's on the *Dandelion* reissue and went No. 1 on Billboard's Country Airplay chart. They debuted it live at his April 18 stadium show in Tuscaloosa. Her breakout duet is still ["you look like you love me"](/songs/you-look-like-you-love-me) with **Riley Green**. That's the song that started it all, and the two later followed it with "Don't Mind If I Do."
 
 ## Ready for the show?
 

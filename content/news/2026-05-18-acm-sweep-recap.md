@@ -1,37 +1,35 @@
 ---
-title: "The ACM Sweep, Two Months Later: Did It Actually Matter?"
+title: "Ella Langley at the 2026 ACM Awards: What She Won"
 slug: "2026-05-18-acm-sweep-recap"
 publishedAt: "2026-05-18"
+updatedAt: "2026-10-13"
 category: "long-read"
-excerpt: "Ella won seven of seven ACM nominations in March. Sixty days later we look at whether the trophies translated into anything bigger than a press cycle."
+excerpt: "At the 61st ACM Awards on May 17, 2026, Ella Langley went seven-for-seven, including Female Artist of the Year and Song and Single of the Year for 'Choosin' Texas.'"
+relatedSongs: ["choosin-texas", "dont-mind-if-i-do"]
+sources:
+  - "https://www.rollingstone.com/music/music-country/2026-acm-awards-winners-list-1235554212/"
+  - "https://countrynow.com/ella-langley-sweeps-2026-acm-awards-with-seven-trophies/"
+  - "https://musicrow.com/2026/05/ella-langley-named-acm-artist-songwriter-of-the-year/"
 ---
 
-In March, Ella Langley walked into the 60th annual ACM Awards with seven nominations and walked out with seven trophies. Female Artist of the Year, Single of the Year for "you look like you love me," Musical Event for the same song with Riley Green, Album of the Year for Hungover, Song of the Year for "weren't for the wind," New Female Artist (a category she'd been overdue for), and Visual Media of the Year.
+*Correction (October 13, 2026): An earlier version of this post placed the ACM Awards in March, called them the 60th ACMs and listed awards Ella did not win (including Album of the Year for Hungover). It also cited streaming and resale figures we could not verify. We've rewritten it with the actual results.*
 
-A sweep. The kind of night that, if you'd predicted it eighteen months earlier, would have gotten you laughed out of a Music Row meeting.
+The 61st Academy of Country Music Awards were held Sunday, May 17, 2026, at the MGM Grand Garden Arena in Las Vegas. Shania Twain hosted, and the show streamed on Prime Video. Ella Langley came in with seven nominations and won all seven, per Country Now.
 
-That was sixty days ago. Here's what actually changed.
+## Her wins
 
-## What moved
+- **Female Artist of the Year.** She beat Kelsea Ballerini, Miranda Lambert, Megan Moroney and Lainey Wilson.
+- **Artist-Songwriter of the Year**
+- **Single of the Year**: ["Choosin' Texas"](/songs/choosin-texas)
+- **Song of the Year**: "Choosin' Texas" (she's one of its writers, with Miranda Lambert, Luke Dick and Joybeth Taylor)
+- **Music Event of the Year**: ["Don't Mind If I Do"](/songs/dont-mind-if-i-do) with Riley Green
 
-**Streaming.** Spotify monthly listeners jumped from 14.2M pre-ACMs to 21.8M today. That's a 53% lift in two months, and most of it landed in the first three weeks after the ceremony. The award-show bump is real and faster than the "Choosin' Texas" #1 bump.
+Outlets counted her total differently. Some list five categories, others seven trophies, because a few categories honor her as both artist and songwriter. Country Now reported a seven-for-seven night.
 
-**Tour pricing.** Average resale prices on the [Dandelion Tour](/tour) rose roughly 35% in the four weeks after the awards. Some of that is "Choosin' Texas" continuing to climb. A lot of it was awards-show validation that this is the artist of the moment.
+## The year before
 
-**Newsroom positioning.** Coverage shifted from "rising star" to "country's new lead." Every major music publication that had written a profile in 2024 ran a follow-up by April. The framing went from "is this for real" to "OK, what's next."
+At the 2025 ACMs she won New Female Artist of the Year. "You Look Like You Love Me" with Riley Green won Single, Musical Event and Visual Media of the Year.
 
-## What didn't move
+## Up next
 
-**Radio share.** Country radio still spins her at roughly the same rate it did in February. The ACM sweep didn't unlock additional adds. Country radio moves on its own timeline — usually six to twelve months behind streaming and award shows.
-
-**Crossover into adult contemporary or pop radio.** Despite "Choosin' Texas" being a Hot 100 chart-topper, AC and pop radio haven't picked it up. That's a calculated decision on her team's end — they want her positioned as country first.
-
-**Her live show.** Watch any Dandelion Tour clip and you'll see the same artist who was playing 1,500-cap rooms in 2024. No production bloat, no extra dancers, no pyro. The sweep didn't change what the show is.
-
-## What this tells us
-
-The ACM sweep was confirmation, not coronation. The people who decide what country music's next ten years look like — radio programmers, festival bookers, label A&R — were already moving toward her. The trophies told the casual fan to catch up.
-
-The next test is the CMAs in November. Same shortlists, different voting body. A repeat sweep there moves her from "the artist of 2026" to "the artist of this decade."
-
-If you want to relive the run that got her here, our [“Be Her” breakdown](/songs/be-her) covers the song carrying her current setlists, and the [Dandelion vinyl](/shop/fc-dandelion-vinyl) is the cleanest way to own the album at the center of it all. That's a conversation we'll be ready to have. Until then, the answer to "did the sweep matter" is: it mattered to the people who weren't paying attention yet. The people who already were just nodded.
+The CMA Awards come in November. Ella's 2026 CMA nominations include Entertainer of the Year, Female Vocalist of the Year and Album of the Year for *Dandelion*. Our [CMA nominations post](/news/2026-09-16-ella-langley-cma-awards-2026-nominations-how-to-watch) has the full list and how to watch.

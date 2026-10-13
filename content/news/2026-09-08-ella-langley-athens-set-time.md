@@ -24,7 +24,7 @@ The bill is **Laci Kaye Booth** first, then **Kameron Marlowe** in the direct-su
 
 We won't invent a minute for when Ella walks out — the venue lists doors at 6:00 and a 7:00 start, but no per-act running order. The honest, sourced answer: the first opener goes on around 7:00, and on recent three-act Dandelion nights Ella closes after both openers. If the venue posts a full schedule closer to the date, this page and the [set-times page](/tour/athens-akins-ford-arena-2026-09-18/set-times) will carry the real times.
 
-Get in for the openers. **Kameron Marlowe** is a headliner in his own right — "Giving You Up," "Tennessee Orange" — so his direct-support slot is a full set, not a warm-up. **Laci Kaye Booth** opens the night.
+Get in for the openers. **Kameron Marlowe** is a headliner in his own right — "Giving You Up," "Burn 'Em All" — so his direct-support slot is a full set, not a warm-up. **Laci Kaye Booth** opens the night.
 
 ## What she's been playing
 

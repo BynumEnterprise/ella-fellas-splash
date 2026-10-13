@@ -17,7 +17,7 @@ Ella Langley's Dandelion Tour rolls into **Lubbock on Saturday, October 10, 2026
 
 The venue lists a **7:00 PM start** — United Supermarkets Arena posts it right on its own event page, so that's the one time we don't have to guess at. Doors typically open about an hour before the music on this tour; the arena hasn't posted the exact minute, so plan on roughly 6:00 PM and confirm on your ticket. The bill runs **Laci Kaye Booth** first, **Kameron Marlowe** in the direct-support slot, and **Ella Langley** closing the night.
 
-We won't print a made-up stage-time minute for when Ella walks out — the arena hasn't published a per-act running order, so the honest version is the 7:00 start and the order of the night. The moment United Supermarkets Arena posts a real schedule, the exact times go straight onto the [set-times page](/tour/lubbock-united-supermarkets-arena-2026-10-10/set-times) and here. Get there for 7: **Kameron Marlowe** is a headliner in his own right — "Giving You Up," "Tennessee Orange" — so his set is a full show, not a warm-up.
+We won't print a made-up stage-time minute for when Ella walks out — the arena hasn't published a per-act running order, so the honest version is the 7:00 start and the order of the night. The moment United Supermarkets Arena posts a real schedule, the exact times go straight onto the [set-times page](/tour/lubbock-united-supermarkets-arena-2026-10-10/set-times) and here. Get there for 7: **Kameron Marlowe** is a headliner in his own right — "Giving You Up," "Burn 'Em All" — so his set is a full show, not a warm-up.
 
 ## What she's been playing
 

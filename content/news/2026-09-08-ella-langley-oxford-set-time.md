@@ -21,7 +21,7 @@ The bill is **Laci Kaye Booth** first, then **Kameron Marlowe** in the direct-su
 
 We won't guess a minute for when Ella walks out. The listed 7:00 PM start is the reliable time; the first opener goes on around then, and on recent three-act Dandelion nights Ella closes after both openers. If the Pavilion posts a full per-act running order closer to the date, this page and the [set-times page](/tour/oxford-the-pavilion-ole-miss-2026-09-17/set-times) will carry the real times.
 
-Worth getting in early: **Kameron Marlowe** is a headliner in his own right — "Giving You Up," "Tennessee Orange" — so the direct-support slot is a full set, not a warm-up. **Laci Kaye Booth** opens the night.
+Worth getting in early: **Kameron Marlowe** is a headliner in his own right — "Giving You Up," "Burn 'Em All" — so the direct-support slot is a full set, not a warm-up. **Laci Kaye Booth** opens the night.
 
 ## What she's been playing
 

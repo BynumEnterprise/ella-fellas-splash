@@ -20,9 +20,9 @@ The most common comparison, and for good reason. Both are small-town Southern wo
 
 ### 2. Kaitlin Butts
 
-If you caught a Dandelion Tour date with Kaitlin Butts opening, you already know — and if you skipped the opener, that's exactly why we keep telling people to show up early. She's red dirt by way of Oklahoma, more theatrical than Ella, and her live show swings from murder ballads to barn-burners without warning. Ella picks her openers like a fan would, and this booking is the proof.
+If you caught a Dandelion Tour date with Kaitlin Butts opening, you already know — and if you skipped the opener, that's exactly why we keep telling people to show up early. She's red dirt by way of Tulsa, more theatrical than Ella, and her live show swings from murder ballads to barn-burners without warning. Ella picks her openers like a fan would, and this booking is the proof.
 
-**Start with:** "she's using"
+**Start with:** "You Ain't Gotta Die (to Be Dead to Me)"
 
 ### 3. Megan Moroney
 
@@ -56,7 +56,7 @@ The hardest traditionalist on this list. Zach sounds like he walked out of 1994 
 
 Red dirt's rawest young writer. Where Ella polishes the heartbreak just enough for radio, Wyatt leaves the rough edges in. The vulnerability that runs through *Dandelion*'s quietest songs is the same nerve Wyatt's whole catalog sits on.
 
-**Start with:** "Please Don't Tell Me"
+**Start with:** "Please Don't Go"
 
 ### 8. Hailey Whitters
 

@@ -5,7 +5,7 @@ publishedAt: "2026-07-19"
 category: "news"
 excerpt: "Ella Langley played direct support for Morgan Wallen at M&T Bank Stadium on Saturday night. Here's what we know about the Baltimore set, the songs she's been running on the stadium leg, and where she heads next."
 relatedSongs: ["nicotine", "choosin-texas", "werent-for-the-wind", "you-look-like-you-love-me"]
-relatedTours: ["baltimore-mt-bank-stadium-2026-07-18", "pikeville-appalachian-wireless-arena-2026-07-23"]
+relatedTours: ["pikeville-appalachian-wireless-arena-2026-07-23"]
 sources:
   - "https://www.setlist.fm/setlists/ella-langley-6bfde672.html"
   - "https://www.musictimes.com/articles/112330/20260718/morgan-wallen-baltimore-night-2-start-time-openers-expected-setlist-tonight.htm"

@@ -1,43 +1,44 @@
 ---
-title: "What Actually Happened at Stagecoach: The Ella Set Everyone's Still Talking About"
+title: "Ella Langley at Stagecoach 2026: Theo Von, a Solo Wallen Duet and the Set"
 slug: "2026-05-16-stagecoach-recap"
 publishedAt: "2026-05-16"
+updatedAt: "2026-10-13"
 category: "tour-recap"
-excerpt: "Three weeks on, Ella's Stagecoach set is still the festival's most-clipped moment. The setlist, the surprise guest, and the song nobody expected."
+excerpt: "Ella's Stagecoach debut on April 24, 2026: Theo Von stood in for Riley Green on 'you look like you love me,' and she sang her new Morgan Wallen duet solo."
+relatedSongs: ["you-look-like-you-love-me", "i-cant-love-you-anymore", "choosin-texas", "be-her"]
+relatedTours: ["indio-stagecoach-festival-2026-04-24"]
+sources:
+  - "https://au.rollingstone.com/music/music-news/ella-langley-theo-von-stagecoach-performance-94101/"
+  - "https://tasteofcountry.com/ella-langley-stagecoach-theo-von-duet-you-look-like-you-love-me/"
+  - "https://tasteofcountry.com/ella-langley-i-cant-love-you-anymore-stagecoach-no-morgan-wallen/"
+  - "https://holler.country/tours/ella-langley"
 ---
 
-It's been three weeks since Stagecoach. Most festival moments have a 96-hour social media half-life and then fade. Ella Langley's Stagecoach set is still circulating.
+*Correction (October 13, 2026): An earlier version of this recap described a HARDY surprise appearance, a Riley Green guest spot, an instrumental jam, view counts and booking-fee claims. None of that happened or could be verified, and we've removed it. Below is what was actually reported.*
 
-## The setlist (45 minutes, 11 songs)
+Ella Langley made her Stagecoach debut on the festival's opening night, Friday, April 24, 2026, at the Empire Polo Club in Indio, California.
 
-1. loving life again
-2. weren't for the wind
-3. nicotine
-4. [be her](/songs/be-her)
-5. dandelion
-6. don't mind if i do (Riley Green walks out)
-7. you look like you love me (Riley stays out)
-8. never met anyone like you (HARDY surprise — the moment)
-9. paint the town blue
-10. (extended jam, no vocal)
-11. [Choosin' Texas](/songs/choosin-texas)
+## The two moments everyone talked about
 
-## The HARDY moment
+**Theo Von on "you look like you love me."** Riley Green wasn't there, so Ella brought out podcaster and comedian Theo Von to sing Riley's part on ["you look like you love me"](/songs/you-look-like-you-love-me). Rolling Stone and Taste of Country both reported it.
 
-The cellphone footage of HARDY walking out unannounced for "never met anyone like you" has now passed 80M combined views across TikTok, Instagram, and X. Stagecoach hadn't announced him as a guest. The crowd reaction in the moment — that wall of noise when fans recognize who's walking out — is the kind of thing money can't manufacture.
+**"I Can't Love You Anymore," solo.** Her duet with Morgan Wallen, ["I Can't Love You Anymore,"](/songs/i-cant-love-you-anymore) came out that same day. Fans expected Wallen to show up, but he didn't. "Morgan is not here," she told the crowd. "He's on dad duty this weekend." She sang it alone. The two had debuted it live together the weekend before, at Wallen's April 18 stadium show in Tuscaloosa.
 
-## The Riley Green moment
+## The setlist (as compiled by Holler)
 
-Two duets in a row is the most we've ever seen Ella and Riley do in a single set. Normally they trade one at a time. The choice to keep him out for both back-to-back signaled what we'd later see on the Dandelion Tour: this pairing is the centerpiece moving forward.
+1. Froggy Went a Courtin'
+2. Dandelion
+3. I Gotta Quit
+4. Bottom of Your Boots
+5. 20-20
+6. Broken
+7. I Can't Love You Anymore
+8. you look like you love me (with Theo Von)
+9. Be Her
+10. Loving Life Again
+11. Choosin' Texas
+12. weren't for the wind
 
-## The unexpected: an extended instrumental
+This order comes from fan-site reporting, not an official setlist, so treat it as likely rather than confirmed.
 
-Slot 10 was a 6-minute instrumental jam between her band (no vocal). For a 45-minute festival set this is a *huge* runtime gamble — most artists won't burn a song slot on a non-vocal moment. The fact that her band can carry it, and that the crowd stayed engaged, told the festival industry something about what kind of headliner she's becoming.
-
-## What it means for festival booking
-
-Stagecoach's contract with her was reportedly a sub-headliner slot. She's now booking festival slots at a different number than the one that brought her in. Sources at three other 2026 festivals (we'll respect the off-record) all confirm her booking fee tripled between the Stagecoach announcement and the post-Stagecoach buzz.
-
-The Railbird Festival (Lexington, KY, June 7) is the next one on her schedule. We'd guess the set is now closer to 75 minutes than 45, and she may bring out more guests.
-
-Want the set on your shelf? Grab the [Dandelion album on vinyl](/shop/fc-dandelion-vinyl), and check every upcoming stop on the [full tour schedule](/tour).
+[Every logged setlist →](/setlists) · [Full tour schedule →](/tour)

@@ -29,7 +29,7 @@ A few of these names carry over from the arena leg, and a couple are new. If you
 
 - **Kaitlin Butts** — red-dirt Oklahoma country with an edge, writes everything herself. If you love the Ella songs that are actually about something, she'll land the same way.
 - **Kameron Marlowe** — a smoky, blue-collar baritone with a genuinely tight touring band. One of the sets worth showing up at doors for.
-- **Dylan Marlowe** — Kameron's younger brother, radio-leaning modern country; a carryover from the arena leg.
+- **Dylan Marlowe** — Statesboro, Georgia singer-songwriter (no relation to Kameron), radio-leaning modern country; a carryover from the arena leg.
 - **Ernest** — the marquee new name for the fall. He's a heavyweight songwriter (a hand in a stack of recent country hits) stepping into the opener rotation.
 - **Laci Kaye Booth** — a soulful, throwback voice who's been in Ella's orbit for a while; she's on the Green Bay bill.
 - **Gabriella Rose** — one of the newer artists Ella has been putting in front of arena crowds all year.

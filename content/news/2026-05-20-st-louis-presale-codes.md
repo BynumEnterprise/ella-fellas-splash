@@ -1,50 +1,27 @@
 ---
-title: "St. Louis Show Tomorrow: Presale Codes, Where to Park, and What She'll Probably Play"
+title: "St. Louis: Ella Langley at Chaifetz Arena (May 8, 2026)"
 slug: "2026-05-20-st-louis-presale-codes"
 publishedAt: "2026-05-20"
+updatedAt: "2026-10-13"
 category: "tour-prep"
-excerpt: "Chaifetz Arena, Friday night, sold out. If you've got a ticket, here's everything you need. If you don't, here's the resale picture."
+excerpt: "The Dandelion Tour's second night was Chaifetz Arena in St. Louis on Friday, May 8, 2026, with Kameron Marlowe and Gabriella Rose opening."
 relatedTours: ["st.-louis-chaifetz-arena-2026-05-08"]
 ---
 
-Quick guide for the Fellas heading to Chaifetz tomorrow night.
+*Editor's note (October 13, 2026): An earlier version of this page was written as a "show tomorrow" preview even though the St. Louis show had already happened on May 8. It also included set times, resale prices and a setlist prediction we could not verify. We've replaced it with the confirmed details.*
 
-## The picture
+The Dandelion Tour's second show was at Chaifetz Arena (1 S Compton Ave, St. Louis, MO) on Friday, May 8, 2026, the night after the tour opened in Toledo.
 
-- **Venue:** Chaifetz Arena, 1 S Compton Ave, St. Louis, MO
-- **Doors:** 6:30 PM
-- **Kameron Marlowe:** 7:30
-- **Gabriella Rose:** 8:15
-- **Ella Langley:** 9:15
-- **Lights up:** ~10:50
+## The bill
 
-## Parking, traffic, and the move
+- **Ella Langley** (headliner)
+- **Kameron Marlowe**
+- **Gabriella Rose**
 
-Chaifetz parking lot fills by 5:30 on a sold-out night. The play is to park at the Saint Louis University parking garage on Laclede Ave (about a 7-minute walk, half the price) or one of the lots on Compton south of the venue. Avoid trying to find street parking on Lindell after 6 — by 6:30 the meter cops are out and the spots are gone.
+## What the early shows looked like
 
-For dinner before, Pappy's Smokehouse (7 min away) or BC's Kitchen if you want a sit-down spot. The post-show country bar is The Establishment in Soulard — about 12 minutes south, will be packed but worth it.
+The opening-night show in Toledo started with the album's "Froggy Went a Courtin'" intro and the title track ["Dandelion"](/songs/dandelion). Mid-set it included Dandelion cuts like "I Gotta Quit" and "Bottom of Your Boots" and Gabriella Rose joining for "Butterfly Season." It built to ["Be Her"](/songs/be-her) and ["Choosin' Texas"](/songs/choosin-texas). Full song-by-song lists for the shows we've logged are on our [setlists page](/setlists).
 
-## What she'll probably play
+## Still want to go?
 
-Based on the Toledo opening night setlist, expect:
-
-- Opens with ["loving life again"](/songs/loving-life-again)
-- Mid-show stretch with the Hungover deep cuts ("nicotine," "paint the town blue")
-- Riley Green or a stand-in for the duets around track 8-9
-- Encore lands on ["Choosin' Texas"](/songs/choosin-texas)
-
-The Friday-night setlists tend to run a song longer than the weeknight ones. Could be a cover (she's done Patty Loveless before) or could be a new Dandelion cut nobody's heard live yet.
-
-## If you don't have a ticket
-
-It's sold out at face. Resale today is sitting between $85 (upper deck back) and $475 (floor section A). The price is rising, not falling — there's no benefit to waiting. If you want in, buy through our [St. Louis show page](/tour/st.-louis-chaifetz-arena-2026-05-08) now, screenshot your transfer confirmation, and head over.
-
-[Get St. Louis tickets →](/tour/st.-louis-chaifetz-arena-2026-05-08)
-
-## Take a piece of the night home
-
-Can't make it, or want the souvenir? The *Dandelion* record is the one we'd grab — see it on our [Dandelion vinyl shop look](/shop/fc-dandelion-vinyl). And if you're chasing more of the run, the full [Dandelion Tour schedule](/tour) has every 2026 date.
-
----
-
-*This page contains affiliate links. We may earn a commission on tickets purchased through our links, at no extra cost to you.*
+The tour's remaining dates are on the [full Dandelion Tour schedule](/tour).

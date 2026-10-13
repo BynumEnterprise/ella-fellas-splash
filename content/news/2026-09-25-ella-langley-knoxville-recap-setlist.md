@@ -20,25 +20,34 @@ We've got this one verified song-by-song from a setlist.fm capture off the floor
 2. I Gotta Quit
 3. Bottom of Your Boots
 4. I Can't Love You Anymore
-5. Girl You're Taking Home
-6. 20-20
-7. You & Me Time
-8. Here for the Party (Gretchen Wilson cover)
+5. Here for the Party (Gretchen Wilson cover)
+6. Girl You're Taking Home
+7. 20-20
+8. You & Me Time
 9. Last Call for Us
-10. Somethin' Simple
-11. Butterfly Season
-12. Broken
-13. Be Her
-14. you look like you love me
-15. Loving Life Again
-16. Choosin' Texas
-17. weren't for the wind
+10. Broken
+11. Somethin' Simple
+12. Butterfly Season
+13. Dreams (Fleetwood Mac cover, with Laci Kaye Booth)
+14. Strangers (Kameron Marlowe cover, with Kameron Marlowe)
+15. Wish I Didn't Know Now (Toby Keith cover)
+16. Be Her
+17. you look like you love me
+18. Loving Life Again
+19. Choosin' Texas
+20. weren't for the wind
 
-(Order per the verified setlist.fm capture from Knoxville, logged by one attendee. If an encore followed "weren't for the wind" the way it has on other Dandelion nights, we'll update this as more fans check in.)
+**Encore**
+
+21. Speaking Terms
+22. paint the town blue
+23. That's Why We Fight
+
+*Updated October 13: when this recap first ran, the setlist.fm capture had 17 songs logged. More attendees have since filled it in, adding both opener guest spots, the Toby Keith cover and a three-song encore, so the list above is the complete Knoxville set as setlist.fm now shows it.*
 
 ## The moments
 
-Let's start with the one that's everywhere this morning. Ella hit "Choosin' Texas" at number 16, and the timing could not have been spicier: the top-ranked Texas Longhorns are in Knoxville this weekend to play the No. 14 Volunteers, with kickoff Saturday afternoon. So when she got to the part about a heart that still belongs to the Lone Star State, the arena turned on the song, a wall of boos went up, and a whole lot of Vol fans threw the "Horns Down." A few Ella's Fellas die-hards in the crowd fired back with "Hook 'Em," but they were badly outnumbered. Per The Big Lead, it was exactly the kind of petty, all-in SEC-country moment you can only get in a college town on a rivalry weekend. If you're keeping score, "Choosin' Texas" just broke Mariah Carey's record for most consecutive weeks at No. 1 on the Hot 100 earlier this week, so booing it is quite the flex.
+Let's start with the one that's everywhere this morning. Ella hit "Choosin' Texas" at number 19, and the timing could not have been spicier: the top-ranked Texas Longhorns are in Knoxville this weekend to play the No. 14 Volunteers, with kickoff Saturday afternoon. So when she got to the part about a heart that still belongs to the Lone Star State, the arena turned on the song, a wall of boos went up, and a whole lot of Vol fans threw the "Horns Down." A few Ella's Fellas die-hards in the crowd fired back with "Hook 'Em," but they were badly outnumbered. Per The Big Lead, it was exactly the kind of petty, all-in SEC-country moment you can only get in a college town on a rivalry weekend. If you're keeping score, "Choosin' Texas" just broke Mariah Carey's record for most consecutive weeks at No. 1 on the Hot 100 earlier this week, so booing it is quite the flex.
 
 The rest of the set was pure Dandelion Tour muscle. "Here for the Party," the Gretchen Wilson cover, has become the mid-set party-starter, and the back half is the reason you buy the ticket: "Be Her" into "you look like you love me," the Riley Green duet that broke her wide open, into "Loving Life Again" before that "Choosin' Texas" showdown, and then "weren't for the wind" to bring it home.
 

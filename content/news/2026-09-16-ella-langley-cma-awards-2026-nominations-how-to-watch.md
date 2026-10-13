@@ -17,7 +17,7 @@ sources:
     url: "https://americansongwriter.com/2026-cma-awards-nominees-announced-as-ella-langley-leads-with-9-nominations/"
 ---
 
-If you are trying to sort out exactly what Ella Langley is up for at the **2026 CMA Awards**, here is the short version: she leads the entire field with nine nominations, more than anyone else in country music this year, and the show airs Tuesday, November 18. We already covered the morning the nominees landed in our [full breakdown of Ella's nine CMA nods](/news/2026-09-11-ella-langley-leads-2026-cma-nominations) — this page is the one to bookmark for the run-up: every category, who she is actually competing against, and where to watch.
+If you are trying to sort out exactly what Ella Langley is up for at the **2026 CMA Awards**, here is the short version: she leads the entire field with nine nominations, more than anyone else in country music this year, and the show airs Wednesday, November 18. We already covered the morning the nominees landed in our [full breakdown of Ella's nine CMA nods](/news/2026-09-11-ella-langley-leads-2026-cma-nominations) — this page is the one to bookmark for the run-up: every category, who she is actually competing against, and where to watch.
 
 ## What Ella Langley is nominated for at the 2026 CMA Awards
 
@@ -53,7 +53,7 @@ Nine nominations is not just a big number — it ties the most CMA nominations a
 
 ## How to watch the 2026 CMA Awards
 
-The 60th annual CMA Awards air live from Bridgestone Arena in Nashville on **Tuesday, November 18 at 8 p.m. ET on ABC**, and stream the same night on Disney+ (next-day on Hulu). Lainey Wilson is pulling double duty as host while she is nominated in the show — including going head-to-head with Ella for Entertainer of the Year. If you only tune in for one category, Entertainer late in the broadcast is the one to catch.
+The 60th annual CMA Awards air live from Bridgestone Arena in Nashville on **Wednesday, November 18 at 8 p.m. ET on ABC**, and stream the same night on Disney+ (next-day on Hulu). Lainey Wilson is pulling double duty as host while she is nominated in the show — including going head-to-head with Ella for Entertainer of the Year. If you only tune in for one category, Entertainer late in the broadcast is the one to catch.
 
 ## Where she goes from here
 

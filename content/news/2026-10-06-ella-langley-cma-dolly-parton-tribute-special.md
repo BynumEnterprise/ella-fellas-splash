@@ -15,7 +15,7 @@ sources:
     url: "https://cbsaustin.com/news/entertainment/ella-langley-carrie-underwood-reba-to-perform-at-dolly-parton-tribute-in-nashville-tennessee-belmont-university"
 ---
 
-Ella Langley is one of 20 artists set to perform at the CMA's Dolly Parton tribute special, the live television event honoring the late country legend. "CMA Presents I Will Always Love You: A Celebration of Dolly Parton" airs Tuesday, October 21 on ABC and Disney+, broadcast from Belmont University's Fisher Center for the Performing Arts in Nashville, and it streams on Hulu the following day. For anyone who watched Langley thank Parton the night she died, seeing her name on this bill feels like the loop closing.
+Ella Langley is one of 20 artists set to perform at the CMA's Dolly Parton tribute special, the live television event honoring the late country legend. "CMA Presents I Will Always Love You: A Celebration of Dolly Parton" airs Wednesday, October 21 on ABC and Disney+, broadcast from Belmont University's Fisher Center for the Performing Arts in Nashville, and it streams on Hulu the following day. For anyone who watched Langley thank Parton the night she died, seeing her name on this bill feels like the loop closing.
 
 ## Who's performing at the Dolly Parton tribute special
 

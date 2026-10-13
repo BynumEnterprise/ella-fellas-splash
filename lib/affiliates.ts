@@ -117,16 +117,34 @@ const KNOWN_TICKETNETWORK_URLS: Record<string, string> = {
   "columbus-schottenstein-center-2026-09-25": "https://www.ticketnetwork.com/tickets/8071929/ella-langley-kameron-marlowe-laci-kaye-booth-tickets-fri-sep-25-2026-value-city-arena-at-the-schottenstein-center",
   "moline-vibrant-arena-2026-09-26": "https://www.ticketnetwork.com/tickets/8071930/ella-langley-kameron-marlowe-laci-kaye-booth-tickets-sat-sep-26-2026-vibrant-arena-at-the-mark",
   "morrison-red-rocks-amphitheatre-2026-10-07": "https://www.ticketnetwork.com/tickets/8071946/ella-langley-kameron-marlowe-gabriella-rose-tickets-wed-oct-7-2026-red-rocks-amphitheatre",
-  "tulsa-bok-center-2026-10-09": "https://www.ticketnetwork.com/tickets/8071931/ella-langley-kameron-marlowe-laci-kaye-booth-tickets-fri-oct-9-2026-bok-center",
+  // Remaining 2026 dates — re-verified 2026-10-13 against the live TicketNetwork
+  // performer page (event id + canonical slug copied from its listing links; each
+  // CJ click followed with curl -IL to a 200 on the matching event page). Keys
+  // MUST equal data/tour-dates.json ids — the old "redwest-festival-..." and
+  // "st.-paul-..." keys never matched, so those shows fell back to the performer page.
+  // Tulsa BOK Center 2026-10-09 (event 8071931) was CANCELED hours before showtime:
+  // its deep link is intentionally removed (falls back to the performer page).
+  // Two Step Inn 2027-04-18: not listed on TicketNetwork as of 2026-10-13.
+  "los-angeles-greek-theatre-2026-10-13": "https://www.ticketnetwork.com/tickets/8071950/ella-langley-kameron-marlowe-and-laci-kaye-booth-tickets-tue-oct-13-2026-greek-theatre-los-angeles-ca",
+  "los-angeles-greek-theatre-2026-10-14": "https://www.ticketnetwork.com/tickets/8071951/ella-langley-kameron-marlowe-and-laci-kaye-booth-tickets-wed-oct-14-2026-greek-theatre-los-angeles-ca",
+  "salt-lake-city-redwest-festival-2026-10-16": "https://www.ticketnetwork.com/tickets/7996100/redwest-ella-langley-shaboozey-and-koe-wetzel-friday-tickets-fri-oct-16-2026-utah-state-fairpark",
+  "des-moines-caseys-center-2026-10-29": "https://www.ticketnetwork.com/tickets/8071952/ella-langley-kameron-marlowe-and-gabriella-rose-tickets-thu-oct-29-2026-casey%27s-center",
+  "lincoln-pinnacle-bank-arena-2026-10-30": "https://www.ticketnetwork.com/tickets/8071933/ella-langley-kameron-marlowe-and-gabriella-rose-tickets-fri-oct-30-2026-pinnacle-bank-arena",
+  "saint-paul-grand-casino-arena-2026-10-31": "https://www.ticketnetwork.com/tickets/8071934/ella-langley-kameron-marlowe-and-gabriella-rose-tickets-sat-oct-31-2026-grand-casino-arena",
   "lubbock-united-supermarkets-arena-2026-10-10": "https://www.ticketnetwork.com/tickets/8071948/ella-langley-kameron-marlowe-laci-kaye-booth-tickets-sat-oct-10-2026-united-supermarkets-arena",
-  "los-angeles-greek-theatre-2026-10-13": "https://www.ticketnetwork.com/tickets/8071950/ella-langley-kameron-marlowe-laci-kaye-booth-tickets-tue-oct-13-2026-greek-theatre-los-angeles-ca",
-  "los-angeles-greek-theatre-2026-10-14": "https://www.ticketnetwork.com/tickets/8071951/ella-langley-kameron-marlowe-laci-kaye-booth-tickets-wed-oct-14-2026-greek-theatre-los-angeles-ca",
-  "redwest-festival-2026-10-16": "https://www.ticketnetwork.com/tickets/7996100/redwest-ella-langley-shaboozey-koe-wetzel-friday-tickets-fri-oct-16-2026-utah-state-fairpark",
-  "des-moines-caseys-center-2026-10-29": "https://www.ticketnetwork.com/tickets/8071952/ella-langley-kameron-marlowe-gabriella-rose-tickets-thu-oct-29-2026-caseys-center",
-  "lincoln-pinnacle-bank-arena-2026-10-30": "https://www.ticketnetwork.com/tickets/8071933/ella-langley-kameron-marlowe-gabriella-rose-tickets-fri-oct-30-2026-pinnacle-bank-arena",
-  "st.-paul-grand-casino-arena-2026-10-31": "https://www.ticketnetwork.com/tickets/8071934/ella-langley-kameron-marlowe-gabriella-rose-tickets-sat-oct-31-2026-grand-casino-arena",
   "virginia-beach-patriotic-festival-2027-05-29": "https://www.ticketnetwork.com/tickets/8027003/patriotic-festival-ella-langley-saturday-tickets-sat-may-29-2027-virginia-beach-oceanfront",
 };
+
+/**
+ * Shows that were canceled. Never deep-link these to a (dead) event page — the
+ * CTA falls back to the performer page so the click still lands somewhere useful.
+ */
+const CANCELED_SHOW_IDS: ReadonlySet<string> = new Set<string>(["tulsa-bok-center-2026-10-09"]);
+
+/** True when a show id is a known cancellation (used to suppress ticket CTAs). */
+export function isCanceledShow(showId?: string): boolean {
+  return !!showId && CANCELED_SHOW_IDS.has(showId);
+}
 
 /**
  * Build the TicketNetwork affiliate (CJ) URL for a show. Pass the show id
@@ -135,7 +153,8 @@ const KNOWN_TICKETNETWORK_URLS: Record<string, string> = {
  */
 export function ticketNetworkUrl(showId?: string): string {
   const dest =
-    (showId && KNOWN_TICKETNETWORK_URLS[showId]) || TICKETNETWORK_ELLA_LANGLEY;
+    (showId && !CANCELED_SHOW_IDS.has(showId) && KNOWN_TICKETNETWORK_URLS[showId]) ||
+    TICKETNETWORK_ELLA_LANGLEY;
   return `${TICKETNETWORK_CJ_CLICK}?url=${encodeURIComponent(dest)}`;
 }
 

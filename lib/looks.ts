@@ -308,6 +308,24 @@ export const LOOKS: Look[] = [
       "ww-dan-post-otc-socks-4pk",
     ],
   },
+  {
+    slug: "holiday-gifts",
+    title: "Holiday Gifts for Ella Fans",
+    tagline: "Under the tree, on the turntable",
+    occasion: "Gift guide · holiday 2026",
+    vibe:
+      "For the Ella Langley fan on your list. Her records on vinyl and CD, a turntable to spin them, a frame to hang them, and the earplugs and clear bag they will want for the 2027 festival dates.",
+    productSlugs: [
+      "fc-dandelion-vinyl",
+      "fc-dandelion-cd",
+      "fc-hungover-vinyl-standard",
+      "ag-audio-technica-lp60x-bt",
+      "fc-vinyl-record-frame",
+      "ec-loop-experience-2",
+      "ec-clear-stadium-bag",
+      "wfw-turquoise-dangle-earrings",
+    ],
+  },
 ];
 
 export function getAllLooks(): Look[] {
@@ -358,6 +376,8 @@ export const GUIDE_LOOK_MAP: Record<string, string[]> = {
   ],
   "ella-langley-dandelion-tour-survival-guide": ["rain-ready", "amphitheater-lawn"],
   "ella-langley-arena-vs-festival": ["arena-night", "festival-day-heat"],
+  "gifts-for-ella-langley-fans": ["holiday-gifts"],
+  "best-gifts-for-country-music-fans": ["holiday-gifts", "classic-denim-and-boots"],
 };
 
 export function getLooksForGuide(guideSlug: string): Look[] {

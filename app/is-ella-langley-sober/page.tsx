@@ -7,7 +7,7 @@ import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
 const TITLE = "Is Ella Langley Sober? The Honest Answer";
 const DESC =
-  "People ask if Ella Langley is sober because of songs like \"Nicotine\" and \"ain't sober yet.\" Here's the straight answer: there's no public statement — and why the songs aren't one.";
+  "People ask if Ella Langley is sober because of songs like \"Nicotine\" and an album called \"Hungover.\" Here's the straight answer: there's no public statement — and why the songs aren't one.";
 
 export const metadata: Metadata = {
   title: { absolute: `${TITLE} | Ella Fellas` },
@@ -20,7 +20,7 @@ export default function SoberPage() {
   const faq = [
     { q: "Is Ella Langley sober?", a: "There is no public statement from Ella Langley or her team about her being sober, and no verified reporting either way. Anyone claiming a definitive answer is guessing. What people are usually reacting to is her music, not a personal announcement." },
     { q: "Is the song \"Nicotine\" about addiction or being sober?", a: "\"Nicotine\" is a metaphor. Langley has described it as being about craving a person the way you'd crave a vice — young, rebellious love — not a statement about substances or sobriety. It's a songwriting device, not a confession." },
-    { q: "Why do people think Ella Langley might be sober?", a: "Her catalog leans into drinking imagery as a persona — titles like \"ain't sober yet,\" \"hungover,\" and \"i blame the bar.\" Fans reasonably wonder whether that's autobiography or character. Country songwriting has always played both, and there's no public word on where she personally lands, so we won't pretend there is." },
+    { q: "Why do people think Ella Langley might be sober?", a: "Her catalog leans into drinking imagery as a persona — titles like \"hungover,\" \"i blame the bar\" and \"girl who drank wine.\" Fans reasonably wonder whether that's autobiography or character. Country songwriting has always played both, and there's no public word on where she personally lands, so we won't pretend there is." },
   ];
   return (
     <article className="mx-auto max-w-3xl px-4 py-10">
@@ -41,7 +41,7 @@ export default function SoberPage() {
       </div>
       <p className="text-ink/80 leading-relaxed mb-4">
         The reason people ask is the music. Songs like <Link href="/songs/nicotine" className="underline text-denim hover:text-primary">&ldquo;Nicotine&rdquo;</Link>,{" "}
-        <Link href="/songs/aint-sober-yet" className="underline text-denim hover:text-primary">&ldquo;ain&apos;t sober yet&rdquo;</Link> and her debut album{" "}
+        &ldquo;I Blame the Bar&rdquo; and her debut album{" "}
         <em>Hungover</em> lean hard into drinking imagery. It&apos;s natural to wonder how much is autobiography.
       </p>
       <p className="text-ink/80 leading-relaxed mb-6">

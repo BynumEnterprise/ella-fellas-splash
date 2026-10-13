@@ -52,7 +52,7 @@ function displayTitle(t: string): string {
 function meaningQuestion(s: Song): string {
   const t = `\u201C${displayTitle(s.title)}\u201D`;
   // Collabs on another artist's record credit the lead artist first.
-  if (s.albumSlug === "collabs" && s.feat) return `What Does ${t} by ${s.feat} & Ella Langley Mean?`;
+  if (s.albumSlug === "collabs" && s.feat && s.album !== "Non-album single") return `What Does ${t} by ${s.feat} & Ella Langley Mean?`;
   return `What Does ${t} by Ella Langley Mean?${s.feat ? ` (feat. ${s.feat})` : ""}`;
 }
 

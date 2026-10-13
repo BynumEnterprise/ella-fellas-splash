@@ -12,6 +12,9 @@ import { MerchCTA } from "@/components/MerchCTA";
 import { formatDate, formatTime } from "@/lib/utils";
 import type { Metadata } from "next";
 
+// ISR: "next show" / "updated" copy is date-relative, so rebuild hourly between deploys.
+export const revalidate = 3600;
+
 export const metadata: Metadata = {
   description:
     "Your daily Ella Langley fan HQ: 2026 tour dates and tickets, song meanings, concert-prep guides, trip planning, and a curated shop. Independent, fan-run, updated daily.",

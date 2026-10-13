@@ -45,13 +45,13 @@ These are the artists Ella has actually worked with, who you'll hear her duet wi
 
 **Riley Green.** The most important. Two #1 duets and counting. The Alabama tether keeps this collaboration evergreen.
 
-**HARDY.** One collaboration so far, more coming based on his recent teases. The rock-country crossover thread.
+**HARDY.** Featured on "never met anyone like you" (2025) and a co-writer on "be her." The rock-country crossover thread.
 
-**Hailey Whitters.** Co-writer on "weren't for the wind" and others. Hasn't done an on-record duet yet. The duet that everyone's waiting for.
+**Miranda Lambert.** Co-writer and co-producer on Dandelion, including "Choosin' Texas," and featured on "butterfly season."
 
-**Lori McKenna.** Co-writer on "be her." Won't duet (she doesn't do that). The mentor of the class.
+**Koe Wetzel.** Two duets: "That's Why We Fight" (2023) and "Jaded" (2026).
 
-**Aaron Raitiere.** Co-writer on more Ella songs than anyone else. The writer-behind-the-writer.
+**Aaron Raitiere.** Co-writer on "you look like you love me," "You & Me Time" and "I Gotta Quit." The writer-behind-the-writer.
 
 ## The lineage (who came before)
 

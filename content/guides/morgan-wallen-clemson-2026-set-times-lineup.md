@@ -49,7 +49,7 @@ Memorial Stadium sits on the Clemson University campus and seats more than 80,00
 
 ## Getting tickets
 
-The [Clemson show page](/tour/clemson-memorial-stadium-2026-06-27) carries the "Get tickets" pointer. Click in, hit the button, and you are routed to live listings for this exact date and venue, resale included. We do not sell tickets directly -- the show page sends you where the seats are.
+This show has now been played. For Ella's remaining dates and ticket links, see the [Ella Langley tour page](/tour). We do not sell tickets directly.
 
 ## Where to stay and how to get there
 

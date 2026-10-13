@@ -28,14 +28,14 @@ Ella extended the Dandelion Tour by **21 fall dates** — from Green Bay on Augu
 **September**
 
 - **Thu, Sep 10 — Newark, NJ** (Prudential Center) — [show page](/tour/newark-prudential-center-2026-09-10)
-- **Fri, Sep 11 — State College, PA** (Bryce Jordan Center) — [show page](/tour/state-college-bryce-jordan-center-2026-09-11)
+- **Fri, Sep 11 — State College, PA** (Bryce Jordan Center) — [show page](/tour/university-park-bryce-jordan-center-2026-09-11)
 - **Sat, Sep 12 — Charleston, WV** (Charleston Coliseum) — [show page](/tour/charleston-charleston-coliseum-2026-09-12)
-- **Thu, Sep 17 — Oxford, MS** (SJB Pavilion at Ole Miss) — [show page](/tour/oxford-sjb-pavilion-2026-09-17)
+- **Thu, Sep 17 — Oxford, MS** (SJB Pavilion at Ole Miss) — [show page](/tour/oxford-the-pavilion-ole-miss-2026-09-17)
 - **Fri, Sep 18 — Athens, GA** (Akins Ford Arena) — Kameron Marlowe + Laci Kaye Booth on the bill. [show page](/tour/athens-akins-ford-arena-2026-09-18)
 - **Sat, Sep 19 — Jacksonville, FL** (VyStar Veterans Memorial Arena) — [show page](/tour/jacksonville-vystar-veterans-memorial-arena-2026-09-19)
 - **Thu, Sep 24 — Knoxville, TN** (Thompson-Boling at Food City Center) — [show page](/tour/knoxville-food-city-center-2026-09-24)
 - **Fri, Sep 25 — Columbus, OH** (Schottenstein Center) — [show page](/tour/columbus-schottenstein-center-2026-09-25)
-- **Sat, Sep 26 — Moline, IL** (Vibrant Arena at The MARK) — [show page](/tour/moline-vibrant-arena-at-the-mark-2026-09-26)
+- **Sat, Sep 26 — Moline, IL** (Vibrant Arena at The MARK) — [show page](/tour/moline-vibrant-arena-2026-09-26)
 
 **October**
 
@@ -45,7 +45,7 @@ Ella extended the Dandelion Tour by **21 fall dates** — from Green Bay on Augu
 - **Tue-Wed, Oct 13-14 — Los Angeles, CA** (Greek Theatre, TWO nights) — [Full guide ->](/guides/ella-langley-greek-theatre-la-2026)
 - **Thu, Oct 29 — Des Moines, IA** (Casey's Center) — [show page](/tour/des-moines-caseys-center-2026-10-29)
 - **Fri, Oct 30 — Lincoln, NE** (Pinnacle Bank Arena) — [show page](/tour/lincoln-pinnacle-bank-arena-2026-10-30)
-- **Sat, Oct 31 — St. Paul, MN** (Grand Casino Arena) — the Halloween finale. [show page](/tour/st.-paul-grand-casino-arena-2026-10-31)
+- **Sat, Oct 31 — St. Paul, MN** (Grand Casino Arena) — the Halloween finale. [show page](/tour/saint-paul-grand-casino-arena-2026-10-31)
 
 ## What to know before the fall leg
 

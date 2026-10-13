@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import { seoTitle } from "@/lib/seo";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Calendar, MapPin, Clock, Users } from "lucide-react";
@@ -18,6 +19,9 @@ import { TripPlannerPanel } from "@/components/TripPlannerPanel";
 import { CanceledNotice } from "@/components/CanceledNotice";
 import { ShowTicketCTA } from "@/components/ShowTicketCTA";
 import { vrboUrl, hotelUrl, cheapOairUrl, economyBookingsUrl } from "@/lib/affiliates";
+
+// ISR: "next show" / "updated" copy is date-relative, so rebuild hourly between deploys.
+export const revalidate = 3600;
 
 export async function generateStaticParams() {
   return getAllTourDates().map((d) => ({ slug: d.id }));
@@ -43,14 +47,14 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const canonical = `${SITE_URL}/tour/${d.id}`;
   // Include the date so two-night stands (e.g. Auburn Aug 28 + 29) don't produce identical titles.
   const title = d.canceled
-    ? `Ella Langley ${d.city} ${formatDate(d.date, "short")}: Show Canceled | Ella Fellas`
-    : `Ella Langley ${d.city} ${formatDate(d.date, "short")}: Tickets & Set Times | Ella Fellas`;
+    ? `Ella Langley ${d.city} ${formatDate(d.date, "short")}: Show Canceled`
+    : `Ella Langley ${d.city} ${formatDate(d.date, "short")}: Tickets & Set Times`;
   const ogImage = `/api/og?title=${encodeURIComponent(`Ella Langley in ${d.city}`)}&kicker=${encodeURIComponent(`${formatDate(d.date, "short")} · ${d.venue}`)}`;
   const description = d.canceled
     ? `Ella Langley's ${formatDate(d.date, "long")} show at ${d.venue}, ${d.city} was canceled. ${d.canceledReason ?? ""} See her next upcoming shows.`.replace(/\s+/g, " ")
     : `Ella Langley at ${d.venue}, ${d.city} — ${formatDate(d.date, "long")}. Tickets, parking, hotels, and openers.`;
   return {
-    title: { absolute: title },
+    title: seoTitle(title),
     description,
     alternates: { canonical },
     openGraph: { title, description, url: canonical, type: "article", images: [ogImage] },

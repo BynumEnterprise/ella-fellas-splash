@@ -17,7 +17,7 @@ Rules: only released material. No live-only covers, no leaks, no demos. Album cu
 
 Yes, "Choosin' Texas" sold more units. Yes, "you look like you love me" launched her career. "weren't for the wind" is the better song.
 
-The reason: every line earns its place. There's no filler verse, no recycled chorus, no decision the production talks over. Hailey Whitters wrote her career around songs that work like this; Ella's version of it might be the highest-water mark for the form so far this decade.
+The reason: every line earns its place. There's no filler verse, no recycled chorus, no decision the production talks over. Ella's version of the restless-heart song might be the high-water mark for the form so far this decade.
 
 If you only ever play one Ella Langley song after this list, play this one.
 
@@ -27,7 +27,7 @@ The duet that did the work. We're not going to overexplain it — you've heard i
 
 ### 3. "Choosin' Texas"
 
-The biggest commercial moment of her career and a near-perfect single. Three minutes flat, the hook hits in the first 45 seconds, the bridge does what bridges should do, the song ends before you're tired of it. It's also the easiest song on the list to sing along to in a car with three Fellas you've known for a decade. Sometimes that's what matters most.
+The biggest commercial moment of her career and a near-perfect single. The hook hits early, the bridge does what bridges should do, and the song ends before you're tired of it. It's also the easiest song on the list to sing along to in a car with three Fellas you've known for a decade. Sometimes that's what matters most.
 
 ### 4. "nicotine"
 
@@ -35,7 +35,7 @@ This is where we'll get argued with. "Nicotine" is an album cut. It was never a 
 
 ### 5. "be her"
 
-The Lori McKenna collaboration on Dandelion. The album's emotional center. The song that made us realize Ella isn't just a vocalist with great songs — she's a writer who can sit in a room with the best in Nashville and contribute material that earns its place. If the next ten years go the way we think they will, "be her" is the song people will point to as the moment she became a peer of her heroes.
+Written with Jordan Schmidt, HARDY and Smith Ahnquist, and the album's emotional center. The song that made us realize Ella isn't just a vocalist with great songs — she's a writer who can sit in a room with the best in Nashville and contribute material that earns its place. If the next ten years go the way we think they will, "be her" is the song people will point to as the moment she became a peer of her heroes.
 
 ## The strong middle
 
@@ -45,7 +45,7 @@ The sequel to "you look like you love me." Same chemistry, slightly more confide
 
 ### 7. "paint the town blue"
 
-The morning-after companion piece to "you look like you love me." Same Riley Green co-write, different mood. Honky-tonk closer that works at the bar at 1 AM and not anywhere else, which is exactly the right calibration for the song.
+The 2023 single that set up Hungover, written with Rhett Akins, Will Bundy and Travis Wood. A heartbreak song dressed as a party song. Honky-tonk closer that works at the bar at 1 AM and not anywhere else, which is exactly the right calibration for the song.
 
 ### 8. "dandelion"
 
@@ -57,7 +57,7 @@ The rock-country crossover. The hardest song in her catalog. Country radio has h
 
 ### 10. "loving life again"
 
-The Dandelion opener and the actual opener on most tour stops. Front-loaded with everything that makes an opener work. Doesn't rank higher because it does what it does and not much beyond that — but in a setlist context, it's irreplaceable.
+Written with ERNEST and Devin Dawson about coming back from a hard 2025, and a late-set staple on the tour. Doesn't rank higher only because the songs above it hit harder on record.
 
 ## The good-but-not-essential tier
 
@@ -65,31 +65,31 @@ The Dandelion opener and the actual opener on most tour stops. Front-loaded with
 
 The title track from album one. We almost forgot it existed when making this list, which tells you where it sits.
 
-### 12. "country boy's dream"
+### 12. "country boy's dream girl"
 
-A B-side that streams above expectations on Spotify. Lyrically lighter than the deep cuts but the harmony is gorgeous.
+The 2022 single that led her Excuse the Mess EP, since certified Platinum. Lyrically lighter than the deep cuts, and still in the live set.
 
-### 13. "honky tonk hall of fame"
+### 13. "bottom of your boots"
 
-A bar song. Does what bar songs are supposed to do.
+A Dandelion album cut that charted like a single: #20 on the Hot 100. The title comes from her dad ("I love you from the bottom of my boots to the top of my hat"). Ranked here only because the list above it is that strong.
 
-### 14. "alabama line"
+### 14. "i can't love you anymore" (with Morgan Wallen)
 
-The Hungover album closer. Closes the album because the album needed an emotional landing. As a song, it lands.
+The Morgan Wallen duet from the Dandelion reissue, and a #1 at country radio. A slow-burn, '70s-leaning heartbreaker. It's here rather than higher because it plays more like a great duet moment than a defining Ella song.
 
-### 15. "stuck on you"
+### 15. "butterfly season" (feat. Miranda Lambert)
 
-Released as a non-album single in early 2025. Felt like a holdover between album cycles, sounded like one too.
+The Miranda Lambert duet on Dandelion, written by the same four people behind "Choosin' Texas." Hopeful and pretty, a quieter listen than the singles.
 
 ## The bottom tier
 
-### 16. "if i was a man"
+### 16. "that's why we fight" (with Koe Wetzel)
 
-This is the one. The song most fans will defend most loudly and the song that hits us as least essential. It's not bad. It's just trying to do something the writing isn't quite earning. We respect the swing, we don't return for the listen.
+The 2023 Koe Wetzel duet from her Excuse the Mess EP. Still a live staple, and it has closed plenty of Dandelion Tour nights, but on record it's an early-career snapshot.
 
-### 17. "hot mess"
+### 17. "girl you're taking home"
 
-Album filler. Every album has one. Don't @ us.
+A Still Hungover deluxe track. Solid, and it charted, but it's the one we skip to get to "weren't for the wind."
 
 ---
 

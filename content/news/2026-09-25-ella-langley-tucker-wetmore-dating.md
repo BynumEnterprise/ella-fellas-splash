@@ -48,7 +48,7 @@ In other words, he's not a country-adjacent famous boyfriend — he's an artist 
 
 Honestly? Not much changes about the music, and that's fine. Ella is still mid-run on the Dandelion Tour, still stacking records, and still — as of this week — a Song of the Year winner. A relationship confirmation is fun fan news, not a career pivot, and both artists have kept it low-key rather than turning it into content.
 
-If you want to keep up with where Ella goes from here, our [Ella Langley tour page](/tour) has set times, openers and tickets for every remaining stop, and the full story of how she got here — Alabama bar gigs to the top of the charts — is in the [Ella Langley biography](/about/biography). We'll update this post if either artist says anything on the record.
+If you want to keep up with where Ella goes from here, our [Ella Langley tour page](/tour) has set times, openers and tickets for every remaining stop, and the full story of how she got here — Alabama bar gigs to the top of the charts — is in the [Ella Langley biography](/about). We'll update this post if either artist says anything on the record.
 
 ---
 

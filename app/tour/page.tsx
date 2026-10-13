@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { seoTitle } from "@/lib/seo";
 import Link from "next/link";
 import { Ticket, CalendarClock, ArrowRight } from "lucide-react";
 import { getAllTourDates, getNextShow, getPastTourDates } from "@/lib/data";
@@ -9,6 +10,9 @@ import { TourCard } from "@/components/TourCard";
 import { MerchCTA } from "@/components/MerchCTA";
 import { AffiliateLink } from "@/components/AffiliateLink";
 import type { TourDate } from "@/lib/types";
+
+// ISR: "next show" / "updated" copy is date-relative, so rebuild hourly between deploys.
+export const revalidate = 3600;
 
 /** "Oct 13" — compact date for titles and meta. */
 function md(date: string): string {
@@ -44,7 +48,7 @@ export async function generateMetadata(): Promise<Metadata> {
     dates2027.length ? ` (${dates2027.map((d) => `${d.city} ${md(d.date)}`).join(", ")})` : ""
   }. Tickets, set times, openers and past setlists.`;
   return {
-    title: { absolute: `${title} | Ella Fellas` },
+    title: seoTitle(title),
     description,
     alternates: { canonical: "/tour" },
     openGraph: { title, description, url: "/tour", images: ["/opengraph-image.png"] },

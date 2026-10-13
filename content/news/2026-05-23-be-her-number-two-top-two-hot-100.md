@@ -35,4 +35,4 @@ If you've been streaming ["Choosin' Texas"](/songs/choosin-texas) on repeat, thr
 
 If you're new to her catalog, "Be Her" is also the easiest entry point if "Choosin' Texas" felt too anthem-y for your taste. It's quieter, the lyric is more interior, and it's the song that'll probably win her her second Grammy nomination.
 
-[Read the chart breakdown from week seven →](/news/2
+[Read the chart breakdown from week seven →](/news/2026-05-21-choosin-texas-week-seven)

@@ -33,10 +33,10 @@ That is the elevator pitch. Now here is how to actually get into her before the 
 If you want to walk into the stadium already knowing the words, start here:
 
 - **"you look like you love me" (with Riley Green)** -- the duet that did it. It went Platinum and turned her into a household name. The chemistry between the two voices is the whole thing. This is song one.
-- **"Choosin' Texas"** -- her biggest commercial moment, co-written with Miranda Lambert. Three minutes flat, hook in the first 45 seconds, built to sing along to in a car full of friends.
+- **"Choosin' Texas"** -- her biggest commercial moment, co-written with Miranda Lambert. Her first Hot 100 #1, built to sing along to in a car full of friends.
 - **"weren't for the wind"** -- a signature single and one of the songs that made country radio pay attention.
-- **"be her"** -- a Lori McKenna co-write off Dandelion and the album's emotional center. The song that proves she is a writer, not just a voice.
-- **"don't mind if i do" and "paint the town blue"** -- two more Riley Green collaborations, if the first duet hooked you.
+- **"be her"** -- written with Jordan Schmidt, HARDY and Smith Ahnquist, and the emotional center of Dandelion. The song that proves she is a writer, not just a voice.
+- **"don't mind if i do"** -- her second Riley Green duet (it is his song, with her featured), if the first one hooked you.
 
 Want the whole catalog ranked with our honest take? Read [the best Ella Langley songs, ranked](/guides/best-ella-langley-songs-ranked). If you would rather a guided on-ramp, [Ella Langley for beginners](/guides/ella-langley-for-beginners) is the 30-minute crash course.
 
@@ -48,14 +48,14 @@ So the worst thing you can do is treat the openers as optional and roll in at th
 
 ## Where to catch her with Morgan Wallen
 
-Ella is direct support on a run of 2026 Still The Problem Tour stadium dates. The upcoming ones:
+Ella was direct support on a run of 2026 Still The Problem Tour stadium dates, including:
 
-- [Chicago -- Soldier Field -- June 20](/tour/chicago-soldier-field-2026-06-20)
-- [Clemson -- Memorial Stadium -- June 27](/tour/clemson-memorial-stadium-2026-06-27)
-- [Baltimore -- M&T Bank Stadium -- July 18](/tour/baltimore-mt-bank-stadium-2026-07-18)
+- Chicago -- Soldier Field -- June 20
+- Clemson -- Memorial Stadium -- June 27
+- Baltimore -- M&T Bank Stadium -- July 18
 - [Philadelphia -- Lincoln Financial Field -- August 1](/tour/philadelphia-lincoln-financial-field-2026-08-01)
 
-Each show page has the lineup, the venue details, and the "Get tickets" pointer. For the full overview -- who else is on each bill, what we know about set times, how to grab seats -- start at our hub: [Ella Langley on Morgan Wallen's 2026 Stadium Tour](/guides/ella-langley-morgan-wallen-2026-tour).
+Those stadium dates are now wrapped; for her remaining headline shows, see the [tour page](/tour). For the full overview -- who else is on each bill, what we know about set times, how to grab seats -- start at our hub: [Ella Langley on Morgan Wallen's 2026 Stadium Tour](/guides/ella-langley-morgan-wallen-2026-tour).
 
 ## One more thing: it is not a Wallen duet
 

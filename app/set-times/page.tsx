@@ -8,6 +8,9 @@ import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 import { MerchCTA } from "@/components/MerchCTA";
 
+// ISR: "next show" / "updated" copy is date-relative, so rebuild hourly between deploys.
+export const revalidate = 3600;
+
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
 const TITLE = "What Time Does Ella Langley Go On Stage? Set Times by City";
 const DESC =

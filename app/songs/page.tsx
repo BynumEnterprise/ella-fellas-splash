@@ -71,8 +71,8 @@ export default function SongsIndexPage() {
           THE SONGS
         </h1>
         <p className="text-lg text-ink/80 mt-5 leading-relaxed">
-          Two albums, {allSongs.length} tracks, three #1 singles. Pick a record, pick a song, get the
-          full breakdown — chart performance, writers, the live story, the why.
+          Two albums plus features, {allSongs.length} songs. Pick a record, pick a song, get the
+          full breakdown: chart peaks, writers, and what the song means.
         </p>
       </header>
 

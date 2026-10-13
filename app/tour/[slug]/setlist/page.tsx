@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { seoTitle } from "@/lib/seo";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ListMusic, ExternalLink, Clock } from "lucide-react";
@@ -10,6 +11,9 @@ import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 import { MerchCTA } from "@/components/MerchCTA";
 import { CanceledNotice } from "@/components/CanceledNotice";
 import { ShowTicketCTA } from "@/components/ShowTicketCTA";
+
+// ISR: "next show" / "updated" copy is date-relative, so rebuild hourly between deploys.
+export const revalidate = 3600;
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
 
@@ -40,9 +44,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     ? `Ella Langley's ${d.city} show at ${d.venue} on ${dateShort} was canceled, so there is no setlist. Here's what she has been playing on the tour and where she plays next.`
     : has
     ? `The full setlist Ella Langley played at ${d.venue} in ${d.city} on ${dateShort} — every song, in order.`
-    : `The setlist from Ella Langley's ${d.city} show at ${d.venue} — posted within a couple of hours of the encore. Plus what she's been playing on the Dandelion Tour so far.`;
+    : `The setlist from Ella Langley's ${d.city} show at ${d.venue} on ${dateShort} — posted within a couple of hours of the encore. Plus what she's been playing on the Dandelion Tour so far.`;
   return {
-    title: { absolute: `${title} | Ella Fellas` },
+    title: seoTitle(title),
     description: desc,
     alternates: { canonical: `${SITE_URL}/tour/${d.id}/setlist` },
     openGraph: {

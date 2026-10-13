@@ -39,7 +39,7 @@ If you want the whole story in one place — the writers, the release history an
 
 ## See it live while it's still No. 1
 
-The Dandelion Tour is back out for its fall run, and the odds are decent the song is still on top for these dates. The next stops, with set times, opener lineups, where to sit and ticket links, are all on the [Ella Langley tour page](/tour) — the fall leg now features Muscadine Bloodline in the support slot [after ERNEST stepped away](/news/2026-09-11-muscadine-bloodline-joins-ella-langley-tour), with Gabriella Rose still opening. Hearing an arena sing a song the week it's chasing an all-time record is not a night you get to redo.
+The Dandelion Tour is back out for its fall run, and the odds are decent the song is still on top for these dates. The next stops, with set times, opener lineups, where to sit and ticket links, are all on the [Ella Langley tour page](/tour) — the fall leg now features Muscadine Bloodline in the support slot [after ERNEST stepped away](/openers), with Gabriella Rose still opening. Hearing an arena sing a song the week it's chasing an all-time record is not a night you get to redo.
 
 And if you're going, our [Arena Night look](/shop/looks/arena-night) is what we'd wear to watch history try to hold at No. 1 for one more Monday.
 

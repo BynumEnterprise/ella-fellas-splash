@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { seoTitle } from "@/lib/seo";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Clock, DoorOpen, Music, AlertTriangle, ArrowRight } from "lucide-react";
@@ -13,6 +14,9 @@ import { MerchCTA } from "@/components/MerchCTA";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 import { CanceledNotice } from "@/components/CanceledNotice";
 import { ShowTicketCTA } from "@/components/ShowTicketCTA";
+
+// ISR: "next show" / "updated" copy is date-relative, so rebuild hourly between deploys.
+export const revalidate = 3600;
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
 
@@ -42,20 +46,21 @@ export async function generateMetadata({
   const d = getTourDate(slug);
   if (!d) return {};
   const st = buildSetTimes(d);
+  const dateShort = fmt(d.date).replace(/^\w+, /, "");
   const title = d.canceled
     ? `Ella Langley ${d.city} (${fmt(d.date).replace(/^\w+, /, "")}): Show Canceled`
     : `Ella Langley ${d.city} Set Times: What Time Does She Go On? (${fmt(d.date).replace(/^\w+, /, "")})`;
   const desc = d.canceled
-    ? `Ella Langley's ${d.city} show at ${d.venue} was canceled. ${d.canceledReason ?? ""} See where she plays next.`
+    ? `Ella Langley's ${d.city} show at ${d.venue} on ${dateShort} was canceled. ${d.canceledReason ?? ""} See where she plays next.`
     : st.ellaStageTime
-    ? `Ella Langley goes on at ${st.ellaStageTime} at ${d.venue}, ${d.city} — ${d.venue}'s own posted running order for this date${st.doors ? `, doors ${st.doors}` : ""}. Full set times for every act on the bill.`
+    ? `Ella Langley goes on at ${st.ellaStageTime} at ${d.venue}, ${d.city} on ${dateShort} — ${d.venue}'s own posted running order for this date${st.doors ? `, doors ${st.doors}` : ""}. Full set times for every act on the bill.`
     : st.doors
     ? st.timesConfirmed
-      ? `Set times for Ella Langley at ${d.venue}, ${d.city} — doors ${st.doors}${st.listedStart ? `, listed start ${st.listedStart}` : ""}, full running order, and when she's actually on. Updated as the venue confirms.`
-      : `Set times and running order for Ella Langley at ${d.venue}, ${d.city}. ${d.venue} hasn't confirmed this date's times yet — we show the typical times for this tour and update the moment they're posted.`
-    : `Set times and running order for Ella Langley at ${d.venue}, ${d.city}. We post the real times as the venue confirms them — we never invent one.`;
+      ? `Set times for Ella Langley at ${d.venue}, ${d.city} on ${dateShort} — doors ${st.doors}${st.listedStart ? `, listed start ${st.listedStart}` : ""}, full running order, and when she's actually on. Updated as the venue confirms.`
+      : `Set times and running order for Ella Langley at ${d.venue}, ${d.city} on ${dateShort}. ${d.venue} hasn't confirmed this date's times yet — we show the typical times for this tour and update the moment they're posted.`
+    : `Set times and running order for Ella Langley at ${d.venue}, ${d.city} on ${dateShort}. We post the real times as the venue confirms them — we never invent one.`;
   return {
-    title: { absolute: `${title} | Ella Fellas` },
+    title: seoTitle(title),
     description: desc.slice(0, 300),
     alternates: { canonical: `${SITE_URL}/tour/${d.id}/set-times` },
     openGraph: {

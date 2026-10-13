@@ -23,6 +23,14 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      // Fabricated song entries removed from data/songs.json (Oct 2026 fact audit): not real Ella Langley songs.
+      { source: "/songs/alabama-plates", destination: "/songs", statusCode: 301 },
+      { source: "/songs/two-step-lessons", destination: "/songs", statusCode: 301 },
+      { source: "/songs/south-of-nowhere", destination: "/songs", statusCode: 301 },
+      { source: "/songs/drinking-with-the-lights-on", destination: "/songs", statusCode: 301 },
+      { source: "/songs/aint-sober-yet", destination: "/songs", statusCode: 301 },
+      { source: "/songs/let-me-ruin-it", destination: "/songs", statusCode: 301 },
+      { source: "/songs/your-name-in-my-truck", destination: "/songs", statusCode: 301 },
       {
         source: "/guides/what-to-bring-to-an-ella-langley-concert",
         destination: "/guides/what-to-bring-ella-langley-concert",

@@ -7,6 +7,9 @@ import { getAllTourDates } from "@/lib/data";
 import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 
+// ISR: "next show" / "updated" copy is date-relative, so rebuild hourly between deploys.
+export const revalidate = 3600;
+
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
 
 export async function generateStaticParams() {

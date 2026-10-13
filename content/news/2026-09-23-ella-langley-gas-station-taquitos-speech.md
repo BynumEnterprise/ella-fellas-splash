@@ -24,7 +24,7 @@ The line that makes the speech hit is the one about the van at 2am, and it isn't
 
 These pauses have quietly become part of the show. Earlier this run, [a speech about faith and mental health went viral](/news/2026-07-18-ella-langley-viral-stage-speeches-mental-health), and the prayers she's talked about on stage are the same ones that shaped ["Speaking Terms"](/news/2026-07-31-ella-langley-dove-awards-speaking-terms). It's a through-line: the songs and the speeches are coming from the same place.
 
-It also lands differently against the week she's having. "Choosin' Texas" just became the [longest-running No. 1 in Billboard Hot 100 history](/news/2026-09-22-choosin-texas-23-weeks-breaks-hot-100-record), so the sold-out room she's thanking her younger self in front of is, right now, the biggest stage in the format. For the full arc — Alabama bar gigs to a chart record — the [Ella Langley story](/about/biography) is the place to start.
+It also lands differently against the week she's having. "Choosin' Texas" just became the [longest-running No. 1 in Billboard Hot 100 history](/news/2026-09-22-choosin-texas-23-weeks-breaks-hot-100-record), so the sold-out room she's thanking her younger self in front of is, right now, the biggest stage in the format. For the full arc — Alabama bar gigs to a chart record — the [Ella Langley story](/about) is the place to start.
 
 If you want to catch one of these speeches in person before the fall leg wraps, set times, openers and tickets for every remaining stop are on the [Ella Langley tour page](/tour).
 

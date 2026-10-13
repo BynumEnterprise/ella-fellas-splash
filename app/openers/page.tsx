@@ -9,6 +9,9 @@ import { AffiliateLink } from "@/components/AffiliateLink";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 import { formatDate } from "@/lib/utils";
 
+// ISR: "next show" / "updated" copy is date-relative, so rebuild hourly between deploys.
+export const revalidate = 3600;
+
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
 
 /** Upcoming shows that are still on, soonest first. Computed at build. */

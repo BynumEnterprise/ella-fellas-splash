@@ -53,7 +53,7 @@ Soldier Field sits on the lakefront at 1410 Special Olympics Dr. It is an open-a
 
 ## Getting tickets
 
-The [Chicago show page](/tour/chicago-soldier-field-2026-06-20) carries the "Get tickets" pointer. Click in, hit the button, and you are routed to the live listings for this exact date and venue, resale included. We do not sell tickets ourselves -- the show page sends you where the seats are.
+This show has now been played. For Ella's remaining dates and ticket links, see the [Ella Langley tour page](/tour). We do not sell tickets ourselves.
 
 One reminder: Wallen plays Soldier Field across the weekend, and the openers differ by night. Make sure you are buying for June 20 if you want the night Ella is on the bill.
 

@@ -26,13 +26,13 @@ The career-defining duet. Picks you up from across the room, walks you over to t
 The breakout solo single. Quieter than the duet. This is the song Nashville heard and decided she was the real thing. If "you look like you love me" got you in the door, this is the song that makes you sit down and stay.
 
 **3. "Choosin' Texas"**
-The current #1. Three minutes flat, the chorus hits early, and it's the song every state in the South claims a piece of even though it's specifically about leaving Alabama. The biggest country song of 2026.
+Her first Hot 100 #1, written with Miranda Lambert, Luke Dick and Joybeth Taylor. A heartbreak song about a man who is going to choose Texas (and a Texas woman) over her. The biggest country song of 2026.
 
 **4. "nicotine"**
 The Hungover deep cut that streams way above expectations. Honky-tonk piano, addictive-love metaphor, the kind of song you put on a Friday-night-drive playlist and immediately replay.
 
 **5. "be her"**
-The emotional center of Dandelion, her 2026 album. Co-written with Lori McKenna (Tim McGraw's "Humble and Kind," Little Big Town's "Girl Crush"). This is where you find out she's a writer, not just a voice.
+The emotional center of Dandelion, her 2026 album. Co-written with Jordan Schmidt, HARDY and Smith Ahnquist, and a #2 on the Hot 100. This is where you find out she's a writer, not just a voice.
 
 That's it. Half an hour. By the end, you'll know if you're going to be an Ella Fella or not.
 
@@ -40,7 +40,7 @@ That's it. Half an hour. By the end, you'll know if you're going to be an Ella F
 
 **Hungover (2024)** is the debut. Honky-tonk-leaning, country traditionalist, built around her voice. Co-wrote every track. The album that made the case. [Get it on vinyl.](/shop/fc-hungover-vinyl)
 
-**Dandelion (2026)** is the follow-up. Same producer (Will Bundy), bigger production, more genre range — country at its core but with rock edges ("never met anyone like you" with HARDY) and softer moments ("be her"). The album that closed the case. [Vinyl here.](/shop/fc-dandelion-vinyl)
+**Dandelion (2026)** is the follow-up. New production team (Ella co-produced it with Ben West and Miranda Lambert), bigger production, more genre range — country at its core but with rock edges ("bottom of your boots") and softer moments ("be her"). The album that closed the case. [Vinyl here.](/shop/fc-dandelion-vinyl)
 
 If you only have time for one, Dandelion is the more polished entry point. If you want to understand the journey, start with Hungover.
 
@@ -61,11 +61,11 @@ The closest contemporary comparisons are Lainey Wilson (different aesthetic, sim
 
 **Riley Green** — fellow Alabamian, two #1 duets with her ("you look like you love me," "don't mind if i do"). Her most important musical partner.
 
-**HARDY** — one collaboration so far ("never met anyone like you"), reportedly more coming. The rock-country crossover thread.
+**HARDY** — featured on her 2025 single "never met anyone like you" and a co-writer on "be her." The rock-country crossover thread.
 
-**Will Bundy** — her producer on both albums. Not a household name, but he's responsible for the sonic identity that makes an Ella Langley song sound like an Ella Langley song.
+**Will Bundy** — producer of Hungover. **Miranda Lambert and Ben West** — her co-producers on Dandelion (Lambert also co-wrote "Choosin' Texas" and duets on "butterfly season").
 
-**Aaron Raitiere, Hailey Whitters, Lori McKenna, Ashley Gorley, Jessie Jo Dillon** — her songwriting room. Names worth knowing because she co-writes with them constantly and the credits matter.
+**Joybeth Taylor, Austin Goodloe, Aaron Raitiere, Luke Dick** — names that show up again and again in her songwriting credits. Worth knowing because the credits matter.
 
 ## The five facts you'll get asked
 

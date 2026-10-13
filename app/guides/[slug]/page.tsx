@@ -1,9 +1,11 @@
 import { notFound } from "next/navigation";
+import { seoTitle } from "@/lib/seo";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { PhotoFigure } from "@/components/PhotoFigure";
 import rehypeSlug from "rehype-slug";
+import remarkGfm from "remark-gfm";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import { Sparkles, ArrowRight } from "lucide-react";
 import { getAllGuideContent, getGuideBySlug } from "@/lib/content";
@@ -46,7 +48,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const g = getGuideBySlug(slug);
   if (!g) return {};
   return {
-    title: g.frontmatter.title,
+    title: seoTitle(g.frontmatter.title),
     description: g.frontmatter.excerpt,
     alternates: { canonical: `/guides/${slug}` },
     openGraph: { url: `/guides/${slug}`, images: [`/api/og?title=${encodeURIComponent(g.frontmatter.title)}`] },
@@ -135,7 +137,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
         <MDXRemote
           source={item.body}
           components={{ Figure: PhotoFigure }}
-          options={{ mdxOptions: { rehypePlugins: REHYPE_PLUGINS } }}
+          options={{ mdxOptions: { remarkPlugins: [remarkGfm], rehypePlugins: REHYPE_PLUGINS } }}
         />
       </div>
 

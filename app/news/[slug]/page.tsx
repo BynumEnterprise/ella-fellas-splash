@@ -1,4 +1,6 @@
 import { notFound } from "next/navigation";
+import remarkGfm from "remark-gfm";
+import { seoTitle } from "@/lib/seo";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { MDXRemote } from "next-mdx-remote/rsc";
@@ -24,7 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     ? leadPhoto.src
     : `/api/og?title=${encodeURIComponent(n.frontmatter.title)}&kicker=${encodeURIComponent("NEWS — " + (n.frontmatter.publishedAt ?? ""))}`;
   return {
-    title: n.frontmatter.title,
+    title: seoTitle(n.frontmatter.title),
     description: n.frontmatter.excerpt,
     openGraph: {
       type: "article",
@@ -99,7 +101,11 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ sl
       />
 
       <div className="prose-content">
-        <MDXRemote source={item.body} components={{ Figure: PhotoFigure }} />
+        <MDXRemote
+          source={item.body}
+          components={{ Figure: PhotoFigure }}
+          options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }}
+        />
       </div>
 
       <section className="mt-10 bg-denim text-paper rounded-xl p-6 md:p-8">

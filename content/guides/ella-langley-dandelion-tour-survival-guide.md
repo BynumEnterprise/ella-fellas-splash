@@ -33,15 +33,15 @@ Plan your dinner before 6 PM if you want to walk into the venue when doors open.
 
 ## The setlist preview
 
-Based on the opening nights of the tour, expect approximately 15-16 songs in a 95-minute set. The structure has been:
+Based on the setlists we have logged from July through October 2026, expect roughly 18 to 23 songs. The pattern has been consistent:
 
-1. **Opens** with "loving life again" — high-energy, immediate vibe
-2. **Mid-show stretch** of Hungover deep cuts (nicotine, paint the town blue, weren't for the wind)
-3. **Ballad slot** (be her, or a Lori McKenna cover)
-4. **Duet section** — Riley Green walks out when geography permits (Texas/Alabama dates almost always), or a stand-in for "don't mind if i do" + "you look like you love me"
-5. **Encore lands on "Choosin' Texas"**
+1. **Opens** with "Dandelion," the title track, at every show we have logged
+2. **Dandelion album cuts** make up much of the set ("I Gotta Quit," "Bottom of Your Boots," "You & Me Time," "Somethin' Simple," "Butterfly Season" and more), alongside "Here for the Party" (the Gretchen Wilson song) and "That's Why We Fight"
+3. **The big singles** come late: "Be Her," "you look like you love me," "Loving Life Again" and "Choosin' Texas"
+4. **Main set usually closes** with "weren't for the wind"
+5. **Encore** varies by night; on the fall run it has often included "Wish I Didn't Know Now" (her Toby Keith cover) and "That's Why We Fight"
 
-The Wednesday-night setlists tend to be the tightest. Friday/Saturday shows often add a song.
+Full song-by-song lists for each show are on our [setlists page](/setlists).
 
 ## Where to sit, what to skip
 

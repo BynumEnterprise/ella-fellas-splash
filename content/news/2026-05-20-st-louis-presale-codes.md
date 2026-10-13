@@ -4,7 +4,9 @@ slug: "2026-05-20-st-louis-presale-codes"
 publishedAt: "2026-05-20"
 updatedAt: "2026-10-13"
 category: "tour-prep"
-excerpt: "The Dandelion Tour's second night was Chaifetz Arena in St. Louis on Friday, May 8, 2026, with Kameron Marlowe and Gabriella Rose opening."
+excerpt: "The Dandelion Tour's second night was Chaifetz Arena in St. Louis on Friday, May 8, 2026, with Dylan Marlowe and Gabriella Rose opening."
+sources:
+  - "https://holler.country/news/general/ella-langley-2026-chaifetz-arena-show-in-st-louis-missouri-everything-you-need-to-know/"
 relatedTours: ["st.-louis-chaifetz-arena-2026-05-08"]
 ---
 
@@ -15,8 +17,8 @@ The Dandelion Tour's second show was at Chaifetz Arena (1 S Compton Ave, St. Lou
 ## The bill
 
 - **Ella Langley** (headliner)
-- **Kameron Marlowe**
 - **Gabriella Rose**
+- **Dylan Marlowe**
 
 ## What the early shows looked like
 

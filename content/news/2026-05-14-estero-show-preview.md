@@ -4,7 +4,9 @@ slug: "2026-05-14-estero-show-preview"
 publishedAt: "2026-05-14"
 updatedAt: "2026-10-13"
 category: "tour-prep"
-excerpt: "The Dandelion Tour's first Florida date: Hertz Arena in Estero on May 14, 2026, with Dylan Marlowe and Laci Kaye Booth opening."
+excerpt: "The Dandelion Tour's first Florida date: Hertz Arena in Estero on May 14, 2026, with Kameron Marlowe and Gabriella Rose announced as openers."
+sources:
+  - "https://www.whiskeyriff.com/2026/05/08/ella-langley-kicks-off-her-dandelion-tour-heres-the-full-opening-night-setlist/"
 relatedTours: ["estero-hertz-arena-2026-05-14", "savannah-enmarket-arena-2026-05-15"]
 ---
 
@@ -15,8 +17,10 @@ The Dandelion Tour came to Hertz Arena in Estero, Florida on Thursday, May 14, 2
 ## The bill
 
 - **Ella Langley** (headliner)
-- **Dylan Marlowe**
-- **Laci Kaye Booth**
+- **Kameron Marlowe**
+- **Gabriella Rose**
+
+(Openers as announced for the Florida dates per Whiskey Riff's published tour lineup.)
 
 ## What she played
 

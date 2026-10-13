@@ -19,7 +19,7 @@ The Dandelion Tour rotates several different opening acts across its dates. If y
 
 **Verdict:** This is the opener worth being in your seat for. Don't grab a beer during his set.
 
-**Plays on:** Toledo, St. Louis, Pikeville, Cary, N. Charleston dates.
+**Plays on (summer, as announced):** Estero, Savannah, Gilford, Canandaigua. He is also on most of the fall dates.
 
 ## 2. Kaitlin Butts — show up at doors
 
@@ -29,7 +29,7 @@ The Dandelion Tour rotates several different opening acts across its dates. If y
 
 **Verdict:** If you like the Ella songs that are about something real, Kaitlin will hit you the same way. Worth showing up for.
 
-**Plays on:** OKC, Independence, Pikeville, Austin, Corpus, Fort Worth.
+**Plays on (summer, as announced):** Pikeville, Cary, North Charleston, Austin, Corpus Christi, Fort Worth.
 
 ## 3. Laci Kaye Booth — show up at doors
 
@@ -39,7 +39,7 @@ The Dandelion Tour rotates several different opening acts across its dates. If y
 
 **Verdict:** Underrated. Catching her opening for Ella now is the kind of show you'll later tell people about.
 
-**Plays on:** Estero, Savannah, Salem, Wilmington, Austin, Corpus, Fort Worth.
+**Plays on (summer, as announced):** Pikeville, Cary, North Charleston, Gilford, Canandaigua, plus much of the fall run.
 
 ## 4. Gabriella Rose — grab a beer first
 
@@ -49,7 +49,7 @@ The Dandelion Tour rotates several different opening acts across its dates. If y
 
 **Verdict:** Worth getting in for. The "Butterfly Season" moment alone makes it worth it.
 
-**Plays on:** Toledo, St. Louis, OKC, Independence, Gilford, Canandaigua.
+**Plays on (summer, as announced):** Toledo, St. Louis, Estero, Savannah, Oklahoma City, Independence, Salem, Wilmington, Austin, Corpus Christi, Fort Worth.
 
 ## 5. Dylan Marlowe — grab a beer first
 
@@ -59,7 +59,9 @@ The Dandelion Tour rotates several different opening acts across its dates. If y
 
 **Verdict:** A solid set. If you're choosing between him and a beer line, see the set.
 
-**Plays on:** Estero, Savannah, Salem, Wilmington, Gilford, Canandaigua.
+**Plays on (summer, as announced):** Toledo, St. Louis, Oklahoma City, Independence, Salem, Wilmington.
+
+*Summer pairings are from the lineup Whiskey Riff published at the tour launch. Bills can change, so check your show page.*
 
 ## The big picture
 

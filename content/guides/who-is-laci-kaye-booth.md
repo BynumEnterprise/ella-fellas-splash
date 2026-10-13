@@ -9,7 +9,7 @@ faq:
   - q: "Is Laci Kaye Booth worth showing up early for?"
     a: "She's the rotating support act fans most hope draws their night. Her hazy, Americana-leaning country is a genuine change of pace from the rest of the bill -- and it's a voice you recognize in about two notes."
   - q: "What time does Laci Kaye Booth go on stage?"
-    a: "Support acts on the Dandelion Tour go on at the listed start time (7:00 PM at most stops). Laci Kaye Booth has been on the bill for Dandelion Tour dates including Estero, Savannah, Austin, Fort Worth, Green Bay and the fall run with Kameron Marlowe."
+    a: "Support acts on the Dandelion Tour go on at the listed start time (7:00 PM at most stops). Laci Kaye Booth is confirmed for Pikeville on July 23 with Kaitlin Butts."
 ---
 
 If you've got tickets to Ella Langley's Dandelion Tour this year, Laci Kaye Booth might be the dreamiest voice on the tour -- and the difference between catching her and missing her is usually about an hour of showing up early. Here's the quick version.
@@ -20,13 +20,13 @@ Laci Kaye Booth is a Livingston, Texas singer who first broke nationally on Amer
 
 ## What time does Laci Kaye Booth go on?
 
-Dandelion Tour stops mostly list 7:00 PM starts; support acts play from the listed start until Ella's headline set. Booth has rotated through the summer leg (Estero, Savannah, Salem, Wilmington, Austin, Corpus Christi, Fort Worth) and the fall leg (Green Bay, North Little Rock, and the September-October dates with Kameron Marlowe).
+Dandelion Tour stops mostly list 7:00 PM starts; support acts play from the listed start until Ella's headline set. Booth is CONFIRMED for Pikeville on July 23 alongside Kaitlin Butts -- a genuinely stacked small-arena bill.
 
 We keep exact set times updated on each show's page as venues confirm them -- and we send set-time alerts to [the Fellas newsletter](/guides/ella-langley-fan-club) before each show.
 
 ## 2026 shows with Laci Kaye Booth
 
-- **Remaining 2026:** Los Angeles, Greek Theatre - Oct 13 & 14 (with Kameron Marlowe) -- [tour page](/tour)
+- **Pikeville, KY - Jul 23 (confirmed)** -- [set times & lineup](/guides/ella-langley-pikeville-2026-set-times)
 
 She appears on the fall-extension rotation too (Athens, GA on Sep 18 has been announced with her on the bill).
 

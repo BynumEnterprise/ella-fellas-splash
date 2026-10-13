@@ -1,53 +1,51 @@
 ---
-title: "Dandelion Tour Opener in Toledo: What Actually Happened"
+title: "Dandelion Tour Opener in Toledo: The Real Setlist"
 slug: "2026-05-22-dandelion-tour-toledo-recap"
 publishedAt: "2026-05-22"
+updatedAt: "2026-10-13"
 category: "tour-recap"
-excerpt: "Ella Langley opened her first headlining arena tour at Toledo's Huntington Center. The setlist, the moments that hit, and what to expect next."
+excerpt: "Ella Langley opened her first arena tour at Toledo's Huntington Center on May 7, 2026, with Gabriella Rose and Dylan Marlowe. Here's the full 18-song setlist."
 heroImage: "/images/news/toledo-2026-05-07.jpg"
-relatedSongs: ["choosin-texas", "you-look-like-you-love-me", "loving-life-again", "dandelion"]
+relatedSongs: ["dandelion", "be-her", "choosin-texas", "werent-for-the-wind", "butterfly-season", "you-look-like-you-love-me"]
 relatedTours: ["toledo-huntington-center-2026-05-07"]
 sources:
   - "https://www.whiskeyriff.com/2026/05/08/ella-langley-kicks-off-her-dandelion-tour-heres-the-full-opening-night-setlist/"
-  - "https://www.setlist.fm/setlists/ella-langley"
+  - "https://holler.country/news/general/ella-langley-2026-chaifetz-arena-show-in-st-louis-missouri-everything-you-need-to-know/"
 ---
 
-The short version: she opened with "loving life again" and closed with "choosin' texas," played fifteen tracks between them, brought Riley Green out for the duets, and didn't waste a minute of stage time. The Huntington Center sounded like a sold-out arena should sound when an Alabama 26-year-old has the night of her life.
+*Correction (October 13, 2026): An earlier version of this recap had the wrong setlist and said Riley Green came out. He didn't. It also listed set times and sell-out claims we couldn't verify. Below is the setlist as published by Whiskey Riff and Holler.*
 
-## The setlist (full)
+The Dandelion Tour opened Thursday, May 7, 2026 at the Huntington Center in Toledo, Ohio. It was Ella Langley's first arena tour. Gabriella Rose and Dylan Marlowe opened.
 
-1. loving life again
-2. nicotine
-3. paint the town blue
-4. weren't for the wind
-5. be her
-6. never met anyone like you
-7. dandelion
-8. (Riley Green out): don't mind if i do
-9. you look like you love me
-10. (Green exits)
-11. some other side cuts...
+## The setlist
 
-We're updating this list as cleaner audio surfaces. The main story: Riley Green walked out during track 8 and the room did exactly what you'd expect.
+After the "Froggy Went a Courtin'" intro on tape:
 
-## Three things worth noting
+1. [Dandelion](/songs/dandelion)
+2. I Gotta Quit
+3. [Here for the Party](/songs/here-for-the-party) (Gretchen Wilson cover)
+4. [Bottom of Your Boots](/songs/bottom-of-your-boots)
+5. [paint the town blue](/songs/paint-the-town-blue)
+6. girl you're taking home
+7. 20-20
+8. You & Me Time (live debut)
+9. Broken
+10. Somethin' Simple
+11. [Butterfly Season](/songs/butterfly-season) (live debut, with Gabriella Rose singing Miranda Lambert's part)
+12. Wish I Didn't Know Now (Toby Keith cover)
+13. It Wasn't God Who Made Honky Tonk Angels (Kitty Wells cover)
+14. [Be Her](/songs/be-her)
+15. [you look like you love me](/songs/you-look-like-you-love-me) (with Dylan Marlowe)
+16. [Loving Life Again](/songs/loving-life-again)
+17. [Choosin' Texas](/songs/choosin-texas)
+18. [weren't for the wind](/songs/werent-for-the-wind)
 
-**The stage build is more arena-rock than country.** No barn-wood backdrops, no rhinestone. A gold-lit half-circle with the band tight behind her, a single neon DANDELION sign over the drum riser. It plays like a country show that's read up on Springsteen.
+## What stood out
 
-**"weren't for the wind" still gets the loudest singalong.** ["Choosin' Texas"](/songs/choosin-texas) is the chart-breaker and ["Be Her"](/songs/be-her) is the current radio monster; "weren't for the wind" is the song the room owns. If you're going to a stop later in the summer, prepare to lose your voice somewhere around verse two.
+- **Dandelion-heavy.** Whiskey Riff counted 11 of the album's 16 songs, not counting the "Froggy" intro and outro.
+- **Two live debuts:** "You & Me Time" and "Butterfly Season."
+- **Openers joined her.** Gabriella Rose sang on "Butterfly Season," and Dylan Marlowe took Riley Green's part on "you look like you love me."
 
-**The runtime is 95 minutes, no opener-overlap.** Doors at 6:30, Kameron Marlowe at 7:30, Gabriella Rose at 8:15, Ella at 9:15, lights up at 10:50. If you're driving in, plan dinner before 6.
-
-## If you're going to a stop later this summer
-
-The Dandelion Tour visits St. Louis next (May 8) before stretching into the South in mid-May. We've got the [full tour page](/tour) with venue info, openers, parking notes, and the cheapest seats we've found on each show.
-
-A few of the remaining dates — Cary NC, Austin TX, [the Fort Worth finale at Dickies Arena](/tour/fort-worth-dickies-arena-2026-08-15) — sold out within hours of the on-sale and resale is climbing fast. If you're going, the play is to grab tickets *now* on TicketNetwork rather than waiting for prices to drop — secondary prices on hot dates climb as the show gets closer, they don't fall.
+The next night was St. Louis (Chaifetz Arena, May 8). Every show we've logged since is on our [setlists page](/setlists).
 
 [See all remaining tour dates →](/tour)
-
-Can't make a show, or just want the night on your shelf afterward? The [Dandelion vinyl in our shop](/shop/fc-dandelion-vinyl) is the whole setlist's home base.
-
----
-
-*Sources: Whiskey Riff opening

@@ -16,7 +16,7 @@ export async function generateStaticParams() {
 function showsFor(name: string) {
   const today = new Date().toISOString().slice(0, 10);
   return getAllTourDates()
-    .filter((d) => d.date >= today && (d.openers ?? []).some((o) => o.toLowerCase() === name.toLowerCase()))
+    .filter((d) => d.date >= today && !d.canceled && (d.openers ?? []).some((o) => o.toLowerCase() === name.toLowerCase()))
     .sort((a, b) => (a.date < b.date ? -1 : 1));
 }
 

@@ -11,6 +11,8 @@ import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
 import { MerchCTA } from "@/components/MerchCTA";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
+import { CanceledNotice } from "@/components/CanceledNotice";
+import { ShowTicketCTA } from "@/components/ShowTicketCTA";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
 
@@ -40,8 +42,12 @@ export async function generateMetadata({
   const d = getTourDate(slug);
   if (!d) return {};
   const st = buildSetTimes(d);
-  const title = `Ella Langley ${d.city} Set Times: What Time Does She Go On? (${fmt(d.date).replace(/^\w+, /, "")})`;
-  const desc = st.ellaStageTime
+  const title = d.canceled
+    ? `Ella Langley ${d.city} (${fmt(d.date).replace(/^\w+, /, "")}): Show Canceled`
+    : `Ella Langley ${d.city} Set Times: What Time Does She Go On? (${fmt(d.date).replace(/^\w+, /, "")})`;
+  const desc = d.canceled
+    ? `Ella Langley's ${d.city} show at ${d.venue} was canceled. ${d.canceledReason ?? ""} See where she plays next.`
+    : st.ellaStageTime
     ? `Ella Langley goes on at ${st.ellaStageTime} at ${d.venue}, ${d.city} — ${d.venue}'s own posted running order for this date${st.doors ? `, doors ${st.doors}` : ""}. Full set times for every act on the bill.`
     : st.doors
     ? st.timesConfirmed
@@ -158,6 +164,11 @@ export default async function SetTimesPage({ params }: { params: Promise<{ slug:
           {fmt(d.date)} &middot; {d.venue}, {where}
         </p>
       </header>
+
+      {d.canceled && <CanceledNotice d={d} className="mb-4" />}
+
+      {/* Above-the-fold ticket slot (this show if it's on, else the next show). */}
+      <ShowTicketCTA d={d} source="set-times" className="mb-6" />
 
       {/* The answer, up top, because that's why they're here. */}
       <div className="bg-paper border-2 border-primary/40 rounded-lg p-5 mb-8">
@@ -294,7 +305,7 @@ export default async function SetTimesPage({ params }: { params: Promise<{ slug:
       </div>
 
       <div className="flex flex-wrap gap-3 mb-8">
-        {!d.soldOut || d.ticketPriceRange ? (
+        {!d.canceled && (!d.soldOut || d.ticketPriceRange) ? (
           <AffiliateLink
             href={ticketNetworkUrl(d.id)}
             source="set-times-tickets"
@@ -309,12 +320,14 @@ export default async function SetTimesPage({ params }: { params: Promise<{ slug:
         >
           FULL SHOW GUIDE <ArrowRight className="w-4 h-4" />
         </Link>
+        {!d.canceled && (
         <Link
           href={`/plan-my-night?show=${d.id}`}
           className="inline-flex items-center gap-2 px-5 py-3 border-2 border-denim/30 text-denim font-display text-lg tracking-wide rounded-md hover:border-primary hover:text-primary"
         >
           <Music className="w-4 h-4" /> PLAN MY NIGHT
         </Link>
+        )}
       </div>
 
       <MerchCTA source="set_times_merch" className="mb-8" />

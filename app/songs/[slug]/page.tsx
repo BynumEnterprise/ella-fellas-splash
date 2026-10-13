@@ -30,15 +30,34 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const s = getSong(slug);
   if (!s) return {};
   return {
-    title: `${s.title}${s.feat ? ` (feat. ${s.feat})` : ""} — Ella Langley`,
-    description: s.tldr,
+    // Meaning-intent title, e.g. What Does “Be Her” by Ella Langley Mean?
+    title: meaningQuestion(s),
+    description: s.tldr.length > 300 ? `${s.tldr.slice(0, 297)}...` : s.tldr,
     alternates: { canonical: `/songs/${slug}` },
     openGraph: { url: `/songs/${slug}`, images: ["/opengraph-image.png"] },
   };
 }
 
+const SMALL_WORDS = new Set(["a", "an", "the", "of", "in", "on", "to", "for", "and", "by", "at", "or"]);
+
+/** "paint the town blue" -> "Paint the Town Blue". Song titles are stored lowercase (stylized). */
+function displayTitle(t: string): string {
+  return t
+    .split(" ")
+    .map((w, i) => (i > 0 && SMALL_WORDS.has(w) ? w : w.charAt(0).toUpperCase() + w.slice(1)))
+    .join(" ");
+}
+
+/** The meaning-intent question used for the <title> and H1. */
+function meaningQuestion(s: Song): string {
+  const t = `\u201C${displayTitle(s.title)}\u201D`;
+  // Collabs on another artist's record credit the lead artist first.
+  if (s.albumSlug === "collabs" && s.feat) return `What Does ${t} by ${s.feat} & Ella Langley Mean?`;
+  return `What Does ${t} by Ella Langley Mean?${s.feat ? ` (feat. ${s.feat})` : ""}`;
+}
+
 // Each album gets its own gradient so song heroes feel like part of a record.
-function albumArt(albumSlug: string) {
+function albumArt(albumSlug: string, album?: string, year?: string) {
   if (albumSlug === "dandelion") {
     return {
       bg: "bg-gradient-to-br from-primary via-primary-dark to-clay",
@@ -46,10 +65,18 @@ function albumArt(albumSlug: string) {
       year: "2026",
     };
   }
+  if (albumSlug === "hungover") {
+    return {
+      bg: "bg-gradient-to-br from-denim via-denim/90 to-ink",
+      label: "HUNGOVER",
+      year: "2024",
+    };
+  }
+  // Features / collabs on other artists' records.
   return {
-    bg: "bg-gradient-to-br from-denim via-denim/90 to-ink",
-    label: "HUNGOVER",
-    year: "2024",
+    bg: "bg-gradient-to-br from-clay via-denim/90 to-ink",
+    label: (album ?? "FEATURE").toUpperCase(),
+    year: year ?? "",
   };
 }
 
@@ -73,7 +100,7 @@ export default async function SongPage({ params }: { params: Promise<{ slug: str
   const related = pickRelated(s, all);
   const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
   const songUrl = `${SITE_URL}/songs/${s.slug}`;
-  const art = albumArt(s.albumSlug);
+  const art = albumArt(s.albumSlug, s.album, s.releaseDate.slice(0, 4));
   const aboutParagraphs = s.about ? paragraphs(s.about) : [];
 
   return (
@@ -127,8 +154,8 @@ export default async function SongPage({ params }: { params: Promise<{ slug: str
             {s.album} · {s.releaseDate.slice(0, 4)}
             {s.feat ? ` · feat. ${s.feat}` : ""}
           </p>
-          <h1 className="font-display text-5xl md:text-7xl text-denim lowercase leading-none mt-3 tracking-wide">
-            {s.title}
+          <h1 className="font-display text-4xl md:text-5xl text-denim leading-tight mt-3 tracking-wide">
+            {meaningQuestion(s)}
           </h1>
           <p className="text-lg italic text-ink/80 mt-5 leading-relaxed border-l-4 border-primary pl-4">
             {s.tldr}

@@ -9,21 +9,27 @@ import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 import { MerchCTA } from "@/components/MerchCTA";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
-const TITLE = "Ella Langley Setlist 2026: Every Show, Song by Song";
-const DESC =
-  "Every Ella Langley setlist from the 2026 Dandelion Tour — the real songs, in order, posted within a couple of hours of each encore. Plus what she's been opening and closing with.";
 
-export const metadata: Metadata = {
-  title: { absolute: `${TITLE} | Ella Fellas` },
-  description: DESC,
-  alternates: { canonical: `${SITE_URL}/setlists` },
-  openGraph: {
-    title: TITLE,
+export async function generateMetadata(): Promise<Metadata> {
+  const recent = mostRecentSetlist(getAllTourDates());
+  const TITLE = recent
+    ? `Ella Langley Setlist 2026: Latest from ${recent.show.city} + Every Show`
+    : "Ella Langley Setlist 2026: Every Show, Song by Song";
+  const DESC = recent
+    ? `The Ella Langley setlist from ${recent.show.city} (${fmt(recent.show.date)}): ${recent.entry.songs.length} songs, opening with "${recent.entry.songs[0]}". Every 2026 Dandelion Tour setlist, real order, sourced from the night.`
+    : "Every Ella Langley setlist from the 2026 Dandelion Tour — the real songs, in order, posted within a couple of hours of each encore.";
+  return {
+    title: { absolute: `${TITLE} | Ella Fellas` },
     description: DESC,
-    url: `${SITE_URL}/setlists`,
-    images: [`/api/og?title=${encodeURIComponent("Ella Langley Setlists")}&kicker=${encodeURIComponent("Every 2026 show, song by song")}`],
-  },
-};
+    alternates: { canonical: `${SITE_URL}/setlists` },
+    openGraph: {
+      title: TITLE,
+      description: DESC,
+      url: `${SITE_URL}/setlists`,
+      images: [`/api/og?title=${encodeURIComponent("Ella Langley Setlist 2026")}&kicker=${encodeURIComponent("Every show, song by song")}`],
+    },
+  };
+}
 
 function fmt(date: string) {
   return new Date(`${date}T12:00:00Z`).toLocaleDateString("en-US", {
@@ -56,7 +62,7 @@ export default function SetlistsHub() {
       <header className="mb-6">
         <p className="text-xs uppercase tracking-wider text-clay font-medium">Setlists</p>
         <h1 className="font-display text-4xl md:text-5xl text-denim mt-2 leading-tight">
-          ELLA LANGLEY SETLISTS, EVERY SHOW
+          ELLA LANGLEY SETLIST 2026
         </h1>
         <p className="text-lg text-ink/80 mt-3 max-w-2xl leading-relaxed">
           What did she play last night? What&apos;s she opening with, what&apos;s the encore? We post
@@ -67,7 +73,10 @@ export default function SetlistsHub() {
 
       {recent && (
         <div className="bg-paper border-2 border-primary/40 rounded-lg p-5 mb-8">
-          <p className="text-xs uppercase tracking-wider text-clay font-medium mb-1">Most recent</p>
+          <p className="text-xs uppercase tracking-wider text-clay font-medium mb-1">
+            Most recent setlist &middot; {recent.entry.songs.length} songs
+            {recent.entry.encore && recent.entry.encore.length > 0 ? ` + ${recent.entry.encore.length}-song encore` : ""}
+          </p>
           <h2 className="font-display text-2xl text-denim tracking-wide mb-1">
             <ListMusic className="w-5 h-5 inline mr-2 text-primary" aria-hidden="true" />
             {recent.show.city.toUpperCase()} &mdash; {fmt(recent.show.date)}
@@ -81,6 +90,13 @@ export default function SetlistsHub() {
               </li>
             ))}
           </ol>
+          {recent.entry.encore && recent.entry.encore.length > 0 && (
+            <p className="text-sm text-ink/80 mt-2">
+              <span className="text-xs uppercase tracking-wider text-clay font-medium">Encore:</span>{" "}
+              {recent.entry.encore.join(" \u00b7 ")}
+            </p>
+          )}
+          <p className="text-xs text-ink/50 mt-2">Source: {recent.entry.source}</p>
           <Link
             href={`/tour/${recent.show.id}/setlist`}
             className="text-sm text-primary font-medium hover:underline inline-flex items-center gap-1 mt-3"
@@ -96,6 +112,7 @@ export default function SetlistsHub() {
           <div className="space-y-2 mb-8">
             {past.map((d) => {
               const has = Boolean(getSetlist(d.id));
+              const canceled = d.canceled === true;
               return (
                 <Link
                   key={d.id}
@@ -108,9 +125,13 @@ export default function SetlistsHub() {
                     </p>
                     <p className="text-xs text-ink/60">{fmt(d.date)} &middot; {d.venue}</p>
                   </div>
+                  {canceled ? (
+                    <p className="text-xs uppercase font-bold text-clay">Canceled &middot; no setlist</p>
+                  ) : (
                   <p className={`text-sm font-medium inline-flex items-center gap-1 ${has ? "text-primary" : "text-ink/45"}`}>
                     {has ? "View setlist" : "Confirming"} <ArrowRight className="w-3.5 h-3.5" />
                   </p>
+                  )}
                 </Link>
               );
             })}
@@ -132,9 +153,13 @@ export default function SetlistsHub() {
               </p>
               <p className="text-xs text-ink/60">{fmt(d.date)} &middot; {d.venue}</p>
             </div>
+            {d.canceled ? (
+              <p className="text-xs uppercase font-bold text-clay">Canceled</p>
+            ) : (
             <p className="text-sm text-ink/45 inline-flex items-center gap-1">
               <Clock className="w-3.5 h-3.5" /> Setlist night-of
             </p>
+            )}
           </Link>
         ))}
       </div>

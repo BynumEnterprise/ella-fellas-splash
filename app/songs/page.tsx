@@ -26,7 +26,7 @@ const ALBUMS: AlbumMeta[] = [
     slug: "dandelion",
     title: "DANDELION",
     year: "2026",
-    tagline: "The breakout LP. Triple #1, Lori McKenna co-writes, sold-out arenas.",
+    tagline: "The breakout LP. A #1 album, the record-setting 'Choosin' Texas', sold-out arenas.",
     bg: "bg-gradient-to-br from-primary via-primary-dark to-clay",
     textOn: "text-paper",
   },
@@ -36,6 +36,14 @@ const ALBUMS: AlbumMeta[] = [
     year: "2024",
     tagline: "The debut. The Riley Green duet that started it all, plus the deep cuts that signaled what was coming.",
     bg: "bg-gradient-to-br from-denim via-denim/90 to-ink",
+    textOn: "text-paper",
+  },
+  {
+    slug: "collabs",
+    title: "FEATURES & COLLABS",
+    year: "2026",
+    tagline: "Ella on other artists' records.",
+    bg: "bg-gradient-to-br from-clay via-denim/90 to-ink",
     textOn: "text-paper",
   },
 ];

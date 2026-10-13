@@ -5,6 +5,7 @@ import { PlanYourTrip } from "@/components/PlanYourTrip";
 import { ticketNetworkUrl } from "@/lib/affiliates";
 import { shopUrl } from "@/lib/merch-store";
 import { getAllTourDates, getTourDate } from "@/lib/data";
+import { CanceledNotice } from "@/components/CanceledNotice";
 import type { TourDate } from "@/lib/types";
 
 interface Props {
@@ -40,7 +41,7 @@ function resolveShow(showId?: string, title?: string, slug?: string): TourDate |
   }
 
   const hay = `${slugify(title ?? "")}-${slug ?? ""}`;
-  const upcoming = getAllTourDates().filter((d) => d.date >= today);
+  const upcoming = getAllTourDates().filter((d) => d.date >= today && !d.canceled);
   const byCity = upcoming.filter((d) => hay.includes(slugify(d.city)));
 
   if (byCity.length === 1) return byCity[0];
@@ -62,6 +63,12 @@ function resolveShow(showId?: string, title?: string, slug?: string): TourDate |
  * whenever we can pin the post to a specific upcoming show.
  */
 export function ShowCTA({ showId, title, slug, source }: Props) {
+  // A post pinned to a canceled upcoming show gets the CANCELED notice, never a
+  // ticket button or trip planner for that date.
+  const pinned = showId ? getTourDate(showId) : undefined;
+  if (pinned && pinned.canceled) {
+    return <CanceledNotice d={pinned} className="mb-8" />;
+  }
   const td = resolveShow(showId, title, slug);
   // Deep-link to the exact event only when we resolved an upcoming show;
   // otherwise fall back to the Ella Langley performer page.

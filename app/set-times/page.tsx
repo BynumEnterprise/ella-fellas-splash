@@ -93,6 +93,10 @@ export default function SetTimesHub() {
                   <p className="text-sm text-ink/70">{d.venue}</p>
                 </div>
                 <div className="text-right">
+                  {d.canceled ? (
+                    <p className="text-sm uppercase font-bold text-clay">Canceled</p>
+                  ) : (
+                  <>
                   <p className="text-sm text-ink/70">
                     <Clock className="w-3.5 h-3.5 inline mr-1 text-primary" aria-hidden="true" />
                     Doors {st.doors ? `${st.timesConfirmed ? "" : "~"}${st.doors}` : "TBA"}
@@ -111,6 +115,8 @@ export default function SetTimesHub() {
                   <p className="text-sm text-primary font-medium mt-1 inline-flex items-center gap-1">
                     Set times <ArrowRight className="w-3.5 h-3.5" />
                   </p>
+                  </>
+                  )}
                 </div>
               </div>
             </Link>

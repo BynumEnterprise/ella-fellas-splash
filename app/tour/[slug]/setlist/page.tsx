@@ -8,6 +8,8 @@ import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 import { MerchCTA } from "@/components/MerchCTA";
+import { CanceledNotice } from "@/components/CanceledNotice";
+import { ShowTicketCTA } from "@/components/ShowTicketCTA";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
 
@@ -31,8 +33,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!d) return {};
   const has = Boolean(getSetlist(d.id));
   const dateShort = fmt(d.date).replace(/^\w+, /, "");
-  const title = `Ella Langley Setlist: ${d.city} ${dateShort} (${d.venue})`;
-  const desc = has
+  const title = d.canceled
+    ? `Ella Langley ${d.city} ${dateShort}: Show Canceled (No Setlist)`
+    : `Ella Langley Setlist: ${d.city} ${dateShort} (${d.venue})`;
+  const desc = d.canceled
+    ? `Ella Langley's ${d.city} show at ${d.venue} on ${dateShort} was canceled, so there is no setlist. Here's what she has been playing on the tour and where she plays next.`
+    : has
     ? `The full setlist Ella Langley played at ${d.venue} in ${d.city} on ${dateShort} — every song, in order.`
     : `The setlist from Ella Langley's ${d.city} show at ${d.venue} — posted within a couple of hours of the encore. Plus what she's been playing on the Dandelion Tour so far.`;
   return {
@@ -58,6 +64,7 @@ export default async function SetlistPage({ params }: { params: Promise<{ slug: 
   const recent = mostRecentSetlist(all);
   const today = new Date().toISOString().slice(0, 10);
   const isPast = d.date < today;
+  const canceled = d.canceled === true;
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-10">
@@ -81,6 +88,12 @@ export default async function SetlistPage({ params }: { params: Promise<{ slug: 
           {fmt(d.date)} &middot; {d.venue}, {d.city}, {d.state}
         </p>
       </header>
+
+      {canceled && <CanceledNotice d={d} className="mb-4" />}
+
+      {/* Above-the-fold money slot: tickets for THIS show while it's upcoming;
+          for past or canceled shows, tickets for the next show that's still on. */}
+      <ShowTicketCTA d={d} source="setlist" className="mb-6" />
 
       {entry ? (
         <div className="bg-paper border-2 border-primary/40 rounded-lg p-5 mb-6">
@@ -116,6 +129,7 @@ export default async function SetlistPage({ params }: { params: Promise<{ slug: 
         </div>
       ) : (
         <>
+          {!canceled && (
           <div className="bg-paper border-2 border-primary/40 rounded-lg p-5 mb-6">
             <h2 className="font-display text-xl text-denim tracking-wide mb-2">
               <Clock className="w-4 h-4 inline mr-2 text-primary" aria-hidden="true" />
@@ -127,6 +141,7 @@ export default async function SetlistPage({ params }: { params: Promise<{ slug: 
                 : `This show is on ${fmt(d.date)}. The setlist goes up here within a couple of hours of the encore — we're not going to guess it in advance, because a predicted setlist isn't a setlist.`}
             </p>
           </div>
+          )}
 
           {recent && (
             <div className="border border-ink/15 rounded-lg p-5 bg-paper mb-6">
@@ -164,7 +179,9 @@ export default async function SetlistPage({ params }: { params: Promise<{ slug: 
 
       <div className="bg-primary/10 border border-primary/40 rounded-lg p-5 mb-8">
         <p className="font-display text-xl text-denim tracking-wide mb-1">
-          GET THE {d.city.toUpperCase()} SETLIST THE NIGHT IT HAPPENS
+          {isPast || canceled
+            ? "GET THE NEXT SETLIST THE NIGHT IT HAPPENS"
+            : `GET THE ${d.city.toUpperCase()} SETLIST THE NIGHT IT HAPPENS`}
         </p>
         <p className="text-sm text-ink/75 mb-3">
           We post it within a couple of hours of the encore and email it straight out. No spam,
@@ -174,11 +191,19 @@ export default async function SetlistPage({ params }: { params: Promise<{ slug: 
       </div>
 
       <div className="flex flex-wrap gap-3 mb-8">
+        {!isPast && !canceled && (
         <Link
           href={`/tour/${d.id}/set-times`}
           className="inline-flex items-center gap-2 px-5 py-3 border-2 border-denim/30 text-denim font-display text-lg tracking-wide rounded-md hover:border-primary hover:text-primary"
         >
           SET TIMES FOR THIS SHOW
+        </Link>
+        )}
+        <Link
+          href="/setlists"
+          className="inline-flex items-center gap-2 px-5 py-3 border-2 border-denim/30 text-denim font-display text-lg tracking-wide rounded-md hover:border-primary hover:text-primary"
+        >
+          ALL 2026 SETLISTS
         </Link>
         <Link
           href="/songs"

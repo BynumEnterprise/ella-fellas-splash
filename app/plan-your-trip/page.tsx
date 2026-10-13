@@ -46,7 +46,7 @@ function formatDate(d: string): string {
 
 export default function PlanYourTripHubPage() {
   const today = new Date().toISOString().slice(0, 10);
-  const upcoming = getAllTourDates().filter((d) => d.date >= today);
+  const upcoming = getAllTourDates().filter((d) => d.date >= today && !d.canceled);
   const experiencesHref = viatorUrl() ?? getYourGuideUrl();
 
   return (

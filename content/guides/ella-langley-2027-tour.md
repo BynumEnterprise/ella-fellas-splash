@@ -1,41 +1,53 @@
 ---
-title: "Ella Langley 2027 Tour: Confirmed Dates & What We Know"
+title: "Ella Langley 2027 Tour Dates: Two Step Inn & Patriotic Fest"
 slug: "ella-langley-2027-tour"
 category: "tour-guide"
 publishedAt: "2026-07-15"
-updatedAt: "2026-08-11"
-excerpt: "Is Ella Langley touring in 2027? One date is already confirmed — Patriotic Festival in Virginia Beach — and here's how the rest of 2027 is likely to shape up, updated as announcements land."
+updatedAt: "2026-10-13"
+excerpt: "Is Ella Langley touring in 2027? Two dates are confirmed so far: she headlines Sunday at Two Step Inn in Georgetown, TX on April 18, 2027, and plays the Patriotic Festival in Virginia Beach on May 29, 2027. No 2027 headline tour has been announced yet."
+sources:
+  - "https://www.jambase.com/article/two-step-inn-2027-lineup-brooks-dunn-ella-langley"
+  - "https://holler.country/news/breaking/ella-langley-brooks-and-dunn-and-more-unveiled-for-two-step-inn-2027/"
+  - "https://www.wavy.com/news/local-news/ella-langley-riley-green-and-bailey-zimmerman-to-headline-patriotic-festival-2027/amp/"
 faq:
   - q: "Is Ella Langley touring in 2027?"
-    a: "One 2027 date is confirmed so far: the Patriotic Festival in Virginia Beach, VA on May 29, 2027. The Dandelion Tour runs through October 31, 2026, and any 2027 headline run would typically be announced in late 2026 or early 2027. We update this page with every confirmed date."
-  - q: "When will Ella Langley announce a 2027 tour?"
-    a: "No 2027 tour has been announced. Based on how the Dandelion Tour was announced (dates revealed in stages, with a fan presale via her free mailing list before each public on-sale), watch her official channels in late 2026 -- and join her mailing list so presale codes hit your inbox first."
-  - q: "How do I get presale access for 2027 shows?"
-    a: "The same way it worked all through 2026: her free official mailing list and text community send Fan Club Presale codes before public on-sales. No paid membership exists."
+    a: "Two 2027 dates are confirmed so far: Two Step Inn in Georgetown, Texas on Sunday, April 18, 2027 (she headlines the Sunday) and the Patriotic Festival in Virginia Beach, VA on Saturday, May 29, 2027. No 2027 headline tour has been announced. The Dandelion Tour ends October 31, 2026 in Saint Paul."
+  - q: "What are Ella Langley's 2027 tour dates?"
+    a: "April 18, 2027 at Two Step Inn (San Gabriel Park, Georgetown, TX) and May 29, 2027 at the Patriotic Festival (Virginia Beach Oceanfront, VA). Those are the only confirmed 2027 dates as of October 13, 2026."
+  - q: "Who else is playing Two Step Inn 2027?"
+    a: "Brooks & Dunn headline Saturday, April 17, and Ella Langley headlines Sunday, April 18. Sunday's announced lineup also includes Sheryl Crow, Flatland Cavalry, Clint Black, Michelle Branch, Jo Dee Messina and Old Crow Medicine Show. Set times have not been released."
+  - q: "When will Ella Langley announce a 2027 headline tour?"
+    a: "Nothing has been announced. Her 2026 dates were revealed in stages with a fan presale through her free official mailing list before each public on-sale, so that list is the fastest way to hear about a 2027 run."
 ---
 
-Fans are already searching for Ella Langley's 2027 plans -- we saw the same thing happen a year early with "tour 2025" and "tour 2026" searches -- so this page is the honest, running answer. No invented dates, no recycled rumors: what's confirmed, what's likely, and how to be first in line when the real announcements land.
+**Short answer:** Ella Langley has **two confirmed 2027 dates** so far, both festivals. She headlines **Sunday, April 18, 2027 at Two Step Inn** in Georgetown, Texas, and plays the **Patriotic Festival in Virginia Beach on Saturday, May 29, 2027**. No 2027 headline tour has been announced yet. *Updated October 13, 2026.*
 
-## When Is Ella Langley's 2027 Tour?
+## Confirmed Ella Langley 2027 dates
 
-As of August 2026, Ella Langley has not announced a 2027 headline tour. One 2027 date is on the books -- the Patriotic Festival in Virginia Beach, VA on May 29, 2027 -- and that is the only confirmed 2027 booking so far. Her current [Dandelion Tour](/tour) runs through October 31, 2026, and if 2026 is any guide, a 2027 run would be revealed in stages in late 2026 or early 2027, with a free Fan Club Presale opening before each public on-sale. We update this page the day any new date is confirmed.
+- **Sun, April 18, 2027 -- Georgetown, TX** -- Two Step Inn (Sunday headliner). [Show page and tickets](/tour/georgetown-two-step-inn-festival-2027-04-18)
+- **Sat, May 29, 2027 -- Virginia Beach, VA** -- Patriotic Festival. [Show page and tickets](/tour/virginia-beach-patriotic-festival-2027-05-29)
 
-## Confirmed 2027 dates (so far)
+That is the full list. We add dates the day they are officially announced, and we don't list rumored ones.
 
-- **Sat, May 29, 2027 -- Virginia Beach, VA** (Patriotic Festival) -- the first confirmed 2027 booking. [Show page ->](/tour/virginia-beach-patriotic-festival-2027-05-29)
+## Two Step Inn 2027 (Georgetown, TX)
 
-That's it for now -- and we'd rather list one real date than twenty guesses. Every new confirmation gets added here and on the [tour page](/tour) the day it's announced.
+Two Step Inn returns to San Gabriel Park in Georgetown on April 17-18, 2027. Brooks & Dunn top Saturday; **Ella Langley closes the festival on Sunday, April 18**. The Sunday bill announced so far also includes Sheryl Crow, Flatland Cavalry, Clint Black, Michelle Branch, Jo Dee Messina and Old Crow Medicine Show. Gates open at 11 a.m. each day per the ticket listing; individual set times and stage assignments have not been released. Single-day Sunday passes and 2-day passes are both sold.
 
-## What 2027 probably looks like (reading the tea leaves, honestly labeled)
+## Patriotic Festival 2027 (Virginia Beach, VA)
 
-This is informed speculation, clearly marked as such. The Dandelion Tour wraps **October 31, 2026** in St. Paul after 37 shows -- her first full headline arena run, extended once already because demand was there. The normal next moves for an artist on this trajectory: a bigger 2027 headline run announced in late 2026 or early 2027, festival headline slots (she already headlines [REDWEST](/tour/redwest-festival-2026-10-16) in 2026), and possibly international dates -- her 2026 routing already crossed into Canada (Hamilton, Ottawa Bluesfest).
+The Patriotic Festival returns to the Virginia Beach Oceanfront in 2027 with Ella Langley, Riley Green and Bailey Zimmerman as headliners. Ella's night is **Saturday, May 29, 2027** (Memorial Day weekend). Set times have not been announced.
 
-None of that is announced. When it is, the pattern from 2026 says: dates reveal in stages, the free Fan Club Presale opens 48 hours before each public on-sale, and the best seats go in the presale window. [Here's exactly how her presales work](/guides/ella-langley-fan-club).
+## Is there a 2027 headline tour?
 
-## How to hear about it first
+Not yet. The Dandelion Tour, her first headline arena run, wraps **October 31, 2026 in Saint Paul**. Anything beyond the two festival dates above is unannounced, and any site listing a full 2027 Ella Langley itinerary right now is guessing.
 
-- Join Ella's official mailing list at ellalangley.com (that's where the presale codes come from)
-- [Join the Fellas](/guides/ella-langley-fan-club) below -- we send tour-drop alerts the day announcements happen, and nothing else
-- Until then: the [2026 fall run](/guides/ella-langley-fall-tour-2026) still has 21 dates left, including [Red Rocks](/guides/ella-langley-red-rocks-2026) and [two nights at the Greek](/guides/ella-langley-greek-theatre-la-2026)
+When a tour is announced, the 2026 pattern suggests dates will roll out in stages with a fan presale through her free official mailing list before each public on-sale. [Here's how her presales work](/guides/ella-langley-fan-club).
 
-*This page is updated whenever a 2027 date is confirmed. Last checked: August 11, 2026.*
+## Still want to see her in 2026?
+
+The Dandelion Tour has a handful of dates left: two nights at the [Greek Theatre in Los Angeles](/guides/ella-langley-greek-theatre-la-2026) (Oct 13-14), [REDWEST in Salt Lake City](/tour/salt-lake-city-redwest-festival-2026-10-16) (Oct 16), then Des Moines (Oct 29), Lincoln (Oct 30) and Saint Paul (Oct 31). See every remaining date, opener and ticket link on the [tour page](/tour). (Her October 9 Tulsa show at the BOK Center was canceled hours before showtime after a reported security threat.)
+
+## How to hear about 2027 dates first
+
+- Join Ella's official mailing list at ellalangley.com; that is where presale codes come from.
+- [Join the Fellas](/guides/ella-langley-fan-club): we send tour-drop alerts the day announcements happen.

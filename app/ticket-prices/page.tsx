@@ -50,7 +50,7 @@ const today = () => new Date().toISOString().slice(0, 10);
 
 export default function TicketPricesPage() {
   const shows = getAllTourDates()
-    .filter((d) => d.date >= today())
+    .filter((d) => d.date >= today() && !d.canceled)
     .sort((a, b) => (a.date < b.date ? -1 : 1));
 
   const withPrice = shows

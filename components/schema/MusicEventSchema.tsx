@@ -42,7 +42,9 @@ export function MusicEventSchema({ d, url }: { d: TourDate; url: string }) {
     startDate: d.timesConfirmed && d.showTime
       ? `${d.date}T${d.showTime.padStart(5, "0")}`
       : d.date,
-    eventStatus: "https://schema.org/EventScheduled",
+    eventStatus: d.canceled
+      ? "https://schema.org/EventCancelled"
+      : "https://schema.org/EventScheduled",
     eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
     image: `${SITE}/opengraph-image.png`,
     location: {
@@ -57,8 +59,9 @@ export function MusicEventSchema({ d, url }: { d: TourDate; url: string }) {
       },
     },
     performer: performers,
-    offers,
   };
+  // A canceled show sells nothing — don't publish an Offer for it.
+  if (!d.canceled) json.offers = offers;
 
   return (
     <script

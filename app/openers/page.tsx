@@ -3,31 +3,60 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { OPENERS, openerByName } from "@/lib/openers";
 import { getAllTourDates } from "@/lib/data";
+import { ticketNetworkUrl } from "@/lib/affiliates";
 import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
+import { AffiliateLink } from "@/components/AffiliateLink";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
+import { formatDate } from "@/lib/utils";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
-const TITLE = "Who Is Opening for Ella Langley in 2026? Every City's Support Act";
-const DESC =
-  "The openers on Ella Langley's 2026 Dandelion Tour rotate by city — Gabriella Rose, Kameron Marlowe, ERNEST, Kaitlin Butts and more. Here's who plays where.";
 
-export const metadata: Metadata = {
-  title: { absolute: `${TITLE} | Ella Fellas` },
-  description: DESC,
-  alternates: { canonical: `${SITE_URL}/openers` },
-  openGraph: {
-    title: TITLE,
+/** Upcoming shows that are still on, soonest first. Computed at build. */
+function upcomingShows() {
+  const today = new Date().toISOString().slice(0, 10);
+  return getAllTourDates()
+    .filter((d) => d.date >= today && !d.canceled)
+    .sort((a, b) => (a.date < b.date ? -1 : 1));
+}
+
+/** Distinct opener names across the given shows, in first-appearance order. */
+function distinctOpeners(shows: ReturnType<typeof upcomingShows>): string[] {
+  const seen: string[] = [];
+  shows.forEach((d) => (d.openers ?? []).forEach((o) => { if (!seen.includes(o)) seen.push(o); }));
+  return seen;
+}
+
+function md(date: string): string {
+  return new Date(`${date}T12:00:00Z`).toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "UTC" });
+}
+
+export async function generateMetadata(): Promise<Metadata> {
+  const shows = upcomingShows();
+  const next = shows.find((d) => (d.openers ?? []).length > 0);
+  const names = distinctOpeners(shows);
+  const TITLE = next
+    ? `Who Is Opening for Ella Langley? ${next.openers.join(" & ")} (${next.city} ${md(next.date)})`
+    : "Who Is Opening for Ella Langley? Openers by Show";
+  const DESC = names.length
+    ? `Who's opening for Ella Langley: ${names.join(", ")} on the remaining Dandelion Tour dates. The exact support acts for every upcoming show, in running order, with set times and tickets.`
+    : "Who's opening for Ella Langley on each upcoming show, with set times and tickets.";
+  return {
+    title: { absolute: `${TITLE} | Ella Fellas` },
     description: DESC,
-    url: `${SITE_URL}/openers`,
-    images: [`/api/og?title=${encodeURIComponent("Who's Opening")}&kicker=${encodeURIComponent("Ella Langley 2026, by city")}`],
-  },
-};
+    alternates: { canonical: `${SITE_URL}/openers` },
+    openGraph: {
+      title: TITLE,
+      description: DESC,
+      url: `${SITE_URL}/openers`,
+      images: [`/api/og?title=${encodeURIComponent("Who's Opening")}&kicker=${encodeURIComponent("Ella Langley, show by show")}`],
+    },
+  };
+}
 
 export default function OpenersHub() {
-  const today = new Date().toISOString().slice(0, 10);
-  const shows = getAllTourDates()
-    .filter((d) => d.date >= today)
-    .sort((a, b) => (a.date < b.date ? -1 : 1));
+  const shows = upcomingShows();
+  const names = distinctOpeners(shows);
+  const withOpeners = shows.filter((d) => (d.openers ?? []).length > 0);
 
   const counts = new Map<string, number>();
   shows.forEach((d) => (d.openers ?? []).forEach((o) => counts.set(o, (counts.get(o) ?? 0) + 1)));
@@ -51,12 +80,37 @@ export default function OpenersHub() {
         </p>
       </header>
 
-      <p className="text-base text-ink/80 mb-6 leading-relaxed">
-        <strong>Short answer:</strong> the openers for Ella Langley&apos;s 2026 Dandelion Tour are
-        Gabriella Rose, Kameron Marlowe, ERNEST, Kaitlin Butts, Laci Kaye Booth and Dylan
-        Marlowe — the support act rotates by date, so which one you get depends on your city. The
-        city-by-city table below has the exact bill for every remaining show.
-      </p>
+      {/* Answer-first: who is opening, show by show, before anything else. */}
+      <section className="bg-primary/10 border-2 border-primary/50 rounded-lg p-5 mb-8" aria-label="Openers by upcoming show">
+        <p className="text-base text-ink/90 leading-relaxed">
+          <strong>Short answer:</strong>{" "}
+          {names.length > 0 ? (
+            <>
+              {names.join(" and ").replace(/ and (?=.* and )/g, ", ")} are opening for Ella Langley on her
+              remaining dates. The support act changes by show, so check your date:
+            </>
+          ) : (
+            <>no support acts are announced for her remaining dates yet.</>
+          )}
+        </p>
+        {withOpeners.length > 0 && (
+          <ul className="mt-3 space-y-1.5 text-sm">
+            {withOpeners.map((d) => (
+              <li key={d.id} className="flex flex-wrap items-baseline gap-x-2">
+                <Link href={`/tour/${d.id}/set-times`} className="font-semibold text-denim underline decoration-primary/50 underline-offset-2 hover:text-primary">
+                  {formatDate(d.date, "short")} &middot; {d.city}, {d.state}
+                </Link>
+                <span className="text-ink/80">{d.openers.join(", then ")}, then Ella</span>
+              </li>
+            ))}
+          </ul>
+        )}
+        {shows.some((d) => d.tourType === "festival") && (
+          <p className="text-xs text-ink/60 mt-3">
+            Festival dates ({shows.filter((d) => d.tourType === "festival").map((d) => `${d.city} ${md(d.date)}`).join(", ")}) have a full festival lineup rather than a dedicated opener.
+          </p>
+        )}
+      </section>
 
       <h2 className="font-display text-2xl text-denim tracking-wide mb-4">THE ARTISTS</h2>
       <div className="grid md:grid-cols-2 gap-3 mb-8">
@@ -99,6 +153,7 @@ export default function OpenersHub() {
                   &middot; {d.venue}
                 </p>
               </div>
+              <div className="text-right">
               <p className="text-sm text-ink/80">
                 {(d.openers ?? []).length === 0
                   ? "Support TBA"
@@ -118,6 +173,15 @@ export default function OpenersHub() {
                       );
                     })}
               </p>
+              <AffiliateLink
+                href={ticketNetworkUrl(d.id)}
+                source="openers-row-tickets"
+                ariaLabel={`Tickets for Ella Langley in ${d.city}`}
+                className="text-xs text-primary font-medium hover:underline"
+              >
+                {d.soldOut ? "Resale tickets" : "Tickets"} &rarr;
+              </AffiliateLink>
+              </div>
             </div>
           </div>
         ))}

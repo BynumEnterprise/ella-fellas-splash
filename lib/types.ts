@@ -36,6 +36,16 @@ export interface TourDate {
   /** URL of the venue page stageTimes were read from. Required whenever stageTimes is set. */
   stageTimesSource?: string;
   ticketAffiliatePath: string;
+  /**
+   * True when the show was officially canceled (not postponed). Canceled shows
+   * keep their page for search/inbound links, but every surface must show a
+   * CANCELED notice and must NOT render buy-ticket CTAs or trip planners.
+   */
+  canceled?: boolean;
+  /** Short, sourced reason shown in the notice, e.g. "Canceled by the venue hours before showtime". */
+  canceledReason?: string;
+  /** URL of the report/announcement the cancellation was taken from. */
+  canceledSource?: string;
 }
 
 /** One act's published stage time. See TourDate.stageTimes for sourcing rules. */

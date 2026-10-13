@@ -17,11 +17,39 @@ export function getTourDate(id: string): TourDate | undefined {
   return tourDates.find((d) => d.id === id);
 }
 
-export function getUpcomingTourDates(n: number = 5, fromDate?: string): TourDate[] {
+/** True when a show was officially canceled (see TourDate.canceled). */
+export function isCanceled(d: TourDate): boolean {
+  return d.canceled === true;
+}
+
+/**
+ * Upcoming shows people can actually attend. Canceled shows are EXCLUDED by
+ * default so every "next show" / ticket CTA built on this never points at a
+ * canceled date. Pass includeCanceled when a list should show them (with a
+ * CANCELED badge).
+ */
+export function getUpcomingTourDates(
+  n: number = 5,
+  fromDate?: string,
+  includeCanceled: boolean = false,
+): TourDate[] {
   const today = fromDate ?? new Date().toISOString().slice(0, 10);
   return getAllTourDates()
-    .filter((d) => d.date >= today)
+    .filter((d) => d.date >= today && (includeCanceled || !isCanceled(d)))
     .slice(0, n);
+}
+
+/** The next show that is still on (not canceled), or undefined. */
+export function getNextShow(fromDate?: string): TourDate | undefined {
+  return getUpcomingTourDates(1, fromDate)[0];
+}
+
+/** Shows before today, most recent first (canceled ones included). */
+export function getPastTourDates(fromDate?: string): TourDate[] {
+  const today = fromDate ?? new Date().toISOString().slice(0, 10);
+  return getAllTourDates()
+    .filter((d) => d.date < today)
+    .reverse();
 }
 
 export function getAllSongs(): Song[] {

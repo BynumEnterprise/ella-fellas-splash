@@ -4,10 +4,12 @@ import type { TourDate } from "@/lib/types";
 import { formatDate } from "@/lib/utils";
 
 export function TourCard({ d }: { d: TourDate }) {
+  const canceled = d.canceled === true;
   return (
     <Link
       href={`/tour/${d.id}`}
-      className="block bg-paper border border-ink/10 rounded-lg p-5 hover:border-primary hover:shadow-md transition-all border-l-4 border-l-primary"
+      data-show-status={canceled ? "canceled" : undefined}
+      className={`block bg-paper border border-ink/10 rounded-lg p-5 hover:border-primary hover:shadow-md transition-all border-l-4 ${canceled ? "border-l-clay opacity-80" : "border-l-primary"}`}
     >
       <div className="flex items-start justify-between gap-3">
         <div>
@@ -15,7 +17,7 @@ export function TourCard({ d }: { d: TourDate }) {
             <Calendar className="w-3 h-3" />
             {formatDate(d.date, "long")}
           </div>
-          <h3 className="text-xl font-display mt-1.5 text-denim">
+          <h3 className={`text-xl font-display mt-1.5 text-denim ${canceled ? "line-through decoration-clay/70" : ""}`}>
             {d.city}, {d.state}
           </h3>
           <p className="text-sm text-ink/70 mt-1 flex items-center gap-1">
@@ -25,6 +27,12 @@ export function TourCard({ d }: { d: TourDate }) {
           <p className="text-xs text-ink/60 mt-2">{d.tour}</p>
         </div>
         <div className="text-right flex flex-col items-end gap-1.5 flex-shrink-0">
+          {canceled ? (
+            <span className="inline-block bg-clay text-paper text-[11px] uppercase font-bold px-2 py-0.5 rounded-full">
+              Canceled
+            </span>
+          ) : (
+          <>
           <span className="inline-flex items-center gap-1 text-primary text-sm font-medium">
             <Ticket className="w-3.5 h-3.5" />
             {d.soldOut ? "Resale" : "Tickets"}
@@ -33,6 +41,8 @@ export function TourCard({ d }: { d: TourDate }) {
             <span className="inline-block bg-clay text-paper text-[10px] uppercase font-bold px-1.5 py-0.5 rounded-full">
               Sold Out
             </span>
+          )}
+          </>
           )}
         </div>
       </div>

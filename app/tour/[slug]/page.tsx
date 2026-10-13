@@ -15,6 +15,8 @@ import { buildNightPlan, findStandSiblings } from "@/lib/night-plan";
 import { NightPlanView } from "@/components/NightPlan";
 import { MerchCTA } from "@/components/MerchCTA";
 import { TripPlannerPanel } from "@/components/TripPlannerPanel";
+import { CanceledNotice } from "@/components/CanceledNotice";
+import { ShowTicketCTA } from "@/components/ShowTicketCTA";
 import { vrboUrl, hotelUrl, cheapOairUrl, economyBookingsUrl } from "@/lib/affiliates";
 
 export async function generateStaticParams() {
@@ -40,9 +42,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
   const canonical = `${SITE_URL}/tour/${d.id}`;
   // Include the date so two-night stands (e.g. Auburn Aug 28 + 29) don't produce identical titles.
-  const title = `Ella Langley ${d.city} ${formatDate(d.date, "short")}: Tickets & Set Times | Ella Fellas`;
+  const title = d.canceled
+    ? `Ella Langley ${d.city} ${formatDate(d.date, "short")}: Show Canceled | Ella Fellas`
+    : `Ella Langley ${d.city} ${formatDate(d.date, "short")}: Tickets & Set Times | Ella Fellas`;
   const ogImage = `/api/og?title=${encodeURIComponent(`Ella Langley in ${d.city}`)}&kicker=${encodeURIComponent(`${formatDate(d.date, "short")} · ${d.venue}`)}`;
-  const description = `Ella Langley at ${d.venue}, ${d.city} — ${formatDate(d.date, "long")}. Tickets, parking, hotels, and openers.`;
+  const description = d.canceled
+    ? `Ella Langley's ${formatDate(d.date, "long")} show at ${d.venue}, ${d.city} was canceled. ${d.canceledReason ?? ""} See her next upcoming shows.`.replace(/\s+/g, " ")
+    : `Ella Langley at ${d.venue}, ${d.city} — ${formatDate(d.date, "long")}. Tickets, parking, hotels, and openers.`;
   return {
     title: { absolute: title },
     description,
@@ -62,6 +68,7 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
   // Past-show handling matches getUpcomingTourDates() in lib/data.ts (date >= today).
   const today = new Date().toISOString().slice(0, 10);
   const isPast = d.date < today;
+  const canceled = d.canceled === true;
   // TicketNetwork (CJ, 12.5%) — the SOLE ticket CTA for every show
   // (headline, support and stadium dates all use this one affiliate link).
   const tnUrl = ticketNetworkUrl(d.id);
@@ -89,7 +96,11 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
         <div className="flex items-center gap-2 text-sm text-clay uppercase tracking-wider font-medium">
           <Calendar className="w-4 h-4" />
           {formatDate(d.date, "long")}
-          {d.soldOut && (
+          {canceled ? (
+            <span className="ml-2 bg-clay text-paper text-xs font-bold px-2 py-0.5 rounded-full">
+              CANCELED
+            </span>
+          ) : d.soldOut && (
             <span className="ml-2 bg-clay text-paper text-xs font-bold px-2 py-0.5 rounded-full">
               SOLD OUT (FACE)
             </span>
@@ -102,7 +113,12 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
         <p className="text-sm text-ink/60 mt-1">{d.tour}</p>
       </header>
 
-      {isPast ? (
+      {canceled ? (
+        <div className="mb-6">
+          <CanceledNotice d={d} />
+          <ShowTicketCTA d={d} source="tour-show" className="mt-4" />
+        </div>
+      ) : isPast ? (
         <section className="bg-denim/5 border-2 border-denim/25 rounded-lg p-5 mb-6">
           <p className="text-xs uppercase tracking-wider text-denim font-medium mb-1">
             THIS SHOW HAS ALREADY HAPPENED
@@ -111,17 +127,18 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
             {formatDate(d.date, "long")} is in the books
           </h2>
           <p className="text-sm text-ink/80 mt-1 mb-4">
-            Tickets for this date are long gone &mdash; but Ella is on the road through October.
-            Find the next show near you, or read what she played on this run.
+            Tickets for this date are long gone &mdash; find the next show near you, or read what
+            she played on this run.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link href="/tour" className="inline-flex items-center justify-center px-5 py-3 bg-primary text-paper font-display text-lg tracking-wide rounded-md shadow-sm hover:bg-primary/90">
               SEE UPCOMING SHOWS &rarr;
             </Link>
-            <Link href="/guides/ella-langley-setlist-2026" className="inline-flex items-center justify-center px-5 py-3 border-2 border-denim/30 text-denim font-display text-lg tracking-wide rounded-md hover:border-primary hover:text-primary">
+            <Link href={`/tour/${d.id}/setlist`} className="inline-flex items-center justify-center px-5 py-3 border-2 border-denim/30 text-denim font-display text-lg tracking-wide rounded-md hover:border-primary hover:text-primary">
               WHAT SHE PLAYED
             </Link>
           </div>
+          <ShowTicketCTA d={d} source="tour-show" className="mt-4" />
         </section>
       ) : (
       <section className="bg-primary/15 border-2 border-primary rounded-lg p-5 mb-6">
@@ -270,7 +287,7 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
       {/* Night plan — build-time, indexable */}
       <section className="mb-8 bg-paper border border-ink/15 rounded-lg p-5">
         <NightPlanView plan={plan} />
-        {!isPast && (
+        {!isPast && !canceled && (
           <Link
             href={`/plan-my-night?show=${d.id}`}
             className="mt-5 inline-flex items-center gap-2 px-5 py-3 bg-denim text-paper font-display tracking-wide rounded-md hover:bg-denim/90"
@@ -280,7 +297,7 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
         )}
       </section>
 
-      {!isPast && (
+      {!isPast && !canceled && (
         <TripPlannerPanel
           city={d.city}
           venue={d.venue}

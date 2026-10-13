@@ -59,7 +59,7 @@ One reminder: Wallen plays Soldier Field across the weekend, and the openers dif
 
 ## Where to stay and how to get there
 
-Soldier Field parking is limited and pricey on show nights, so a lot of Fellas use transit or rideshare and skip the lot entirely. If you are coming in from out of town, the [Chicago show page](/tour/chicago-soldier-field-2026-06-20) has a Plan Your Trip section with hotel options near the venue. Our general guide to [getting to the show -- parking and transit](/guides/getting-to-ella-langley-show-parking-transit) covers the rest.
+Soldier Field parking is limited and pricey on show nights, so a lot of Fellas use transit or rideshare and skip the lot entirely. Our general guide to [getting to the show -- parking and transit](/guides/getting-to-ella-langley-show-parking-transit) covers the rest.
 
 ## Before you go
 

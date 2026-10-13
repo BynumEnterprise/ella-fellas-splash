@@ -64,6 +64,6 @@ Full packing list: [what to bring to the show](/guides/what-to-bring-ella-langle
 
 ## Staying the night
 
-Two-show weekends book downtown fast. [Vrbo rentals near M&T Bank Stadium](https://www.kqzyfj.com/click-101760569-10697641?url=https%3A%2F%2Fwww.vrbo.com%2Fsearch%3Fdestination%3DBaltimore%252C%2520MD) put you walking distance from Russell Street -- worth it to skip the post-show garage crawl. More logistics on the [Baltimore show page](/tour/baltimore-mt-bank-stadium-2026-07-18) and the [getting-there guide](/guides/getting-to-ella-langley-show-parking-transit).
+Two-show weekends book downtown fast. [Vrbo rentals near M&T Bank Stadium](https://www.kqzyfj.com/click-101760569-10697641?url=https%3A%2F%2Fwww.vrbo.com%2Fsearch%3Fdestination%3DBaltimore%252C%2520MD) put you walking distance from Russell Street -- worth it to skip the post-show garage crawl. More logistics in the [getting-there guide](/guides/getting-to-ella-langley-show-parking-transit).
 
 Run our [country concert checklist](/guides/ella-langley-concert-checklist) so nothing gets left behind.

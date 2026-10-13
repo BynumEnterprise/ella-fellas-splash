@@ -53,7 +53,7 @@ This show has now been played. For Ella's remaining dates and ticket links, see 
 
 ## Where to stay and how to get there
 
-Clemson is a college town, and a stadium show this size strains local lodging fast, so book early if you are coming from out of town. The [Clemson show page](/tour/clemson-memorial-stadium-2026-06-27) includes a Plan Your Trip section with where to stay, and our guide to [getting to the show -- parking and transit](/guides/getting-to-ella-langley-show-parking-transit) covers the day-of logistics for a campus stadium.
+Clemson is a college town, and a stadium show this size strains local lodging fast, so book early if you are coming from out of town. Our guide to [getting to the show -- parking and transit](/guides/getting-to-ella-langley-show-parking-transit) covers the day-of logistics for a campus stadium.
 
 ## Before you go
 

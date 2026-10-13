@@ -30,7 +30,7 @@ It also means timing matters. Gates open hours before Wallen, and the openers ru
 
 Two co-bill dates remain in 2026, and the next one is this Saturday. Each links to its own show page, where you will find the venue details, the full running order, and the "Get tickets" button.
 
-- **Baltimore -- M&T Bank Stadium -- Saturday, July 18, 2026.** Lineup: Ella Langley (direct support), Gavin Adcock, and Jason Scott and the High Heat, with Wallen headlining. [See the Baltimore show page and tickets.](/tour/baltimore-mt-bank-stadium-2026-07-18)
+- **Baltimore -- M&T Bank Stadium -- Saturday, July 18, 2026.** Lineup: Ella Langley (direct support), Gavin Adcock, and Jason Scott and the High Heat, with Wallen headlining.
 - **Philadelphia -- Lincoln Financial Field -- Saturday, August 1, 2026.** This is the tour's final night, and Ella's bill includes Hudson Westbrook and Blake Whiten, with Wallen headlining. [See the Philadelphia show page and tickets.](/tour/philadelphia-lincoln-financial-field-2026-08-01)
 
 Already in the books: **Chicago** (Soldier Field, June 20) and **Clemson** (Memorial Stadium, June 27), where Ella held the direct-support slot both nights. Their guides stay up for the record: [Chicago set times and openers](/guides/morgan-wallen-chicago-2026-set-times-lineup) and [Clemson set times and openers](/guides/morgan-wallen-clemson-2026-set-times-lineup).

@@ -43,4 +43,4 @@ The song did not just make noise online — it moved on the charts fast. "Jaded"
 
 ## Where to Hear It
 
-"Jaded" is streaming everywhere now on the deluxe version of *The Night Champion*, and it pairs naturally with the rest of Langley's 2026 duet run. If you want to keep up with what she releases next, our [latest Ella Langley news](/news) tracks every drop as it lands, and the [Dandelion Tour schedule](/tour) is where to look if you are hoping to catch a duet like this one live.
+"Jaded" is streaming everywhere now on the deluxe version of *The Night Champion*, and it pairs naturally with the rest of Langley's 2026 duet run — including her country-rap crossover with BigXthaPlug, which we unpack in our ["Hell at Night" meaning breakdown](/news/2026-11-01-ella-langley-hell-at-night-meaning). If you want to keep up with what she releases next, our [latest Ella Langley news](/news) tracks every drop as it lands, and the [Dandelion Tour schedule](/tour) is where to look if you are hoping to catch a duet like this one live.

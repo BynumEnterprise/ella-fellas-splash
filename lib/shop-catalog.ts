@@ -2086,6 +2086,22 @@ export const EXTENDED_CATALOG: ShopProduct[] = [
   // === TAILGATE & OUTDOORS (14)
   // ============================================================
   c({
+    slug: "to-solo-stove-bonfire",
+    asin: "B0B7B7R8HL",
+    amazonTitle: "Solo Stove Bonfire 19.5\" Smokeless Fire Pit",
+    category: "tailgate-and-outdoors",
+    name: "Solo Stove Bonfire 2.0 fire pit",
+    blurb:
+      "Stainless steel, smokeless burn, packable. The backyard fire pit that doesn't make your jacket smell like a campsite.",
+    query: "Solo Stove Bonfire 2.0 fire pit smokeless",
+    price: "$209.99",
+    rating: 4.8,
+    reviewCount: 18400,
+    why: "Double-wall design burns the smoke before it leaves the top. Sit close, talk all night, walk inside smelling like yourself.",
+    image: "https://m.media-amazon.com/images/I/61PLwr1joEL._AC_SL1500_.jpg",
+    badge: "Splurge",
+  }),
+  c({
     slug: "to-leatherman-wave",
     asin: "B079MJBP21",
     amazonTitle: "Leatherman Wave+ 18-in-1 Multi-tool",
@@ -2180,22 +2196,6 @@ export const EXTENDED_CATALOG: ShopProduct[] = [
     why: "Made in Asheville, ripstop nylon, holds 400 pounds. Best festival nap of the year — between two trees, no setup time, packs back to fist size.",
     image: "https://m.media-amazon.com/images/I/712MN+PnHhL._AC_SL1500_.jpg",
     badge: "Festival camp",
-  }),
-  c({
-    slug: "to-solo-stove-bonfire",
-    asin: "B0B7B7R8HL",
-    amazonTitle: "Solo Stove Bonfire 19.5\" Smokeless Fire Pit",
-    category: "tailgate-and-outdoors",
-    name: "Solo Stove Bonfire 2.0 fire pit",
-    blurb:
-      "Stainless steel, smokeless burn, packable. The backyard fire pit that doesn't make your jacket smell like a campsite.",
-    query: "Solo Stove Bonfire 2.0 fire pit smokeless",
-    price: "$209.99",
-    rating: 4.8,
-    reviewCount: 18400,
-    why: "Double-wall design burns the smoke before it leaves the top. Sit close, talk all night, walk inside smelling like yourself.",
-    image: "https://m.media-amazon.com/images/I/61PLwr1joEL._AC_SL1500_.jpg",
-    badge: "Splurge",
   }),
   c({
     slug: "to-stanley-thermos",

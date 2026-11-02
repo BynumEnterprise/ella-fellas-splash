@@ -43,4 +43,4 @@ The five Entertainer nominees are Luke Combs, Cody Johnson, Ella Langley, Chris 
 
 If Entertainer of the Year goes to whoever defined the year in country music, it's Ella's. If it goes to whoever has the longest, biggest touring record, it probably goes to one of the other four. Very few artists have come into the vote with a year like hers. She can win. We'd call it one of the closest Entertainer races in years.
 
-We'll have a full watch guide closer to November 18. Before that, she's one of 20 performers on the [CMA's Dolly Parton tribute special](/news/2026-10-06-ella-langley-cma-dolly-parton-tribute-special) on October 21.
+We'll have a full watch guide closer to November 18. Before that, she's one of 20 performers on the [CMA's Dolly Parton tribute special](/news/2026-10-06-ella-langley-cma-dolly-parton-tribute-special) on October 21. And the awards-season math gets busier two days before the CMAs: the [2027 Grammy nominations land November 16](/news/2026-11-02-ella-langley-grammy-2027-best-new-artist), and a summer rule change finally makes Langley eligible for Best New Artist.

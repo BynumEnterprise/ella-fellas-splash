@@ -7,6 +7,7 @@ Weekly SEO + analytics report jobs APPEND recommendations here. The daily conten
 Format: `- [ ] YYYY-MM-DD <source-job>: <action>` → mark `- [x] done YYYY-MM-DD (commit <sha>)`
 
 ## Open
+- [ ] 2026-11-02 seo-report: Retire or consolidate the /vs comparison pages — why: zero impressions on any 'vs' query across 200 'ella langley' queries this week, while they still carry no affiliate links (standing item), so they are absorbing calendar days for no return.
 - [ ] 2026-11-02 seo-report: Fix /news-sitemap.xml contents — it is submitted and being fetched (last downloaded 11/01, 0 errors) but lists only 2 URLs, so almost no recent news output is in it. Why: Google News/Discover surfacing is the cheapest remaining distribution for post-tour recap and CMA content.
 - [ ] 2026-11-02 seo-report: Rewrite the song-meaning pages with verbatim-question H2s and answer-first openers (the treatment that took stage-time pages to pos 1.4) — why: 13 meaning queries drew 439 impressions and only 9 clicks, with 'be her ella langley meaning' at 133 impressions and ZERO clicks from pos 8.3; this is the evergreen cluster that survives the tour ending.
 - [ ] 2026-11-02 seo-report: Repoint /tour, /set-times and /openers from upcoming-show framing to past-tense recap + '2027 tour, what we know', cross-linking /guides/ella-langley-2027-tour (indexed, pos 6.3) — why: the Dandelion Tour ended 10/31 so every show on those pages is now past, and /tour is the site's largest CTR gap at 28,654 impressions / 0.82% CTR / pos 7.9.

@@ -143,10 +143,14 @@ export async function POST(req: Request) {
   }
 
   // --- fetch confirmed subscribers ---
+  // Guard: never mail an address that has opted out, even if `confirmed`
+  // was flipped back to true by a bulk update (the daily job's list promotion
+  // did exactly that for months). `unsubscribed_at` is the authoritative opt-out.
   const { data: subs, error: subErr } = await supabase
     .from("subscribers")
     .select("email, unsubscribe_token")
-    .eq("confirmed", true);
+    .eq("confirmed", true)
+    .is("unsubscribed_at", null);
   if (subErr) {
     return NextResponse.json({ error: `Subscriber query failed: ${subErr.message}` }, { status: 500 });
   }

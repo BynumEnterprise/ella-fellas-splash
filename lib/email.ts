@@ -5,23 +5,25 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ellafellas.com";
 /**
  * SENDING IDENTITY.
  *
- * The brand domain (daily@ellafellas.com) is what we WANT here, and
- * ellafellas.com is fully verified for sending in Resend (DKIM + SPF/MX green).
- * It is not live yet for one reason: the RESEND_API_KEY currently in Vercel is
- * a DOMAIN-RESTRICTED key scoped to bynummailer.com, so sending as
- * ellafellas.com fails with:
- *   403 "This API key is not authorized to send emails from ellafellas.com"
- * (verified live 2026-08-05 — the confirmation email 403'd).
+ * From is the brand domain (daily@ellafellas.com) — ellafellas.com is verified
+ * in Resend (DKIM resend._domainkey + SPF on send.ellafellas.com + DMARC
+ * p=none at _dmarc). EMAIL_FROM in Vercel overrides the fallback below.
  *
- * TO SWITCH: create a Resend API key with Full access (or one scoped to
- * ellafellas.com), update RESEND_API_KEY in Vercel, then set
- * EMAIL_FROM = "Ella Fellas <daily@ellafellas.com>" (or flip the fallback
- * below). Nothing else needs to change — open tracking is already enabled on
- * ellafellas.com in Resend.
+ * REPLY-TO / OWNER INBOX. ellafellas.com has NO mailboxes: its MX points at
+ * Namecheap eforward with no forwarding rules, so every @ellafellas.com
+ * address answers "554 5.7.1 Relay access denied" (audit 2026-11-02: 47/47
+ * contact-form emails to hi@ellafellas.com bounced). Until forwarding is set
+ * up at the registrar, replies and contact-form mail go to the owner's
+ * monitored Gmail. Set OWNER_EMAIL / EMAIL_REPLY_TO in Vercel to change.
  */
 export const FROM_ADDRESS =
   process.env.EMAIL_FROM ?? "Ella Fellas <daily@ellafellas.com>";
-export const REPLY_TO = process.env.EMAIL_REPLY_TO ?? "hi@ellafellas.com";
+export const OWNER_INBOX = process.env.OWNER_EMAIL ?? "bynumenterprisesbe@gmail.com";
+export const REPLY_TO = process.env.EMAIL_REPLY_TO ?? OWNER_INBOX;
+
+/** CAN-SPAM physical postal address — must match the business address on
+ *  record (Shopify shopAddress for Bynum Enterprises / Ella Fellas). */
+export const POSTAL_ADDRESS = "Bynum Enterprises &middot; 305 Lost Creek Trl, Greenville, TX 75402";
 
 /**
  * Send a single email through the Resend HTTP API.
@@ -38,6 +40,8 @@ export async function sendEmail(opts: {
   subject: string;
   html: string;
   text?: string;
+  /** Per-message Reply-To (e.g. the contact-form submitter). Defaults to REPLY_TO. */
+  replyTo?: string;
   listUnsubscribeUrl?: string;
 }): Promise<{ ok: boolean; status: number; id?: string; error?: string }> {
   const apiKey = process.env.RESEND_API_KEY;
@@ -46,6 +50,10 @@ export async function sendEmail(opts: {
     return { ok: false, status: 0, error: "RESEND_API_KEY not set" };
   }
 
+  // RFC 8058 one-click unsubscribe (required by the Gmail/Yahoo bulk-sender
+  // rules): the URL must accept a POST with body "List-Unsubscribe=One-Click"
+  // and unsubscribe without any further interaction — see the POST handler in
+  // app/api/newsletter/unsubscribe/route.ts.
   const headers: Record<string, string> = {};
   if (opts.listUnsubscribeUrl) {
     headers["List-Unsubscribe"] = `<${opts.listUnsubscribeUrl}>`;
@@ -61,7 +69,7 @@ export async function sendEmail(opts: {
       },
       body: JSON.stringify({
         from: FROM_ADDRESS,
-        reply_to: REPLY_TO,
+        reply_to: opts.replyTo ?? REPLY_TO,
         to: [opts.to],
         subject: opts.subject,
         html: opts.html,
@@ -97,6 +105,7 @@ export function wrapEmail(opts: {
     : "";
   return `<!DOCTYPE html>
 <html>
+<head><meta charset="utf-8" /><meta name="viewport" content="width=device-width" /></head>
 <body style="margin:0;padding:0;background:#FAF7F0;font-family:-apple-system,system-ui,sans-serif;color:#1A1A1A;">
   ${preheader}
   <table width="100%" cellpadding="0" cellspacing="0" style="background:#FAF7F0;padding:32px 16px;">
@@ -113,7 +122,7 @@ export function wrapEmail(opts: {
       <p style="color:rgba(26,26,26,0.45);font-size:12px;line-height:1.6;margin:24px 0 0 0;max-width:560px;">
         You're getting this because you signed up at <a href="${SITE_URL}" style="color:rgba(26,26,26,0.55);">ellafellas.com</a>.<br />
         <a href="${opts.unsubscribeUrl}" style="color:rgba(26,26,26,0.55);">Unsubscribe instantly</a> &middot; We're a fan site, not affiliated with Ella Langley, her label, or her management.<br />
-        Bynum Enterprises &middot; San Bernardino, CA
+        ${POSTAL_ADDRESS}
       </p>
     </td></tr>
   </table>

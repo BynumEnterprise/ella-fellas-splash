@@ -4,6 +4,8 @@ import { useState } from "react";
 export function NewsletterSignup({ placement = "inline" }: { placement?: string }) {
   const [email, setEmail] = useState("");
   const [city, setCity] = useState("");
+  // Honeypot: hidden from humans (CSS + aria-hidden + tabIndex -1); bots fill it.
+  const [website, setWebsite] = useState("");
   const [state, setState] = useState<"idle" | "loading" | "ok" | "err">("idle");
   const [message, setMessage] = useState("");
 
@@ -15,7 +17,7 @@ export function NewsletterSignup({ placement = "inline" }: { placement?: string 
       const r = await fetch("/api/newsletter/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, city, source: placement }),
+        body: JSON.stringify({ email, city, source: placement, website }),
       });
       const j = await r.json();
       if (r.ok) {
@@ -55,6 +57,18 @@ export function NewsletterSignup({ placement = "inline" }: { placement?: string 
 
   return (
     <form onSubmit={onSubmit} className="space-y-3">
+      <div aria-hidden="true" className="absolute -left-[9999px] top-0 h-0 w-0 overflow-hidden">
+        <label htmlFor={`newsletter-website-${placement}`}>Website</label>
+        <input
+          id={`newsletter-website-${placement}`}
+          name="website"
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
+          value={website}
+          onChange={(e) => setWebsite(e.target.value)}
+        />
+      </div>
       <div className="flex flex-col sm:flex-row gap-2">
         <input
           id={`newsletter-email-${placement}`}
@@ -88,7 +102,8 @@ export function NewsletterSignup({ placement = "inline" }: { placement?: string 
         </button>
       </div>
       <p className="text-xs text-ink/60">
-        Get daily updates, tour alerts, and ticket drop notifications. No spam. Unsubscribe anytime.
+        The Ella Fellas Daily, free, every weekday morning: 2027 tour and presale alerts the minute
+        they drop, awards-season news, new music, setlists. No spam. One-click unsubscribe.
       </p>
       {state === "err" && (
         <p className="text-sm text-clay">{message}</p>

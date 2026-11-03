@@ -36,6 +36,10 @@ Build-ignored paths (no deploy): BACKLOG.md, OPS_NOTES.md, docs/, scripts/, cont
 ## 5. Email the owner (real send, not a draft)
     bash /tmp/ef/mail.sh "Subject here" /tmp/body.md
 Fallback only if HTTP != 200: Gmail MCP create_draft with subject prefixed "⚠️ MAILER DOWN — ".
+Calling the API directly? Use `"to": "<address>"` for a report (subject sent as-is). `"test"` is the
+newsletter PREVIEW mode: it prefixes "[TEST]" when previewing a `date`/`slug` issue. Never pass
+`test`/`to` for the real Daily — the Daily is the list send (no `to`, no `test`).
+Replies to anything we send land in the owner's Gmail (ellafellas.com has no mailboxes — see lib/email.ts).
 
 ## 6. Google Search Console + GA4 (headless — no Chrome)
     python3 /tmp/ef/google_api.py gsc 2026-09-14 2026-09-20 query 25
@@ -50,6 +54,11 @@ GSC Performance lags ~2-3 days. The Pages/Indexing *report* has no API — use g
       select state from job_state where job='product-qa-gate';
       insert into job_state(job,state) values('product-qa-gate','{...}'::jsonb) on conflict (job) do update set state=excluded.state, updated_at=now();
 - `newsletter_issues(send_date pk, subject, featured_product, song_of_day, markdown)` — archive; rotation checks read the last 14 days.
+- `subscribers` — the send endpoint mails `confirmed = true AND unsubscribed_at IS NULL` only. NEVER clear
+  `unsubscribed_at` in SQL and never `update subscribers set confirmed=true` without `and unsubscribed_at is null`
+  — an opt-out is permanent until the person re-subscribes and clicks Confirm (CAN-SPAM).
+- `email_events` — Resend webhook events (ellafellas.com senders only) + first-party `/api/go` clicks. A complaint,
+  hard bounce, or 3 bounces/30d auto-unsubscribes the address (webhook route).
 - `newsletter_affiliate_ledger(send_date, show_id, city, show_date, sid, destination, deep_link, affiliate_url)` — one row per linked show per issue.
 
 ## 8. IndexNow

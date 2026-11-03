@@ -114,9 +114,10 @@ export default function FanClubPage() {
           <Mail className="w-5 h-5 text-primary" aria-hidden="true" /> THE FREE FAN COMMUNITY
         </p>
         <p className="text-sm text-ink/80 leading-relaxed mb-3">
-          The official club is for presale codes. For everything else — set times the moment
-          they&apos;re posted, setlists within hours of each show, new-song breakdowns, and tour news
-          — that&apos;s us, free. Join the Ella Fellas list and never miss a beat.
+          The official club is for presale codes. For everything else — the 2027 tour announcement
+          and presale windows the minute they drop, awards-season news, new-song breakdowns, and set
+          times and setlists once she&apos;s back on the road — that&apos;s us, free. Join the Ella
+          Fellas Daily and never miss a beat.
         </p>
         <NewsletterSignup placement="fan-club" />
       </div>
@@ -124,7 +125,7 @@ export default function FanClubPage() {
       {nextShow && (
         <div className="bg-primary/10 border border-primary/40 rounded-lg p-5 mb-8">
           <p className="text-xs uppercase tracking-wider text-clay font-medium mb-1">
-            <Ticket className="w-3.5 h-3.5 inline mr-1" aria-hidden="true" /> Missed the presale?
+            <Ticket className="w-3.5 h-3.5 inline mr-1" aria-hidden="true" /> Next time you can see her
           </p>
           <p className="font-display text-xl text-denim leading-tight">
             Her next show: {nextShow.city}, {nextShow.state}

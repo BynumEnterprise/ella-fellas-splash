@@ -1,14 +1,17 @@
 "use server";
 
 import { headers } from "next/headers";
-import { sendEmail } from "@/lib/email";
+import { sendEmail, OWNER_INBOX } from "@/lib/email";
 
 export interface ContactState {
   status: "idle" | "ok" | "error";
   message: string;
 }
 
-const CONTACT_TO = "hi@ellafellas.com";
+// ellafellas.com has no mailboxes (registrar MX, no forwarding): every message
+// sent to hi@ellafellas.com bounced "554 Relay access denied" — 47 fan/press/
+// takedown messages lost Oct 13–Nov 2 2026. Deliver to the monitored inbox.
+const CONTACT_TO = OWNER_INBOX;
 const MIN_FILL_MS = 3000; // humans don't fill a 3-field form in under 3s
 const MAX_FILL_MS = 1000 * 60 * 60 * 6; // stale/replayed form token
 const RATE_WINDOW_MS = 1000 * 60 * 10;
@@ -86,6 +89,7 @@ export async function submitContact(
 <p style="white-space:pre-wrap">${esc(message)}</p>`;
   const res = await sendEmail({
     to: CONTACT_TO,
+    replyTo: email,
     subject: `[ellafellas.com contact] ${topic} from ${name || email}`.slice(0, 150),
     html,
     text: `From: ${name} <${email}>\nTopic: ${topic}\n\n${message}`,

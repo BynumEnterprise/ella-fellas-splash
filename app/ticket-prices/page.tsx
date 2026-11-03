@@ -53,7 +53,10 @@ export default function TicketPricesPage() {
     .filter((d) => d.date >= today() && !d.canceled)
     .sort((a, b) => (a.date < b.date ? -1 : 1));
 
+  // Festival rows sell multi-act passes: a pass price is not an Ella ticket
+  // price, so festivals never feed the cheapest / highest-demand / FAQ ranges.
   const withPrice = shows
+    .filter((d) => d.tourType !== "festival")
     .map((d) => ({ d, ...parseRange(d.ticketPriceRange) }))
     .filter((x) => x.low !== null) as { d: TourDate; low: number; high: number; resale: boolean }[];
 
@@ -71,6 +74,8 @@ export default function TicketPricesPage() {
       q: "How much are Ella Langley tickets in 2026?",
       a: cheapest
         ? `Across her 2026 tour, tracked prices run from about ${usd(cheapest.low)} for the cheapest dates to ${usd(priciest!.high)} at the highest-demand shows. Face-value seats on the still-available dates start around ${lowestFace ? usd(lowestFace.low) : usd(cheapest.low)}; sold-out shows are resale only and climb from there. Live prices move daily on the marketplace.`
+        : shows.length && shows.every((d) => d.tourType === "festival")
+        ? `Every date currently on her calendar is a festival, and festivals sell passes (single-day or full-weekend) for the whole lineup, not Ella tickets. Pass pricing is set by each festival, so check the festival's site for the current tiers; resale is on the marketplace below.`
         : `Prices vary by city and demand. Check the live marketplace for the show you want — this page tracks the ranges we've seen.`,
     },
     {
@@ -146,7 +151,10 @@ export default function TicketPricesPage() {
       <h2 className="font-display text-2xl text-denim tracking-wide mb-4">PRICES BY CITY</h2>
       <div className="space-y-2 mb-8">
         {shows.map((d) => {
-          const { low, resale } = parseRange(d.ticketPriceRange);
+          const isFestival = d.tourType === "festival";
+          const { low, resale } = isFestival
+            ? { low: null, resale: false }
+            : parseRange(d.ticketPriceRange);
           return (
             <div key={d.id} className="border border-ink/15 rounded-lg p-4 bg-paper">
               <div className="flex items-center justify-between gap-3 flex-wrap">
@@ -157,6 +165,28 @@ export default function TicketPricesPage() {
                   </p>
                   <p className="text-sm text-ink/70">{d.venue}</p>
                 </div>
+                {isFestival ? (
+                <div className="text-right">
+                  <p className="font-display text-xl text-denim">Festival pass pricing</p>
+                  <p className="text-xs text-ink/50">
+                    {d.soldOut ? "Sold out at face · resale" : "Passes sold by the festival + resale"}
+                  </p>
+                  <p className="text-[11px] text-ink/45 mt-0.5">
+                    {d.festivalUrl ? (
+                      <a
+                        href={d.festivalUrl}
+                        rel="nofollow noopener noreferrer"
+                        target="_blank"
+                        className="underline decoration-primary/40 underline-offset-2 hover:text-primary"
+                      >
+                        see festival site
+                      </a>
+                    ) : (
+                      "see festival site"
+                    )}
+                  </p>
+                </div>
+                ) : (
                 <div className="text-right">
                   <p className="font-display text-xl text-denim">
                     {d.pricesConfirmed ? d.ticketPriceRange : `~${d.ticketPriceRange}`}
@@ -171,6 +201,7 @@ export default function TicketPricesPage() {
                     </p>
                   )}
                 </div>
+                )}
               </div>
               <div className="mt-3">
                 <AffiliateLink

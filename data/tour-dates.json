@@ -1106,7 +1106,11 @@
     "openers": [],
     "soldOut": false,
     "ticketPriceRange": "Festival pass",
-    "ticketAffiliatePath": "/tickets/georgetown-two-step-inn-festival-2027-04-18"
+    "ticketAffiliatePath": "/tickets/georgetown-two-step-inn-festival-2027-04-18",
+    "festivalBilling": "headliner",
+    "festivalBillingNote": "Ella headlines Sunday, April 18 and closes the festival; Brooks & Dunn headline Saturday, April 17.",
+    "festivalBillingSource": "https://www.ticketnews.com/2026/09/ella-langley-brooks-dunn-to-headline-two-step-inn-2027/",
+    "festivalUrl": "https://www.twostepinn.com/"
   },
   {
     "id": "gulf-shores-sand-in-my-boots-2027-05-21",
@@ -1122,7 +1126,11 @@
     "ticketPriceRange": "3-day festival pass",
     "pricesConfirmed": false,
     "timesConfirmed": false,
-    "ticketAffiliatePath": "/tickets/gulf-shores-sand-in-my-boots-2027-05-21"
+    "ticketAffiliatePath": "/tickets/gulf-shores-sand-in-my-boots-2027-05-21",
+    "festivalBilling": "co-headliner",
+    "festivalBillingNote": "Ella is one of three headliners with Morgan Wallen and Kings of Leon; her day of the May 21-23 weekend hasn't been announced.",
+    "festivalBillingSource": "https://thebamabuzz.com/ella-langley-kings-of-leon-headlining-2027-sand-in-my-boots-festival/",
+    "festivalUrl": "https://sandinmybootsfest.com/"
   },
   {
     "id": "virginia-beach-patriotic-festival-2027-05-29",
@@ -1136,6 +1144,10 @@
     "openers": [],
     "soldOut": false,
     "ticketPriceRange": "Festival pass",
-    "ticketAffiliatePath": "/tickets/virginia-beach-patriotic-festival-2027-05-29"
+    "ticketAffiliatePath": "/tickets/virginia-beach-patriotic-festival-2027-05-29",
+    "festivalBilling": "headliner",
+    "festivalBillingNote": "Ella headlines Saturday, May 29; Bailey Zimmerman headlines Friday and Riley Green closes the festival Sunday.",
+    "festivalBillingSource": "https://www.wtkr.com/news/in-the-community/virginia-beach/2027-patriotic-festival-at-the-oceanfront-ella-langley-riley-green-to-headline",
+    "festivalUrl": "https://patrioticfestival.com/"
   }
 ]

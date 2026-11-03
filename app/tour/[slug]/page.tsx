@@ -18,6 +18,7 @@ import { MerchCTA } from "@/components/MerchCTA";
 import { TripPlannerPanel } from "@/components/TripPlannerPanel";
 import { CanceledNotice } from "@/components/CanceledNotice";
 import { ShowTicketCTA } from "@/components/ShowTicketCTA";
+import { festivalScheduleLine } from "@/lib/set-times";
 import { vrboUrl, hotelUrl, cheapOairUrl, economyBookingsUrl } from "@/lib/affiliates";
 
 // ISR: "next show" / "updated" copy is date-relative, so rebuild hourly between deploys.
@@ -258,6 +259,30 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
           <p>
             Ella Langley is direct support. {d.headliner} headlines after Ella&apos;s 45-minute set.
           </p>
+        </section>
+      )}
+
+      {d.tourType === "festival" && !canceled && (
+        <section className="mb-8">
+          <h2 className="font-display text-2xl text-denim mb-3">ELLA&apos;S FESTIVAL SET</h2>
+          <p>
+            {d.festivalBillingNote ? `${d.festivalBillingNote} ` : ""}
+            {festivalScheduleLine(d)}
+          </p>
+          {d.festivalUrl && (
+            <p className="text-xs text-ink/60 mt-2">
+              Passes, the full lineup and the schedule are on the{" "}
+              <a
+                href={d.festivalUrl}
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+                className="text-primary hover:underline"
+              >
+                official {d.tour} site
+              </a>
+              .
+            </p>
+          )}
         </section>
       )}
 

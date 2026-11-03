@@ -46,6 +46,20 @@ export interface TourDate {
   canceledReason?: string;
   /** URL of the report/announcement the cancellation was taken from. */
   canceledSource?: string;
+  /**
+   * FESTIVAL ROWS ONLY. Ella's billing exactly as the festival (or a report of
+   * its announcement) states it. This is the ONLY thing that lets a festival
+   * surface call her a headliner, co-headliner or direct support. Absent = we
+   * make no billing claim and say "festival set". Never inferred from poster
+   * order, and a `headliner` on a festival row does NOT make her direct support.
+   */
+  festivalBilling?: "headliner" | "co-headliner" | "direct-support";
+  /** One or two sourced sentences about her slot, e.g. "Ella headlines Sunday, April 18." */
+  festivalBillingNote?: string;
+  /** Where festivalBilling/festivalBillingNote came from. Required whenever they are set. */
+  festivalBillingSource?: string;
+  /** Official festival website (pass pricing + the published schedule live there). */
+  festivalUrl?: string;
 }
 
 /** One act's published stage time. See TourDate.stageTimes for sourcing rules. */

@@ -37,14 +37,21 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!d) return {};
   const has = Boolean(getSetlist(d.id));
   const dateShort = fmt(d.date).replace(/^\w+, /, "");
+  const isPast = d.date < new Date().toISOString().slice(0, 10);
+  // No logged setlist = the title/description must not promise this show's
+  // setlist. The page shows another show's list only as a labelled guide.
   const title = d.canceled
     ? `Ella Langley ${d.city} ${dateShort}: Show Canceled (No Setlist)`
-    : `Ella Langley Setlist: ${d.city} ${dateShort} (${d.venue})`;
+    : has
+    ? `Ella Langley Setlist: ${d.city} ${dateShort} (${d.venue})`
+    : `Ella Langley ${d.city} Setlist (${dateShort}): ${isPast ? "Not Logged Yet" : "Not Played Yet"}`;
   const desc = d.canceled
     ? `Ella Langley's ${d.city} show at ${d.venue} on ${dateShort} was canceled, so there is no setlist. Here's what she has been playing on the tour and where she plays next.`
     : has
     ? `The full setlist Ella Langley played at ${d.venue} in ${d.city} on ${dateShort} — every song, in order.`
-    : `The setlist from Ella Langley's ${d.city} show at ${d.venue} on ${dateShort} — posted within a couple of hours of the encore. Plus what she's been playing on the Dandelion Tour so far.`;
+    : isPast
+    ? `No setlist has been logged yet for Ella Langley's ${d.city} show at ${d.venue} on ${dateShort}. We only publish a setlist we can source to that night; until then, the most recent logged setlist from another show is on the page as a guide.`
+    : `Ella Langley plays ${d.venue} in ${d.city} on ${dateShort}. We don't predict setlists: this page gets the real one after the show, and shows the most recent logged setlist from another date as a guide until then.`;
   return {
     title: seoTitle(title),
     description: desc,
@@ -87,6 +94,11 @@ export default async function SetlistPage({ params }: { params: Promise<{ slug: 
         <p className="text-xs uppercase tracking-wider text-clay font-medium">Setlist</p>
         <h1 className="font-display text-4xl md:text-5xl text-denim mt-2 leading-tight">
           ELLA LANGLEY SETLIST &mdash; {d.city.toUpperCase()}
+          {!entry && !canceled ? (
+            <span className="block text-2xl md:text-3xl text-ink/60 mt-1">
+              {isPast ? "NOT LOGGED YET" : "NOT PLAYED YET"}
+            </span>
+          ) : null}
         </h1>
         <p className="text-ink/80 mt-3">
           {fmt(d.date)} &middot; {d.venue}, {d.city}, {d.state}
@@ -148,15 +160,28 @@ export default async function SetlistPage({ params }: { params: Promise<{ slug: 
           )}
 
           {recent && (
-            <div className="border border-ink/15 rounded-lg p-5 bg-paper mb-6">
-              <p className="text-xs uppercase tracking-wider text-clay font-medium mb-1">
-                What she&apos;s actually been playing
+            // A DIFFERENT show's setlist, shown only as a labelled guide. Never
+            // headed or marked up as this show's setlist.
+            <section
+              aria-label={`Most recent logged setlist, from ${recent.show.city} on ${fmt(recent.show.date)} (a different show)`}
+              className="border border-dashed border-ink/25 rounded-lg p-5 bg-ink/[0.03] mb-6"
+            >
+              <p className="text-sm text-ink/80 leading-relaxed mb-3">
+                No setlist has been logged for this show yet. Here&apos;s the most recent logged
+                setlist from{" "}
+                <strong>
+                  {recent.show.city}, {recent.show.state} on {fmt(recent.show.date)}
+                </strong>{" "}
+                as a guide (songs may differ).
               </p>
               <h2 className="font-display text-xl text-denim tracking-wide mb-1">
-                MOST RECENT SETLIST &mdash; {recent.show.city.toUpperCase()}
+                {recent.show.city.toUpperCase()} SETLIST, {fmt(recent.show.date).replace(/^\w+, /, "").toUpperCase()}
+                <span className="block text-xs font-sans font-medium uppercase tracking-wider text-clay mt-1">
+                  A different show &middot; not the {d.city} setlist
+                </span>
               </h2>
               <p className="text-xs text-ink/60 mb-3">
-                {fmt(recent.show.date)} &middot; {recent.show.venue}
+                {recent.show.venue}, {recent.show.city}, {recent.show.state}
               </p>
               <ol className="space-y-1.5">
                 {recent.entry.songs.map((song, i) => (
@@ -166,17 +191,31 @@ export default async function SetlistPage({ params }: { params: Promise<{ slug: 
                   </li>
                 ))}
               </ol>
+              {recent.entry.encore && recent.entry.encore.length > 0 && (
+                <>
+                  <p className="text-xs uppercase tracking-wider text-clay font-medium mt-4 mb-1">Encore</p>
+                  <ol className="space-y-1.5">
+                    {recent.entry.encore.map((song, i) => (
+                      <li key={`renc-${song}-${i}`} className="flex gap-3 text-ink/85">
+                        <span className="text-ink/40 text-sm w-5 shrink-0 text-right">{i + 1}.</span>
+                        <span>{song}</span>
+                      </li>
+                    ))}
+                  </ol>
+                </>
+              )}
               <p className="text-xs text-ink/50 mt-3">
-                Source: {recent.entry.source}. Setlists shift night to night — treat this as a strong
-                hint, not a promise.
+                Source for the {recent.show.city} setlist: {recent.entry.source}. Setlists change from
+                night to night, so this is a guide to what she has been playing, not what she played
+                {isPast ? " " : " or will play "}in {d.city}.
               </p>
               <Link
                 href={`/tour/${recent.show.id}/setlist`}
                 className="text-sm text-primary font-medium hover:underline inline-block mt-2"
               >
-                See that show in full &rarr;
+                See the {recent.show.city} show in full &rarr;
               </Link>
-            </div>
+            </section>
           )}
         </>
       )}

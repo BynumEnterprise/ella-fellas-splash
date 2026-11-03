@@ -4,7 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Clock, DoorOpen, Music, AlertTriangle, ArrowRight } from "lucide-react";
 import { getAllTourDates, getTourDate } from "@/lib/data";
-import { buildSetTimes } from "@/lib/set-times";
+import { buildSetTimes, festivalScheduleLine } from "@/lib/set-times";
 import { openerByName } from "@/lib/openers";
 import { ticketNetworkUrl } from "@/lib/affiliates";
 import { AffiliateLink } from "@/components/AffiliateLink";
@@ -54,6 +54,10 @@ export async function generateMetadata({
     ? `Ella Langley's ${d.city} show at ${d.venue} on ${dateShort} was canceled. ${d.canceledReason ?? ""} See where she plays next.`
     : st.ellaStageTime
     ? `Ella Langley goes on at ${st.ellaStageTime} at ${d.venue}, ${d.city} on ${dateShort} — ${d.venue}'s own posted running order for this date${st.doors ? `, doors ${st.doors}` : ""}. Full set times for every act on the bill.`
+    : st.isFestival
+    ? `When does Ella Langley play ${d.tour} (${d.venue}, ${d.city}, ${dateShort})? ${
+        st.festivalBillingNote ? `${st.festivalBillingNote} ` : ""
+      }${festivalScheduleLine(d)} We post her stage time the day it's out.`
     : st.doors
     ? st.timesConfirmed
       ? `Set times for Ella Langley at ${d.venue}, ${d.city} on ${dateShort} — doors ${st.doors}${st.listedStart ? `, listed start ${st.listedStart}` : ""}, full running order, and when she's actually on. Updated as the venue confirms.`
@@ -92,6 +96,10 @@ export default async function SetTimesPage({ params }: { params: Promise<{ slug:
           }${st.listedStart ? `${st.doors ? " and t" : " T"}he night's listed start is ${st.listedStart}` : ""}${
             st.doors || st.listedStart ? "." : ""
           } That time comes straight from the venue's own event page, not an estimate — schedules can still move a few minutes on the night, so treat it as the target and get in early.`
+        : st.isFestival
+        ? `${d.tour} is a festival, so the festival sets the day-by-day schedule, not a single venue running order. ${
+            st.festivalBillingNote ? `${st.festivalBillingNote} ` : ""
+          }${festivalScheduleLine(d)} We post her stage time here as soon as ${d.tour} does, and we don't invent one.`
         : st.ellaHeadlines
         ? `Ella headlines this show, so she's on last${
             d.openers?.length ? ` — after ${d.openers.join(" and ")}` : ""
@@ -102,7 +110,8 @@ export default async function SetTimesPage({ params }: { params: Promise<{ slug:
                 : `; ${st.listedStart} is the typical start time on this tour, but ${d.venue} hasn't confirmed this date`
               : ""
           }. Venues almost never post the headliner's stage time in advance, and we don't invent one — we update this page the moment it's confirmed.`
-        : `Ella is direct support on this date, which means she plays right before ${
+        : d.tourType === "support"
+        ? `Ella is direct support on this date, which means she plays right before ${
             d.headliner ?? "the headliner"
           }. ${
             st.listedStart
@@ -110,11 +119,14 @@ export default async function SetTimesPage({ params }: { params: Promise<{ slug:
                 ? `The listed start time is ${st.listedStart}. `
                 : `The typical start time on this tour is ${st.listedStart}, though this date isn't confirmed yet. `
               : ""
-          }Be inside by the listed start — support sets are the easiest thing to miss.`,
+          }Be inside by the listed start — support sets are the easiest thing to miss.`
+        : `${d.venue} hasn't published her stage time for this date, and we don't invent one — we update this page the moment it's confirmed.`,
     },
     {
       q: `What time do doors open at ${d.venue}?`,
-      a: st.doors
+      a: st.isFestival && !st.timesConfirmed
+        ? `${d.tour} hasn't published gate times for this date yet. Festivals post gate times and the full schedule closer to the date, and we update this page when it does.`
+        : st.doors
         ? st.timesConfirmed
           ? `Doors open at ${st.doors} for this show.`
           : `${d.venue} hasn't published a door time for this date yet. Doors are usually ${st.doors} on this tour, so plan around that and check your ticket — we update this page as soon as the venue confirms.`
@@ -122,7 +134,9 @@ export default async function SetTimesPage({ params }: { params: Promise<{ slug:
     },
     {
       q: `Who is opening for Ella Langley in ${d.city}?`,
-      a: d.openers?.length
+      a: st.isFestival && !d.openers?.length
+        ? `It's a festival, so there's no single opener: the rest of the ${d.tour} lineup plays across the day. ${festivalScheduleLine(d)}`
+        : d.openers?.length
         ? `${d.openers.join(" and ")}${
             d.openers.length > 1 ? ` — in that order, with ${d.openers[d.openers.length - 1]} directly before Ella` : ""
           }.`
@@ -214,7 +228,9 @@ export default async function SetTimesPage({ params }: { params: Promise<{ slug:
         <p className="text-sm text-ink/80 leading-relaxed">{st.summary}</p>
       </div>
 
-      <h2 className="font-display text-2xl text-denim tracking-wide mb-3">RUNNING ORDER</h2>
+      <h2 className="font-display text-2xl text-denim tracking-wide mb-3">
+        {st.isFestival ? "ELLA'S FESTIVAL SET" : "RUNNING ORDER"}
+      </h2>
       {st.slots.length === 0 ? (
         <p className="text-ink/70 mb-6">
           No running order has been announced for this date yet. We&apos;ll post it here as soon as
@@ -240,6 +256,12 @@ export default async function SetTimesPage({ params }: { params: Promise<{ slug:
                     )}
                     {s.role === "direct-support" && (
                       <span className="ml-2 text-xs uppercase tracking-wider text-clay">Direct support</span>
+                    )}
+                    {s.role === "co-headliner" && (
+                      <span className="ml-2 text-xs uppercase tracking-wider text-clay">Co-headliner</span>
+                    )}
+                    {s.role === "festival" && (
+                      <span className="ml-2 text-xs uppercase tracking-wider text-clay">Festival set</span>
                     )}
                     {s.role === "side-stage" && (
                       <span className="ml-2 text-xs uppercase tracking-wider text-clay">
@@ -286,6 +308,29 @@ export default async function SetTimesPage({ params }: { params: Promise<{ slug:
       ) : (
         <div className="flex items-start gap-2 text-sm text-ink/75 bg-ink/5 border border-ink/15 rounded-md p-4 mb-8">
           <AlertTriangle className="w-4 h-4 text-primary shrink-0 mt-0.5" aria-hidden="true" />
+          {st.isFestival ? (
+          <p>
+            <strong>Why there&apos;s no stage time yet:</strong> {d.tour} is a festival, and
+            festivals publish their day-by-day, stage-by-stage schedule closer to the date. Until
+            it&apos;s out, any exact time you see for Ella is a guess. We post the festival&apos;s
+            own schedule here the day it&apos;s released
+            {d.festivalUrl ? (
+              <>
+                {" "}(or check{" "}
+                <a
+                  href={d.festivalUrl}
+                  rel="nofollow noopener noreferrer"
+                  target="_blank"
+                  className="underline decoration-primary/40 underline-offset-4 hover:text-primary"
+                >
+                  the official festival site
+                </a>
+                )
+              </>
+            ) : null}
+            . If you want it the moment it exists, get on the list below.
+          </p>
+          ) : (
           <p>
             <strong>Why we don&apos;t print an exact stage time:</strong> most venues and tours
             don&apos;t publish per-artist stage times in advance — they get set the day of the show
@@ -295,6 +340,7 @@ export default async function SetTimesPage({ params }: { params: Promise<{ slug:
             update this page when the running order is actually confirmed. If you want the number the
             moment it exists, get on the list below.
           </p>
+          )}
         </div>
       )}
 
@@ -350,7 +396,7 @@ export default async function SetTimesPage({ params }: { params: Promise<{ slug:
       <p className="text-sm text-ink/70 mb-6">
         Looking for another city? See{" "}
         <Link href="/set-times" className="underline text-denim hover:text-primary">
-          set times for every 2026 Ella Langley show
+          set times for every upcoming Ella Langley show
         </Link>
         , or find out{" "}
         <Link href="/openers" className="underline text-denim hover:text-primary">

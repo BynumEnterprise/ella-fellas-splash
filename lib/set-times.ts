@@ -31,8 +31,13 @@ import type { StageTime, TourDate } from "@/lib/types";
 export interface SetSlot {
   /** Artist name, or "Ella Langley". */
   name: string;
-  /** "side-stage" | "opener" | "direct-support" | "headliner" */
-  role: "side-stage" | "opener" | "direct-support" | "headliner";
+  /**
+   * "festival" = Ella's slot on a festival bill with no sourced billing
+   * (TourDate.festivalBilling unset). "co-headliner" only ever comes from
+   * festivalBilling. "direct-support" for Ella only on tourType "support" rows,
+   * or a festival row whose festivalBilling says so explicitly.
+   */
+  role: "side-stage" | "opener" | "direct-support" | "headliner" | "co-headliner" | "festival";
   /** True only when we have a real clock time from the listing or venue schedule. */
   timeConfirmed: boolean;
   /** e.g. "7:30 PM" — only set when timeConfirmed. */
@@ -67,8 +72,25 @@ export interface SetTimesInfo {
   stageTimesSource?: string;
   /** Plain-English summary of what IS known. */
   summary: string;
-  /** Whether Ella headlines this one. */
+  /** Whether Ella headlines this one (her own headline tour). */
   ellaHeadlines: boolean;
+  /** True for festival rows: the festival, not a venue, publishes the schedule. */
+  isFestival: boolean;
+  /** Festival rows: sourced billing (TourDate.festivalBilling), if any. */
+  festivalBilling?: TourDate["festivalBilling"];
+  /** Festival rows: sourced billing sentence (TourDate.festivalBillingNote), if any. */
+  festivalBillingNote?: string;
+}
+
+/**
+ * The one sentence every festival surface uses when the festival hasn't posted
+ * its schedule. Festivals publish day/stage schedules late; we never guess one.
+ */
+export function festivalScheduleLine(d: TourDate): string {
+  const today = new Date().toISOString().slice(0, 10);
+  return d.date >= today
+    ? "Festival set; the festival publishes the schedule closer to the date."
+    : "Festival set; no stage time was published for this date.";
 }
 
 /** "19:30" -> "7:30 PM". Returns undefined for missing/garbage input. */
@@ -109,6 +131,11 @@ export function buildSetTimes(d: TourDate): SetTimesInfo {
     (o) => o && !/^ella langley/i.test(o.trim()),
   );
   const ellaHeadlines = d.tourType === "headlining";
+  const isFestival = d.tourType === "festival";
+  const isSupport = d.tourType === "support";
+  // Festival billing is ONLY what the row explicitly sources. No field = no claim.
+  const festivalBilling = isFestival ? d.festivalBilling : undefined;
+  const festivalBillingNote = isFestival ? d.festivalBillingNote?.trim() || undefined : undefined;
   const published = indexStageTimes(d.stageTimes);
   const hasPublished = published.size > 0;
   const slots: SetSlot[] = [];
@@ -180,7 +207,40 @@ export function buildSetTimes(d: TourDate): SetTimesInfo {
           ? `Headlines — she's on last, after ${openers.length === 1 ? openers[0] : "the openers"}. Headline sets typically start well after the listed door/start time, but the venue does not publish her stage time in advance and we're not going to invent one.`
           : `Headlines. The venue hasn't posted a running order for this date.`,
     });
-  } else if (d.headliner) {
+  } else if (isFestival) {
+    // Festival: the festival sets the day/stage schedule, usually late. Say what
+    // the row sources about her billing and nothing more — in particular, a
+    // festival row with a `headliner` does NOT make Ella direct support.
+    const role: SetSlot["role"] =
+      festivalBilling === "headliner"
+        ? "headliner"
+        : festivalBilling === "co-headliner"
+          ? "co-headliner"
+          : festivalBilling === "direct-support"
+            ? "direct-support"
+            : "festival";
+    slots.push({
+      name: "Ella Langley",
+      role,
+      timeConfirmed: Boolean(ellaPub),
+      time: ellaPub?.time,
+      stageTimePublished: Boolean(ellaPub),
+      note: ellaPub
+        ? `On at ${ellaPub.time}${ellaPub.stageName ? ` on the ${ellaPub.stageName}` : ""} — ${d.tour}'s own posted schedule for this date. Festival schedules can still slide, so treat it as the target.`
+        : `${festivalBillingNote ? `${festivalBillingNote} ` : ""}${festivalScheduleLine(d)}`,
+    });
+    if (d.headliner) {
+      const headPub = publishedFor(d.headliner);
+      slots.push({
+        name: d.headliner,
+        role: "headliner",
+        timeConfirmed: Boolean(headPub),
+        time: headPub?.time,
+        stageTimePublished: Boolean(headPub),
+        note: headPub ? `On at ${headPub.time}, per ${d.tour}.` : `Tops the festival bill.`,
+      });
+    }
+  } else if (isSupport && d.headliner) {
     const headPub = publishedFor(d.headliner);
     slots.push({
       name: "Ella Langley",
@@ -205,21 +265,27 @@ export function buildSetTimes(d: TourDate): SetTimesInfo {
   const parts: string[] = [];
   if (doors) parts.push(`Doors ${timesConfirmed ? "" : "typically "}${doors}`);
   if (listedStart) parts.push(`${timesConfirmed ? "listed start" : "typical start"} ${listedStart}`);
-  const order = slots.length
-    ? `Running order: ${slots.map((s) => s.name).join(" \u2192 ")}.`
-    : "Running order not posted yet.";
+  const order = isFestival
+    ? `${festivalBillingNote ? `${festivalBillingNote} ` : ""}${festivalScheduleLine(d)}`
+    : slots.length
+      ? `Running order: ${slots.map((s) => s.name).join(" \u2192 ")}.`
+      : "Running order not posted yet.";
   const caveat = timesConfirmed
     ? ""
-    : " These are the usual times for this tour — the venue hasn't confirmed this date yet, so check your ticket.";
+    : isFestival
+      ? ""
+      : " These are the usual times for this tour — the venue hasn't confirmed this date yet, so check your ticket.";
 
   // When the venue posted Ella's slot, lead with it — it's the answer people came for.
   const summary = ellaPub
-    ? `${d.venue} has posted the full running order for this date: Ella Langley is on at ${ellaPub.time}${
+    ? `${isFestival ? d.tour : d.venue} has posted the ${isFestival ? "schedule" : "full running order"} for this date: Ella Langley is on at ${ellaPub.time}${
         parts.length ? ` (${parts.join(", ")})` : ""
-      }. ${order} These are the venue's own times, not estimates.`
+      }. ${isFestival ? "" : `${order} `}These are the ${isFestival ? "festival's" : "venue's"} own times, not estimates.`
     : parts.length
       ? `${parts.join(", ")}. ${order}${caveat}`
-      : "This venue hasn't posted doors or a start time for this show yet.";
+      : isFestival
+        ? `${d.tour} hasn't posted gate times or set times for this date. ${festivalScheduleLine(d)}`
+        : "This venue hasn't posted doors or a start time for this show yet.";
 
   return {
     doors,
@@ -231,5 +297,8 @@ export function buildSetTimes(d: TourDate): SetTimesInfo {
     stageTimesSource: hasPublished ? d.stageTimesSource : undefined,
     summary,
     ellaHeadlines,
+    isFestival,
+    festivalBilling,
+    festivalBillingNote,
   };
 }

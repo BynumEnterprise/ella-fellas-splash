@@ -124,7 +124,8 @@ const KNOWN_TICKETNETWORK_URLS: Record<string, string> = {
   // "st.-paul-..." keys never matched, so those shows fell back to the performer page.
   // Tulsa BOK Center 2026-10-09 (event 8071931) was CANCELED hours before showtime:
   // its deep link is intentionally removed (falls back to the performer page).
-  // Two Step Inn 2027-04-18: not listed on TicketNetwork as of 2026-10-13.
+  // Two Step Inn 2027-04-18: not listed on TicketNetwork as of 2026-10-13; listed
+  // by 2026-11-03 (Sunday single-day event 8284960, Ella's day; added below).
   "los-angeles-greek-theatre-2026-10-13": "https://www.ticketnetwork.com/tickets/8071950/ella-langley-kameron-marlowe-and-laci-kaye-booth-tickets-tue-oct-13-2026-greek-theatre-los-angeles-ca",
   "los-angeles-greek-theatre-2026-10-14": "https://www.ticketnetwork.com/tickets/8071951/ella-langley-kameron-marlowe-and-laci-kaye-booth-tickets-wed-oct-14-2026-greek-theatre-los-angeles-ca",
   "salt-lake-city-redwest-festival-2026-10-16": "https://www.ticketnetwork.com/tickets/7996100/redwest-ella-langley-shaboozey-and-koe-wetzel-friday-tickets-fri-oct-16-2026-utah-state-fairpark",
@@ -133,6 +134,12 @@ const KNOWN_TICKETNETWORK_URLS: Record<string, string> = {
   "saint-paul-grand-casino-arena-2026-10-31": "https://www.ticketnetwork.com/tickets/8071934/ella-langley-kameron-marlowe-and-gabriella-rose-tickets-sat-oct-31-2026-grand-casino-arena",
   "lubbock-united-supermarkets-arena-2026-10-10": "https://www.ticketnetwork.com/tickets/8071948/ella-langley-kameron-marlowe-laci-kaye-booth-tickets-sat-oct-10-2026-united-supermarkets-arena",
   "virginia-beach-patriotic-festival-2027-05-29": "https://www.ticketnetwork.com/tickets/8027003/patriotic-festival-ella-langley-saturday-tickets-sat-may-29-2027-virginia-beach-oceanfront",
+  // 2027 festivals — verified 2026-11-03 on the live TicketNetwork performer pages
+  // (ella-langley-tickets / two-step-inn-tickets); each CJ click followed with
+  // curl -IL to a 200 on the matching event page. Sand In My Boots is a 3-day pass
+  // event (Ella's day TBA), so the pass listing is the right deep link.
+  "gulf-shores-sand-in-my-boots-2027-05-21": "https://www.ticketnetwork.com/tickets/8352427/sand-in-my-boots-festival-morgan-wallen-kings-of-leon-and-ella-langley-3-day-pass-tickets-fri-may-21-2027-gulf-shores-beach",
+  "georgetown-two-step-inn-festival-2027-04-18": "https://www.ticketnetwork.com/tickets/8284960/two-step-inn-sunday-(time-tbd)-tickets-sun-apr-18-2027-san-gabriel-park",
 };
 
 /**

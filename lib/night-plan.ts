@@ -1,5 +1,6 @@
 import type { TourDate } from "@/lib/types";
 import type { Activities } from "@/lib/plan-parse";
+import { festivalScheduleLine } from "@/lib/set-times";
 
 /**
  * NIGHT PLAN ENGINE
@@ -118,6 +119,7 @@ export function buildNightPlan(d: TourDate, choices: PlanChoices = DEFAULT_CHOIC
   const outdoor = isOutdoorVenue(d.venue);
   const stadiumRules = hasStadiumBagRules(d);
   const isSupport = d.tourType === "support";
+  const isFestival = d.tourType === "festival";
   const month = monthOf(d.date);
 
   /* ---- timeline ---- */
@@ -150,7 +152,9 @@ export function buildNightPlan(d: TourDate, choices: PlanChoices = DEFAULT_CHOIC
       label: "Show starts",
       detail: isSupport
         ? "Openers run in sequence from here. This is the number that matters."
-        : "The opener goes on. Ella follows.",
+        : isFestival
+          ? "The listed start for the day's bill. The festival sets the order."
+          : "The opener goes on. Ella follows.",
       emphasis: true,
     });
 
@@ -168,6 +172,13 @@ export function buildNightPlan(d: TourDate, choices: PlanChoices = DEFAULT_CHOIC
         label: `${d.headliner ?? "The headliner"} closes`,
         detail: "Roughly two hours. Plan your exit before the encore if you're driving home.",
       });
+    } else if (isFestival) {
+      timeline.push({
+        time: null,
+        label: "Ella's festival set",
+        detail: `${d.festivalBillingNote ? `${d.festivalBillingNote} ` : ""}${festivalScheduleLine(d)}`,
+        emphasis: true,
+      });
     } else {
       timeline.push({
         time: null,
@@ -181,8 +192,9 @@ export function buildNightPlan(d: TourDate, choices: PlanChoices = DEFAULT_CHOIC
     timeline.push({
       time: null,
       label: "Times not posted yet",
-      detail:
-        "The venue hasn't published doors/show times for this date. We'd rather tell you that than guess — we update this page the day they confirm, and the newsletter sends set-time alerts before the show.",
+      detail: isFestival
+        ? `${d.festivalBillingNote ? `${d.festivalBillingNote} ` : ""}${festivalScheduleLine(d)} We'd rather tell you that than guess — we update this page the day it's out, and the newsletter sends set-time alerts before the show.`
+        : "The venue hasn't published doors/show times for this date. We'd rather tell you that than guess — we update this page the day they confirm, and the newsletter sends set-time alerts before the show.",
       emphasis: true,
     });
   }

@@ -177,7 +177,10 @@ export default function HomePage() {
               Read the song guide &rarr;
             </Link>
           </div>
-          <SpotifyEmbed id="2PyJAiQjp1OPkow2FJZKHR" />
+          {/* "Choosin' Texas" from the Dandelion album (Spotify track 7scFxt9VhL4FJwuPSfRlfN,
+              album 6nrtxtgaD9zSYBl9APvOCH), not the 2024 Hungover single, so the player
+              matches the PRESS PLAY ON DANDELION heading. */}
+          <SpotifyEmbed id="7scFxt9VhL4FJwuPSfRlfN" label="Choosin' Texas · Dandelion" />
         </section>
 
         {/* UPCOMING TOUR DATES */}

@@ -76,7 +76,7 @@ export default function SetTimesHub() {
       </div>
 
       <h2 className="font-display text-2xl text-denim tracking-wide mb-4">
-        EVERY 2026 SHOW ({shows.length})
+        EVERY UPCOMING SHOW ({shows.length})
       </h2>
       <div className="space-y-2 mb-8">
         {shows.map((d) => {
@@ -113,7 +113,17 @@ export default function SetTimesHub() {
                     ) : null}
                   </p>
                   <p className="text-xs text-ink/50 mt-0.5">
-                    {d.openers?.length ? d.openers.join(" · ") : "Support TBA"}
+                    {d.openers?.length
+                      ? d.openers.join(" · ")
+                      : st.isFestival
+                        ? `${
+                            st.festivalBilling === "headliner"
+                              ? "Festival headliner"
+                              : st.festivalBilling === "co-headliner"
+                                ? "Festival co-headliner"
+                                : "Festival set"
+                          } · schedule TBA`
+                        : "Support TBA"}
                   </p>
                   <p className="text-sm text-primary font-medium mt-1 inline-flex items-center gap-1">
                     Set times <ArrowRight className="w-3.5 h-3.5" />

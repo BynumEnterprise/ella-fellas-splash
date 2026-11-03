@@ -18,9 +18,20 @@ const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   images: {
+    // Only hosts the site actually renders through next/image (audit Nov 3 2026:
+    // lib/shop-catalog.ts -> m.media-amazon.com; app/page.tsx + ConcertGearWidget
+    // -> images.unsplash.com; app/page.tsx + app/about -> upload.wikimedia.org;
+    // everything else, incl. every content heroPhoto, is a local /images/* file).
+    // A wildcard turned /_next/image into an open image proxy billed to us.
+    // images-na.ssl-images-amazon.com is Amazon's legacy product-image CDN, kept
+    // so a catalog refresh that pastes one of those URLs doesn't break.
+    // Adding a new remote image source? Add its host here or it will 400.
     remotePatterns: [
-      { protocol: "https", hostname: "**" }
-    ]
+      { protocol: "https", hostname: "m.media-amazon.com", pathname: "/images/**" },
+      { protocol: "https", hostname: "images-na.ssl-images-amazon.com", pathname: "/images/**" },
+      { protocol: "https", hostname: "images.unsplash.com", pathname: "/**" },
+      { protocol: "https", hostname: "upload.wikimedia.org", pathname: "/wikipedia/commons/**" },
+    ],
   },
   async redirects() {
     return [

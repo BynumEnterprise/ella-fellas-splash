@@ -53,7 +53,7 @@ export default function CalgaryPage() {
           <p className="text-xs uppercase tracking-wider text-clay font-medium mb-1"><Ticket className="w-3.5 h-3.5 inline mr-1" aria-hidden="true" /> Catch her next</p>
           <p className="font-display text-xl text-denim leading-tight">{nextShow.city}, {nextShow.state}</p>
           <p className="text-sm text-ink/75 mt-1 mb-3">{nextShow.venue}</p>
-          <AffiliateLink href={ticketNetworkUrl(nextShow.id)} source="calgary-tickets" className="inline-flex items-center gap-2 px-5 py-3 bg-primary text-paper font-display text-lg tracking-wide rounded-md hover:bg-primary/90">
+          <AffiliateLink href={ticketNetworkUrl(nextShow.id)} source="calgary-tickets" className="inline-flex items-center gap-2 px-5 py-3 bg-primary text-ink font-display text-lg tracking-wide rounded-md hover:bg-primary/90">
             <span aria-hidden="true">🎟</span> {nextShow.soldOut ? "FIND RESALE TICKETS" : "GET TICKETS"}
           </AffiliateLink>
           <p className="text-xs text-ink/60 mt-3">Or see the <Link href="/tour" className="underline hover:text-primary">full 2026 tour schedule</Link>.</p>

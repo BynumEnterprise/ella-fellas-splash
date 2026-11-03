@@ -39,7 +39,7 @@ const chipOff = "bg-paper text-denim border-ink/25 hover:border-primary";
 const cta =
   "inline-flex items-center gap-2 px-4 py-2.5 bg-denim text-paper font-display tracking-wide rounded-md hover:bg-denim/90";
 const ctaPrimary =
-  "inline-flex items-center gap-2 px-4 py-2.5 bg-primary text-paper font-display tracking-wide rounded-md hover:bg-primary/90";
+  "inline-flex items-center gap-2 px-4 py-2.5 bg-primary text-ink font-display tracking-wide rounded-md hover:bg-primary/90";
 
 const GMAPS = "https://www.google.com/maps/search/?api=1&query=";
 

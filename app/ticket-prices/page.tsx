@@ -176,7 +176,7 @@ export default function TicketPricesPage() {
                 <AffiliateLink
                   href={ticketNetworkUrl(d.id)}
                   source="ticket-prices"
-                  className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-paper font-display tracking-wide rounded-md hover:bg-primary/90"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-ink font-display tracking-wide rounded-md hover:bg-primary/90"
                 >
                   <span aria-hidden="true">🎟</span> {d.soldOut ? "SEE RESALE PRICES" : "SEE LIVE PRICES"}
                   <ArrowRight className="w-4 h-4" />

@@ -88,7 +88,7 @@ export function Footer() {
             {" "}&middot;{" "}
             Official merch: <a href="https://ellalangley.us" className="text-primary hover:underline" target="_blank" rel="noopener">ellalangley.us</a>
           </p>
-          <p className="opacity-60">
+          <p>
             &copy; 2026 Bynum Enterprises &middot; Greenville, Texas &middot; Made with too much coffee &middot;
             As an Amazon Associate I earn from qualifying purchases.
           </p>

@@ -95,3 +95,30 @@
     background-color: rgba(0, 0, 0, 0.03);
   }
 }
+
+/* ---- a11y (WCAG AA) ----------------------------------------------------
+   Unlayered on purpose so Tailwind doesn't generate variant copies. */
+
+/* Gold text per surface (see textColor.primary in tailwind.config.ts). */
+:root { --ef-gold-text: 125 92 20; } /* #7D5C14: 5.7:1 on paper */
+.bg-denim, .bg-ink, .on-dark, [class*="from-denim"] { --ef-gold-text: 220 181 96; } /* #DCB560: 4.9:1 on denim */
+.bg-paper, .bg-white { --ef-gold-text: 125 92 20; } /* light cards nested in dark sections */
+
+/* WCAG 1.4.1: inline text links can't rely on color alone. Zero specificity,
+   so a no-underline utility still wins. */
+:where(p) a:where(.text-primary) {
+  text-decoration-line: underline;
+  text-underline-offset: 2px;
+}
+
+/* Faint ink tiers measured 2.5-4.47:1 on paper (Lighthouse color-contrast,
+   ~430 nodes across 14 pages). Floor them at 65% ink = 5.3:1 on paper, 5.0:1
+   on the tinted cards. Comes after the generated utilities, so it wins over
+   them; hover:/group-hover: variants have higher specificity and still win. */
+.text-ink\/40,
+.text-ink\/45,
+.text-ink\/50,
+.text-ink\/55,
+.text-ink\/60 {
+  color: rgb(26 26 26 / 0.65);
+}

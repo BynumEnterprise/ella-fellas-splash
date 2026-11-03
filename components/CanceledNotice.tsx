@@ -40,7 +40,7 @@ export function CanceledNotice({ d, className = "" }: { d: TourDate; className?:
       </p>
       <Link
         href="/tour"
-        className="inline-flex items-center justify-center mt-4 px-5 py-3 bg-primary text-paper font-display text-lg tracking-wide rounded-md shadow-sm hover:bg-primary/90"
+        className="inline-flex items-center justify-center mt-4 px-5 py-3 bg-primary text-ink font-display text-lg tracking-wide rounded-md shadow-sm hover:bg-primary/90"
       >
         SEE UPCOMING SHOWS &rarr;
       </Link>

@@ -55,7 +55,7 @@ export default function HomePage() {
             className="object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-denim/30 via-denim/55 to-denim" />
-          <div className="absolute inset-0 flex items-center justify-center text-center px-4">
+          <div className="on-dark absolute inset-0 flex items-center justify-center text-center px-4">
             <div className="max-w-3xl">
               <p className="text-xs uppercase tracking-[0.3em] text-primary font-medium mb-4">
                 The unofficial Ella Langley superfan HQ

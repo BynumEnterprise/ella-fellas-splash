@@ -143,7 +143,7 @@ export default function TourIndexPage() {
               href={ticketNetworkUrl(next.id)}
               source="tour-index-next-show-tickets"
               ariaLabel={`Get tickets for Ella Langley in ${next.city} on TicketNetwork`}
-              className="mt-4 inline-flex items-center justify-center gap-2 px-5 py-3 bg-primary text-paper font-display text-lg tracking-wide rounded-md shadow-sm hover:bg-primary/90"
+              className="mt-4 inline-flex items-center justify-center gap-2 px-5 py-3 bg-primary text-ink font-display text-lg tracking-wide rounded-md shadow-sm hover:bg-primary/90"
             >
               <Ticket className="w-5 h-5" aria-hidden="true" /> {next.city.toUpperCase()} TICKETS
             </AffiliateLink>
@@ -211,7 +211,7 @@ export default function TourIndexPage() {
               <li key={d.id} className="flex items-baseline justify-between gap-3 border-b border-ink/10 py-1.5">
                 <span>
                   <span className="text-ink/60">{formatDate(d.date, "short")}</span>{" "}
-                  <Link href={`/tour/${d.id}`} className={`text-denim hover:text-primary ${d.canceled ? "line-through decoration-clay/70" : ""}`}>
+                  <Link href={`/tour/${d.id}`} className={`text-denim hover:text-primary ${d.canceled ? "line-through decoration-clay/70" : "underline decoration-denim/40 underline-offset-2"}`}>
                     {d.city}, {d.state}
                   </Link>
                 </span>

@@ -16,6 +16,7 @@ const TOUR_IDS = (() => {
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  poweredByHeader: false,
   images: {
     remotePatterns: [
       { protocol: "https", hostname: "**" }
@@ -104,8 +105,22 @@ const nextConfig = {
           { key: "X-Content-Type-Options", value: "nosniff" },
           { key: "X-Frame-Options", value: "SAMEORIGIN" },
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
-          { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=()" },
+          { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=(), payment=(), usb=()" },
+          // Clickjacking + injection hardening that can't break GA4/Impact/embeds:
+          // no script-src here, only who may frame us and base/object lockdown.
+          { key: "Content-Security-Policy", value: "frame-ancestors 'self'; base-uri 'self'; object-src 'none'" },
+          { key: "Cross-Origin-Opener-Policy", value: "same-origin-allow-popups" },
         ],
+      },
+      {
+        // public/ files aren't content-hashed; they were max-age=0, which also
+        // capped the /_next/image cache for local photos at the 60 s default.
+        source: "/images/:path*",
+        headers: [{ key: "Cache-Control", value: "public, max-age=604800, stale-while-revalidate=86400" }],
+      },
+      {
+        source: "/logo.png",
+        headers: [{ key: "Cache-Control", value: "public, max-age=604800, stale-while-revalidate=86400" }],
       },
     ];
   },

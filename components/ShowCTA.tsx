@@ -92,7 +92,7 @@ export function ShowCTA({ showId, title, slug, source }: Props) {
             href={tnUrl}
             source="ticketnetwork"
             ariaLabel="Get tickets on TicketNetwork"
-            className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-paper font-display text-lg tracking-wide rounded-md shadow-sm hover:bg-primary/90"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-ink font-display text-lg tracking-wide rounded-md shadow-sm hover:bg-primary/90"
           >
             <Ticket className="w-5 h-5" /> GET TICKETS
           </AffiliateLink>

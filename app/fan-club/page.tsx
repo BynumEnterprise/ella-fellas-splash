@@ -136,7 +136,7 @@ export default function FanClubPage() {
           <AffiliateLink
             href={ticketNetworkUrl(nextShow.id)}
             source="fan-club-tickets"
-            className="inline-flex items-center gap-2 px-5 py-3 bg-primary text-paper font-display text-lg tracking-wide rounded-md hover:bg-primary/90"
+            className="inline-flex items-center gap-2 px-5 py-3 bg-primary text-ink font-display text-lg tracking-wide rounded-md hover:bg-primary/90"
           >
             <span aria-hidden="true">🎟</span> {nextShow.soldOut ? "FIND RESALE TICKETS" : "GET TICKETS"}
           </AffiliateLink>

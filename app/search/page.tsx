@@ -280,7 +280,7 @@ export default async function SearchPage({
         />
         <button
           type="submit"
-          className="bg-primary text-paper rounded-full px-5 py-2 text-sm font-medium hover:bg-primary/90 transition-colors"
+          className="bg-primary text-ink rounded-full px-5 py-2 text-sm font-medium hover:bg-primary/90 transition-colors"
         >
           Search
         </button>

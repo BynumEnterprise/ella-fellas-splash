@@ -41,7 +41,7 @@ export function ShowTicketCTA({ d, source, className = "" }: Props) {
           href={ticketNetworkUrl(d.id)}
           source={`${source}-tickets-top`}
           ariaLabel={`Get tickets for Ella Langley in ${d.city} on TicketNetwork`}
-          className="inline-flex items-center justify-center gap-2 px-5 py-3 bg-primary text-paper font-display text-lg tracking-wide rounded-md shadow-sm hover:bg-primary/90"
+          className="inline-flex items-center justify-center gap-2 px-5 py-3 bg-primary text-ink font-display text-lg tracking-wide rounded-md shadow-sm hover:bg-primary/90"
         >
           <Ticket className="w-5 h-5" aria-hidden="true" /> {d.soldOut ? "FIND RESALE TICKETS" : "GET TICKETS"}
         </AffiliateLink>
@@ -71,7 +71,7 @@ export function ShowTicketCTA({ d, source, className = "" }: Props) {
         href={ticketNetworkUrl(next.id)}
         source={`${source}-next-show-tickets`}
         ariaLabel={`Get tickets for Ella Langley in ${next.city} on TicketNetwork`}
-        className="inline-flex items-center justify-center gap-2 px-5 py-3 bg-primary text-paper font-display text-lg tracking-wide rounded-md shadow-sm hover:bg-primary/90"
+        className="inline-flex items-center justify-center gap-2 px-5 py-3 bg-primary text-ink font-display text-lg tracking-wide rounded-md shadow-sm hover:bg-primary/90"
       >
         <Ticket className="w-5 h-5" aria-hidden="true" /> {next.soldOut ? "FIND RESALE TICKETS" : "GET TICKETS"}
       </AffiliateLink>

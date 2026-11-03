@@ -135,7 +135,7 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
             she played on this run.
           </p>
           <div className="flex flex-wrap gap-3">
-            <Link href="/tour" className="inline-flex items-center justify-center px-5 py-3 bg-primary text-paper font-display text-lg tracking-wide rounded-md shadow-sm hover:bg-primary/90">
+            <Link href="/tour" className="inline-flex items-center justify-center px-5 py-3 bg-primary text-ink font-display text-lg tracking-wide rounded-md shadow-sm hover:bg-primary/90">
               SEE UPCOMING SHOWS &rarr;
             </Link>
             <Link href={`/tour/${d.id}/setlist`} className="inline-flex items-center justify-center px-5 py-3 border-2 border-denim/30 text-denim font-display text-lg tracking-wide rounded-md hover:border-primary hover:text-primary">
@@ -156,7 +156,7 @@ export default async function TourStopPage({ params }: { params: Promise<{ slug:
             : "Buy direct or check the secondary market for better seat options."}
         </p>
         {/* Primary, highest-paying CTA: TicketNetwork (CJ, 12.5%). */}
-        <AffiliateLink href={tnUrl} source="ticketnetwork" className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-6 py-3.5 bg-primary text-paper font-display text-lg tracking-wide rounded-md shadow-sm hover:bg-primary/90">
+        <AffiliateLink href={tnUrl} source="ticketnetwork" className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-6 py-3.5 bg-primary text-ink font-display text-lg tracking-wide rounded-md shadow-sm hover:bg-primary/90">
           <span aria-hidden="true">🎟</span> GET TICKETS ON TICKETNETWORK
         </AffiliateLink>
         <p className="text-xs text-ink/50 mt-3">

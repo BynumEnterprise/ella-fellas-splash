@@ -353,7 +353,7 @@ export function PlanBuilder({
                           <Link
                             key={l.href}
                             href={l.href}
-                            className="inline-flex items-center gap-1.5 px-4 py-2 text-sm bg-primary text-paper font-semibold rounded-full hover:bg-primary/90"
+                            className="inline-flex items-center gap-1.5 px-4 py-2 text-sm bg-primary text-ink font-semibold rounded-full hover:bg-primary/90"
                           >
                             {l.label} &rarr;
                           </Link>
@@ -373,7 +373,7 @@ export function PlanBuilder({
           <div className="flex flex-wrap gap-3 mt-5">
             <Link
               href={`/tour/${show.id}`}
-              className="inline-flex items-center px-5 py-3 bg-primary text-paper font-display text-lg tracking-wide rounded-md hover:bg-primary/90"
+              className="inline-flex items-center px-5 py-3 bg-primary text-ink font-display text-lg tracking-wide rounded-md hover:bg-primary/90"
             >
               {show.soldOut ? "FIND RESALE TICKETS" : "GET TICKETS"} &rarr;
             </Link>

@@ -49,7 +49,7 @@ export function NewsletterSignup({ placement = "inline" }: { placement?: string 
 
   if (state === "ok") {
     return (
-      <div className="bg-primary/10 border border-primary rounded-md p-4 text-denim font-medium text-center">
+      <div className="bg-[#F5EEDE] border border-primary rounded-md p-4 text-denim font-medium text-center">
         {message}
       </div>
     );
@@ -101,12 +101,12 @@ export function NewsletterSignup({ placement = "inline" }: { placement?: string 
           {state === "loading" ? "Joining..." : "Join the Fellas"}
         </button>
       </div>
-      <p className="text-xs text-ink/60">
+      <p className="text-xs text-ink/60 [.bg-denim_&]:text-paper/75">
         The Ella Fellas Daily, free, every weekday morning: 2027 tour and presale alerts the minute
         they drop, awards-season news, new music, setlists. No spam. One-click unsubscribe.
       </p>
       {state === "err" && (
-        <p className="text-sm text-clay">{message}</p>
+        <p className="text-sm text-clay [.bg-denim_&]:text-paper" role="alert">{message}</p>
       )}
     </form>
   );

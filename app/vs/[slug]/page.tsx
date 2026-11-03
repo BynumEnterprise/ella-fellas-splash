@@ -166,7 +166,7 @@ export default async function ComparisonPage({ params }: { params: Promise<{ slu
           <AffiliateLink
             href={ticketNetworkUrl(nextShow.id)}
             source="vs-tickets"
-            className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-paper font-display text-lg tracking-wide rounded-md hover:bg-primary/90"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-ink font-display text-lg tracking-wide rounded-md hover:bg-primary/90"
           >
             <span aria-hidden="true">🎟</span> {nextShow.soldOut ? "FIND RESALE TICKETS" : "GET TICKETS"}
           </AffiliateLink>

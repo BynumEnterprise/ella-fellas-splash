@@ -17,8 +17,8 @@ export default function PrivacyPage() {
         ellafellas.com is run by Bynum Enterprises (305 Lost Creek Trl, Greenville, TX 75402, United
         States). This policy explains what we collect when you use the site or get our emails, why
         we collect it, who we share it with, and the choices you have. It is written in plain
-        English on purpose. If anything is unclear, email{" "}
-        <a href="mailto:hi@ellafellas.com">hi@ellafellas.com</a>.
+        English on purpose. If anything is unclear, ask us through our{" "}
+        <a href="/contact#contact-form">contact form</a>.
       </p>
 
       <h2>What we collect</h2>
@@ -129,14 +129,15 @@ export default function PrivacyPage() {
       <ul>
         <li>
           <strong>Unsubscribe anytime</strong> &mdash; every email has a one-click unsubscribe
-          link that takes effect immediately. If the link ever fails, email{" "}
-          <a href="mailto:hi@ellafellas.com">hi@ellafellas.com</a> and we will remove you by hand,
+          link that takes effect immediately. If the link ever fails, send us the address through our{" "}
+          <a href="/contact#contact-form">contact form</a> and we will remove you by hand,
           always within 10 business days.
         </li>
         <li>
-          <strong>Access, correct, or delete your data</strong> &mdash; email{" "}
-          <a href="mailto:hi@ellafellas.com">hi@ellafellas.com</a> from the address in question and
-          we will send you what we hold, fix it, or erase it within 7 days.
+          <strong>Access, correct, or delete your data</strong> &mdash; use our{" "}
+          <a href="/contact#contact-form">contact form</a> with the email address in question and
+          we will send you what we hold, fix it, or erase it within 7 days. We reply only to that
+          address.
         </li>
         <li>
           <strong>Change your city or alert radius</strong> &mdash; email us and we will update it.
@@ -181,7 +182,7 @@ export default function PrivacyPage() {
       <h2>Contact</h2>
       <p>
         Bynum Enterprises, 305 Lost Creek Trl, Greenville, TX 75402, United States &middot;{" "}
-        <a href="mailto:hi@ellafellas.com">hi@ellafellas.com</a>
+        <a href="/contact#contact-form">contact form</a>
       </p>
     </article>
   );

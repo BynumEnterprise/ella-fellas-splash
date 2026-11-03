@@ -39,8 +39,8 @@ export default function AccessibilityPage() {
 
       <h2>Tell us about a problem</h2>
       <p>
-        If you hit something on the site that does not work for you, email{" "}
-        <a href="mailto:hi@ellafellas.com">hi@ellafellas.com</a> with the page URL, what you were
+        If you hit something on the site that does not work for you, use our{" "}
+        <a href="/contact#contact-form">contact form</a> with the page URL, what you were
         trying to do, and the browser and assistive technology you use. We will reply within a few
         days and fix what we can. If you need information from a page in a different format, ask
         and we will send it.

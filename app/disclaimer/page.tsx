@@ -89,8 +89,8 @@ export default function DisclaimerPage() {
         artist&apos;s official channels, or a named publication. When something is not confirmed we
         say so on the page instead of guessing. Our full{" "}
         <a href="/editorial-policy">editorial policy and corrections process</a> explains how this
-        works. If we get something wrong, email{" "}
-        <a href="mailto:hi@ellafellas.com">hi@ellafellas.com</a> and we will correct it.
+        works. If we get something wrong, tell us through our{" "}
+        <a href="/contact?topic=correction#contact-form">contact form</a> and we will correct it.
       </p>
 
       <h2>Photos and media</h2>
@@ -100,8 +100,8 @@ export default function DisclaimerPage() {
         wire, or agency photos, or screenshots of social media posts, without permission. YouTube
         and Spotify content is embedded through the official players and remains the property of
         its rights holders. If you own a photo or other media shown here and believe it has been
-        used in error, email{" "}
-        <a href="mailto:takedowns@ellafellas.com">takedowns@ellafellas.com</a>.
+        used in error, send a takedown request through our{" "}
+        <a href="/contact?topic=takedown#contact-form">contact form</a>.
       </p>
 
       <h2>External links</h2>
@@ -114,8 +114,8 @@ export default function DisclaimerPage() {
       <h2>Takedown requests</h2>
       <p>
         If you&apos;re Ella Langley, a member of her team, or a rights holder and you&apos;d like
-        something removed or corrected, email{" "}
-        <a href="mailto:takedowns@ellafellas.com">takedowns@ellafellas.com</a> and we&apos;ll respond
+        something removed or corrected, use our{" "}
+        <a href="/contact?topic=takedown#contact-form">contact form</a> (topic: Photo or content takedown) and we&apos;ll respond
         within 48 hours.
       </p>
 

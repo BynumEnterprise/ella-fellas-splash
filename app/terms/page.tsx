@@ -88,9 +88,8 @@ export default function TermsPage() {
 
       <h2>9. Takedowns and corrections</h2>
       <p>
-        Rights holders can request removal or correction at{" "}
-        <a href="mailto:takedowns@ellafellas.com">takedowns@ellafellas.com</a>; everyone else can
-        report errors to <a href="mailto:hi@ellafellas.com">hi@ellafellas.com</a>. See our{" "}
+        Rights holders can request removal or correction, and anyone can report an error, through
+        our <a href="/contact#contact-form">contact form</a>. See our{" "}
         <a href="/editorial-policy">editorial policy</a> for how corrections are handled.
       </p>
 
@@ -104,7 +103,7 @@ export default function TermsPage() {
       <h2>11. Contact</h2>
       <p>
         Bynum Enterprises, 305 Lost Creek Trl, Greenville, TX 75402, United States &middot;{" "}
-        <a href="mailto:hi@ellafellas.com">hi@ellafellas.com</a>
+        <a href="/contact#contact-form">contact form</a>
       </p>
     </article>
   );

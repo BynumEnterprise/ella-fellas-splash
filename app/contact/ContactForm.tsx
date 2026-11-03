@@ -2,6 +2,7 @@
 
 import { useActionState, useEffect, useRef, useState } from "react";
 import { submitContact, type ContactState } from "./actions";
+import { CONTACT_TOPICS, normalizeTopic, type ContactTopic } from "./topics";
 
 declare global {
   interface Window {
@@ -16,8 +17,17 @@ export function ContactForm() {
   // Time-trap stamp is set on mount (client only), so a static page can't leak
   // a build-time value and no-JS bots submit without one.
   const [started, setStarted] = useState("");
+  // Deep links (/contact?topic=takedown) preselect the topic. Read on the
+  // client so the page stays static.
+  const [topic, setTopic] = useState<ContactTopic>("general");
   useEffect(() => {
     setStarted(String(Date.now()));
+    try {
+      const t = new URLSearchParams(window.location.search).get("topic");
+      if (t) setTopic(normalizeTopic(t));
+    } catch {
+      // ignore malformed query strings
+    }
   }, []);
 
   // generate_lead fires ONLY after the server confirms a real send — never on
@@ -38,7 +48,7 @@ export function ContactForm() {
 
   if (state.status === "ok") {
     return (
-      <div className="not-prose bg-primary/10 border border-primary rounded-md p-4 text-denim font-medium">
+      <div id="contact-form" role="status" className="not-prose bg-primary/10 border border-primary rounded-md p-4 text-denim font-medium">
         {state.message}
       </div>
     );
@@ -48,7 +58,7 @@ export function ContactForm() {
     "w-full px-3 py-2 border-2 border-denim/30 focus:border-primary outline-none rounded-md bg-paper text-ink";
 
   return (
-    <form action={formAction} className="not-prose space-y-3 my-6">
+    <form id="contact-form" action={formAction} className="not-prose space-y-3 my-6">
       {/* Honeypot: hidden from people and assistive tech; bots fill it. */}
       <div aria-hidden="true" style={{ position: "absolute", left: "-10000px", width: 1, height: 1, overflow: "hidden" }}>
         <label htmlFor="contact-website">Website</label>
@@ -67,12 +77,17 @@ export function ContactForm() {
       </div>
       <label className="block text-sm">
         <span className="block mb-1 text-ink/80">Topic</span>
-        <select name="topic" className={field} defaultValue="general">
-          <option value="general">Question / tip / song request</option>
-          <option value="correction">Correction</option>
-          <option value="sponsorship">Sponsorship / newsletter ads</option>
-          <option value="press">Press / interview</option>
-          <option value="takedown">Takedown request</option>
+        <select
+          name="topic"
+          className={field}
+          value={topic}
+          onChange={(e) => setTopic(normalizeTopic(e.target.value))}
+        >
+          {CONTACT_TOPICS.map((t) => (
+            <option key={t.value} value={t.value}>
+              {t.label}
+            </option>
+          ))}
         </select>
       </label>
       <label className="block text-sm">
@@ -86,7 +101,11 @@ export function ContactForm() {
       >
         {pending ? "Sending..." : "Send message"}
       </button>
-      {state.status === "error" && <p className="text-sm text-clay">{state.message}</p>}
+      {state.status === "error" && (
+        <p role="alert" className="text-sm text-clay">
+          {state.message}
+        </p>
+      )}
     </form>
   );
 }

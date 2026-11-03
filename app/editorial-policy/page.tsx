@@ -83,22 +83,22 @@ export default function EditorialPolicyPage() {
       <h2>Corrections</h2>
       <p>
         If you spot an error &mdash; a wrong date, a song that was not played, a quote that is off
-        &mdash; email <a href="mailto:hi@ellafellas.com">hi@ellafellas.com</a> with the page URL and
+        &mdash; send it through our <a href="/contact?topic=correction#contact-form">contact form</a> (topic: Corrections) with the page URL and
         what needs fixing. We aim to correct factual errors within 48 hours. Significant
         corrections are noted on the page itself; typo-level fixes are made silently.
       </p>
 
       <h2>Takedowns and rights holders</h2>
       <p>
-        Requests from Ella Langley&apos;s team or any rights holder go to{" "}
-        <a href="mailto:takedowns@ellafellas.com">takedowns@ellafellas.com</a> and are answered
+        Requests from Ella Langley&apos;s team or any rights holder go through our{" "}
+        <a href="/contact?topic=takedown#contact-form">contact form</a> (topic: Photo or content takedown) and are answered
         within 48 hours.
       </p>
 
       <h2>Who is responsible</h2>
       <p>
         Ella Fellas is published by Bynum Enterprises, 305 Lost Creek Trl, Greenville, TX 75402,
-        United States. General questions: <a href="mailto:hi@ellafellas.com">hi@ellafellas.com</a>.
+        United States. General questions: our <a href="/contact#contact-form">contact form</a>.
       </p>
     </article>
   );

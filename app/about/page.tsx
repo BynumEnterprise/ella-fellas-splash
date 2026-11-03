@@ -56,7 +56,7 @@ export default function AboutPage() {
         &mdash; not whatever has the highest affiliate payout. We disclose every affiliate link, link
         out to official sources rather than paraphrasing them blind, and correct our posts when we
         get something wrong. If you spot an error,{" "}
-        <a href="mailto:hi@ellafellas.com">email us</a> and we&apos;ll fix it fast.
+        <a href="/contact?topic=correction#contact-form">tell us</a> and we&apos;ll fix it fast.
       </p>
 
       <h2>What we do</h2>
@@ -106,7 +106,7 @@ export default function AboutPage() {
       <h2>For Ella&apos;s team</h2>
       <p>
         If you&apos;re Ella&apos;s team and you&apos;d like something updated, corrected, or removed &mdash;
-        email us at <a href="mailto:takedowns@ellafellas.com">takedowns@ellafellas.com</a> and we&apos;ll
+        send a request through our <a href="/contact?topic=takedown#contact-form">contact form</a> and we&apos;ll
         respond within 48 hours. We always link out to the official site at{" "}
         <a href="https://ellalangley.com" target="_blank" rel="noopener">ellalangley.com</a> and the
         official merch at <a href="https://ellalangley.us" target="_blank" rel="noopener">ellalangley.us</a>.
@@ -138,7 +138,7 @@ export default function AboutPage() {
 
       <h2>Contact</h2>
       <p>
-        <a href="mailto:hi@ellafellas.com">hi@ellafellas.com</a> &mdash; for everything else. Ella
+        Our <a href="/contact#contact-form">contact form</a> &mdash; for everything else. Ella
         Fellas is published by Bynum Enterprises, Greenville, Texas.
       </p>
     </article>

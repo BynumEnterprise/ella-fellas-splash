@@ -2,6 +2,7 @@
 
 import { headers } from "next/headers";
 import { sendEmail, OWNER_INBOX } from "@/lib/email";
+import { normalizeTopic, topicLabel } from "./topics";
 
 export interface ContactState {
   status: "idle" | "ok" | "error";
@@ -9,8 +10,10 @@ export interface ContactState {
 }
 
 // ellafellas.com has no mailboxes (registrar MX, no forwarding): every message
-// sent to hi@ellafellas.com bounced "554 Relay access denied" — 47 fan/press/
-// takedown messages lost Oct 13–Nov 2 2026. Deliver to the monitored inbox.
+// sent to an @ellafellas.com address bounced "554 Relay access denied" — 47
+// fan/press/takedown messages lost Oct 13–Nov 2 2026. The form is the only
+// public contact path; it delivers to the monitored owner inbox. Never point
+// visitors at an @ellafellas.com address until real forwarding exists.
 const CONTACT_TO = OWNER_INBOX;
 const MIN_FILL_MS = 3000; // humans don't fill a 3-field form in under 3s
 const MAX_FILL_MS = 1000 * 60 * 60 * 6; // stale/replayed form token
@@ -44,7 +47,7 @@ function esc(v: string): string {
     .replace(/"/g, "&quot;");
 }
 
-const FALLBACK = "Couldn't send that. Please email us directly at hi@ellafellas.com.";
+const FALLBACK = "Sorry, that didn't go through. Please wait a few minutes and send it again.";
 
 export async function submitContact(
   _prev: ContactState,
@@ -52,7 +55,8 @@ export async function submitContact(
 ): Promise<ContactState> {
   const name = String(form.get("name") ?? "").trim().slice(0, 100);
   const email = String(form.get("email") ?? "").trim().slice(0, 200);
-  const topic = String(form.get("topic") ?? "general").trim().slice(0, 40);
+  const topic = normalizeTopic(String(form.get("topic") ?? ""));
+  const label = topicLabel(topic);
   const message = String(form.get("message") ?? "").trim().slice(0, 5000);
   const honeypot = String(form.get("website") ?? "");
   const startedRaw = Number(form.get("started") ?? 0);
@@ -64,7 +68,7 @@ export async function submitContact(
   // Time trap: no JS (no start stamp), instant submit, or a replayed old form.
   const elapsed = Date.now() - startedRaw;
   if (!startedRaw || elapsed < MIN_FILL_MS || elapsed > MAX_FILL_MS) {
-    return { status: "error", message: "Please take a moment and try again, or email hi@ellafellas.com." };
+    return { status: "error", message: "Please take a moment and send it again (reload the page if this keeps happening)." };
   }
 
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
@@ -81,19 +85,19 @@ export async function submitContact(
   const h = await headers();
   const ip = (h.get("x-forwarded-for") ?? "").split(",")[0].trim() || h.get("x-real-ip") || "unknown";
   if (rateLimited(ip)) {
-    return { status: "error", message: "Too many messages from this connection. Try again later or email hi@ellafellas.com." };
+    return { status: "error", message: "Too many messages from this connection. Please try again in about 10 minutes." };
   }
 
   const html = `<p><strong>From:</strong> ${esc(name || "(no name)")} &lt;${esc(email)}&gt;</p>
-<p><strong>Topic:</strong> ${esc(topic)}</p>
+<p><strong>Topic:</strong> ${esc(label)}</p>
 <p style="white-space:pre-wrap">${esc(message)}</p>`;
   const res = await sendEmail({
     to: CONTACT_TO,
     replyTo: email,
-    subject: `[ellafellas.com contact] ${topic} from ${name || email}`.slice(0, 150),
+    subject: `[Ella Fellas contact: ${label}] from ${name || email}`.replace(/[\r\n]+/g, " ").slice(0, 150),
     html,
-    text: `From: ${name} <${email}>\nTopic: ${topic}\n\n${message}`,
+    text: `From: ${name} <${email}>\nTopic: ${label}\n\n${message}`,
   });
   if (!res.ok) return { status: "error", message: FALLBACK };
-  return { status: "ok", message: "Thanks! Message sent. We usually reply within a day." };
+  return { status: "ok", message: "Thanks! Message sent. We reply within 2 business days (takedowns and corrections within 48 hours)." };
 }

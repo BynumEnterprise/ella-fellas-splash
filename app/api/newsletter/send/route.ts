@@ -111,7 +111,9 @@ export async function POST(req: Request) {
       ? resolved.frontmatter.subject
       : `Ella Fellas Daily — ${sendDate}`);
 
-  const innerHtml = newsletterMarkdownToHtml(resolved.markdown);
+  // Campaign tag matches the /api/go `c=` convention so GA4 (utm_campaign) and
+  // the first-party click log line up per issue.
+  const innerHtml = newsletterMarkdownToHtml(resolved.markdown, { campaign: `daily-${sendDate}` });
 
   const { getSupabaseServer } = await import("@/lib/supabase");
   const supabase = getSupabaseServer();

@@ -126,7 +126,64 @@ export function wrapEmail(opts: {
  * for email. We render with `marked`, then inject a scoped <style> block so
  * headings/links/lists carry the brand colors in clients that honor <style>.
  */
-export function newsletterMarkdownToHtml(markdownBody: string): string {
+const INTERNAL_HOSTS = new Set(["ellafellas.com", "www.ellafellas.com"]);
+
+/**
+ * Tag an href from the rendered newsletter with UTM parameters so GA4 attributes
+ * the visit to Email instead of Direct.
+ *
+ * WHY: every ellafellas.com link in the daily (news posts, /tour, /songs, and the
+ * `u=` target inside /api/go ticket links) carried no utm_* at all, so GA4 filed
+ * all newsletter traffic under Direct (analytics audit 2026-11-02: Email channel
+ * = 0 sessions while ~1,850 Direct sessions/28d had a 22% engagement rate).
+ * Shop links already carry utm_source=newsletter; this makes the site links match.
+ *
+ * Rules: only ellafellas.com hosts are touched; /api/newsletter/* (confirm /
+ * unsubscribe) is never modified; a link that already has utm_source is left
+ * alone; /api/go is handled by tagging its inner `u=` destination (the tracker
+ * itself must stay parameter-exact). Any parse failure returns the href untouched.
+ * Takes/returns the HTML-attribute form (with &amp;).
+ */
+export function tagNewsletterHref(hrefAttr: string, campaign: string): string {
+  const raw = hrefAttr.replace(/&amp;/g, "&");
+  let url: URL;
+  try {
+    url = new URL(raw);
+  } catch {
+    return hrefAttr;
+  }
+  if (!INTERNAL_HOSTS.has(url.hostname.toLowerCase())) return hrefAttr;
+  const addUtm = (u: URL) => {
+    u.searchParams.set("utm_source", "newsletter");
+    u.searchParams.set("utm_medium", "email");
+    u.searchParams.set("utm_campaign", campaign);
+  };
+  if (url.pathname.startsWith("/api/go")) {
+    const inner = url.searchParams.get("u");
+    if (!inner) return hrefAttr;
+    let dest: URL;
+    try {
+      dest = new URL(inner);
+    } catch {
+      return hrefAttr;
+    }
+    if (!INTERNAL_HOSTS.has(dest.hostname.toLowerCase()) || dest.searchParams.has("utm_source")) return hrefAttr;
+    addUtm(dest);
+    url.searchParams.set("u", dest.toString());
+  } else if (url.pathname.startsWith("/api/")) {
+    return hrefAttr;
+  } else {
+    if (url.searchParams.has("utm_source")) return hrefAttr;
+    addUtm(url);
+  }
+  return url.toString().replace(/&/g, "&amp;");
+}
+
+export function newsletterMarkdownToHtml(
+  markdownBody: string,
+  opts: { campaign?: string } = {},
+): string {
+  const campaign = opts.campaign ?? "newsletter";
   // Absolutize internal links: email clients turn a root-relative href like
   // "/news/x" into the invalid "http:///news/x". Force every internal link/img
   // to a full https://ellafellas.com URL. (Belt-and-suspenders: senders should
@@ -134,6 +191,8 @@ export function newsletterMarkdownToHtml(markdownBody: string): string {
   const rendered = (marked.parse(markdownBody, { async: false }) as string)
     .replace(/href="\/(?!\/)/g, `href="${SITE_URL}/`)
     .replace(/src="\/(?!\/)/g, `src="${SITE_URL}/`)
+    // UTM-tag internal links (see tagNewsletterHref) so GA4 sees Email, not Direct.
+    .replace(/href="([^"]+)"/g, (_m, href: string) => `href="${tagNewsletterHref(href, campaign)}"`)
     // Constrain product/inline images so a full-size Shopify asset (e.g. 2048px)
     // renders as a tidy card thumbnail instead of a giant edge-to-edge photo.
     // Inline style is used because several email clients strip <style> blocks.

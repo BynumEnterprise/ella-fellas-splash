@@ -1109,6 +1109,22 @@
     "ticketAffiliatePath": "/tickets/georgetown-two-step-inn-festival-2027-04-18"
   },
   {
+    "id": "gulf-shores-sand-in-my-boots-2027-05-21",
+    "date": "2027-05-21",
+    "city": "Gulf Shores",
+    "state": "AL",
+    "venue": "Gulf Shores Public Beach",
+    "venueAddress": "101 E Beach Blvd, Gulf Shores, AL 36542",
+    "tour": "Sand In My Boots Festival",
+    "tourType": "festival",
+    "openers": [],
+    "soldOut": false,
+    "ticketPriceRange": "3-day festival pass",
+    "pricesConfirmed": false,
+    "timesConfirmed": false,
+    "ticketAffiliatePath": "/tickets/gulf-shores-sand-in-my-boots-2027-05-21"
+  },
+  {
     "id": "virginia-beach-patriotic-festival-2027-05-29",
     "date": "2027-05-29",
     "city": "Virginia Beach",

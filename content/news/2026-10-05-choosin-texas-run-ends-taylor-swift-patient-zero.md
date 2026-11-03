@@ -2,6 +2,7 @@
 title: "'Choosin' Texas' Ends Its Record 24-Week Run at No. 1 on the Hot 100"
 slug: "2026-10-05-choosin-texas-run-ends-taylor-swift-patient-zero"
 publishedAt: "2026-10-05"
+updatedAt: "2026-11-03"
 category: "news"
 heroPhoto: "white-dress-red-lights"
 heroPhotoCaption: "Ella Langley on stage. (File photo.)"
@@ -12,6 +13,8 @@ sources:
   - title: "Taylor Swift Dethrones Ella Langley on the Billboard Hot 100 After Record-Breaking 'Choosin' Texas' Run (American Songwriter)"
     url: "https://americansongwriter.com/taylor-swift-dethrones-ella-langley-on-the-billboard-hot-100-after-record-breaking-choosin-texas-run/"
 ---
+
+*Update, November 3: The run wasn't over after all. "Choosin' Texas" went back to No. 1 on the Hot 100 dated October 31 and stayed there on the November 7 chart, bringing it to a record 26 weeks on top. [Here's the latest](/news/2026-11-03-choosin-texas-26-weeks-number-one-hot-100).*
 
 The run is over. Taylor Swift's "Patient Zero" debuted at No. 1 on the Billboard Hot 100 dated October 10, which ended [the record reign of "Choosin' Texas"](/songs/choosin-texas) at 24 weeks on top, [Billboard reported](https://www.billboard.com/lists/taylor-swift-patient-zero-hot-100-number-one-debut/) on October 5. Nothing has ever held No. 1 longer. American Songwriter reported that Ella's song fell just one spot, to No. 2.
 

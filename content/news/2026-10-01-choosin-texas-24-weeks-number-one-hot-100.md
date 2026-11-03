@@ -2,6 +2,7 @@
 title: "'Choosin' Texas' Hits 24 Weeks at No. 1: Ella Langley"
 slug: "2026-10-01-choosin-texas-24-weeks-number-one-hot-100"
 publishedAt: "2026-10-01"
+updatedAt: "2026-11-03"
 category: "news"
 heroPhoto: "leopard-jumpsuit-night"
 heroPhotoCaption: "Ella Langley headlining, her name up in lights behind the band. (File photo, not from a specific chart announcement.)"
@@ -16,6 +17,8 @@ sources:
   - title: "Ella Langley's 'Choosin' Texas' Finally Breaks Mariah Carey's All-Time Record for Weeks at No. 1 (Variety)"
     url: "https://variety.com/2026/music/news/ella-langley-breaks-record-choosin-texas-weeks-chart-mariah-1236871292/"
 ---
+
+*Update, November 3: The count is now **26 weeks**. Taylor Swift's "Patient Zero" knocked "Choosin' Texas" off the top on the chart dated October 10, and it spent three charts at No. 2 or lower before going back to No. 1 on the chart dated October 31. It held there on the November 7 chart. [Here's the latest](/news/2026-11-03-choosin-texas-26-weeks-number-one-hot-100).*
 
 Every Monday morning for most of this year we have checked the same number, and most Mondays it has not budged. On the Billboard Hot 100 dated October 3, "Choosin' Texas" is still sitting exactly where it has camped all year: No. 1. That makes **24 weeks at the top of the Hot 100** for Ella Langley's heartbreak smash — and since she already passed the all-time record a couple of weeks back, every new week is now the longest No. 1 run in the chart's 67-year history, extended by one.
 

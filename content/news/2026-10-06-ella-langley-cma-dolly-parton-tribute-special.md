@@ -2,6 +2,7 @@
 title: "Ella Langley at the CMA Dolly Parton Tribute Special"
 slug: "2026-10-06-ella-langley-cma-dolly-parton-tribute-special"
 publishedAt: "2026-10-06"
+updatedAt: "2026-11-03"
 category: "news"
 heroPhoto: "fest-2026"
 heroPhotoCaption: "Ella Langley at Alan Jackson's 5 O'Clock Somewhere Fest, June 2026. (File photo, not from the Dolly Parton special.)"
@@ -14,6 +15,8 @@ sources:
   - title: "Ella Langley, Carrie Underwood, Reba to perform at Dolly Parton tribute in Nashville (CBS Austin)"
     url: "https://cbsaustin.com/news/entertainment/ella-langley-carrie-underwood-reba-to-perform-at-dolly-parton-tribute-in-nashville-tennessee-belmont-university"
 ---
+
+*Update, November 3: The special aired October 21, and Ella sang "Jolene." [Read our recap of her performance and how fans reacted](/news/2026-11-03-ella-langley-jolene-cma-dolly-parton-tribute). It's streaming on Disney+ and Hulu.*
 
 Ella Langley is one of 20 artists set to perform at the CMA's Dolly Parton tribute special, the live television event honoring the late country legend. "CMA Presents I Will Always Love You: A Celebration of Dolly Parton" airs Wednesday, October 21 on ABC and Disney+, broadcast from Belmont University's Fisher Center for the Performing Arts in Nashville, and it streams on Hulu the following day. For anyone who watched Langley thank Parton the night she died, seeing her name on this bill feels like the loop closing.
 

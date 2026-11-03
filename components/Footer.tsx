@@ -65,10 +65,13 @@ export function Footer() {
                 Ella Fellas merch store
               </a>
             </li>
-            <li><Link href="/about" className="hover:text-primary">About &amp; editorial policy</Link></li>
+            <li><Link href="/about" className="hover:text-primary">About</Link></li>
             <li><Link href="/contact" className="hover:text-primary">Contact us</Link></li>
             <li><Link href="/disclaimer" className="hover:text-primary">Disclaimer &amp; affiliate disclosure</Link></li>
+            <li><Link href="/editorial-policy" className="hover:text-primary">Editorial policy &amp; corrections</Link></li>
             <li><Link href="/privacy" className="hover:text-primary">Privacy</Link></li>
+            <li><Link href="/terms" className="hover:text-primary">Terms of use</Link></li>
+            <li><Link href="/accessibility" className="hover:text-primary">Accessibility</Link></li>
           </ul>
         </div>
       </div>
@@ -85,7 +88,10 @@ export function Footer() {
             {" "}&middot;{" "}
             Official merch: <a href="https://ellalangley.us" className="text-primary hover:underline" target="_blank" rel="noopener">ellalangley.us</a>
           </p>
-          <p className="opacity-60">&copy; 2026 Bynum Enterprises &middot; Made with too much coffee</p>
+          <p className="opacity-60">
+            &copy; 2026 Bynum Enterprises &middot; Greenville, Texas &middot; Made with too much coffee &middot;
+            As an Amazon Associate I earn from qualifying purchases.
+          </p>
         </div>
       </div>
     </footer>

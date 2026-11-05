@@ -3,8 +3,8 @@ title: "Will Ella Langley Win a CMA? Her Odds in All 9 Nods"
 slug: "2026-11-05-will-ella-langley-win-cma-2026-odds"
 publishedAt: "2026-11-05"
 category: "news"
-heroPhoto: "leopard-jumpsuit-night"
-heroPhotoCaption: "Ella Langley headlining the Dandelion Tour, name up in lights. (File photo.)"
+heroPhoto: "fest-2026"
+heroPhotoCaption: "Ella Langley at Alan Jackson's 5 O'Clock Somewhere Fest, June 2026. (File photo.)"
 excerpt: "Ella Langley leads the 2026 CMA Awards with nine nominations. We handicap her real odds in every category, from Entertainer of the Year on down."
 relatedSongs: ["choosin-texas", "be-her", "dandelion", "i-cant-love-you-anymore"]
 sources:

@@ -57,3 +57,6 @@ Her schedule is free, at least. The Dandelion Tour ended October 31 in Saint Pau
 She's arriving with the No. 1 song in America. ["Choosin' Texas" went back to No. 1](/news/2026-11-03-choosin-texas-26-weeks-number-one-hot-100) on the Hot 100 and has now spent a record 26 weeks on top. The 2027 Grammy nominations come out November 16, two days before the CMAs, and [Best New Artist is in play](/news/2026-11-02-ella-langley-grammy-2027-best-new-artist) for her for the first time. That makes this one of the biggest weeks of her career so far. Entertainer of the Year usually comes at the very end of the broadcast, so stay up for it.
 
 Want every update that week, from performer announcements to winners? [Join the Fellas newsletter](/guides/ella-langley-fan-club) and we'll send it the morning after.
+
+
+**Want the full handicap?** We broke down [Ella Langley's real odds in all nine CMA categories](/news/2026-11-05-will-ella-langley-win-cma-2026-odds), from Entertainer of the Year on down.

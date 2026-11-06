@@ -18,7 +18,7 @@ sources:
     url: "https://www.billboard.com/music/awards/2026-cma-nominations-list-ella-langley-1236337089/"
 ---
 
-**Short answer:** The **60th Annual CMA Awards** air live **Wednesday, November 18 at 8/7c on ABC** from Bridgestone Arena in Nashville. They stream the same night on Disney+, and Hulu has them the next day. Ella Langley leads everyone with **nine nominations**, including her first Entertainer of the Year nod. **The CMA hasn't announced performers yet**, so nobody can confirm whether she'll play the show. As of November 3, the [official Performers & Presenters page](https://www.cmaawards.com/performers/) still says "to be announced."
+**Short answer:** The **60th Annual CMA Awards** air live **Wednesday, November 18 at 8/7c on ABC** from Bridgestone Arena in Nashville. They stream the same night on Disney+, and Hulu has them the next day. Ella Langley leads everyone with **nine nominations**, including her first Entertainer of the Year nod. **Update (Nov 6):** Ella is now confirmed to perform. The CMA named her to its [first wave of performers](/news/2026-11-06-ella-langley-cma-awards-2026-performer-lineup) on November 5, alongside Miranda Lambert, Tim McGraw and more.
 
 ## How to watch the 2026 CMA Awards
 
@@ -48,7 +48,7 @@ Our [nominations breakdown](/news/2026-09-16-ella-langley-cma-awards-2026-nomina
 
 ## Will Ella Langley perform at the CMA Awards?
 
-We don't know yet. The CMA usually rolls out performers in the weeks before the show, and this year's list hasn't come out. If she's added, we'll update this page that day.
+Yes. As of November 5 she's officially on the bill. The CMA announced its first wave of performers that day and Ella was on it, along with Miranda Lambert, Tim McGraw, Kacey Musgraves, Cody Johnson, Tucker Wetmore, Zach Top and Red Clay Strays. We broke down the [full performer lineup and what she might sing here](/news/2026-11-06-ella-langley-cma-awards-2026-performer-lineup). The CMA hasn't released song choices yet, so treat any specific setlist you see as a guess for now.
 
 Her schedule is free, at least. The Dandelion Tour ended October 31 in Saint Paul, and that was her last show on the calendar for 2026. She also just did a CMA broadcast in October, singing "Jolene" on the network's [Dolly Parton tribute special](/news/2026-11-03-ella-langley-jolene-cma-dolly-parton-tribute). Until the CMA announces the lineup, though, a performance is a guess. Don't trust any site that says it's confirmed.
 

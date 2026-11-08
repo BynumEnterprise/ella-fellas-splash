@@ -1,9 +1,9 @@
 ---
-title: "Ella Langley Lands Two 2026 MTV VMA Nominations for 'Choosin' Texas'"
+title: "Ella Langley 2026 VMAs: Song of the Year + Best Country"
 slug: "2026-08-19-ella-langley-vma-nominations-choosin-texas"
 publishedAt: "2026-08-19"
 category: "news"
-excerpt: "The VMA nominees dropped Tuesday and Ella is on the list twice for Choosin' Texas, including a Song of the Year nod that reaches way past the country lane."
+excerpt: "Ella Langley scored two 2026 MTV VMA nominations for Choosin' Texas: Best Country and a rare all-genre Song of the Year nod. Here's who she's up against."
 sources:
   - title: "The 2026 MTV Video Music Awards Reveal 'Best Country' Nominations - Taste of Country"
     url: "https://tasteofcountry.com/2026-mtv-video-music-awards-country-nominations/"

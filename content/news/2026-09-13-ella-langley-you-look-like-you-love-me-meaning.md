@@ -32,7 +32,7 @@ That loose, wrote-it-for-fun energy survives in the finished record, and it's wh
 
 "You Look Like You Love Me" gave Langley her first No. 1 and went on to win the CMA Award for Musical Event of the Year — a huge result for a debut-era single and the launch pad for everything that followed on her rise. It sits on her 2024 debut album, and it's the reason so many people were already paying attention when the Dandelion era arrived.
 
-The Riley Green partnership is worth knowing too. Their chemistry on this record wasn't a one-off; their second duet is Riley's ["Don't Mind If I Do"](/songs/dont-mind-if-i-do). And for the wider picture of her best material, our [ranked guide to Ella Langley's songs](/guides/best-ella-langley-songs-ranked) puts this one in context alongside the rest, while the [song page for "You Look Like You Love Me"](/songs/you-look-like-you-love-me) has the streaming links in one place.
+The Riley Green partnership is worth knowing too. Their chemistry on this record wasn't a one-off; their second duet is Riley's ["Don't Mind If I Do"](/songs/dont-mind-if-i-do). And if that chemistry has you wondering whether they're a couple in real life, we settled it in our guide to [whether Ella Langley and Riley Green are dating](/news/2026-11-09-ella-langley-riley-green-dating). And for the wider picture of her best material, our [ranked guide to Ella Langley's songs](/guides/best-ella-langley-songs-ranked) puts this one in context alongside the rest, while the [song page for "You Look Like You Love Me"](/songs/you-look-like-you-love-me) has the streaming links in one place.
 
 ## Hearing it live
 

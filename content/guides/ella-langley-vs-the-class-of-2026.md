@@ -79,7 +79,7 @@ These artists get name-dropped in Ella reviews but the comparison doesn't hold:
 
 ## The field summary
 
-If you sat down today and made a graph of "country artist relevance in 2026" with axes for commercial size and critical respect, the upper-right corner has Wallen, Zach Bryan, Lainey Wilson, and Ella. Of those four, Ella is the youngest and the one whose trajectory is still steepest.
+If you sat down today and made a graph of "country artist relevance in 2026" with axes for commercial size and critical respect, the upper-right corner has Wallen, Zach Bryan, Lainey Wilson, and Ella. Of those four, Ella is the youngest and the one whose trajectory is still steepest. For the direct head-to-head with the reigning CMA Entertainer of the Year, see our [Ella Langley vs. Lainey Wilson comparison](/guides/ella-langley-vs-lainey-wilson).
 
 The class of 2026 is real. Ella is leading it. The next question for the next two years is: who breaks through to her tier next? Our money's on Megan Moroney or Kassi Ashton.
 

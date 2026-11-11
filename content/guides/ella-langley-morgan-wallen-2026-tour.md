@@ -3,7 +3,7 @@ title: "Ella Langley on Morgan Wallen's 2026 Stadium Tour: Dates, Lineups & Tick
 slug: "ella-langley-morgan-wallen-2026-tour"
 category: "tour-guide"
 publishedAt: "2026-06-16"
-updatedAt: "2026-07-16"
+updatedAt: "2026-11-11"
 excerpt: "Ella Langley is direct support on Morgan Wallen's 2026 Still The Problem Tour. The stadium co-bills, each lineup, and how to get tickets."
 faq:
   - q: "Is Ella Langley opening for Morgan Wallen in 2026?"
@@ -11,7 +11,7 @@ faq:
   - q: "Which Morgan Wallen 2026 shows does Ella Langley play?"
     a: "In 2026 Ella has been direct support at Chicago (Soldier Field, June 20) and Clemson (Memorial Stadium, June 27), with Baltimore (M&T Bank Stadium, July 18) and the Philadelphia tour finale (Lincoln Financial Field, August 1) still to come. Each show has its own page with tickets."
   - q: "Does Ella Langley have a duet with Morgan Wallen?"
-    a: "No. Ella's breakout duet is you look like you love me with Riley Green, not Morgan Wallen. The Wallen connection is the tour -- she is one of his direct-support acts in 2026, not a duet partner."
+    a: "Now they do. Ella and Wallen released I Can't Love You Anymore in 2026, a heartbreak duet that landed a CMA Musical Event of the Year nomination. The tour slot came first -- she was direct support on his 2026 stadium run -- and the studio duet followed. Her Riley Green duet you look like you love me is still her signature, but she and Wallen are collaborators now too."
 ---
 
 If you came to a Morgan Wallen stadium show in 2026 and figured the openers were just something to sit through, we are here to change your mind. Ella Langley is direct support on a stretch of Wallen's Still The Problem Tour, and "direct support" is not a throwaway slot. It is the act that goes on right before the headliner, in front of a packed stadium, with the lights down and the crowd already there. If you show up late, you miss her. Do not show up late.
@@ -59,5 +59,7 @@ A few honest pointers:
 A stadium show is a whole day, not a two-hour errand. Read our [country concert checklist](/guides/ella-langley-concert-checklist) before you go, sort your bag situation with the [best clear bags for concerts](/guides/best-clear-bags-for-concerts), and if you want a keepsake, the [Dandelion vinyl](/shop/fc-dandelion-vinyl) is the one we keep going back to.
 
 Want the next batch of co-bill dates the minute they are announced? Sign up for our free newsletter in the footer below. We send the real news, fast, with no fluff -- and we will tell you the second another Ella-on-Wallen stadium date lands.
+
+Want the bigger picture on how these two actually stack up -- hits, chart records, sound, and who to see live? Read our [Ella Langley vs. Morgan Wallen comparison](/guides/ella-langley-vs-morgan-wallen).
 
 New to her? Start with [Who Is Ella Langley?](/guides/who-is-ella-langley) and you will be singing along by the second chorus.

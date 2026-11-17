@@ -46,3 +46,6 @@ Probably not for much longer. The next problem is the calendar: every December, 
 The timing still works in Ella's favor. The 2026 CMA Awards are on November 18, and "Choosin' Texas" is nominated for Single, Song and Music Video of the Year. The Grammy nominations come out two days earlier, on November 16. She'll be on TV during a week when the song is still No. 1.
 
 If you somehow still haven't heard it, start with [what "Choosin' Texas" is really about](/songs/choosin-texas). Then put on ["Be Her"](/songs/be-her), which is up against it for CMA Single and Song of the Year.
+
+
+*Update (November 17): the run kept going. "Choosin' Texas" is now at [28 weeks at No. 1 and holds the all-time Streaming Songs record](/news/2026-11-17-choosin-texas-28-weeks-number-one).*

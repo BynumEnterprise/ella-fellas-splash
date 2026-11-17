@@ -52,6 +52,6 @@ The most fun of the bunch is a passing of the torch. Gretchen Wilson tapped Lang
 
 ## What all these collaborations say about her
 
-Line them up and a pattern shows: Langley picks partners who pull her somewhere new instead of safe. A traditionalist on the Riley Green duet, the genre's biggest star on the Morgan Wallen single, a rapper on "Hell at Night," a Texas-country firebrand on "Jaded," and a 2000s icon on "Here for the Party." She sounds like herself on all of them, which is the whole trick.
+Line them up and a pattern shows: Langley picks partners who pull her somewhere new instead of safe. A traditionalist on the Riley Green duet, the genre's biggest star on the Morgan Wallen single, a rapper on "Hell at Night," a Texas-country firebrand on "Jaded," and a 2000s icon on "Here for the Party." She sounds like herself on all of them, which is the whole trick. The newest entry in that run is her slot on the Hunger Games soundtrack — read about [Ella Langley's "Here Then We're Gone"](/news/2026-11-13-ella-langley-hunger-games-song-here-then-were-gone), the acoustic grief song she cut for *Sunrise on the Reaping*.
 
 If this is your way into her catalog, the natural next stops are [our ranking of every Ella Langley song](/guides/best-ella-langley-songs-ranked) and, when you've run out, [the artists we'd play next](/guides/artists-like-ella-langley). And if you want to catch any of these live down the road, keep an eye on [Ella Langley's tour page](/tour) — she's already confirmed she'll be back out in 2027.
